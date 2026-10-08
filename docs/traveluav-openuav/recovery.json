@@ -1,0 +1,47 @@
+{
+  "import_date": "2026-10-08",
+  "files": {
+    "host.sh": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/host.sh",
+      "sha256": "0ea7253c0b7b0739373fb8092dc0bee6c26357920dbe465f22111b2347765a1b"
+    },
+    "policy_smoke.sh": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/policy_smoke.sh",
+      "sha256": "604ae0782d8f4cad1e830562a2975b302ffe6b08ee3a47ccbb9710a90a35b624"
+    },
+    "collect.sh": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/collect.sh",
+      "sha256": "c0ff1b45583cb2581a9b2845653f20199ec9c821d962e2863b5304092cafea44"
+    },
+    "probe.py": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/probe.py",
+      "sha256": "e4bf45f2bd9085f7384eaa007a64afec344a50bc2d11a0135e858df7c5ab78cf"
+    },
+    "eval_observe.patch": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/eval_observe.patch",
+      "sha256": "fc6c9fa133ff505a15def590dbecab12a4f4de0ecdae42317604392744258fbb"
+    },
+    "expected-sha256.txt": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/expected-sha256.txt",
+      "sha256": "3518e2c880d2c66ddecdade589ac23c4c88100ee53448e77b8c07792681cc548"
+    },
+    "handoff.md": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/handoff.md",
+      "sha256": "995eb48acd4a0b6099854072cc112e7635527ac7c41f500249b37a7d416cea45"
+    },
+    "sources.md": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/sources.md",
+      "sha256": "7ced489930c006dd146a16de9b474f3974b7defa635a7f2f7c3abaf84999cc52"
+    },
+    "asset_inventory.md": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/asset_inventory.md",
+      "sha256": "7a14e16a217a6dbd962126b40da2ad4da1a5332cbf777fc296b80a3e12c27a12"
+    },
+    "slides.md": {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/traveluav-openuav/slides.md",
+      "sha256": "eba503745a4a2f80933be5221d02157395fe565e80a142a48b4ab53a59b3c8f2"
+    }
+  },
+  "upstream_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+  "third_party_checkout_imported": false
+}

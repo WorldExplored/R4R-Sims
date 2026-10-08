@@ -40,3 +40,6 @@ dist/
 *.zip
 *.tar
 *.tar.gz
+
+# TravelUAV isolated environments
+/simulators/traveluav-openuav/.conda*/

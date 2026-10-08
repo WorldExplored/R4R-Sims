@@ -1,0 +1,32 @@
+# Inference import subset of pinned upstream requirement.txt / pyproject.toml.
+# No training, UI, cloud API or flash-attention packages are used by eval.py.
+numpy==1.26.3
+pillow==10.2.0
+msgpack-python==0.5.6
+msgpack-rpc-python==0.4
+tornado==4.5.3
+huggingface-hub==0.27.1
+transformers==4.31.0
+tokenizers==0.13.3
+peft==0.4.0
+accelerate==0.21.0
+bitsandbytes==0.41.0
+sentencepiece==0.1.99
+einops==0.6.1
+einops-exts==0.0.4
+timm==0.6.13
+fairscale==0.4.13
+decord==0.6.0
+scikit-learn==1.2.2
+scipy==1.15.0
+opencv-python==4.10.0.84
+yacs==0.1.8
+attrs==24.3.0
+psutil==6.1.1
+tqdm==4.67.1
+addict==2.4.0
+yapf==0.43.0
+pycocotools==2.0.8
+supervision==0.25.1
+ninja==1.11.1.3
+matplotlib==3.10.0

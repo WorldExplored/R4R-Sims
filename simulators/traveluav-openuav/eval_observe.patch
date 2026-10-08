@@ -1,0 +1,64 @@
+diff --git a/src/model_wrapper/travel_llm.py b/src/model_wrapper/travel_llm.py
+index cab236e..822261c 100644
+--- a/src/model_wrapper/travel_llm.py
++++ b/src/model_wrapper/travel_llm.py
+@@ -64,6 +64,8 @@ class TravelModelWrapper(BaseModelWrapper):
+     def run(self, inputs, episodes, rot_to_targets):
+         waypoints_llm_new = self.run_llm_model(inputs)
+         refined_waypoints = self.run_traj_model(episodes, waypoints_llm_new, rot_to_targets)
++        self.last_coarse_waypoints = waypoints_llm_new.copy()
++        self.last_refined_waypoints = [item.copy() for item in refined_waypoints]
+         return refined_waypoints
+     
+     def predict_done(self, episodes, object_infos):
+diff --git a/src/vlnce_src/eval.py b/src/vlnce_src/eval.py
+index 360c7e3..72502ec 100644
+--- a/src/vlnce_src/eval.py
++++ b/src/vlnce_src/eval.py
+@@ -20,7 +20,7 @@ from src.model_wrapper.base_model import BaseModelWrapper
+ from src.common.param import args, model_args, data_args
+ from env_uav import AirVLNENV
+ from assist import Assist
+-from src.vlnce_src.closeloop_util import EvalBatchState, BatchIterator, setup, CheckPort, initialize_env_eval, is_dist_avail_and_initialized
++from src.vlnce_src.closeloop_util import EvalBatchState, BatchIterator, setup, CheckPort, initialize_env_eval, is_dist_avail_and_initialized, save_to_dataset_eval
+ 
+ def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, eval_save_dir):
+     model_wrapper.eval()
+@@ -47,12 +47,37 @@ def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, e
+                 if is_terminate:
+                     break
+                 
++                model_start = time.perf_counter()
+                 refined_waypoints = model_wrapper.run(inputs=inputs, episodes=batch_state.episodes, rot_to_targets=rot_to_targets)
++                torch.cuda.synchronize()
++                model_latency_s = time.perf_counter() - model_start
+                 eval_env.makeActions(refined_waypoints)
+                 outputs = eval_env.get_obs()
+                 batch_state.update_from_env_output(outputs)
+                 
+                 batch_state.predict_dones = model_wrapper.predict_done(batch_state.episodes, batch_state.object_infos)
++                for i, episode_id in enumerate(batch_state.ori_data_dirs):
++                    if i in batch_state.envs_to_pause:
++                        continue
++                    trace = {"step": t, "episode_id": episode_id, "instruction": batch_state.episodes[i][-1]["instruction"],
++                             "coarse_waypoint": model_wrapper.last_coarse_waypoints[i].tolist(),
++                             "refined_waypoints": model_wrapper.last_refined_waypoints[i].tolist(),
++                             "predicted_stop": bool(batch_state.predict_dones[i]),
++                             "model_latency_s": model_latency_s, "wall_utc": time.time()}
++                    with open(os.path.join(eval_save_dir, "policy_trace.jsonl"), "a") as trace_file:
++                        trace_file.write(json.dumps(trace) + "\n")
++                    save_to_dataset_eval(batch_state.episodes[i],
++                                         os.path.join(eval_save_dir, "in_progress", os.path.basename(episode_id)),
++                                         episode_id)
++                    airsim_client = eval_env.simulator_tool.airsim_clients[0][i]
++                    for camera_name in ("FrontCamera", "LeftCamera", "RightCamera", "RearCamera", "DownCamera"):
++                        info = airsim_client.simGetCameraInfo(camera_name)
++                        camera_trace = {"step": t, "episode_id": episode_id, "camera": camera_name,
++                                        "wall_utc": time.time(), "fov_deg": float(info.fov),
++                                        "position_ned_m": list(info.pose.position),
++                                        "orientation_xyzw": list(info.pose.orientation)}
++                        with open(os.path.join(eval_save_dir, "camera_poses.jsonl"), "a") as camera_file:
++                            camera_file.write(json.dumps(camera_trace) + "\n")
+                 
+                 batch_state.update_metric()
+                 
