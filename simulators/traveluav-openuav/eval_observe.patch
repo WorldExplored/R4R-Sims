@@ -34,7 +34,7 @@ index 09252a3..53f7745 100644
          else:
              raise NotImplementedError("BERT type not implemented...")
 diff --git a/airsim_plugin/AirVLNSimulatorClientTool.py b/airsim_plugin/AirVLNSimulatorClientTool.py
-index 024c53c..169e65e 100644
+index 024c53c..0f848eb 100644
 --- a/airsim_plugin/AirVLNSimulatorClientTool.py
 +++ b/airsim_plugin/AirVLNSimulatorClientTool.py
 @@ -2,6 +2,7 @@ from collections import deque
@@ -45,7 +45,15 @@ index 024c53c..169e65e 100644
  import airsim
  import threading
  import random
-@@ -305,8 +306,10 @@ class AirVLNSimulatorClientTool:
+@@ -198,6 +199,7 @@ class AirVLNSimulatorClientTool:
+             print('waiting for airsim connection...')
+             time.sleep(3 * len(self.machines_info[index]['open_scenes']) + 35)
+             ip = result[1][0]
++            if isinstance(ip, bytes): ip = ip.decode('utf-8')
+             ports = result[1][1]
+             self.airsim_ip = ip
+             self.airsim_ports = ports
+@@ -305,8 +307,10 @@ class AirVLNSimulatorClientTool:
              airsim_client.enableApiControl(True)
              airsim_client.armDisarm(True)
              airsim_client.simPause(False)
@@ -56,7 +64,7 @@ index 024c53c..169e65e 100644
              airsim_client.moveOnPathAsync(path=path, 
                                  velocity=velocity, 
                                  drivetrain=drivetrain, 
-@@ -322,10 +325,12 @@ class AirVLNSimulatorClientTool:
+@@ -322,10 +326,12 @@ class AirVLNSimulatorClientTool:
              while True:
                  time.sleep(0.005)
                  if time.perf_counter() - start_time > 5:
@@ -69,7 +77,7 @@ index 024c53c..169e65e 100644
                  position = np.array(state_info['position'])
                  pos_queue.append(position)
                  if len(pos_queue) == pos_queue.maxlen:
-@@ -439,6 +444,7 @@ class AirVLNSimulatorClientTool:
+@@ -439,6 +445,7 @@ class AirVLNSimulatorClientTool:
                  airsim_client.simDestroyObject('my_object_' + str(object_cnt - 1))
              success = airsim_client.simSpawnObject(
                      'my_object_' + str(object_cnt), asset_name, pose, scale, physics_enabled=False, is_blueprint=False)
@@ -77,7 +85,7 @@ index 024c53c..169e65e 100644
              airsim_client.simContinueForFrames(1)
              airsim_client.simPause(True)
              return success
-@@ -485,7 +491,9 @@ class AirVLNSimulatorClientTool:
+@@ -485,7 +492,9 @@ class AirVLNSimulatorClientTool:
                      for camera_name in cameras:
                          ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.Scene, pixels_as_float=False, compress=False))
                          ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.DepthPerspective, pixels_as_float=True, compress=False))
@@ -87,7 +95,7 @@ index 024c53c..169e65e 100644
                      images, depth_images = [], []
                      for idx, camera_name in enumerate(cameras):
                          rgb_resp = image_datas[2 * idx]
-@@ -495,6 +503,7 @@ class AirVLNSimulatorClientTool:
+@@ -495,6 +504,7 @@ class AirVLNSimulatorClientTool:
                          depth_image = (np.clip(depth_img_in_meters, 0, 100) / 100 * 255).astype(np.uint8)
                          images.append(image)
                          depth_images.append(depth_image)
@@ -95,7 +103,7 @@ index 024c53c..169e65e 100644
                      break
                  except Exception as e:
                      time_sleep_cnt += 1
-@@ -548,7 +557,9 @@ class AirVLNSimulatorClientTool:
+@@ -548,7 +558,9 @@ class AirVLNSimulatorClientTool:
                      for camera_name in cameras:
                          ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.Scene, pixels_as_float=False, compress=False))
                          ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.DepthPerspective, pixels_as_float=True, compress=False))
@@ -105,7 +113,7 @@ index 024c53c..169e65e 100644
                      images, depth_images = [], []
                      for idx, camera_name in enumerate(cameras):
                          rgb_resp = image_datas[2 * idx]
-@@ -558,6 +569,7 @@ class AirVLNSimulatorClientTool:
+@@ -558,6 +570,7 @@ class AirVLNSimulatorClientTool:
                          depth_image = (np.clip(depth_img_in_meters, 0, 100) / 100 * 255).astype(np.uint8)
                          images.append(image)
                          depth_images.append(depth_image)
