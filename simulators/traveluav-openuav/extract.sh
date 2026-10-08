@@ -23,7 +23,7 @@ if free<size+10*1024**3:raise RuntimeError('Insufficient extraction headroom')
 print('Selected episode:',size,'bytes;',len(selected),'files; free',free)
 PY
 timeout 300s 7z x -y "$ASSETS/downloads/data/ModernCityMap.zip" -o"$ASSETS/dataset" 'ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/*'
-test -s "$ASSETS/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json"
+test -s "$ASSETS/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000000.json"
 test -s "$ASSETS/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/mark.json"
 find "$ASSETS/dataset" -name merged_data.json -o -name mark.json -o -name object_description.json
 "$ENV_AB/bin/python" - "$ASSETS/metadata" <<'PY'

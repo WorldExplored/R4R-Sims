@@ -1,6 +1,6 @@
 set -Eeuo pipefail
-cd /workspace/R4R-Sims
-source simulators/traveluav-openuav/layout.sh
+source "$(dirname "$0")/layout.sh"
+cd "$REPO"
 run="$RESULTS/$(date -u +%Y%m%dT%H%M%SZ)-setup-c-extension"
 mkdir -p "$run"
 exec > >(tee -a "$run/console.log") 2>&1

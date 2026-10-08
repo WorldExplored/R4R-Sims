@@ -16,8 +16,8 @@ SPECS={
 ('wangxiangyu0814/llama-uav-7b','model','6cd1a273ba26338a1be4eb93b43489ee0099fbce','models/llama-uav-7b',['*']),
 ('wangxiangyu0814/traveluav-traj-model','model','583a3f6b9111fd80e76d6905eaa0f1793f3fd03f','models/traj',['model_5.pth']),
 ('lmsys/vicuna-7b-v1.5','model','3321f76e3f527bd14065daf69dad9344000a201d','models/vicuna-7b-v1.5',['*.json','*.model','pytorch_model-*.bin']),
-('google-bert/bert-base-uncased','model',None,'models/bert-base-uncased',['config.json','tokenizer*','vocab.txt','pytorch_model.bin']),
-('ShilongLiu/GroundingDINO','model',None,'models/dino',['groundingdino_swint_ogc.pth'])]}
+('google-bert/bert-base-uncased','model','86b5e0934494bd15c9632b12f734a8a67f723594','models/bert-base-uncased',['config.json','tokenizer*','vocab.txt','pytorch_model.bin']),
+('ShilongLiu/GroundingDINO','model','a94c9b567a2a374598f05c584e96798a170c56fb','models/dino',['groundingdino_swint_ogc.pth'])]}
 
 def sha(path):
  h=hashlib.sha256()
