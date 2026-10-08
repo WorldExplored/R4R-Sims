@@ -4,9 +4,9 @@ Revise this chat's simulator plan and produce an updated, self-contained Codex p
 
 ## Repository and workspace
 
-Use https://github.com/WorldExplored/real-for-real-simulator-evaluations (`WorldExplored/real-for-real-simulator-evaluations`) as the shared repository for all Real4Real simulator work. Read `README.md`, `AGENTS.md`, existing simulator notes, and relevant plans before editing.
+Use https://github.com/WorldExplored/R4R-Sims (`WorldExplored/R4R-Sims`) as the shared repository for all Real4Real simulator work. Read `README.md`, `AGENTS.md`, existing simulator notes, and relevant plans before editing.
 
-Local checkout: `~/Downloads/AL/real-for-real-simulator-evaluations/`. Reuse an existing checkout if present. `AL` is the parent workspace, not a different repository to commit this work to. Preserve unrelated files and existing Git histories.
+Local checkout: `~/Downloads/AL/R4R-Sims/`. Reuse an existing checkout if present. `AL` is the parent workspace, not a different repository to commit this work to. Preserve unrelated files and existing Git histories.
 
 Create or reuse `simulators/<simulator-name>/` for simulator-specific work. Use `configs/` and `scripts/` for genuinely shared files, `docs/` for plans and research notes, and `results/<simulator-name>/<run-id>/` for run records, metrics, and summaries. Large local outputs belong in ignored `artifacts/` or another documented artifact location. Do not assume a project pack, simulator installation, engine download, dataset, or checkpoint exists. Inspect first, then obtain required dependencies and document their sources and versions.
 
