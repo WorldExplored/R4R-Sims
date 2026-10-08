@@ -1,7 +1,5 @@
-# Unreal Testing
+# Unreal testing
 
-Simulator-specific authored scripts, configurations and setup instructions belong here. No simulator, engine, dataset, checkpoint or runner is installed by this folder scaffold.
+`audit.py` runs AirSim's packaged Linux Blocks camera replay (A) and scripted multirotor square (B); `bounded.py` applies an independent 190 s watchdog to one owned run. `analyze.py` validates frames/depth and plots measured evidence. `manifest.py create` hashes completed **source** run files; after `rsync`, `manifest.py verify` compares the local copy to that source manifest. Keep unique `ue-...` IDs and preserve failures.
 
-Read [the execution plan and complete Codex prompt](../../docs/unreal/execution-prompt.md) before implementation. The intended local checkout is `~/Downloads/AL/R4R-Sims/`; the intended remote checkout is `~/R4R-Sims/` on Ubuntu. Use `results/unreal/<run-id>/` for small records and ignored `artifacts/unreal/<run-id>/` for large captures. Download large reproducible dependencies into ignored `third_party/unreal/` remotely when local copies are unnecessary.
-
-Selected hardware candidate: A4500 x1, 20 GB VRAM, user-supplied displayed price $0.28/hour. Verify actual host specifications, full price and hardware Vulkan rendering before use. Never treat a CUDA check as renderer validation.
+The current user-supplied host is Ubuntu 22.04 with RTX A5000 24 GB and NVIDIA Vulkan driver 580.178.04. Exact commands, asset hashes, measured A/B results, known landing failure and the UE5 Gaussian-splat gate are in [the handoff](../../docs/unreal/handoff.md). Code/configuration belongs here, small result summaries in `results/unreal/`, and ignored raw captures and dependencies in `artifacts/unreal/` and `third_party/unreal/`. No weights or scene training are part of this runner.

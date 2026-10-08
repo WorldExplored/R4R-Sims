@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.5",
+  "Category": "Research audit",
+  "Description": "Static imported-Gaussian SceneCapture smoke test",
+  "Plugins": [
+    {"Name": "GaussianSplattingForUnrealEngine", "Enabled": true},
+    {"Name": "Niagara", "Enabled": true},
+    {"Name": "PythonScriptPlugin", "Enabled": true},
+    {"Name": "EditorScriptingUtilities", "Enabled": true}
+  ]
+}

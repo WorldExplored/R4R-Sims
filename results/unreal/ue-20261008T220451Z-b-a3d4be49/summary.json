@@ -1,0 +1,65 @@
+{
+  "analysis": {
+    "camera_capture_rate_hz_over_span": 0.12512950219955343,
+    "capture_interval_wall_s_median": 5.355370787001448,
+    "capture_rpc_wall_s_median": 3.209826832986437,
+    "command_interval_wall_s_median": 0.21296890800294932,
+    "command_interval_wall_s_p95": 3.4292336211903605,
+    "command_rate_hz_from_median_interval": 4.695521094497754,
+    "command_rate_hz_over_action_span": 2.006944612438565,
+    "frames_checked": 8,
+    "new_collision_recorded": true,
+    "peak_gpu_memory_used_mib_samples": 769.0,
+    "run_id": "ue-20261008T220451Z-b-a3d4be49",
+    "simulation_elapsed_s_first_to_last_state": 48.829041664,
+    "states": 94,
+    "status": "failed",
+    "timing_note": "RPC and sampling intervals are not renderer FPS; no synchronized GPU render timing",
+    "velocity_commands": 69,
+    "waypoint_nearest_recorded_state_error_m": [
+      0.18792933431738293,
+      0.1778804604503727,
+      0.18724347194841268,
+      0.19297256282017644,
+      0.18792933431738293
+    ]
+  },
+  "artifact_local": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49",
+  "artifact_remote": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49",
+  "asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+  "audit_repo_commit": {
+    "command": [
+      "git",
+      "-C",
+      "/root/R4R-Sims",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "a082b6044fed4ee4b41881dd2002cc7c8ff7adfa"
+  },
+  "errors": [
+    {
+      "error": "landAsync returned but LandedState remained Flying for 10 s",
+      "traceback": "Traceback (most recent call last):\n  File \"/root/R4R-Sims/simulators/unreal/audit.py\", line 391, in main_run\n    raise RuntimeError(\"landAsync returned but LandedState remained Flying for 10 s\")\nRuntimeError: landAsync returned but LandedState remained Flying for 10 s\n",
+      "wall_utc": "2026-10-08T22:05:56.106513+00:00"
+    }
+  ],
+  "exit_status": 1,
+  "mode": "b",
+  "run_id": "ue-20261008T220451Z-b-a3d4be49",
+  "sample_counts": {
+    "actions.jsonl": 78,
+    "camera.jsonl": 8,
+    "gpu.jsonl": 59,
+    "state.jsonl": 94,
+    "vehicle_trajectory.jsonl": 94
+  },
+  "source_manifest_bytes": 13386980,
+  "source_manifest_files": 37,
+  "source_manifest_sha256": "3f0b9080464303432b5497eb1f9baacc505eab282934ea19fa921811d3267a25",
+  "source_manifest_verified_local": true,
+  "status": "failed",
+  "wall_elapsed_s": 64.75109970199992
+}

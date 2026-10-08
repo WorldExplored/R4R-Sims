@@ -1,0 +1,34 @@
+{
+  "artifact_local": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T220223Z-b-eddeea80",
+  "artifact_remote": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220223Z-b-eddeea80",
+  "asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+  "audit_repo_commit": {
+    "command": [
+      "git",
+      "-C",
+      "/root/R4R-Sims",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "e47b96d74646676fa02aca8ef2a2b996e87aac08"
+  },
+  "errors": [],
+  "exit_status": 0,
+  "mode": "b",
+  "run_id": "ue-20261008T220223Z-b-eddeea80",
+  "sample_counts": {
+    "actions.jsonl": 77,
+    "camera.jsonl": 9,
+    "gpu.jsonl": 52,
+    "state.jsonl": 76,
+    "vehicle_trajectory.jsonl": 76
+  },
+  "source_manifest_bytes": 14236647,
+  "source_manifest_files": 33,
+  "source_manifest_sha256": "bbdaed6f24480297cfebb750c98bbd87588b211f1078afc5d069d78cd971a6aa",
+  "source_manifest_verified_local": true,
+  "status": "completed",
+  "wall_elapsed_s": 67.00366126801237
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_local": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215611Z-b-d415e2e7",
+  "artifact_remote": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215611Z-b-d415e2e7",
+  "asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+  "audit_repo_commit": null,
+  "errors": [
+    {
+      "error": "Collision; stopped",
+      "traceback": "Traceback (most recent call last):\n  File \"/root/R4R-Sims/simulators/unreal/audit.py\", line 346, in main_run\n    raise RuntimeError(\"Collision; stopped\")\nRuntimeError: Collision; stopped\n",
+      "wall_utc": "2026-10-08T21:56:19.924258+00:00"
+    }
+  ],
+  "exit_status": 1,
+  "mode": "b",
+  "run_id": "ue-20261008T215611Z-b-d415e2e7",
+  "sample_counts": {
+    "actions.jsonl": 1,
+    "camera.jsonl": 0,
+    "gpu.jsonl": 7,
+    "state.jsonl": 1,
+    "vehicle_trajectory.jsonl": 1
+  },
+  "source_manifest_bytes": 185222,
+  "source_manifest_files": 13,
+  "source_manifest_sha256": "a64bcbbcf4c639a00f386385f63a30a826d86080fc94c56420da3e701e1a4ba2",
+  "source_manifest_verified_local": true,
+  "status": "failed",
+  "wall_elapsed_s": 9.265772142010974
+}

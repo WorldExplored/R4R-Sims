@@ -30,8 +30,8 @@ def main():
     states = rows(run_dir / "state.jsonl")
     actions = rows(run_dir / "actions.jsonl")
     gpu = rows(run_dir / "gpu.jsonl")
-    if run["status"] != "completed" or not cameras:
-        raise SystemExit("Analysis needs a completed run with camera records")
+    if not cameras:
+        raise SystemExit("Analysis needs camera records")
     figures = run_dir / "figures"
     figures.mkdir(exist_ok=True)
     rgb_arrays, depth_arrays, frame_stats = [], [], []
@@ -75,8 +75,8 @@ def main():
         if n < len(depth_arrays):
             z = depth_arrays[n]
             bounded = np.where(np.isfinite(z) & (z > 0), z, np.nan)
-            ax.imshow(bounded, cmap="viridis", vmin=0, vmax=10)
-            ax.set_title(f"frame {cameras[n]['index']} · DepthPlanar m")
+            ax.imshow(bounded, cmap="viridis", vmin=0, vmax=50)
+            ax.set_title(f"frame {cameras[n]['index']} · DepthPlanar m (clipped 50)")
         ax.axis("off")
     fig.savefig(figures / "depth-grid.png", dpi=140)
     plt.close(fig)

@@ -1,0 +1,48 @@
+{
+  "analysis": {
+    "camera_capture_rate_hz_over_span": 0.17092708466036796,
+    "capture_interval_wall_s_median": 5.279801729004248,
+    "capture_rpc_wall_s_median": 3.1591551500023343,
+    "command_interval_wall_s_median": 0.212991084496025,
+    "command_interval_wall_s_p95": 3.344480685760209,
+    "command_rate_hz_from_median_interval": 4.695032199897845,
+    "command_rate_hz_over_action_span": 2.0360251460467156,
+    "frames_checked": 7,
+    "new_collision_recorded": false,
+    "peak_gpu_memory_used_mib_samples": 863.0,
+    "run_id": "ue-20261008T215758Z-b-33710b89",
+    "simulation_elapsed_s_first_to_last_state": 33.609716992,
+    "states": 74,
+    "status": "completed",
+    "timing_note": "RPC and sampling intervals are not renderer FPS; no synchronized GPU render timing",
+    "velocity_commands": 69,
+    "waypoint_nearest_recorded_state_error_m": [
+      0.18913441712908763,
+      0.15583409265037296,
+      0.2321027185163121,
+      0.1969745089374049,
+      0.18913441712908763
+    ]
+  },
+  "artifact_local": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215758Z-b-33710b89",
+  "artifact_remote": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215758Z-b-33710b89",
+  "asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+  "audit_repo_commit": null,
+  "errors": [],
+  "exit_status": 0,
+  "mode": "b",
+  "run_id": "ue-20261008T215758Z-b-33710b89",
+  "sample_counts": {
+    "actions.jsonl": 71,
+    "camera.jsonl": 7,
+    "gpu.jsonl": 47,
+    "state.jsonl": 74,
+    "vehicle_trajectory.jsonl": 74
+  },
+  "source_manifest_bytes": 11825781,
+  "source_manifest_files": 37,
+  "source_manifest_sha256": "35d6ac68061d8ba96b2baed1ecc9772945128ec88eb16eb4daf250458058e689",
+  "source_manifest_verified_local": true,
+  "status": "completed",
+  "wall_elapsed_s": 60.77908411499811
+}

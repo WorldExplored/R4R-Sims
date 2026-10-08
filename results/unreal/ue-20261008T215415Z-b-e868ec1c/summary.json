@@ -1,0 +1,12 @@
+{
+  "artifact_local": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215415Z-b-e868ec1c",
+  "artifact_remote": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215415Z-b-e868ec1c",
+  "errors": [
+    "port 41451 occupied by prior game process; local supervisor.log only; no remote source manifest"
+  ],
+  "exit_status": 1,
+  "mode": "b",
+  "run_id": "ue-20261008T215415Z-b-e868ec1c",
+  "source_manifest_verified_local": false,
+  "status": "preflight_failed_before_run_directory"
+}

@@ -1,0 +1,23 @@
+{
+  "artifact_local": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215142Z-a-f0246d36",
+  "artifact_remote": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215142Z-a-f0246d36",
+  "asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+  "audit_repo_commit": null,
+  "errors": [
+    {
+      "error": "supervisor terminated child",
+      "exit_status": -15,
+      "wall_utc": "2026-10-08T21:52:50.954641+00:00"
+    }
+  ],
+  "exit_status": -15,
+  "mode": "a",
+  "run_id": "ue-20261008T215142Z-a-f0246d36",
+  "sample_counts": null,
+  "source_manifest_bytes": 170927,
+  "source_manifest_files": 8,
+  "source_manifest_sha256": "aa3a9a1c1e05bb0a025f47c5884afe5fe9ab71e2b596502f4d73c10b10b4382e",
+  "source_manifest_verified_local": true,
+  "status": "failed",
+  "wall_elapsed_s": null
+}
