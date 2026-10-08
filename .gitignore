@@ -1,0 +1,42 @@
+# Secrets and local machine settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Python and editors
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.idea/
+.vscode/
+
+# Downloaded dependencies and generated builds
+third_party/
+downloads/
+UnrealEngine/
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+build/
+dist/
+
+# Large local artifacts; preserve links and metadata under results/
+/artifacts/*
+!/artifacts/README.md
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.pt
+*.pth
+*.ckpt
+*.zip
+*.tar
+*.tar.gz
