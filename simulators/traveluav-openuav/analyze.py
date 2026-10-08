@@ -40,7 +40,17 @@ def main():
    try:rows(f)
    except Exception as e:errors.append(f'{f}: {e}')
  state=rows(run/'actual_vehicle.jsonl');camera=rows(run/'actual_camera.jsonl');ref=rows(run/'reference_route.jsonl')
+ if state and 'state' in state[0]:
+  first=state[0]['wall_monotonic_s']
+  state=[dict(s,position_ned_m=s['state']['position'],orientation_xyzw=s['state']['orientation'],wall_s=s['wall_monotonic_s']-first,sim_timestamp_ns=s['state']['timestamp'],collision=s['state']['collision']['has_collided']) for s in state]
+ if not camera:
+  raw=rows(run/'camera_observations.jsonl');ids=sorted(set(c['sample_id'] for c in raw))
+  camera=[dict(c,index=ids.index(c['sample_id']),render_rpc_s=c['rpc_wall_s'],camera_rgb_depth_timestamp_spread_ns=c['timestamp_spread_ns']) for c in raw]
  metrics={'validation_errors':errors,'decoded_files':len(stats),'depth_semantics':'DepthPerspective ray distance metres; raw floats retained; previews clamp 0..100 m only','files':stats}
+ if run.name.split('-')[-2]=='a':
+  pngs=list((capture/'frames').rglob('*.png'));depths=list((capture/'frames').rglob('*.npy'))
+  metrics['expected_a_outputs']={'rgb':30,'depth':30,'actual_rgb':len(pngs),'actual_depth':len(depths),'count_matches':len(pngs)==30 and len(depths)==30}
+  if len(pngs)!=30 or len(depths)!=30:errors.append('A expected 30 RGB and 30 metric depth arrays')
  if camera:
   metrics['camera_dimensions']=sorted(set((c['height'],c['width']) for c in camera));metrics['timestamp_spread_ns_by_sample']={str(c['index']):c['camera_rgb_depth_timestamp_spread_ns'] for c in camera}
   lat={c['index']:c['render_rpc_s'] for c in camera};steady=[v for k,v in lat.items() if k>0]

@@ -8,3 +8,6 @@ UPSTREAM="$ARTIFACTS/dependencies/upstream"
 ENV_AB="$ARTIFACTS/dependencies/env-ab"
 ENV_C="$ARTIFACTS/dependencies/env-c"
 export PYTHONPATH="$ROOT:$ROOT/compat${PYTHONPATH:+:$PYTHONPATH}"
+
+export MPLCONFIGDIR="$ARTIFACTS/dependencies/cache/matplotlib"
+mkdir -p "$MPLCONFIGDIR"

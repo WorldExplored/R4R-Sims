@@ -21,7 +21,7 @@ def capture_images(client,responses,cameras,rpc_s):
   rgb_path=folder/f'{name}.png';depth_path=folder/f'{name}_depth_m.npy'
   Image.fromarray(np.frombuffer(rgb.image_data_uint8,np.uint8).reshape(rgb.height,rgb.width,3)).save(rgb_path)
   np.save(depth_path,np.asarray(depth.image_data_float,np.float32).reshape(depth.height,depth.width))
-  emit('camera_observations.jsonl',{'sample_id':stamp,'camera':name,'wall_utc_ns':time.time_ns(),
+  emit('camera_observations.jsonl',{'sample_id':stamp,'camera_batch_views':len(cameras),'camera':name,'wall_utc_ns':time.time_ns(),
     'image_timestamp_ns':int(rgb.time_stamp),'depth_timestamp_ns':int(depth.time_stamp),
     'timestamp_spread_ns':max(times)-min(times),'position_ned_m':v(rgb.camera_position),
     'orientation_xyzw':q(rgb.camera_orientation),'fov_deg':float(info.fov),
@@ -87,3 +87,15 @@ def placement(model):
       "parameter_count":sum(p.numel() for p in params),"cuda_allocated_bytes":torch.cuda.memory_allocated(),
       "cuda_reserved_bytes":torch.cuda.memory_reserved(),"cuda_max_allocated_bytes":torch.cuda.max_memory_allocated(),
       "scope":"this Python process; allocator excludes UE and non-PyTorch allocations"})
+
+
+def verify_lora(model,path):
+    import torch
+    from peft import get_peft_model_state_dict
+    actual=get_peft_model_state_dict(model)
+    saved=torch.load(Path(path)/"adapter_model.bin",map_location="cpu")
+    missing=sorted(set(saved)-set(actual));different=[]
+    for key,tensor in saved.items():
+        if key in actual and not torch.equal(actual[key].detach().cpu(),tensor.to(dtype=actual[key].dtype)):different.append(key)
+    emit("checkpoint_loads.jsonl",{"label":"LoRA exact tensor comparison after dtype conversion","saved_keys":len(saved),"actual_keys":len(actual),"missing_keys":missing,"different_keys":different})
+    if missing or different:raise RuntimeError("Released LoRA tensor verification failed")

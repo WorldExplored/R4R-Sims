@@ -31,6 +31,13 @@ run="$RESULTS/$run_id"
 mkdir -p "$run" "$capture/policy"
 cp "$ASSETS/metadata/selected_seen_one.json" "$run/selected_seen_one.json"
 cp "$ASSETS/dataset/$EPISODE_REL" "$run/episode.json"
+python - "$run" <<'REF'
+import json,sys
+from pathlib import Path
+p=Path(sys.argv[1]);episode=json.loads((p/'episode.json').read_text())
+with (p/'reference_route.jsonl').open('w') as f:
+ for i,pose in enumerate(episode['trajectory_raw_detailed']):f.write(json.dumps({'index':i,'pose':pose})+'\n')
+REF
 cp "$ASSETS/runtime/config-rewrites.json" "$run/config-rewrites.json"
 cp "$POLICY/config.json" "$run/model-runtime-config.json"
 cp "$ASSETS/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/mark.json" "$run/mark.json"
@@ -65,6 +72,7 @@ p.write_text(json.dumps({'run_id':p.parent.name,'level':'C','status':'starting',
     'gpu_timing':'torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency',
     'camera_extrinsics':'eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations'},indent=2)+'\n')
 PY
+export R4R_CAPTURE_DIR="$capture" R4R_RECORD_DIR="$run" R4R_BERT_PATH="$ASSETS/models/bert-base-uncased"
 server_pid='' monitor_pid='' status=1
 cleanup() {
   if [[ -n "$monitor_pid" ]]; then kill "$monitor_pid" 2>/dev/null || true; wait "$monitor_pid" 2>/dev/null || true; fi
@@ -113,6 +121,7 @@ from pathlib import Path
 p=Path(sys.argv[1])/'run.json';d=json.loads(p.read_text());d['exit_status']=int(sys.argv[2]);d['status']='complete' if d['exit_status']==0 else 'failed';d['ended_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();p.write_text(json.dumps(d,indent=2)+'\n')
 PY
 cleanup
+cp "$UPSTREAM/airsim_plugin/settings/30001/settings.json" "$run/settings.json" 2>/dev/null || true
 trap - EXIT INT TERM
 (cd "$run" && find . -type f ! -name output-sha256.txt -print0 | sort -z | xargs -0 sha256sum > output-sha256.txt)
 echo "$run"

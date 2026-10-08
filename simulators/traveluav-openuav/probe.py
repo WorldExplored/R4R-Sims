@@ -30,11 +30,12 @@ def record(client, out, frames, index, mode, command, wall_start):
     state = client.getMultirotorState()
     imu = client.getImuData()
     collision = client.simGetCollisionInfo()
+    ground_truth = client.simGetGroundTruthKinematics()
     pose = state.kinematics_estimated
     record = {
         "index": index, "mode": mode, "wall_s": time.monotonic() - wall_start,
         "sim_timestamp_ns": int(state.timestamp),
-        "position_ned_m": values(pose.position),
+        "position_ned_m": values(ground_truth.position), "estimated_position_ned_m": values(pose.position),
         "orientation_xyzw": quat(pose.orientation),
         "linear_velocity_ned_mps": values(pose.linear_velocity),
         "angular_velocity_radps": values(pose.angular_velocity),
