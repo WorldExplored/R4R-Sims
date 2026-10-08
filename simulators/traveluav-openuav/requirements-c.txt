@@ -2,8 +2,7 @@
 # No training, UI, cloud API or flash-attention packages are used by eval.py.
 numpy==1.26.3
 pillow==10.2.0
-msgpack-python==0.5.6
-msgpack-rpc-python==0.4
+msgpack==1.1.0
 tornado==4.5.3
 huggingface-hub==0.27.1
 transformers==4.31.0
