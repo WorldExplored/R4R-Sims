@@ -83,7 +83,7 @@ data={'run_id':run.name,'status':'starting','level':mode.name.upper(),
       'upstream_modifications':'upstream.patch and upstream-staged.patch',
       'scene_executable':str(scene),'episode':str(episode),'policy_weights':'none',
       'seed':100,'camera_frame':'AirSim NED; body camera offsets in settings.json',
-      'sampling':'A: each of first six reference poses; B: 0.2 s wall interval, at most 31 samples; absent samples are missing data',
+      'sampling':'A: each of first six reference poses; B: dedicated client, requested 0.2 s absolute wall cadence until RPC completion/error or 90 s outer timeout; images independent at batch plus 1 s; absent samples are missing data',
       'timeout_s':90,'gpu_timing':'RPC wall latency only; no CUDA events in simulator',
       'missing_data':[]}
 (run/'run.json').write_text(json.dumps(data,indent=2)+'\n')

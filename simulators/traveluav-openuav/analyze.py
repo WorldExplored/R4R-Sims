@@ -56,9 +56,10 @@ def main():
   lat={c['index']:c['render_rpc_s'] for c in camera};steady=[v for k,v in lat.items() if k>0]
   metrics['rgb_depth_rpc_wall_s']={'first_batch':lat.get(0),'steady_count':len(steady),'steady_mean':float(np.mean(steady)) if steady else None,'steady_min':min(steady) if steady else None,'steady_max':max(steady) if steady else None,'meaning':'five-camera RGB+depth RPC plus renderer/transport; excludes client file writes; not pure GPU render time'}
  if state:
-  pts=np.array([s['position_ned_m'] for s in state]);metrics['state_sample_count']=len(pts);metrics['endpoint_displacement_m']=float(np.linalg.norm(pts[-1]-pts[0]));metrics['achieved_path_length_m']=float(np.linalg.norm(np.diff(pts,axis=0),axis=1).sum())
+  pts=np.array([s['position_ned_m'] for s in state]);metrics['state_sample_count']=len(pts);metrics['endpoint_displacement_m']=float(np.linalg.norm(pts[-1]-pts[0]));metrics['path_length_interpretation']='sampled lower bound; contacts are sampled evidence';metrics['achieved_path_length_m']=float(np.linalg.norm(np.diff(pts,axis=0),axis=1).sum())
   wall=np.array([s['wall_s'] for s in state]);sim=np.array([s['sim_timestamp_ns'] for s in state],np.float64)/1e9
   metrics.update(state_wall_span_s=float(wall[-1]-wall[0]),simulation_span_s=float(sim[-1]-sim[0]),requested_sleep_cadence_s=0.2,achieved_wall_interval_mean_s=float(np.diff(wall).mean()) if len(wall)>1 else None,simulator_contact_count=sum(s['collision'] for s in state))
+  if len(wall)>1:metrics['achieved_wall_intervals_s']={'count':len(wall)-1,'min':float(np.diff(wall).min()),'max':float(np.diff(wall).max()),'median':float(np.median(np.diff(wall)))}
   if ref:
    path=np.array([r['pose']['position'] for r in ref]);err=path_error(pts,path)
    metrics.update(final_endpoint_error_m=float(np.linalg.norm(pts[-1]-path[-1])),point_to_requested_polyline_rmse_m=float(np.sqrt(np.mean(err*err))),point_to_requested_polyline_max_m=float(err.max()),error_weighting='one equal weight per achieved state sample; purely geometric, no timed-reference alignment')

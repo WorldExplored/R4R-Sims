@@ -4,6 +4,8 @@ import argparse
 import json
 import math
 import time
+import threading
+import signal
 from pathlib import Path
 
 import airsim
@@ -26,7 +28,7 @@ def write_jsonl(path, item):
         out.write(json.dumps(item, sort_keys=True) + "\n")
 
 
-def record(client, out, frames, index, mode, command, wall_start):
+def record_state(client, out, index, mode, command, wall_start):
     state = client.getMultirotorState()
     imu = client.getImuData()
     collision = client.simGetCollisionInfo()
@@ -45,12 +47,32 @@ def record(client, out, frames, index, mode, command, wall_start):
         "imu_linear_acceleration_mps2": values(imu.linear_acceleration),
     }
     write_jsonl(out / "actual_vehicle.jsonl", record)
+    return record
+
+
+def record_images(client, out, frames, index, wall_start):
     requests = []
     for name in CAMERAS:
         requests += [airsim.ImageRequest(name, airsim.ImageType.Scene, False, False),
                      airsim.ImageRequest(name, airsim.ImageType.DepthPerspective, True, False)]
     start = time.perf_counter()
-    responses = client.simGetImages(requests)
+    # Preserve one actual wire payload for old/new decoder equivalence checks.
+    from msgpackrpc.transport.tcp import BaseSocket
+    original_read = BaseSocket.on_read
+    capture_thread = threading.get_ident()
+    chunks = []
+    def capture_read(sock, data):
+        if threading.get_ident() == capture_thread:
+            chunks.append(data)
+        return original_read(sock, data)
+    if index == 0:
+        BaseSocket.on_read = capture_read
+    try:
+        responses = client.simGetImages(requests)
+    finally:
+        BaseSocket.on_read = original_read
+    if chunks:
+        (frames.parent / "image_rpc_payload.msgpack").write_bytes(b"".join(chunks))
     render_rpc_s = time.perf_counter() - start
     if len(responses) != len(requests):
         raise RuntimeError(f"received {len(responses)} of {len(requests)} camera responses")
@@ -81,7 +103,6 @@ def record(client, out, frames, index, mode, command, wall_start):
             "projection_matrix": info.proj_mat.matrix,
             "camera_rgb_depth_timestamp_spread_ns": max(r.time_stamp for r in responses)-min(r.time_stamp for r in responses), "depth_unit": "meters", "frame": "AirSim NED",
         })
-    return record
 
 
 def main():
@@ -109,6 +130,7 @@ def main():
     state = airsim.KinematicsState()
     state.position = airsim.Vector3r(*initial["position"])
     state.orientation = airsim.Quaternionr(*initial["orientation"])
+    if args.mode == "a": client.simPause(True)
     client.simSetKinematics(state, ignore_collision=True)
     write_jsonl(out/"events.jsonl", {"event":"initial_reset", "wall_s":time.monotonic()-wall_start,"target":initial})
     if args.mode == "a":
@@ -120,7 +142,8 @@ def main():
             client.simContinueForFrames(1)
             client.simPause(True)
             write_jsonl(out / "actions.jsonl", {"index": i, "type": "set_kinematics", "target": target})
-            record(client, out, args.frames_dir, i, "a", "set_kinematics", wall_start)
+            record_state(client, out, i, "a", "set_kinematics", wall_start)
+            record_images(client, out, args.frames_dir, i, wall_start)
     else:
         client.enableApiControl(True)
         client.armDisarm(True)
@@ -128,28 +151,72 @@ def main():
         path = [airsim.Vector3r(*item["position"]) for item in route[1:]]
         write_jsonl(out / "actions.jsonl", {"index": 0, "type": "moveOnPathAsync", "velocity_mps": 1,
                                               "waypoints_ned_m": [item["position"] for item in route[1:]]})
-        future = client.moveOnPathAsync(path, velocity=1, drivetrain=airsim.DrivetrainType.ForwardOnly,
-                                        yaw_mode=airsim.YawMode(is_rate=False), lookahead=3, adaptive_lookahead=1)
-        try:
-            for i in range(31):
-                current = record(client, out, args.frames_dir, i, "b", "moveOnPathAsync", wall_start)
-                if math.dist(current["position_ned_m"], route[-1]["position"]) < 2:
-                    break
-                time.sleep(0.2)
-        finally:
-            client.simPause(True)
-        write_jsonl(out/"events.jsonl", {"event":"pause", "wall_s":time.monotonic()-wall_start})
-        # The pinned msgpack Future completes while subsequent RPC calls pump its loop.
-        # Inspect its flag without an unbounded join or a second loop-driving thread.
-        future_completed = bool(future._set_flag)
-        write_jsonl(out/"events.jsonl", {"event":"async_status", "completed":future_completed,
-            "result":future.result if future_completed else None,
-            "error":str(future.error) if future.error else None})
-    ending = {"reason": "pose_replay_complete" if args.mode == "a" else ("endpoint_within_2m" if math.dist(current["position_ned_m"],route[-1]["position"]) < 2 else "sample_budget"),
+        done = threading.Event()
+        sampling_stop = threading.Event()
+        outcome = {"completed": False, "result": None, "error": None}
+        counts = {"states": 0, "images": 0, "missed_deadlines": 0}
+        def interrupted(signum, frame):
+            outcome["error"] = "outer probe timeout signal " + str(signum)
+            done.set()
+        signal.signal(signal.SIGTERM, interrupted)
+        def fly():
+            control = airsim.MultirotorClient(ip="127.0.0.1", port=args.port, timeout_value=90)
+            try:
+                future = control.moveOnPathAsync(path, velocity=1, drivetrain=airsim.DrivetrainType.ForwardOnly,
+                    yaw_mode=airsim.YawMode(is_rate=False), lookahead=3, adaptive_lookahead=1)
+                outcome["result"] = future.get()
+                outcome["completed"] = True
+            except Exception as exc:
+                outcome["error"] = repr(exc)
+            finally:
+                write_jsonl(out/"events.jsonl", dict(event="async_status", wall_s=time.monotonic()-wall_start, **outcome))
+                done.set()
+        def sample_states():
+            sensors = airsim.MultirotorClient(ip="127.0.0.1", port=args.port, timeout_value=2)
+            deadline = time.monotonic()
+            while not sampling_stop.is_set():
+                try:
+                    record_state(sensors, out, counts["states"], "b", "moveOnPathAsync", wall_start)
+                    counts["states"] += 1
+                except Exception as exc:
+                    write_jsonl(out/"events.jsonl", {"event":"state_sampling_error", "error":repr(exc), "wall_s":time.monotonic()-wall_start})
+                deadline += 0.2
+                if deadline < time.monotonic():
+                    missed = int((time.monotonic()-deadline)//0.2)+1
+                    counts["missed_deadlines"] += missed
+                    deadline += missed*0.2
+                sampling_stop.wait(max(0,deadline-time.monotonic()))
+        def sample_images():
+            images = airsim.MultirotorClient(ip="127.0.0.1", port=args.port, timeout_value=10)
+            while not sampling_stop.is_set():
+                try:
+                    record_images(images, out, args.frames_dir, counts["images"], wall_start)
+                    counts["images"] += 1
+                except Exception as exc:
+                    write_jsonl(out/"events.jsonl", {"event":"image_sampling_error", "error":repr(exc), "wall_s":time.monotonic()-wall_start})
+                sampling_stop.wait(1.0)
+        workers = [threading.Thread(target=fn, daemon=True) for fn in (sample_states,sample_images,fly)]
+        for worker in workers: worker.start()
+        done.wait()
+        sampling_stop.set()
+        workers[0].join(3)
+        # Final measured state precedes pause, even if the path RPC failed/timed out.
+        current = record_state(client, out, counts["states"], "b", "final_before_pause", wall_start)
+        client.simPause(True)
+        write_jsonl(out/"events.jsonl", {"event":"pause_after_final_state", "wall_s":time.monotonic()-wall_start})
+        workers[1].join(12)
+        future_completed = outcome["completed"]
+        i = counts["states"]
+        write_jsonl(out/"events.jsonl", {"event":"sampling_summary", "requested_state_cadence_s":0.2,
+            "image_wait_after_batch_s":1.0, "missed_state_deadlines":counts["missed_deadlines"],
+            "separate_clients":True, "state_samples":counts["states"]+1, "image_batches":counts["images"]})
+    ending = {"reason": "pose_replay_complete" if args.mode == "a" else ("rpc_completed" if future_completed else "rpc_error_or_timeout"),
               "samples": i+1, "wall_s": time.monotonic()-wall_start,
               "async_completion_observed": future_completed if args.mode == "b" else None}
     (out/"termination.json").write_text(json.dumps(ending,indent=2)+"\n")
     print(json.dumps({"mode": args.mode, "samples": i + 1, "output": str(out)}))
+    if args.mode == "b" and (not future_completed or outcome["error"]):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

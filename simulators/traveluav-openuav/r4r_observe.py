@@ -75,7 +75,24 @@ def input_contract(inputs,targets,rotations):
       "privileged_input":"known target orients history frame; GT assistant retained"})
 
 def load_result(label,module,weights,result):
-    known=set(module.state_dict());matched=sorted(known&set(weights))
+    import torch
+    actual = module.state_dict()
+    known=set(actual);matched=sorted(known&set(weights))
+    details=[];different=[];shape_mismatches=[]
+    for key,tensor in weights.items():
+        entry={"key":key,"checkpoint_shape":list(tensor.shape),"checkpoint_dtype":str(tensor.dtype),"matched":key in actual}
+        if key in actual:
+            dest=actual[key]
+            entry.update(parameter_shape=list(dest.shape),parameter_dtype=str(dest.dtype),parameter_device=str(dest.device))
+            if tensor.shape != dest.shape:
+                shape_mismatches.append(key);entry["equal_after_dtype_conversion"]=False
+            else:
+                entry["equal_after_dtype_conversion"]=torch.equal(dest.detach().cpu(),tensor.to(dtype=dest.dtype))
+                if not entry["equal_after_dtype_conversion"]:different.append(key)
+        details.append(entry)
+    emit("checkpoint_tensor_verification.jsonl",{"label":label,"tensors":details,"different_keys":different,"shape_mismatches":shape_mismatches,
+       "comparison":"exact equality after upstream destination dtype conversion; no name remapping"})
+    if different or shape_mismatches:raise RuntimeError("Checkpoint tensor delivery failed for "+label)
     emit("checkpoint_loads.jsonl",{"label":label,"checkpoint_key_count":len(weights),"matched_key_count":len(matched),
       "matched_keys":matched,"missing_keys":list(result.missing_keys),"unexpected_keys":list(result.unexpected_keys)})
     allowed_unused = {"label_enc.weight", "bert.embeddings.position_ids"} if label == "detector" else set()
