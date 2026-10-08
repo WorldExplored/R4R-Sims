@@ -9,10 +9,11 @@ run="$RESULTS/$run_id"; mkdir -p "$run"
 exec > >(tee -a "$run/console.log") 2>&1
 status=1
 finish() {
+  status=$?
   printf '{"run_id":"%s","level":"setup-%s","exit_status":%s,"ended_utc":"%s"}\n' "$run_id" "$level" "$status" "$(date -u +%FT%TZ)" > "$run/run.json"
 }
 trap finish EXIT
-logged() { printf '%q ' "$@" >> "$run/commands.log"; printf '\n' >> "$run/commands.log"; "$@"; }
+logged() { printf '%q ' "$@" >> "$run/commands.log"; printf '\n' >> "$run/commands.log"; if "$@"; then rc=0; else rc=$?; fi; printf 'exit_status=%s\n' "$rc" >> "$run/commands.log"; return "$rc"; }
 if [[ ! -d "$UPSTREAM/.git" ]]; then logged git clone https://github.com/prince687028/TravelUAV.git "$UPSTREAM"; logged git -C "$UPSTREAM" checkout --detach 5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6; fi
 [[ $(git -C "$UPSTREAM" rev-parse HEAD) == 5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6 ]]
 git -C "$UPSTREAM" status --short > "$run/upstream-status.txt"
