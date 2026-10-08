@@ -1,0 +1,22 @@
+{
+  "run_id": "20261008T221247Z-preflight",
+  "kind": "preflight",
+  "status": "host_verified_renderer_pending",
+  "date": "2026-10-08",
+  "branch": "audit/traveluav-openuav-20261008T2215Z",
+  "shared_commit_received": "22df0f220da5dbd206064ce3a6c1ccd9ab744b15",
+  "upstream_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+  "gpu": "NVIDIA RTX A6000 x1; 49140 MiB",
+  "cpu_vcpu": 6,
+  "ram_gib_approx": 47,
+  "disk_gib_approx": 251,
+  "initial_free_gib_approx": 227,
+  "driver": "580.126.09",
+  "os": "Ubuntu 22.04.5 x86_64",
+  "gpu_displayed_price_usd_per_hour": 0.54,
+  "full_instance_price": "unknown",
+  "storage_price": "unknown",
+  "host_fingerprint_provider_verification": "unavailable; normal TOFU then strict checking; server public fingerprint corroborated",
+  "remote_checkout": "/workspace/R4R-Sims",
+  "local_worktree": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z"
+}

@@ -1,0 +1,1 @@
+uname -a; cat /etc/os-release; lscpu; free -h; df -h /workspace; nvidia-smi -q; vulkaninfo --summary; gh auth status
