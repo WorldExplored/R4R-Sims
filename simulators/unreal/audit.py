@@ -278,17 +278,17 @@ def main_run(args):
         write_json(run_dir / "owned-process.json", {"pid": game.pid, "argv": exe_cmd})
         threading.Thread(target=pump, args=(game.stdout, console, "UE"), daemon=True).start()
         threading.Thread(target=gpu_samples, args=(stop, run_dir / "gpu.jsonl"), daemon=True).start()
-        client = airsim.MultirotorClient(timeout_value=5)
         while time.perf_counter() < min(deadline, t0 + 60):
             if game.poll() is not None:
                 raise RuntimeError("Packaged game exited before RPC connection: " + str(game.returncode))
-            try:
-                if client.ping():
-                    break
-            except Exception:
-                time.sleep(1)
+            if not port_free():
+                break
+            time.sleep(0.25)
         else:
-            raise TimeoutError("AirSim RPC did not connect in 60 s")
+            raise TimeoutError("AirSim RPC socket did not open in 60 s")
+        client = airsim.MultirotorClient(timeout_value=5)
+        if not client.ping():
+            raise RuntimeError("AirSim RPC ping failed after socket opened")
         metadata["server_version"] = client.getServerVersion()
         metadata["status"] = "running"
         write_json(run_dir / "run.json", metadata)
