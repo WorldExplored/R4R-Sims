@@ -1,8 +1,6 @@
-diff --git a/src/model_wrapper/travel_llm.py b/src/model_wrapper/travel_llm.py
-index cab236e..822261c 100644
 --- a/src/model_wrapper/travel_llm.py
 +++ b/src/model_wrapper/travel_llm.py
-@@ -64,6 +64,8 @@ class TravelModelWrapper(BaseModelWrapper):
+@@ -64,6 +64,8 @@
      def run(self, inputs, episodes, rot_to_targets):
          waypoints_llm_new = self.run_llm_model(inputs)
          refined_waypoints = self.run_traj_model(episodes, waypoints_llm_new, rot_to_targets)
@@ -11,11 +9,17 @@ index cab236e..822261c 100644
          return refined_waypoints
      
      def predict_done(self, episodes, object_infos):
-diff --git a/src/vlnce_src/eval.py b/src/vlnce_src/eval.py
-index 360c7e3..72502ec 100644
 --- a/src/vlnce_src/eval.py
 +++ b/src/vlnce_src/eval.py
-@@ -20,7 +20,7 @@ from src.model_wrapper.base_model import BaseModelWrapper
+@@ -5,6 +5,7 @@
+ import json
+ import shutil
+ import random
++import r4r_observe
+ 
+ import cv2
+ import numpy as np
+@@ -20,7 +21,7 @@
  from src.common.param import args, model_args, data_args
  from env_uav import AirVLNENV
  from assist import Assist
@@ -24,41 +28,68 @@ index 360c7e3..72502ec 100644
  
  def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, eval_save_dir):
      model_wrapper.eval()
-@@ -47,12 +47,37 @@ def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, e
+@@ -40,21 +41,36 @@
+             
+             inputs, rot_to_targets = model_wrapper.prepare_inputs(batch_state.episodes, batch_state.target_positions)
+ 
++            assist_notices = None
+             for t in range(int(args.maxWaypoints) + 1):
+                 logger.info('Step: {} \t Completed: {} / {}'.format(t, int(eval_env.index_data)-int(eval_env.batch_size), end_iter))
+ 
+                 is_terminate = batch_state.check_batch_termination(t)
                  if is_terminate:
++                    r4r_observe.terminate(batch_state, t, int(args.maxWaypoints))
                      break
                  
++                torch.cuda.synchronize()
 +                model_start = time.perf_counter()
                  refined_waypoints = model_wrapper.run(inputs=inputs, episodes=batch_state.episodes, rot_to_targets=rot_to_targets)
 +                torch.cuda.synchronize()
 +                model_latency_s = time.perf_counter() - model_start
++                r4r_observe.trace_decision(batch_state, t, model_wrapper, model_latency_s, assist_notices)
                  eval_env.makeActions(refined_waypoints)
                  outputs = eval_env.get_obs()
                  batch_state.update_from_env_output(outputs)
                  
++                torch.cuda.synchronize()
++                dino_start = time.perf_counter()
                  batch_state.predict_dones = model_wrapper.predict_done(batch_state.episodes, batch_state.object_infos)
-+                for i, episode_id in enumerate(batch_state.ori_data_dirs):
-+                    if i in batch_state.envs_to_pause:
-+                        continue
-+                    trace = {"step": t, "episode_id": episode_id, "instruction": batch_state.episodes[i][-1]["instruction"],
-+                             "coarse_waypoint": model_wrapper.last_coarse_waypoints[i].tolist(),
-+                             "refined_waypoints": model_wrapper.last_refined_waypoints[i].tolist(),
-+                             "predicted_stop": bool(batch_state.predict_dones[i]),
-+                             "model_latency_s": model_latency_s, "wall_utc": time.time()}
-+                    with open(os.path.join(eval_save_dir, "policy_trace.jsonl"), "a") as trace_file:
-+                        trace_file.write(json.dumps(trace) + "\n")
-+                    save_to_dataset_eval(batch_state.episodes[i],
-+                                         os.path.join(eval_save_dir, "in_progress", os.path.basename(episode_id)),
-+                                         episode_id)
-+                    airsim_client = eval_env.simulator_tool.airsim_clients[0][i]
-+                    for camera_name in ("FrontCamera", "LeftCamera", "RightCamera", "RearCamera", "DownCamera"):
-+                        info = airsim_client.simGetCameraInfo(camera_name)
-+                        camera_trace = {"step": t, "episode_id": episode_id, "camera": camera_name,
-+                                        "wall_utc": time.time(), "fov_deg": float(info.fov),
-+                                        "position_ned_m": list(info.pose.position),
-+                                        "orientation_xyzw": list(info.pose.orientation)}
-+                        with open(os.path.join(eval_save_dir, "camera_poses.jsonl"), "a") as camera_file:
-+                            camera_file.write(json.dumps(camera_trace) + "\n")
                  
++                torch.cuda.synchronize()
++                dino_latency_s = time.perf_counter() - dino_start
                  batch_state.update_metric()
++                r4r_observe.trace_outcome(batch_state, t, dino_latency_s)
++                for i, episode_id in enumerate(batch_state.ori_data_dirs):
++                    if i not in batch_state.envs_to_pause:
++                        save_to_dataset_eval(batch_state.episodes[i], os.path.join(os.environ["R4R_CAPTURE_DIR"], "in_progress", os.path.basename(episode_id)), episode_id)
                  
+                 assist_notices = batch_state.get_assist_notices()
+                 inputs, _ = model_wrapper.prepare_inputs(batch_state.episodes, batch_state.target_positions, assist_notices)
+--- a/airsim_plugin/AirVLNSimulatorClientTool.py
++++ b/airsim_plugin/AirVLNSimulatorClientTool.py
+@@ -2,6 +2,7 @@
+ import multiprocessing
+ import msgpackrpc
+ import time
++import r4r_observe
+ import airsim
+ import threading
+ import random
+@@ -485,7 +486,9 @@
+                     for camera_name in cameras:
+                         ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.Scene, pixels_as_float=False, compress=False))
+                         ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.DepthPerspective, pixels_as_float=True, compress=False))
++                    rpc_start = time.perf_counter()
+                     image_datas = airsim_client.simGetImages(requests=ImageRequest)
++                    rpc_wall_s = time.perf_counter() - rpc_start
+                     images, depth_images = [], []
+                     for idx, camera_name in enumerate(cameras):
+                         rgb_resp = image_datas[2 * idx]
+@@ -495,6 +498,7 @@
+                         depth_image = (np.clip(depth_img_in_meters, 0, 100) / 100 * 255).astype(np.uint8)
+                         images.append(image)
+                         depth_images.append(depth_image)
++                    r4r_observe.capture_images(airsim_client, image_datas, cameras, rpc_wall_s)
+                     break
+                 except Exception as e:
+                     time_sleep_cnt += 1
