@@ -1,0 +1,43 @@
+{
+  "audit_date": "2026-10-08",
+  "engine": "Unreal Engine 5.5.4 Linux installed build",
+  "engine_archive_sha256": "e20acd77e6caad42ee1bf0df1cb4c5077ceb1350817cfdacb554f4a594710383",
+  "plugin_commit": "411f879985719ce69eaaf15d58152c551e2719b1",
+  "sample_ply_sha256": "59b33386c8f0509df11ffd6314284d67895bf20a15b17c5f7e5b6e58d6416506",
+  "host": "User-supplied Ubuntu 22.04.5 NVIDIA RTX A5000 24 GB, driver 580.178.04",
+  "accepted_splat_sensor_rgb": false,
+  "source_manifest_verified_locally": true,
+  "runs": [
+    {
+      "id": "ue-20261008T222943Z-s-8434c18c",
+      "status": "build_and_import_passed_capture_failed",
+      "evidence": "BuildPlugin exit 0 in 1 min 46 s; imported .uasset saved; Python SceneCapture getter AttributeError; editor process exit 0 did not reflect script failure"
+    },
+    {
+      "id": "ue-20261008T223559Z-s-8c7e26a7",
+      "status": "partial_png_failed_validation",
+      "evidence": "One 640x480 PNG byte stream exported without filename extension; RGB extrema 0..1; runner rejected missing .png"
+    },
+    {
+      "id": "ue-20261008T224031Z-s-fe9a3ea3",
+      "status": "eight_pngs_black_and_orientation_invalid",
+      "evidence": "Eight 640x480 PNGs decoded, RGB extrema 0..1; imported Niagara inactive after warmup; positional Python Rotator order gave unintended camera orientations; 0.912 s median inter-export interval is not useful render throughput"
+    },
+    {
+      "id": "ue-20261008T224552Z-s-control-10f8cdbd",
+      "status": "immediate_capture_control_black",
+      "evidence": "Saved map Niagara data interface points to imported PLY asset and actor becomes active; immediate cube and splat SceneCapture both RGB 0..1"
+    },
+    {
+      "id": "ue-20261008T224847Z-s-control-83b490d9",
+      "status": "ticked_basecolor_cube_visible_finalcolor_black",
+      "evidence": "Named yaw and 32 editor ticks: cube base-color RGB max 26; final-color cube and splat RGB 0..1"
+    },
+    {
+      "id": "ue-20261008T225105Z-s-control-e488bef0",
+      "status": "splat_camera_observation_failed",
+      "evidence": "40 ticks with stronger light: cube base-color RGB max 228; cube scene-color 0; splat base-color and scene-color 0, final-color 0..1"
+    }
+  ],
+  "scientific_limit": "No AirLab capture, held-out real images, outdoor reconstruction, usable splat sensor frames, depth, collision validation, pretrained learned policy or real-drone transfer result"
+}

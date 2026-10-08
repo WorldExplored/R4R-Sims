@@ -15,7 +15,7 @@ Working repository for AirLab's Real4Real simulator reproduction and evaluation 
 
 ## Current status
 
-This repository is initialized with structure and working conventions only. No experiments have been run here and no previous result files have been imported. Prior Real4Real work must be imported with its source, provenance, and limitations before it is treated as a repository result.
+The Unreal candidate has measured native camera replay and scripted closed-loop flight on the user-supplied A5000. Its UE5 Gaussian plugin built and imported an author sample, but final-color SceneCapture imagery failed validation. See [`docs/unreal/handoff.md`](docs/unreal/handoff.md), [`results/unreal/`](results/unreal/) and the locally source-manifested raw artifacts. Other simulator candidates have separate evidence and status.
 
 The broader work includes simulator reproduction and evaluation of drone dynamics, camera behavior, and rendering as required by each confirmed experiment plan. This scaffold does not define a benchmark or claim that any candidate simulator has been validated. Record the actual scope in `docs/` before running a new evaluation. Do not introduce policy training unless explicitly requested.
 

@@ -48,9 +48,12 @@ def main():
     actor = unreal.EditorLevelLibrary.spawn_actor_from_object(asset, unreal.Vector(0, 0, 0))
     if actor is None:
         raise RuntimeError("Point cloud asset did not spawn a render actor")
+    niagara = actor.get_editor_property("niagara_component")
+    if niagara is None:
+        raise RuntimeError("Imported actor has no Niagara component")
     world = unreal.EditorLevelLibrary.get_editor_world()
     capture = unreal.EditorLevelLibrary.spawn_actor_from_class(unreal.SceneCapture2D, unreal.Vector(900, 0, 0))
-    component = capture.get_capture_component2d()
+    component = capture.get_editor_property("capture_component2d")
     target = unreal.RenderingLibrary.create_render_target2d(
         world, 640, 480, unreal.TextureRenderTargetFormat.RTF_RGBA8)
     component.set_editor_property("texture_target", target)
@@ -60,12 +63,22 @@ def main():
     component.set_editor_property("capture_on_movement", False)
     if not unreal.EditorLevelLibrary.save_current_level():
         raise RuntimeError("Could not save smoke-test map")
+    niagara.set_editor_property("wait_for_compilation_on_activate", True)
+    niagara.activate(True)
+    niagara.advance_simulation(12, 1.0 / 30.0)
     write_json(run / "scene.json", {
         "source_ply": str(ply), "source_ply_sha256": digest(ply),
         "asset_path": imported[0], "actor_class": actor.get_class().get_name(),
-        "map": target_map, "frame": "UE left-handed +Z up, centimetres; camera looks +X locally",
+        "map": target_map, "niagara_system": niagara.get_asset().get_path_name(),
+        "niagara_active_after_warmup": bool(niagara.is_active()),
+        "niagara_pointcloud_data_interface_present": niagara.get_data_interface("PointCloud") is not None,
+        "niagara_warmup": {"ticks": 12, "delta_seconds": 1.0 / 30.0},
+        "frame": "UE left-handed +Z up, centimetres; camera looks +X locally",
         "ply_to_ue_position_cm": "100*(X,-Z,-Y) per importer source",
         "resolution": [640, 480], "horizontal_fov_deg": 60,
+        "intrinsics_assumed_px": {"fx": 640 / (2 * math.tan(math.radians(30))),
+                                  "fy": 640 / (2 * math.tan(math.radians(30))),
+                                  "cx": 320, "cy": 240},
         "policy_weights": "none", "simulation_time": "not recorded for static editor replay",
         "depth": "not captured; imported splat depth unvalidated",
     })
@@ -79,10 +92,11 @@ def main():
             yaw = math.degrees(math.atan2(dy, dx))
             pitch = math.degrees(math.atan2(dz, math.hypot(dx, dy)))
             capture.set_actor_location(unreal.Vector(x, y, z), False, False)
-            capture.set_actor_rotation(unreal.Rotator(pitch, yaw, 0), False)
+            capture.set_actor_rotation(unreal.Rotator(roll=0, pitch=pitch, yaw=yaw), False)
+            capture_start = time.time()
             component.capture_scene()
             name = f"frame_{index:04d}"
-            unreal.RenderingLibrary.export_render_target(world, target, str(frames), name)
+            unreal.RenderingLibrary.export_render_target(world, target, str(frames), name + ".png")
             output = frames / (name + ".png")
             if not output.is_file():
                 raise RuntimeError("SceneCapture PNG missing: " + str(output))
@@ -90,13 +104,21 @@ def main():
             rotation = capture.get_actor_rotation()
             row = {"index": index, "wall_unix_s": time.time(),
                    "target_cm": [x, y, z],
+                   "target_pitch_yaw_roll_deg": [pitch, yaw, 0],
                    "actual_cm": [location.x, location.y, location.z],
+                   "actual_forward_ue": [capture.get_actor_forward_vector().x,
+                                         capture.get_actor_forward_vector().y,
+                                         capture.get_actor_forward_vector().z],
+                   "capture_request_wall_unix_s": capture_start,
+                   "export_done_wall_unix_s": time.time(),
                    "rotation_pitch_yaw_roll_deg": [rotation.pitch, rotation.yaw, rotation.roll],
                    "image": str(output), "bytes": output.stat().st_size,
                    "sha256": digest(output), "source": "SceneCapture2D render target export"}
             stream.write(json.dumps(row, sort_keys=True) + "\n")
             unreal.log("R4R_SPLAT_FRAME " + json.dumps(row, sort_keys=True))
-    write_json(run / "status.json", {"status": "camera_exported", "frames": len(positions)})
+    write_json(run / "status.json", {"status": "camera_exported_unvalidated",
+                                     "frames": len(positions),
+                                     "note": "Pixel content and splat visibility require post-run validation"})
 
 
 main()
