@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-08T23:46:47Z",
+  "instance": "63.141.33.148:22134",
+  "hardware": "Ubuntu 22.04.5, RTX A5000 24 GB",
+  "method": "Read-only full process-name snapshot, nvidia-smi compute-consumer query, simulator checkout inventory, current task records and TravelUAV handoff",
+  "observed_persistent_processes": ["docker-init", "start.sh", "nginx", "sshd", "sleep"],
+  "inspection_processes": ["sshd", "bash", "ps"],
+  "gpu_compute_consumers": [],
+  "simulator_processes": [],
+  "other_audits": [
+    {"title": "TRAVELUAV", "thread_id": "01a10746-b82b-77f3-b1a0-67bfc4455787", "status": "active", "host": "209.137.198.205:22", "gpu": "RTX A6000", "depends_on_this_instance": false, "evidence": "Current task SSH commands and docs/traveluav-openuav/handoff.md in audit/traveluav-openuav-20261008T2215Z use the separate host"},
+    {"title": "RFLY SIM", "thread_id": "01a10747-0c43-7dd2-9e30-71048505d12c", "status": "idle", "depends_on_this_instance": false, "evidence": "Latest completed task reports phase-1 preparation only and Windows execution pending hardware"},
+    {"title": "GRADNAV", "thread_id": "01a10746-e4f0-73e1-9576-97514c9fd6c7", "status": "idle", "depends_on_this_instance": false, "evidence": "Latest completed task reports phase-1 handoff only, no GPU/dynamics/policy run"},
+    {"title": "AIRSIM", "thread_id": "01a10746-8c9e-7840-bdee-33e77914adf3", "status": "idle", "depends_on_this_instance": false, "evidence": "Latest completed task reports phase-1 Project AirSim handoff only, hardware execution pending"}
+  ],
+  "other_audit_dependency_found": false,
+  "scope_limit": "No dependency was found among inspected simulator audits or running processes. Provider-wide activity and unrecorded future intent cannot be proved from this snapshot.",
+  "instance_terminated": false,
+  "gpu_experiments_started_during_closeout": false
+}

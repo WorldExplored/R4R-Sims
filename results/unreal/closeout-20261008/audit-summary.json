@@ -1,0 +1,16 @@
+{
+  "audit_date": "2026-10-08",
+  "complete_r4r_workflow_demonstrated": false,
+  "gpu_experiments": "stopped at user request",
+  "camera_sanity": {"status": "passed", "run_id": "ue-20261008T232215Z-yaw-6b9a9962", "finding": "Large yaw changes produce visibly different views with matching recorded capture poses; original eight-frame test retained"},
+  "level_b": {"status": "partial_failed_end_to_end_acceptance", "run_id": "ue-20261008T232723Z-land-observed-c1f84706", "airborne_hover_observed": true, "takeoff_server_return": false, "land_server_return": true, "landed_state_after_ground_contact": "Flying", "post_land_observation_seconds": 10, "finding": "Landing-state failure reproduced without square route or blocking image acquisition. Separate RPC/state predicates are source-associated; failing condition in this binary remains unknown"},
+  "ue_camera_export": {"status": "demonstrated_final_color_mesh", "run_id": "ue-20261008T232833Z-s-light-573e44a0", "finding": "Corrected light direction and intensity produced usable final-color mesh RGB"},
+  "splat_export": {"status": "one_visible_frame_appearance_unvalidated", "run_id": "ue-20261008T232833Z-s-light-573e44a0", "finding": "One dark red imported-splat frame exports. No useful fidelity or complete trajectory claim"},
+  "importer": {"status": "statically_checked_representation_loss", "repository_commit": "411f879985719ce69eaaf15d58152c551e2719b1", "finding": "Selected PLY path validates higher-order SH fields but stores only DC-derived color; higher-order SH coefficients are lost when present", "dark_frame_cause_established": false},
+  "level_c": {"status": "blocked", "finding": "No compatible released learned-policy artifacts identified"},
+  "unanswered": ["outdoor capture coverage", "held-out real novel views", "15 m capture to 50 m rendering", "sparse vegetation", "splat depth", "splat collision support", "render throughput", "real-drone usefulness"],
+  "next_comparison": "Same PLY through a reference splat renderer and UE with matched camera poses, intrinsics and resolution; audit retained attributes, color conversion and exposure before another dataset",
+  "recovery_record": "results/unreal/closeout-20261008/recovery.json",
+  "instance_dependency_record": "results/unreal/closeout-20261008/instance-dependencies.json",
+  "prior_versions": ["docs/unreal/Unreal_R4R_Audit_2026-10-08_v2.pptx", "docs/unreal/archive/handoff-d981d5a.md", "results/unreal/archive/splat-summary-d981d5a.json", "Git commit d981d5ad75f364ecb25ec56448cc87523e8f16c0"]
+}

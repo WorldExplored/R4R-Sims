@@ -39,5 +39,24 @@
       "evidence": "40 ticks with stronger light: cube base-color RGB max 228; cube scene-color 0; splat base-color and scene-color 0, final-color 0..1"
     }
   ],
-  "scientific_limit": "No AirLab capture, held-out real images, outdoor reconstruction, usable splat sensor frames, depth, collision validation, pretrained learned policy or real-drone transfer result"
+  "scientific_limit": "No complete R4R workflow, approved AirLab capture, held-out real novel-view fidelity, validated splat appearance/depth/collisions, render throughput, pretrained learned policy or real-drone transfer result",
+  "visible_splat_frame_exported": true,
+  "final_color_mesh_control_validated": true,
+  "higher_order_sh_retained_by_selected_ply_path": false,
+  "dark_frame_cause_established": false,
+  "accepted_splat_sensor_rgb_criterion": "Useful calibrated appearance remains unvalidated; a visible one-frame export is demonstrated",
+  "focused_followup": [
+    {
+      "id": "ue-20261008T232449Z-s-light-1f298556",
+      "status": "saturated_mesh_control_rejected",
+      "evidence": "Light yaw reversal made final color nonblack; visual saturation invalidated the initial pixel heuristic"
+    },
+    {
+      "id": "ue-20261008T232833Z-s-light-573e44a0",
+      "status": "usable_finalcolor_mesh_one_dark_visible_splat",
+      "evidence": "Reduced light intensity gave usable final-color mesh RGB and one visible splat frame; appearance and fidelity remain unvalidated"
+    }
+  ],
+  "representation_limit": "Selected importer reads/validates higher-order SH fields but stores only DC-derived color. It loses higher-order coefficients when present. This does not by itself explain the dark red frame.",
+  "current_audit_summary": "results/unreal/closeout-20261008/audit-summary.json"
 }
