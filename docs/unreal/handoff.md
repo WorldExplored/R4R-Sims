@@ -2,6 +2,8 @@
 
 **Audit date:** 2026-10-08. **Execution host:** user-supplied RunPod Ubuntu 22.04.5 instance, NVIDIA RTX A5000 24 GB, driver 580.178.04, 50 GB RAM cgroup, 9 advertised vCPU (7.65 cgroup effective), 120 GB root disk and separate 112 GB `/workspace` volume. The provider UI displayed $0.30/hour; billing and storage charges were not independently checked. `vulkaninfo` found the NVIDIA Vulkan device and the packaged game log selected VulkanRHI. This supports hardware rendering, not a minimum-hardware claim. Epic recommends Ubuntu 22.04, 32 GB RAM, at least 8 GB graphics memory and NVIDIA driver 570+ for Linux UE development [1].
 
+**Latest focused session:** [focused-validation.md](focused-validation.md) records yaw sanity, the landing-state failure reproduced without route/images, and a corrected final-color mesh plus one dark splat frame. It supersedes the earlier S final-color blocker below; all original runs remain retained.
+
 ## Decision and experiment levels
 
 The central R4R question is whether a small **real** capture of a residential, suburban or campus site below 100 m can supply trustworthy camera views along **new** drone trajectories. Capture at 15 m and rendering at 50 m remains a research goal. No AirLab captured scene, calibrated holdout, or trained scene was supplied. Native Blocks verifies integration only.
@@ -12,7 +14,7 @@ A  8 target NED poses → AirSim ComputerVision pose RPC → packaged UE Blocks
 B  estimated position → scripted P velocity action → SimpleFlight/FastPhysicsEngine
    → vehicle state + UE collision → camera RGB/DepthPlanar (closed loop)
 C  released policy observations → learned actions → task outcome: no compatible artifact
-S  author Gaussian PLY → UE 5.5.4 + Italink plugin → SceneCapture export: failed RGB validity
+S  author Gaussian PLY → UE 5.5.4 + Italink plugin → one SceneCapture export; appearance unresolved
 ```
 
 | Level | Current result | Valid inference |
@@ -20,7 +22,7 @@ S  author Gaussian PLY → UE 5.5.4 + Italink plugin → SceneCapture export: fa
 | A | **Demonstrated.** `ue-20261008T215319Z-a-5fe9b7c3`, exit 0, eight opened 640×480 RGB/depth pairs, eight requested and actual poses. | Pose-driven stock scene rendering works. |
 | B | **Demonstrated for waypoint flight; failed landing check.** Five reached waypoints in `ue-20261008T220451Z-b-a3d4be49`; `landAsync` returned but `LandedState` stayed `Flying` after floor contact. An earlier `ue-20261008T215758Z-b-33710b89` exited 0 after route but did not record a landing result. | Scripted closed-loop velocity, state and image RPCs work. Landing success is unverified. |
 | C | **Blocked.** Blocks release has no identified compatible pretrained weights, inference/preprocessing, task interface or success protocol. | No policy outcome. The P controller is not a learned policy. |
-| S | **Build and import demonstrated; usable RGB failed.** Official UE 5.5.4 Linux editor and Italink plugin built on the A5000; the author PLY imported. Eight 640×480 SceneCapture PNGs opened, but RGB was 0–1 throughout. Ticked base-color capture showed a control cube, while final-color cube and splat remained black. | No validated splat observation, depth, fidelity, or plugin-only failure claim. |
+| S | **Build/import and one-frame final-color export demonstrated.** The initial eight images failed; a later corrected light direction/intensity produced a visible final-color cube and one very dark splat image in `...573e44a0`. | Appearance/coverage, useful observations, depth and fidelity remain unvalidated. See focused session. |
 | Common-scene comparison | **Not tested.** No matching mesh/splat representation of one scene. | Blocks and a different splat scene cannot form a fidelity benchmark. |
 | Held-out real scene | **Blocked on lab data.** No approved AirLab calibrated capture or train/test split. | No conclusion about sparse outdoor coverage, altitude extrapolation, or real-drone transfer. |
 
@@ -71,7 +73,7 @@ The official UE 5.5.4 installed archive extracted with exit 0 and supplied Vulka
 
 All six S directories have a **VM-created** size/SHA-256 manifest, matched local copies, and decoded images where produced. The first three runs sampled whole-GPU memory at 1 Hz; the largest observed value was **765 MiB**, not a per-process or minimum VRAM measurement. The eight-image S run took 169.3 s wall including editor startup; these black frames cannot measure useful rendering throughput. No synchronized GPU render timer, splat depth, collision, policy latency or simulation time was measured. The original S script logged a post-export wall timestamp, not the exposure instant. The corrected future script now uses named `Rotator(roll=..., pitch=..., yaw=...)`, target and actual poses, FOV-derived pinhole intrinsics and separate capture-request/export-completion times; this correction is syntax checked but **has not produced a validated splat image**.
 
-**Precise runtime unblock on the same A5000:** keep the saved UE5.5.4 project, built plugin and imported `.uasset`. First make a lit mesh produce a visibly nonblack `SCS_FINAL_COLOR_LDR` or validated scene-color SceneCapture with fixed camera pose, intrinsics and editor/game ticks. Then render the imported vase through that same channel, inspect the actual PNG, and repeat the eight corrected camera poses only after this one-frame gate passes. Compare it only with a matching vase representation if one is supplied. The current headless channel controls show why further unvalidated frame replay would not answer R4R. The project and control scripts are preserved in the S run folders; no engine build or GPU change is needed. A full editor rendering setup or a verified SceneCapture lighting/postprocess configuration is the immediate missing input, not Epic download access.
+**Current next gate on the same A5000:** the focused session corrected the mesh final-color gate by reversing the light toward the visible face and reducing its saturating intensity. One dark splat frame exported; do not replay a route yet. Inspect its material, exposure and imported color against a reference for the same PLY/camera. The selected importer validates higher-order SH fields but does not retain them in its point/color structure. Useful appearance and view-dependent fidelity therefore remain open. The project and control scripts are preserved; no engine build or GPU change is needed. See [focused-validation.md](focused-validation.md) for measured results, exact preserved launchers and source references.
 
 ## Assets, install effort and host choice
 
@@ -126,7 +128,7 @@ rsync -az --partial -e 'ssh -i ~/Downloads/private_key.pem -p 22134 -o BatchMode
 python3 simulators/unreal/manifest.py verify ~/Downloads/AL/R4R-Sims/artifacts/unreal/$RID
 ```
 
-For the **current S host**, the recorded bounded control command and imported project are preserved. Its script and Python trace live in `ue-20261008T225105Z-s-control-e488bef0`; the imported `.uasset`/`.umap` live in `ue-20261008T224031Z-s-fe9a3ea3`. Run this only after changing the final-color control to address its documented failure, with a fresh unique ID:
+The **historical S control** command and imported project are preserved. Its script and Python trace live in `ue-20261008T225105Z-s-control-e488bef0`; the imported `.uasset`/`.umap` live in `ue-20261008T224031Z-s-fe9a3ea3`. The newer focused controls supersede this configuration. Use the following only as provenance; future execution needs the concrete material/color hypothesis in the focused report and a fresh unique ID:
 
 ```bash
 cd /root/R4R-Sims-unreal-audit

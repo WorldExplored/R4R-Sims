@@ -1,0 +1,471 @@
+{
+  "audit_date": "2026-10-08",
+  "preservation": {
+    "source_manifests_verified": true,
+    "verified_bytes": 10289430,
+    "verified_files": 89
+  },
+  "runs": [
+    {
+      "audited_status": "demonstrated_yaw_and_visually_confirmed",
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962",
+      "max_requested_rgb_orientation_error_deg": 1.366037834002551e-05,
+      "max_requested_rgb_position_error_m": 0.0,
+      "max_rgb_depth_capture_orientation_error_deg": 0.0,
+      "pixel_comparisons": [
+        {
+          "different_pixel_fraction": 0.941494140625,
+          "indices": [
+            0,
+            1
+          ],
+          "mean_absolute_rgb_difference": 43.08222330729166,
+          "pixel_fraction_any_channel_difference_gt10": 0.50033203125
+        },
+        {
+          "different_pixel_fraction": 0.9897526041666667,
+          "indices": [
+            1,
+            2
+          ],
+          "mean_absolute_rgb_difference": 37.2476171875,
+          "pixel_fraction_any_channel_difference_gt10": 0.370673828125
+        },
+        {
+          "different_pixel_fraction": 0.974326171875,
+          "indices": [
+            2,
+            3
+          ],
+          "mean_absolute_rgb_difference": 31.293525390625,
+          "pixel_fraction_any_channel_difference_gt10": 0.3646061197916667
+        },
+        {
+          "different_pixel_fraction": 0.984775390625,
+          "indices": [
+            3,
+            4
+          ],
+          "mean_absolute_rgb_difference": 39.608857421875,
+          "pixel_fraction_any_channel_difference_gt10": 0.47399739583333333
+        },
+        {
+          "different_pixel_fraction": 0.6067838541666667,
+          "indices": [
+            0,
+            4
+          ],
+          "mean_absolute_rgb_difference": 0.9678114149305556,
+          "pixel_fraction_any_channel_difference_gt10": 0.037096354166666665
+        }
+      ],
+      "raw_runner_status": "captured_pending_visual_confirmation",
+      "rgb_depth_timestamp_difference_ms": [
+        8.051,
+        7.152,
+        7.548,
+        5.249,
+        7.583
+      ],
+      "run_id": "ue-20261008T232215Z-yaw-6b9a9962",
+      "source_manifest_sha256": "e92e66c86b8bb0b34f12143d1f71176023a40f8b9f82d9c3300885cec40f8bbc",
+      "verified_bytes": 8204330,
+      "verified_files": 24
+    },
+    {
+      "audited_status": "rejected_never_airborne_despite_raw_pass",
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232324Z-land-isolated-a3227c9a",
+      "raw_runner_status": "passed",
+      "run_id": "ue-20261008T232324Z-land-isolated-a3227c9a",
+      "source_manifest_sha256": "e9521a4c9f45a9684bbd0141c4f0a83a2fef4921153e538c43a214258dfe3139",
+      "verified_bytes": 364719,
+      "verified_files": 14
+    },
+    {
+      "audited_status": "failed_takeoff_rpc_false_descent_not_run",
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232549Z-land-settled-04b41479",
+      "raw_runner_status": "failed",
+      "run_id": "ue-20261008T232549Z-land-settled-04b41479",
+      "source_manifest_sha256": "c084523a4670ddacb26edff4e07ae75b0996edb442f8809ca9d86845adc7f7d1",
+      "verified_bytes": 278909,
+      "verified_files": 13
+    },
+    {
+      "audited_status": "reproduced_flying_after_ground_contact",
+      "descent_peak_downward_speed_mps": 0.28986552357673645,
+      "descent_poll_rate_hz_median": 4.911677888480884,
+      "first_new_floor_contact": {
+        "altitude_above_ned_origin_m": -0.6810716390609741,
+        "altitude_above_settled_spawn_ground_m": -0.01110076904296875,
+        "collision": true,
+        "collision_object": "Ground_6",
+        "collision_timestamp_raw_ns": 1791502071551198208,
+        "landed_state": 1,
+        "new_collision_after_spawn_baseline": true,
+        "phase": "landAsync",
+        "state_timestamp_raw_ns": 1791502071692201216,
+        "vertical_velocity_ned_down_mps": 0.0,
+        "wall_elapsed_s": 28.0681062520016
+      },
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232723Z-land-observed-c1f84706",
+      "raw_runner_status": "failed",
+      "run_id": "ue-20261008T232723Z-land-observed-c1f84706",
+      "source_manifest_sha256": "70034ab87e4f97428b7d3a6dc74ee96d0827e891441997c80a2c17b72617206c",
+      "validation": {
+        "acceptance": "verified airborne hover; takeoff/land RPC true; last five polls all Landed; no relaxation",
+        "land_rpc": {
+          "rpc_completion_wall_elapsed_s": 28.152457125019282,
+          "server_return_value": true
+        },
+        "landed_confirmed": false,
+        "last_state": {
+          "altitude_above_ned_origin_m": -0.6810716390609741,
+          "altitude_above_settled_spawn_ground_m": -0.01110076904296875,
+          "collision": false,
+          "collision_object": "Ground_6",
+          "collision_timestamp_raw_ns": 1791502071551198208,
+          "landed_state": 1,
+          "new_collision_after_spawn_baseline": false,
+          "phase": "landAsync",
+          "state_timestamp_raw_ns": 1791502082069422592,
+          "vertical_velocity_ned_down_mps": 0.0,
+          "wall_elapsed_s": 38.44623645202955
+        },
+        "max_altitude_above_ned_origin_m": 0.8668643832206726,
+        "new_collisions": [
+          {
+            "altitude_above_ned_origin_m": -1.684914231300354,
+            "altitude_above_settled_spawn_ground_m": null,
+            "collision": true,
+            "collision_object": "Ground",
+            "collision_timestamp_raw_ns": 1791502047190678528,
+            "landed_state": 0,
+            "new_collision_after_spawn_baseline": true,
+            "phase": "spawn_settling",
+            "state_timestamp_raw_ns": 1791502047229679360,
+            "vertical_velocity_ned_down_mps": 5.02632999420166,
+            "wall_elapsed_s": 3.6058484989916906
+          },
+          {
+            "altitude_above_ned_origin_m": -4.104395389556885,
+            "altitude_above_settled_spawn_ground_m": null,
+            "collision": true,
+            "collision_object": "Ground_6",
+            "collision_timestamp_raw_ns": 1791502047598687232,
+            "landed_state": 0,
+            "new_collision_after_spawn_baseline": true,
+            "phase": "spawn_settling",
+            "state_timestamp_raw_ns": 1791502047637688064,
+            "vertical_velocity_ned_down_mps": 6.6596269607543945,
+            "wall_elapsed_s": 4.013107820006553
+          },
+          {
+            "altitude_above_ned_origin_m": -0.6699708700180054,
+            "altitude_above_settled_spawn_ground_m": null,
+            "collision": true,
+            "collision_object": "Ground_6",
+            "collision_timestamp_raw_ns": 1791502048321702656,
+            "landed_state": 0,
+            "new_collision_after_spawn_baseline": true,
+            "phase": "spawn_settling",
+            "state_timestamp_raw_ns": 1791502048450705408,
+            "vertical_velocity_ned_down_mps": 0.0,
+            "wall_elapsed_s": 4.82782191602746
+          },
+          {
+            "altitude_above_ned_origin_m": -0.6810716390609741,
+            "altitude_above_settled_spawn_ground_m": -0.01110076904296875,
+            "collision": true,
+            "collision_object": "Ground_6",
+            "collision_timestamp_raw_ns": 1791502071551198208,
+            "landed_state": 1,
+            "new_collision_after_spawn_baseline": true,
+            "phase": "landAsync",
+            "state_timestamp_raw_ns": 1791502071692201216,
+            "vertical_velocity_ned_down_mps": 0.0,
+            "wall_elapsed_s": 28.0681062520016
+          }
+        ],
+        "no_images_acquired": true,
+        "samples": 177,
+        "settled_ground_z_ned_m": 0.6699708700180054,
+        "status": "failed_rpc_or_landed_state",
+        "takeoff_airborne_verified": true,
+        "takeoff_rpc": {
+          "rpc_completion_wall_elapsed_s": 11.489092032017652,
+          "server_return_value": false
+        }
+      },
+      "verified_bytes": 502998,
+      "verified_files": 14
+    },
+    {
+      "audited_status": "saturated_mesh_control_rejected",
+      "decoded_images": {
+        "cube_final.png": {
+          "max": 255,
+          "mean": 252.18916449652778,
+          "min": 219,
+          "pixel_fraction_any_channel_ge250": 0.8291438802083333,
+          "pixel_fraction_any_channel_gt10": 1.0,
+          "shape": [
+            480,
+            640,
+            3
+          ]
+        },
+        "splat_final.png": {
+          "max": 1,
+          "mean": 0.094755859375,
+          "min": 0,
+          "pixel_fraction_any_channel_ge250": 0.0,
+          "pixel_fraction_any_channel_gt10": 0.0,
+          "shape": [
+            480,
+            640,
+            3
+          ]
+        }
+      },
+      "diagnostics": {
+        "changed_configuration": {
+          "directional_light_yaw_deg": {
+            "new": 180,
+            "prior": 0
+          }
+        },
+        "cube_background_rgba": [
+          222,
+          222,
+          221,
+          255
+        ],
+        "cube_capture_request_wall_unix_s": 1791501931.5504384,
+        "cube_center_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "cube_gate_passed": true,
+        "editor_delta_sum_seconds": 2.0313400849699974,
+        "error": null,
+        "frame": "UE left-handed Z-up cm, camera local +X; PLY importer 100*(X,-Z,-Y)",
+        "frames": {
+          "cube_final.png": {
+            "actual_camera_position_cm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "actual_rotation_pitch_yaw_roll_deg": [
+              0.0,
+              180.0,
+              -0.0
+            ],
+            "bytes": 112860,
+            "capture_source": "SCS_FINAL_COLOR_LDR",
+            "render_target": "RTF_RGBA8",
+            "sha256": "6be970ea9035b580726953dbf8440f64c512f86234db056611a03c5f37a81303",
+            "tick": 22,
+            "wall_unix_s": 1791501932.4493728
+          },
+          "splat_final.png": {
+            "actual_camera_position_cm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "actual_rotation_pitch_yaw_roll_deg": [
+              0.0,
+              180.0,
+              -0.0
+            ],
+            "bytes": 79019,
+            "capture_source": "SCS_FINAL_COLOR_LDR",
+            "render_target": "RTF_RGBA8",
+            "sha256": "e63c8ffb3b3b8752de985328453fbfa556826104e67a4c2ba9f7ef4cb607b03c",
+            "tick": 26,
+            "wall_unix_s": 1791501933.930452
+          }
+        },
+        "hypothesis": "Prior light yaw 0 leaves the camera-visible +X cube face unlit; reverse yaw to 180 only",
+        "intrinsics_assumed": {
+          "cx": 320,
+          "cy": 240,
+          "fx": 554.2562584220408,
+          "fy": 554.2562584220408,
+          "height": 480,
+          "hfov_deg": 60,
+          "width": 640
+        },
+        "light_forward_ue": [
+          -0.7071067811865475,
+          8.659560562354932e-17,
+          -0.7071067811865476
+        ],
+        "light_mobility": "<ComponentMobility.STATIONARY: 1>",
+        "niagara_active_final": true,
+        "policy_weights": "none",
+        "requested_camera": {
+          "pitch_yaw_roll_deg": [
+            0,
+            180,
+            0
+          ],
+          "position_cm": [
+            900,
+            0,
+            0
+          ]
+        },
+        "splat_attempted": true,
+        "splat_capture_request_wall_unix_s": 1791501932.7347312,
+        "tick_count": 26
+      },
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232449Z-s-light-1f298556",
+      "raw_runner_status": 0,
+      "run_id": "ue-20261008T232449Z-s-light-1f298556",
+      "source_manifest_sha256": "b50ca331b960af4e7aef7fde14bd06082272025cdae834deaa1f31917d2d5039",
+      "verified_bytes": 430628,
+      "verified_files": 12
+    },
+    {
+      "audited_status": "finalcolor_mesh_and_dark_splat_frame_exported_fidelity_unvalidated",
+      "decoded_images": {
+        "cube_final.png": {
+          "max": 226,
+          "mean": 35.546847873263886,
+          "min": 0,
+          "pixel_fraction_any_channel_ge250": 0.0,
+          "pixel_fraction_any_channel_gt10": 0.162861328125,
+          "shape": [
+            480,
+            640,
+            3
+          ]
+        },
+        "splat_final.png": {
+          "max": 113,
+          "mean": 0.15883138020833334,
+          "min": 0,
+          "pixel_fraction_any_channel_ge250": 0.0,
+          "pixel_fraction_any_channel_gt10": 0.0032161458333333334,
+          "shape": [
+            480,
+            640,
+            3
+          ]
+        }
+      },
+      "diagnostics": {
+        "changed_configuration": {
+          "directional_light_intensity": {
+            "new": 10,
+            "prior": 100000
+          },
+          "directional_light_yaw_deg": {
+            "new": 180,
+            "prior": 180
+          }
+        },
+        "cube_background_rgba": [
+          1,
+          1,
+          1,
+          255
+        ],
+        "cube_capture_request_wall_unix_s": 1791502158.6404786,
+        "cube_center_rgba": [
+          38,
+          43,
+          42,
+          255
+        ],
+        "cube_gate_passed": true,
+        "editor_delta_sum_seconds": 2.040053255856037,
+        "error": null,
+        "frame": "UE left-handed Z-up cm, camera local +X; PLY importer 100*(X,-Z,-Y)",
+        "frames": {
+          "cube_final.png": {
+            "actual_camera_position_cm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "actual_rotation_pitch_yaw_roll_deg": [
+              0.0,
+              180.0,
+              -0.0
+            ],
+            "bytes": 157982,
+            "capture_source": "SCS_FINAL_COLOR_LDR",
+            "render_target": "RTF_RGBA8",
+            "sha256": "01f4b633ff99ced5ec0797e74ef40b330763857391c50eb77b7779679e5d93c8",
+            "tick": 22,
+            "wall_unix_s": 1791502159.245432
+          },
+          "splat_final.png": {
+            "actual_camera_position_cm": [
+              900.0,
+              0.0,
+              0.0
+            ],
+            "actual_rotation_pitch_yaw_roll_deg": [
+              0.0,
+              180.0,
+              -0.0
+            ],
+            "bytes": 112860,
+            "capture_source": "SCS_FINAL_COLOR_LDR",
+            "render_target": "RTF_RGBA8",
+            "sha256": "4f3be948e71a357deb5848e61602af3b7fe28f07f5dfe265250b102b6c18225c",
+            "tick": 26,
+            "wall_unix_s": 1791502160.441053
+          }
+        },
+        "hypothesis": "Reversed light made final color nonblack but 100000 intensity saturated the control; reduce to 10",
+        "intrinsics_assumed": {
+          "cx": 320,
+          "cy": 240,
+          "fx": 554.2562584220408,
+          "fy": 554.2562584220408,
+          "height": 480,
+          "hfov_deg": 60,
+          "width": 640
+        },
+        "light_forward_ue": [
+          -0.7071067811865475,
+          8.659560562354932e-17,
+          -0.7071067811865476
+        ],
+        "light_mobility": "<ComponentMobility.STATIONARY: 1>",
+        "niagara_active_final": true,
+        "policy_weights": "none",
+        "requested_camera": {
+          "pitch_yaw_roll_deg": [
+            0,
+            180,
+            0
+          ],
+          "position_cm": [
+            900,
+            0,
+            0
+          ]
+        },
+        "splat_attempted": true,
+        "splat_capture_request_wall_unix_s": 1791502159.4386616,
+        "tick_count": 26
+      },
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232833Z-s-light-573e44a0",
+      "raw_runner_status": 0,
+      "run_id": "ue-20261008T232833Z-s-light-573e44a0",
+      "source_manifest_sha256": "c0e7ecf8e26eb0fecdce92d3480db69f482a48ff3da41d7872de031038aff1d5",
+      "verified_bytes": 507846,
+      "verified_files": 12
+    }
+  ],
+  "session_deadline_utc": "2026-10-08T23:50:00Z",
+  "session_start_utc": "2026-10-08T23:20:00Z"
+}

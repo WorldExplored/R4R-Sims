@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "source_run": "focused-validation-20261008T232000Z",
+  "files": [
+    {
+      "path": "isolated-descent.png",
+      "bytes": 106971,
+      "sha256": "d6ee61a31da0de8be49df009a3e3f0f6329f99240698f7e351c4188620235a29"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 16043,
+      "sha256": "cdefce5dfc3338ee9876e869e043e3e0206c5b618ce3ce3c90d88e6071422b52"
+    }
+  ]
+}

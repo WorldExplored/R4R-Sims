@@ -2,6 +2,8 @@
 
 Deck: `Unreal_R4R_Audit_2026-10-08_v2.pptx` (13 slides). Builder: `simulators/unreal/build_slides.mjs`. All displayed camera images and plots are generated from locally copied, VM source-manifested evidence; S control images are **failed-test evidence**, not a Gaussian fidelity result.
 
+This deck preserves the initial audit result. The later [focused validation addendum](focused-validation.md) includes yaw sanity, reproduced isolated landing failure and the corrected mesh/one dark splat frame. Consult it for the latest S status.
+
 1. **Title and status.** User-supplied A5000; native A/B demonstrated, Gaussian sensor RGB failed, real scene pending.
 2. **Real4Real question.** Small real residential/suburban/campus capture below 100 m; 15 m capture → 50 m render unresolved. A/B/C/S distinctions.
 3. **Native Blocks path.** UE4.27 packaged scene, AirSim control/dynamics/collision, RGB/depth and state. No learned policy.
