@@ -193,7 +193,8 @@ def state_sample(client, run_dir, index, t0, first_state_stamp):
         "ground_truth_position_ned_m": vec(gt.position), "ground_truth_velocity_ned_mps": vec(gt.linear_velocity),
         "ground_truth_orientation_xyzw_ned": quat(gt.orientation),
         "vehicle_pose_ned": pose(vp), "collision": bool(collision.has_collided),
-        "landed_state": int(s.landed_state)
+        "collision_timestamp_raw": int(collision.time_stamp),
+        "collision_object": str(collision.object_name), "landed_state": int(s.landed_state)
     })
     record(run_dir / "vehicle_trajectory.jsonl", {
         "index": index, "wall_utc": utc(), "wall_elapsed_s": time.perf_counter() - t0,
@@ -323,18 +324,24 @@ def main_run(args):
                 if first_stamp is None:
                     first_stamp = stamp
         else:
+            baseline = client.simGetCollisionInfo("Drone1")
+            write_json(run_dir / "collision_baseline.json", {
+                "wall_utc": utc(), "has_collided": bool(baseline.has_collided),
+                "time_stamp_raw": int(baseline.time_stamp),
+                "object_name": str(baseline.object_name)})
+            first_stamp = capture(client, run_dir, 0, "B_pre_takeoff", t0, first_stamp)
             client.enableApiControl(True, "Drone1")
             if not client.armDisarm(True, "Drone1"):
                 raise RuntimeError("SimpleFlight arm failed")
             record(run_dir / "actions.jsonl", {"wall_utc": utc(), "type": "takeoffAsync", "timeout_s": 15})
             client.takeoffAsync(timeout_sec=15, vehicle_name="Drone1").join()
             start = client.simGetVehiclePose("Drone1").position
-            route = [(float(start.x_val + dx), float(start.y_val + dy), float(start.z_val - 0.5))
+            route = [(float(start.x_val + dx), float(start.y_val + dy), -2.0)
                      for dx, dy in [(0, 0), (1, 0), (1, 1), (0, 1), (0, 0)]]
             write_json(run_dir / "reference_route.json", {"frame": "AirSim NED metres", "waypoints_xyz": route,
                                                         "controller_hz_target": 5, "speed_limit_mps": 0.7})
-            index = 0
-            last_capture = 0.0
+            index = 1
+            last_capture = time.perf_counter()
             first_state_stamp = None
             for waypoint in route:
                 wp_start = time.perf_counter()
@@ -342,8 +349,8 @@ def main_run(args):
                     s, collision, state_stamp = state_sample(client, run_dir, index, t0, first_state_stamp)
                     if first_state_stamp is None:
                         first_state_stamp = state_stamp
-                    if collision.has_collided:
-                        raise RuntimeError("Collision; stopped")
+                    if collision.has_collided and int(collision.time_stamp) > int(baseline.time_stamp):
+                        raise RuntimeError("New collision after baseline; stopped")
                     p = s.kinematics_estimated.position
                     error = [waypoint[0] - p.x_val, waypoint[1] - p.y_val, waypoint[2] - p.z_val]
                     if math.sqrt(sum(e * e for e in error)) < 0.25:
@@ -354,7 +361,7 @@ def main_run(args):
                                                        "velocity_ned_mps": velocity, "duration_s": 0.2,
                                                        "target_ned_m": waypoint, "error_ned_m": error})
                     client.moveByVelocityAsync(*velocity, duration=0.2, vehicle_name="Drone1").join()
-                    if time.perf_counter() - last_capture >= 0.5:
+                    if time.perf_counter() - last_capture >= 2.0:
                         stamp = capture(client, run_dir, index, "B", t0, first_stamp)
                         if first_stamp is None:
                             first_stamp = stamp
