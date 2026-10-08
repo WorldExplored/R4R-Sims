@@ -91,7 +91,7 @@ PY
   local scene_pid='' monitor_pid='' status=1
   cleanup() {
     if [[ -n "$monitor_pid" ]]; then kill "$monitor_pid" 2>/dev/null || true; wait "$monitor_pid" 2>/dev/null || true; fi
-    if [[ -n "$scene_pid" ]]; then kill -- "-$scene_pid" 2>/dev/null || true; wait "$scene_pid" 2>/dev/null || true; fi
+    if [[ -n "$scene_pid" ]]; then kill -- "-$scene_pid" 2>/dev/null || true; for _ in {1..5}; do kill -0 -- "-$scene_pid" 2>/dev/null || break; sleep 1; done; kill -KILL -- "-$scene_pid" 2>/dev/null || true; wait "$scene_pid" 2>/dev/null || true; fi
   }
   trap cleanup EXIT INT TERM
   printf '%q ' setsid "$SCENE" -RenderOffscreen -NoSound -NoVSync "-settings=$run/settings.json" >> "$run/commands.log"

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 source "$(dirname "$0")/layout.sh"
+source "$(dirname "$0")/cuda-runtime.sh"
 MODEL="$UPSTREAM/Model/LLaMA-UAV"
 POLICY="$ASSETS/runtime/llama-uav-7b"
 EPISODE_REL='ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json'
@@ -79,7 +80,7 @@ export R4R_CAPTURE_DIR="$capture" R4R_RECORD_DIR="$run" R4R_BERT_PATH="$ASSETS/m
 server_pid='' monitor_pid='' status=1
 cleanup() {
   if [[ -n "$monitor_pid" ]]; then kill "$monitor_pid" 2>/dev/null || true; wait "$monitor_pid" 2>/dev/null || true; fi
-  if [[ -n "$server_pid" ]]; then kill -- "-$server_pid" 2>/dev/null || true; wait "$server_pid" 2>/dev/null || true; fi
+  if [[ -n "$server_pid" ]]; then kill -- "-$server_pid" 2>/dev/null || true; for _ in {1..5}; do kill -0 -- "-$server_pid" 2>/dev/null || break; sleep 1; done; kill -KILL -- "-$server_pid" 2>/dev/null || true; wait "$server_pid" 2>/dev/null || true; fi
 }
 trap cleanup EXIT INT TERM
 (while true; do date -u +%FT%TZ; nvidia-smi --query-gpu=timestamp,index,memory.used,utilization.gpu --format=csv,noheader,nounits; sleep 1; done) > "$run/gpu-samples.log" 2>&1 &

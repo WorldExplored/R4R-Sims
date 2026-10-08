@@ -9,6 +9,7 @@ def q(x): return [float(x.x_val),float(x.y_val),float(x.z_val),float(x.w_val)]
 def emit(name,data):
  root=os.environ.get('R4R_RECORD_DIR')
  if root:
+  data=dict(data);data.setdefault('wall_utc',time.time())
   with (Path(root)/name).open('a') as f:f.write(json.dumps(data)+'\n')
 
 def capture_images(client,responses,cameras,rpc_s):

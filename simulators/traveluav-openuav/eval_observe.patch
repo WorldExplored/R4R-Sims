@@ -136,10 +136,17 @@ index 9121cd2..b8dddc8 100644
                      )
          
 diff --git a/src/model_wrapper/travel_llm.py b/src/model_wrapper/travel_llm.py
-index cab236e..d94d561 100644
+index cab236e..4e630ff 100644
 --- a/src/model_wrapper/travel_llm.py
 +++ b/src/model_wrapper/travel_llm.py
-@@ -11,6 +11,8 @@ class TravelModelWrapper(BaseModelWrapper):
+@@ -1,5 +1,6 @@
+ import numpy as np
+ import torch
++import time
+ from src.model_wrapper.base_model import BaseModelWrapper
+ from src.model_wrapper.utils.travel_util import *
+ from src.vlnce_src.dino_monitor_online import DinoMonitor
+@@ -11,10 +12,14 @@ class TravelModelWrapper(BaseModelWrapper):
          self.model.to(torch.bfloat16)
          self.traj_model.to(dtype=torch.bfloat16, device=self.model.device)
          self.dino_moinitor = None
@@ -148,16 +155,24 @@ index cab236e..d94d561 100644
          self.model_args = model_args
          self.data_args = data_args
  
-@@ -40,6 +42,8 @@ class TravelModelWrapper(BaseModelWrapper):
+     def prepare_inputs(self, episodes, target_positions, assist_notices=None):
++        torch.cuda.synchronize()
++        prep_start = time.perf_counter()
+         inputs = []
+         rot_to_targets = []
+         
+@@ -40,6 +45,10 @@ class TravelModelWrapper(BaseModelWrapper):
          inputs_device['return_waypoints'] = True
          inputs_device['use_cache'] = False
          
 +        import r4r_observe
++        torch.cuda.synchronize()
++        r4r_observe.emit("stage_timings.jsonl", {"stage":"preprocessing", "wall_s":time.perf_counter()-prep_start})
 +        r4r_observe.input_contract(inputs_device, target_positions, rot_to_targets)
          return inputs_device, rot_to_targets
  
      def run_llm_model(self, inputs):
-@@ -64,6 +68,8 @@ class TravelModelWrapper(BaseModelWrapper):
+@@ -64,6 +73,8 @@ class TravelModelWrapper(BaseModelWrapper):
      def run(self, inputs, episodes, rot_to_targets):
          waypoints_llm_new = self.run_llm_model(inputs)
          refined_waypoints = self.run_traj_model(episodes, waypoints_llm_new, rot_to_targets)
@@ -242,6 +257,26 @@ index f862140..19eb101 100644
      return traj_model
  
  
+diff --git a/src/vlnce_src/dino_monitor_online.py b/src/vlnce_src/dino_monitor_online.py
+index 4e07cc8..beac723 100644
+--- a/src/vlnce_src/dino_monitor_online.py
++++ b/src/vlnce_src/dino_monitor_online.py
+@@ -4,6 +4,7 @@ import math
+ import torch
+ from PIL import Image
+ import json
++import r4r_observe
+ from src.common.param import model_args, args
+ 
+ # RGB_FOLDER = ['frontcamerarecord', 'downcamerarecord']
+@@ -96,6 +97,7 @@ class DinoMonitor:
+             if (box[2] - box[0]) / W > 0.6 or (box[3] - box[1]) / H > 0.5:
+                 continue
+             boxes.append(box)
++        r4r_observe.emit("detector_predictions.jsonl", {"object_prompt":prompt, "boxes_px":[np.asarray(b).tolist() for b in boxes], "logits":logits.tolist(), "input_rgb_shape":list(img_src.shape), "box_threshold":0.6, "text_threshold":0.40, "note":"upstream filters boxes by area but retains the original logits vector"})
+         return boxes, logits
+     
+ dino_monitor = DinoMonitor.get_instance()
 diff --git a/src/vlnce_src/env_uav.py b/src/vlnce_src/env_uav.py
 index 39df41c..adcaad1 100644
 --- a/src/vlnce_src/env_uav.py
@@ -256,7 +291,7 @@ index 39df41c..adcaad1 100644
          for batch_idx, batch_result in enumerate(batch_results):
              if 0 < len(batch_result) < 5:
 diff --git a/src/vlnce_src/eval.py b/src/vlnce_src/eval.py
-index 360c7e3..34d805d 100644
+index 360c7e3..e5db53e 100644
 --- a/src/vlnce_src/eval.py
 +++ b/src/vlnce_src/eval.py
 @@ -5,6 +5,7 @@ import time
@@ -276,7 +311,7 @@ index 360c7e3..34d805d 100644
  
  def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, eval_save_dir):
      model_wrapper.eval()
-@@ -40,21 +41,36 @@ def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, e
+@@ -40,21 +41,40 @@ def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, e
              
              inputs, rot_to_targets = model_wrapper.prepare_inputs(batch_state.episodes, batch_state.target_positions)
  
@@ -295,8 +330,12 @@ index 360c7e3..34d805d 100644
 +                torch.cuda.synchronize()
 +                model_latency_s = time.perf_counter() - model_start
 +                r4r_observe.trace_decision(batch_state, t, model_wrapper, model_latency_s, assist_notices)
++                controller_start = time.perf_counter()
                  eval_env.makeActions(refined_waypoints)
++                r4r_observe.emit("stage_timings.jsonl", {"stage":"controller_rpc", "step":t, "wall_s":time.perf_counter()-controller_start})
++                observation_start = time.perf_counter()
                  outputs = eval_env.get_obs()
++                r4r_observe.emit("stage_timings.jsonl", {"stage":"observations_and_audit_capture", "step":t, "wall_s":time.perf_counter()-observation_start})
                  batch_state.update_from_env_output(outputs)
                  
 +                torch.cuda.synchronize()
