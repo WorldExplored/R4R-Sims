@@ -41,7 +41,7 @@ def main():
    expected=EXPECTED.get(str(f.relative_to(ASSETS)))
    if expected is None and metadata and metadata.lfs: expected=metadata.lfs.sha256
    if expected and actual!=expected: raise ValueError(f'Hash mismatch {f}: {actual} != {expected}')
-   rec['files'].append({'path':str(f),'url':f'https://huggingface.co/{"datasets/" if kind=="dataset" else ""}{repo}/resolve/{rev}/{name}','bytes':f.stat().st_size,'sha256':actual,'expected_sha256':expected,'verified':expected is None or actual==expected})
+   rec['files'].append({'path':str(f),'url':f'https://huggingface.co/{"datasets/" if kind=="dataset" else ""}{repo}/resolve/{rev}/{name}','bytes':f.stat().st_size,'sha256':actual,'expected_sha256':expected,'verification':'matched_expected_sha256' if expected else 'first_measured_sha256_at_pinned_revision'})
   rec['status']='verified';save()
  if a.level=='ab':
   meta=ASSETS/'metadata';meta.mkdir(exist_ok=True)
@@ -50,6 +50,7 @@ def main():
   for src in [release/'uav_dataset/seen_valset.json',release/'meta/map_spawnarea_info.json',release/'meta/object_description.json']: shutil.copy2(src,meta/src.name)
   rows=json.loads((meta/'seen_valset.json').read_text());chosen=[x for x in rows if x['json']=='ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json']
   if len(chosen)!=33:raise ValueError(f'Expected 33 rows for one episode, got {len(chosen)}')
+  (meta/'selected_seen_rows.json').write_text(json.dumps(chosen,indent=2)+'\n')
   (meta/'selected_seen_one.json').write_text(json.dumps(chosen[:1],indent=2)+'\n')
  else:
   for name,url in [('eva_vit_g.pth','https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth'),('instruct_blip_vicuna7b_trimmed.pth','https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth')]:

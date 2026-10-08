@@ -16,7 +16,7 @@ preflight() {
   command -v nvidia-smi >/dev/null
   command -v timeout >/dev/null
   command -v python >/dev/null
-  python -c 'import airsim,numpy,PIL'
+  python -c 'import airsim,numpy,PIL; assert numpy.__version__ == "1.26.3"'
   test "$(git -C "$UPSTREAM" rev-parse HEAD)" = 5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6
   df -h "$ROOT"
   nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv

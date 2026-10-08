@@ -2,6 +2,7 @@
 set -Eeuo pipefail
 source "$(dirname "$0")/layout.sh"
 MODEL="$UPSTREAM/Model/LLaMA-UAV"
+POLICY="$ASSETS/runtime/llama-uav-7b"
 EPISODE_REL='ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json'
 
 [[ "$(uname -s)" == Linux ]]
@@ -30,6 +31,8 @@ run="$RESULTS/$run_id"
 mkdir -p "$run" "$capture/policy"
 cp "$ASSETS/metadata/selected_seen_one.json" "$run/selected_seen_one.json"
 cp "$ASSETS/dataset/$EPISODE_REL" "$run/episode.json"
+cp "$ASSETS/runtime/config-rewrites.json" "$run/config-rewrites.json"
+cp "$POLICY/config.json" "$run/model-runtime-config.json"
 cp "$ASSETS/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/mark.json" "$run/mark.json"
 git -C "$UPSTREAM" status --short > "$run/git-status.txt"
 git -C "$UPSTREAM" diff > "$run/upstream.patch"
@@ -60,7 +63,7 @@ p.write_text(json.dumps({'run_id':p.parent.name,'level':'C','status':'starting',
     'server_timeout_s':900,'evaluation_timeout_s':600,
     'sampling':'one trace per model action; upstream observation archive per step; missing samples explicitly absent',
     'gpu_timing':'torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency',
-    'camera_extrinsics':'eval_observe.patch records per-step camera pose/FOV in outputs/policy/camera_poses.jsonl; camera response timestamps are absent'},indent=2)+'\n')
+    'camera_extrinsics':'eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations'},indent=2)+'\n')
 PY
 server_pid='' monitor_pid='' status=1
 cleanup() {
@@ -87,7 +90,7 @@ if [[ "$ready" -eq 1 ]]; then
        --always_help True --use_gt True --maxWaypoints 10
        --project_prefix "$run" --dataset_path "$ASSETS/dataset"
        --eval_save_path "$capture/policy" --eval_json_path "$run/selected_seen_one.json"
-       --model_path "$ASSETS/models/llama-uav-7b" --model_base "$ASSETS/models/vicuna-7b-v1.5"
+       --model_path "$POLICY" --model_base "$ASSETS/models/vicuna-7b-v1.5"
        --vision_tower "$ASSETS/models/LAVIS/eva_vit_g.pth"
        --image_processor "$MODEL/llamavid/processor/clip-patch14-224"
        --traj_model_path "$ASSETS/models/traj"

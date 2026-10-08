@@ -56,3 +56,34 @@ def terminate(state,step,budget):
    'official_evaluation_completed':not bool(truncated),'predicted_stop':bool(state.predict_dones[i]),
    'success':bool(state.success[i]),'oracle_success':bool(state.oracle_success[i])})
  (Path(root)/'termination.json').write_text(json.dumps(items,indent=2)+'\n')
+
+
+def observe_state(state,imu):
+    last=getattr(observe_state,"last",0)
+    now=time.monotonic()
+    if now-last>=0.2:
+        observe_state.last=now
+        emit("actual_vehicle.jsonl",{"wall_monotonic_s":now,"wall_utc":time.time(),"source":"raw unpadded controller sample","state":state,"imu":imu})
+
+def input_contract(inputs,targets,rotations):
+    emit("model_inputs.jsonl",{"wall_utc":time.time(),"known_target_positions_ned_m":[np.asarray(t).tolist() for t in targets],
+      "target_frame_rotations":[np.asarray(r).tolist() if r is not None else None for r in rotations],
+      "input_ids":inputs["input_ids"].detach().cpu().tolist(),
+      "prompts":inputs.get("prompts"),"historys":[x.detach().cpu().tolist() for x in inputs.get("historys",[])],
+      "images":[{"shape":list(x.shape),"dtype":str(x.dtype),"device":str(x.device)} for x in inputs.get("images",[])],
+      "privileged_input":"known target orients history frame; GT assistant retained"})
+
+def load_result(label,module,weights,result):
+    known=set(module.state_dict());matched=sorted(known&set(weights))
+    emit("checkpoint_loads.jsonl",{"label":label,"checkpoint_key_count":len(weights),"matched_key_count":len(matched),
+      "matched_keys":matched,"missing_keys":list(result.missing_keys),"unexpected_keys":list(result.unexpected_keys)})
+    if not matched or result.unexpected_keys or (label=="trajectory" and result.missing_keys):
+        raise RuntimeError("Checkpoint eligibility gate failed for "+label)
+
+def placement(model):
+    import torch
+    params=list(model.parameters())
+    emit("model_placement.jsonl",{"dtypes":sorted(set(str(p.dtype) for p in params)),"devices":sorted(set(str(p.device) for p in params)),
+      "parameter_count":sum(p.numel() for p in params),"cuda_allocated_bytes":torch.cuda.memory_allocated(),
+      "cuda_reserved_bytes":torch.cuda.memory_reserved(),"cuda_max_allocated_bytes":torch.cuda.max_memory_allocated(),
+      "scope":"this Python process; allocator excludes UE and non-PyTorch allocations"})

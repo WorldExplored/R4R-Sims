@@ -1,6 +1,24 @@
 --- a/src/model_wrapper/travel_llm.py
 +++ b/src/model_wrapper/travel_llm.py
-@@ -64,6 +64,8 @@
+@@ -11,6 +11,8 @@
+         self.model.to(torch.bfloat16)
+         self.traj_model.to(dtype=torch.bfloat16, device=self.model.device)
+         self.dino_moinitor = None
++        import r4r_observe
++        r4r_observe.placement(self.model)
+         self.model_args = model_args
+         self.data_args = data_args
+ 
+@@ -40,6 +42,8 @@
+         inputs_device['return_waypoints'] = True
+         inputs_device['use_cache'] = False
+         
++        import r4r_observe
++        r4r_observe.input_contract(inputs_device, target_positions, rot_to_targets)
+         return inputs_device, rot_to_targets
+ 
+     def run_llm_model(self, inputs):
+@@ -64,6 +68,8 @@
      def run(self, inputs, episodes, rot_to_targets):
          waypoints_llm_new = self.run_llm_model(inputs)
          refined_waypoints = self.run_traj_model(episodes, waypoints_llm_new, rot_to_targets)
@@ -75,7 +93,31 @@
  import airsim
  import threading
  import random
-@@ -485,7 +486,9 @@
+@@ -305,8 +306,10 @@
+             airsim_client.enableApiControl(True)
+             airsim_client.armDisarm(True)
+             airsim_client.simPause(False)
++            r4r_observe.emit("controller_events.jsonl", {"event":"segment_reset", "wall_utc":time.time(), "target_position":list(start_state.position), "target_orientation_xyzw":list(start_state.orientation)})
+             airsim_client.simSetKinematics(start_state, ignore_collision=False)
+             state_info = state_sensor.retrieve()
++            r4r_observe.emit("controller_events.jsonl", {"event":"moveOnPathAsync", "wall_utc":time.time(), "waypoints_ned_m":[list(p) for p in path], "velocity_mps":velocity, "internal_budget_s":5})
+             airsim_client.moveOnPathAsync(path=path, 
+                                 velocity=velocity, 
+                                 drivetrain=drivetrain, 
+@@ -322,10 +325,12 @@
+             while True:
+                 time.sleep(0.005)
+                 if time.perf_counter() - start_time > 5:
++                    r4r_observe.emit("controller_events.jsonl", {"event":"internal_5s_timeout", "wall_utc":time.time()})
+                     return None
+                 target = path[current_idx]
+                 state_info = copy.deepcopy(state_sensor.retrieve())
+                 imu_info = copy.deepcopy(imu_sensor.retrieve())
++                r4r_observe.observe_state(state_info, imu_info)
+                 position = np.array(state_info['position'])
+                 pos_queue.append(position)
+                 if len(pos_queue) == pos_queue.maxlen:
+@@ -485,7 +490,9 @@
                      for camera_name in cameras:
                          ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.Scene, pixels_as_float=False, compress=False))
                          ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.DepthPerspective, pixels_as_float=True, compress=False))
@@ -85,7 +127,7 @@
                      images, depth_images = [], []
                      for idx, camera_name in enumerate(cameras):
                          rgb_resp = image_datas[2 * idx]
-@@ -495,6 +498,7 @@
+@@ -495,6 +502,7 @@
                          depth_image = (np.clip(depth_img_in_meters, 0, 100) / 100 * 255).astype(np.uint8)
                          images.append(image)
                          depth_images.append(depth_image)
@@ -93,3 +135,92 @@
                      break
                  except Exception as e:
                      time_sleep_cnt += 1
+--- a/src/vlnce_src/env_uav.py
++++ b/src/vlnce_src/env_uav.py
+@@ -426,6 +426,8 @@
+             for index_2, _ in enumerate(item['open_scenes']):
+                 batch_results.append(results[index_1][index_2]['states'])
+                 batch_iscollision.append(results[index_1][index_2]['collision'])
++        import r4r_observe
++        r4r_observe.emit("padding_events.jsonl", {"returned_state_counts":[len(x) for x in batch_results], "heuristic_collisions":batch_iscollision, "oracle_source":"requested waypoints; not achieved-state distance"})
+         # When the server returns less than 5 points (collision or environment blockage), fill it to a length of 5
+         for batch_idx, batch_result in enumerate(batch_results):
+             if 0 < len(batch_result) < 5:
+--- a/src/model_wrapper/utils/travel_util.py
++++ b/src/model_wrapper/utils/travel_util.py
+@@ -10,6 +10,7 @@
+ import torch
+ import numpy as np
+ import math
++import r4r_observe
+ 
+ 
+ sys.path.append(str(Path(str(os.getcwd())).resolve()))
+@@ -36,9 +37,11 @@
+         print(f"Loading LoRA weights from {model_path}")
+         model = PeftModel.from_pretrained(model, model_path)
+         non_lora_weights = torch.load(os.path.join(model_path, 'non_lora_trainables.bin'), map_location='cpu')
+-        model.load_state_dict(non_lora_weights, strict=False)    
++        load_result = model.load_state_dict(non_lora_weights, strict=False)
++        r4r_observe.load_result("non_lora", model, non_lora_weights, load_result)    
+         mm_projector_weights = torch.load(os.path.join(model_path, 'mm_projector.bin'), map_location='cpu')
+-        model.load_state_dict(mm_projector_weights, strict=False)
++        load_result = model.load_state_dict(mm_projector_weights, strict=False)
++        r4r_observe.load_result("mm_projector", model, mm_projector_weights, load_result)
+     
+     return tokenizer, model, image_processor
+ 
+@@ -48,7 +51,8 @@
+     traj_model = VisionTrajectoryGenerator(config)
+     traj_weights = torch.load(os.path.join(model_args.traj_model_path, 'model_5.pth'), map_location='cpu')
+     traj_weights = {k: v.to(torch.bfloat16) for k, v in traj_weights.items()}
+-    traj_model.load_state_dict(traj_weights, strict=False)
++    load_result = traj_model.load_state_dict(traj_weights, strict=False)
++    r4r_observe.load_result("trajectory", traj_model, traj_weights, load_result)
+     return traj_model
+ 
+ 
+--- a/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py
++++ b/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py
+@@ -209,10 +209,10 @@
+ 
+     def init_bert(self, vision_width, cross_attention_freq=2, truncation_side="right"):
+         # initialize BERT tokenizer
+-        tokenizer = BertTokenizer.from_pretrained("bert-base-uncased", truncation_side=truncation_side)
++        tokenizer = BertTokenizer.from_pretrained(os.environ.get("R4R_BERT_PATH", "bert-base-uncased"), truncation_side=truncation_side)
+         tokenizer.add_special_tokens({"bos_token": "[DEC]"})
+         # initialize BERT
+-        encoder_config = BertConfig.from_pretrained("bert-base-uncased")
++        encoder_config = BertConfig.from_pretrained(os.environ.get("R4R_BERT_PATH", "bert-base-uncased"))
+         encoder_config.encoder_width = vision_width
+         # insert cross-attention layer every other block
+         encoder_config.add_cross_attention = True
+@@ -221,7 +221,7 @@
+         
+         if "qformer" in self.config.bert_type:
+             mm_model = BertLMHeadModelQF.from_pretrained(
+-                "bert-base-uncased", config=encoder_config
++                os.environ.get("R4R_BERT_PATH", "bert-base-uncased"), config=encoder_config
+             )
+             query_tokens = nn.Parameter(
+                 torch.zeros(1, self.config.num_query, encoder_config.hidden_size)
+@@ -230,7 +230,7 @@
+         elif "raw" in self.config.bert_type:
+             encoder_config.is_decoder = True
+             mm_model = BertLMHeadModelRaw.from_pretrained(
+-                "bert-base-uncased", config=encoder_config
++                os.environ.get("R4R_BERT_PATH", "bert-base-uncased"), config=encoder_config
+             )
+         else:
+             raise NotImplementedError("BERT type not implemented...")
+--- a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py
++++ b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py
+@@ -21,7 +21,7 @@
+ 
+ 
+ def get_pretrained_language_model(text_encoder_type):
+-    if text_encoder_type == "bert-base-uncased" or (os.path.isdir(text_encoder_type) and os.path.exists(text_encoder_type)):
++    if text_encoder_type == os.environ.get("R4R_BERT_PATH", "bert-base-uncased") or (os.path.isdir(text_encoder_type) and os.path.exists(text_encoder_type)):
+         return BertModel.from_pretrained(text_encoder_type)
+     if text_encoder_type == "roberta-base":
+         return RobertaModel.from_pretrained(text_encoder_type)
