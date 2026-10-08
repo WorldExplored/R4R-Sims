@@ -5,13 +5,13 @@ RUN="${1:?usage: collect.sh /absolute/path/to/result-run}"
 RUN="$(cd "$RUN" && pwd)"
 CAPTURE="$ARTIFACTS/$(basename "$RUN")"
 mkdir -p "$CAPTURE" "$ARTIFACTS/collections"
-python "$ROOT/analyze.py" "$RUN" "$CAPTURE"
+"$ENV_AB/bin/python" "$ROOT/analyze.py" "$RUN" "$CAPTURE"
 archive="$ARTIFACTS/collections/$(basename "$RUN").tar.gz"
 [[ ! -e "$archive" ]] || { echo "Archive already exists: $archive"; exit 2; }
 tar -C "$ARTIFACTS" -czf "$archive" "$(basename "$RUN")"
 sha256sum "$archive" > "$archive.sha256"
 tar -tzf "$archive" >/dev/null
-python - "$RUN" "$archive" <<'INNER'
+"$ENV_AB/bin/python" - "$RUN" "$archive" <<'INNER'
 import json,sys,hashlib
 from pathlib import Path
 p=Path(sys.argv[1])/'archive.json';a=Path(sys.argv[2]);h=hashlib.sha256()

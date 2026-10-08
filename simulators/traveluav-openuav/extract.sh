@@ -8,7 +8,7 @@ exec > >(tee -a "$run/console.log") 2>&1
 trap 'rc=$?; printf "{\"kind\":\"selective-extraction\",\"exit_status\":%s}\n" "$rc" > "$run/run.json"' EXIT
 printf '%s\n' '7z l -slt ModernCityMap.zip; calculate expanded totals and free space; timeout 300s 7z x selected episode only' > "$run/commands.log"
 7z l -slt "$ASSETS/downloads/data/ModernCityMap.zip" > "$capture/data-list.txt"
-python - "$capture/data-list.txt" "$run" "$ASSETS" <<'PY'
+"$ENV_AB/bin/python" - "$capture/data-list.txt" "$run" "$ASSETS" <<'PY'
 import json,sys,shutil
 from pathlib import Path
 p=Path(sys.argv[1]);run=Path(sys.argv[2]);assets=Path(sys.argv[3]);items=[]
@@ -24,7 +24,7 @@ print('Selected episode:',size,'bytes;',len(selected),'files; free',free)
 PY
 timeout 300s 7z x -y "$ASSETS/downloads/data/ModernCityMap.zip" -o"$ASSETS/dataset" '*00ac4ad3-1b8b-410d-9abc-43b65186571f/*'
 find "$ASSETS/dataset" -name merged_data.json -o -name mark.json -o -name object_description.json
-python - "$ASSETS/metadata" <<'PY'
+"$ENV_AB/bin/python" - "$ASSETS/metadata" <<'PY'
 from pathlib import Path
 import json,sys
 p=Path(sys.argv[1]);rows=json.loads((p/'seen_valset.json').read_text());selected=[x for x in rows if x['json']=='ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json']
