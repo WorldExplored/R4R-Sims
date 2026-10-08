@@ -125,3 +125,15 @@ def verify_lora(model,path):
         if key in actual and not torch.equal(actual[key].detach().cpu(),tensor.to(dtype=actual[key].dtype)):different.append(key)
     emit("checkpoint_loads.jsonl",{"label":"LoRA exact tensor comparison after dtype conversion","saved_keys":len(saved),"actual_keys":len(actual),"missing_keys":missing,"different_keys":different})
     if missing or different:raise RuntimeError("Released LoRA tensor verification failed")
+
+
+def checked_load(label,module,weights):
+    actual=module.state_dict()
+    mismatches=[{'key':k,'checkpoint_shape':list(t.shape),'parameter_shape':list(actual[k].shape)}
+        for k,t in weights.items() if k in actual and t.shape != actual[k].shape]
+    emit('checkpoint_preload.jsonl',{'label':label,'missing_keys':sorted(set(actual)-set(weights)),
+        'unexpected_keys':sorted(set(weights)-set(actual)),'shape_mismatches':mismatches})
+    if mismatches:raise RuntimeError('Incompatible checkpoint shapes for '+label)
+    result=module.load_state_dict(weights,strict=False)
+    load_result(label,module,weights,result)
+    return result
