@@ -23,7 +23,7 @@ See [`docs/gpu-options.md`](docs/gpu-options.md) for the user-supplied GPU avail
 
 ## Local and remote workflow
 
-Suggested local checkout: `~/Downloads/AL/real-for-real-simulator-evaluations/`. Use a separate checkout of this same repository on the rented Ubuntu instance. Keep each simulator's work inside `simulators/<simulator-name>/`.
+Suggested local checkout: `~/Downloads/AL/R4R-Sims/`. Use a separate checkout of this same repository on the rented Ubuntu instance. Keep each simulator's work inside `simulators/<simulator-name>/`.
 
 1. Clone this repository on each machine using the GitHub URL. Keep credentials and SSH keys outside the repository.
 2. Before work, run `git status` and `git pull --ff-only`. Preserve uncommitted work and resolve divergence without overwriting it.
