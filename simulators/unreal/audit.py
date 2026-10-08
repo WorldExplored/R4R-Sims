@@ -232,6 +232,8 @@ def main_run(args):
         "status": "starting", "started_utc": utc(), "repo": "microsoft/AirSim",
         "repo_commit": AIRSIM_COMMIT,
         "repo_modifications": "none applied by audit; packaged binary not source-diffed",
+        "audit_repo_commit": cmd_output(["git", "-C", str(args.root), "rev-parse", "HEAD"]),
+        "audit_repo_worktree": cmd_output(["git", "-C", str(args.root), "status", "--porcelain"]),
         "scene": "v1.8.1 Linux Blocks/FlyingExampleMap; packaged scene assets",
         "scene_split": "stock release; no train/test split", "policy_weights": "none",
         "controller": "none (A)" if args.mode == "a" else "outer bounded proportional velocity script plus SimpleFlight inner controller",
@@ -369,8 +371,13 @@ def main_run(args):
                     index += 1
                 else:
                     raise TimeoutError("Waypoint or run timeout at " + str(waypoint))
+                record(run_dir / "actions.jsonl", {"wall_utc": utc(), "type": "waypoint_reached",
+                                                   "target_ned_m": waypoint, "error_norm_m": math.sqrt(sum(e * e for e in error)),
+                                                   "wall_elapsed_s": time.perf_counter() - t0})
             record(run_dir / "actions.jsonl", {"wall_utc": utc(), "type": "landAsync", "timeout_s": 20})
             client.landAsync(timeout_sec=20, vehicle_name="Drone1").join()
+            state_sample(client, run_dir, index + 1, t0, first_state_stamp)
+            capture(client, run_dir, index + 1, "B_post_land", t0, first_stamp)
         if not list((run_dir / "frames").glob("*.png")) or not (run_dir / "state.jsonl").is_file():
             raise RuntimeError("No usable image/state evidence")
         metadata["status"] = "completed"

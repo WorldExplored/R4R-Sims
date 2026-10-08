@@ -127,6 +127,10 @@ def main():
         "capture_interval_wall_s_median": median(capture_intervals),
         "command_interval_wall_s_median": median(intervals),
         "command_rate_hz_from_median_interval": 1 / median(intervals) if intervals else None,
+        "command_rate_hz_over_action_span": (len(action_times)-1) / (action_times[-1]-action_times[0]) if len(action_times)>1 else None,
+        "command_interval_wall_s_p95": float(np.percentile(intervals, 95)) if intervals else None,
+        "camera_capture_rate_hz_over_span": (len(capture_times)-1)/(capture_times[-1]-capture_times[0]) if len(capture_times)>1 else None,
+        "simulation_elapsed_s_first_to_last_state": (states[-1]["state_timestamp_raw"] - states[0]["state_timestamp_raw"]) / 1e9 if len(states)>1 and "state_timestamp_raw" in states[-1] and "state_timestamp_raw" in states[0] else None,
         "peak_gpu_memory_used_mib_samples": max(vram) if vram else None,
         "waypoint_nearest_recorded_state_error_m": errors_to_waypoint,
         "new_collision_recorded": any(
