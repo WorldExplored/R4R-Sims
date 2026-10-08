@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Export only this task's verified CUDA runtime directories; no profile/driver edits.
-source "$(dirname "$0")/layout.sh"
+source "$(dirname "${BASH_SOURCE[0]}")/layout.sh"
 export CUDA_HOME="$ARTIFACTS/dependencies/cuda-11.8"
 cuda_libs="$($ENV_C/bin/python - "$ARTIFACTS/dependencies" <<'INNER'
 from pathlib import Path

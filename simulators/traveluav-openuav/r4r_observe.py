@@ -78,7 +78,11 @@ def load_result(label,module,weights,result):
     known=set(module.state_dict());matched=sorted(known&set(weights))
     emit("checkpoint_loads.jsonl",{"label":label,"checkpoint_key_count":len(weights),"matched_key_count":len(matched),
       "matched_keys":matched,"missing_keys":list(result.missing_keys),"unexpected_keys":list(result.unexpected_keys)})
-    if not matched or result.unexpected_keys or (label=="trajectory" and result.missing_keys):
+    allowed_unused = {"label_enc.weight", "bert.embeddings.position_ids"} if label == "detector" else set()
+    unknown = set(result.unexpected_keys) - allowed_unused
+    required_missing = set(result.missing_keys) & set(dict(module.named_parameters()))
+    emit("checkpoint_gate.jsonl", {"label":label, "allowed_unused_keys":sorted(set(result.unexpected_keys)&allowed_unused), "unknown_keys":sorted(unknown), "missing_learned_parameters":sorted(required_missing) if label in ["trajectory","detector"] else "partial checkpoint; base/adapter provide other modules"})
+    if not matched or unknown or (label in ["trajectory","detector"] and required_missing):
         raise RuntimeError("Checkpoint eligibility gate failed for "+label)
 
 def placement(model):
