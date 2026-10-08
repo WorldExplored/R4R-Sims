@@ -14,5 +14,5 @@ nvcc --version
 "$CC" --version
 "$CXX" --version
 python -m pip install --no-deps --no-build-isolation -e "$UPSTREAM/src/model_wrapper/utils/GroundingDINO"
-python -c 'from groundingdino import _C; import torch; print("DINO CUDA extension OK",torch.__version__,torch.version.cuda,torch.cuda.get_device_name())'
+python -c 'import torch; from groundingdino import _C; print("DINO CUDA extension OK",torch.__version__,torch.version.cuda,torch.cuda.get_device_name())'
 python -m pip freeze > "$run/pip-freeze.txt"
