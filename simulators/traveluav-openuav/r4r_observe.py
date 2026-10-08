@@ -79,7 +79,7 @@ def load_result(label,module,weights,result):
     emit("checkpoint_loads.jsonl",{"label":label,"checkpoint_key_count":len(weights),"matched_key_count":len(matched),
       "matched_keys":matched,"missing_keys":list(result.missing_keys),"unexpected_keys":list(result.unexpected_keys)})
     allowed_unused = {"label_enc.weight", "bert.embeddings.position_ids"} if label == "detector" else set()
-    if label == "non_lora":
+    if label in ["non_lora", "mm_projector"]:
         allowed_unused = {"base_model.model.waypoints_predictor."+k for k in ["weight_ih","weight_hh","bias_ih","bias_hh"]} | {"base_model.model."+module+"."+layer+"."+kind for module in ["is_help_predictor","history_predictor"] for layer in ["0","2"] for kind in ["weight","bias"]}
         required_core = {"base_model.model."+name for name in ["waypoint_emb.weight","waypoints_fc.0.weight","waypoints_fc.0.bias","waypoints_fc.2.weight","waypoints_fc.2.bias","waypoints_output.weight","waypoints_output.bias","history_preprocessor.0.weight","history_preprocessor.0.bias","history_preprocessor.2.weight","history_preprocessor.2.bias","model.embed_tokens.weight"]}
         if not required_core.issubset(matched):raise RuntimeError("Missing required learned waypoint/history/embedding modules")
