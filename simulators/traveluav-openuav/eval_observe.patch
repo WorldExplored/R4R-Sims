@@ -114,10 +114,20 @@ index 024c53c..169e65e 100644
                  except Exception as e:
                      time_sleep_cnt += 1
 diff --git a/airsim_plugin/AirVLNSimulatorServerTool.py b/airsim_plugin/AirVLNSimulatorServerTool.py
-index 9121cd2..b8dddc8 100644
+index 9121cd2..f81c042 100644
 --- a/airsim_plugin/AirVLNSimulatorServerTool.py
 +++ b/airsim_plugin/AirVLNSimulatorServerTool.py
-@@ -537,7 +537,7 @@ class EventHandler(object):
+@@ -482,6 +482,9 @@ class EventHandler(object):
+ 
+         KillPorts(ports)
+ 
++        # Python 3: legacy RPC defaults preserve raw strings as bytes.
++        scen_id_gpu_list = [(scene.decode("utf-8") if isinstance(scene, bytes) else scene, gpu) for scene, gpu in scen_id_gpu_list]
++
+         # Occupied GPU 2
+         gpus = [scen_id_gpu_list[index][-1] for index in range(len(scen_id_gpu_list))]
+         print(scen_id_gpu_list)
+@@ -537,7 +540,7 @@ class EventHandler(object):
                  try:
                      p = subprocess.Popen(
                          subprocess_execute,
@@ -126,7 +136,7 @@ index 9121cd2..b8dddc8 100644
                          shell=True,
                      )
                      p_s.append(p)
-@@ -575,7 +575,7 @@ class EventHandler(object):
+@@ -575,7 +578,7 @@ class EventHandler(object):
          
          p = subprocess.Popen(
                          subprocess_execute,
@@ -135,6 +145,18 @@ index 9121cd2..b8dddc8 100644
                          shell=True,
                      )
          
+diff --git a/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc b/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc
+index e81ffdd..c3460fd 100644
+Binary files a/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc and b/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc differ
+diff --git a/src/common/__pycache__/param.cpython-310.pyc b/src/common/__pycache__/param.cpython-310.pyc
+index 1bf01f8..d13dd02 100644
+Binary files a/src/common/__pycache__/param.cpython-310.pyc and b/src/common/__pycache__/param.cpython-310.pyc differ
+diff --git a/src/model_wrapper/__pycache__/base_model.cpython-310.pyc b/src/model_wrapper/__pycache__/base_model.cpython-310.pyc
+index fa69a69..3da3c8b 100644
+Binary files a/src/model_wrapper/__pycache__/base_model.cpython-310.pyc and b/src/model_wrapper/__pycache__/base_model.cpython-310.pyc differ
+diff --git a/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc b/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc
+index 277083d..20eb4fe 100644
+Binary files a/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc and b/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc differ
 diff --git a/src/model_wrapper/travel_llm.py b/src/model_wrapper/travel_llm.py
 index cab236e..4e630ff 100644
 --- a/src/model_wrapper/travel_llm.py
@@ -204,23 +226,22 @@ index dd2d972..0241823 100644
          return BertModel.from_pretrained(text_encoder_type)
      if text_encoder_type == "roberta-base":
 diff --git a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py
-index 84a962e..d98fce2 100644
+index 84a962e..bab2c24 100644
 --- a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py
 +++ b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py
-@@ -31,7 +31,10 @@ def load_model(model_config_path: str, model_checkpoint_path: str, device: str =
+@@ -31,7 +31,9 @@ def load_model(model_config_path: str, model_checkpoint_path: str, device: str =
      args.device = device
      model = build_model(args)
      checkpoint = torch.load(model_checkpoint_path, map_location="cpu")
 -    model.load_state_dict(clean_state_dict(checkpoint["model"]), strict=False)
 +    import r4r_observe
 +    weights = clean_state_dict(checkpoint["model"])
-+    load_result = model.load_state_dict(weights, strict=False)
-+    r4r_observe.load_result("detector", model, weights, load_result)
++    load_result = r4r_observe.checked_load("detector", model, weights)
      model.eval()
      return model
  
 diff --git a/src/model_wrapper/utils/travel_util.py b/src/model_wrapper/utils/travel_util.py
-index f862140..19eb101 100644
+index f862140..8a96d46 100644
 --- a/src/model_wrapper/utils/travel_util.py
 +++ b/src/model_wrapper/utils/travel_util.py
 @@ -10,6 +10,7 @@ from scipy.spatial.transform import Rotation as R
@@ -231,32 +252,41 @@ index f862140..19eb101 100644
  
  
  sys.path.append(str(Path(str(os.getcwd())).resolve()))
-@@ -35,10 +36,13 @@ def load_model(args):
+@@ -35,10 +36,11 @@ def load_model(args):
      if lora_enable:
          print(f"Loading LoRA weights from {model_path}")
          model = PeftModel.from_pretrained(model, model_path)
 +        r4r_observe.verify_lora(model, model_path)
          non_lora_weights = torch.load(os.path.join(model_path, 'non_lora_trainables.bin'), map_location='cpu')
 -        model.load_state_dict(non_lora_weights, strict=False)    
-+        load_result = model.load_state_dict(non_lora_weights, strict=False)
-+        r4r_observe.load_result("non_lora", model, non_lora_weights, load_result)    
++        load_result = r4r_observe.checked_load("non_lora", model, non_lora_weights)    
          mm_projector_weights = torch.load(os.path.join(model_path, 'mm_projector.bin'), map_location='cpu')
 -        model.load_state_dict(mm_projector_weights, strict=False)
-+        load_result = model.load_state_dict(mm_projector_weights, strict=False)
-+        r4r_observe.load_result("mm_projector", model, mm_projector_weights, load_result)
++        load_result = r4r_observe.checked_load("mm_projector", model, mm_projector_weights)
      
      return tokenizer, model, image_processor
  
-@@ -48,7 +52,8 @@ def load_traj_model(model_args):
+@@ -48,7 +50,7 @@ def load_traj_model(model_args):
      traj_model = VisionTrajectoryGenerator(config)
      traj_weights = torch.load(os.path.join(model_args.traj_model_path, 'model_5.pth'), map_location='cpu')
      traj_weights = {k: v.to(torch.bfloat16) for k, v in traj_weights.items()}
 -    traj_model.load_state_dict(traj_weights, strict=False)
-+    load_result = traj_model.load_state_dict(traj_weights, strict=False)
-+    r4r_observe.load_result("trajectory", traj_model, traj_weights, load_result)
++    load_result = r4r_observe.checked_load("trajectory", traj_model, traj_weights)
      return traj_model
  
  
+diff --git a/src/vlnce_src/__pycache__/assist.cpython-310.pyc b/src/vlnce_src/__pycache__/assist.cpython-310.pyc
+index 53f14a2..7db4cf9 100644
+Binary files a/src/vlnce_src/__pycache__/assist.cpython-310.pyc and b/src/vlnce_src/__pycache__/assist.cpython-310.pyc differ
+diff --git a/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc b/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc
+index af153fc..075e667 100644
+Binary files a/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc and b/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc differ
+diff --git a/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc b/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc
+index e1bbf0d..bc9767f 100644
+Binary files a/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc and b/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc differ
+diff --git a/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc b/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc
+index 290a32a..1a798d5 100644
+Binary files a/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc and b/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc differ
 diff --git a/src/vlnce_src/dino_monitor_online.py b/src/vlnce_src/dino_monitor_online.py
 index 4e07cc8..beac723 100644
 --- a/src/vlnce_src/dino_monitor_online.py
@@ -291,7 +321,7 @@ index 39df41c..adcaad1 100644
          for batch_idx, batch_result in enumerate(batch_results):
              if 0 < len(batch_result) < 5:
 diff --git a/src/vlnce_src/eval.py b/src/vlnce_src/eval.py
-index 360c7e3..e5db53e 100644
+index 360c7e3..3e5484d 100644
 --- a/src/vlnce_src/eval.py
 +++ b/src/vlnce_src/eval.py
 @@ -5,6 +5,7 @@ import time
@@ -352,3 +382,32 @@ index 360c7e3..e5db53e 100644
                  
                  assist_notices = batch_state.get_assist_notices()
                  inputs, _ = model_wrapper.prepare_inputs(batch_state.episodes, batch_state.target_positions, assist_notices)
+@@ -87,6 +107,10 @@ if __name__ == "__main__":
+     
+     model_wrapper = TravelModelWrapper(model_args=model_args, data_args=data_args)
+     
++    if os.environ.get("R4R_LOAD_ONLY") == "1":
++        r4r_observe.emit("loader_eligibility.jsonl", {"status":"all runtime load gates passed", "learned_decisions":0, "scope":"diagnostic only; no episode evaluation"})
++        raise SystemExit(0)
++
+     assist = Assist(always_help=args.always_help, use_gt=args.use_gt)
+ 
+     print("Assist setting: always_help --", args.always_help, "    use_gt --", args.use_gt)
+diff --git a/utils/__pycache__/CN.cpython-310.pyc b/utils/__pycache__/CN.cpython-310.pyc
+index 64bbd93..43d8b0e 100644
+Binary files a/utils/__pycache__/CN.cpython-310.pyc and b/utils/__pycache__/CN.cpython-310.pyc differ
+diff --git a/utils/__pycache__/env_utils_uav.cpython-310.pyc b/utils/__pycache__/env_utils_uav.cpython-310.pyc
+index 2fcb827..568b00a 100644
+Binary files a/utils/__pycache__/env_utils_uav.cpython-310.pyc and b/utils/__pycache__/env_utils_uav.cpython-310.pyc differ
+diff --git a/utils/__pycache__/env_vector_uav.cpython-310.pyc b/utils/__pycache__/env_vector_uav.cpython-310.pyc
+index 314cf78..82e2301 100644
+Binary files a/utils/__pycache__/env_vector_uav.cpython-310.pyc and b/utils/__pycache__/env_vector_uav.cpython-310.pyc differ
+diff --git a/utils/__pycache__/logger.cpython-310.pyc b/utils/__pycache__/logger.cpython-310.pyc
+index 9b2774c..2644eb4 100644
+Binary files a/utils/__pycache__/logger.cpython-310.pyc and b/utils/__pycache__/logger.cpython-310.pyc differ
+diff --git a/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc b/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc
+index 91dd66d..e3a8e1c 100644
+Binary files a/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc and b/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc differ
+diff --git a/utils/__pycache__/utils.cpython-310.pyc b/utils/__pycache__/utils.cpython-310.pyc
+index 91eaf08..8ca41a8 100644
+Binary files a/utils/__pycache__/utils.cpython-310.pyc and b/utils/__pycache__/utils.cpython-310.pyc differ
