@@ -71,7 +71,7 @@ run_probe() {
   uname -a > "$run/os.txt"
   free -h > "$run/ram.txt"
   nvidia-smi -q > "$run/gpu.txt"
-  find "$ROOT/assets" -type f -printf '%p\t%s bytes\n' > "$run/asset-files.tsv"
+  find "$ASSETS" -type f -printf '%p\t%s bytes\n' > "$run/asset-files.tsv"
   sha256sum "$run/episode.json" "$run/mark.json" "$run/settings.json" > "$run/input-sha256.txt"
   python - "$run" "$mode" "$UPSTREAM" "$SCENE" "$DATA_ROOT/$EPISODE_REL" <<'PY'
 import json,sys,datetime,subprocess

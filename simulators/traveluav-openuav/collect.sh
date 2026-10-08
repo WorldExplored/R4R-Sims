@@ -5,7 +5,11 @@ RUN="${1:?usage: collect.sh /absolute/path/to/result-run}"
 RUN="$(cd "$RUN" && pwd)"
 CAPTURE="$ARTIFACTS/$(basename "$RUN")"
 mkdir -p "$CAPTURE" "$ARTIFACTS/collections"
+set +e
 "$ENV_AB/bin/python" "$ROOT/analyze.py" "$RUN" "$CAPTURE"
+validation_status=$?
+set -e
+printf "validation_exit_status=%s\n" "$validation_status" > "$RUN/collection-status.log"
 archive="$ARTIFACTS/collections/$(basename "$RUN").tar.gz"
 [[ ! -e "$archive" ]] || { echo "Archive already exists: $archive"; exit 2; }
 tar -C "$ARTIFACTS" -czf "$archive" "$(basename "$RUN")"
