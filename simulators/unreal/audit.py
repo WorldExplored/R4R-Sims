@@ -336,7 +336,8 @@ def main_run(args):
             if not client.armDisarm(True, "Drone1"):
                 raise RuntimeError("SimpleFlight arm failed")
             record(run_dir / "actions.jsonl", {"wall_utc": utc(), "type": "takeoffAsync", "timeout_s": 15})
-            client.takeoffAsync(timeout_sec=15, vehicle_name="Drone1").join()
+            takeoff_result = client.takeoffAsync(timeout_sec=15, vehicle_name="Drone1").join()
+            record(run_dir / "actions.jsonl", {"wall_utc": utc(), "type": "takeoff_result", "rpc_result": takeoff_result})
             start = client.simGetVehiclePose("Drone1").position
             route = [(float(start.x_val + dx), float(start.y_val + dy), -2.0)
                      for dx, dy in [(0, 0), (1, 0), (1, 1), (0, 1), (0, 0)]]
@@ -375,9 +376,19 @@ def main_run(args):
                                                    "target_ned_m": waypoint, "error_norm_m": math.sqrt(sum(e * e for e in error)),
                                                    "wall_elapsed_s": time.perf_counter() - t0})
             record(run_dir / "actions.jsonl", {"wall_utc": utc(), "type": "landAsync", "timeout_s": 20})
-            client.landAsync(timeout_sec=20, vehicle_name="Drone1").join()
-            state_sample(client, run_dir, index + 1, t0, first_state_stamp)
+            land_result = client.landAsync(timeout_sec=20, vehicle_name="Drone1").join()
+            record(run_dir / "actions.jsonl", {"wall_utc": utc(), "type": "land_result", "rpc_result": land_result})
+            landed = False
+            land_check_start = time.perf_counter()
+            while time.perf_counter() < min(deadline, land_check_start + 10):
+                final_state, final_collision, _ = state_sample(client, run_dir, index + 1, t0, first_state_stamp)
+                if int(final_state.landed_state) == int(airsim.LandedState.Landed):
+                    landed = True
+                    break
+                time.sleep(0.5)
             capture(client, run_dir, index + 1, "B_post_land", t0, first_stamp)
+            if not landed:
+                raise RuntimeError("landAsync returned but LandedState remained Flying for 10 s")
         if not list((run_dir / "frames").glob("*.png")) or not (run_dir / "state.jsonl").is_file():
             raise RuntimeError("No usable image/state evidence")
         metadata["status"] = "completed"
