@@ -38,7 +38,7 @@ def record(client, out, frames, index, mode, command, wall_start):
         "orientation_xyzw": quat(pose.orientation),
         "linear_velocity_ned_mps": values(pose.linear_velocity),
         "angular_velocity_radps": values(pose.angular_velocity),
-        "collision": bool(collision.has_collided), "command": command,
+        "collision": bool(collision.has_collided), "contact_object": collision.object_name, "contact_timestamp_ns": int(collision.time_stamp), "command": command,
         "imu_timestamp_ns": int(imu.time_stamp), "imu_orientation_xyzw": quat(imu.orientation),
         "imu_angular_velocity_radps": values(imu.angular_velocity),
         "imu_linear_acceleration_mps2": values(imu.linear_acceleration),
@@ -109,10 +109,12 @@ def main():
     state.position = airsim.Vector3r(*initial["position"])
     state.orientation = airsim.Quaternionr(*initial["orientation"])
     client.simSetKinematics(state, ignore_collision=True)
+    write_jsonl(out/"events.jsonl", {"event":"initial_reset", "wall_s":time.monotonic()-wall_start,"target":initial})
     if args.mode == "a":
         for i, target in enumerate(route):
             state.position = airsim.Vector3r(*target["position"])
             state.orientation = airsim.Quaternionr(*target["orientation"])
+            write_jsonl(out/"events.jsonl", {"event":"pose_reset", "index":i, "wall_s":time.monotonic()-wall_start,"target":target})
             client.simSetKinematics(state, ignore_collision=True)
             client.simContinueForFrames(1)
             client.simPause(True)
@@ -135,10 +137,16 @@ def main():
                 time.sleep(0.2)
         finally:
             client.simPause(True)
-        # Do not call join without a timeout; the host wrapper bounds the process.
+        write_jsonl(out/"events.jsonl", {"event":"pause", "wall_s":time.monotonic()-wall_start})
+        # The pinned msgpack Future completes while subsequent RPC calls pump its loop.
+        # Inspect its flag without an unbounded join or a second loop-driving thread.
+        future_completed = bool(future._set_flag)
+        write_jsonl(out/"events.jsonl", {"event":"async_status", "completed":future_completed,
+            "result":future.result if future_completed else None,
+            "error":str(future.error) if future.error else None})
     ending = {"reason": "pose_replay_complete" if args.mode == "a" else ("endpoint_within_2m" if math.dist(current["position_ned_m"],route[-1]["position"]) < 2 else "sample_budget"),
               "samples": i+1, "wall_s": time.monotonic()-wall_start,
-              "async_completion_observed": False if args.mode == "b" else None}
+              "async_completion_observed": future_completed if args.mode == "b" else None}
     (out/"termination.json").write_text(json.dumps(ending,indent=2)+"\n")
     print(json.dumps({"mode": args.mode, "samples": i + 1, "output": str(out)}))
 

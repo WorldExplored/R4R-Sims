@@ -36,6 +36,10 @@ git -C "$UPSTREAM" diff > "$run/upstream.patch"
 git -C "$UPSTREAM" diff --staged > "$run/upstream-staged.patch"
 python -m pip freeze > "$run/pip-freeze.txt"
 cp "$REPO/docs/traveluav-openuav/asset_inventory.md" "$run/asset_inventory.md"
+  cp "$ASSETS"/verified-*.json "$run/" 2>/dev/null || true
+  git -C "$REPO" rev-parse HEAD > "$run/shared-commit.txt"
+  cp "$ASSETS/metadata/seen_valset.json" "$capture/seen_valset.json"
+  cp "$ASSETS/metadata/selected_seen_one.json" "$run/selected_seen_one.json"
 test -s "$ASSETS/verified-sha256.txt" && cp "$ASSETS/verified-sha256.txt" "$run/verified-sha256.txt" || true
 lscpu > "$run/cpu.txt"
 uname -a > "$run/os.txt"
@@ -105,6 +109,8 @@ import json,sys,datetime
 from pathlib import Path
 p=Path(sys.argv[1])/'run.json';d=json.loads(p.read_text());d['exit_status']=int(sys.argv[2]);d['status']='complete' if d['exit_status']==0 else 'failed';d['ended_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();p.write_text(json.dumps(d,indent=2)+'\n')
 PY
+cleanup
+trap - EXIT INT TERM
 (cd "$run" && find . -type f ! -name output-sha256.txt -print0 | sort -z | xargs -0 sha256sum > output-sha256.txt)
 echo "$run"
 exit "$status"

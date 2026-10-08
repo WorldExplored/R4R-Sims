@@ -22,9 +22,9 @@ if [[ "$level" == ab ]]; then
   [[ -x "$ENV_AB/bin/python" ]] || logged python3.10 -m venv "$ENV_AB"
   py="$ENV_AB/bin/python"
   logged "$py" -m pip install pip==24.0 setuptools==68.2.2 wheel==0.41.3
-  logged "$py" -m pip install numpy==1.26.3 Pillow==10.2.0 msgpack-python==0.5.6 tornado==4.5.3 msgpack-rpc-python==0.4 huggingface_hub==0.27.1 matplotlib==3.10.0 psutil==6.1.1
-  logged "$py" -m pip install --no-build-isolation airsim==1.8.1
-  logged "$py" -c 'import airsim,msgpackrpc,numpy; print("AirSim import OK",airsim.__version__)'
+  logged "$py" -m pip install numpy==1.26.3 Pillow==10.2.0 msgpack-python==0.5.6 tornado==4.5.3 msgpack-rpc-python==0.4 huggingface_hub==0.27.1 matplotlib==3.10.0 psutil==6.1.1 opencv-contrib-python==4.10.0.84
+  logged "$py" -m pip install --no-build-isolation --no-deps airsim==1.8.1
+  logged "$py" -c 'import airsim,msgpackrpc,numpy; assert numpy.__version__ == "1.26.3"; print("AirSim import OK",airsim.__version__)'
   "$py" -m pip freeze > "$run/pip-freeze.txt"
   logged "$py" "$ROOT/assets.py" ab --record "$run/assets.json"
 elif [[ "$level" == c ]]; then
