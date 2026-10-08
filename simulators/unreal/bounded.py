@@ -52,6 +52,14 @@ def main():
             except subprocess.TimeoutExpired:
                 os.killpg(child.pid, signal.SIGKILL)
                 child.wait()
+            owned = run_dir / "owned-process.json"
+            if owned.is_file():
+                game_pid = json.loads(owned.read_text(encoding="utf-8"))["pid"]
+                try:
+                    if os.getpgid(game_pid) == game_pid:
+                        os.killpg(game_pid, signal.SIGTERM)
+                except ProcessLookupError:
+                    pass
             status = 124
         log.write(now() + " exit_status=" + str(status) + "\n")
     if run_dir.exists():

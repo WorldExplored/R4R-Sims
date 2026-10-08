@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import platform
 import shutil
+import signal
 import socket
 import statistics
 import subprocess
@@ -260,9 +261,10 @@ def main_run(args):
     nobody = pwd.getpwnam("nobody")
     for owned in (game_home, game_home / "Documents", game_settings.parent, game_settings):
         os.chown(owned, nobody.pw_uid, nobody.pw_gid)
-    exe_cmd = ["runuser", "-u", "nobody", "--", "env", "HOME=" + str(game_home),
-               "XDG_RUNTIME_DIR=" + str(game_home), str(args.exe.resolve()),
-               "-RenderOffscreen", "-vulkan", "-windowed", "-ResX=640", "-ResY=480", "-nosound", "-log"]
+    exe_cmd = [str(args.exe.resolve()), "Blocks", "-RenderOffscreen", "-vulkan",
+               "-windowed", "-ResX=640", "-ResY=480", "-nosound", "-log"]
+    game_env = os.environ.copy()
+    game_env.update({"HOME": str(game_home), "XDG_RUNTIME_DIR": str(game_home)})
     record(commands, {"wall_utc": utc(), "argv": exe_cmd, "command": "Unreal packaged executable", "status": "start"})
     game = None
     stop = threading.Event()
@@ -273,7 +275,9 @@ def main_run(args):
     try:
         with open(console, "a", encoding="utf-8", buffering=1) as log:
             log.write(utc() + " run start " + run_id + "\n")
-        game = subprocess.Popen(exe_cmd, cwd=str(args.exe.parent), stdout=subprocess.PIPE,
+        game = subprocess.Popen(exe_cmd, cwd=str(args.exe.resolve().parents[3]),
+                                env=game_env, user=nobody.pw_uid, group=nobody.pw_gid,
+                                start_new_session=True, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, text=True, errors="replace")
         write_json(run_dir / "owned-process.json", {"pid": game.pid, "argv": exe_cmd})
         threading.Thread(target=pump, args=(game.stdout, console, "UE"), daemon=True).start()
@@ -378,11 +382,11 @@ def main_run(args):
                 metadata["errors"].append({"cleanup_error": str(e)})
         stop.set()
         if game and game.poll() is None:
-            game.terminate()  # only process launched by this run
+            os.killpg(game.pid, signal.SIGTERM)  # dedicated group owned by this run
             try:
                 game.wait(timeout=10)
             except subprocess.TimeoutExpired:
-                game.kill()
+                os.killpg(game.pid, signal.SIGKILL)
                 game.wait(timeout=5)
         if game:
             record(commands, {"wall_utc": utc(), "command": "Unreal packaged executable", "pid": game.pid, "exit_code": game.returncode})
