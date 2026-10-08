@@ -55,25 +55,24 @@ def record_images(client, out, frames, index, wall_start):
     for name in CAMERAS:
         requests += [airsim.ImageRequest(name, airsim.ImageType.Scene, False, False),
                      airsim.ImageRequest(name, airsim.ImageType.DepthPerspective, True, False)]
-    start = time.perf_counter()
-    # Preserve one actual wire payload for old/new decoder equivalence checks.
-    from msgpackrpc.transport.tcp import BaseSocket
-    original_read = BaseSocket.on_read
-    capture_thread = threading.get_ident()
-    chunks = []
-    def capture_read(sock, data):
-        if threading.get_ident() == capture_thread:
+    # Capture the active socket's bytes: Tornado bound on_read when connecting.
+    client.ping()
+    chunks=[]
+    socket=client.client._transport._sockets[0]
+    original=socket._unpacker
+    class ObservedUnpacker:
+        def feed(self,data):
             chunks.append(data)
-        return original_read(sock, data)
-    if index == 0:
-        BaseSocket.on_read = capture_read
+            return original.feed(data)
+        def __iter__(self):return iter(original)
+    if index==0:socket._unpacker=ObservedUnpacker()
+    start=time.perf_counter()
     try:
-        responses = client.simGetImages(requests)
+        responses=client.simGetImages(requests)
     finally:
-        BaseSocket.on_read = original_read
-    if chunks:
-        (frames.parent / "image_rpc_payload.msgpack").write_bytes(b"".join(chunks))
-    render_rpc_s = time.perf_counter() - start
+        render_rpc_s=time.perf_counter()-start
+        socket._unpacker=original
+    if chunks:(frames.parent/"image_rpc_payload.msgpack").write_bytes(b"".join(chunks))
     if len(responses) != len(requests):
         raise RuntimeError(f"received {len(responses)} of {len(requests)} camera responses")
     for cam_index, name in enumerate(CAMERAS):
@@ -140,7 +139,12 @@ def main():
             write_jsonl(out/"events.jsonl", {"event":"pose_reset", "index":i, "wall_s":time.monotonic()-wall_start,"target":target})
             client.simSetKinematics(state, ignore_collision=True)
             client.simContinueForFrames(1)
+            deadline=time.monotonic()+2
+            while not client.simIsPause() and time.monotonic()<deadline:
+                time.sleep(0.01)
             client.simPause(True)
+            # Reapply reference kinematics while paused, after the startup physics tick.
+            client.simSetKinematics(state, ignore_collision=True)
             write_jsonl(out / "actions.jsonl", {"index": i, "type": "set_kinematics", "target": target})
             record_state(client, out, i, "a", "set_kinematics", wall_start)
             record_images(client, out, args.frames_dir, i, wall_start)
