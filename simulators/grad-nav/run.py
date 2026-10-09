@@ -13,7 +13,7 @@ def main():
     now=datetime.datetime.now(datetime.timezone.utc);rid=now.strftime('%Y%m%dT%H%M%SZ')+'-'+a.mode+'-'+uuid.uuid4().hex[:6]
     raw=a.root/'artifacts/grad-nav'/rid;small=a.root/'results/grad-nav'/rid
     raw.mkdir(parents=True);small.mkdir(parents=True)
-    cmd=[sys.executable,str(a.root/('simulators/grad-nav/render.py' if a.mode in ['a','d'] else 'simulators/grad-nav/probe.py')),a.mode,'--upstream',str(a.upstream),'--out',str(raw)]
+    cmd=[sys.executable,str(a.root/('simulators/grad-nav/render.py' if a.mode in ['a','d'] else 'simulators/grad-nav/scene_diagnostic.py' if a.mode=='scene-diagnostic' else 'simulators/grad-nav/probe.py')),a.mode,'--upstream',str(a.upstream),'--out',str(raw)]
     def capture(c):return subprocess.run(c,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT).stdout
     metadata={'run_id':rid,'mode':a.mode,'start_utc':now.isoformat(),'timeout_s':a.timeout,'command':cmd,'cwd':str(pathlib.Path.cwd()),
       'candidate_commit':capture(['git','-C',str(a.root),'rev-parse','HEAD']).strip(),
