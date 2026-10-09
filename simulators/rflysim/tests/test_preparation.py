@@ -36,6 +36,11 @@ class PreparationTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     prep.verify(Path(d), {rel: {'bytes': 1, 'sha256': 'x'}})
 
+    def test_non_object_manifest_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            with self.assertRaises(ValueError):
+                prep.verify(Path(d), [])
+
     def test_symlink_not_followed(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)

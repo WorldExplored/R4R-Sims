@@ -31,5 +31,5 @@
     "visual_review": "all 14 final slide renders inspected, no clipping/overlap found"
   },
   "render_hardware": "not RflySim hardware",
-  "validation": "config+5 offline tests; PDF14 pages and PNG decoding checked"
+  "validation": "config +6 offline tests; final manifest uses path mapping; PDF14 pages and PNG decoding checked"
 }

@@ -2,7 +2,7 @@
 
 **Preparation-ready: yes. Execution-ready: no.** No host connection, installation or simulator experiment. A, B and coupled capture are pending; C and real-capture fidelity are blocked. No measured metrics or experiment plots exist.
 
-Branch: `audit/rflysim`; baseline commit: `2cd4f7145486854f9c84a4ae2f6aedf197e963d4`. Authored preparation code commit: `665926b723bb6128fe5ed0d7ca0b5a7dac3d2167` ([revision record](revision.json)); branch publishing verified. Metadata packaging commit is retrievable from this file’s Git history. Isolated worktree: `~/Downloads/AL/R4R-Sims-rflysim/`.
+Branch: `audit/rflysim`; baseline commit: `2cd4f7145486854f9c84a4ae2f6aedf197e963d4`. Initial authored preparation code commit: `665926b723bb6128fe5ed0d7ca0b5a7dac3d2167` ([revision record](revision.json)); branch publishing verified. Current runner revision is available with `git log -1 --format=%H -- simulators/rflysim/run.py`. Metadata packaging commit is retrievable from this file’s Git history. Isolated worktree: `~/Downloads/AL/R4R-Sims-rflysim/`.
 
 - [Editable RflySim preparation deck](rflysim-preparation.pptx)
 - [PDF export](rflysim-preparation.pdf) — rasterized final slides; PPTX retains editable text

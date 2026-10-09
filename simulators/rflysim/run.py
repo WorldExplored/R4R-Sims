@@ -70,6 +70,8 @@ def manifest(root):
 
 
 def verify(root, entries):
+    if not isinstance(entries, dict):
+        raise ValueError("manifest must map relative paths to byte counts and SHA-256 values")
     root = root.resolve(strict=True)
     failures = []
     for rel, expected in entries.items():

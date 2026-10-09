@@ -30,3 +30,17 @@ test_unsafe_manifest_paths_rejected (test_preparation.PreparationTests) ... ok
 Ran 5 tests in 0.002s
 
 OK
+
+Final manifest-format correction regression checks
+BLOCKED: preparation only. No SDK adapter, verified host or execution authorization.
+test_execution_refused (test_preparation.PreparationTests) ... ok
+test_non_object_manifest_rejected (test_preparation.PreparationTests) ... ok
+test_preservation_detects_tampering (test_preparation.PreparationTests) ... ok
+test_review_config_preserves_route_and_thresholds (test_preparation.PreparationTests) ... ok
+test_symlink_not_followed (test_preparation.PreparationTests) ... ok
+test_unsafe_manifest_paths_rejected (test_preparation.PreparationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK

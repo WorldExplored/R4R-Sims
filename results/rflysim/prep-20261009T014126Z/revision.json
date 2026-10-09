@@ -7,5 +7,7 @@
   "metadata_commit": "obtain with git log -1 --format=%H -- results/rflysim/prep-20261009T014126Z/revision.json",
   "source_code_changed_after_tests": false,
   "original_deck_generation_script": "artifacts/rflysim/prep-20261009T014126Z/deck-generation-original.mjs",
-  "host_experiments": false
+  "host_experiments": false,
+  "manifest_format_fix": "path mapping standardized; six offline tests pass after change",
+  "current_runner_revision": "git log -1 --format=%H -- simulators/rflysim/run.py"
 }
