@@ -19,6 +19,7 @@ def decode(cls,kwargs):
  assert len(images)==10,len(images)
  return images,elapsed
 old,old_s=decode(legacy.Unpacker,{'encoding':'utf-8'});new,new_s=decode(msgpack.Unpacker,{'raw':False})
+assert old==new, "Full response metadata/value decoding differs"
 checks=[]
 for i,(x,y) in enumerate(zip(old,new)):
  assert x['width']==y['width'] and x['height']==y['height']
@@ -27,5 +28,5 @@ for i,(x,y) in enumerate(zip(old,new)):
  depth_equal=np.array_equal(dx,dy,equal_nan=True)
  assert rgb_equal and depth_equal
  checks.append({'response_index':i,'width':x['width'],'height':x['height'],'rgb_bytes_equal':rgb_equal,'depth_float32_equal':depth_equal,'rgb_sha256':hashlib.sha256(y['image_data_uint8']).hexdigest(),'depth_float32_sha256':hashlib.sha256(dy.tobytes()).hexdigest()})
-record={'payload_path':str(a.payload),'payload_bytes':len(payload),'payload_sha256':hashlib.sha256(payload).hexdigest(),'legacy_implementation':legacy.Unpacker.__module__,'active_version':msgpack.version,'active_implementation':msgpack.Unpacker.__module__,'active_file':msgpack.__file__,'legacy_source_sha256':hashlib.sha256((a.legacy_source/'fallback.py').read_bytes()).hexdigest(),'legacy_decode_wall_s':old_s,'active_decode_wall_s':new_s,'timing_sample_count':1,'timing_scope':'same settled 5-view RGB/depth MessagePack response payload decode only; instrumented CPU wall time','equivalence':checks}
+record={'payload_path':str(a.payload),'payload_bytes':len(payload),'payload_sha256':hashlib.sha256(payload).hexdigest(),'legacy_implementation':legacy.Unpacker.__module__,'active_version':msgpack.version,'active_implementation':msgpack.Unpacker.__module__,'active_file':msgpack.__file__,'legacy_source_sha256':hashlib.sha256((a.legacy_source/'fallback.py').read_bytes()).hexdigest(),'legacy_decode_wall_s':old_s,'active_decode_wall_s':new_s,'timing_sample_count':1,'timing_scope':'same settled 5-view RGB/depth MessagePack response payload decode only; instrumented CPU wall time','full_response_metadata_equal':True,'equivalence':checks}
 a.output.write_text(json.dumps(record,indent=2)+'\n');print(json.dumps({k:v for k,v in record.items() if k!='equivalence'},indent=2))

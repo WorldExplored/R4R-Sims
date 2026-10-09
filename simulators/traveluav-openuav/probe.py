@@ -65,14 +65,14 @@ def record_images(client, out, frames, index, wall_start):
             chunks.append(data)
             return original.feed(data)
         def __iter__(self):return iter(original)
-    if index==0:socket._unpacker=ObservedUnpacker()
+    socket._unpacker=ObservedUnpacker()
     start=time.perf_counter()
     try:
         responses=client.simGetImages(requests)
     finally:
         render_rpc_s=time.perf_counter()-start
         socket._unpacker=original
-    if chunks:(frames.parent/"image_rpc_payload.msgpack").write_bytes(b"".join(chunks))
+    if chunks:(frames.parent/f"image_rpc_payload_{index:04d}.msgpack").write_bytes(b"".join(chunks))
     if len(responses) != len(requests):
         raise RuntimeError(f"received {len(responses)} of {len(requests)} camera responses")
     for cam_index, name in enumerate(CAMERAS):
@@ -92,6 +92,7 @@ def record_images(client, out, frames, index, wall_start):
             "index": index, "camera": name, "wall_s": time.monotonic() - wall_start,
             "image_timestamp_ns": int(rgb.time_stamp), "depth_timestamp_ns": int(depth.time_stamp),
             "position_ned_m": values(rgb.camera_position), "orientation_xyzw": quat(rgb.camera_orientation),
+            "depth_position_ned_m": values(depth.camera_position), "depth_orientation_xyzw": quat(depth.camera_orientation),
             "fov_deg": float(info.fov), "width": int(rgb.width), "height": int(rgb.height),
             "rgb_path": str(rgb_file), "depth_path": str(depth_file),
             "render_rpc_s": render_rpc_s, "warmup": index == 0,
