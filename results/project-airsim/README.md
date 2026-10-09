@@ -2,6 +2,8 @@
 
 The [findings report](../../docs/project-airsim/findings.md) explains results and limits, including the 2026-10-08 local-only failure analysis. This directory contains small, browsable run records. Large raw captures, native metadata traces, videos, plots and calibration/pose records are in the ignored local `artifacts/project-airsim/<run-id>/` directories in the isolated worktree. Every listed raw directory was transferred from the A5000 host by resumable rsync and verified locally using its `manifest.sha256`; this is local preservation, not a durable off-machine backup. Each manifest gives per-file SHA256; `sizes.txt` gives directory byte totals. The manifest itself is hashed below. Historical run files were not changed by the later analysis.
 
+The compact local-only [review pack index](review-pack.md) points to an uploadable archive with selected original evidence, offline analysis and revised slides.
+
 | UTC run ID | Outcome | Ignored raw size (`du -sh`) | Manifest SHA256 |
 | --- | --- | ---: | --- |
 | `20261009T002738Z-pose-1` | Original A pass; DownCamera tilted 11.46° | 2.6M | `de4957cbff848827e3a652a6cae0e54bce5ea479d789367568dacf50ac2079ae` |
