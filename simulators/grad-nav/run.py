@@ -13,13 +13,13 @@ def main():
     now=datetime.datetime.now(datetime.timezone.utc);rid=now.strftime('%Y%m%dT%H%M%SZ')+'-'+a.mode+'-'+uuid.uuid4().hex[:6]
     raw=a.root/'artifacts/grad-nav'/rid;small=a.root/'results/grad-nav'/rid
     raw.mkdir(parents=True);small.mkdir(parents=True)
-    cmd=[sys.executable,str(a.root/'simulators/grad-nav/probe.py'),a.mode,'--upstream',str(a.upstream),'--out',str(raw)]
+    cmd=[sys.executable,str(a.root/('simulators/grad-nav/render.py' if a.mode in ['a','d'] else 'simulators/grad-nav/probe.py')),a.mode,'--upstream',str(a.upstream),'--out',str(raw)]
     def capture(c):return subprocess.run(c,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT).stdout
     metadata={'run_id':rid,'mode':a.mode,'start_utc':now.isoformat(),'timeout_s':a.timeout,'command':cmd,'cwd':str(pathlib.Path.cwd()),
       'candidate_commit':capture(['git','-C',str(a.root),'rev-parse','HEAD']).strip(),
       'upstream_commit':capture(['git','-C',str(a.upstream),'rev-parse','HEAD']).strip(),
       'upstream_status':capture(['git','-C',str(a.upstream),'status','--short']),
-      'input_path':str(a.upstream),'output_path':str(raw),'policy_weights':'none','scene':'none','seed':0,
+      'input_path':str(a.upstream),'output_path':str(raw),'policy_weights':'none','scene':'gate_mid' if a.mode in ['a','d'] else 'none','seed':0,
       'status':'running','environment_file':'environment.txt','learned_components_used':False}
     (raw/'run.json').write_text(json.dumps(metadata,indent=2)+'\n')
     (raw/'commands.log').write_text(json.dumps(cmd)+'\n')
@@ -44,7 +44,7 @@ def main():
     metadata.update(exit_status=code,status='completed' if code==0 else 'failed',wall_s=time.perf_counter()-start,
         end_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),timed_out=code==124)
     (raw/'run.json').write_text(json.dumps(metadata,indent=2)+'\n')
-    for name in ['run.json','commands.log','console.log','environment.txt','upstream.patch','config.json','metrics.json','conversion.json','gpu.jsonl']:
+    for name in ['run.json','commands.log','console.log','environment.txt','upstream.patch','config.json','camera_config.json','resolved-config.yml','metrics.json','conversion.json','gpu.jsonl']:
         if (raw/name).exists():(small/name).write_bytes((raw/name).read_bytes())
     manifest=[{'path':str(x.relative_to(raw)),'bytes':x.stat().st_size,'sha256':digest(x)} for x in sorted(raw.rglob('*')) if x.is_file()]
     (raw/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');(small/'manifest.json').write_bytes((raw/'manifest.json').read_bytes())
