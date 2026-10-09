@@ -54,7 +54,13 @@ def main():
  if camera:
   metrics['camera_dimensions']=sorted(set((c['height'],c['width']) for c in camera));metrics['timestamp_spread_ns_by_sample']={str(c['index']):c['camera_rgb_depth_timestamp_spread_ns'] for c in camera}
   lat={c['index']:c['render_rpc_s'] for c in camera};steady=[v for k,v in lat.items() if k>0]
-  metrics['rgb_depth_rpc_wall_s']={'first_batch':lat.get(0),'steady_count':len(steady),'steady_mean':float(np.mean(steady)) if steady else None,'steady_min':min(steady) if steady else None,'steady_max':max(steady) if steady else None,'meaning':'five-camera RGB+depth RPC plus renderer/transport; excludes client file writes; not pure GPU render time'}
+  metrics['rgb_depth_rpc_wall_s']={'first_batch':lat.get(0),'steady_count':len(steady),'steady_mean':float(np.mean(steady)) if steady else None,'steady_min':min(steady) if steady else None,'steady_max':max(steady) if steady else None,'meaning':'RPC plus renderer/transport; excludes client file writes; A/B five views, C pooled mixture superseded by rgb_depth_rpc_by_view_count; not pure GPU render time'}
+ if camera and 'camera_batch_views' in camera[0]:
+  groups={}
+  for count in sorted(set(c['camera_batch_views'] for c in camera)):
+   batches={c['index']:c['render_rpc_s'] for c in camera if c['camera_batch_views']==count}
+   values=list(batches.values());groups[str(count)]={'batch_count':len(values),'first_batch_s':values[0],'steady_count':len(values)-1,'steady_mean_s':float(np.mean(values[1:])) if len(values)>1 else None,'steady_min_s':min(values[1:]) if len(values)>1 else None,'steady_max_s':max(values[1:]) if len(values)>1 else None,'resolution':sorted(set((c['height'],c['width']) for c in camera if c['camera_batch_views']==count))}
+  metrics['rgb_depth_rpc_by_view_count']=groups
  if state:
   pts=np.array([s['position_ned_m'] for s in state]);metrics['state_sample_count']=len(pts);metrics['endpoint_displacement_m']=float(np.linalg.norm(pts[-1]-pts[0]));metrics['path_length_interpretation']='sampled lower bound; contacts are sampled evidence';metrics['achieved_path_length_m']=float(np.linalg.norm(np.diff(pts,axis=0),axis=1).sum())
   wall=np.array([s['wall_s'] for s in state]);sim=np.array([s['sim_timestamp_ns'] for s in state],np.float64)/1e9
@@ -63,7 +69,12 @@ def main():
   if ref:
    path=np.array([r['pose']['position'] for r in ref]);err=path_error(pts,path)
    metrics.update(final_endpoint_error_m=float(np.linalg.norm(pts[-1]-path[-1])),point_to_requested_polyline_rmse_m=float(np.sqrt(np.mean(err*err))),point_to_requested_polyline_max_m=float(err.max()),error_weighting='one equal weight per achieved state sample; purely geometric, no timed-reference alignment')
-   fig=plt.figure(figsize=(7,5));ax=fig.add_subplot(111,projection='3d');ax.plot(path[:,0],path[:,1],-path[:,2],'o--',label='reference/requested');ax.plot(pts[:,0],pts[:,1],-pts[:,2],'.-',label='achieved');ax.scatter(*[pts[-1,0],pts[-1,1],-pts[-1,2]],marker='X',s=80,label='termination')
+   fig=plt.figure(figsize=(7,5));ax=fig.add_subplot(111,projection='3d');ax.plot(path[:,0],path[:,1],-path[:,2],'o--',label='reference route' if (run/'policy_trace.jsonl').exists() else 'reference/requested');ax.plot(pts[:,0],pts[:,1],-pts[:,2],'.-',label='achieved');ax.scatter(*[pts[-1,0],pts[-1,1],-pts[-1,2]],marker='X',s=80,label='termination')
+   if (run/'policy_trace.jsonl').exists():
+    learned=rows(run/'policy_trace.jsonl')
+    for j,row in enumerate(learned):
+     w=np.asarray(row['refined_waypoints']);ax.plot(w[:,0],w[:,1],-w[:,2],color='orange',alpha=.7,label='learned requested paths' if j==0 else None)
+    metrics['tracking_error_caveat']='reported polyline error is distance to dataset reference, not controller tracking error; learned requested paths are separate traces; resets break continuous physical path'
    contacts=pts[[s['collision'] for s in state]]
    if len(contacts):ax.scatter(contacts[:,0],contacts[:,1],-contacts[:,2],c='r',marker='x',label='simulator contact')
    for c in camera[::max(1,len(camera)//10)]:
