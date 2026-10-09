@@ -1,0 +1,481 @@
+{
+  "schema": 1,
+  "source_run": "unreal-final-backup-20261008",
+  "files": [
+    {
+      "path": "R4R-Sims-git-state.json",
+      "bytes": 1474,
+      "sha256": "23a8f15ba36f1d6f04d5fab3acf6212f980aa6fb195cc8c141520735c5f4b6e0"
+    },
+    {
+      "path": "R4R-Sims-unreal-audit-git-state.json",
+      "bytes": 270,
+      "sha256": "9584c7306ec345467abc3e7ba7aa80a0fa2aac3aeca1c710218a61e6e23149f0"
+    },
+    {
+      "path": "cleanup-plan.json",
+      "bytes": 5077,
+      "sha256": "19a6830a5df679095488a8219b6cd63ce733871e10b4e3cc0f621543b4e2938c"
+    },
+    {
+      "path": "tmp/r4r-analysis-pip.log",
+      "bytes": 2721,
+      "sha256": "2a21cfd171bfecc529ecbe47a38fa09789aad9685a77ead4a784b72715bf791c"
+    },
+    {
+      "path": "tmp/r4r-analysis-separate.log",
+      "bytes": 1526,
+      "sha256": "2edfe5497fa68a75c603a377eab3ad92aeea6593d51c0998d304a60025d401c3"
+    },
+    {
+      "path": "tmp/r4r-blocks-smoke.log",
+      "bytes": 107308,
+      "sha256": "42888bab7309baba8fc752324626d13313cf3fa98aaafc7e39ab94a85f554401"
+    },
+    {
+      "path": "tmp/r4r-current-a-id",
+      "bytes": 31,
+      "sha256": "1566a367977ba9f9a5619e9bcbef31424f743adf9fb357a1fed07f813aa9d6a0"
+    },
+    {
+      "path": "tmp/r4r-current-b-id",
+      "bytes": 31,
+      "sha256": "0d490595edb615a182c3d5dada9e3aaaec4576c055b5ed255cba6e1652a0abc7"
+    },
+    {
+      "path": "tmp/r4r-ffmpeg-apt.log",
+      "bytes": 52470,
+      "sha256": "d38cd69720ed22a3dc030d1b9374417fe56abcf5b75d3cef9b694becd310a682"
+    },
+    {
+      "path": "tmp/r4r-final-b-id",
+      "bytes": 31,
+      "sha256": "d16aedc8232b40854bbac9a7cd7b56f46ea475fd8d0e2c62f09a3d903b76ed5d"
+    },
+    {
+      "path": "tmp/r4r-focused-camera-id",
+      "bytes": 33,
+      "sha256": "d40347fd5165f2a54b98d5adb68fae36b51056f98991c6a0c5623f25b55e92f8"
+    },
+    {
+      "path": "tmp/r4r-focused-landing-id",
+      "bytes": 43,
+      "sha256": "a41ebb8e464455cb2574240db91d9fd3961ce2a92a5aaf6aa423d58d32729641"
+    },
+    {
+      "path": "tmp/r4r-focused-landing-observed-id",
+      "bytes": 43,
+      "sha256": "726b3e53991c6c60f158ac7cdd58621a1f823d45d9e85c4d44164c41934b987f"
+    },
+    {
+      "path": "tmp/r4r-focused-landing-settled-id",
+      "bytes": 42,
+      "sha256": "e18bf65f9da629b8f7c35eea9f12a64e46dfe09e2165b46c129832927ebb1e51"
+    },
+    {
+      "path": "tmp/r4r-landing-check-id",
+      "bytes": 31,
+      "sha256": "41859217a88475b4821ab484b919fa449b1cad2ff6eb9c401fbbb5fc03f63747"
+    },
+    {
+      "path": "tmp/r4r-libegl-apt.log",
+      "bytes": 3884,
+      "sha256": "905c431d13408d1a9cca04cbaba47a67fb50af6c45ad842dc8b00cb30a3b07f0"
+    },
+    {
+      "path": "tmp/r4r-matplotlib-pip.log",
+      "bytes": 4246,
+      "sha256": "c6fb069ecc256f4f6099e54d8403ad491efe49f4ac4ff69a2897fbb54592489e"
+    },
+    {
+      "path": "tmp/r4r-pip-airsim.log",
+      "bytes": 2313,
+      "sha256": "997b58df29b73764c675ba1822564c88b7127b1ad2eaa0b02efbcc8a7998876a"
+    },
+    {
+      "path": "tmp/r4r-pip-deps.log",
+      "bytes": 4110,
+      "sha256": "10633ab734268799c120ad8fe53ab8b8046b902ffb3a520a21cdd1acc0be9b15"
+    },
+    {
+      "path": "tmp/r4r-pip-repin.log",
+      "bytes": 1284,
+      "sha256": "c0f77a8e9bc710d18bc81c384f3c675d1baa6b3631d3f0599b42f7298be27ffc"
+    },
+    {
+      "path": "tmp/r4r-pip-wheel.log",
+      "bytes": 545,
+      "sha256": "c0e1d22d59e0c957e6abfd23e6df0bd7322191278ffddf890aafbe7513e55f99"
+    },
+    {
+      "path": "tmp/r4r-pip.log",
+      "bytes": 3028,
+      "sha256": "1ad155d8d793e5d33256028cfbd946ad4b5e1c2baf37b46c6eca662d03b81cb0"
+    },
+    {
+      "path": "tmp/r4r-plugin-clone.log",
+      "bytes": 33,
+      "sha256": "7a17c41edc821bb94cc78310ecf55302e8ac920856e5b487cd5d0ddee0a83592"
+    },
+    {
+      "path": "tmp/r4r-preflight.json",
+      "bytes": 3370,
+      "sha256": "3c41d9f413fadabd1ccc58b3ebc39701a56da19009b6a465d62c9a9fdc337cfc"
+    },
+    {
+      "path": "tmp/r4r-pull.log",
+      "bytes": 502,
+      "sha256": "fcb42a04d03e854d397bc10360e5f84e08e4a3f2227834970bfb71aa9ccc70c5"
+    },
+    {
+      "path": "tmp/r4r-rpc-parent.pid",
+      "bytes": 5,
+      "sha256": "1e3d96ff5cf5e278c96a0e64701e17c3f9137b441ae62dbf777d9ebd941e3c14"
+    },
+    {
+      "path": "tmp/r4r-rpc-smoke.log",
+      "bytes": 107200,
+      "sha256": "0c717a88bd956778eb3ed057992c1edd0fac13b6c62494f283970386d7247163"
+    },
+    {
+      "path": "tmp/r4r-rsync-apt.log",
+      "bytes": 1918,
+      "sha256": "aac244d020214af1bc52849d47593119a8ff4f86e771d000eb38bd6ee5d143f9"
+    },
+    {
+      "path": "tmp/r4r-splat-active-id",
+      "bytes": 31,
+      "sha256": "b2ab7e64376d4c6f447eab1bb15bfe11f451ef846f4bfc7e1673628f8e4e9ab6"
+    },
+    {
+      "path": "tmp/r4r-splat-build.sh",
+      "bytes": 2213,
+      "sha256": "10f6551bf1f02fc0fc34774bef0759cc9a380340b10cc6b1cddb6efafae36828"
+    },
+    {
+      "path": "tmp/r4r-splat-capture-fixed.py",
+      "bytes": 5788,
+      "sha256": "a707443abab5de3f600b66eceb938f22512a19fb7c9d11dda2077f3ad11e83c4"
+    },
+    {
+      "path": "tmp/r4r-splat-capture-ue-20261008T223559Z-s-8c7e26a7.py",
+      "bytes": 5132,
+      "sha256": "3348fcfe9b67c48ee8b35d75b2427ad4301a0db348af7e981f9cfd880d82178a"
+    },
+    {
+      "path": "tmp/r4r-splat-capture-ue-20261008T224031Z-s-fe9a3ea3.py",
+      "bytes": 5788,
+      "sha256": "a707443abab5de3f600b66eceb938f22512a19fb7c9d11dda2077f3ad11e83c4"
+    },
+    {
+      "path": "tmp/r4r-splat-capture.py",
+      "bytes": 5115,
+      "sha256": "9b67c88045be92ce3041e36974de963515a76b6d91e1a1c4bc84be41790db226"
+    },
+    {
+      "path": "tmp/r4r-splat-channel-active-id",
+      "bytes": 39,
+      "sha256": "7657cbad358fe43818dd5ba443c5ccab90d5e7b9c806ab8dac6408a49e5aab2b"
+    },
+    {
+      "path": "tmp/r4r-splat-channel-control.py",
+      "bytes": 4969,
+      "sha256": "9862cbb9f895fa084fe83c5691981bc0936aa4b37284ba4d229c189995f46e02"
+    },
+    {
+      "path": "tmp/r4r-splat-channel-launch.sh",
+      "bytes": 2167,
+      "sha256": "8158f9e4b1419e9a868ece6bd49df7cd718d8c07215e8c8fdb8a0560e33f5d7c"
+    },
+    {
+      "path": "tmp/r4r-splat-control-active-id",
+      "bytes": 39,
+      "sha256": "878424ba20da0752a48034cb6898fc0c8696ec2f985774bbde8c8f4c43bbd455"
+    },
+    {
+      "path": "tmp/r4r-splat-control-launch.sh",
+      "bytes": 2158,
+      "sha256": "3f0c9da4dc27e195aedec7ffdf67287fd8978b7ea3a41dc286715f3c05803e85"
+    },
+    {
+      "path": "tmp/r4r-splat-control.py",
+      "bytes": 3839,
+      "sha256": "d4d87f37118e4cdce6b5f254346e373fe4a3a7593a9b52e833db06782890b258"
+    },
+    {
+      "path": "tmp/r4r-splat-gpu.sh",
+      "bytes": 380,
+      "sha256": "92f93fa2b33e7498c011d89e4909c5ddb19ac002cca6cfa85a0366672923c070"
+    },
+    {
+      "path": "tmp/r4r-splat-launch-retry.sh",
+      "bytes": 1741,
+      "sha256": "66e5c9bcf26966a492ceb8f6451bc567004d334d8cc27d8ab90da2457e76c5eb"
+    },
+    {
+      "path": "tmp/r4r-splat-launch-third.sh",
+      "bytes": 1798,
+      "sha256": "26b4eb231c53ba814c8298128617fcab4d90be53bb0664abf0a7389e2625a69c"
+    },
+    {
+      "path": "tmp/r4r-splat-light-active-id",
+      "bytes": 37,
+      "sha256": "0be5be23d92ffd0691c9134697e2d7239d044e7a6956bd7ec7deee88e69a557a"
+    },
+    {
+      "path": "tmp/r4r-splat-light-control.py",
+      "bytes": 5348,
+      "sha256": "a3fd870bf898da4721d0c288f79a7d8ec00c97b8373ec13b82dc5d5266dcfd0f"
+    },
+    {
+      "path": "tmp/r4r-splat-light-launch.sh",
+      "bytes": 2214,
+      "sha256": "29ceae1f4e0eaa52bef6db07693a45ff5056503cd573a3f05007f8d5fff0d8a5"
+    },
+    {
+      "path": "tmp/r4r-splat-project/Config/DefaultEngine.ini",
+      "bytes": 477,
+      "sha256": "56b1c67b67649bbcbba3e61b74c5f46bd32d6b18e53a425ad458176d90c577dd"
+    },
+    {
+      "path": "tmp/r4r-splat-project/Config/DefaultInput.ini",
+      "bytes": 9016,
+      "sha256": "b4ab14d8acf924315fb2fdd2a358ec692027745aa8e47baaaf73bda4e3b99e0d"
+    },
+    {
+      "path": "tmp/r4r-splat-project/Content/Gaussians/chinese_vase.uasset",
+      "bytes": 1311586,
+      "sha256": "7882662286f05466ebf7a9232024c880631621b9fb1c1b8b9e910defa363ef1f"
+    },
+    {
+      "path": "tmp/r4r-splat-project/Content/Maps/VaseSmoke.umap",
+      "bytes": 8651,
+      "sha256": "4604fa3ce8b598b09b8b4ae20e27cb19b42434d2f0f626e15c133f9e0e5aace1"
+    },
+    {
+      "path": "tmp/r4r-splat-project/R4RSplat.uproject",
+      "bytes": 394,
+      "sha256": "6255bba0f9e32c55f63c51e16fa98b47e480f3422c9e23bce7edd321562301b5"
+    },
+    {
+      "path": "tmp/r4r-splat-project/Saved/Logs/R4RSplat.log",
+      "bytes": 228165,
+      "sha256": "55a59b29fe1e892027672158c66b4663eae3886e2607f1b292a497b347341803"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T223559Z-s-8c7e26a7/Config/DefaultEngine.ini",
+      "bytes": 477,
+      "sha256": "6f78222a33119d4d108db5d413c192e2c316892126f048ac9c67aa20bcf39541"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T223559Z-s-8c7e26a7/Config/DefaultInput.ini",
+      "bytes": 9016,
+      "sha256": "b4ab14d8acf924315fb2fdd2a358ec692027745aa8e47baaaf73bda4e3b99e0d"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T223559Z-s-8c7e26a7/Content/Gaussians/chinese_vase.uasset",
+      "bytes": 1311679,
+      "sha256": "1eb4e4373b30f5a336cbafd18f70a4a0164cb4dd3e19921015f87256aa7f48b9"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T223559Z-s-8c7e26a7/Content/Maps/VaseSmoke.umap",
+      "bytes": 24306,
+      "sha256": "54f887346ec0a75917bf1205675f371ce0fa8d3259aec1e8701cd75449aa1840"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T223559Z-s-8c7e26a7/R4RSplat.uproject",
+      "bytes": 394,
+      "sha256": "6255bba0f9e32c55f63c51e16fa98b47e480f3422c9e23bce7edd321562301b5"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T223559Z-s-8c7e26a7/Saved/Logs/R4RSplat.log",
+      "bytes": 231050,
+      "sha256": "0b9457f6d67afceb9f33e3107e5d7df368fe664597761be358193c782d3a9f6f"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Config/DefaultEngine.ini",
+      "bytes": 477,
+      "sha256": "d56b1c5eb9044e3cf3de54d1b7e03af8865a01cc996041fabdb838a3f0c71092"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Config/DefaultInput.ini",
+      "bytes": 9016,
+      "sha256": "b4ab14d8acf924315fb2fdd2a358ec692027745aa8e47baaaf73bda4e3b99e0d"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Content/Gaussians/chinese_vase.uasset",
+      "bytes": 1311679,
+      "sha256": "4dddbe3ce2b334c4edb002d5685eb49bde6c9d6ed4f0e66cdb408e981ebea4f0"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Content/Maps/VaseSmoke.umap",
+      "bytes": 24306,
+      "sha256": "c3698b70c4ce866a55e5ec1f5843d0e107c3e75c0d234475abab1594d6744b02"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/R4RSplat.uproject",
+      "bytes": 394,
+      "sha256": "6255bba0f9e32c55f63c51e16fa98b47e480f3422c9e23bce7edd321562301b5"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Saved/Logs/R4RSplat-backup-2026.10.08-22.43.20.log",
+      "bytes": 234832,
+      "sha256": "9376937d8323292365f7630eea11a6cc78bd840816ed0b66f325d5736cff4f33"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Saved/Logs/R4RSplat-backup-2026.10.08-22.46.35.log",
+      "bytes": 214240,
+      "sha256": "decceae9051ce169e636ad7aad5351b18f5c702d7312f82c747f30bf219d79a5"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Saved/Logs/R4RSplat-backup-2026.10.08-22.49.37.log",
+      "bytes": 213664,
+      "sha256": "2bac3e9bfa611002d87d110d045917afd03809dcbb05b0c91dac0de05193c930"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Saved/Logs/R4RSplat-backup-2026.10.08-22.51.53.log",
+      "bytes": 213840,
+      "sha256": "1ead9a9e91899337754f7b5eefcebdaec0e6f8cbb33d18fc976af00e92745c98"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Saved/Logs/R4RSplat-backup-2026.10.08-23.25.38.log",
+      "bytes": 213384,
+      "sha256": "483090fe2dc1dee2bce7fa0aa237824955b30783e26bd3cfe6929dfaaae8aaf4"
+    },
+    {
+      "path": "tmp/r4r-splat-project-ue-20261008T224031Z-s-fe9a3ea3/Saved/Logs/R4RSplat.log",
+      "bytes": 213493,
+      "sha256": "4c20b12ecf5da92beccef691df92a2552272387d0a212d16e5dbcd5655a4500c"
+    },
+    {
+      "path": "tmp/r4r-splat-render-retry.sh",
+      "bytes": 2444,
+      "sha256": "5538a9e091ec9d8afa4c588b74baa1a0e71d199bf1327ad28da428262592c96f"
+    },
+    {
+      "path": "tmp/r4r-splat-render.sh",
+      "bytes": 2189,
+      "sha256": "d50c132f781fe3dac2d10cbdb8ce270c01a45c9db1e7a26356e7289367f94708"
+    },
+    {
+      "path": "tmp/r4r-splat-tick-active-id",
+      "bytes": 39,
+      "sha256": "834a69bd06a4db10508deef9ba7a081d27b2d32ca826ce43842698dc5318e680"
+    },
+    {
+      "path": "tmp/r4r-splat-tick-control.py",
+      "bytes": 4402,
+      "sha256": "bc6c82fe999787f3f377fa3d78195f6e57019650af1bc99b977a1df3d4de6f43"
+    },
+    {
+      "path": "tmp/r4r-splat-tick-launch.sh",
+      "bytes": 2155,
+      "sha256": "15d32890fd502b0233bb3645cc03852373b7d91ebdbfa832040cf6b434bedec8"
+    },
+    {
+      "path": "tmp/r4r-strace-apt.log",
+      "bytes": 1303,
+      "sha256": "8bc58c0d5653fbed7e77978fe6281c72666c70bcdd7e0471c5f1bdb7735a64ed"
+    },
+    {
+      "path": "tmp/r4r-tmux-apt.log",
+      "bytes": 2224,
+      "sha256": "aa60d68ca1a74e1032bdf9398e37f1859aed2d8b70cfd5e1ce05a38a0b503d64"
+    },
+    {
+      "path": "tmp/r4r-vulkan.stderr",
+      "bytes": 406,
+      "sha256": "4782bc0f05acbbcc41bd14335f9cff4a0fadc790d2733341a3db36a81d797337"
+    },
+    {
+      "path": "tmp/r4r-vulkan.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tmp/r4r-vulkan.strace",
+      "bytes": 137031,
+      "sha256": "4362a220a41636403fe1b157e96f48e68b064251d2ecf298dccc390a7f094074"
+    },
+    {
+      "path": "tmp/splat_light_control.py",
+      "bytes": 5217,
+      "sha256": "2cc88400f53787f36fcb61ad4a8d293f0d46f3b1e34ab0dde9a426c1857f9482"
+    },
+    {
+      "path": "tmp/ue-20261008T215142Z-a-f0246d36-launch.log",
+      "bytes": 214,
+      "sha256": "908fac606de2d0a01f204e1741147823dc4fe8c6664be81ec3c69ef23efa523a"
+    },
+    {
+      "path": "tmp/ue-20261008T215142Z-a-f0246d36-supervisor.log",
+      "bytes": 735,
+      "sha256": "31c6b14771be7335509d751dbc221353d9fa0d18f045f77d3665624b70bd5425"
+    },
+    {
+      "path": "tmp/ue-20261008T215319Z-a-5fe9b7c3-launch.log",
+      "bytes": 212,
+      "sha256": "cdd44d53248035875adfdaa874026fa3a413e1c064adb24b58d8e6bb83433be6"
+    },
+    {
+      "path": "tmp/ue-20261008T215319Z-a-5fe9b7c3-supervisor.log",
+      "bytes": 3873,
+      "sha256": "4b9f6ea456607cf41664d6ccd53121020578e90f5b5ba8c4fcf3132904a03741"
+    },
+    {
+      "path": "tmp/ue-20261008T215415Z-b-e868ec1c-launch.log",
+      "bytes": 212,
+      "sha256": "7d58c147fa2f61b964502a1960aa843f5b6946ef445ab6bd834a102c59a1ed38"
+    },
+    {
+      "path": "tmp/ue-20261008T215415Z-b-e868ec1c-supervisor.log",
+      "bytes": 4223,
+      "sha256": "c38e191da2494e78784b46e5b7d080b49507feaafe4a316c0c1a1bbadc051fdf"
+    },
+    {
+      "path": "tmp/ue-20261008T215611Z-b-d415e2e7-launch.log",
+      "bytes": 212,
+      "sha256": "ed11990ba9a88803bd5d11ea85689a0e130e27eef91aeb92397afea6b4f0e564"
+    },
+    {
+      "path": "tmp/ue-20261008T215611Z-b-d415e2e7-supervisor.log",
+      "bytes": 3911,
+      "sha256": "15463001b03035bb8db76353e329793ab6a550354d0a4de0d30e8494908edc32"
+    },
+    {
+      "path": "tmp/ue-20261008T215758Z-b-33710b89-launch.log",
+      "bytes": 212,
+      "sha256": "9adbb84b8b9940de88f76f7de71335b3ca4f6a056ba6b49f480f5d556122673f"
+    },
+    {
+      "path": "tmp/ue-20261008T215758Z-b-33710b89-supervisor.log",
+      "bytes": 3911,
+      "sha256": "7777723d915b1831a4c9866231ce4f4951254ebff86b9ed5c54380029d988d8c"
+    },
+    {
+      "path": "tmp/ue-20261008T220223Z-b-eddeea80-launch.log",
+      "bytes": 212,
+      "sha256": "2f338a607192877255ecdd52c82189610213e503780ae2672899fb2f89efb426"
+    },
+    {
+      "path": "tmp/ue-20261008T220223Z-b-eddeea80-supervisor.log",
+      "bytes": 3911,
+      "sha256": "d2235a0538117d5e003a9eaf60a452e04c346cf2878f9f6759f3790fc45970e8"
+    },
+    {
+      "path": "tmp/ue-20261008T220451Z-b-a3d4be49-launch.log",
+      "bytes": 212,
+      "sha256": "f303ecef35a41e58c1597aaca8d7a2d7767488d3a4910c91dfba5a934c21e6b8"
+    },
+    {
+      "path": "tmp/ue-20261008T220451Z-b-a3d4be49-supervisor.log",
+      "bytes": 3911,
+      "sha256": "ae01fcaa14a663f54d1118c8d44923d39627abed0e4a1992a5739c060377736f"
+    },
+    {
+      "path": "tmp/unzip-install.log",
+      "bytes": 934,
+      "sha256": "34bd65ab5a20a2b272c2c994c531e22428933ae11e7baedfb764fc28ede985bb"
+    }
+  ]
+}
