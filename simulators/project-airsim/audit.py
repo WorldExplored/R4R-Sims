@@ -156,10 +156,11 @@ def subscribe_capture(client, drone, rec):
     client.subscribe(drone.robot_info["actual_pose"], rec.callback("state"))
     client.subscribe(drone.robot_info["collision_info"], rec.callback("collision"))
 
-async def task_done(rec, client, drone, label, started_task, limit=30):
+async def task_done(rec, client, drone, label, start_task, limit=30):
     append(rec.root / "actions.jsonl", {"phase": label, "event": "start", **now()})
     client.socket_services.recv_timeout = 30000
     try:
+        started_task = await start_task()
         result = await asyncio.wait_for(started_task, limit)
         append(rec.root / "actions.jsonl", {"phase": label, "event": "complete", "result": result, **now()})
         return result
@@ -183,10 +184,10 @@ async def flight(args, client, world, drone, rec):
     start = pose_dict(drone.get_ground_truth_pose())
     append(rec.root / "reference_route.jsonl", {"phase": "spawn", "pose": start, **now()})
     try:
-        await task_done(rec, client, drone, "takeoff", await drone.takeoff_async(timeout_sec=25))
+        await task_done(rec, client, drone, "takeoff", lambda: drone.takeoff_async(timeout_sec=25))
         hover_pose = pose_dict(drone.get_ground_truth_pose())
         append(rec.root / "reference_route.jsonl", {"phase": "hover_1", "pose": hover_pose, "duration_wall_s": 3, **now()})
-        await task_done(rec, client, drone, "hover_1", await drone.hover_async(), 5)
+        await task_done(rec, client, drone, "hover_1", lambda: drone.hover_async(), 5)
         await asyncio.sleep(3)
         p = xyz(hover_pose)
         if any(v is None for v in p):
@@ -202,22 +203,22 @@ async def flight(args, client, world, drone, rec):
             append(rec.root / "reference_route.jsonl", {**segment, **now()})
             target=segment["ned_m"]
             await task_done(rec, client, drone, segment["phase"],
-                await drone.move_to_position_async(*target, velocity=segment["speed_m_s"], timeout_sec=25))
+                lambda: drone.move_to_position_async(*target, velocity=segment["speed_m_s"], timeout_sec=25))
         if args.mode == "flight":
             append(rec.root / "reference_route.jsonl", {"phase": "yaw_plus_30", "degrees_from_spawn": -15, **now()})
             await task_done(rec, client, drone, "yaw_plus_30",
-                            await drone.rotate_to_yaw_async(math.radians(-15), timeout_sec=25))
-            await task_done(rec, client, drone, "hover_2", await drone.hover_async(), 5)
+                            lambda: drone.rotate_to_yaw_async(math.radians(-15), timeout_sec=25))
+            await task_done(rec, client, drone, "hover_2", lambda: drone.hover_async(), 5)
             await asyncio.sleep(3)
             return_pt = [p[0],p[1],p[2]]
             append(rec.root / "reference_route.jsonl", {"phase": "return", "ned_m": return_pt, "speed_m_s": 1.0, **now()})
             await task_done(rec, client, drone, "return",
-                await drone.move_to_position_async(*return_pt, velocity=1.0, timeout_sec=25))
+                lambda: drone.move_to_position_async(*return_pt, velocity=1.0, timeout_sec=25))
         if args.mode == "flight":
             remaining = max(0.0, 30.0 - (time.monotonic() - capture_started))
             append(rec.root / "actions.jsonl", {"phase": "capture_hold", "duration_wall_s": remaining, **now()})
             await asyncio.sleep(remaining)
-        await task_done(rec, client, drone, "land", await drone.land_async(timeout_sec=25))
+        await task_done(rec, client, drone, "land", lambda: drone.land_async(timeout_sec=25))
         append(rec.root / "actions.jsonl", {"phase": "landed_check", "landed_state": drone.get_landed_state(),
                                            "ground_truth": pose_dict(drone.get_ground_truth_pose()), **now()})
     finally:
