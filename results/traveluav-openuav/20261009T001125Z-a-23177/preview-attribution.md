@@ -1,0 +1,1 @@
+Native author-released ModernCityMap rendered observations; fixed0..100m depth preview, raw floats preserved. Project/code/license provenance:docs/traveluav-openuav/sources.md. No additional rights to underlying assets are granted.

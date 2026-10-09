@@ -1,2 +1,4 @@
 setsid /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -settings=/workspace/R4R-Sims/results/traveluav-openuav/20261009T001125Z-a-23177/settings.json 
 timeout 90s python /workspace/R4R-Sims/artifacts/traveluav-openuav/launch-20261009T001125Z-a-23168/code/probe.py a --output /workspace/R4R-Sims/results/traveluav-openuav/20261009T001125Z-a-23177 --frames-dir /workspace/R4R-Sims/artifacts/traveluav-openuav/20261009T001125Z-a-23177/frames --episode /workspace/R4R-Sims/results/traveluav-openuav/20261009T001125Z-a-23177/episode.json --port 41451 
+post-run: verify_decoder.py image_rpc_payload_0000.msgpack legacy0.5.6source decoder-equivalence.json; calibration.py RUN; collect.sh RUN; exit_status=0
+postprocessing helper system Python failed Pillow import; exit_status=1; retried using env-ab Python; exit_status=0

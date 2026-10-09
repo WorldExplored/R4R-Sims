@@ -15,5 +15,10 @@
   "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
   "missing_data": [],
   "exit_status": 0,
-  "ended_utc": "2026-10-09T00:11:31.836794+00:00"
+  "ended_utc": "2026-10-09T00:11:31.836794+00:00",
+  "capture_status": "30RGB+30raw metric arrays; six vehicle positions match reference",
+  "depth_response_poses": "30recorded separately; depth/RGB positions equal, timestamps equal within batches",
+  "camera_mount_caveat": "nominal mount residual max0.209720m; actual response extrinsics authoritative",
+  "gpu_scope": "scene-only; no model active",
+  "decoder_validation": "all response metadata and image/depth values equal on same first-batch bytes; active C extension"
 }
