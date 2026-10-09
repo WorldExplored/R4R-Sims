@@ -74,7 +74,8 @@ def make(run_root, result_root):
         Image.open(rgb[len(rgb)//2]).save(result_root / "rgb_preview.png")
         command = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-framerate", "10",
                    "-pattern_type", "glob", "-i", str(run_root / "rgb" / "ForwardCamera_*.png"),
-                   "-c:v", "libx264", "-pix_fmt", "yuv420p", str(result_root / "forward_rgb_10fps.mp4")]
+                   "-vf", "pad=ceil(iw/2)*2:ceil(ih/2)*2", "-c:v", "libx264",
+                   "-pix_fmt", "yuv420p", str(result_root / "forward_rgb_10fps.mp4")]
         subprocess.run(command, check=True, timeout=120)
     if depth:
         z = np.load(depth[len(depth)//2]).astype("float32")
@@ -95,7 +96,7 @@ def make(run_root, result_root):
                "depth_saved_per_wall_s": sum(x["image_type"] == 1 for x in images)/duration,
                "callback_to_save_ms_median": statistics.median(x["callback_to_save_ms"] for x in images),
                "collision_event_count": len(records(run_root / "collisions.jsonl")) if (run_root / "collisions.jsonl").exists() else 0,
-               "video_playback_fps": 10, "video_timing": "constant 10 fps from ordered saved ForwardCamera RGB; not native wall/simulator timing"}
+               "video_playback_fps": 10, "video_timing": "constant 10 fps from ordered saved ForwardCamera RGB; one padded row for H.264; not native wall/simulator timing"}
     (result_root / "analysis.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
     print(json.dumps(summary, sort_keys=True))
 
