@@ -1,6 +1,6 @@
 # TravelUAV/OpenUAV native audit — evidence slides
 
-2026-10-08. This is slide material, not a claimed real-world validation. See report.md and linked run records. Final C and preservation status require settled evidence.
+2026-10-08. This is slide material, not a claimed real-world validation. See report.md and linked run records. C executed; final preservation status is in preservation.json.
 
 ## 1. R4R question and tested boundary
 
@@ -49,12 +49,16 @@
 - LoRA exact; trajectory520matched; DINO938matched with2 documented unused entries.
 - Metadata regenerated twice with actualrandom.seed(100), identical hashes/description/instruction; original published description unknown.
 - Known target orients history frame; always_help/use_gt remains true; segment resets/padded state/requested oracle are disclosed.
-- C outcome pending final settlement; no published benchmark-score claim.
+- C20261008T235452Z-c-21144:10learned decisions,7refined waypoints each; budget truncation, no success/model stop.
+- Actual notices:None×1, take off×5, cruise×4. Target-frame privilege remains.
+- Raw official metrics denominator1:SR/OSR/SPL0, NE85.52m; truncated regenerated-metadata smoke, no benchmark claim.
+- Model.run cold1.136s;9later mean0.279s; independent preprocessing/controller/DINO/observation timings retained.
+- Figure: [C reference/learned requested/achieved trajectory](../../results/traveluav-openuav/20261008T235452Z-c-21144/trajectory.png), ten waypoint/notice traces and stop flags.
 
 ## 7. Resources and setup burden
 
 - MeasuredA6000, Ubuntu22.04,6vCPU/47GiB/251GiB; below targetCPU/RAM/disk.
-- Native scene-only sampled peak652MiB(A),742MiB(B); C combined peak to add from settled run.
+- Native scene-only sampled peak652MiB(A),742MiB(B); C combined sampled peak21,396MiB; process/allocator scopes differ, no exact policy-only subtraction.
 - Selected compressed archives28.50GB; extracted scene2.168GB +episode19.03MB; models~22GiB.
 -37min to nativeA,96min to loader eligibility including failures; separate training's8A100 from inference.
 - Full-instance/storage quote unknown; user GPU display$0.54/h only.
@@ -72,4 +76,14 @@
 - Branch commits, small records/plots, canonical Mac raw files and checksums.
 - Exact model/archive retrieval verified from receiving Mac; custom outputs preserved locally.
 - Main integration pending; other candidate branches are not controlled comparisons.
-- Final verdict requires local settled checksums and readable files; never infer preservation from Git push alone.
+- Final verdict in preservation.json requires settled destination checksums and readable files; never infer preservation from Git push alone.
+
+## Review figures
+
+![A five views](../../results/traveluav-openuav/20261008T234631Z-a-18267/preview_rgb_depth.jpg)
+
+![B route](../../results/traveluav-openuav/20261008T234423Z-b-17460/trajectory.png)
+
+![C route](../../results/traveluav-openuav/20261008T235452Z-c-21144/trajectory.png)
+
+Bfront video is in canonical Mac artifacts/20261008T234423Z-b-17460/front_playback_1fps.mp4;1fps is playback, not physics/render throughput. Cfront playback is preserved in its raw artifact folder.
