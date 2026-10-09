@@ -1,0 +1,50 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "flight": {
+      "wall_s": 0.504503792,
+      "watchdog_decision_s": 0.501505125,
+      "budget_s": 0.5,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+      "workers": [
+        {
+          "role": "control",
+          "pid": 44028,
+          "exit_status": -15,
+          "still_alive": false,
+          "stop_reason": "phase_deadline",
+          "active_operation": "",
+          "attempted_land": false,
+          "attempted_disarm": false,
+          "report": null
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "cleanup": {
+      "wall_s": 0.25292950000000003,
+      "watchdog_decision_s": 0.24952275000000013,
+      "budget_s": 0.5,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+      "workers": [
+        {
+          "role": "cleanup",
+          "pid": 44029,
+          "exit_status": -15,
+          "still_alive": false,
+          "stop_reason": "call_deadline",
+          "active_operation": "synthetic_land_call",
+          "attempted_land": true,
+          "attempted_disarm": false,
+          "report": null
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "landing_confirmed": "not determined by process supervision"
+  }
+}

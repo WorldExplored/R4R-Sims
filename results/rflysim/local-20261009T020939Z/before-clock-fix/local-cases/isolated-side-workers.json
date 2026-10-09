@@ -1,0 +1,62 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "wall_s": 0.42035866699999996,
+    "watchdog_decision_s": 0.419915334,
+    "budget_s": 2,
+    "poll_s": 0.01,
+    "reap_s_per_step": 0.1,
+    "workers": [
+      {
+        "role": "control",
+        "pid": 43438,
+        "exit_status": 0,
+        "still_alive": false,
+        "stop_reason": "worker_exited",
+        "active_operation": "",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": {
+          "status": "returned",
+          "result": {
+            "synthetic": true
+          }
+        }
+      },
+      {
+        "role": "capture",
+        "pid": 43439,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "call_deadline",
+        "active_operation": "synthetic_blocked_call",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      },
+      {
+        "role": "writer",
+        "pid": 43440,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "call_deadline",
+        "active_operation": "synthetic_blocked_call",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      },
+      {
+        "role": "gpu",
+        "pid": 43441,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "call_deadline",
+        "active_operation": "synthetic_blocked_call",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      }
+    ],
+    "landing_confirmation_source": "telemetry evaluator only"
+  }
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "url": "https://rflysim.com/doc/en/1.Start/install.html",
+    "retrieved_utc": "2026-10-09T02:09:39.708178+00:00",
+    "bytes": 119745,
+    "sha256": "a6237d8f25447be9f0206e98813b97b60a53c1832989248a7883717a369d02ed",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/install.html"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/3.Soft/coptersim.html",
+    "retrieved_utc": "2026-10-09T02:09:42.363896+00:00",
+    "bytes": 200875,
+    "sha256": "3b63f2487ced72c20e292d38f82d2ef1f8ae4472a08146b44cd78d1fb661c5f1",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/coptersim.html"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/3.Soft/docker.html",
+    "retrieved_utc": "2026-10-09T02:09:44.213234+00:00",
+    "bytes": 122089,
+    "sha256": "505885aa5070afe93b3a398c3d62505e5b7ae5252cc9f53365484a7974c229fd",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/docker.html"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/4.DevRef/3d-res.html",
+    "retrieved_utc": "2026-10-09T02:09:45.864012+00:00",
+    "bytes": 149583,
+    "sha256": "b5c6d3859e6511828936af5d60420cf012e61e05cc048259a3c90b71fd3d9c07",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/3d-res.html"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/4.DevRef/vis-cfg.html",
+    "retrieved_utc": "2026-10-09T02:09:47.703764+00:00",
+    "bytes": 247736,
+    "sha256": "73507559b6d3348d688bc445da7c9de8e7ed9a6fe5d76408d27435e086c5c4bc",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/vis-cfg.html"
+  },
+  {
+    "url": "https://rflysim.com/js/langData.js?v=20260715_course",
+    "retrieved_utc": "2026-10-09T02:09:50.521583+00:00",
+    "bytes": 141758,
+    "sha256": "075a1423855b83a5a996b45f474a111cb888cad6a5740136fbf6780b391ea3d5",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/langData.js"
+  },
+  {
+    "url": "https://api.github.com/repos/RflySim/CopterSim/releases",
+    "command": [
+      "gh",
+      "api",
+      "repos/RflySim/CopterSim/releases"
+    ],
+    "exit_status": 0,
+    "retrieved_utc": "2026-10-09T02:09:53.003454+00:00",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/CopterSim-releases.json"
+  },
+  {
+    "url": "https://api.github.com/repos/RflySim/RflyExpCode/releases",
+    "command": [
+      "gh",
+      "api",
+      "repos/RflySim/RflyExpCode/releases"
+    ],
+    "exit_status": 0,
+    "retrieved_utc": "2026-10-09T02:09:53.490352+00:00",
+    "bytes": 7253,
+    "sha256": "ffe984349dcc19542835ec0d54080d9310ec32a2d150a9b937b7f1c9dca03f22",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/RflyExpCode-releases.json"
+  },
+  {
+    "url": "https://api.github.com/repos/RflySim/RflySimVision/releases",
+    "command": [
+      "gh",
+      "api",
+      "repos/RflySim/RflySimVision/releases"
+    ],
+    "exit_status": 0,
+    "retrieved_utc": "2026-10-09T02:09:53.893667+00:00",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/RflySimVision-releases.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RflySim/Docs/608bf7f47e4f61bc38b75b7353a7e469c75e4b95/README.md",
+    "commit": "608bf7f47e4f61bc38b75b7353a7e469c75e4b95",
+    "retrieved_utc": "2026-10-09T02:11:07.782638+00:00",
+    "bytes": 7814,
+    "sha256": "a85d3325c33137df71e19fdb12afb90e1c06b640aedc6670b47fb50aad11da14",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/Docs-README.md"
+  },
+  {
+    "url": "https://api.github.com/repos/RflySim/doc/releases",
+    "command": [
+      "gh",
+      "api",
+      "repos/RflySim/doc/releases"
+    ],
+    "exit_status": 0,
+    "retrieved_utc": "2026-10-09T02:11:08.305113+00:00",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/doc-releases.json"
+  },
+  {
+    "url": "https://api.github.com/repos/RflySim/Docs/releases",
+    "command": [
+      "gh",
+      "api",
+      "repos/RflySim/Docs/releases"
+    ],
+    "exit_status": 0,
+    "retrieved_utc": "2026-10-09T02:11:08.720871+00:00",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/Docs-releases.json"
+  },
+  {
+    "url": "https://docs.python.org/3/library/time.html",
+    "retrieved_utc": "2026-10-09T02:20:23.183371+00:00",
+    "bytes": 129033,
+    "sha256": "5a2bbb39ada1cb932c86e11e20ccdfefd8d6864c5f41b95847900b3fcb3577d7",
+    "local_path": "artifacts/rflysim/local-20261009T020939Z/source-snapshots/python-time.html"
+  }
+]

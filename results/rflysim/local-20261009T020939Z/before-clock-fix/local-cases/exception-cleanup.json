@@ -1,0 +1,58 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "flight": {
+      "wall_s": 0.13882829200000002,
+      "watchdog_decision_s": 0.13864258400000007,
+      "budget_s": 2,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "workers": [
+        {
+          "role": "control",
+          "pid": 43442,
+          "exit_status": 0,
+          "still_alive": false,
+          "stop_reason": "worker_exited",
+          "active_operation": "",
+          "attempted_land": false,
+          "attempted_disarm": false,
+          "report": {
+            "status": "error",
+            "error_type": "RuntimeError",
+            "error": "synthetic failure"
+          }
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "cleanup": {
+      "wall_s": 0.06434162499999996,
+      "watchdog_decision_s": 0.06370587500000002,
+      "budget_s": 2,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "workers": [
+        {
+          "role": "cleanup",
+          "pid": 43443,
+          "exit_status": 0,
+          "still_alive": false,
+          "stop_reason": "worker_exited",
+          "active_operation": "",
+          "attempted_land": true,
+          "attempted_disarm": false,
+          "report": {
+            "status": "returned",
+            "result": {
+              "landing_confirmed": false,
+              "reason": "no telemetry"
+            }
+          }
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "landing_confirmed": "not determined by process supervision"
+  }
+}

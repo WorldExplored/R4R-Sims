@@ -1,0 +1,63 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "takeoff_confirmed": true,
+    "reached_legs": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "touchdown_confirmed": true,
+    "disarmed_confirmed": true,
+    "landing_confirmed": true,
+    "minimum_integration_pass": true,
+    "full_route_pass": true,
+    "position_measurement_source": "simulator_truth",
+    "ground_truth_outcome": "evaluated",
+    "failure": null,
+    "rejected_samples": 0,
+    "events": [
+      {
+        "event": "takeoff_confirmed",
+        "monotonic_s": 1.2
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 1,
+        "monotonic_s": 3.2000000000000015,
+        "position_error_m": 0.0
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 2,
+        "monotonic_s": 5.799999999999995,
+        "position_error_m": 0.0
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 3,
+        "monotonic_s": 9.399999999999983,
+        "position_error_m": 0.0
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 4,
+        "monotonic_s": 12.99999999999997,
+        "position_error_m": 0.0
+      },
+      {
+        "event": "land_requested",
+        "monotonic_s": 14.399999999999965
+      },
+      {
+        "event": "touchdown_confirmed",
+        "monotonic_s": 16.499999999999964
+      },
+      {
+        "event": "disarmed_confirmed",
+        "monotonic_s": 16.89999999999997
+      }
+    ]
+  }
+}

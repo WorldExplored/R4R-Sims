@@ -1,0 +1,41 @@
+[
+  {
+    "kind": "local test fixture failure, not RflySim failure",
+    "symptom": "BrokenPipeError in multiprocessing queue feeder during initial test teardown; unittest returned 0 despite asynchronous diagnostic",
+    "conditions": "test_spawn_queue_pressure filled Queue(maxsize=1), then closed without consuming the accepted record",
+    "confirmed_cause": "undrained feeder at queue close on local macOS/Python 3.9; not installed SDK or simulator behavior",
+    "repair": "drain accepted record with get(timeout=1) before close/join_thread",
+    "retest": "20 tests passed with exit 0 and no feeder diagnostic; final console.log retained"
+  },
+  {
+    "kind": "download listing access blocker",
+    "symptom": "web tool reported both older official-linked OneDrive URLs inaccessible",
+    "conditions": "langData.js line650 historical folder and v2.54 links; no archive request/install",
+    "confirmed_cause": null,
+    "remaining_hypotheses": [
+      "tool access restriction",
+      "expired/share access requirement"
+    ],
+    "repair": "none; did not change authentication or substitute a release",
+    "retest": "not attempted; current emailed ISO link still missing"
+  },
+  {
+    "kind": "local network sandbox restriction",
+    "symptom": "initial gh queries could not connect to api.github.com under default sandbox",
+    "conditions": "read-only official metadata requests, no simulator host access",
+    "confirmed_cause": "network access restriction: same queries succeeded with approved network escalation",
+    "repair": "approved read-only metadata retrieval",
+    "retest": "exit 0; raw JSON bytes/hashes retained in source-manifest.json"
+  },
+  {
+    "kind": "authored watchdog clock defect, not RflySim failure",
+    "symptom": "initial cleanup watchdog decision at 0.088105292 s despite configured 0.15 s call limit; the initial tests checked only an upper bound and passed",
+    "conditions": "spawned local macOS/Python 3.9 worker; parent compared child absolute monotonic deadline to its own absolute clock",
+    "confirmed_cause": "cross-process monotonic reference mismatch in Python before 3.10 on macOS; official Python time documentation records the macOS change in 3.10",
+    "source": "https://docs.python.org/3/library/time.html#time.monotonic",
+    "repair": "publish active call generation token; parent starts local elapsed timer when token is observed, child checks its own elapsed duration; no absolute cross-process comparison; add lower-bound deadline assertions",
+    "retest": "final 20 tests exit 0; bounded-flight-and-cleanup.json now records cleanup decision >= 0.15 s",
+    "prior_evidence": "before-clock-fix/ (retained logs/cases; intermediate full source snapshot was not recorded)",
+    "limits": "parent detection delay <= one scheduled poll under normal scheduling; not a hard real-time Windows guarantee"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "url": "https://api.github.com/users/RflySim/repos",
+  "command": [
+    "gh",
+    "api",
+    "users/RflySim/repos",
+    "--paginate",
+    "--jq",
+    ".[].name"
+  ],
+  "exit_status": 0,
+  "retrieved_utc": "2026-10-09T02:20:23.805388+00:00",
+  "names": [
+    "CopterSim",
+    "doc",
+    "Docs",
+    "RflyArena",
+    "RflyExpCode",
+    "rflysim",
+    "RflySimAAR",
+    "RflySimAudio",
+    "RflySimDT",
+    "RflySimModel",
+    "RflySimPropellerModel",
+    "RFlySimSafe",
+    "RflySimVision",
+    "RobustAAR",
+    "UnderWaterPlatform"
+  ]
+}

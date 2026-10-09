@@ -1,0 +1,20 @@
+{
+  "verified_local": true,
+  "prior_preparation_files_verified": 60,
+  "original_and_import_files_verified": 10,
+  "existing_presentation_unchanged": true,
+  "pptx_zip_valid": true,
+  "pptx_slide_count": 14,
+  "pdf_page_count": 14,
+  "png_files_decoded": 17,
+  "prior_visual_inspection": "all 14 slides previously inspected; preserved exact bytes, no rerender/replacement",
+  "asset_files_verified": 98,
+  "asset_bytes": 8029747,
+  "asset_manifest": "asset-manifest.json",
+  "authored_patch": "artifacts/rflysim/local-20261009T020939Z/authored.patch",
+  "patch_sha256": "d66a25ec82920ebe4acb8c4204e3ffe7753d0a81ca358a9b51113c44d5ed7153",
+  "scientific_assets_used": "none; synthetic numeric samples only",
+  "remote_transfer": "not applicable: no host connected or experiments",
+  "durability": "verified local worktree, ignored local snapshot/source/media files and scoped Git push; no ephemeral host sole copies",
+  "missing_media": "measured flight/camera media absent because execution blocked; existing preparation media locally preserved"
+}

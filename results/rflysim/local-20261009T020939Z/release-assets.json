@@ -1,0 +1,26 @@
+{
+  "CopterSim": [],
+  "RflyExpCode": [
+    {
+      "tag": "v1.3",
+      "assets": []
+    },
+    {
+      "tag": "V1.1",
+      "assets": []
+    },
+    {
+      "tag": "v1.0",
+      "assets": [
+        {
+          "name": "RflyExpCode1.zip",
+          "bytes": 19964088,
+          "url": "https://github.com/RflySim/RflyExpCode/releases/download/v1.0/RflyExpCode1.zip"
+        }
+      ]
+    }
+  ],
+  "RflySimVision": [],
+  "doc": [],
+  "Docs": []
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "flight": {
+      "wall_s": 0.503325167,
+      "watchdog_decision_s": 0.500326583,
+      "budget_s": 0.5,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "workers": [
+        {
+          "role": "control",
+          "pid": 43444,
+          "exit_status": -15,
+          "still_alive": false,
+          "stop_reason": "phase_deadline",
+          "active_operation": "",
+          "attempted_land": false,
+          "attempted_disarm": false,
+          "report": null
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "cleanup": {
+      "wall_s": 0.08888275000000001,
+      "watchdog_decision_s": 0.08810529200000006,
+      "budget_s": 0.5,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "workers": [
+        {
+          "role": "cleanup",
+          "pid": 43446,
+          "exit_status": -15,
+          "still_alive": false,
+          "stop_reason": "call_deadline",
+          "active_operation": "synthetic_land_call",
+          "attempted_land": true,
+          "attempted_disarm": false,
+          "report": null
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "landing_confirmed": "not determined by process supervision"
+  }
+}

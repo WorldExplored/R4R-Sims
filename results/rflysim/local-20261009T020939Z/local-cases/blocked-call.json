@@ -1,0 +1,25 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "wall_s": 0.278991208,
+    "watchdog_decision_s": 0.264023416,
+    "budget_s": 2,
+    "poll_s": 0.01,
+    "reap_s_per_step": 0.1,
+    "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+    "workers": [
+      {
+        "role": "control",
+        "pid": 44021,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "call_deadline",
+        "active_operation": "synthetic_blocked_call",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      }
+    ],
+    "landing_confirmation_source": "telemetry evaluator only"
+  }
+}

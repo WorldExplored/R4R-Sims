@@ -1,0 +1,60 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "flight": {
+      "wall_s": 0.08766529199999995,
+      "watchdog_decision_s": 0.08757291700000003,
+      "budget_s": 2,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+      "workers": [
+        {
+          "role": "control",
+          "pid": 44026,
+          "exit_status": 0,
+          "still_alive": false,
+          "stop_reason": "worker_exited",
+          "active_operation": "",
+          "attempted_land": false,
+          "attempted_disarm": false,
+          "report": {
+            "status": "error",
+            "error_type": "RuntimeError",
+            "error": "synthetic failure"
+          }
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "cleanup": {
+      "wall_s": 0.063770667,
+      "watchdog_decision_s": 0.06368012500000009,
+      "budget_s": 2,
+      "poll_s": 0.01,
+      "reap_s_per_step": 0.1,
+      "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+      "workers": [
+        {
+          "role": "cleanup",
+          "pid": 44027,
+          "exit_status": 0,
+          "still_alive": false,
+          "stop_reason": "worker_exited",
+          "active_operation": "",
+          "attempted_land": true,
+          "attempted_disarm": false,
+          "report": {
+            "status": "returned",
+            "result": {
+              "landing_confirmed": false,
+              "reason": "no telemetry"
+            }
+          }
+        }
+      ],
+      "landing_confirmation_source": "telemetry evaluator only"
+    },
+    "landing_confirmed": "not determined by process supervision"
+  }
+}

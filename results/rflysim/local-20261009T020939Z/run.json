@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "local-20261009T020939Z",
+  "kind": "bounded implementation/feasibility pass; synthetic local tests only",
+  "branch": "audit/rflysim",
+  "base_commit": "dd470aff5f9ed6eebf8859e136328c9cbc984570",
+  "code_revision": "exact file hashes in file-manifest.json; authored.patch under ignored artifacts; implementation commit recorded after commit",
+  "os": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Apr 30 2025, 02:07:17) \n[Clang 17.0.0 (clang-1700.0.13.5)]",
+  "machine": "arm64",
+  "cwd": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
+  "gpu": "not used or inspected",
+  "execution_authorized": false,
+  "simulator_executed": false,
+  "remote_connected": false,
+  "sdk_adapter": "none",
+  "policy_weights": "none",
+  "scene": "none: synthetic tests use numeric state samples, not a scene",
+  "config_path": "simulators/rflysim/audit-config.json",
+  "config_sha256": "3736fe72e52b92faca9a26e153dc7b2a0d040a03aecd35844100c8e0d924243f",
+  "commands": [
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "simulators/rflysim/tests",
+        "-v"
+      ],
+      "cwd": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
+      "start_utc": "2026-10-09T02:25:57.411272+00:00",
+      "wall_s": 1.6936965419999999,
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "kind": "local only"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "simulators/rflysim/run.py",
+        "validate",
+        "--config",
+        "simulators/rflysim/audit-config.json"
+      ],
+      "cwd": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
+      "start_utc": "2026-10-09T02:25:59.105292+00:00",
+      "wall_s": 0.03474683300000003,
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "kind": "local only"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "simulators/rflysim/run.py",
+        "readiness",
+        "--config",
+        "simulators/rflysim/audit-config.json"
+      ],
+      "cwd": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
+      "start_utc": "2026-10-09T02:25:59.140147+00:00",
+      "wall_s": 0.025506791999999834,
+      "exit_status": 2,
+      "expected_exit_status": 2,
+      "kind": "local only"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-B",
+        "simulators/rflysim/run.py",
+        "run"
+      ],
+      "cwd": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
+      "start_utc": "2026-10-09T02:25:59.165769+00:00",
+      "wall_s": 0.02233645800000006,
+      "exit_status": 2,
+      "expected_exit_status": 2,
+      "kind": "local only"
+    }
+  ],
+  "local_test_count": 20,
+  "simulator_metrics": null,
+  "statuses": {
+    "A": "not run; geometric interfaces blocked",
+    "B_minimum": "not measured",
+    "B_full_route": "not measured",
+    "B_repeat": "pending, preserved",
+    "coupled_capture": "not run; blocked",
+    "C": "blocked; no compatible complete released path"
+  },
+  "prior_preparation_snapshot": "artifacts/rflysim/local-20261009T020939Z/preparation-snapshot",
+  "data_absent": [
+    "actual state/action/camera records",
+    "frames/videos",
+    "simulation clocks",
+    "GPU memory/timing",
+    "policy observations/actions"
+  ],
+  "missing_data_reason": "No compatible selected host/installed adapter/authorization; synthetic case records are explicitly separate.",
+  "local_test_record": "local-cases/; before-clock-fix/ contains superseded local evidence, not simulator results",
+  "clock_method": "parent local elapsed timer from observed active call token; child own elapsed check; no absolute cross-process clock comparison"
+}

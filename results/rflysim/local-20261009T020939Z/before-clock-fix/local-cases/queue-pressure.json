@@ -1,0 +1,8 @@
+{
+  "kind": "synthetic local test, not simulator validation",
+  "result": {
+    "accepted": 1,
+    "dropped": 10000,
+    "evidence_incomplete": true
+  }
+}
