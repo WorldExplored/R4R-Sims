@@ -11,11 +11,12 @@
   "all_14_slides_visually_inspected": true,
   "measurements_preserved": "none; no simulator experiment",
   "remote_transfer": "not applicable; host not contacted",
-  "github_sync": "pending scoped branch push",
+  "github_sync": "verified published preparation code commit 665926b723bb6128fe5ed0d7ca0b5a7dac3d2167 on audit/rflysim; metadata follow-up commit pending push",
   "manifest": "file-manifest.json",
   "manifest_exclusions": [
     "self",
     "preservation.json",
     "revision.json; recorded after commits"
-  ]
+  ],
+  "generated_file_diff_check": "PDF treated as binary; preserved unified patch whitespace checked with scoped attributes"
 }

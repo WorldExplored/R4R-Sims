@@ -1,0 +1,11 @@
+{
+  "branch": "audit/rflysim",
+  "preparation_code_commit": "665926b723bb6128fe5ed0d7ca0b5a7dac3d2167",
+  "published_code_commit_verified": true,
+  "base_commit": "2cd4f7145486854f9c84a4ae2f6aedf197e963d4",
+  "remote_branch": "origin/audit/rflysim",
+  "metadata_commit": "obtain with git log -1 --format=%H -- results/rflysim/prep-20261009T014126Z/revision.json",
+  "source_code_changed_after_tests": false,
+  "original_deck_generation_script": "artifacts/rflysim/prep-20261009T014126Z/deck-generation-original.mjs",
+  "host_experiments": false
+}

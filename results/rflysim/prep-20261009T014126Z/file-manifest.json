@@ -1,5 +1,11 @@
 [
   {
+    "path": "docs/rflysim/.gitattributes",
+    "bytes": 45,
+    "sha256": "c464f238dba78af216a6430a864a718ab233dd264bb16e669532e9badece8181",
+    "verified": true
+  },
+  {
     "path": "docs/rflysim/assets.md",
     "bytes": 2936,
     "sha256": "7fc94d5922122384d1dbd38ef20d9432c4677709833bc73baaeafdf83b937f22",
@@ -114,6 +120,12 @@
     "verified": true
   },
   {
+    "path": "results/rflysim/.gitattributes",
+    "bytes": 13,
+    "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b",
+    "verified": true
+  },
+  {
     "path": "results/rflysim/README.md",
     "bytes": 233,
     "sha256": "44c38dc0d81708c0753abe2bea5709a1826c2527e0f2820ab56d2c3cbf08dc38",
@@ -121,8 +133,8 @@
   },
   {
     "path": "results/rflysim/prep-20261009T014126Z/README.md",
-    "bytes": 2265,
-    "sha256": "20bb7dc05737afc25640c86a044e34280e61e5f9fcb0aa378d02fd3b0d3585df",
+    "bytes": 2397,
+    "sha256": "b3b9736cbefe8c28f215776a87d4be57d656ca6395320c60bd49714601c926bd",
     "verified": true
   },
   {
@@ -195,6 +207,12 @@
     "path": "artifacts/rflysim/prep-20261009T014126Z/access-candidate.json",
     "bytes": 317,
     "sha256": "86c50ec522b63caf4d1ffc0755d977684c929a610af561d42de400eb96397fa4",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-generation-original.mjs",
+    "bytes": 2626,
+    "sha256": "7b1eca49252015818fe811dfe28b1a3e763ee5f2d74771521420eac94ef34349",
     "verified": true
   },
   {
