@@ -1,0 +1,167 @@
+{
+  "checked_utc": "2026-10-09T02:56:47.269613+00:00",
+  "status": "BLOCKED: preserve four shared-host support logs before termination",
+  "instance_terminated": false,
+  "experiments_run": false,
+  "grad_nav": {
+    "local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav",
+    "runs_verified": 16,
+    "scientific_files_verified": 1213,
+    "scientific_bytes": 1139790444,
+    "small_record_runs_verified": 17,
+    "deck_hashes_verified": true,
+    "local_errors": [],
+    "remote_commit_before_doc_correction": "26a426fea1a7ae7e160046195fc80c1997deff0a",
+    "remote_worktree_clean": true,
+    "newer_experiment_outputs_found": false,
+    "vm_only_uncommitted_authored_changes": false
+  },
+  "shared_host": {
+    "active_candidate_jobs": [],
+    "gpu": "idle,1MiB/49140MiB; no GPU processes",
+    "tmux_sessions": [],
+    "running_containers": [],
+    "inspected_work_roots": [
+      "/home/ubuntu",
+      "/workspace",
+      "ubuntu-owned /tmp files"
+    ],
+    "scope_limit": "OS-private temporary directories were not readable; no permission/security changes made. Standard OS/provider services remained running.",
+    "other_candidate": "TravelUAV /workspace/R4R-Sims at568759aca5628858f8881407de6562d986190280; main worktree clean;10upstream authored edits exactly match preserved local patch sections against pinned upstream5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+    "remote_evidence_files_hashed": 4138,
+    "exact_local_byte_hash_matches": 4123,
+    "additional_bundle_copies": "two unmatched-to-index Git bundles exactly match /private/tmp/gradnav-timing.bundle and gradnav-final.bundle; published Git history also preserves their objects",
+    "reproducible_unmatched_cache_files": 9,
+    "newer_experiment_outputs_found": false,
+    "large_dependencies": "existing pinned URL/hash retrieval records reviewed; not copied wholesale or re-downloaded; GRaD-Nav scientifically used inputs already on Mac; borrowed CUDA toolkit unchanged"
+  },
+  "blockers": [
+    {
+      "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/bootstrap/a-depth-poses.log",
+      "bytes": 418,
+      "sha256": "05de2266a35d8039b90754d002fbc394f8a46ea07b72bda6b46a30a349ee8355",
+      "mtime_utc": "2026-10-09T00:11:33.849911+00:00"
+    },
+    {
+      "path": "/workspace/traveluav-bootstrap/c-verified.log",
+      "bytes": 191507,
+      "sha256": "66d6ec9818ecf1815b0899730becdb1533fe117fec504d532b214df014950e72",
+      "mtime_utc": "2026-10-08T23:41:35.018322+00:00"
+    },
+    {
+      "path": "/tmp/r4r-final-a-commit.log",
+      "bytes": 3539,
+      "sha256": "7af16c9fa17122c3444dfd3b5fd597a2c9ac03c03a7bb7da7ca0f47fa6fe7827"
+    },
+    {
+      "path": "/tmp/r4r-settle-a-commit.log",
+      "bytes": 428,
+      "sha256": "31c3a4226a3cb6bbade2528c8ce095c7b5e3fcb05f29eb5f5571d05f7c206dc8"
+    }
+  ],
+  "blocker_interpretation": "four older launcher/commit support logs are not new scientific results, but their exact bytes have no verified local/archived copy. Check-only scope: they were not transferred or deleted.",
+  "source_patch_preservation": [
+    {
+      "file": "a/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py b/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T225148Z-b-9779/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T230118Z-a-10334/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T233131Z-c-13364/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/airsim_plugin/AirVLNSimulatorClientTool.py b/airsim_plugin/AirVLNSimulatorClientTool.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261009T001125Z-a-23177/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T235452Z-c-21144/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/airsim_plugin/AirVLNSimulatorServerTool.py b/airsim_plugin/AirVLNSimulatorServerTool.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234538Z-c-17859/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234829Z-c-18961/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T235452Z-c-21144/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/src/model_wrapper/travel_llm.py b/src/model_wrapper/travel_llm.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T235452Z-c-21144/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T231144Z-c-11112/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T233131Z-c-13364/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T225148Z-b-9779/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T230118Z-a-10334/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T233131Z-c-13364/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234538Z-c-17859/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234829Z-c-18961/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T235452Z-c-21144/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/src/model_wrapper/utils/travel_util.py b/src/model_wrapper/utils/travel_util.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234538Z-c-17859/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234829Z-c-18961/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T235452Z-c-21144/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/src/vlnce_src/dino_monitor_online.py b/src/vlnce_src/dino_monitor_online.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T235452Z-c-21144/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T231144Z-c-11112/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T233131Z-c-13364/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/src/vlnce_src/env_uav.py b/src/vlnce_src/env_uav.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T225148Z-b-9779/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T230118Z-a-10334/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T233131Z-c-13364/upstream.patch"
+      ]
+    },
+    {
+      "file": "a/src/vlnce_src/eval.py b/src/vlnce_src/eval.py",
+      "preserved_patch_matches": [
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234538Z-c-17859/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T234829Z-c-18961/upstream.patch",
+        "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T235452Z-c-21144/upstream.patch"
+      ]
+    }
+  ],
+  "proof_local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/shutdown-readiness-20261009T0258Z",
+  "proof_files": [
+    {
+      "path": "gradnav-shutdown-archive-matches.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "gradnav-shutdown-comparison.json",
+      "bytes": 17750,
+      "sha256": "e6ee8f467830e020d2b289694c4a5287a6543537a74d62ec48be95111cdfb8d2"
+    },
+    {
+      "path": "gradnav-shutdown-remote.json",
+      "bytes": 1252062,
+      "sha256": "eddc5bea8776fed5989a4fa514876e9d12a3394139231deb83612a88fc196abb"
+    },
+    {
+      "path": "gradnav-travel-patch-check.json",
+      "bytes": 6225,
+      "sha256": "c66ef15b80dd0190eface1123ce846b5add24e89c6b22838b3af4ae5b3839b40"
+    }
+  ]
+}
