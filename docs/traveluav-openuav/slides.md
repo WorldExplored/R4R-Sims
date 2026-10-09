@@ -21,9 +21,9 @@
 - Six reference states →30RGB+30 raw ray-depth arrays, all decode256².
 - Final measured vehicle poses match reference; actual camera responses are separate.
 - Five-view timestamp spread0ns while paused; no physical synchronization claim.
-- Figure: five-view RGB/fixed0–100m depth contact sheet from20261008T234631Z-a-18267.
-- Figure: actual camera orientation/mount residual; maximum translation discrepancy0.204m, not silently treated as nominal mount.
-- First RPC0.550s, five later mean0.182s; loader overlapped, GPU-wide memory not scene-only.
+- Figure: five-view RGB/fixed0–100m depth contact sheet from20261009T001125Z-a-23177.
+- Figure: actual camera orientation/mount residual; maximum translation discrepancy0.210m, not silently treated as nominal mount.
+- First RPC0.661s, five later mean0.173s; sampled scene-only peak631MiB;30separate depth poses match RGB positions.
 
 ## 4. B: controller completion and achieved route
 
@@ -58,7 +58,7 @@
 ## 7. Resources and setup burden
 
 - MeasuredA6000, Ubuntu22.04,6vCPU/47GiB/251GiB; below targetCPU/RAM/disk.
-- Native scene-only sampled peak652MiB(A),742MiB(B); C combined sampled peak21,396MiB; process/allocator scopes differ, no exact policy-only subtraction.
+- Native scene-only sampled peak631MiB(A),742MiB(B); C combined sampled peak21,396MiB; process/allocator scopes differ, no exact policy-only subtraction.
 - Selected compressed archives28.50GB; extracted scene2.168GB +episode19.03MB; models~22GiB.
 -37min to nativeA,96min to loader eligibility including failures; separate training's8A100 from inference.
 - Full-instance/storage quote unknown; user GPU display$0.54/h only.
@@ -80,7 +80,7 @@
 
 ## Review figures
 
-![A five views](../../results/traveluav-openuav/20261008T234631Z-a-18267/preview_rgb_depth.jpg)
+![A five views](../../results/traveluav-openuav/20261009T001125Z-a-23177/preview_rgb_depth.jpg)
 
 ![B route](../../results/traveluav-openuav/20261008T234423Z-b-17460/trajectory.png)
 
