@@ -1,0 +1,197 @@
+Cloning into '/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream'...
+HEAD is now at 5cc26e9 Update dataset path in training script
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting pip==24.0
+  Downloading pip-24.0-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 20.9 MB/s eta 0:00:00
+Collecting setuptools==68.2.2
+  Downloading setuptools-68.2.2-py3-none-any.whl (807 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 KB 31.4 MB/s eta 0:00:00
+Collecting wheel==0.41.3
+  Downloading wheel-0.41.3-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.8/65.8 KB 18.1 MB/s eta 0:00:00
+Installing collected packages: wheel, setuptools, pip
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.6.0
+    Uninstalling setuptools-59.6.0:
+      Successfully uninstalled setuptools-59.6.0
+  Attempting uninstall: pip
+    Found existing installation: pip 22.0.2
+    Uninstalling pip-22.0.2:
+      Successfully uninstalled pip-22.0.2
+Successfully installed pip-24.0 setuptools-68.2.2 wheel-0.41.3
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting numpy==1.26.3
+  Downloading numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 3.4 MB/s eta 0:00:00
+Collecting Pillow==10.2.0
+  Downloading pillow-10.2.0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+Collecting msgpack-python==0.5.6
+  Downloading msgpack-python-0.5.6.tar.gz (138 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.0/139.0 kB 9.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting tornado==4.5.3
+  Downloading tornado-4.5.3.tar.gz (484 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 484.2/484.2 kB 12.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting msgpack-rpc-python==0.4
+  Downloading msgpack-rpc-python-0.4.tar.gz (7.6 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting huggingface_hub==0.27.1
+  Downloading huggingface_hub-0.27.1-py3-none-any.whl.metadata (13 kB)
+Collecting matplotlib==3.10.0
+  Downloading matplotlib-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting psutil==6.1.1
+  Downloading psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+Collecting filelock (from huggingface_hub==0.27.1)
+  Downloading filelock-4.0.12-py3-none-any.whl.metadata (2.0 kB)
+Collecting fsspec>=2023.5.0 (from huggingface_hub==0.27.1)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting packaging>=20.9 (from huggingface_hub==0.27.1)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyyaml>=5.1 (from huggingface_hub==0.27.1)
+  Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting requests (from huggingface_hub==0.27.1)
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting tqdm>=4.42.1 (from huggingface_hub==0.27.1)
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.4/57.4 kB 7.0 MB/s eta 0:00:00
+Collecting typing-extensions>=3.7.4.3 (from huggingface_hub==0.27.1)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.10.0)
+  Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib==3.10.0)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.10.0)
+  Downloading fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (125 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.0/125.0 kB 11.3 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.0)
+  Downloading kiwisolver-1.5.1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.2 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib==3.10.0)
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib==3.10.0)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib==3.10.0)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests->huggingface_hub==0.27.1)
+  Downloading charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 7.8 MB/s eta 0:00:00
+Collecting idna<4,>=2.5 (from requests->huggingface_hub==0.27.1)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->huggingface_hub==0.27.1)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->huggingface_hub==0.27.1)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Downloading numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 46.7 MB/s eta 0:00:00
+Downloading pillow-10.2.0-cp310-cp310-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 39.7 MB/s eta 0:00:00
+Downloading huggingface_hub-0.27.1-py3-none-any.whl (450 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 450.7/450.7 kB 49.6 MB/s eta 0:00:00
+Downloading matplotlib-3.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.6/8.6 MB 80.4 MB/s eta 0:00:00
+Downloading psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (287 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 287.5/287.5 kB 52.5 MB/s eta 0:00:00
+Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 325.0/325.0 kB 41.6 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 111.5 MB/s eta 0:00:00
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.7/221.7 kB 43.4 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 32.2 MB/s eta 0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 27.8 MB/s eta 0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.4/126.4 kB 26.1 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 41.2 MB/s eta 0:00:00
+Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 70.9 MB/s eta 0:00:00
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 14.9 MB/s eta 0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 8.8 MB/s eta 0:00:00
+Downloading filelock-4.0.12-py3-none-any.whl (111 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.7/111.7 kB 25.4 MB/s eta 0:00:00
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 14.8 MB/s eta 0:00:00
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 kB 27.1 MB/s eta 0:00:00
+Downloading charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (271 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 271.1/271.1 kB 45.3 MB/s eta 0:00:00
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 13.4 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 25.4 MB/s eta 0:00:00
+Building wheels for collected packages: msgpack-python, tornado, msgpack-rpc-python
+  Building wheel for msgpack-python (setup.py): started
+  Building wheel for msgpack-python (setup.py): finished with status 'done'
+  Created wheel for msgpack-python: filename=msgpack_python-0.5.6-cp310-cp310-linux_x86_64.whl size=10402 sha256=4efb59b4bf411bea55a2b333955016a1ff235e8313d2122fdcdda3794fe6b5e3
+  Stored in directory: /home/ubuntu/.cache/pip/wheels/36/15/c0/6abd0b35e76ca9d00823d197c98d947d45670fcfe9b7e7416a
+  Building wheel for tornado (setup.py): started
+  Building wheel for tornado (setup.py): finished with status 'done'
+  Created wheel for tornado: filename=tornado-4.5.3-cp310-cp310-linux_x86_64.whl size=427991 sha256=ae2648371a47141624e384fca7e918f1c299b082320e649d9e5b64b1de8562d8
+  Stored in directory: /home/ubuntu/.cache/pip/wheels/7a/fc/0f/8294151792cdc6cd7041df1467dbb536b4cff20d161d58501c
+  Building wheel for msgpack-rpc-python (setup.py): started
+  Building wheel for msgpack-rpc-python (setup.py): finished with status 'done'
+  Created wheel for msgpack-rpc-python: filename=msgpack_rpc_python-0.4-py3-none-any.whl size=9284 sha256=5308028e70d3d3c84367fb54d338968f6b183c230314fc255b7587710096f373
+  Stored in directory: /home/ubuntu/.cache/pip/wheels/57/83/77/7cefb3188d4e8dbf10235b3474ff9eface2c206320f2eb05c7
+Successfully built msgpack-python tornado msgpack-rpc-python
+Installing collected packages: tornado, msgpack-python, urllib3, typing-extensions, tqdm, six, pyyaml, pyparsing, psutil, Pillow, packaging, numpy, msgpack-rpc-python, kiwisolver, idna, fsspec, fonttools, filelock, cycler, charset_normalizer, certifi, requests, python-dateutil, contourpy, matplotlib, huggingface_hub
+Successfully installed Pillow-10.2.0 certifi-2026.7.22 charset_normalizer-3.5.2 contourpy-1.3.2 cycler-0.12.1 filelock-4.0.12 fonttools-4.65.0 fsspec-2026.9.0 huggingface_hub-0.27.1 idna-3.20 kiwisolver-1.5.1 matplotlib-3.10.0 msgpack-python-0.5.6 msgpack-rpc-python-0.4 numpy-1.26.3 packaging-26.3 psutil-6.1.1 pyparsing-3.3.3 python-dateutil-2.9.0.post0 pyyaml-6.0.3 requests-2.34.2 six-1.17.0 tornado-4.5.3 tqdm-4.70.1 typing-extensions-4.16.0 urllib3-2.8.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip install --upgrade pip
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting airsim==1.8.1
+  Downloading airsim-1.8.1.tar.gz (20 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: msgpack-rpc-python in ./artifacts/traveluav-openuav/dependencies/env-ab/lib/python3.10/site-packages (from airsim==1.8.1) (0.4)
+Requirement already satisfied: numpy in ./artifacts/traveluav-openuav/dependencies/env-ab/lib/python3.10/site-packages (from airsim==1.8.1) (1.26.3)
+Collecting opencv-contrib-python (from airsim==1.8.1)
+  Downloading opencv_contrib_python-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+Requirement already satisfied: msgpack-python in ./artifacts/traveluav-openuav/dependencies/env-ab/lib/python3.10/site-packages (from msgpack-rpc-python->airsim==1.8.1) (0.5.6)
+Requirement already satisfied: tornado>=3 in ./artifacts/traveluav-openuav/dependencies/env-ab/lib/python3.10/site-packages (from msgpack-rpc-python->airsim==1.8.1) (4.5.3)
+Collecting numpy (from airsim==1.8.1)
+  Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 6.4 MB/s eta 0:00:00
+Downloading opencv_contrib_python-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl (82.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.1/82.1 MB 31.0 MB/s eta 0:00:00
+Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 68.6 MB/s eta 0:00:00
+Building wheels for collected packages: airsim
+  Building wheel for airsim (setup.py): started
+  Building wheel for airsim (setup.py): finished with status 'done'
+  Created wheel for airsim: filename=airsim-1.8.1-py3-none-any.whl size=21235 sha256=5fd48fcd9ae56ae7eb229e6b78b089a05ae590dbd82c0d62792d526e01f8b37e
+  Stored in directory: /home/ubuntu/.cache/pip/wheels/9e/b6/84/5fcee49b2eeccffa5de9168b34d3ece75991529ca6d6e6dbe8
+Successfully built airsim
+Installing collected packages: numpy, opencv-contrib-python, airsim
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.3
+    Uninstalling numpy-1.26.3:
+      Successfully uninstalled numpy-1.26.3
+Successfully installed airsim-1.8.1 numpy-2.2.6 opencv-contrib-python-5.0.0.93
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip install --upgrade pip
+AirSim import OK 1.8.1
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:   0%|          | 0/5 [00:20<?, ?it/s]Error while downloading from https://us.aws.cdn.hf.co/xet-bridge-us/678f0e6c7d61cba1b6aa565b/72e48a9fa74a238438a87d9beb1abdd2511ffad2dca81cbbc012275753b24820?user_id=public&xip=nuLqGZjcCW0&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27closeloop_envs.z01%3B+filename%3D%22closeloop_envs.z01%22%3B&X-Xet-Cas-Uid=public&Expires=1791501240&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjc4ZjBlNmM3ZDYxY2JhMWI2YWE1NjViLzcyZTQ4YTlmYTc0YTIzODQzOGE4N2Q5YmViMWFiZGQyNTExZmZhZDJkY2E4MWNiYmMwMTIyNzU3NTNiMjQ4MjBcXD91c2VyX2lkPXB1YmxpYyZ4aXA9bnVMcUdaamNDVzAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN2Nsb3NlbG9vcF9lbnZzLnowMSUzQitmaWxlbmFtZSUzRCUyMmNsb3NlbG9vcF9lbnZzLnowMSUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNTAxMjQwfX19XX0_&Signature=MEUCIG-3jqNe6qbjMHLb2yQ9M5Vsnybwn0JEpydHIp0XcnvQAiEAmdw0lIndKMJf-Jq1jMwI3akwF4hW4jeTIx3uJxG8EhM_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256: HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Read timed out.
+Trying to resume download...
+Error while downloading from https://us.aws.cdn.hf.co/xet-bridge-us/678f0e6c7d61cba1b6aa565b/d6d5fe18e2d4f8147aa3a2b0848c4f1abec73f6a93f45a9b3f8598b88f8b4400?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27closeloop_envs.z02%3B+filename%3D%22closeloop_envs.z02%22%3B&xip=nuLqGZjcCW0&Expires=1791501240&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjc4ZjBlNmM3ZDYxY2JhMWI2YWE1NjViL2Q2ZDVmZTE4ZTJkNGY4MTQ3YWEzYTJiMDg0OGM0ZjFhYmVjNzNmNmE5M2Y0NWE5YjNmODU5OGI4OGY4YjQ0MDBcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3Y2xvc2Vsb29wX2VudnMuejAyJTNCK2ZpbGVuYW1lJTNEJTIyY2xvc2Vsb29wX2VudnMuejAyJTIyJTNCJnhpcD1udUxxR1pqY0NXMCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNTAxMjQwfX19XX0_&Signature=MEUCIBpcXzSHtmFuf7EdBXXwBUopEyPLBsQFZfHimpIkWYIVAiEAsoIJeHSjHA7kYiU8RVB59vrSkMeqo%7ENk019WRtnynnw_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256: HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Read timed out.
+Trying to resume download...
+Error while downloading from https://us.aws.cdn.hf.co/xet-bridge-us/678f0e6c7d61cba1b6aa565b/72e48a9fa74a238438a87d9beb1abdd2511ffad2dca81cbbc012275753b24820?user_id=public&xip=nuLqGZjcCW0&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27closeloop_envs.z01%3B+filename%3D%22closeloop_envs.z01%22%3B&X-Xet-Cas-Uid=public&Expires=1791501240&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjc4ZjBlNmM3ZDYxY2JhMWI2YWE1NjViLzcyZTQ4YTlmYTc0YTIzODQzOGE4N2Q5YmViMWFiZGQyNTExZmZhZDJkY2E4MWNiYmMwMTIyNzU3NTNiMjQ4MjBcXD91c2VyX2lkPXB1YmxpYyZ4aXA9bnVMcUdaamNDVzAmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN2Nsb3NlbG9vcF9lbnZzLnowMSUzQitmaWxlbmFtZSUzRCUyMmNsb3NlbG9vcF9lbnZzLnowMSUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNTAxMjQwfX19XX0_&Signature=MEUCIG-3jqNe6qbjMHLb2yQ9M5Vsnybwn0JEpydHIp0XcnvQAiEAmdw0lIndKMJf-Jq1jMwI3akwF4hW4jeTIx3uJxG8EhM_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256: HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Read timed out.
+Trying to resume download...
+Fetching 5 files:  20%|██        | 1/5 [04:42<18:48, 282.00s/it]Error while downloading from https://us.aws.cdn.hf.co/xet-bridge-us/678f0e6c7d61cba1b6aa565b/d6d5fe18e2d4f8147aa3a2b0848c4f1abec73f6a93f45a9b3f8598b88f8b4400?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27closeloop_envs.z02%3B+filename%3D%22closeloop_envs.z02%22%3B&xip=nuLqGZjcCW0&Expires=1791501240&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjc4ZjBlNmM3ZDYxY2JhMWI2YWE1NjViL2Q2ZDVmZTE4ZTJkNGY4MTQ3YWEzYTJiMDg0OGM0ZjFhYmVjNzNmNmE5M2Y0NWE5YjNmODU5OGI4OGY4YjQ0MDBcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3Y2xvc2Vsb29wX2VudnMuejAyJTNCK2ZpbGVuYW1lJTNEJTIyY2xvc2Vsb29wX2VudnMuejAyJTIyJTNCJnhpcD1udUxxR1pqY0NXMCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNTAxMjQwfX19XX0_&Signature=MEUCIBpcXzSHtmFuf7EdBXXwBUopEyPLBsQFZfHimpIkWYIVAiEAsoIJeHSjHA7kYiU8RVB59vrSkMeqo%7ENk019WRtnynnw_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256: HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Read timed out.
+Trying to resume download...
+Fetching 5 files:  40%|████      | 2/5 [05:52<08:48, 176.19s/it]Fetching 5 files:  60%|██████    | 3/5 [17:49<11:53, 356.52s/it]Fetching 5 files:  80%|████████  | 4/5 [18:40<04:40, 280.13s/it]Fetching 5 files: 100%|██████████| 5/5 [22:13<00:00, 266.72s/it]Fetching 5 files: 100%|██████████| 5/5 [22:13<00:00, 266.72s/it]
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:   0%|          | 0/3 [00:14<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:52<01:45, 52.61s/it]Fetching 3 files:  67%|██████▋   | 2/3 [01:22<00:41, 41.38s/it]Fetching 3 files: 100%|██████████| 3/3 [01:23<00:00, 27.69s/it]Fetching 3 files: 100%|██████████| 3/3 [01:23<00:00, 27.69s/it]
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  67%|██████▋   | 2/3 [00:00<00:00,  3.90it/s]Fetching 3 files: 100%|██████████| 3/3 [00:00<00:00,  3.55it/s]
+/workspace/R4R-Sims/results/traveluav-openuav/20261008T221326Z-setup-ab-7356/assets.json
+simulators/traveluav-openuav/setup.sh: line 45: unexpected EOF while looking for matching `"'

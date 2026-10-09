@@ -1,0 +1,12 @@
+[
+  {
+    "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+    "learned_decisions": 10,
+    "reason": "budget_truncation",
+    "budget_truncated": true,
+    "official_evaluation_completed": false,
+    "predicted_stop": false,
+    "success": false,
+    "oracle_success": false
+  }
+]

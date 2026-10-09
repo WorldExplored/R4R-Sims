@@ -1,0 +1,110 @@
+{
+  "payload_path": "artifacts/traveluav-openuav/20261008T234631Z-a-18267/image_rpc_payload.msgpack",
+  "payload_bytes": 2624104,
+  "payload_sha256": "b732503272e99848fed70c6de22322d1ab6bd670ffa29b412cf839dd4b5be51c",
+  "legacy_implementation": "legacy_msgpack.fallback",
+  "active_version": [
+    1,
+    1,
+    0
+  ],
+  "active_implementation": "msgpack._cmsgpack",
+  "active_file": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/lib/python3.10/site-packages/msgpack/__init__.py",
+  "legacy_source_sha256": "9f93db7891410eab01488686a22488f2206122166cd88cbea0aadc80090fbe02",
+  "legacy_decode_wall_s": 0.4921281110000564,
+  "active_decode_wall_s": 0.017549409999446652,
+  "timing_sample_count": 1,
+  "timing_scope": "same settled 5-view RGB/depth MessagePack response payload decode only; instrumented CPU wall time",
+  "equivalence": [
+    {
+      "response_index": 0,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "31291720515e979e88c8883357900abe1c05902f38f21de05b3aa0cc4136d243",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 1,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "4e5636fb438c870a8b6b2ca658ee3fce8e73fa3402d5fb631116de2fd9656d89"
+    },
+    {
+      "response_index": 2,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "389d77cee4516555bea65de480b720c63ae16fe93ec1d880256334b934adade0",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 3,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "3d7ab780f5eb7d1a8dfdbfa0acc44e42d0173791f96068c8d30975fa7d7d735b"
+    },
+    {
+      "response_index": 4,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "cd94438cfb3f722030d182907f5a83f03f13dc6b38fe2aa0d9295514409d9629",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 5,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "ca5caa59b7c1f8161487b692ca6c380beda8f5cd0f4449196f4abd8810c3b5f5"
+    },
+    {
+      "response_index": 6,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "ab56cfb093763b9a2d25ba1c3a600713bcaabc5d1ab711af66f0f02d129a7aee",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 7,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "91111f421c4c25b5294382dcf5fcb1424f8d9db6a23291c1dd4f77793657eae9"
+    },
+    {
+      "response_index": 8,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "b33298d36b8ee002e8a1ff38186076a3170897dc0b582435b403d29e8a1b9a67",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 9,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "6dcfc680dad29b9ce2cb49feef0ef2761a3d9a36260d61eeee7cb4f70f13844c"
+    }
+  ]
+}

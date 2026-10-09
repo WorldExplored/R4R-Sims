@@ -1,0 +1,6 @@
+{
+  "reason": "rpc_completed",
+  "samples": 25,
+  "wall_s": 5.126729412999339,
+  "async_completion_observed": true
+}

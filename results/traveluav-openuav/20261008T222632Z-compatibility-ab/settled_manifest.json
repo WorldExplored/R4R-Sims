@@ -1,0 +1,33 @@
+{
+  "run_id": "20261008T222632Z-compatibility-ab",
+  "settled_utc": "2026-10-09T00:04:51Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 99,
+      "sha256": "46ab5590bbc4291271b4c8874993aebd3ee6d5266010690a5eccd285862747ea"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 1965,
+      "sha256": "c531559465d09d81fb3b599691eca7cf72415d03dea95e72fcfaf1c696a2d55a"
+    },
+    {
+      "location": "record",
+      "relative_path": "pip-freeze.txt",
+      "bytes": 511,
+      "sha256": "0bd99e99300e93d4d0519af211d58107301e18a54b1b4182bce7b6e644cafca5"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 52,
+      "sha256": "934ead0dca1ddcfb3713cdb799868d61ea4d035149925bb32184d4de4b092b73"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T222632Z-compatibility-ab",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T222632Z-compatibility-ab",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

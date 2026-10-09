@@ -1,0 +1,33 @@
+{
+  "run_id": "20261008T223534Z-setup-c-extension",
+  "settled_utc": "2026-10-09T00:04:51Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 118,
+      "sha256": "bd211b4e5013b20b98a16bca9b8f95e29480d0c2deb515a064f100bc5427e421"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 1422,
+      "sha256": "66683c60184a229e172ec1121f2f80fe0646d0e1276a6ea6702186e451d63a92"
+    },
+    {
+      "location": "record",
+      "relative_path": "cuda-components.json",
+      "bytes": 2639,
+      "sha256": "59c25310eb208ad3af6167d89340ef429c2a0cc641f9cc5b1ab9cb461c682e94"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 39,
+      "sha256": "2028447f93282ca62b24235a28074194a76455d9adff01f3dfdf375cf0f67dde"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T223534Z-setup-c-extension",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T223534Z-setup-c-extension",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

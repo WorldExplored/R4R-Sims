@@ -1,0 +1,3 @@
+{"event": "initial_reset", "target": {"orientation": [0.0, 0.0, 0.0970679521560669, 0.9952777624130249], "position": [34.784000396728516, 51.25299835205078, -1.2790000438690186]}, "wall_s": 0.00029772900006719283}
+{"event": "pause", "wall_s": 21.561854976000177}
+{"completed": true, "error": null, "event": "async_status", "result": false}

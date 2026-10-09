@@ -1,0 +1,665 @@
+{
+  "runs": [
+    {
+      "run_id": "20261008T221247Z-preflight",
+      "record": "results/traveluav-openuav/20261008T221247Z-preflight",
+      "summary": {
+        "run_id": "20261008T221247Z-preflight",
+        "kind": "preflight",
+        "status": "host_verified_renderer_pending",
+        "date": "2026-10-08",
+        "branch": "audit/traveluav-openuav-20261008T2215Z",
+        "shared_commit_received": "22df0f220da5dbd206064ce3a6c1ccd9ab744b15",
+        "upstream_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "gpu": "NVIDIA RTX A6000 x1; 49140 MiB",
+        "cpu_vcpu": 6,
+        "ram_gib_approx": 47,
+        "disk_gib_approx": 251,
+        "initial_free_gib_approx": 227,
+        "driver": "580.126.09",
+        "os": "Ubuntu 22.04.5 x86_64",
+        "gpu_displayed_price_usd_per_hour": 0.54,
+        "full_instance_price": "unknown",
+        "storage_price": "unknown",
+        "host_fingerprint_provider_verification": "unavailable; normal TOFU then strict checking; server public fingerprint corroborated",
+        "remote_checkout": "/workspace/R4R-Sims",
+        "local_worktree": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z"
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T221326Z-setup-ab-7356",
+      "record": "results/traveluav-openuav/20261008T221326Z-setup-ab-7356",
+      "summary": {
+        "run_id": "20261008T221326Z-setup-ab-7356",
+        "level": "setup-ab",
+        "exit_status": 2,
+        "ended_utc": "2026-10-08T22:38:54Z"
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T221632Z-setup-c-7570",
+      "record": "results/traveluav-openuav/20261008T221632Z-setup-c-7570",
+      "summary": {
+        "run_id": "20261008T221632Z-setup-c-7570",
+        "level": "setup-c",
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T22:24:05Z"
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T222410Z-setup-c-extension",
+      "record": "results/traveluav-openuav/20261008T222410Z-setup-c-extension",
+      "summary": {
+        "kind": "c-extension",
+        "exit_status": 1
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T222553Z-setup-c-extension",
+      "record": "results/traveluav-openuav/20261008T222553Z-setup-c-extension",
+      "summary": {
+        "kind": "c-extension",
+        "exit_status": 1
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T222632Z-compatibility-ab",
+      "record": "results/traveluav-openuav/20261008T222632Z-compatibility-ab",
+      "summary": {
+        "kind": "ab-compatibility",
+        "install_exit_status": 0
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T222804Z-setup-c-extension",
+      "record": "results/traveluav-openuav/20261008T222804Z-setup-c-extension",
+      "summary": {
+        "kind": "c-extension",
+        "exit_status": 1
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T223040Z-setup-c-extension",
+      "record": "results/traveluav-openuav/20261008T223040Z-setup-c-extension",
+      "summary": {
+        "kind": "c-extension",
+        "exit_status": 1
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T223534Z-setup-c-extension",
+      "record": "results/traveluav-openuav/20261008T223534Z-setup-c-extension",
+      "summary": {
+        "kind": "c-extension",
+        "exit_status": 1
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T223730Z-archive-preflight",
+      "record": "results/traveluav-openuav/20261008T223730Z-archive-preflight",
+      "summary": {
+        "status": "see console/diagnostic records"
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T223730Z-setup-c-extension",
+      "record": "results/traveluav-openuav/20261008T223730Z-setup-c-extension",
+      "summary": {
+        "kind": "c-extension",
+        "exit_status": 0
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T224043Z-extract-8696",
+      "record": "results/traveluav-openuav/20261008T224043Z-extract-8696",
+      "summary": {
+        "kind": "selective-extraction",
+        "exit_status": 127
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T224043Z-extract-8696"
+    },
+    {
+      "run_id": "20261008T224242Z-extract-8830",
+      "record": "results/traveluav-openuav/20261008T224242Z-extract-8830",
+      "summary": {
+        "kind": "selective-extraction",
+        "exit_status": 0
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T224242Z-extract-8830"
+    },
+    {
+      "run_id": "20261008T224431Z-extract-8949",
+      "record": "results/traveluav-openuav/20261008T224431Z-extract-8949",
+      "summary": {
+        "kind": "selective-extraction",
+        "exit_status": 1
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T224431Z-extract-8949"
+    },
+    {
+      "run_id": "20261008T224747Z-episode-preprocess",
+      "record": "results/traveluav-openuav/20261008T224747Z-episode-preprocess",
+      "summary": {
+        "kind": "author_episode_preprocessing",
+        "exit_status": 0,
+        "preprocessing_seed": 100,
+        "generator": "Model/LLaMA-UAV/tools/generate_merged_json.py at 5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "random_seed_assignment_bug": "upstream assigns random.seed=1 instead of calling it; wrapper seeded before executing unchanged code",
+        "merged_sha256": "5e137ae9b7112e92e4f259ad16cbbacf5d81794b90dc6db67b6d0f5f77f86f60",
+        "reference_state_count": 157,
+        "first_six_displacement_m": 4.832284765850153,
+        "instruction": "<image>\nThere is a target in the  back of uav. Using your front as the x-axis and your right as the y-axis, The target is at a yaw angle of -182.0 degrees from you. The green motorcycle is located on a city street with concrete paving, adjacent to a beige building with a lamp post casting shadows nearby; it's surrounded by parked vehicles, trees lining the sidewalk, and bordered by multi-story brick and glass buildings. Please control the drone and find the target.",
+        "original_published_instruction_choice": "unavailable; generated by authors documented template from released descriptions"
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T224748Z-a-9124",
+      "record": "results/traveluav-openuav/20261008T224748Z-a-9124",
+      "summary": {
+        "run_id": "20261008T224748Z-a-9124",
+        "level": "A",
+        "status": "failed_before_scene_start",
+        "exit_status": 1,
+        "failure": "stale ROOT/assets path in input inventory; find failed before scene launch",
+        "scene_started": false,
+        "policy_weights": "none",
+        "code_snapshot": "artifacts/traveluav-openuav/20261008T224748Z-a-9124/code"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T224748Z-a-9124"
+    },
+    {
+      "run_id": "20261008T224947Z-a-9269",
+      "record": "results/traveluav-openuav/20261008T224947Z-a-9269",
+      "summary": {
+        "run_id": "20261008T224947Z-a-9269",
+        "status": "complete",
+        "level": "A",
+        "started_utc": "2026-10-08T22:49:48.490621+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "upstream_modifications": "upstream.patch and upstream-staged.patch",
+        "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+        "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+        "policy_weights": "none",
+        "seed": 100,
+        "camera_frame": "AirSim NED; body camera offsets in settings.json",
+        "sampling": "A: each of first six reference poses; B: 0.2 s wall interval, at most 31 samples; absent samples are missing data",
+        "timeout_s": 90,
+        "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+        "missing_data": [],
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T22:50:54.387950+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T224947Z-a-9269"
+    },
+    {
+      "run_id": "20261008T225148Z-b-9779",
+      "record": "results/traveluav-openuav/20261008T225148Z-b-9779",
+      "summary": {
+        "run_id": "20261008T225148Z-b-9779",
+        "status": "complete",
+        "level": "B",
+        "started_utc": "2026-10-08T22:51:49.380417+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "upstream_modifications": "upstream.patch and upstream-staged.patch",
+        "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+        "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+        "policy_weights": "none",
+        "seed": 100,
+        "camera_frame": "AirSim NED; body camera offsets in settings.json",
+        "sampling": "A: each of first six reference poses; B: 0.2 s wall interval, at most 31 samples; absent samples are missing data",
+        "timeout_s": 90,
+        "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+        "missing_data": [],
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T22:52:14.260444+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T225148Z-b-9779"
+    },
+    {
+      "run_id": "20261008T225714Z-rpc-compatibility",
+      "record": "results/traveluav-openuav/20261008T225714Z-rpc-compatibility",
+      "summary": {
+        "kind": "rpc-compatibility",
+        "exit_status": 0
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T230118Z-a-10334",
+      "record": "results/traveluav-openuav/20261008T230118Z-a-10334",
+      "summary": {
+        "run_id": "20261008T230118Z-a-10334",
+        "status": "complete",
+        "level": "A",
+        "started_utc": "2026-10-08T23:01:19.064820+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "upstream_modifications": "upstream.patch and upstream-staged.patch",
+        "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+        "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+        "policy_weights": "none",
+        "seed": 100,
+        "camera_frame": "AirSim NED; body camera offsets in settings.json",
+        "sampling": "A: each of first six reference poses; B: 0.2 s wall interval, at most 31 samples; absent samples are missing data",
+        "timeout_s": 90,
+        "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+        "missing_data": [],
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T23:01:24.598941+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T230118Z-a-10334"
+    },
+    {
+      "run_id": "20261008T230303Z-b-10593",
+      "record": "results/traveluav-openuav/20261008T230303Z-b-10593",
+      "summary": {
+        "run_id": "20261008T230303Z-b-10593",
+        "status": "incomplete_flight",
+        "level": "B",
+        "started_utc": "2026-10-08T23:03:03.724463+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "upstream_modifications": "upstream.patch and upstream-staged.patch",
+        "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+        "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+        "policy_weights": "none",
+        "seed": 100,
+        "camera_frame": "AirSim NED; body camera offsets in settings.json",
+        "sampling": "A: each of first six reference poses; B: 0.2 s wall interval, at most 31 samples; absent samples are missing data",
+        "timeout_s": 90,
+        "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+        "missing_data": [],
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T23:03:10.464538+00:00",
+        "flight_completion": "incomplete: pause at 2m threshold while RPC incomplete",
+        "contact_evidence": "five sampled states, not continuous absence",
+        "path_length_interpretation": "sparse sampled lower bound"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T230303Z-b-10593"
+    },
+    {
+      "run_id": "20261008T230556Z-checkpoint-preflight",
+      "record": "results/traveluav-openuav/20261008T230556Z-checkpoint-preflight",
+      "summary": {
+        "kind": "checkpoint-preflight",
+        "exit_status": 0
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T230606Z-c-10877",
+      "record": "results/traveluav-openuav/20261008T230606Z-c-10877",
+      "summary": {
+        "run_id": "20261008T230606Z-c-10877",
+        "level": "C",
+        "status": "failed",
+        "started_utc": "2026-10-08T23:06:06.811368+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 1,
+        "ended_utc": "2026-10-08T23:06:10.709162+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T230606Z-c-10877"
+    },
+    {
+      "run_id": "20261008T231144Z-c-11112",
+      "record": "results/traveluav-openuav/20261008T231144Z-c-11112",
+      "summary": {
+        "run_id": "20261008T231144Z-c-11112",
+        "level": "C",
+        "status": "failed",
+        "started_utc": "2026-10-08T23:11:45.058401+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 1,
+        "ended_utc": "2026-10-08T23:11:54.478925+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T231144Z-c-11112"
+    },
+    {
+      "run_id": "20261008T231514Z-c-11420",
+      "record": "results/traveluav-openuav/20261008T231514Z-c-11420",
+      "summary": {
+        "run_id": "20261008T231514Z-c-11420",
+        "level": "C",
+        "status": "failed",
+        "started_utc": "2026-10-08T23:15:15.615644+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 1,
+        "ended_utc": "2026-10-08T23:15:23.707832+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T231514Z-c-11420"
+    },
+    {
+      "run_id": "20261008T231906Z-numba-compatibility",
+      "record": "results/traveluav-openuav/20261008T231906Z-numba-compatibility",
+      "summary": {
+        "kind": "required-numba-import",
+        "exit_status": 0
+      },
+      "large_artifacts": null
+    },
+    {
+      "run_id": "20261008T231915Z-c-11710",
+      "record": "results/traveluav-openuav/20261008T231915Z-c-11710",
+      "summary": {
+        "run_id": "20261008T231915Z-c-11710",
+        "level": "C",
+        "status": "failed",
+        "started_utc": "2026-10-08T23:19:15.901583+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 1,
+        "ended_utc": "2026-10-08T23:21:31.317787+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T231915Z-c-11710"
+    },
+    {
+      "run_id": "20261008T232627Z-c-12544",
+      "record": "results/traveluav-openuav/20261008T232627Z-c-12544",
+      "summary": {
+        "run_id": "20261008T232627Z-c-12544",
+        "level": "C",
+        "status": "failed",
+        "started_utc": "2026-10-08T23:26:28.361149+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 1,
+        "ended_utc": "2026-10-08T23:28:41.759486+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T232627Z-c-12544"
+    },
+    {
+      "run_id": "20261008T233131Z-c-13364",
+      "record": "results/traveluav-openuav/20261008T233131Z-c-13364",
+      "summary": {
+        "run_id": "20261008T233131Z-c-13364",
+        "level": "C",
+        "status": "failed",
+        "started_utc": "2026-10-08T23:31:32.438209+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 124,
+        "ended_utc": "2026-10-08T23:41:34.001109+00:00"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T233131Z-c-13364"
+    },
+    {
+      "run_id": "20261008T234414Z-a-17280",
+      "record": "results/traveluav-openuav/20261008T234414Z-a-17280",
+      "summary": {
+        "run_id": "20261008T234414Z-a-17280",
+        "status": "complete",
+        "level": "A",
+        "started_utc": "2026-10-08T23:44:15.540657+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "upstream_modifications": "upstream.patch and upstream-staged.patch",
+        "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+        "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+        "policy_weights": "none",
+        "seed": 100,
+        "camera_frame": "AirSim NED; body camera offsets in settings.json",
+        "sampling": "A: each of first six reference poses; B: dedicated client, requested 0.2 s absolute wall cadence until RPC completion/error or 90 s outer timeout; images independent at batch plus 1 s; absent samples are missing data",
+        "timeout_s": 90,
+        "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+        "missing_data": [],
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T23:44:21.681676+00:00",
+        "calibration_status": "first reference state mismatch0.790m; later poses match; superseded by fresh A234631",
+        "capture_status": "all60outputs decoded"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T234414Z-a-17280"
+    },
+    {
+      "run_id": "20261008T234423Z-b-17460",
+      "record": "results/traveluav-openuav/20261008T234423Z-b-17460",
+      "summary": {
+        "run_id": "20261008T234423Z-b-17460",
+        "status": "complete",
+        "level": "B",
+        "started_utc": "2026-10-08T23:44:24.423204+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "upstream_modifications": "upstream.patch and upstream-staged.patch",
+        "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+        "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+        "policy_weights": "none",
+        "seed": 100,
+        "camera_frame": "AirSim NED; body camera offsets in settings.json",
+        "sampling": "separate AirSim clients; requested0.2s absolute cadence;25states",
+        "timeout_s": 90,
+        "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+        "missing_data": [],
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T23:44:32.873346+00:00",
+        "flight_completion": "RPC completed; final state before pause",
+        "contact_evidence": "0of25positive samples; not continuous absence",
+        "path_length_interpretation": "sampled lower bound",
+        "image_sampling": "four separate batches, not one per state"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T234423Z-b-17460"
+    },
+    {
+      "run_id": "20261008T234538Z-c-17859",
+      "record": "results/traveluav-openuav/20261008T234538Z-c-17859",
+      "summary": {
+        "run_id": "20261008T234538Z-c-17859",
+        "level": "loader_diagnostic",
+        "status": "loader_eligible",
+        "started_utc": "2026-10-08T23:45:39.636941+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T23:48:08.641641+00:00",
+        "learned_decisions": 0,
+        "metadata_provenance": "regenerated, seed 100; verified twice",
+        "evaluation_performed": false
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T234538Z-c-17859"
+    },
+    {
+      "run_id": "20261008T234631Z-a-18267",
+      "record": "results/traveluav-openuav/20261008T234631Z-a-18267",
+      "summary": {
+        "run_id": "20261008T234631Z-a-18267",
+        "status": "complete",
+        "level": "A",
+        "started_utc": "2026-10-08T23:46:32.487158+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "upstream_modifications": "upstream.patch and upstream-staged.patch",
+        "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+        "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+        "policy_weights": "none",
+        "seed": 100,
+        "camera_frame": "AirSim NED; body camera offsets in settings.json",
+        "sampling": "A: each of first six reference poses; B: dedicated client, requested 0.2 s absolute wall cadence until RPC completion/error or 90 s outer timeout; images independent at batch plus 1 s; absent samples are missing data",
+        "timeout_s": 90,
+        "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+        "missing_data": [],
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T23:46:38.226181+00:00",
+        "capture_status": "30RGB+30raw metric depth decoded",
+        "replay_vehicle_positions": "all six match requested; actual camera poses separately retained",
+        "gpu_scope": "overlapped loader diagnostic, not scene-only memory",
+        "actual_camera_mount_caveat": "max0.204103m translation residual; use response extrinsics",
+        "decoder_validation": "identical actual wire payload decoded equally by legacy fallback and active C implementation"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T234631Z-a-18267"
+    },
+    {
+      "run_id": "20261008T234829Z-c-18961",
+      "record": "results/traveluav-openuav/20261008T234829Z-c-18961",
+      "summary": {
+        "run_id": "20261008T234829Z-c-18961",
+        "level": "C",
+        "status": "failed",
+        "started_utc": "2026-10-08T23:48:30.125030+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 143,
+        "ended_utc": "2026-10-08T23:54:36.994466+00:00",
+        "failure_reason": "legacy RPC returned bytes IP failed Python3 str equality; no learned decisions",
+        "learned_decisions": 0,
+        "termination": "audit stopped irreducible repeated scene-open retry; exit 143",
+        "official_metrics": "unavailable"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T234829Z-c-18961"
+    },
+    {
+      "run_id": "20261008T2348Z-metadata-verification",
+      "record": "results/traveluav-openuav/20261008T2348Z-metadata-verification",
+      "summary": {
+        "status": "see console/diagnostic records"
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T2348Z-metadata-verification"
+    },
+    {
+      "run_id": "20261008T235452Z-c-21144",
+      "record": "results/traveluav-openuav/20261008T235452Z-c-21144",
+      "summary": {
+        "run_id": "20261008T235452Z-c-21144",
+        "level": "C",
+        "status": "execution_complete_budget_truncated",
+        "started_utc": "2026-10-08T23:54:52.685196+00:00",
+        "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+        "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+        "scene": "ModernCityMap",
+        "split": "seen_valset, one episode",
+        "seed": 100,
+        "assistant": "L1 always_help True, use_gt True",
+        "max_waypoints": 10,
+        "server_timeout_s": 900,
+        "evaluation_timeout_s": 600,
+        "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+        "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+        "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+        "exit_status": 0,
+        "ended_utc": "2026-10-08T23:58:41.129893+00:00",
+        "learned_decisions": 10,
+        "metadata_provenance": "regenerated seed100; two-generation verification",
+        "official_metrics": {
+          "denominator": 1,
+          "eligibility": "budget-truncated smoke; not full official benchmark",
+          "result_exists": true
+        },
+        "termination_reason": "decision_budget",
+        "success": false,
+        "policy_only_vram": "not isolated; GPU-wide/process/allocator measurements retained",
+        "gpu_monitor_scope": "one-second GPU-wide samples; late process samples separate",
+        "timing_scope": "instrumented CUDA-synchronized coarse+refiner model.run; renderer RPC-plus-transport separately",
+        "model_latency_summary": {
+          "cold_first_s": 1.1363722490004875,
+          "steady_n": 9,
+          "steady_mean_s": 0.2789792244446087,
+          "steady_min_s": 0.26371516099970904,
+          "steady_max_s": 0.3052945620001992,
+          "all_samples_s": [
+            1.1363722490004875,
+            0.27877249399989523,
+            0.2771899140007008,
+            0.26371516099970904,
+            0.2759857090004516,
+            0.3052945620001992,
+            0.27068683200013766,
+            0.2915217509998911,
+            0.2790430280001601,
+            0.26860356900033366
+          ],
+          "measurement": "same-process CUDA synchronized around coarse+trajectory model.run; preprocessing/DINO/controller/log writes excluded; instrumented"
+        }
+      },
+      "large_artifacts": "artifacts/traveluav-openuav/20261008T235452Z-c-21144"
+    }
+  ],
+  "scope": "every retained setup/diagnostic/A/B/C run; names identify experiments, not independent benchmark trials"
+}

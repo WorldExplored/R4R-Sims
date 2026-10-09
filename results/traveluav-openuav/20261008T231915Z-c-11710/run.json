@@ -1,0 +1,20 @@
+{
+  "run_id": "20261008T231915Z-c-11710",
+  "level": "C",
+  "status": "failed",
+  "started_utc": "2026-10-08T23:19:15.901583+00:00",
+  "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+  "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+  "scene": "ModernCityMap",
+  "split": "seen_valset, one episode",
+  "seed": 100,
+  "assistant": "L1 always_help True, use_gt True",
+  "max_waypoints": 10,
+  "server_timeout_s": 900,
+  "evaluation_timeout_s": 600,
+  "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+  "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+  "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+  "exit_status": 1,
+  "ended_utc": "2026-10-08T23:21:31.317787+00:00"
+}

@@ -1,0 +1,234 @@
+{
+  "assets": [
+    {
+      "repo": "wangxiangyu0814/llama-uav-7b",
+      "revision": "6cd1a273ba26338a1be4eb93b43489ee0099fbce",
+      "repo_type": "model",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/llama-uav-7b",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/llama-uav-7b/.gitattributes",
+          "url": "https://huggingface.co/wangxiangyu0814/llama-uav-7b/resolve/6cd1a273ba26338a1be4eb93b43489ee0099fbce/.gitattributes",
+          "bytes": 1519,
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/llama-uav-7b/adapter_config.json",
+          "url": "https://huggingface.co/wangxiangyu0814/llama-uav-7b/resolve/6cd1a273ba26338a1be4eb93b43489ee0099fbce/adapter_config.json",
+          "bytes": 783,
+          "sha256": "fde5514162f8a053eace1ab75acfc544fa06a81f0b5cb29e37de0ef191ed40ad",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/llama-uav-7b/adapter_model.bin",
+          "url": "https://huggingface.co/wangxiangyu0814/llama-uav-7b/resolve/6cd1a273ba26338a1be4eb93b43489ee0099fbce/adapter_model.bin",
+          "bytes": 319970957,
+          "sha256": "b6a7f8c7a4c43092b863b210a6f9f23b3076ce80c32c2f5f45eb6b108ea4c1ca",
+          "expected_sha256": "b6a7f8c7a4c43092b863b210a6f9f23b3076ce80c32c2f5f45eb6b108ea4c1ca",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/llama-uav-7b/config.json",
+          "url": "https://huggingface.co/wangxiangyu0814/llama-uav-7b/resolve/6cd1a273ba26338a1be4eb93b43489ee0099fbce/config.json",
+          "bytes": 1209,
+          "sha256": "a9a348b0448208413191875e5023efc2ca5662c406fbbbbec64225ae7cf85f2b",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/llama-uav-7b/mm_projector.bin",
+          "url": "https://huggingface.co/wangxiangyu0814/llama-uav-7b/resolve/6cd1a273ba26338a1be4eb93b43489ee0099fbce/mm_projector.bin",
+          "bytes": 763949522,
+          "sha256": "dd9c61b1ddc7be0fafe9bb1a23d17b1235479fbcab4cccf4176adae6124a9f59",
+          "expected_sha256": "dd9c61b1ddc7be0fafe9bb1a23d17b1235479fbcab4cccf4176adae6124a9f59",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/llama-uav-7b/non_lora_trainables.bin",
+          "url": "https://huggingface.co/wangxiangyu0814/llama-uav-7b/resolve/6cd1a273ba26338a1be4eb93b43489ee0099fbce/non_lora_trainables.bin",
+          "bytes": 654613560,
+          "sha256": "a77df7f4cc9b79cb59d4276892a84988bfc2a7066e73c37b121abd00e4b0b92d",
+          "expected_sha256": "a77df7f4cc9b79cb59d4276892a84988bfc2a7066e73c37b121abd00e4b0b92d",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "repo": "wangxiangyu0814/traveluav-traj-model",
+      "revision": "583a3f6b9111fd80e76d6905eaa0f1793f3fd03f",
+      "repo_type": "model",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/traj",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/traj/model_5.pth",
+          "url": "https://huggingface.co/wangxiangyu0814/traveluav-traj-model/resolve/583a3f6b9111fd80e76d6905eaa0f1793f3fd03f/model_5.pth",
+          "bytes": 1982506481,
+          "sha256": "f8607cb31434adc7973688c23e14c9e1f440ea2c2980c297c2b1df2e4c29b425",
+          "expected_sha256": "f8607cb31434adc7973688c23e14c9e1f440ea2c2980c297c2b1df2e4c29b425",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "repo": "lmsys/vicuna-7b-v1.5",
+      "revision": "3321f76e3f527bd14065daf69dad9344000a201d",
+      "repo_type": "model",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/config.json",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/config.json",
+          "bytes": 615,
+          "sha256": "e122b598d0734b489590e99e3b3562a11ce67ea13bce390a7868b4f73ae6e615",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/generation_config.json",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/generation_config.json",
+          "bytes": 162,
+          "sha256": "2b4818acc825ace1ce4a9daed9838645d103990a451adba4bc90696e38d3fc1f",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/pytorch_model-00001-of-00002.bin",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/pytorch_model-00001-of-00002.bin",
+          "bytes": 9976634558,
+          "sha256": "4133d2fcc5f31286881ea50806d95b721d016b533036a99dedce3f8fe88520e6",
+          "expected_sha256": "4133d2fcc5f31286881ea50806d95b721d016b533036a99dedce3f8fe88520e6",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/pytorch_model-00002-of-00002.bin",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/pytorch_model-00002-of-00002.bin",
+          "bytes": 3500315539,
+          "sha256": "d261d3c35e92d3070d1e61ed821ebfca812a847d2a880757d82728acf005c5ac",
+          "expected_sha256": "d261d3c35e92d3070d1e61ed821ebfca812a847d2a880757d82728acf005c5ac",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/pytorch_model.bin.index.json",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/pytorch_model.bin.index.json",
+          "bytes": 26788,
+          "sha256": "aca3c1facc89d12311a667c32e85ac86e625990992ea8a189e3b036ba371b931",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/special_tokens_map.json",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/special_tokens_map.json",
+          "bytes": 438,
+          "sha256": "719833ff26ac897a3ec8ed946028a135de2a351470af59b4008744ab1f0ee9b7",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/tokenizer.model",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/tokenizer.model",
+          "bytes": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "expected_sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5/tokenizer_config.json",
+          "url": "https://huggingface.co/lmsys/vicuna-7b-v1.5/resolve/3321f76e3f527bd14065daf69dad9344000a201d/tokenizer_config.json",
+          "bytes": 749,
+          "sha256": "1cbc84c8a5b41e0ec24e0da66677773569fb0ccfa753d5d184e343e2ec3815a0",
+          "expected_sha256": null,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "repo": "google-bert/bert-base-uncased",
+      "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+      "repo_type": "model",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased/config.json",
+          "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/86b5e0934494bd15c9632b12f734a8a67f723594/config.json",
+          "bytes": 570,
+          "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased/pytorch_model.bin",
+          "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/86b5e0934494bd15c9632b12f734a8a67f723594/pytorch_model.bin",
+          "bytes": 440473133,
+          "sha256": "097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a",
+          "expected_sha256": "097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased/tokenizer.json",
+          "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/86b5e0934494bd15c9632b12f734a8a67f723594/tokenizer.json",
+          "bytes": 466062,
+          "sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased/tokenizer_config.json",
+          "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/86b5e0934494bd15c9632b12f734a8a67f723594/tokenizer_config.json",
+          "bytes": 48,
+          "sha256": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased/vocab.txt",
+          "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/86b5e0934494bd15c9632b12f734a8a67f723594/vocab.txt",
+          "bytes": 231508,
+          "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+          "expected_sha256": null,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "repo": "ShilongLiu/GroundingDINO",
+      "revision": "a94c9b567a2a374598f05c584e96798a170c56fb",
+      "repo_type": "model",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/dino",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/dino/groundingdino_swint_ogc.pth",
+          "url": "https://huggingface.co/ShilongLiu/GroundingDINO/resolve/a94c9b567a2a374598f05c584e96798a170c56fb/groundingdino_swint_ogc.pth",
+          "bytes": 693997677,
+          "sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+          "expected_sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "url": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth",
+      "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/LAVIS/eva_vit_g.pth",
+      "status": "downloaded",
+      "bytes": 2025249237,
+      "sha256": "99d2bb36c6b52c94fe6e2e12373afb27de57ae81378c3d8c53bf0e83b0f4275f",
+      "expected_sha256": null
+    },
+    {
+      "url": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth",
+      "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/LAVIS/instruct_blip_vicuna7b_trimmed.pth",
+      "status": "downloaded",
+      "bytes": 2266496277,
+      "sha256": "6b9553383527466c1382259a3fc97b6d643f72b1ecaa37bf7c4711de0059b8ea",
+      "expected_sha256": null
+    }
+  ],
+  "updated_utc": "2026-10-08T22:24:05Z"
+}

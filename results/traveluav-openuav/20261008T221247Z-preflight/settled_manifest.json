@@ -1,0 +1,51 @@
+{
+  "run_id": "20261008T221247Z-preflight",
+  "settled_utc": "2026-10-09T00:04:51Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "before-staged.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "location": "record",
+      "relative_path": "before.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 117,
+      "sha256": "4b99781d529ab05191ede2a3cfbb2b538f4bce9eec2ab957619956e338e52794"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 21278,
+      "sha256": "d56de43de87d171bdc199833ff9181bd9fec835f786c19803aad3f0efb180009"
+    },
+    {
+      "location": "record",
+      "relative_path": "git-before.txt",
+      "bytes": 30,
+      "sha256": "ba6caaf5597f7d0efcd0888fefc7b9b27d6c720eeadc55e90d27278884848835"
+    },
+    {
+      "location": "record",
+      "relative_path": "preflight.md",
+      "bytes": 3537,
+      "sha256": "50192cd08f57ec9dcdf8eeb36f2caa97ab58871f8ec3e9b18573d920d1971c02"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 929,
+      "sha256": "07f81c4fb75e654f40334f941d846643314660426cda52b3ce4e4f742ba28735"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T221247Z-preflight",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T221247Z-preflight",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

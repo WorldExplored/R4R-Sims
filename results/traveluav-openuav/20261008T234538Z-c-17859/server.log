@@ -1,0 +1,4 @@
+PROJECT_ROOT_DIR /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py:646: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  t.setDaemon(daemon)
+start listening 	127.0.0.1:30000

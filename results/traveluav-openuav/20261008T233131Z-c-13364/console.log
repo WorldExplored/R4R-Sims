@@ -1,0 +1,2245 @@
+UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+final text_encoder_type: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased
+Not using distributed mode
+Loading dataset metainfo...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 551.30it/s]
+2026-10-08 23:31:39,902 - INFO - __init__:97 - Loaded dataset 93.
+2026-10-08 23:31:39,902 - WARNING - __init__:103 - dataset grouped by scene, 
+Loading LLaVA from base model...
+UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:10<00:10, 10.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.71s/it]
+Some weights of LlavaLlamaAttForCausalLM were not initialized from the model checkpoint at /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/vicuna-7b-v1.5 and are newly initialized: ['waypoints_output.weight', 'history_preprocessor.0.bias', 'history_preprocessor.2.weight', 'model.mm_projector.2.weight', 'model.mm_projector.0.weight', 'model.mm_projector.0.bias', 'waypoint_emb.weight', 'waypoints_fc.0.bias', 'waypoints_fc.2.bias', 'history_preprocessor.2.bias', 'model.mm_projector.2.bias', 'waypoints_fc.2.weight', 'history_preprocessor.0.weight', 'waypoints_fc.0.weight', 'waypoints_output.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+_IncompatibleKeys(missing_keys=[], unexpected_keys=['norm.weight', 'norm.bias', 'head.weight', 'head.bias', 'blocks.39.norm1.weight', 'blocks.39.norm1.bias', 'blocks.39.attn.q_bias', 'blocks.39.attn.v_bias', 'blocks.39.attn.qkv.weight', 'blocks.39.attn.proj.weight', 'blocks.39.attn.proj.bias', 'blocks.39.norm2.weight', 'blocks.39.norm2.bias', 'blocks.39.mlp.fc1.weight', 'blocks.39.mlp.fc1.bias', 'blocks.39.mlp.fc2.weight', 'blocks.39.mlp.fc2.bias'])
+Load vision tower:  /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/LAVIS/eva_vit_g.pth
+Some weights of BertLMHeadModel were not initialized from the model checkpoint at /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased and are newly initialized: ['bert.encoder.layer.8.crossattention.self.query.bias', 'bert.encoder.layer.3.output_query.LayerNorm.weight', 'bert.encoder.layer.10.crossattention.self.key.bias', 'bert.encoder.layer.10.output_query.LayerNorm.weight', 'bert.encoder.layer.4.crossattention.output.dense.weight', 'bert.encoder.layer.0.crossattention.self.value.weight', 'bert.encoder.layer.10.crossattention.output.dense.weight', 'bert.encoder.layer.5.output_query.LayerNorm.bias', 'bert.encoder.layer.8.crossattention.self.value.weight', 'bert.encoder.layer.10.crossattention.self.value.bias', 'bert.encoder.layer.5.intermediate_query.dense.bias', 'bert.encoder.layer.2.output_query.dense.bias', 'bert.encoder.layer.2.crossattention.output.dense.bias', 'bert.encoder.layer.5.intermediate_query.dense.weight', 'bert.encoder.layer.4.intermediate_query.dense.bias', 'bert.encoder.layer.0.crossattention.self.query.weight', 'bert.encoder.layer.6.crossattention.self.key.bias', 'bert.encoder.layer.2.crossattention.self.key.bias', 'bert.encoder.layer.3.output_query.LayerNorm.bias', 'bert.encoder.layer.10.output_query.LayerNorm.bias', 'bert.encoder.layer.8.intermediate_query.dense.bias', 'bert.encoder.layer.4.output_query.dense.weight', 'bert.encoder.layer.6.output_query.dense.bias', 'bert.encoder.layer.10.crossattention.output.dense.bias', 'bert.encoder.layer.6.crossattention.output.dense.bias', 'bert.encoder.layer.4.crossattention.self.value.weight', 'bert.encoder.layer.0.crossattention.self.query.bias', 'bert.encoder.layer.10.crossattention.self.value.weight', 'bert.encoder.layer.0.crossattention.output.LayerNorm.weight', 'bert.encoder.layer.9.output_query.dense.bias', 'bert.encoder.layer.0.crossattention.output.LayerNorm.bias', 'bert.encoder.layer.6.crossattention.self.value.weight', 'bert.encoder.layer.2.crossattention.output.dense.weight', 'bert.encoder.layer.6.crossattention.self.value.bias', 'bert.encoder.layer.4.crossattention.output.LayerNorm.weight', 'bert.encoder.layer.2.output_query.LayerNorm.bias', 'bert.encoder.layer.11.output_query.dense.bias', 'bert.encoder.layer.7.output_query.dense.bias', 'bert.encoder.layer.5.output_query.dense.bias', 'bert.encoder.layer.10.crossattention.output.LayerNorm.bias', 'bert.encoder.layer.2.crossattention.self.value.bias', 'bert.encoder.layer.10.crossattention.self.key.weight', 'bert.encoder.layer.3.output_query.dense.weight', 'bert.encoder.layer.9.intermediate_query.dense.weight', 'bert.encoder.layer.0.output_query.LayerNorm.weight', 'bert.encoder.layer.2.crossattention.output.LayerNorm.bias', 'bert.encoder.layer.3.intermediate_query.dense.bias', 'bert.encoder.layer.0.crossattention.output.dense.bias', 'bert.encoder.layer.8.crossattention.self.query.weight', 'bert.encoder.layer.2.crossattention.self.key.weight', 'bert.encoder.layer.8.crossattention.output.dense.weight', 'bert.encoder.layer.2.crossattention.self.query.weight', 'bert.encoder.layer.10.output_query.dense.weight', 'bert.encoder.layer.1.output_query.LayerNorm.bias', 'bert.encoder.layer.2.crossattention.self.query.bias', 'bert.encoder.layer.0.output_query.dense.weight', 'bert.encoder.layer.7.output_query.dense.weight', 'bert.encoder.layer.9.output_query.LayerNorm.bias', 'bert.encoder.layer.1.output_query.dense.weight', 'bert.encoder.layer.1.output_query.dense.bias', 'bert.encoder.layer.1.output_query.LayerNorm.weight', 'bert.encoder.layer.8.output_query.LayerNorm.bias', 'bert.encoder.layer.4.output_query.dense.bias', 'bert.encoder.layer.10.intermediate_query.dense.bias', 'bert.encoder.layer.1.intermediate_query.dense.weight', 'bert.encoder.layer.6.output_query.LayerNorm.bias', 'bert.encoder.layer.0.crossattention.self.key.weight', 'bert.encoder.layer.6.crossattention.output.dense.weight', 'bert.encoder.layer.8.crossattention.self.value.bias', 'bert.encoder.layer.6.intermediate_query.dense.bias', 'bert.encoder.layer.2.intermediate_query.dense.weight', 'bert.encoder.layer.7.output_query.LayerNorm.bias', 'bert.encoder.layer.0.crossattention.output.dense.weight', 'bert.encoder.layer.6.output_query.dense.weight', 'bert.encoder.layer.7.intermediate_query.dense.weight', 'bert.encoder.layer.8.crossattention.output.LayerNorm.weight', 'bert.encoder.layer.10.output_query.dense.bias', 'bert.encoder.layer.6.crossattention.self.key.weight', 'bert.encoder.layer.7.intermediate_query.dense.bias', 'bert.encoder.layer.4.crossattention.self.value.bias', 'bert.encoder.layer.4.crossattention.self.key.weight', 'bert.encoder.layer.10.intermediate_query.dense.weight', 'bert.encoder.layer.6.crossattention.self.query.weight', 'bert.encoder.layer.9.output_query.dense.weight', 'bert.encoder.layer.6.crossattention.output.LayerNorm.weight', 'bert.encoder.layer.8.intermediate_query.dense.weight', 'bert.encoder.layer.0.output_query.dense.bias', 'bert.encoder.layer.4.output_query.LayerNorm.bias', 'bert.encoder.layer.11.output_query.LayerNorm.bias', 'bert.encoder.layer.8.output_query.dense.weight', 'bert.encoder.layer.9.intermediate_query.dense.bias', 'bert.encoder.layer.4.crossattention.output.dense.bias', 'bert.encoder.layer.4.output_query.LayerNorm.weight', 'bert.encoder.layer.10.crossattention.output.LayerNorm.weight', 'bert.encoder.layer.0.intermediate_query.dense.bias', 'bert.encoder.layer.3.intermediate_query.dense.weight', 'bert.encoder.layer.4.crossattention.self.query.weight', 'bert.encoder.layer.3.output_query.dense.bias', 'bert.encoder.layer.6.crossattention.self.query.bias', 'bert.encoder.layer.2.crossattention.self.value.weight', 'bert.encoder.layer.5.output_query.LayerNorm.weight', 'bert.encoder.layer.4.crossattention.self.query.bias', 'bert.encoder.layer.8.crossattention.output.LayerNorm.bias', 'bert.encoder.layer.8.crossattention.self.key.weight', 'bert.encoder.layer.0.intermediate_query.dense.weight', 'bert.encoder.layer.8.output_query.LayerNorm.weight', 'bert.encoder.layer.0.crossattention.self.value.bias', 'bert.encoder.layer.8.crossattention.self.key.bias', 'bert.encoder.layer.9.output_query.LayerNorm.weight', 'bert.encoder.layer.4.crossattention.output.LayerNorm.bias', 'bert.encoder.layer.0.crossattention.self.key.bias', 'bert.encoder.layer.6.crossattention.output.LayerNorm.bias', 'bert.encoder.layer.7.output_query.LayerNorm.weight', 'bert.encoder.layer.11.intermediate_query.dense.weight', 'bert.encoder.layer.11.output_query.LayerNorm.weight', 'bert.encoder.layer.2.intermediate_query.dense.bias', 'bert.encoder.layer.10.crossattention.self.query.weight', 'bert.encoder.layer.2.output_query.LayerNorm.weight', 'bert.encoder.layer.5.output_query.dense.weight', 'bert.encoder.layer.11.intermediate_query.dense.bias', 'bert.encoder.layer.4.intermediate_query.dense.weight', 'bert.encoder.layer.8.output_query.dense.bias', 'bert.encoder.layer.1.intermediate_query.dense.bias', 'bert.encoder.layer.8.crossattention.output.dense.bias', 'bert.encoder.layer.2.crossattention.output.LayerNorm.weight', 'bert.encoder.layer.6.intermediate_query.dense.weight', 'bert.encoder.layer.4.crossattention.self.key.bias', 'bert.encoder.layer.6.output_query.LayerNorm.weight', 'bert.encoder.layer.2.output_query.dense.weight', 'bert.encoder.layer.0.output_query.LayerNorm.bias', 'bert.encoder.layer.10.crossattention.self.query.bias', 'bert.encoder.layer.11.output_query.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Freezing pretrained qformer weights...
+Loading pretrained weights...
+Loading vlm_att_query weights...
+Loading vlm_att_ln weights...
+Loading LoRA weights from /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/runtime/llama-uav-7b
+_IncompatibleKeys(missing_keys=[], unexpected_keys=['norm.weight', 'norm.bias', 'head.weight', 'head.bias', 'blocks.39.norm1.weight', 'blocks.39.norm1.bias', 'blocks.39.attn.q_bias', 'blocks.39.attn.v_bias', 'blocks.39.attn.qkv.weight', 'blocks.39.attn.proj.weight', 'blocks.39.attn.proj.bias', 'blocks.39.norm2.weight', 'blocks.39.norm2.bias', 'blocks.39.mlp.fc1.weight', 'blocks.39.mlp.fc1.bias', 'blocks.39.mlp.fc2.weight', 'blocks.39.mlp.fc2.bias'])
+Load vision tower:  /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/LAVIS/eva_vit_g.pth
+Assist setting: always_help -- True     use_gt -- True
+  0%|          | 0/1 [00:00<?, ?it/s]2026-10-08 23:34:00,330 - WARNING - _changeEnv:276 - to change env: ['ModernCityMap']
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:00,333 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:00,333 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:00,356 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:00,358 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:03,363 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:03,363 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:03,384 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:03,385 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:06,390 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:06,390 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:06,410 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:06,410 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:09,415 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:09,415 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:09,435 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:09,446 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:12,451 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:12,451 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:12,471 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:12,472 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:15,476 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:15,477 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:15,498 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:15,498 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:18,503 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:18,503 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:18,524 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:18,525 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:21,530 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:21,530 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:21,550 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:21,551 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:24,555 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:24,555 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:24,576 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:24,577 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:27,581 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:27,582 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:27,602 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:27,602 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:30,606 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:30,606 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:30,627 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:30,627 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:33,632 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:33,632 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:33,652 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:33,653 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:36,657 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:36,658 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:36,685 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:36,685 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:39,690 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:39,690 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:39,711 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:39,712 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:42,716 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:42,716 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:42,741 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:42,742 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:45,747 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:45,747 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:45,772 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-17:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:45,773 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:48,778 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:48,778 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:48,801 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-18:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:48,802 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:51,807 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:51,807 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:51,829 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:51,829 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:54,835 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:54,835 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:54,856 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-20:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:54,857 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:34:57,862 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:34:57,862 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:34:57,884 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-21:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:34:57,885 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:00,890 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:00,890 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:00,910 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-22:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:00,911 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:03,916 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:03,916 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:03,936 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:03,937 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:06,941 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:06,942 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:06,962 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-24:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:06,963 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:09,968 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:09,968 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:09,989 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-25:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:09,989 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:12,994 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:12,994 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:13,016 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-26:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:13,017 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:16,022 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:16,022 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:16,044 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-27:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:16,045 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:19,049 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:19,050 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:19,072 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-28:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:19,073 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:22,077 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:22,077 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:22,098 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-29:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:22,099 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:25,105 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:25,105 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:25,126 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-30:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:25,127 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:28,132 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:28,132 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:28,154 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-31:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:28,155 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:31,160 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:31,160 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:31,181 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-32:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:31,182 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:34,186 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:34,187 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:34,208 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-33:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:34,208 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:37,213 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:37,213 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:37,233 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:37,233 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:40,238 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:40,238 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:40,260 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:40,260 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:43,265 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:43,265 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:43,286 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-36:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:43,287 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:46,291 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:46,292 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:46,312 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-37:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:46,313 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:49,318 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:49,318 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:49,339 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-38:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:49,340 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:52,345 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:52,345 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:52,367 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-39:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:52,368 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:55,373 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:55,373 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:55,397 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-40:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:55,397 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:35:58,403 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:35:58,403 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:35:58,424 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-41:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:35:58,425 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:01,430 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:01,430 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:01,451 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-42:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:01,452 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:04,457 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:04,457 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:04,479 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-43:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:04,480 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:07,485 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:07,485 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:07,507 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-44:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:07,507 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:10,512 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:10,512 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:10,535 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-45:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:10,535 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:13,540 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:13,540 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:13,561 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-46:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:13,562 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:16,564 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:16,564 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:16,586 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-47:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:16,587 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:19,592 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:19,592 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:19,613 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-48:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:19,613 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:22,618 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:22,618 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:22,639 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-49:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:22,639 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:25,644 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:25,644 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:25,666 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-50:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:25,666 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:28,671 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:28,671 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:28,695 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-51:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:28,695 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:31,701 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:31,701 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:31,721 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-52:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:31,721 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:34,726 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:34,726 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:34,747 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-53:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:34,747 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:37,752 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:37,752 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:37,773 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-54:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:37,773 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:40,778 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:40,778 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:40,799 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-55:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:40,799 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:43,804 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:43,804 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:43,824 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-56:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:43,825 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:46,830 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:46,830 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:46,851 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-57:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:46,852 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:49,855 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:49,855 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:49,875 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-58:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:49,875 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:52,880 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:52,880 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:52,903 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-59:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:52,904 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:55,907 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:55,908 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:55,932 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-60:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:55,933 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:36:58,939 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:36:58,939 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:36:58,961 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-61:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:36:58,962 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:01,968 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:01,968 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:01,990 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-62:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:01,991 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:04,996 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:04,996 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:05,019 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-63:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:05,019 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:08,024 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:08,025 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:08,047 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-64:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:08,048 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:11,052 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:11,053 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:11,076 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-65:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:11,076 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:14,082 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:14,082 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:14,109 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-66:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:14,110 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:17,115 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:17,115 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:17,137 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-67:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:17,138 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:20,143 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:20,143 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:20,166 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-68:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:20,167 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:23,172 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:23,172 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:23,196 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-69:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:23,196 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:26,201 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:26,201 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:26,224 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-70:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:26,225 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:29,230 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:29,230 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:29,254 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-71:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:29,254 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:32,259 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:32,260 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:32,282 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-72:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:32,283 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:35,287 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:35,287 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:35,309 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-73:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:35,310 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:38,315 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:38,315 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:38,337 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-74:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:38,338 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:41,343 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:41,343 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:41,365 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-75:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:41,365 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:44,370 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:44,371 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:44,393 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-76:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:44,394 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:47,399 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:47,399 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:47,422 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-77:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:47,423 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:50,428 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:50,428 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:50,451 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-78:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:50,452 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:53,458 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:53,458 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:53,482 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-79:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:53,482 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:56,487 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:56,487 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:56,516 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-80:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:56,517 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:37:59,522 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:37:59,522 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:37:59,544 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-81:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:37:59,544 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:02,549 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:02,549 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:02,571 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-82:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:02,572 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:05,577 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:05,577 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:05,600 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-83:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:05,601 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:08,606 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:08,606 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:08,629 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-84:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:08,629 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:11,634 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:11,634 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:11,656 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-85:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:11,657 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:14,659 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:14,660 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:14,683 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-86:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:14,684 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:17,688 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:17,689 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:17,711 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-87:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:17,712 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:20,715 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:20,716 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:20,738 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-88:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:20,739 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:23,744 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:23,744 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:23,768 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-89:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:23,769 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:26,773 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:26,774 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:26,796 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-90:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:26,797 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:29,802 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:29,802 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:29,830 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-91:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:29,831 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:32,836 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:32,836 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:32,864 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-92:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:32,864 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:35,870 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:35,870 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:35,893 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-93:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:35,893 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:38,899 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:38,900 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:38,928 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-94:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:38,928 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:41,933 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:41,934 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:41,955 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-95:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:41,956 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:44,961 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:44,961 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:44,984 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-96:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:44,984 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:47,989 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:47,989 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:48,012 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-97:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:48,013 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:51,017 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:51,018 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:51,041 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-98:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:51,041 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:54,046 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:54,046 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:54,069 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-99:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:54,070 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:38:57,074 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:38:57,074 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:38:57,097 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-100:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:38:57,098 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:00,103 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:00,103 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:00,127 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-101:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:00,127 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:03,132 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:03,132 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:03,155 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-102:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:03,156 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:06,161 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:06,161 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:06,183 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-103:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:06,184 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:09,189 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:09,189 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:09,212 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-104:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:09,212 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:12,218 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:12,218 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:12,241 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-105:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:12,241 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:15,244 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:15,244 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:15,267 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-106:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:15,268 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:18,273 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:18,273 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:18,297 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-107:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:18,298 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:21,302 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:21,303 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:21,326 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-108:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:21,327 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:24,331 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:24,332 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:24,355 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-109:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:24,355 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:27,360 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:27,360 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:27,384 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-110:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:27,384 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:30,389 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:30,390 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:30,414 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-111:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:30,415 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:33,419 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:33,420 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:33,444 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-112:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:33,445 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:36,450 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:36,450 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:36,473 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-113:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:36,474 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:39,479 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:39,479 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:39,502 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-114:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:39,503 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:42,509 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:42,509 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:42,532 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-115:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:42,532 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:45,537 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:45,538 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:45,560 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-116:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:45,561 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:48,566 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:48,566 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:48,588 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-117:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:48,589 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:51,594 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:51,594 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:51,618 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-118:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:51,618 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:54,623 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:54,624 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:54,647 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-119:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:54,648 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:39:57,653 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:39:57,653 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:39:57,677 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-120:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:39:57,677 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:00,682 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:00,682 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:00,704 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-121:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:00,705 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:03,710 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:03,710 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:03,734 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-122:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:03,734 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:06,739 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:06,739 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:06,761 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-123:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:06,762 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:09,767 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:09,767 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:09,791 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-124:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:09,791 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:12,796 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:12,796 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:12,819 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-125:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:12,819 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:15,825 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:15,825 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:15,848 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-126:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:15,849 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:18,853 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:18,853 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:18,876 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-127:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:18,876 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:21,881 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:21,881 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:21,904 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-128:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:21,904 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:24,909 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:24,909 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:24,932 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-129:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:24,933 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:27,938 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:27,938 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:27,962 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-130:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:27,963 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:30,968 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:30,968 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:30,992 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-131:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:30,992 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:33,997 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:33,997 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:34,026 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-132:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:34,027 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:37,031 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:37,032 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:37,054 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-133:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:37,055 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:40,060 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:40,060 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:40,083 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-134:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:40,084 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:43,089 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:43,089 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:43,116 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-135:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:43,117 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:46,122 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:46,122 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:46,146 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-136:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:46,146 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:49,151 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:49,151 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:49,174 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-137:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:49,175 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:52,180 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:52,180 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:52,202 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-138:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:52,203 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:55,208 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:55,208 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:55,231 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-139:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:55,232 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:40:58,236 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:40:58,236 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:40:58,262 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-140:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:40:58,263 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:01,268 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:01,268 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:01,296 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-141:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:01,297 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:04,302 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:04,302 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:04,328 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-142:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:04,329 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:07,334 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:07,334 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:07,359 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-143:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:07,360 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:10,365 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:10,366 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:10,399 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-144:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:10,400 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:13,405 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:13,405 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:16,092 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-145:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:16,093 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:19,098 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:19,098 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:22,911 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-146:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:22,912 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:25,918 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:25,918 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:25,943 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-147:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:25,944 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:28,949 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:28,949 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:28,973 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-148:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:28,974 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败
+machines_info: [{'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}]
+Connected	127.0.0.1:30000
+2026-10-08 23:41:31,979 - INFO - _run_command:192 - 开始打开场景，机器0: 127.0.0.1:30000
+2026-10-08 23:41:31,979 - INFO - _run_command:193 - gpus: {'MACHINE_IP': '127.0.0.1', 'SOCKET_PORT': 30000, 'MAX_SCENE_NUM': 16, 'open_scenes': ['ModernCityMap'], 'gpus': [0, 0, 0, 0, 0, 0, 0, 0]}
+2026-10-08 23:41:32,006 - ERROR - _run_command:196 - 打开场景失败，机器: 127.0.0.1:30000
+Exception in thread Thread-149:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 94, in run
+    self.result = self.func(*self.args)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorClientTool.py", line 197, in _run_command
+    raise Exception('打开场景失败')
+Exception: 打开场景失败
+2026-10-08 23:41:32,007 - ERROR - _changeEnv:287 - 启动场景失败 打开场景失败

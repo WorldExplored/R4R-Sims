@@ -1,0 +1,25 @@
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=C.UTF-8,Utf16=on,HugeFiles=on,64 bits,6 CPUs Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz (50657),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 2539575135 bytes (2422 MiB)
+
+Extracting archive: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env/closeloop_envs.zip
+--
+Path = /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env/closeloop_envs.zip
+Type = zip
+Physical Size = 2539575135
+Embedded Stub Size = 4
+64-bit = +
+Total Physical Size = 18645702495
+Multivolume = +
+Volume Index = 4
+Volumes = 5
+
+Everything is Ok
+
+Folders: 22
+Files: 42
+Size:       2168410072
+Compressed: 18645702495

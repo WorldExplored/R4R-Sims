@@ -1,0 +1,1 @@
+seed Python random 100 before runpy of pinned generate_merged_json.py --root_dir assets/dataset --map_list ModernCityMap

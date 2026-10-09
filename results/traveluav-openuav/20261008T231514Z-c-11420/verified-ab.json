@@ -1,0 +1,120 @@
+{
+  "assets": [
+    {
+      "repo": "wangxiangyu0814/TravelUAV_env",
+      "revision": "44de5739a95a2f6a88767446421cddada9606642",
+      "repo_type": "dataset",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env/closeloop_envs.z01",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_env/resolve/44de5739a95a2f6a88767446421cddada9606642/closeloop_envs.z01",
+          "bytes": 4026531840,
+          "sha256": "acc4e6e2f68d2c2606084cb068f7879670b1e2c6c2900a0b621fbdb4020054c2",
+          "expected_sha256": "acc4e6e2f68d2c2606084cb068f7879670b1e2c6c2900a0b621fbdb4020054c2",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env/closeloop_envs.z02",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_env/resolve/44de5739a95a2f6a88767446421cddada9606642/closeloop_envs.z02",
+          "bytes": 4026531840,
+          "sha256": "ba5fc7c11996aa7932070b7b0e3c19d331c99d9757534a6d1b41f446b2ca762c",
+          "expected_sha256": "ba5fc7c11996aa7932070b7b0e3c19d331c99d9757534a6d1b41f446b2ca762c",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env/closeloop_envs.z03",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_env/resolve/44de5739a95a2f6a88767446421cddada9606642/closeloop_envs.z03",
+          "bytes": 4026531840,
+          "sha256": "1825f0a3124d80130de1bd3cd8761abea2ab28c48e497e8f1ad098a745feebea",
+          "expected_sha256": "1825f0a3124d80130de1bd3cd8761abea2ab28c48e497e8f1ad098a745feebea",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env/closeloop_envs.z04",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_env/resolve/44de5739a95a2f6a88767446421cddada9606642/closeloop_envs.z04",
+          "bytes": 4026531840,
+          "sha256": "abb292ae7b9f614244216bb37ecc44c2be6b24055acae6829a9a3092da8a8b6d",
+          "expected_sha256": "abb292ae7b9f614244216bb37ecc44c2be6b24055acae6829a9a3092da8a8b6d",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/env/closeloop_envs.zip",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_env/resolve/44de5739a95a2f6a88767446421cddada9606642/closeloop_envs.zip",
+          "bytes": 2539575135,
+          "sha256": "9c8d745acbcc3519146f8c15d52980a77d6c9c2f6bc2d8a04073c801cfca0827",
+          "expected_sha256": "9c8d745acbcc3519146f8c15d52980a77d6c9c2f6bc2d8a04073c801cfca0827",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "repo": "wangxiangyu0814/TravelUAV",
+      "revision": "faa8f2514156455ea7423464cc1295e6f92575cb",
+      "repo_type": "dataset",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/data",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/data/ModernCityMap.z01",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV/resolve/faa8f2514156455ea7423464cc1295e6f92575cb/ModernCityMap.z01",
+          "bytes": 4037017600,
+          "sha256": "0fe135b061079a7e01e8125e08c93fcffbdff25a991d7d7bd0ffc80d78612e2c",
+          "expected_sha256": "0fe135b061079a7e01e8125e08c93fcffbdff25a991d7d7bd0ffc80d78612e2c",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/data/ModernCityMap.z02",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV/resolve/faa8f2514156455ea7423464cc1295e6f92575cb/ModernCityMap.z02",
+          "bytes": 4037017600,
+          "sha256": "6ce7d801d196cb679d415ac92ae45c2e2de64372e4ddb14717ff1d713710cd33",
+          "expected_sha256": "6ce7d801d196cb679d415ac92ae45c2e2de64372e4ddb14717ff1d713710cd33",
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/data/ModernCityMap.zip",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV/resolve/faa8f2514156455ea7423464cc1295e6f92575cb/ModernCityMap.zip",
+          "bytes": 1773021965,
+          "sha256": "4ce2e547449f60c681541afba3087e8ea859bd44c4b443a8e971fa5b705473f7",
+          "expected_sha256": "4ce2e547449f60c681541afba3087e8ea859bd44c4b443a8e971fa5b705473f7",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "repo": "wangxiangyu0814/TravelUAV_data_json",
+      "revision": "5a1ed4c99d3e7bb2b35fa34135910cb7687fc831",
+      "repo_type": "dataset",
+      "root": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/metadata-release",
+      "status": "verified",
+      "files": [
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/metadata-release/data/meta/map_spawnarea_info.json",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_data_json/resolve/5a1ed4c99d3e7bb2b35fa34135910cb7687fc831/data/meta/map_spawnarea_info.json",
+          "bytes": 901418,
+          "sha256": "120438c62c6fa286c8cf44213dd03f5b7cd863e33889ae21c913ab5f68b530e6",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/metadata-release/data/meta/object_description.json",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_data_json/resolve/5a1ed4c99d3e7bb2b35fa34135910cb7687fc831/data/meta/object_description.json",
+          "bytes": 8700,
+          "sha256": "a7297b5d06fea6e7369de8378a82f1af3f2786460a73dde1b8a9a87b35b61a8a",
+          "expected_sha256": null,
+          "verified": true
+        },
+        {
+          "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/metadata-release/data/uav_dataset/seen_valset.json",
+          "url": "https://huggingface.co/datasets/wangxiangyu0814/TravelUAV_data_json/resolve/5a1ed4c99d3e7bb2b35fa34135910cb7687fc831/data/uav_dataset/seen_valset.json",
+          "bytes": 9149920,
+          "sha256": "af5b7b660ed3b1dea95b53aa72a98f74ae7a37cd381aa0e818ee2a343cf54552",
+          "expected_sha256": null,
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "updated_utc": "2026-10-08T22:38:54Z"
+}

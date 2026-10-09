@@ -1,0 +1,4238 @@
+{
+  "validation_errors": [],
+  "decoded_files": 375,
+  "depth_semantics": "DepthPerspective ray distance metres; raw floats retained; previews clamp 0..100 m only",
+  "files": [
+    {
+      "path": "five_view_rgb_depth.png",
+      "kind": "png",
+      "shape": [
+        552,
+        1280,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "in_progress/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "observations/1791503882242316783/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503882242316783/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503882242316783/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503882242316783/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503882242316783/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503882876736735/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503882876736735/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503885274282885/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503885274282885/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503885274282885/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503885274282885/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503885274282885/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503885793602333/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503885793602333/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503889192313895/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503889192313895/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503889192313895/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503889192313895/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503889192313895/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503889710798344/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503889710798344/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503892030063363/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503892030063363/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503892030063363/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503892030063363/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503892030063363/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503892538081886/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503892538081886/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503895052231474/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503895052231474/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503895052231474/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503895052231474/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503895052231474/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503895513980815/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503895513980815/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503897997742676/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503897997742676/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503897997742676/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503897997742676/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503897997742676/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503898532048431/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503898532048431/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503901170420215/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503901170420215/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503901170420215/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503901170420215/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503901170420215/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503901769754219/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503901769754219/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503904629935794/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503904629935794/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503904629935794/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503904629935794/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503904629935794/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503905159770375/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503905159770375/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503907891909084/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503907891909084/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503907891909084/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503907891909084/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503907891909084/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503908409272711/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503908409272711/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503911220402302/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503911220402302/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503911220402302/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503911220402302/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503911220402302/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503911732823570/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503911732823570/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503914934579824/DownCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503914934579824/FrontCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503914934579824/LeftCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503914934579824/RearCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503914934579824/RightCamera.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503915493494312/DownCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "observations/1791503915493494312/FrontCameraRecord.png",
+      "kind": "png",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000005.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000010.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000015.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000020.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000025.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000030.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000035.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000040.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000045.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "policy/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000050.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        1
+      ]
+    },
+    {
+      "path": "observations/1791503882242316783/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 0.98046875,
+      "max_finite": 1.6943359375,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503882242316783/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.3896484375,
+      "max_finite": 16304.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503882242316783/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.3896484375,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503882242316783/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.2412109375,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503882242316783/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.3896484375,
+      "max_finite": 16376.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503882876736735/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 0.98046875,
+      "max_finite": 1.697265625,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503882876736735/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.3876953125,
+      "max_finite": 16304.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503885274282885/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.55078125,
+      "max_finite": 10.203125,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503885274282885/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 2.591796875,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503885274282885/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.8984375,
+      "max_finite": 16336.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503885274282885/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.66796875,
+      "max_finite": 41.1875,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503885274282885/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 6.703125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503885793602333/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.54296875,
+      "max_finite": 10.21875,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503885793602333/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 2.58984375,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503889192313895/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 3.060546875,
+      "max_finite": 18.703125,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503889192313895/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 4.5625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503889192313895/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 12.9140625,
+      "max_finite": 16360.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503889192313895/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 8.09375,
+      "max_finite": 40.75,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503889192313895/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 12.0859375,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503889710798344/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 3.060546875,
+      "max_finite": 18.734375,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503889710798344/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 4.5546875,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503892030063363/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 7.7890625,
+      "max_finite": 27.25,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503892030063363/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 14.203125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503892030063363/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 14.3203125,
+      "max_finite": 16360.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503892030063363/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 8.9765625,
+      "max_finite": 16376.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503892030063363/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 13.1484375,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503892538081886/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 7.78515625,
+      "max_finite": 16384.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503892538081886/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 14.09375,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503895052231474/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 12.71875,
+      "max_finite": 36.0625,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503895052231474/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 19.59375,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503895052231474/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 17.90625,
+      "max_finite": 16368.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503895052231474/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 8.9296875,
+      "max_finite": 16376.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503895052231474/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 12.4453125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503895513980815/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 12.71875,
+      "max_finite": 36.15625,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503895513980815/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 17.5625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503897997742676/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 15.7109375,
+      "max_finite": 44.46875,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503897997742676/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 28.515625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503897997742676/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 17.609375,
+      "max_finite": 16368.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503897997742676/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 11.0859375,
+      "max_finite": 16376.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503897997742676/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 14.5390625,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503898532048431/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 15.6953125,
+      "max_finite": 44.5625,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503898532048431/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 28.515625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503901170420215/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 15.5390625,
+      "max_finite": 53.09375,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503901170420215/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 32.78125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503901170420215/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 18.734375,
+      "max_finite": 16376.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503901170420215/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 15.2734375,
+      "max_finite": 16384.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503901170420215/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 18.09375,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503901769754219/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 15.515625,
+      "max_finite": 53.1875,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503901769754219/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 32.71875,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503904629935794/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 19.59375,
+      "max_finite": 58.03125,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503904629935794/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 41.4375,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503904629935794/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 23.9375,
+      "max_finite": 16368.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503904629935794/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 18.390625,
+      "max_finite": 16384.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503904629935794/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 22.890625,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503905159770375/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 19.5625,
+      "max_finite": 58.1875,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503905159770375/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 40.09375,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503907891909084/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 26.859375,
+      "max_finite": 60.75,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503907891909084/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 40.875,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503907891909084/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 27.5625,
+      "max_finite": 16368.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503907891909084/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 22.546875,
+      "max_finite": 16384.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503907891909084/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 27.78125,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503908409272711/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 26.8125,
+      "max_finite": 60.875,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503908409272711/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 38.15625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503911220402302/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 28.359375,
+      "max_finite": 61.53125,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503911220402302/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 40.1875,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503911220402302/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 28.21875,
+      "max_finite": 16368.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503911220402302/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 26.859375,
+      "max_finite": 16384.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503911220402302/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 31.53125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503911732823570/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 27.25,
+      "max_finite": 61.65625,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503911732823570/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 40.15625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503914934579824/DownCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 27.5625,
+      "max_finite": 61.28125,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503914934579824/FrontCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 41.90625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503914934579824/LeftCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 29.109375,
+      "max_finite": 16360.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503914934579824/RearCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 31.15625,
+      "max_finite": 16400.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503914934579824/RightCamera_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 37.4375,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "observations/1791503915493494312/DownCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 27.453125,
+      "max_finite": 61.375,
+      "valid_positive_lt_1e6_count": 1048576
+    },
+    {
+      "path": "observations/1791503915493494312/FrontCameraRecord_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32",
+      "finite_count": 1048576,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 41.8125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 1048576
+    }
+  ],
+  "camera_dimensions": [
+    [
+      256,
+      256
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "timestamp_spread_ns_by_sample": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "20": 0,
+    "21": 0
+  },
+  "rgb_depth_rpc_wall_s": {
+    "first_batch": 0.7782684130006601,
+    "steady_count": 21,
+    "steady_mean": 0.2663826984285368,
+    "steady_min": 0.16464339999947697,
+    "steady_max": 0.43929772100000264,
+    "meaning": "RPC plus renderer/transport; excludes client file writes; A/B five views, C pooled mixture superseded by rgb_depth_rpc_by_view_count; not pure GPU render time"
+  },
+  "rgb_depth_rpc_by_view_count": {
+    "2": {
+      "batch_count": 11,
+      "first_batch_s": 0.43929772100000264,
+      "steady_count": 10,
+      "steady_mean_s": 0.33331812269998407,
+      "steady_min_s": 0.30019344499942235,
+      "steady_max_s": 0.35643970599994645,
+      "resolution": [
+        [
+          1024,
+          1024
+        ]
+      ]
+    },
+    "5": {
+      "batch_count": 11,
+      "first_batch_s": 0.7782684130006601,
+      "steady_count": 10,
+      "steady_mean_s": 0.18215577189994292,
+      "steady_min_s": 0.16464339999947697,
+      "steady_max_s": 0.20273212200027046,
+      "resolution": [
+        [
+          256,
+          256
+        ]
+      ]
+    }
+  },
+  "state_sample_count": 30,
+  "endpoint_displacement_m": 39.82510380061729,
+  "path_length_interpretation": "sampled lower bound; contacts are sampled evidence",
+  "achieved_path_length_m": 47.901629534141236,
+  "state_wall_span_s": 30.070953145000203,
+  "simulation_span_s": 49.00904560089111,
+  "requested_sleep_cadence_s": 0.2,
+  "achieved_wall_interval_mean_s": 1.0369294187931104,
+  "simulator_contact_count": 0,
+  "achieved_wall_intervals_s": {
+    "count": 29,
+    "min": 0.2005399280005804,
+    "max": 3.522040185000151,
+    "median": 0.2046016909998798
+  },
+  "final_endpoint_error_m": 86.24516285397712,
+  "point_to_requested_polyline_rmse_m": 1.206388440741097,
+  "point_to_requested_polyline_max_m": 2.342339221136531,
+  "error_weighting": "one equal weight per achieved state sample; purely geometric, no timed-reference alignment",
+  "tracking_error_caveat": "reported polyline error is distance to dataset reference, not controller tracking error; learned requested paths are separate traces; resets break continuous physical path",
+  "gpu_wide_memory_mib_samples": [
+    1.0,
+    1.0,
+    1.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    19.0,
+    974.0,
+    974.0,
+    974.0,
+    974.0,
+    974.0,
+    974.0,
+    974.0,
+    974.0,
+    1943.0,
+    1943.0,
+    1943.0,
+    3565.0,
+    6653.0,
+    10213.0,
+    11457.0,
+    11457.0,
+    11457.0,
+    14795.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    15481.0,
+    16899.0,
+    16985.0,
+    16985.0,
+    17293.0,
+    17545.0,
+    17797.0,
+    17805.0,
+    17807.0,
+    17817.0,
+    17819.0,
+    17825.0,
+    17829.0,
+    17835.0,
+    17839.0,
+    17843.0,
+    17851.0,
+    17853.0,
+    17861.0,
+    17863.0,
+    17869.0,
+    17873.0,
+    17879.0,
+    17883.0,
+    17887.0,
+    17895.0,
+    17897.0,
+    17905.0,
+    17907.0,
+    17915.0,
+    17917.0,
+    17925.0,
+    17927.0,
+    17931.0,
+    17939.0,
+    17941.0,
+    17949.0,
+    17951.0,
+    17959.0,
+    17961.0,
+    17971.0,
+    17973.0,
+    17979.0,
+    17983.0,
+    17989.0,
+    17993.0,
+    17995.0,
+    18003.0,
+    18005.0,
+    18015.0,
+    18017.0,
+    18023.0,
+    18027.0,
+    18033.0,
+    18037.0,
+    18039.0,
+    18047.0,
+    18049.0,
+    18059.0,
+    18061.0,
+    18067.0,
+    18071.0,
+    18075.0,
+    18081.0,
+    18083.0,
+    18091.0,
+    18093.0,
+    18103.0,
+    18105.0,
+    18111.0,
+    18115.0,
+    18121.0,
+    18125.0,
+    18129.0,
+    18137.0,
+    18139.0,
+    18147.0,
+    18149.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18325.0,
+    18607.0,
+    19941.0,
+    19941.0,
+    20226.0,
+    20440.0,
+    20543.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20527.0,
+    20606.0,
+    20992.0,
+    20688.0,
+    20708.0,
+    20734.0,
+    21250.0,
+    21368.0,
+    20724.0,
+    20728.0,
+    21384.0,
+    20842.0,
+    20738.0,
+    20794.0,
+    20770.0,
+    20738.0,
+    20734.0,
+    20872.0,
+    20740.0,
+    20736.0,
+    21010.0,
+    20740.0,
+    21396.0,
+    20966.0,
+    20740.0,
+    21396.0,
+    20740.0,
+    20732.0,
+    20732.0,
+    20732.0,
+    20732.0,
+    20732.0,
+    21388.0,
+    20970.0,
+    20732.0,
+    20732.0,
+    21388.0,
+    20419.0,
+    20419.0,
+    1087.0
+  ],
+  "sampled_gpu_wide_peak_mib": 21396.0
+}

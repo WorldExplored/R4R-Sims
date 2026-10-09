@@ -1,0 +1,20 @@
+UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+final text_encoder_type: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased
+Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/vlnce_src/eval.py", line 19, in <module>
+    from src.model_wrapper.travel_llm import TravelModelWrapper
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/travel_llm.py", line 6, in <module>
+    from src.vlnce_src.dino_monitor_online import DinoMonitor
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/vlnce_src/dino_monitor_online.py", line 103, in <module>
+    dino_monitor = DinoMonitor.get_instance()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/vlnce_src/dino_monitor_online.py", line 23, in get_instance
+    cls._instance = DinoMonitor()
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/vlnce_src/dino_monitor_online.py", line 29, in __init__
+    self.init_dino_model(device)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/vlnce_src/dino_monitor_online.py", line 46, in init_dino_model
+    model = load_model(model_args.groundingdino_config, model_args.groundingdino_model_path)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py", line 37, in load_model
+    r4r_observe.load_result("detector", model, weights, load_result)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/launch-20261008T231144Z-c-11103/code/r4r_observe.py", line 82, in load_result
+    raise RuntimeError("Checkpoint eligibility gate failed for "+label)
+RuntimeError: Checkpoint eligibility gate failed for detector

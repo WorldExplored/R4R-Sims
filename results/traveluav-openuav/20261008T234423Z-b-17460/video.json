@@ -1,0 +1,7 @@
+{
+  "file": "front_playback_1fps.mp4",
+  "playback_fps": 1,
+  "frames": 4,
+  "meaning": "playback only; not simulator throughput",
+  "command": "ffmpeg -framerate 1 -i frames/FrontCamera/%04d.png -c:v libx264 -pix_fmt yuv420p front_playback_1fps.mp4"
+}

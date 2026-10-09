@@ -1,0 +1,52 @@
+{
+  "run_id": "20261008T235452Z-c-21144",
+  "level": "C",
+  "status": "execution_complete_budget_truncated",
+  "started_utc": "2026-10-08T23:54:52.685196+00:00",
+  "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+  "policy_weights": "assets/models/llama-uav-7b; assets/models/traj; assets/models/groundingdino_swint_ogc.pth",
+  "scene": "ModernCityMap",
+  "split": "seen_valset, one episode",
+  "seed": 100,
+  "assistant": "L1 always_help True, use_gt True",
+  "max_waypoints": 10,
+  "server_timeout_s": 900,
+  "evaluation_timeout_s": 600,
+  "sampling": "one trace per model action; upstream observation archive per step; missing samples explicitly absent",
+  "gpu_timing": "torch.cuda.synchronize after model.run; first step is warmup and excluded from steady latency",
+  "camera_extrinsics": "eval_observe.patch records image-response poses/timestamps in camera_observations.jsonl; raw captures under artifact run/observations",
+  "exit_status": 0,
+  "ended_utc": "2026-10-08T23:58:41.129893+00:00",
+  "learned_decisions": 10,
+  "metadata_provenance": "regenerated seed100; two-generation verification",
+  "official_metrics": {
+    "denominator": 1,
+    "eligibility": "budget-truncated smoke; not full official benchmark",
+    "result_exists": true
+  },
+  "termination_reason": "decision_budget",
+  "success": false,
+  "policy_only_vram": "not isolated; GPU-wide/process/allocator measurements retained",
+  "gpu_monitor_scope": "one-second GPU-wide samples; late process samples separate",
+  "timing_scope": "instrumented CUDA-synchronized coarse+refiner model.run; renderer RPC-plus-transport separately",
+  "model_latency_summary": {
+    "cold_first_s": 1.1363722490004875,
+    "steady_n": 9,
+    "steady_mean_s": 0.2789792244446087,
+    "steady_min_s": 0.26371516099970904,
+    "steady_max_s": 0.3052945620001992,
+    "all_samples_s": [
+      1.1363722490004875,
+      0.27877249399989523,
+      0.2771899140007008,
+      0.26371516099970904,
+      0.2759857090004516,
+      0.3052945620001992,
+      0.27068683200013766,
+      0.2915217509998911,
+      0.2790430280001601,
+      0.26860356900033366
+    ],
+    "measurement": "same-process CUDA synchronized around coarse+trajectory model.run; preprocessing/DINO/controller/log writes excluded; instrumented"
+  }
+}

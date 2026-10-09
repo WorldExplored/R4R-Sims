@@ -1,0 +1,249 @@
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Sep_21_10:33:58_PDT_2022
+Cuda compilation tools, release 11.8, V11.8.89
+Build cuda_11.8.r11.8/compiler.31833905_0
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Obtaining file:///workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Installing collected packages: groundingdino
+  Running setup.py develop for groundingdino
+    error: subprocess-exited-with-error
+    
+    × python setup.py develop did not run successfully.
+    │ exit code: 1
+    ╰─> [109 lines of output]
+        Building wheel groundingdino-0.1.0
+        Compiling with CUDA
+        running develop
+        /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+        !!
+        
+                ********************************************************************************
+                Please avoid running ``setup.py`` and ``easy_install``.
+                Instead, use pypa/build, pypa/installer or other
+                standards-based tools.
+        
+                See https://github.com/pypa/setuptools/issues/917 for details.
+                ********************************************************************************
+        
+        !!
+          easy_install.initialize_options(self)
+        /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+        !!
+        
+                ********************************************************************************
+                Please avoid running ``setup.py`` directly.
+                Instead, use pypa/build, pypa/installer or other
+                standards-based tools.
+        
+                See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+                ********************************************************************************
+        
+        !!
+          self.initialize_options()
+        running egg_info
+        writing groundingdino.egg-info/PKG-INFO
+        writing dependency_links to groundingdino.egg-info/dependency_links.txt
+        writing requirements to groundingdino.egg-info/requires.txt
+        writing top-level names to groundingdino.egg-info/top_level.txt
+        reading manifest file 'groundingdino.egg-info/SOURCES.txt'
+        adding license file 'LICENSE'
+        writing manifest file 'groundingdino.egg-info/SOURCES.txt'
+        running build_ext
+        /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py:398: UserWarning: There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 11.8
+          warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+        building 'groundingdino._C' extension
+        Emitting ninja build file /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/build.ninja...
+        Compiling objects...
+        Using envvar MAX_JOBS (2) as the number of workers...
+        [1/4] /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DWITH_CUDA -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/TH -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/THC -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/include -I/usr/include/python3.10 -c -c /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu -o /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+        FAILED: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o
+        /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DWITH_CUDA -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/TH -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/THC -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/include -I/usr/include/python3.10 -c -c /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu -o /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+        gcc: fatal error: cannot execute ‘cc1plus’: execvp: No such file or directory
+        compilation terminated.
+        nvcc fatal   : Failed to preprocess host compiler properties.
+        [2/4] c++ -MMD -MF /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -DWITH_CUDA -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/TH -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/THC -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/include -I/usr/include/python3.10 -c -c /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp -o /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+        ninja: build stopped: subcommand failed.
+        Traceback (most recent call last):
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1893, in _run_ninja_build
+            subprocess.run(
+          File "/usr/lib/python3.10/subprocess.py", line 526, in run
+            raise CalledProcessError(retcode, process.args,
+        subprocess.CalledProcessError: Command '['ninja', '-v', '-j', '2']' returned non-zero exit status 1.
+        
+        The above exception was the direct cause of the following exception:
+        
+        Traceback (most recent call last):
+          File "<string>", line 2, in <module>
+          File "<pip-setuptools-caller>", line 34, in <module>
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/setup.py", line 204, in <module>
+            setup(
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/__init__.py", line 103, in setup
+            return distutils.core.setup(**attrs)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 185, in setup
+            return run_commands(dist)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+            dist.run_commands()
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+            self.run_command(cmd)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/dist.py", line 989, in run_command
+            super().run_command(command)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+            cmd_obj.run()
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/develop.py", line 34, in run
+            self.install_for_development()
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/develop.py", line 109, in install_for_development
+            self.run_command('build_ext')
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+            self.distribution.run_command(command)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/dist.py", line 989, in run_command
+            super().run_command(command)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+            cmd_obj.run()
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 88, in run
+            _build_ext.run(self)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 345, in run
+            self.build_extensions()
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 843, in build_extensions
+            build_ext.build_extensions(self)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 467, in build_extensions
+            self._build_extensions_serial()
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 493, in _build_extensions_serial
+            self.build_extension(ext)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 249, in build_extension
+            _build_ext.build_extension(self, ext)
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 548, in build_extension
+            objects = self.compiler.compile(
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 658, in unix_wrap_ninja_compile
+            _write_ninja_file_and_compile_objects(
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1574, in _write_ninja_file_and_compile_objects
+            _run_ninja_build(
+          File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1909, in _run_ninja_build
+            raise RuntimeError(message) from e
+        RuntimeError: Error compiling objects for extension
+        [end of output]
+    
+    note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× python setup.py develop did not run successfully.
+│ exit code: 1
+╰─> [109 lines of output]
+    Building wheel groundingdino-0.1.0
+    Compiling with CUDA
+    running develop
+    /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+    !!
+    
+            ********************************************************************************
+            Please avoid running ``setup.py`` and ``easy_install``.
+            Instead, use pypa/build, pypa/installer or other
+            standards-based tools.
+    
+            See https://github.com/pypa/setuptools/issues/917 for details.
+            ********************************************************************************
+    
+    !!
+      easy_install.initialize_options(self)
+    /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+    !!
+    
+            ********************************************************************************
+            Please avoid running ``setup.py`` directly.
+            Instead, use pypa/build, pypa/installer or other
+            standards-based tools.
+    
+            See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+            ********************************************************************************
+    
+    !!
+      self.initialize_options()
+    running egg_info
+    writing groundingdino.egg-info/PKG-INFO
+    writing dependency_links to groundingdino.egg-info/dependency_links.txt
+    writing requirements to groundingdino.egg-info/requires.txt
+    writing top-level names to groundingdino.egg-info/top_level.txt
+    reading manifest file 'groundingdino.egg-info/SOURCES.txt'
+    adding license file 'LICENSE'
+    writing manifest file 'groundingdino.egg-info/SOURCES.txt'
+    running build_ext
+    /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py:398: UserWarning: There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 11.8
+      warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+    building 'groundingdino._C' extension
+    Emitting ninja build file /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/build.ninja...
+    Compiling objects...
+    Using envvar MAX_JOBS (2) as the number of workers...
+    [1/4] /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DWITH_CUDA -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/TH -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/THC -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/include -I/usr/include/python3.10 -c -c /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu -o /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+    FAILED: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o
+    /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DWITH_CUDA -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/TH -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/THC -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/include -I/usr/include/python3.10 -c -c /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu -o /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+    gcc: fatal error: cannot execute ‘cc1plus’: execvp: No such file or directory
+    compilation terminated.
+    nvcc fatal   : Failed to preprocess host compiler properties.
+    [2/4] c++ -MMD -MF /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -DWITH_CUDA -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/TH -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/include/THC -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/include -I/usr/include/python3.10 -c -c /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp -o /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/build/temp.linux-x86_64-cpython-310/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+    ninja: build stopped: subcommand failed.
+    Traceback (most recent call last):
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1893, in _run_ninja_build
+        subprocess.run(
+      File "/usr/lib/python3.10/subprocess.py", line 526, in run
+        raise CalledProcessError(retcode, process.args,
+    subprocess.CalledProcessError: Command '['ninja', '-v', '-j', '2']' returned non-zero exit status 1.
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "<string>", line 2, in <module>
+      File "<pip-setuptools-caller>", line 34, in <module>
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO/setup.py", line 204, in <module>
+        setup(
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/__init__.py", line 103, in setup
+        return distutils.core.setup(**attrs)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 185, in setup
+        return run_commands(dist)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+        dist.run_commands()
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+        self.run_command(cmd)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/dist.py", line 989, in run_command
+        super().run_command(command)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+        cmd_obj.run()
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/develop.py", line 34, in run
+        self.install_for_development()
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/develop.py", line 109, in install_for_development
+        self.run_command('build_ext')
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+        self.distribution.run_command(command)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/dist.py", line 989, in run_command
+        super().run_command(command)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+        cmd_obj.run()
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 88, in run
+        _build_ext.run(self)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 345, in run
+        self.build_extensions()
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 843, in build_extensions
+        build_ext.build_extensions(self)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 467, in build_extensions
+        self._build_extensions_serial()
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 493, in _build_extensions_serial
+        self.build_extension(ext)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 249, in build_extension
+        _build_ext.build_extension(self, ext)
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 548, in build_extension
+        objects = self.compiler.compile(
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 658, in unix_wrap_ninja_compile
+        _write_ninja_file_and_compile_objects(
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1574, in _write_ninja_file_and_compile_objects
+        _run_ninja_build(
+      File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1909, in _run_ninja_build
+        raise RuntimeError(message) from e
+    RuntimeError: Error compiling objects for extension
+    [end of output]
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip

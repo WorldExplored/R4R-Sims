@@ -1,0 +1,26 @@
+Selected episode: 19031427 bytes; 492 files; free 174378381312
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=C.UTF-8,Utf16=on,HugeFiles=on,64 bits,6 CPUs Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz (50657),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 1773021965 bytes (1691 MiB)
+
+Extracting archive: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/data/ModernCityMap.zip
+--
+Path = /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/downloads/data/ModernCityMap.zip
+Type = zip
+Physical Size = 1773021965
+Embedded Stub Size = 4
+64-bit = +
+Total Physical Size = 9847057165
+Multivolume = +
+Volume Index = 2
+Volumes = 3
+
+Everything is Ok
+
+Folders: 12
+Files: 492
+Size:       19031427
+Compressed: 9847057165

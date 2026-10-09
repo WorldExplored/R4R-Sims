@@ -1,0 +1,740 @@
+{
+  "run_id": "20261008T230118Z-a-10334",
+  "settled_utc": "2026-10-09T00:04:52Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "actions.jsonl",
+      "bytes": 1337,
+      "sha256": "8bea39b3afbb33922d86087fc370d62a6a6763b1cb3dd3aef100e6d96e71e27a"
+    },
+    {
+      "location": "record",
+      "relative_path": "actual_camera.jsonl",
+      "bytes": 32140,
+      "sha256": "d8226e4fc42a9cb6c17a6c33e9b3c70103d03b9934d06ca98637408bc4d227b2"
+    },
+    {
+      "location": "record",
+      "relative_path": "actual_vehicle.jsonl",
+      "bytes": 5761,
+      "sha256": "b4702a9136fb09a10d0e4ed202b81dc4ec6e3f77288035ac14c8ef7198d5dc87"
+    },
+    {
+      "location": "record",
+      "relative_path": "archive.json",
+      "bytes": 250,
+      "sha256": "1d08f60c57dad9da94fc9767e06582973725f7d516c8537664629e6f84a44756"
+    },
+    {
+      "location": "record",
+      "relative_path": "artifact_manifest.json",
+      "bytes": 23424,
+      "sha256": "1db737e100bfec8a80974f959a62ddf85d85692907b05eec2a0c76e55f9b1bc7"
+    },
+    {
+      "location": "record",
+      "relative_path": "asset-files.tsv",
+      "bytes": 102425,
+      "sha256": "09c0f23d818d29eadd6009ea2f9181e1d4a9a46e17fcce67b0ea8773e3b583bb"
+    },
+    {
+      "location": "record",
+      "relative_path": "asset_inventory.md",
+      "bytes": 5112,
+      "sha256": "7a14e16a217a6dbd962126b40da2ad4da1a5332cbf777fc296b80a3e12c27a12"
+    },
+    {
+      "location": "record",
+      "relative_path": "collection-status.log",
+      "bytes": 25,
+      "sha256": "037e89c4241083aa2a528f7eebed88a244c2539e2bcaa7c3c0faacf888fab98c"
+    },
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 639,
+      "sha256": "c69f04d37e24c6ab7de381bb9596f2e8a1e54dbb508c4909841fdd948cc67e53"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 177,
+      "sha256": "2d924202682df6e09b98b1f1839749082c02a663456f9ca12d3b9b676939e32b"
+    },
+    {
+      "location": "record",
+      "relative_path": "cpu.txt",
+      "bytes": 3002,
+      "sha256": "753cf4521853a037d4cdc79b05a7eb787ac59d8402cdb78d76d00cceed583814"
+    },
+    {
+      "location": "record",
+      "relative_path": "episode.json",
+      "bytes": 39529,
+      "sha256": "5e137ae9b7112e92e4f259ad16cbbacf5d81794b90dc6db67b6d0f5f77f86f60"
+    },
+    {
+      "location": "record",
+      "relative_path": "events.jsonl",
+      "bytes": 1714,
+      "sha256": "bcfeb3727b16f2204ae147c62f730dbe5eeb9c308adb91efcb8922e24cfbd2b4"
+    },
+    {
+      "location": "record",
+      "relative_path": "git-status.txt",
+      "bytes": 424,
+      "sha256": "36ae491c4226d4fa785ef650beee8b80927c67d3a0c10071e7f8b7e14de71f0d"
+    },
+    {
+      "location": "record",
+      "relative_path": "gpu-samples.log",
+      "bytes": 335,
+      "sha256": "e25230d64f6375adcaac6df5c526c7718c0c4a08bac971b684c8d66086488619"
+    },
+    {
+      "location": "record",
+      "relative_path": "gpu.txt",
+      "bytes": 13921,
+      "sha256": "63763943734ee6595941b87366cffd9027465d03c073ead9cb0677b17d260c2a"
+    },
+    {
+      "location": "record",
+      "relative_path": "input-sha256.txt",
+      "bytes": 448,
+      "sha256": "bc0571703fdda1d44bb29fe75b2a56c57fe1b51b353ce2dd889bd3848350160d"
+    },
+    {
+      "location": "record",
+      "relative_path": "mark.json",
+      "bytes": 433,
+      "sha256": "2741da2a857ccfac36ef10f809d7afdbbc13c08d76b00ad259c1304dd71ec7cb"
+    },
+    {
+      "location": "record",
+      "relative_path": "metrics.json",
+      "bytes": 17570,
+      "sha256": "29090e0efdfd75cc7cc0eff72ab829939a26103f9c829ef2d814147d9f270c43"
+    },
+    {
+      "location": "record",
+      "relative_path": "os.txt",
+      "bytes": 139,
+      "sha256": "8b8608da7eaa9f2d6ddef25a467194f2b650c69bd2bb1f5fe058e78c788daffe"
+    },
+    {
+      "location": "record",
+      "relative_path": "output-sha256.txt",
+      "bytes": 2492,
+      "sha256": "3459e519af4db005b9d65c33e31f4f103d659f60aac498e09a356c004e5c2e6c"
+    },
+    {
+      "location": "record",
+      "relative_path": "pip-freeze.txt",
+      "bytes": 504,
+      "sha256": "bc9cca4d518ca7fc5102af23abbc3ef0c0a490dca7bfaf49b7846857be3fa388"
+    },
+    {
+      "location": "record",
+      "relative_path": "ram.txt",
+      "bytes": 207,
+      "sha256": "600f24a6f1adb5206d3cdd1d18fc9b45505dc0accccfc2d52162d4761291c861"
+    },
+    {
+      "location": "record",
+      "relative_path": "reference_route.jsonl",
+      "bytes": 1169,
+      "sha256": "7da4d363a339a1911090213c81f90892e11dd600f9f7785f4971cb0f818e3071"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 985,
+      "sha256": "051cc980829ec5d8835d466a235700e29b827595cc7e054f55b3a712d5581e78"
+    },
+    {
+      "location": "record",
+      "relative_path": "scene.log",
+      "bytes": 123892,
+      "sha256": "4ecaf2348a2d0582336819281d79fef4042219310e7545610d408d4db6205c98"
+    },
+    {
+      "location": "record",
+      "relative_path": "selected_seen_one.json",
+      "bytes": 110,
+      "sha256": "7ee96d45f31185e66dbbdbe23ae530b687baf58192e176675b0905cfd4bcba81"
+    },
+    {
+      "location": "record",
+      "relative_path": "selected_seen_rows.json",
+      "bytes": 3558,
+      "sha256": "680f862ec8a37d6f26ae774aeac2e2b6cdb02325d7a1a3636cd0e58f35a08ec2"
+    },
+    {
+      "location": "record",
+      "relative_path": "settings.json",
+      "bytes": 2722,
+      "sha256": "e92aed77c9a34eb80d961c5c6abe4346f4879bbc8d7c2adf6b1e95522c2d5778"
+    },
+    {
+      "location": "record",
+      "relative_path": "shared-commit.txt",
+      "bytes": 41,
+      "sha256": "0bd9bcb6d4115836a0748236306c41e84905c3f60e3364461b10312816a6946d"
+    },
+    {
+      "location": "record",
+      "relative_path": "termination.json",
+      "bytes": 123,
+      "sha256": "da06382ca54ac279aaf03e1e1744528aa3b238262eaf8602e8e7d6a5d6f9f81e"
+    },
+    {
+      "location": "record",
+      "relative_path": "trajectory.png",
+      "bytes": 152496,
+      "sha256": "2d6758bdd045bf3a3445cfb7c4a15403f5bb26e7d6194c04d8cd5de80f7a0031"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream-staged.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream.patch",
+      "bytes": 18082,
+      "sha256": "38298d1fa66bfdd45a330b945fc8c1e13e51797089fb1303334c3b55340f00b3"
+    },
+    {
+      "location": "record",
+      "relative_path": "validation.json",
+      "bytes": 74,
+      "sha256": "c93c04ddde80b564f05df8904e7e86f2f5cc4204135078c9fad817ec0d794ce3"
+    },
+    {
+      "location": "record",
+      "relative_path": "verified-ab.json",
+      "bytes": 6776,
+      "sha256": "393fffea4544c882580f5156ce087373a1c7cf1665b6a9efcc4b7cc4d44abf84"
+    },
+    {
+      "location": "record",
+      "relative_path": "verified-c.json",
+      "bytes": 12785,
+      "sha256": "4f072d8c548ae7649112e1eb5bda333aa39312f8cff423b4576038b42bff4661"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/__pycache__/analyze.cpython-310.pyc",
+      "bytes": 10425,
+      "sha256": "dedc20bdd96f58c312da66b69f7f26ff17dc543efd555882a2b14d9136be9eeb"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/analyze.py",
+      "bytes": 8276,
+      "sha256": "7dfe060e4baab3201fe8a451718ec932bba4fbedee4d06eec4e46f9ae3967afb"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/assets.py",
+      "bytes": 5100,
+      "sha256": "1d1e0f8165563a92cde42c147dc6b03e9fc6e21f757615dcdaf2dafdd1df73c2"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/c-extension.sh",
+      "bytes": 1293,
+      "sha256": "66eef71f021a554068a6862626642198db54c4a21f56f1735ab430279b5211a7"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/collect.sh",
+      "bytes": 1109,
+      "sha256": "2fee1d26b6cd4445ebd971bb3297a20f4fa9a59552fdabb5803901afdd7cadab"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat/__pycache__/sitecustomize.cpython-310.pyc",
+      "bytes": 562,
+      "sha256": "d3d597abfd75f638b86a47bea0b8049cba5cb4db937a597a1bd36f0218f1fb52"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat/sitecustomize.py",
+      "bytes": 426,
+      "sha256": "15058f08f5e4cfdd65d65ea3643dc0002226cb4b72487eda917e2e8f93179f5c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat_msgpack.py",
+      "bytes": 1838,
+      "sha256": "aec15954979276ee920aec28b876c30468a6f9ba18b46cb1865df373e55304a3"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compile_cuda.py",
+      "bytes": 1749,
+      "sha256": "78866953fcd858536efd6e2cd2a3badbfd920292270ee8df923e787737f1bd1c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/eval_observe.patch",
+      "bytes": 18082,
+      "sha256": "38298d1fa66bfdd45a330b945fc8c1e13e51797089fb1303334c3b55340f00b3"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/expected-sha256.txt",
+      "bytes": 1539,
+      "sha256": "3518e2c880d2c66ddecdade589ac23c4c88100ee53448e77b8c07792681cc548"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/extract.sh",
+      "bytes": 2485,
+      "sha256": "7990c3bc6124170bbd6233b58108170b9815964fd573036620a6a06e08a1f16b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/host.sh",
+      "bytes": 6643,
+      "sha256": "aa2dd2ce99f38f3c4fe717e918a992734080e62bcdcb6f7904d23b3ba5f023c1"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/launch.sh",
+      "bytes": 444,
+      "sha256": "2eb16b4e4101fc46c9e56d95f56304512dff0693a07ea90764d48b952138be79"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/layout.sh",
+      "bytes": 529,
+      "sha256": "1c169f47db5cdcae7a8b9216799bcebf0b44ca650362b3383e2e799018d7a4a2"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/policy_smoke.sh",
+      "bytes": 7268,
+      "sha256": "f7d208ac4ff7fc9eba456ef155d7dba1781135e6e50bb06ba328d782ffe289e6"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/prepare_c.py",
+      "bytes": 1631,
+      "sha256": "a7b653849a8871ab79c11d42dbcb4ca8f2dedecc59b2b926a24a631704f5d822"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/prepare_episode.py",
+      "bytes": 1049,
+      "sha256": "c22a16eb859671f587b91db37005e16cadcfbeac034dbbf700db93aca4cb548b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/probe.py",
+      "bytes": 8397,
+      "sha256": "447b5220c142866824bd1e38157b848b47dc85aa2aefba0a53fc3c1053d1422c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/r4r_observe.py",
+      "bytes": 6397,
+      "sha256": "928220be7161ece6ba6ecfbe9c8b11a9c2272b4437c10b1ee857fe9e7db21916"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/requirements-c.txt",
+      "bytes": 645,
+      "sha256": "4b339878ed5b85187d53cbe53d556085154aa32302ec14a84c7d27585008570d"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/setup.sh",
+      "bytes": 3045,
+      "sha256": "feb4d9795d69882ad81d2aef97516191020f129b26b3b6e81b1894b86b0c29e8"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "five_view_rgb_depth.png",
+      "bytes": 370172,
+      "sha256": "8e8839167ace46a447b58edadc78e981c185d22b5c8dea6f9e41c4af275baa26"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0000.png",
+      "bytes": 13702,
+      "sha256": "05a4a4c6ece55fd20da94d5e3e7de97f0a60390b16fe1f86d83317d928d970c6"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0000_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "c6f5c48f4370233f3f1c239572000c19fb6a296b3f872223f10294c102f98694"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0001.png",
+      "bytes": 32802,
+      "sha256": "b3494b574b6703a11950405ae54f1f88218c1dc6114c895b8ccf6c32845b798c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0001_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "707ae24a989b5d85932a5db44d208400785490edf50522d3803a9632d133e38b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0002.png",
+      "bytes": 43985,
+      "sha256": "f2fa19ac7f525e07f78a953d50f2035067b8f971fee037fb5f1e9b5e9e53a540"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0002_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "6aed45c84a15ab91550e73e78b3e4e8395c6824cc54518cc382adcf9bea2a831"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0003.png",
+      "bytes": 50828,
+      "sha256": "04b8a8fa1f0921b4581348790db7062e00547d872e6d890ddaa8dfff56bb437d"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0003_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "4f388a5b00ed3284203934bd0f071c5d5280237c2d3eb23d2c8bbfb0769379fa"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0004.png",
+      "bytes": 60473,
+      "sha256": "9a6ad5d00643a5ddfe127a50fefa8b325dbc0292cd53dd0ae7f8351e1db25e57"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0004_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "21b11b84b88747bf0856088d87b50276d5e9e37ca10933b663c0efe5e9d1b1cc"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0005.png",
+      "bytes": 68082,
+      "sha256": "427c1b243fe77797c210166bd6bba84505b926a724f7fcc6e997116a6d291bb4"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/DownCamera/0005_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "8d06750bccf67747f1fc00e66bfc584f2fe53e7b1e516f0349badec86d8af69e"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0000.png",
+      "bytes": 51013,
+      "sha256": "2a966acd1b9ebddc0790f09d18112c999af4fd15e6e8166550e10d299c06d847"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0000_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "223ec132c6be870af53e355b674ddd98d7a2c0f3fab20d7cf4259097fc4b86bd"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0001.png",
+      "bytes": 74210,
+      "sha256": "367a7a6c8b28158a8e5117e4860ecb166256f3a6b4f1dd139c6d93784b9bf1c1"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0001_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "887aa736338b1ca9a3b64a30e912671035bdc4e891eb9287151be5ff3e36b06f"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0002.png",
+      "bytes": 106916,
+      "sha256": "603ddbc3bc576ce639afbc715ba072d56b2bb7095602eadc23c1a3df488bd194"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0002_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "902b683cef0686737d211de245a3a56ea3bdf8b06f15916116e092a9eed60b0d"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0003.png",
+      "bytes": 104735,
+      "sha256": "ba600a395b13cb960e8431c40d00a27cdb6cc42b70338ad0264297e2c94086c3"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0003_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "b899e71025eb7dc9d8f5d9aa9ddb34ce123b6b3561e862525bb1617ca9b3a07a"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0004.png",
+      "bytes": 104849,
+      "sha256": "3c772ab75493b7ac3ed9b9c9e507b56a312e030f8021a04a964c7c0c386a1d7e"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0004_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "76133232cc157ca87fdeb38ba0eba5cba05dc8a50cfe8425b55579673bdd9fa1"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0005.png",
+      "bytes": 105770,
+      "sha256": "72f24c807188c8aeee15be84dcabd85ba0cbafc0a68582a8ee95a06185664afa"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/FrontCamera/0005_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "4a70563f4af54a6a39a2bf5414d50998436df6a5b574117aebb25efb0b6b7587"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0000.png",
+      "bytes": 86785,
+      "sha256": "9d14140a26ed5bef9e935b4e0cad8c028ffd537864d6a76f875e988ae4fdec0a"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0000_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "1007e6dd1b7e1ec9081a92bf32b3f5d51861bbc20356ded7d768026b08088892"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0001.png",
+      "bytes": 61832,
+      "sha256": "b8338f5d3cdd7ca2259acd8ba7bb3980a7b38305d56ed9ba091c3f4c2e14e755"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0001_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "f38c77e701b1d4a2684e20d61a007bb8484ebdc45565115293d07ef6e1ccc473"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0002.png",
+      "bytes": 81363,
+      "sha256": "22bc6b012bf1d14d4930ea13550e182bfebbb9ab33e809d1037fe01ac5b9ea21"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0002_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "7ced7c1075ce1cd0faa1986f808db5622fc8b4861132b3e2a4c91a7d1da9f457"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0003.png",
+      "bytes": 74927,
+      "sha256": "1b66bdfd0582be3ffc8490887fc306847a3e5f450479454519b817b835ea0b95"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0003_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "42bde5f3c2212c173c87354a500498d85f37bf10ca3a674a5937d859849e77af"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0004.png",
+      "bytes": 75758,
+      "sha256": "cc7463f301905d08535d2f8739cf2a51e93b140bc2a25c1dd8d298ba36842841"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0004_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "336bc37ba85fdcfc6c5e39f339ec582ed8eddbf8a0856bc88294a880be0cc1db"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0005.png",
+      "bytes": 77784,
+      "sha256": "63374fc5c34ec9963aca1ac0a0874907035db31db814f7aa6d67a11ed107e56a"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/LeftCamera/0005_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "ff0f1be9bee137d9f861ed76eb2dca7dd6c5dd6509224e0886c77a702601f317"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0000.png",
+      "bytes": 88157,
+      "sha256": "013c19257622fe0ceac76dd798b185b6406d2da1cc443f328e7fa70c8298d7ff"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0000_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "f2c2b40f675497b5d5d98610e0995812ef8b5521b4ef74c5a86f5ce74b77ef31"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0001.png",
+      "bytes": 99084,
+      "sha256": "3e5234bfd9bda7e35655ec4d7d796a43deae81b8344d728e1a6b2cf940a32512"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0001_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "7f73e4f84ac2455fe28742557ba3d2abf4f8968c5cd6934bf9486befc8c9a24e"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0002.png",
+      "bytes": 67149,
+      "sha256": "8c547276f7239a152a3c16d990bfe9e669d115d27816633da377981fcaabc07b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0002_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "29e00c83ea1abb6e61ce4fa1b699ede19846963a424d39af0e86bc16e005651b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0003.png",
+      "bytes": 71030,
+      "sha256": "b9e23777bca17dd4d6ca53d3418c943199a2d618c5397e0ab12b41b729de4bd0"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0003_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "998feece40a8236bdac44c2dc5f41d5ee4daa36644301dda6aca65d25100308e"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0004.png",
+      "bytes": 72735,
+      "sha256": "46554c4d38bf0f9c00966c7bba5250470ab42a3a89b1d59b428dabc4afecdf57"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0004_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "61b86d82bbac3f4a31221e0bedf71f9f2eafda43eaacecf9889589d6b16f9152"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0005.png",
+      "bytes": 74728,
+      "sha256": "e45b2ee54f1fa041484c315dd7a50b4dd4a54ac74e2792b0963807865b78d9c2"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RearCamera/0005_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "f1a0d17fd1c5607807d7d8bc19c1b2515b8adda03e21c66337503ebcc87cdab7"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0000.png",
+      "bytes": 64854,
+      "sha256": "339900324f54963f6c82fc8cf60be0a541db68f1a7d3e01e9134e4bdab85e6e6"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0000_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "af30ef43060cfdf9b8bc6e151334e9dbfe529487cda94fc3c931fdf1f26b2d02"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0001.png",
+      "bytes": 106182,
+      "sha256": "a47531380ece7a32e96e3bb2b60f51b0e037db6a7821de9c1f100fa69fa5988d"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0001_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "f10d1ed604bdffd8096b8c4a4369b9d8dd8f5b36714531f78eb4d0d4b86c0bea"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0002.png",
+      "bytes": 105319,
+      "sha256": "fb9006db287950a455daa20e998f6791d7346b3f1c01a84665efa67c98999bf7"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0002_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "e029de3d32e46ab23427e1feac919ffde6aabb451b8387774bb9ec99fc031c5b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0003.png",
+      "bytes": 115924,
+      "sha256": "26cf192bdb4c6860a8b054bf577b7c57a7ad95fab0abe731ba57ab384a732642"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0003_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "f00f422072358d1c45412ceae851fa7a741251f0cd7ddf3e7faeaa0a06eb932f"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0004.png",
+      "bytes": 119207,
+      "sha256": "be69434764db769a5f08cde122c7124d29c47773dd4791e68a30159dc83fba33"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0004_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "12694e0282f7eb45e81eab14145c0d7c6c7118b13f8c5b04f9faec21fa01252f"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0005.png",
+      "bytes": 120642,
+      "sha256": "4fe5d729b8e325c9ef62d6b0a6d1e79cc11eb3f31b9e0296e7620cadb116c1e9"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "frames/RightCamera/0005_depth_m.npy",
+      "bytes": 262272,
+      "sha256": "40319d6502a14ceacfb515f0140ae6831b74a653941e2b675bb80e3b55191fd4"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "seen_valset.json",
+      "bytes": 9149920,
+      "sha256": "af5b7b660ed3b1dea95b53aa72a98f74ae7a37cd381aa0e818ee2a343cf54552"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T230118Z-a-10334",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T230118Z-a-10334",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions",
+  "archive": {
+    "name": "20261008T230118Z-a-10334.tar.gz",
+    "bytes": 5080879,
+    "sha256": "fc0f07135ce3642d05dffa2941f00f5df4e075fe1961af9a55b51568ad54622a"
+  }
+}

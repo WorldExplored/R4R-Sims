@@ -1,0 +1,6 @@
+{
+  "file": "front_playback_1fps.mp4",
+  "playback_fps": 1,
+  "frames": 11,
+  "meaning": "native front observation playback; not physics/render FPS or contiguous timed flight"
+}

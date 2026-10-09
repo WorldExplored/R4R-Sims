@@ -1,0 +1,44 @@
+{
+  "tensor_checks": [
+    {
+      "label": "detector",
+      "matched": 938,
+      "unused": 2,
+      "different": [],
+      "shape_mismatches": []
+    },
+    {
+      "label": "detector",
+      "matched": 938,
+      "unused": 2,
+      "different": [],
+      "shape_mismatches": []
+    },
+    {
+      "label": "non_lora",
+      "matched": 23,
+      "unused": 12,
+      "different": [],
+      "shape_mismatches": []
+    },
+    {
+      "label": "mm_projector",
+      "matched": 353,
+      "unused": 12,
+      "different": [],
+      "shape_mismatches": []
+    },
+    {
+      "label": "trajectory",
+      "matched": 520,
+      "unused": 0,
+      "different": [],
+      "shape_mismatches": []
+    }
+  ],
+  "non_lora_classification": "23 exact delivered; 12 auxiliary predictor keys absent from pinned inference class/forward, no renaming or architecture replacement; partial missing keys supplied by Vicuna/EVA/QFormer/adapter, full lists retained",
+  "mm_projector_classification": "353 exact delivered, same 12 unused auxiliary keys; strict per-submodule QFormer/projector loads also in pinned loader",
+  "LoRA": "exact tensor comparison after dtype conversion passed",
+  "gate": "required heads and all matched tensors checked; detector/trajectory missing learned parameters forbidden; unused auxiliary bytes retained in verified checkpoint",
+  "diagnostic_exit": "0; shutdown BrokenPipe after SystemExit observed, no scene/policy loop executed"
+}

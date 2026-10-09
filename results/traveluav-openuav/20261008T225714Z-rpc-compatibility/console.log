@@ -1,0 +1,27 @@
+Found existing installation: msgpack-python 0.5.6
+Uninstalling msgpack-python-0.5.6:
+  Successfully uninstalled msgpack-python-0.5.6
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting msgpack==1.1.0
+  Downloading msgpack-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.4 kB)
+Downloading msgpack-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (378 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 378.0/378.0 kB 15.0 MB/s eta 0:00:00
+Installing collected packages: msgpack
+Successfully installed msgpack-1.1.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip install --upgrade pip
+/workspace/R4R-Sims/results/traveluav-openuav/20261008T225714Z-rpc-compatibility/env-ab
+Found existing installation: msgpack-python 0.5.6
+Uninstalling msgpack-python-0.5.6:
+  Successfully uninstalled msgpack-python-0.5.6
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting msgpack==1.1.0
+  Using cached msgpack-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.4 kB)
+Using cached msgpack-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (378 kB)
+Installing collected packages: msgpack
+Successfully installed msgpack-1.1.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install --upgrade pip
+/workspace/R4R-Sims/results/traveluav-openuav/20261008T225714Z-rpc-compatibility/env-c

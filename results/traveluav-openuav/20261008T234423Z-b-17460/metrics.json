@@ -1,0 +1,558 @@
+{
+  "validation_errors": [],
+  "decoded_files": 40,
+  "depth_semantics": "DepthPerspective ray distance metres; raw floats retained; previews clamp 0..100 m only",
+  "files": [
+    {
+      "path": "frames/DownCamera/0000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/DownCamera/0001.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/DownCamera/0002.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/DownCamera/0003.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/FrontCamera/0000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/FrontCamera/0001.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/FrontCamera/0002.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/FrontCamera/0003.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/LeftCamera/0000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/LeftCamera/0001.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/LeftCamera/0002.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/LeftCamera/0003.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RearCamera/0000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RearCamera/0001.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RearCamera/0002.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RearCamera/0003.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RightCamera/0000.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RightCamera/0001.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RightCamera/0002.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/RightCamera/0003.png",
+      "kind": "png",
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "path": "frames/DownCamera/0000_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 0.9970703125,
+      "max_finite": 1.7529296875,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/DownCamera/0001_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 2.8359375,
+      "max_finite": 4.91796875,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/DownCamera/0002_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 3.9375,
+      "max_finite": 7.21875,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/DownCamera/0003_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 4.9375,
+      "max_finite": 9.3125,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/FrontCamera/0000_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.4501953125,
+      "max_finite": 37.3125,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/FrontCamera/0001_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 3.4140625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/FrontCamera/0002_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 3.095703125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/FrontCamera/0003_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 2.830078125,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/LeftCamera/0000_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.4248046875,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/LeftCamera/0001_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 3.9453125,
+      "max_finite": 16384.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/LeftCamera/0002_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.32421875,
+      "max_finite": 16368.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/LeftCamera/0003_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.53125,
+      "max_finite": 16368.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RearCamera/0000_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.2080078125,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RearCamera/0001_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 4.0390625,
+      "max_finite": 41.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RearCamera/0002_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.0,
+      "max_finite": 41.0625,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RearCamera/0003_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.62109375,
+      "max_finite": 16296.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RightCamera/0000_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 1.3291015625,
+      "max_finite": 16384.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RightCamera/0001_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 4.01953125,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RightCamera/0002_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 5.91015625,
+      "max_finite": 16416.0,
+      "valid_positive_lt_1e6_count": 65536
+    },
+    {
+      "path": "frames/RightCamera/0003_depth_m.npy",
+      "kind": "depth",
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite_count": 65536,
+      "invalid_nonfinite_count": 0,
+      "nonpositive_count": 0,
+      "ge_1e6_count": 0,
+      "min_finite": 6.328125,
+      "max_finite": 16432.0,
+      "valid_positive_lt_1e6_count": 65536
+    }
+  ],
+  "camera_dimensions": [
+    [
+      256,
+      256
+    ]
+  ],
+  "timestamp_spread_ns_by_sample": {
+    "0": 24000512,
+    "1": 42000896,
+    "2": 54001152,
+    "3": 0
+  },
+  "rgb_depth_rpc_wall_s": {
+    "first_batch": 0.9733620150000206,
+    "steady_count": 3,
+    "steady_mean": 0.23416589433327317,
+    "steady_min": 0.19737747799990757,
+    "steady_max": 0.29765595800017763,
+    "meaning": "five-camera RGB+depth RPC plus renderer/transport; excludes client file writes; not pure GPU render time"
+  },
+  "state_sample_count": 25,
+  "endpoint_displacement_m": 4.438462237772353,
+  "path_length_interpretation": "sampled lower bound; contacts are sampled evidence",
+  "achieved_path_length_m": 4.493467035867006,
+  "state_wall_span_s": 4.783094431999416,
+  "simulation_span_s": 4.77010178565979,
+  "requested_sleep_cadence_s": 0.2,
+  "achieved_wall_interval_mean_s": 0.199295601333309,
+  "simulator_contact_count": 0,
+  "achieved_wall_intervals_s": {
+    "count": 24,
+    "min": 0.18356560199936212,
+    "max": 0.21313875099986035,
+    "median": 0.19973096249987066
+  },
+  "final_endpoint_error_m": 0.3939338490018223,
+  "point_to_requested_polyline_rmse_m": 0.0255357638626747,
+  "point_to_requested_polyline_max_m": 0.03503122265429634,
+  "error_weighting": "one equal weight per achieved state sample; purely geometric, no timed-reference alignment",
+  "gpu_wide_memory_mib_samples": [
+    1.0,
+    70.0,
+    379.0,
+    583.0,
+    742.0,
+    608.0,
+    624.0,
+    624.0,
+    624.0
+  ],
+  "sampled_gpu_wide_peak_mib": 742.0
+}

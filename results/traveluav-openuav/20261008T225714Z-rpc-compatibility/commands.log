@@ -1,0 +1,2 @@
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip uninstall -y msgpack-python 
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip uninstall -y msgpack-python 

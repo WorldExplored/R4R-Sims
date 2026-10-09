@@ -1,0 +1,58 @@
+PROJECT_ROOT_DIR /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py:646: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  t.setDaemon(daemon)
+start listening 	127.0.0.1:30000
+2026-10-08 23:50:52	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:50:52	关闭场景中
+2026-10-08 23:50:52	已关闭所有场景
+[('ModernCityMap', 0)]
+bash /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/./closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -GraphicsAdapter=0 -settings=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/settings/30001/settings.json 
+finished b'127.0.0.1'
+2026-10-08 23:51:03	END reopen_scenes
+2026-10-08 23:51:44	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:51:44	关闭场景中
+pid 19716 is killed
+pid 19716 is killed
+2026-10-08 23:51:45	已关闭所有场景
+[('ModernCityMap', 0)]
+bash /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/./closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -GraphicsAdapter=0 -settings=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/settings/30001/settings.json 
+finished b'127.0.0.1'
+2026-10-08 23:51:56	END reopen_scenes
+2026-10-08 23:52:37	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:52:37	关闭场景中
+pid 20008 is killed
+pid 20008 is killed
+2026-10-08 23:52:38	已关闭所有场景
+[('ModernCityMap', 0)]
+bash /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/./closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -GraphicsAdapter=0 -settings=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/settings/30001/settings.json 
+finished b'127.0.0.1'
+2026-10-08 23:52:49	END reopen_scenes
+2026-10-08 23:52:49	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:52:49	关闭场景中
+pid 20329 is killed
+pid 20329 is killed
+2026-10-08 23:52:50	已关闭所有场景
+[('ModernCityMap', 0)]
+bash /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/./closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -GraphicsAdapter=0 -settings=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/settings/30001/settings.json 
+finished b'127.0.0.1'
+2026-10-08 23:53:01	END reopen_scenes
+2026-10-08 23:53:42	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:53:42	关闭场景中
+pid 20459 is killed
+2026-10-08 23:53:43	已关闭所有场景
+[('ModernCityMap', 0)]
+bash /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/./closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -GraphicsAdapter=0 -settings=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/settings/30001/settings.json 
+finished b'127.0.0.1'
+2026-10-08 23:53:54	END reopen_scenes
+2026-10-08 23:54:35	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:54:35	关闭场景中
+pid 20743 is killed
+2026-10-08 23:54:35	已关闭所有场景
+[('ModernCityMap', 0)]
+bash /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/./closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -GraphicsAdapter=0 -settings=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/settings/30001/settings.json 

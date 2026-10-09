@@ -1,0 +1,24 @@
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting numpy==1.26.3
+  Using cached numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting opencv-contrib-python==4.10.0.84
+  Downloading opencv_contrib_python-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Using cached numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+Downloading opencv_contrib_python-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (68.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.7/68.7 MB 35.1 MB/s eta 0:00:00
+Installing collected packages: numpy, opencv-contrib-python
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.2.6
+    Uninstalling numpy-2.2.6:
+      Successfully uninstalled numpy-2.2.6
+  Attempting uninstall: opencv-contrib-python
+    Found existing installation: opencv-contrib-python 5.0.0.93
+    Uninstalling opencv-contrib-python-5.0.0.93:
+      Successfully uninstalled opencv-contrib-python-5.0.0.93
+Successfully installed numpy-1.26.3 opencv-contrib-python-4.10.0.84
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip install --upgrade pip
+mkdir -p failed for path /home/ubuntu/.config/matplotlib: [Errno 13] Permission denied: '/home/ubuntu/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-1_pokhvr because there was an issue with the default path (/home/ubuntu/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+AirSim import and geometric metric checks passed 1.8.1 1.26.3

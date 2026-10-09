@@ -1,0 +1,63 @@
+{
+  "run_id": "20261008T225714Z-rpc-compatibility",
+  "settled_utc": "2026-10-09T00:04:52Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 229,
+      "sha256": "484dfa6651458e9c1cb6579d23049e9f8bbf14b22b8e967de98081f792c5e883"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 1769,
+      "sha256": "fcedb0b6fce04dddd3d662806b53cd47f4b4ed3a5bb367f625b2d1938635a289"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-ab/compatibility.json",
+      "bytes": 477,
+      "sha256": "6f0bf8f82e594ae20608456ad1964638a5661af7192cebb7e7f384b88356fd9e"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-ab/pip-freeze.txt",
+      "bytes": 504,
+      "sha256": "bc9cca4d518ca7fc5102af23abbc3ef0c0a490dca7bfaf49b7846857be3fa388"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-ab/rpc-compat.patch",
+      "bytes": 566,
+      "sha256": "ac866617df77df0590895d4861f02243bd88b7a4a6a9421cef8992cb66149b31"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-c/compatibility.json",
+      "bytes": 477,
+      "sha256": "6f0bf8f82e594ae20608456ad1964638a5661af7192cebb7e7f384b88356fd9e"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-c/pip-freeze.txt",
+      "bytes": 1554,
+      "sha256": "bfe124b2d7589d9ff525104a429271192553330ca48770e9ecb1ab5cbdce1651"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-c/rpc-compat.patch",
+      "bytes": 566,
+      "sha256": "ac866617df77df0590895d4861f02243bd88b7a4a6a9421cef8992cb66149b31"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 45,
+      "sha256": "bca52b2158b05cdb84714ff424b2e7bb24dd7bc2301f0a901db0fc0849e13a63"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T225714Z-rpc-compatibility",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T225714Z-rpc-compatibility",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

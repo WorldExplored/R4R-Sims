@@ -1,0 +1,33 @@
+{
+  "run_id": "20261008T223730Z-archive-preflight",
+  "settled_utc": "2026-10-09T00:04:51Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 132,
+      "sha256": "cb91c5137ba693423462db52ccc6f847d3bb570fb57daeee7c63c63c316cf511"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-extract.log",
+      "bytes": 746,
+      "sha256": "6ba727fe5c3ce741c6bba4cd95020facd8c24c08f29c3e4c776ff3061263bfc8"
+    },
+    {
+      "location": "record",
+      "relative_path": "env-list.txt",
+      "bytes": 158943,
+      "sha256": "d3c367b16f8a81d20bd054aae3e17f9244ae2b9262aec49809401a4e6dbd66af"
+    },
+    {
+      "location": "record",
+      "relative_path": "executable.txt",
+      "bytes": 2276,
+      "sha256": "f8ea4a141ba2ccc32bf8ba05e1ed39fcbafc39650b4457493bf69ee4925fcae2"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T223730Z-archive-preflight",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T223730Z-archive-preflight",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

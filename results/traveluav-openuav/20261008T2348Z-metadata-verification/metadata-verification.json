@@ -1,0 +1,2502 @@
+{
+  "status": "matching_hashes",
+  "seed": 100,
+  "generations": [
+    {
+      "sha256": "997395d41354692e9f13c4ca05b427044b7dfe42ede71acab9bcd3edd108f719",
+      "selection": {
+        "selected_descriptions": [
+          "The green motorcycle is located on a city street with concrete paving, adjacent to a beige building with a lamp post casting shadows nearby; it's surrounded by parked vehicles, trees lining the sidewalk, and bordered by multi-story brick and glass buildings."
+        ],
+        "seed_function_callable": true
+      }
+    },
+    {
+      "sha256": "997395d41354692e9f13c4ca05b427044b7dfe42ede71acab9bcd3edd108f719",
+      "selection": {
+        "selected_descriptions": [
+          "The green motorcycle is located on a city street with concrete paving, adjacent to a beige building with a lamp post casting shadows nearby; it's surrounded by parked vehicles, trees lining the sidewalk, and bordered by multi-story brick and glass buildings."
+        ],
+        "seed_function_callable": true
+      }
+    }
+  ],
+  "source_script_sha256": "8bbd7ff607bdc7eb7ea43c712a04a948a26d8dd0de73ec7d60ced15e6853fdbe",
+  "patched_script_sha256": "6663f1c0f3c9c57c49d5925fb378cc833610d805584bbc2288aae3c91e8453b7",
+  "source_inputs": [
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/upstream/Model/LLaMA-UAV/tools/generate_merged_json.py",
+      "sha256": "8bbd7ff607bdc7eb7ea43c712a04a948a26d8dd0de73ec7d60ced15e6853fdbe",
+      "bytes": 8074
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/clips/000.json",
+      "sha256": "79e67906d7fee471b486570b91be810fb8e30db9ac89cc267119c0aca52de2a4",
+      "bytes": 20590
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/clips/001.json",
+      "sha256": "deb4822da5d318d6aa2fe3deb77f2d2fa572e6494ba2ce09e2aa5bf1196b4e88",
+      "bytes": 20716
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/clips/002.json",
+      "sha256": "133246e08f0a4ed17d4661bfc1a80851b50e874b84aa60d5c3919e3d97966b2f",
+      "bytes": 20547
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000000.png",
+      "sha256": "ece674575d81b2fed13ffea923af9bb8c72678caf3ae06a91afce000af29163f",
+      "bytes": 26612
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000005.png",
+      "sha256": "7d2f3be7980fd2e137ad6006aa206655826f768716bb21bfaac86dac0d94b9d6",
+      "bytes": 80658
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000010.png",
+      "sha256": "3863a171b48567fb7fbba7f262420d9d45add5df8602f0ffabbf02f6d5baffc2",
+      "bytes": 100057
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000015.png",
+      "sha256": "c6af46f152c9913d9b1373047a802fcddd7dd442bf906df44ea24d412d4e8103",
+      "bytes": 109081
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000020.png",
+      "sha256": "ba1780972435a650f2dd78cee3fdecb6d3161a4a3c7586380659e4ad72cdae68",
+      "bytes": 116891
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000025.png",
+      "sha256": "252df4b94192224101ad0acb3fb8dd3e60b2cb09ce9edaff330caa92259d1e11",
+      "bytes": 116522
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000030.png",
+      "sha256": "83d56b640d667821a74b4bc4b91ab2fee354751a9bd84f726ebb76c42f684e8d",
+      "bytes": 121128
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000035.png",
+      "sha256": "7f3f970c47cd938bbeb8d35226217ca5af3fdb3232c1e3dc21da2a6f8dc2ffa0",
+      "bytes": 124288
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000040.png",
+      "sha256": "a07bce298fb1f9f71869806317ebf89180c02833b97e6b6a51f5206b88ab6ce5",
+      "bytes": 127513
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000045.png",
+      "sha256": "d965335559ddacf9b91caa91cbab9bb834d4b15f61306987b628a3944e638a96",
+      "bytes": 126835
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000050.png",
+      "sha256": "ebee49eb9744860f4e1ca1e5677afdbc3962bd6b2de75414a22b67b35a41e575",
+      "bytes": 123864
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000055.png",
+      "sha256": "f7caf252d7e3e76f834691b61f8c3b087354ad803977d815b31cc6b94e2e400b",
+      "bytes": 121915
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000060.png",
+      "sha256": "2569ae7b3c301946644be276564dd04ad7269140a8f97470b1661f64319e083a",
+      "bytes": 121006
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000065.png",
+      "sha256": "88b55ec4cafb79c392d03875093170c286a00e06ea77e2c0525fedb2aeb07a8a",
+      "bytes": 120640
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000070.png",
+      "sha256": "e06fb463cc5fdf339505b2a41afb7ccf71ca9cc33f673a7c44dad3ccdeaa3a56",
+      "bytes": 119877
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000075.png",
+      "sha256": "c5ee54ab337f788c84f53243e4ee795cc42def3e0a8b6fe6df0a93018bf4f9a3",
+      "bytes": 118917
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000080.png",
+      "sha256": "28e9f52adf033caf8432421dc2d34f623b3e6e8196daba7a69c54e390f7be9dc",
+      "bytes": 119167
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000085.png",
+      "sha256": "998f4c8e11da2cf97617fbcc9d03fec393e0a66647b26abf5247c920b7b524d4",
+      "bytes": 116549
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000090.png",
+      "sha256": "92bf52ebf1bea967fb41b544c8438c86d66d9e238f9ee6661d6d8b18630a0f58",
+      "bytes": 111049
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000095.png",
+      "sha256": "013907f0c06a1f8658a42eb5d8a809aa4dda86507a88dd2211db1a07a2a6aa92",
+      "bytes": 107021
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000100.png",
+      "sha256": "084d87421730c100d3f728bf7655a72ce86b1ca1c9eef561259f45e492a54e0a",
+      "bytes": 103880
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000105.png",
+      "sha256": "aabaa5b95f11d80f40b8e0bce0c5e1358c2a43463d967ef1c33b4aa7fe73779a",
+      "bytes": 97906
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000110.png",
+      "sha256": "938455ac42e894ff0ef36b60b59211203ceabd33ac2c4f6239c255cb92471d5b",
+      "bytes": 93594
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000115.png",
+      "sha256": "acaca3c4e3260c3933c6bc4d80f65d925116ac7f31af3a2a7089e745a08c5bac",
+      "bytes": 91527
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000120.png",
+      "sha256": "45c12164bf841951480c729325a6959d2f8e7ca345a592ff7114ef46f737f5a8",
+      "bytes": 90433
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000125.png",
+      "sha256": "3756cbf7be8925646234e4368917df0fc2505ce7d92f29224f258a533737e0a0",
+      "bytes": 91498
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000130.png",
+      "sha256": "cc8ad1888292657b397281f5c1f3eb2e88bea91a6acb7a53c0ec3b3ac10391bc",
+      "bytes": 92225
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000135.png",
+      "sha256": "b5528ceccc6d5e8aa393c40e3765a589d1cff1b506849b918a9a6159b5adf3a0",
+      "bytes": 106228
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000140.png",
+      "sha256": "800f9a497f6ed851f3d17d90dd26d5ae739b3c4b8d0855bd86561f8c99bd8d47",
+      "bytes": 105601
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000145.png",
+      "sha256": "1cd1748250621c00065ae02ffe259ce7f3a9e65697ba89742f2878c8fba62d76",
+      "bytes": 102321
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000150.png",
+      "sha256": "9f50394e3edd1323251f35db968da4f5129228cb6e7ffced3e128dafcf26ea5a",
+      "bytes": 97576
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000155.png",
+      "sha256": "e38b1ea5e33a44ba4527798175929b279d29b58b1ceb500fd17b03eba0568e57",
+      "bytes": 78771
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera/000156.png",
+      "sha256": "133d4fdb913193ac68374842e8aa1d20fe7991f3d07028bb7319778366244fdd",
+      "bytes": 75978
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000000.png",
+      "sha256": "6ee8aa7487e4d6a6c45ff130b4c9eb89d5e65a00906fcc25b1261e404c787c4a",
+      "bytes": 791
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000005.png",
+      "sha256": "e82f6679c16377b4ce3a356eb82b5f32e2803d6cfb4c466a0a3a050ba25effb9",
+      "bytes": 5105
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000010.png",
+      "sha256": "15057a2d781624a95097721be151f334dcb564d489728ab21028a735e8802b95",
+      "bytes": 9756
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000015.png",
+      "sha256": "958e6cd96c69b7d00687bbdd0f5ceb83d45d38acaac94c6d52dd734c515f0fe8",
+      "bytes": 13643
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000020.png",
+      "sha256": "058425308af84d0ce2754a7483dca3ff737e9877f51d853440bf22c9103f87d7",
+      "bytes": 15395
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000025.png",
+      "sha256": "3a5035c2493e639ee8801fc5a3d0c1c06d1f839093455a0cd0aeb6ea443915af",
+      "bytes": 15401
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000030.png",
+      "sha256": "96d300e58ab65da373bd3e24e3b120c28e3bc8b2991402423417fca783401e30",
+      "bytes": 15666
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000035.png",
+      "sha256": "2fd593a466c5d9bb8106e857abc37808d3307c415b2bd6bbb51693bedd27d59c",
+      "bytes": 16233
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000040.png",
+      "sha256": "4f403dc2c349270f5e6fab1cd0338606338597b5b2414273937f6038e63309f3",
+      "bytes": 16774
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000045.png",
+      "sha256": "5373fb402a078fb4b8d9090a01d2a9643e8ec475e1d661d107cbf4cd2d2add0b",
+      "bytes": 16729
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000050.png",
+      "sha256": "57d148494196eb3e587f6d1ad4314412cd6f8f6a14296aebe445f11d1a9330ad",
+      "bytes": 16580
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000055.png",
+      "sha256": "1d7c85c1b869c9a60bfea27af8f1ac2f15de7b349339f64d5e3267ceac43eb78",
+      "bytes": 16254
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000060.png",
+      "sha256": "f31ec0832016774e8e92e4214408c0c68fd5539005d7a92602d95753bc09253f",
+      "bytes": 16482
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000065.png",
+      "sha256": "da23a9e8397f9328ac5191563d657cb1d54dd03386020272f348de4f317ee82c",
+      "bytes": 16921
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000070.png",
+      "sha256": "d9aca822b34fed859a28e2b2122259627e57ae76d37a79e762f208fddb648605",
+      "bytes": 17216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000075.png",
+      "sha256": "903e597d109fad5de5c21bae31d572da2d110d2c1ecb7e851b430462992a92fd",
+      "bytes": 17313
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000080.png",
+      "sha256": "049fc5563908071129f8d4f19b91f16b997d05161846b4820c6fd166ae522412",
+      "bytes": 16779
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000085.png",
+      "sha256": "d931caa396804f2133b748747f73beafdb2275f7a9dae9e18102c86de85f54f6",
+      "bytes": 15822
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000090.png",
+      "sha256": "199c95ca565e7417eae456947eb101bcbd195d08ab5bc17f510c425ebe521224",
+      "bytes": 14993
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000095.png",
+      "sha256": "a5c99d9666ea1b4db431689ef6c3101c28065cd841f7c75342e00b54d00fdf92",
+      "bytes": 14201
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000100.png",
+      "sha256": "a34c84f8777561e12a319a925ea6a86dbfc4b968a8569cbceaeee80c30e05c4a",
+      "bytes": 13732
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000105.png",
+      "sha256": "d0f32278439a2779645e09d4ca3106231e56c529f0720cdd428bda63083c4071",
+      "bytes": 12723
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000110.png",
+      "sha256": "bc59d364b0a767ff034fa2bc29f83ef548516eb640f49051d984b815a892cfcf",
+      "bytes": 12420
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000115.png",
+      "sha256": "37b3ccb2c16c32e1bcda08ebad1910e18b783dca7420142cc84057d27e34b063",
+      "bytes": 13213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000120.png",
+      "sha256": "97229947541a4350b022d9fdc690232e6833941f870a41887e3aa7ab383cdb3a",
+      "bytes": 13794
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000125.png",
+      "sha256": "054a7796815812948f7a6ec46bcc5a65a64bccebe3ec98b799fe108bf1ab900a",
+      "bytes": 13668
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000130.png",
+      "sha256": "db9580ebf991f48e805cecfa4e46012dfaa54da82c005826f340dc9d30ebccc0",
+      "bytes": 12732
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000135.png",
+      "sha256": "cbecc329b5ea676f2fa2fa00ffcaa6b18d8765fc3fcf5329a75f28d3f1f06023",
+      "bytes": 12923
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000140.png",
+      "sha256": "25f97182b6b2a6a9dac984c50f8d18a40a25958a91f4d78225b86c84d8d9bb54",
+      "bytes": 12491
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000145.png",
+      "sha256": "7c425045fdb1667a98ff53c4f2bc9a16646d564d42f7421e1cc2b22c4e722cd3",
+      "bytes": 11550
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000150.png",
+      "sha256": "4b99f6cb7e8415c955e61224a10e762dbd4e1ddce3a647b6e0bab2e389c58a57",
+      "bytes": 8785
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000155.png",
+      "sha256": "6edc4f6127d484ac91478d609a49437a97dd53dc781c2e4d5c6ed4dde87ea9bc",
+      "bytes": 4382
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/downcamera_depth/000156.png",
+      "sha256": "4adf3bfca4b0d7571e702f2239e027e21a8de25c251b5e24efa9331779459497",
+      "bytes": 4405
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000000.png",
+      "sha256": "4b92f0f76331a5ff5c23841cae77d5b369f94705577fd176ccae5685436b6390",
+      "bytes": 88975
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000005.png",
+      "sha256": "d8e49f42427eaadd25bd55c3c338a1321460650eb69da89e1fee7694dce97925",
+      "bytes": 118082
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000010.png",
+      "sha256": "25748b65afaaceec65da21ae2b1fcf63872fcdcbe2264a43ba08a3cd7dd120bc",
+      "bytes": 117082
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000015.png",
+      "sha256": "0c42da6faf6833d80db8eeb1476e095779c90417065dd18d7e680e73dde4dd95",
+      "bytes": 113747
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000020.png",
+      "sha256": "000196562364f1a254adbaa3067e7cce2b34273a3de393716ab2a51d58cc9963",
+      "bytes": 110422
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000025.png",
+      "sha256": "99269ff6cd24ffa0f79560198860b382614e88ca84191b19b135ca334e28bde2",
+      "bytes": 107062
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000030.png",
+      "sha256": "55a13529d3a376bcf5ebaf68d3c2a6c8cbaed184b1658303ddf35116367a442e",
+      "bytes": 104258
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000035.png",
+      "sha256": "2cd48304c3ebf46b15f23b1fb74d397ed51927e67a0b361519fea8f9ec8263d0",
+      "bytes": 102382
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000040.png",
+      "sha256": "720ecd90827b53cb89e5cad746d03c8a6df71effe2617e7d32a478199e46b0b0",
+      "bytes": 98345
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000045.png",
+      "sha256": "e700c10a3bc1cf1030d27ff11bf1c22f25d846b5c5d692081637706c72ef9220",
+      "bytes": 97627
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000050.png",
+      "sha256": "259687d974fd68332a8751ebd3de8c4b66e990626c48aedb604e3c834d60eba2",
+      "bytes": 97863
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000055.png",
+      "sha256": "ab1234e1c7ef5e5abd4b512feff53d3d086cdf8964b8f60e632ab9fa8fc6c1ef",
+      "bytes": 96684
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000060.png",
+      "sha256": "369dfa7f2e88224184975f09034e711e8973f8263ca27e73059a5d295f6ea40c",
+      "bytes": 95394
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000065.png",
+      "sha256": "5dc5e5333dd20a988c932ca4337420ee0818400086fa7d1340a198b4aa4cba7f",
+      "bytes": 94985
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000070.png",
+      "sha256": "a671ae841523403242ae4b04d548ee8f71e390814ff872f61f1910ea1a22ee70",
+      "bytes": 93665
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000075.png",
+      "sha256": "bc635e4c187f54a37e14f5ecb317d29931400f29a6cb5deb3ba7991687f2c327",
+      "bytes": 93074
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000080.png",
+      "sha256": "898d633b3a848be1b040f8277f5d84dc18de494ff5e43c0156af5b7be085d59b",
+      "bytes": 92802
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000085.png",
+      "sha256": "494f3ca49ef09a5e74c652a2cb26287eefe152561c8bff779537b06f947b0297",
+      "bytes": 91954
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000090.png",
+      "sha256": "c79ebc7b73a803c0bb29e6a9613df6bd309cba0c8297e0398575bf808d2403b9",
+      "bytes": 91147
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000095.png",
+      "sha256": "990ade32226586b42fcdc597e9b76605e621da5f5b07adc7c2549dc5436df7b0",
+      "bytes": 90191
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000100.png",
+      "sha256": "eccad5a852f7aa2183cb2f4a810edb23cc7ab2fe52fd9a6e8ad054ac85228b0f",
+      "bytes": 88723
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000105.png",
+      "sha256": "034d836d3f10fb75d419dd774c99280fc69ae8533831e8df9050e287ee262a63",
+      "bytes": 88708
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000110.png",
+      "sha256": "d453a3bcd717cc569d50113522abb43502cd7eadd8d25f1668bc241b2a8c66d9",
+      "bytes": 83415
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000115.png",
+      "sha256": "bc8e473b0668c1158f80e631b6fde8a9b95e10f0366b5e4887b5420633c4f405",
+      "bytes": 79772
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000120.png",
+      "sha256": "c6791b6f42890a2e828eba0c37301550e1e894c891ad2e422c893b13e0fbad29",
+      "bytes": 74351
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000125.png",
+      "sha256": "663eb619575cadb036f110fdf83e47cd9f3d4f14d406490abecbe4c24984a252",
+      "bytes": 71066
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000130.png",
+      "sha256": "463ae6bb48ba253be8f1c669d52cc46767ec6b2f3a8d4cfae99aa5045b1c2680",
+      "bytes": 69932
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000135.png",
+      "sha256": "6400d2a37ca3e608f3d4ef55e73386e93a5d39c933fc426de544171b6787b401",
+      "bytes": 71829
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000140.png",
+      "sha256": "f2a208bebe52614eeedb524b69f624961849d4fa469d9d8bba89fef685ad8a06",
+      "bytes": 65385
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000145.png",
+      "sha256": "cc3ee4efbdf76fd60993bee7f61ce22e994fc25590c03cfa855102c2f888e270",
+      "bytes": 57115
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000150.png",
+      "sha256": "c2b141a4397966f658f3e41328abd4cfd25b0131e2270364111ba6c7db38f8c3",
+      "bytes": 54693
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000155.png",
+      "sha256": "025595b9230b2f363cc52555421532c53c60c0e53c0960386c689273f8bb4d7a",
+      "bytes": 67040
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera/000156.png",
+      "sha256": "6cd44ad358bc128c4111e554f2af93aed7980176d7f5add2603c817b430126b5",
+      "bytes": 63970
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000000.png",
+      "sha256": "ecfd67a19ee1338e222b0f15099e6a073e627850c903e560506ec2c83bfd6c04",
+      "bytes": 11683
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000005.png",
+      "sha256": "d65e5097548d29f9b6ffc8f1c3a92b87ab86da591cbd3aa21f029ac4bb25da11",
+      "bytes": 16022
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000010.png",
+      "sha256": "9ae08da71f8d80d3f53b04c16f6b8dab961fb09eaf1708de6848f4f627084c4e",
+      "bytes": 17259
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000015.png",
+      "sha256": "1dfed3f9544c50995c52ac5b9f917b062f5cb16fecda52e4f80b25092718b60f",
+      "bytes": 17668
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000020.png",
+      "sha256": "41830a95b6c822592dedbb34e681755476cf45c9cbedc2ab7d8114b69ef05c2c",
+      "bytes": 14272
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000025.png",
+      "sha256": "8a7f7884afd5cbb9a6e8c55985f4cd8d6e1aae959ffbcbcfc012e76229f9985e",
+      "bytes": 13227
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000030.png",
+      "sha256": "d6614af5a6ff15bca6e5537e9a318695149b6861702926b7cb7a5cd3b8110fb1",
+      "bytes": 12669
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000035.png",
+      "sha256": "dc6392559eaa072993ec07d31af752c29557772b05cf611ebf6a4279a776cef4",
+      "bytes": 12099
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000040.png",
+      "sha256": "29c832ba93b1cf88b2957a4914c10b7433487d6e545def39a9aea245cad8b42f",
+      "bytes": 11742
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000045.png",
+      "sha256": "17528a8844116ed3bf507457c7a303066ce84ebf1b500e13c2b05a1cc188f30b",
+      "bytes": 11879
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000050.png",
+      "sha256": "bd48e87d7f9698579445ca57a2045f307eb7260d51d10ce2155bcd851b097c10",
+      "bytes": 12153
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000055.png",
+      "sha256": "e277a442c742529f10a7471d4446bfede2422a00c9f57bce945eb70c3c4860e7",
+      "bytes": 11999
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000060.png",
+      "sha256": "5c87d882abcdf385fd0f7e2ea19aa2f28efd1cec99dd57e6f4663a6a2aa1849c",
+      "bytes": 11606
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000065.png",
+      "sha256": "305440802a34fba8776b13208565e2b4a5245ff79953998aa3e098793af7d110",
+      "bytes": 11365
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000070.png",
+      "sha256": "6c600aec0767ca8d753cf557a38ce3da956a54f219404ec127250f74ad922b72",
+      "bytes": 10804
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000075.png",
+      "sha256": "8e8e48618ff4ab500cecf8fb980c9df2a5c905403e5636127a2606dd2c11abad",
+      "bytes": 10328
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000080.png",
+      "sha256": "8c3636f6d10f3b7492cbba3b8bbd6ddc36fdfb8a3756f67241e6db4144837756",
+      "bytes": 10077
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000085.png",
+      "sha256": "af68e2c03497862462123862056be4bb26db62ce0b10eb8a14c2d32ec499975f",
+      "bytes": 9945
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000090.png",
+      "sha256": "98d50ded46ecf083c72bbcebf9ee2263fb080770f15f21cba93f9db7d3165ddd",
+      "bytes": 9679
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000095.png",
+      "sha256": "6f5b76159f424b0805f6f9d8930a3fea532835ce21a4e4edde249730bd93d180",
+      "bytes": 9508
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000100.png",
+      "sha256": "6ae9f30fc173ae4d8973f1ff51ca7ec8b68b8464510e53eac13be3bc5f0233c0",
+      "bytes": 9486
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000105.png",
+      "sha256": "1e603d22d5b0134f29dca924d40a0e521c80ccf44d696d19dd25081fb101739f",
+      "bytes": 9495
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000110.png",
+      "sha256": "b71e740c1b760b990b0d39542236652763ef08191bff82ef36cedb673a1e550e",
+      "bytes": 9556
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000115.png",
+      "sha256": "593094a6c8172d8c9929cf54ee2d66b4e4ae5eacceb72be089f3cccb1b028402",
+      "bytes": 8904
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000120.png",
+      "sha256": "7c997871be3bc9be322581068d5efcf88011fad16279233004667a0c9564ef99",
+      "bytes": 7852
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000125.png",
+      "sha256": "a18dbb929ec3c16b49d6e2c59bc28a6680c21a8b194f0ff53333b5df36a42066",
+      "bytes": 7697
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000130.png",
+      "sha256": "90469df33be79c42344d8410b9953c529e8963031e63089ca98e01038e942e13",
+      "bytes": 8942
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000135.png",
+      "sha256": "5e16aeca48f8324a27536cd1ca18b17d36bdd25a28a6426d6a00b35e7d4c469e",
+      "bytes": 10810
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000140.png",
+      "sha256": "d6d535f3b34c4dcbf45ea4da545c3f2ca4cfd590063bf2d7714c8c1e6346a591",
+      "bytes": 12235
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000145.png",
+      "sha256": "877fac5cb61c400518cdfc8d53b84c828289a68a9922e2b71c3b0635cd673412",
+      "bytes": 11538
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000150.png",
+      "sha256": "9e23853ae682ffbb909e7c1c4804135dc47607a67f14d04fe967c7ed2e7074c0",
+      "bytes": 10686
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000155.png",
+      "sha256": "8469f730a5f6e6fe4895c6009140d61ba4306d6e8410ba9316fb3cf54ae86d62",
+      "bytes": 11850
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/frontcamera_depth/000156.png",
+      "sha256": "6e872aca85b74c07f1c12b76b034d80f6abccb7e27b68e0af8e79b0c9890b642",
+      "bytes": 11869
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000000.png",
+      "sha256": "e979303efeec239a968ef7c1abf5d2775bba582a5844c5d2a0848653ad6d1dc7",
+      "bytes": 93325
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000005.png",
+      "sha256": "d727a21e7ddec9756b6c2d37afce04b6231e77525ff3f69670125d179a63944e",
+      "bytes": 103627
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000010.png",
+      "sha256": "a0a91332e25f5d036ab0b380adc592b0918f1f9a30457b57102ea5c2761fc600",
+      "bytes": 107973
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000015.png",
+      "sha256": "5de817175859c01016a22163633e92704ac159ae3d410b1320b5b56126932c95",
+      "bytes": 109693
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000020.png",
+      "sha256": "ba3dd122c34af69faa1ee2cb23dea8baa16fa6f01ce696b184a106740354cbfa",
+      "bytes": 111137
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000025.png",
+      "sha256": "98644d1a55f76fbd8f3853031546317c2263541dd4d829ce87fad1a688d3c570",
+      "bytes": 112119
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000030.png",
+      "sha256": "2323317c1c487b7d92373754487202f161b5b47b5dcb2d4468744c009af68c85",
+      "bytes": 113728
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000035.png",
+      "sha256": "8748d3371421bbef625406c15ccba8c29e27908be31ce29d2a56d8a7c1eb96f7",
+      "bytes": 114423
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000040.png",
+      "sha256": "3b989826ccaf074356253f0c1442b6eb5d9af44651d4ebf18e64bcd95c5ea159",
+      "bytes": 115807
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000045.png",
+      "sha256": "349bc3271b3938a203e05a6097137ad5a4f357d5778ac89a04241edbd4f5f496",
+      "bytes": 117708
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000050.png",
+      "sha256": "bf13738a01408a9e1bb1ba3e8f25aac3ceadeb50f9709b88b8412ac3b4a11f86",
+      "bytes": 117668
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000055.png",
+      "sha256": "141612c11eff3688792688c20350e047da0765fe54e47eb1e9f45ccf5e48ed7c",
+      "bytes": 116388
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000060.png",
+      "sha256": "bd818d6844bf04c73af713b63a7b9133a24bcaf4fd467cc32999761ec37fca69",
+      "bytes": 113698
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000065.png",
+      "sha256": "31573099cd02bf67d4f7cb803d6d629c111524d8850273e3e6f94c2a067d3cc0",
+      "bytes": 110735
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000070.png",
+      "sha256": "0c7d30f51b7d027d6dfc09ca8abf14b665ef374feca488635a34aacb671cfd68",
+      "bytes": 108918
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000075.png",
+      "sha256": "f3234c0779e801ae99240535d1c11c4fcbaff7276b5c9061bd1e5dffe10e1cfd",
+      "bytes": 104401
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000080.png",
+      "sha256": "b38b55484a95dc586dc646d7b1a09a662edf64ebaed731b83ab6748336b07d5a",
+      "bytes": 100253
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000085.png",
+      "sha256": "d8583d1ac46296b67a0ba3123f93e16b2b57735d365d35e310da8b3448ac249d",
+      "bytes": 95394
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000090.png",
+      "sha256": "7abebb7264c306ec36dae63a3ffded79904275c2c840f8f01423057b369a3810",
+      "bytes": 87260
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000095.png",
+      "sha256": "cf98f8a462dbf607911c73cdfe918ffec294af7ce398ba73f5a9543ebd1a67b8",
+      "bytes": 82361
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000100.png",
+      "sha256": "5b69c647a6d5cf0467840a9ab3b37545779abfd4520551ad08e5b38d2c29d7d9",
+      "bytes": 77117
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000105.png",
+      "sha256": "0ce36e611dd83e4b9b369f7a954532b1bf00f90573ecef12553f39a80ec5e7bd",
+      "bytes": 72410
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000110.png",
+      "sha256": "09f3e274ae1788676a138a851f20142837b5b1bb0ea0a881c2661f3a1fd10788",
+      "bytes": 70656
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000115.png",
+      "sha256": "740d90501142f056dce7fb254b3ce8fb70971e49cd23120170c541926231d4db",
+      "bytes": 71353
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000120.png",
+      "sha256": "70984213ceef86db105256bd7e541256efa6e778b9075273468bd04b3e28b94b",
+      "bytes": 72224
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000125.png",
+      "sha256": "80a350084c676bd2631ef4b9730a9acce62158e45138937fe0f3076bbe8024ad",
+      "bytes": 74999
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000130.png",
+      "sha256": "26dd0dd1592a3ed6c5e45fce4ebd61a3f5546056f8b43e9b02d7dcf0e15b3e48",
+      "bytes": 79436
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000135.png",
+      "sha256": "9f1a8c4a7f0fd070a05ebffcb4990fbf970a788a9d4cffa200f9989861a167c8",
+      "bytes": 84412
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000140.png",
+      "sha256": "42a7e63a9efffe4f28f31fcd3cf052928333c80f2beb3b8d0386af13b2e77ae1",
+      "bytes": 91664
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000145.png",
+      "sha256": "8b6ac5b70592ae08d40bf9f04064e4688ebf92378b1b45af961d13974cc3ddf2",
+      "bytes": 97340
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000150.png",
+      "sha256": "8df6148d486d50c55adb54b530278feddc9b86a6bcf245569a66663a022a8202",
+      "bytes": 96350
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000155.png",
+      "sha256": "655171a712917594a349199c4205537e1a529d5d8d28b38f36973bcd9993bed8",
+      "bytes": 87728
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera/000156.png",
+      "sha256": "92b618d0ae4543286dc9c02400e24a426b898b6bd1d2453802ea09da49c09e4e",
+      "bytes": 88246
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000000.png",
+      "sha256": "586e40027dea0ed8e9f2b27e5f1944b580ac014572bcb069fb34d10ec8775405",
+      "bytes": 9883
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000005.png",
+      "sha256": "811e7caf9cd971eeacaf1835c4a55f13aef55f079591ec601a0f7e36bd7821b0",
+      "bytes": 14766
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000010.png",
+      "sha256": "34e1372ebc5015f63b560a982912fc324756df54ba06f5bb5dfd13a634b1ad1e",
+      "bytes": 14573
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000015.png",
+      "sha256": "d50f2b623716d3ac2326dc90130f2c5fb0ab1654f4bb6362db152ceb3bdd5cee",
+      "bytes": 14312
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000020.png",
+      "sha256": "e49fe8505dae024458a5cba0f89698c3eb7ecaac442a5ad7f63660630e1720cb",
+      "bytes": 13098
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000025.png",
+      "sha256": "e854fb1639b8d7fee76295ba996aaec9b81067f1b0fa5348cc5c3d8d8015e2cc",
+      "bytes": 12131
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000030.png",
+      "sha256": "71c62609b9c113611d680223d48dcaa8ddde84f2cd9db65d4b2b043135c4a0b3",
+      "bytes": 11633
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000035.png",
+      "sha256": "1551926fbe7afb5a2ec900260052b438cac95d46e5272ba4dd816ad9b45c5ae5",
+      "bytes": 11179
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000040.png",
+      "sha256": "374a66aae9e8895aac4c9fbce6cf59776949087b88e616c804906b035e09910f",
+      "bytes": 11082
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000045.png",
+      "sha256": "c6ace052b6688db6cc165920eede44d414a4d919f0defcb5478995e72cd99605",
+      "bytes": 11320
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000050.png",
+      "sha256": "388875ab30d998d424c52a525c7783ba2a6e57fb98049e3e44b62ee7d05ff80b",
+      "bytes": 11304
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000055.png",
+      "sha256": "713929591fb63ddb6840b626a32817b14f9174bd530978af15bdedec3b4e9b17",
+      "bytes": 11262
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000060.png",
+      "sha256": "b57b6e3514675191cd702e45262baa81a8393a94ed78722fb823449fa79e1d1f",
+      "bytes": 11660
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000065.png",
+      "sha256": "1cd451495cd3c114149edb967cbb346a8ebe0a5d2df8eb833392b8209a09c70f",
+      "bytes": 11935
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000070.png",
+      "sha256": "b5b92a8f313f9d61ab618f30e0fa7c47255fb5d72fe5379a85c50075b5d55b65",
+      "bytes": 11833
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000075.png",
+      "sha256": "4f70bbba6b35603d6281d7ae50260a5930d618c52e3cce0f4afc5450cb645214",
+      "bytes": 11312
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000080.png",
+      "sha256": "f32972dfcc07bd69112a6b1e10bffbab616434cc9d8843c60877e3b617a3432b",
+      "bytes": 10556
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000085.png",
+      "sha256": "c9e0f4fe048d9f18d6a5092d82b35b6864ffc34150d915876dd6dee77d3b1acf",
+      "bytes": 9677
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000090.png",
+      "sha256": "6dea3eeb2d8ec4fabe918cd505f50bd0231c4c288f85fa877623583f4e2fe386",
+      "bytes": 8447
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000095.png",
+      "sha256": "686e8f795994fa6c591636f8a0db1dd45d69af6204f79c230811e266d83ee015",
+      "bytes": 7728
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000100.png",
+      "sha256": "4e10d35ae12a59ff81d8b7a4cbd17ad324c32a21eeb0829704178fbb02176371",
+      "bytes": 6993
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000105.png",
+      "sha256": "46ab6bb652495083662298be3041c1cfc27849163983d1ac5455cc6c82579f58",
+      "bytes": 6478
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000110.png",
+      "sha256": "61d66e7aa511bd5f96dc4e3b97e9419120b74d74d3757313cbd3c2396a13b5e9",
+      "bytes": 6061
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000115.png",
+      "sha256": "63e1a9873a85951d7906ce443809b2da049656546c5039c45f0fa2e00072b7da",
+      "bytes": 6291
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000120.png",
+      "sha256": "eff231da68d43ef532c3e8b3f01316b4c942be01ceb613ca37568a60ac6ad8e2",
+      "bytes": 6617
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000125.png",
+      "sha256": "58880b243401b71ec95de2d2914ebd831b6f002f89f217f86d9574901e6bb449",
+      "bytes": 7465
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000130.png",
+      "sha256": "0297cc14804f052b2847717bccce5516a960f67c6cd9567fc6dc45a376c6a65f",
+      "bytes": 9251
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000135.png",
+      "sha256": "d1ac09b7d1ae333599d52423c1b1ce37dc3ce92c67c6babdd08eed35db4c3a0d",
+      "bytes": 10448
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000140.png",
+      "sha256": "39d4dcf8b8d507fc4ba65046c6b6f89cc9bf082d4ceb5633f2f972988f8321c2",
+      "bytes": 12000
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000145.png",
+      "sha256": "aaf84001ac9f0811f4076501ce4498c32bb3373f668013031157ab698fe2f92b",
+      "bytes": 12828
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000150.png",
+      "sha256": "ecf15ba7df7e66750c46c11692c2992c172f565bd339f91890519ec19ce53e7e",
+      "bytes": 13877
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000155.png",
+      "sha256": "bdd9f25630092f2a03135fce2599bc586f2358b4637896de27db1da530ad9229",
+      "bytes": 13590
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/leftcamera_depth/000156.png",
+      "sha256": "67b04d4499b8c281675ae0733a3ea5f346cf3ab7467a23492c5719c20de12a88",
+      "bytes": 13649
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000000.json",
+      "sha256": "91a8e9f67534ec28a0bf3d9eccd2f0f93f2ae44e640b124849b1c9730d8e663a",
+      "bytes": 177
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000001.json",
+      "sha256": "b1a8f4e817f4b6d72aed2149f8e201d667373ee16560697b3b22cfb8a1e8c729",
+      "bytes": 212
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000002.json",
+      "sha256": "2cb96cf1b7df64b75405319188cd49ce344232d46acb6e004de50872216c27e0",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000003.json",
+      "sha256": "de152288bf44b4f60d71fa82ce1b6603ecc529cb8c728a481214de8110b17f5e",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000004.json",
+      "sha256": "d9a973902127e5041bd54f2a095c09b155f3d2be0a2ed8d1c131d64e195965f4",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000005.json",
+      "sha256": "7f6df819180598eacb32441190e75e9c5c74150c9106b8c7be855135fee79769",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000006.json",
+      "sha256": "b656f0c58e437471ee0c03ef83bd7b4686c0f25291f5aa416f57b8f368f089c8",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000007.json",
+      "sha256": "91e382279e98cbd1179e0f7bccc3f98f790fc0abc88fc28d20c3d5793507dc16",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000008.json",
+      "sha256": "84dae726c1677a28f46fea94f17fe9fc75b22377303feed60eb110fa7199197f",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000009.json",
+      "sha256": "4439d2df9113fea434c049713406bd0bd66dac2a6579fb4589945f6189ce1bc9",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000010.json",
+      "sha256": "f499d8e2a94ce5f1c2a40583526c561f9c013dff82cebaf9e3343668b56eb20c",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000011.json",
+      "sha256": "670699c10d892952885205f8b6b65a71968c1a2c9d150f7dbc0ba747a90f10d0",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000012.json",
+      "sha256": "3e80c9fb60a418e9baf66ac3953cc7812ced9d63283615421f1e9dce7ef3e2d8",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000013.json",
+      "sha256": "dfda8b6dce02b4cc97cb88aef7d23e425893692a573897db5f5ca2255a07132e",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000014.json",
+      "sha256": "74cfe9c9caa46c2dbcefb6e13464282d733ae8ba2037e16d39045c37d2bb2f5b",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000015.json",
+      "sha256": "ffa70b237aee153918d5957401364f14389554d0394b6f5426485f7531704d71",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000016.json",
+      "sha256": "fb06c48f3c8fce342cf8b5e987f9d3fcb239080309623fa72cbb29250769228f",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000017.json",
+      "sha256": "b289c32c674dfb54dc7bb8463d0929872f4199c79c27f3c7f4da51cf6362ae90",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000018.json",
+      "sha256": "75e0c3c25da32f0fd2c6eb95673296ec53ab076a3fae3199862f08365ed608d6",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000019.json",
+      "sha256": "8d816cb3d96dc2e711e06ced606db795022e9940556a5792497b566c1a247e69",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000020.json",
+      "sha256": "1211d4787a9ef98745ceb3b42fc6f64bb3e17767112e41543fd6bba7c9a525f3",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000021.json",
+      "sha256": "41c06d66bd2a115a41d09cd3324ac5e3f669ca572c2adde108aed83d07b8691f",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000022.json",
+      "sha256": "7b549c9dd6e525aadfa2313d367e0323527743d720c57c80b0ed55417c15852a",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000023.json",
+      "sha256": "20f8523ea6639bf77fc2f05a509bd33d0c3abdd428941bf331531147a309be65",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000024.json",
+      "sha256": "f3f605f09bb36d4218b9376bfaaf51ae60a79a00709cd28b1ad9bbff0f23d129",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000025.json",
+      "sha256": "5437bbaa9dcf1d0f3c9f3370f9e82a785956fa6b948d0673ca4513a97381dd6b",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000026.json",
+      "sha256": "916424dc3b1be8a24e76d8ff6f43a60913a88b0c1f39af417d481bf3417a4318",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000027.json",
+      "sha256": "2c362c4a9cbe17e16e38e4f5292f0ab917ef8c9c3e32a364a8d078e3554d0f85",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000028.json",
+      "sha256": "ad20397c5f599112e936303c5748f11d4c314f1c297752e7552279f7db86cee6",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000029.json",
+      "sha256": "1f6b251fdc4c129ceb1c078def77be07373d614e3d4dca1a8f1eac1e1d3fd016",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000030.json",
+      "sha256": "726429c505d53da0b9f20654c1d073e86c9b9f9a25b5d21141ac2002763b9df2",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000031.json",
+      "sha256": "7d806634a35f437f97bd0f23d2dd823e6e9f73f547e29b2b6a1e296b67400a33",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000032.json",
+      "sha256": "bfef0ff278e5598abd8891568289fda4518f98554d0edfaeba4373221f5e5b1c",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000033.json",
+      "sha256": "ba33ab4f6a4ed7dca2747e21762bc7ecde4192a28057fdb5b6c166a2d7b4bf55",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000034.json",
+      "sha256": "f67208f0c27ef12e59d170ab5b16482539bb371c17c956c272d4e8b8f643e14d",
+      "bytes": 212
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000035.json",
+      "sha256": "7fde7a364747e81b820b66e082cc0c9582c848e3d7a61931d053b95943aad5f6",
+      "bytes": 210
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000036.json",
+      "sha256": "60f40a7112e7011ab0b885d5ccfcdc7119c406f6f143a2ac48a805292bc1480b",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000037.json",
+      "sha256": "b709e748e78340b5d4c978937ef260e570725b04440073d4bceb62c271e82bd9",
+      "bytes": 214
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000038.json",
+      "sha256": "3c0706cc9d5dea0f9c5423eb3cdf8ae09cb26e1d25ac846792b2b7ef068772d3",
+      "bytes": 212
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000039.json",
+      "sha256": "9d6371fa417afd37797f20350f01490f53d55fe633559cf11266c58fe02fc560",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000040.json",
+      "sha256": "e1fa4e941eb82d09ca21d7333e5182b6b50ad035b5352dfc2f8c309d169bdb08",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000041.json",
+      "sha256": "34d85e34598edd0f13bad2d77e0e897b0637a2f3851f9bc1a743d37db72d00f9",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000042.json",
+      "sha256": "02211b8acef0a428b07d27267e75eaed531b05bf59abaf00cc075a8225686498",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000043.json",
+      "sha256": "510d20b7b8555191795481bebfae5aabda08d310a959b8bf0f7ff6fe37de2097",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000044.json",
+      "sha256": "01cafd078abe87e921d2dfe7c77d95e2906fdac168f0aac7b6b63e25f86b6ac3",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000045.json",
+      "sha256": "8ebfe1b0f7b87d51ec441c8265f1cd496adc16c4e52b5ea23633344a3d42f957",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000046.json",
+      "sha256": "e6b6327d7e6cc9202d8a6680c2a09c1f5149985dc1af8527b245199472f0a7fd",
+      "bytes": 214
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000047.json",
+      "sha256": "345b286bb3510cd51c722f20502f596372a1c090a9bc3d3ce85ee8db250d8a35",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000048.json",
+      "sha256": "553e1a3cbdc473442fec2b94d0af197ad6c92f49c9005ecaace0497d61cb9faa",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000049.json",
+      "sha256": "af1c4db2e0efb2753e2063f3c82f4e0ad52ade8fc8d8305a7cf872f1ead64605",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000050.json",
+      "sha256": "eda81599aba1b22a0d117f9dc97fed18ca203142dd868c02a9383c93d0de6875",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000051.json",
+      "sha256": "8f4c6d51fbb5028d2f90f1097c1dcced3088bf4fcd4850f599770b89d45a9c13",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000052.json",
+      "sha256": "e332cf70939e89f6626433ebbafc3722967b20f2f580f38adcc58204b3d82b55",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000053.json",
+      "sha256": "cf738cbaf8e3765a84cc9bdb017dc444f983acb0f799b3eaa4f9ccac7d7437fc",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000054.json",
+      "sha256": "ddf825c93a0076deb0551cfa3eaa1155ac601124f25fe33a76e9a8e5db964499",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000055.json",
+      "sha256": "c0427b466786e63c02b72740570fc67657822dff285e33af0cad69e7507050ce",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000056.json",
+      "sha256": "64e0d168b84edc452d5a8603c6bc366e59232c83a635773dc4a4e01f35d54052",
+      "bytes": 214
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000057.json",
+      "sha256": "6148e8c799936b3614368c3aff679d4c84f378b54ccda6d3baa07336d1703b69",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000058.json",
+      "sha256": "7215c0b084905e48508ff0f8d20811a8d35b9c4bc0118ed57ae3d547d51d065b",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000059.json",
+      "sha256": "1b2d75046e17b635b0744af1037a521920492fb3c9b1f524e8de5570162c4341",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000060.json",
+      "sha256": "92d9e1cf8a2fc29754aa1c7fc7531adf4c1467f3365dba2e7a56456e9841b8f4",
+      "bytes": 214
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000061.json",
+      "sha256": "b5a72eef82dd1b06ef9fa8e5686578ed2693576268b277f9a03653d0e12595c7",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000062.json",
+      "sha256": "2a2e006684f67a8dcadccc92c252d2106106373e35919b663e0595f8fb5dcea6",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000063.json",
+      "sha256": "086bb03cccec07fc1f60a9f524bcaca0f47f6dabfe11b76ad8a015c8edadcfd6",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000064.json",
+      "sha256": "68c73bc724e06e27f792e5a26e9c0ac0899972b28a4dc7e86afd1c025cd4213f",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000065.json",
+      "sha256": "fb8ab6d70d22b9da48d97f20cbd6edf0d393aa2bde7febfe5677e49dda8b0826",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000066.json",
+      "sha256": "65510ac546a92904418b86eb6dbf8878ead9d29fb04b2160f8714d668b088412",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000067.json",
+      "sha256": "6332f452105ba344f8d221964a0e12831e7b29ec7337cab72eec1aca39c06584",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000068.json",
+      "sha256": "14a888d25e5ae6694df930014754ce532f58e0b1a037c42d8b3029a434e36796",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000069.json",
+      "sha256": "cc71fcac6079e6305be7fd9fca74edead99938c3fa67171808e20804749be649",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000070.json",
+      "sha256": "b790c03c2201442110c7d2930627ecad75e8a14507012ea688dee056f88fade3",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000071.json",
+      "sha256": "dff2f8f4483782ea9638ac0500117b84d263411d602c809709bdf6d704299e26",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000072.json",
+      "sha256": "94933a8166b44f48757afe767e3c5276434cef468d91fde62070f0ec57fb89f6",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000073.json",
+      "sha256": "a7f4b2257e019c2625a95cc62afa8caa2b627963102ede3ab5dfb35de255be5c",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000074.json",
+      "sha256": "f13212d8ed4f93656ed9002e70f46fb23095f8c6025752c6fd009e82047bf1d5",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000075.json",
+      "sha256": "c6c92d25a25a03a92cc6e6b08adc8692a6e4bb58bda2c37ebd2c1b538f8cc6a5",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000076.json",
+      "sha256": "8e83b2f693d74b08069f488212a914d105af5677e02f08ad4e6406127e18c5d5",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000077.json",
+      "sha256": "f49c28354479bb03e66a841466beeaf58a3f2b812b701e8076664fcb7d8b6f11",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000078.json",
+      "sha256": "3d3b156c760df025174e07a42ae8f5a13c9d1dcd412beb956b534880e9532ff5",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000079.json",
+      "sha256": "184b2f3f0e97c8e7792b2e885b0a1aca4f24d155cb3ffe151b8bcd0185f28ee7",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000080.json",
+      "sha256": "0982275a94af52eb41f804cfb9dab668e43c9bf7c99df91e1f9a2ae831aea2c8",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000081.json",
+      "sha256": "422e53f8c346faf7b4a6f0c3ee64fa1b42f1e1707026b692c9e9cec2e2041ccc",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000082.json",
+      "sha256": "26201a89faafc64b86f95613fa6e30e92d6925adaa2a6daccf5a2679e7c3af3c",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000083.json",
+      "sha256": "44804c128ceb6793c5f8b6060009646541df427f85d2b08b1e6cbf6ea3302deb",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000084.json",
+      "sha256": "0a8fec4e95902621988616c3aee6c30f32546b530785945e4d6a39071fc49815",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000085.json",
+      "sha256": "d1cbc0da7a59a5f9ba5e508d890ba1c9e1509ab29d26df3dd9376dc52ea4c6ba",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000086.json",
+      "sha256": "23ed82c561714dfdf378a5071aa1c051533f195b424c780fe3a59c8156c4a43e",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000087.json",
+      "sha256": "a9d5b69f9ffe430c07da0a28f83ace4154b9e1f142351a0be54f91e3a4358019",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000088.json",
+      "sha256": "3a6c027d05264064266abeba935e1f55e755adca61113542aa6784f4ac301927",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000089.json",
+      "sha256": "3af795b5ef9f574d12a99d19ebeed8009180d169a50c716ba21fbe741623ff91",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000090.json",
+      "sha256": "af403f0d169f65e603ec89c4cab4372bf356ffd82e87edf5d6de9a456317dc29",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000091.json",
+      "sha256": "eebed2951e8cb00a008757f7c26c61286330b6cbdebd807aac82b91841e4449b",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000092.json",
+      "sha256": "dd6af3f753cae7be330a56966cd36a069b000c59f3b60da756c33b7da15a9bcf",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000093.json",
+      "sha256": "2e6df62876fae7de3325f08bc50c059550fa8dc9eea472fd563e8f031dec4ba5",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000094.json",
+      "sha256": "8609491fdda7d7220470665e8cb108199e8ea2459674da339ff52172e8a0fd17",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000095.json",
+      "sha256": "0deb41ef5d07f450788be4d17a54fbb99d71f148fa95904fec4e10d35d428752",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000096.json",
+      "sha256": "721e500a9b405d9b349e4a7e66f565bc1915fdf1e5117e505b75ac443c513605",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000097.json",
+      "sha256": "b838c8b143796368f726c97cdf63631da5d875e3536f880bdeea70ecf67125ab",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000098.json",
+      "sha256": "d0f88fd3605ff12e9d28f552e6b6eec6202f916779804130e314905c8ab81582",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000099.json",
+      "sha256": "c5dc7abfae14c75f5109ffc50b296ac2ffd7acb4b2f126b41e10e74be4e08f2d",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000100.json",
+      "sha256": "ba9e6b35137689be6a55c4ffaac4e17b4a5c86ab6b8a38c923cde183d3a6b714",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000101.json",
+      "sha256": "05ba8ca8535c236422b28affb094da0477167e266383ac14c387cb4ca5db72f9",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000102.json",
+      "sha256": "bafec5f9bd16e921b9be7a6d20fffe3dc8adff51930feeb0bff9047238127be3",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000103.json",
+      "sha256": "a6b659ae1e0a2421b5f2886c2e53f9b5b7795f88277c705337f3e9c004e4cfa4",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000104.json",
+      "sha256": "20fb0e9da1f3f9a779035887b64ca0eae72c63683028ce9a78c530f44f553400",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000105.json",
+      "sha256": "2a2f8bcb43d4e0999d3dc1a08f323d5d4bed31ea420aaea268eb0a1b420405de",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000106.json",
+      "sha256": "b72d53007e0dc0c9155fd548ec281bdc0e117368560b37861ed235587339df53",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000107.json",
+      "sha256": "fc84e09cd9b4950b84f76cf3e3f28d35e2af37f1c3a01e83c172d9381e794a76",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000108.json",
+      "sha256": "a42d31735aff75460f50e402b18b00a8493afbf52edfd2e9d40276d8007ac005",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000109.json",
+      "sha256": "624859e1bed405ef02bfa3b521d42a750a4c983575dbe7aed1c1f32be51bba26",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000110.json",
+      "sha256": "00d5732b21186ed773f8f13476f8e985313f2af1e0e469a0b4cf70518e230b52",
+      "bytes": 209
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000111.json",
+      "sha256": "ea3f3749be1b875cee07dccec1d19caea341a52053e2b01b9f2c051f2d17ddbb",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000112.json",
+      "sha256": "5554b6eb99bc5b3947b4908ad4b98ec525da53d64b42ed281ad656ed7f416042",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000113.json",
+      "sha256": "936ccb027c6c3531ed54a5bb7d921ca4b7e77b544315df7edeb0a11f512040c1",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000114.json",
+      "sha256": "27b5b7029659ea7cb73e2d17272b0bf2105631c6c23d7ce802b2c4cd69b2a7cd",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000115.json",
+      "sha256": "2ac03204fa76f0ade7e7487138c923f2b58716e4f0ec24938fc30266b50b73d1",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000116.json",
+      "sha256": "cecc80f11a1d3fc526a0f5b1c38609f0eb9288c38e3f704b98df62c68dd82024",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000117.json",
+      "sha256": "8438685a5a25865418fe2554d7fd99982afe80ae23f7c34626ee557b35e205b9",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000118.json",
+      "sha256": "28bb7595f754b3fb13b1849436f1ad6b08000a7054235dfacf372cac1cf3f65c",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000119.json",
+      "sha256": "a45154554c213a85753cbf199849534dd20967be76ac7dd3751bf7cb3e75728e",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000120.json",
+      "sha256": "13c4747c7e0792c6d414a0ad8c00dbd89016bc2137c98526892d8216cbba3dd5",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000121.json",
+      "sha256": "85aa3a8cc8e9b0cb4262ef7723b29810e51e488650f372145f1dcb10af9504d1",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000122.json",
+      "sha256": "423fbff25aeea38c4fbf93f4afe3b838952192a289c3dd529775d69130c966c3",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000123.json",
+      "sha256": "393a9d481e42dc8d5623b52fbfc7b68e7448d6fd39deb0c356b1dc13b02c42ef",
+      "bytes": 213
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000124.json",
+      "sha256": "c7343f87bb724d22790a4cb7b9c7692289c97b42dedf125d4ee89a4e4d0841a2",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000125.json",
+      "sha256": "fe5157bce5437669165b81a044e8361f983bbbb0dc9f01028dea960bee3341c2",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000126.json",
+      "sha256": "96aa027a544127ad40170eb2c5f3568463b3a816b5b4b5e10eea270d231eb844",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000127.json",
+      "sha256": "6324599fb5f2c6d58ec64d74f16c722209e4159d4bc43a7794443e4b64b10289",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000128.json",
+      "sha256": "0402513ee92ac521c6178118a845ff74f652256ecb7457d0a47257fc2abf427f",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000129.json",
+      "sha256": "a2e3b4f5f22703c6f2248ecbeb2714ec8c06d72b726560bbc722958a169dff19",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000130.json",
+      "sha256": "73260969ca34a3ee58194b53712c65a2dc3407721fe58ef2e83ae10652a56c83",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000131.json",
+      "sha256": "e085d931568e51efc18cabc3b015499b1b83937f8108d107139d46e917d72f05",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000132.json",
+      "sha256": "7d1daf33a2a8fedfa6b1a305a2ccc2eff868c556f1300e81abffe6338df45f7a",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000133.json",
+      "sha256": "177e7355ac5392f85f2fd63e93577d934a91a5d866ac60b6dc0f9db87e6f5ed1",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000134.json",
+      "sha256": "7e08270fae037ffcd410b36ef76eb7cec9f5d3da3e1b12dfb65455ad17241f3b",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000135.json",
+      "sha256": "2348361692794510f53ef284d722d66eb72dd7c1f4a27989ae81c99b11cf15f2",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000136.json",
+      "sha256": "fcd042711e6ba295496f517404ffb2c580928efc7d4f6fcb9e2545c170a6da96",
+      "bytes": 220
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000137.json",
+      "sha256": "95564d1bf596db44c8fba5a3bfde6b37a7221aefd40b36a04ebd68de06bfc04f",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000138.json",
+      "sha256": "7342ad29d27dba6ee9cfef58ebdbb538e7f27066deaea40173df81862d80f55f",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000139.json",
+      "sha256": "97dc8a5309a20072056650c7430110bf31d9772aff1221c34837e7a6c23e2110",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000140.json",
+      "sha256": "c52d94868243e782b61447372ad4bd0d1459fb13086d073a89b2b948b4dba3c2",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000141.json",
+      "sha256": "7b180d98bfccec4e9113e894b8afb3b4eaf7212d3fd459c3ddab6ea93eb850c6",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000142.json",
+      "sha256": "bec0a68050f94f6055798f8a5d235bb0faf9ea707602f6360668acb41ac369be",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000143.json",
+      "sha256": "28f62073d74bb43d41fa90ca3661a50d9a0f9a9ea6cac1e8da5573b0d8437746",
+      "bytes": 215
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000144.json",
+      "sha256": "6e0d7d5d953d00502d7f132c30cc496bb1877d591f5f174b09585970792eecc1",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000145.json",
+      "sha256": "f410481c94355fc3b6016cebea9ff4fba7677411cd7ee6cb16df8e5bd6989b4e",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000146.json",
+      "sha256": "57340a9ca658e81ef15e914bff01c7b842737196a073514178d33312b87ee285",
+      "bytes": 221
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000147.json",
+      "sha256": "4f0b8b4667d9bbe002042c3d198123e965ca36a9bef06e4f3ac15475379f6658",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000148.json",
+      "sha256": "d8e2d6ca97cbc435ee47a8998a311a33008254520ee5f390d934a81e965fd419",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000149.json",
+      "sha256": "dc1624a9fe022f102118568dc294221e6102981bb802d25cb4520ce5b2f74e8b",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000150.json",
+      "sha256": "e28fe9074bb40abf113381e0669e229eb9222938d140badfc84a0db4f58d675f",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000151.json",
+      "sha256": "cd7b1df892ef2e848c008d8c638aa1297c13aaa5091ff1046dacdd995f31bcce",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000152.json",
+      "sha256": "2c2818f3385dda871fad56ac930e0c5d709b9af18b4a204c49086f6fc52e93ca",
+      "bytes": 219
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000153.json",
+      "sha256": "37150a0b96d8ac5fcbac615d337badc7442e987728eb239e23ff61c4c04f4d75",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000154.json",
+      "sha256": "6055704b81b73b5b26ffc8c92e33297747db44c45ccd5ae23df4db5478fa2c1f",
+      "bytes": 216
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000155.json",
+      "sha256": "0755b1d0019b5604fdf3809406b25eaf48a26792a59363fa5c596438b6c44f86",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/log/000156.json",
+      "sha256": "548488d0167df430cd6c7df751933760df6ef8d0ae2921f96e68d12fdb5cb825",
+      "bytes": 218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/mark.json",
+      "sha256": "2741da2a857ccfac36ef10f809d7afdbbc13c08d76b00ad259c1304dd71ec7cb",
+      "bytes": 433
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/object_description.json",
+      "sha256": "17a344b8029e023665a56a9e6e8668dd21f4350753149a5132a22882889d713a",
+      "bytes": 268
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000000.png",
+      "sha256": "962f703681d59a8df2f3401c5bc035e8fbcdbf454bf11cadf23f3841e20c4e58",
+      "bytes": 84494
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000005.png",
+      "sha256": "58b607c953a5f3f3d9a6f0ed9af3f80e3b751ae2c52c44232da0c1801f537bf3",
+      "bytes": 94324
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000010.png",
+      "sha256": "b089b4de2fa8f3f0da84ac6a1ede4865869d79ebe6704e6e7457428303400166",
+      "bytes": 97163
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000015.png",
+      "sha256": "eeed3d429f4dcd6fee20cee467f29c5bcdcc1875964573e84fbf096ef0baccab",
+      "bytes": 91218
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000020.png",
+      "sha256": "8eee4a953cbc56df220d707aa956228c1f547265af7ffcc8637f593d6d60efa8",
+      "bytes": 80723
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000025.png",
+      "sha256": "bc38b2857f39c95d603f98326351268d19b5fd962c281c8d39ffa2132c29f21b",
+      "bytes": 76227
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000030.png",
+      "sha256": "3f72dc8b0d710d11ccc3355eb0236f23fa699dc09a94745dfe9724459ee8d4db",
+      "bytes": 70099
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000035.png",
+      "sha256": "e947eb33fc614f8577eddc3a22e7e9fd50e350877bd9f0f9e54a6b35703e40f8",
+      "bytes": 67235
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000040.png",
+      "sha256": "1b14f4b6b2808e3878dcfb6c1567b6eed9d20d02e4961711eb9c0cf765ab137f",
+      "bytes": 70716
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000045.png",
+      "sha256": "635970b75cac3fc660ca28cd5ac59277e9dcfce4de8263048f8c6026c125c4c3",
+      "bytes": 74051
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000050.png",
+      "sha256": "37b4abe2b69afac545adbef02769dbf0c21e5f2bec0bf2a155761169da89e953",
+      "bytes": 76418
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000055.png",
+      "sha256": "0b2232baeb7407f1d30014acf9eb0bf6b6fc1cd7b6584951123e85e79407ed45",
+      "bytes": 80510
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000060.png",
+      "sha256": "e01b0c1f832d197dace7439b95e3cc0abb7f73dee0f06d379430207d90d54aa2",
+      "bytes": 86984
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000065.png",
+      "sha256": "5edad4d3a7471655922b5ac91d81bec9144f56d77a5b9606c7d2fa199484de0a",
+      "bytes": 93822
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000070.png",
+      "sha256": "55c3b12adc3a0e8d2c4f461b9b4fd79953f8c5d469ad0292805c6a76eb270797",
+      "bytes": 99918
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000075.png",
+      "sha256": "fab0a1b705b7668d3259fb4ba7ee1681d08c322b7c85d15891865e216bb95e20",
+      "bytes": 104531
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000080.png",
+      "sha256": "d050e3367e4208a01628d380ad37c2294e747a1e3441228a76c9dc144ad8b0c0",
+      "bytes": 107591
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000085.png",
+      "sha256": "357932786a815657687074dcc426bd1f63d77840bb7088a6b1126477391fd886",
+      "bytes": 110992
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000090.png",
+      "sha256": "0ea5efa64558eea53e13a73d76a48e60df39aea6107287d4e496cc41e5ce455b",
+      "bytes": 113257
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000095.png",
+      "sha256": "b88254b4785a3543ae50dc00747ca8bd51da0700ab547574ab603ad056de67c8",
+      "bytes": 115608
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000100.png",
+      "sha256": "b909ac42664424c4cc0ec3a62b15409943d93477349a91291bde92a49444d911",
+      "bytes": 116570
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000105.png",
+      "sha256": "051d2ee792f381c9446aba695366fd3e375d77a0c0590c6d562c364e91abbcf2",
+      "bytes": 118821
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000110.png",
+      "sha256": "c02c42c811cd1bb90f9b75bb2a6f5594a68a8da7afed8d063b78a7fefbfccc3a",
+      "bytes": 118173
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000115.png",
+      "sha256": "233eea2290cf727642183b70008d65ffe79adc659cac44f80048592019f97a6c",
+      "bytes": 111819
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000120.png",
+      "sha256": "bc9a5bc9017f4d6d34af193e5462ce8f76c05b5057f05cf60d211899cb91127a",
+      "bytes": 106403
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000125.png",
+      "sha256": "6b59529e61cfbaa6c10ec96e2e60ec2da19e286d843677cbf8f6753fee0cf073",
+      "bytes": 96149
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000130.png",
+      "sha256": "2535ee66f3982439c341a699ccad207fc4df51a1dd4d0e5c6928fa2ffc03eef1",
+      "bytes": 91515
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000135.png",
+      "sha256": "f5d1a9f96b27945ff093b45ca5ca3ab2fedc0e993101d1b558b02dc85eeefbc9",
+      "bytes": 87188
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000140.png",
+      "sha256": "fa59b50e4150be954e865d45411b59b75774d3249f2364653ba224f2b43e2655",
+      "bytes": 108085
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000145.png",
+      "sha256": "51befa880a1a7a5e614603a3c96c345455496886531cebff27e29593d1b346f0",
+      "bytes": 132454
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000150.png",
+      "sha256": "9b3c06080d3b20a339bf3774c18cb188c64c6e544047a5c05e0e7c786cf723f3",
+      "bytes": 131433
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000155.png",
+      "sha256": "e60e8c948cb389a621b28ee281cddc9b603beec49d0c04280a50d119ce39430f",
+      "bytes": 130422
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera/000156.png",
+      "sha256": "e220fa0fef2a4383ea3346bf39e7854f9b0de9aa139c71aa7ffc167473500d99",
+      "bytes": 130260
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000000.png",
+      "sha256": "25828591ed02ab33dc8c7c0b1f34bc1757b9f49e06b6bc023009ba777530c2be",
+      "bytes": 10748
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000005.png",
+      "sha256": "d83761012d29dd5492bb5611463996775087e1eff528f0f5b8ba3cc923b3fde8",
+      "bytes": 11227
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000010.png",
+      "sha256": "5c7a805cb2f440e63559e541c51cef4ae6b37634c69228fd95b05b7e57c1753a",
+      "bytes": 11689
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000015.png",
+      "sha256": "d0a6c61db260e6f68e794bf5019b1be1cf46d1384eedf1800d569a62c51e5c0a",
+      "bytes": 9937
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000020.png",
+      "sha256": "8760b92fe4160cc3895abe6294192a8e0ca79699207c6b96496f414a6c182acc",
+      "bytes": 8175
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000025.png",
+      "sha256": "4a18c1f89d3fedfa3195f0e88ce3e8be34a183fadd88d60cfb058b38781bebbd",
+      "bytes": 7112
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000030.png",
+      "sha256": "b7bfa8bef8648282e2ed078b5ce10d546def1db8b0464c729aa16b56024c9ce1",
+      "bytes": 6127
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000035.png",
+      "sha256": "590fccb4a5d09e7794720f2ed1eb29187d2d950cad9473697a3e327fb8225fd3",
+      "bytes": 5356
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000040.png",
+      "sha256": "cfc501d0062c4751f3ff447def53d5cc3fb7b39adb76f7f5e4418efbd0568386",
+      "bytes": 6201
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000045.png",
+      "sha256": "37033ab8f7cbd65fafa762d9e28acd626cfa916d9ecc1d2051454ef1918fcc61",
+      "bytes": 6701
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000050.png",
+      "sha256": "732d319d05a7278ba79d9a8dbf8f17c2ff78cad4e36f96ca8b11b475dd8b96fa",
+      "bytes": 7176
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000055.png",
+      "sha256": "6e43a01d5e1c059b13e8ce52f867f3eed6b3f650b08121e387185e38948312ae",
+      "bytes": 7982
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000060.png",
+      "sha256": "663e8b99da12b345698a1d52742ef30714d26c53065dd86dcf07a0a220aec956",
+      "bytes": 8798
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000065.png",
+      "sha256": "6f1576bed8a062ac11f90d7dfea4d3d115be2352ba0d602b8f2af8f1e9da414f",
+      "bytes": 9792
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000070.png",
+      "sha256": "307b0f98a5600b7e9b0385520b31aac3353f690183793ac20c57e818b98a1a19",
+      "bytes": 10231
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000075.png",
+      "sha256": "81ce652cd9b8b361d622bdf75a07ff142cedfc7bd912f64c5740487722154226",
+      "bytes": 10695
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000080.png",
+      "sha256": "dbdc14abe139c23fda9aa63017a8da280b388a7656939c62aff7c13fbf3f6032",
+      "bytes": 10908
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000085.png",
+      "sha256": "11cfd995ad4108bad2af9274b6c59ad12bdc5bbf01b6e488faf6fdf7feb806f5",
+      "bytes": 11839
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000090.png",
+      "sha256": "3837b36894a4daab23904378285f8d11a40fbd1cbed4a925007cf470408badfb",
+      "bytes": 12545
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000095.png",
+      "sha256": "44d3870204282ee699ba273787e14c0710040f75018e5384178c0aafd7ced0bd",
+      "bytes": 12859
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000100.png",
+      "sha256": "bc9a73d763114eb669b7a53ed29b7d2fa99ecd34b144e2811f1043090e44071a",
+      "bytes": 13325
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000105.png",
+      "sha256": "646e3204c11cda1213d9309098d9eb4d81cb6e8b9607c9c503c61d6d84c14a52",
+      "bytes": 14072
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000110.png",
+      "sha256": "88bf85b4a78eba436af78e4f645ee0439f315aa1d92a1e1737897b3c5c4081e3",
+      "bytes": 14023
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000115.png",
+      "sha256": "4e38ef664da2fd80da49f17256eeeff667ccc10446412920adfde37cad6bf850",
+      "bytes": 12928
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000120.png",
+      "sha256": "c506cca6fac1164103f4a91f246c0e168eb02bba0181719fc38958de2753970d",
+      "bytes": 11418
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000125.png",
+      "sha256": "7e4a7dc9195ba4e0ecaf55259f3c5e56efb9f854eca301b9457d0407fca6ef30",
+      "bytes": 9549
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000130.png",
+      "sha256": "3dc55735287c9ab532a13170b1b0632a91ba31c256349299cc16c0676926e7f2",
+      "bytes": 8277
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000135.png",
+      "sha256": "7336c3f68f4996627ec8c512498d5a0b36819021bd34adcfed94cdc4261ca5a8",
+      "bytes": 6763
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000140.png",
+      "sha256": "0ef3fe8bf1b50880db6a50020004b9ee954c0cfa21599076e58b1c68e33d801a",
+      "bytes": 5425
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000145.png",
+      "sha256": "458358be671eb0ab1f4aaf27c7018560b10d447503e8562980039aea5585ab09",
+      "bytes": 7174
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000150.png",
+      "sha256": "02b56c9c23a18fe8f012d7dc06c716be24e7ecf53beb57c00127d896ebaf0da3",
+      "bytes": 8650
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000155.png",
+      "sha256": "09316841090bfbc638a26026c75ed3cac1df8629a12a81f923087e96a65dbb90",
+      "bytes": 8998
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rearcamera_depth/000156.png",
+      "sha256": "f47320500ceaca5d261a4be650e4ba1eafa39588aee70e03430da019b3f9f2a1",
+      "bytes": 9022
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000000.png",
+      "sha256": "2b10788f9962881e685536b5b1ae25c271a8c84312daf9cded28484bd80445f4",
+      "bytes": 65312
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000005.png",
+      "sha256": "4fc7976a46bd3fb4e89012f1959a703871866003ecf4d32706e34912a511a16d",
+      "bytes": 134914
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000010.png",
+      "sha256": "1813dcadb81d7ea1b77804a2e5ee8c0175da9df3bc8e9bad05077a5ebb0edfa4",
+      "bytes": 137856
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000015.png",
+      "sha256": "27c901523738bcbd0f30da750ba63b038936c3276e369fad941117d6a1d0f2f7",
+      "bytes": 127451
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000020.png",
+      "sha256": "7da7a302649d098d1fb585615fbe77239418838dde7421bd5be10a6e7d5a8911",
+      "bytes": 126700
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000025.png",
+      "sha256": "ef78648eaed6e7f8fdef169aac54c23f50c7b8f00b5aa66936f8808b03ad2461",
+      "bytes": 115367
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000030.png",
+      "sha256": "b5ed103a97268871339ce6dead9e02a86a2a795a8a7fb7c0e5812c8038363919",
+      "bytes": 110844
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000035.png",
+      "sha256": "b262dd5c5dd729ec46e517c34b69180d41129b74f889aab157d4a8283be807bb",
+      "bytes": 109031
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000040.png",
+      "sha256": "351cdb40f1d12bb0b9739aeeefe90f878b061737d84ab89dc9568f0f2fcfc724",
+      "bytes": 109853
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000045.png",
+      "sha256": "f74d207649087733774d07836216bf8ff7ee508ef14984e1c64be99d58bf7163",
+      "bytes": 113084
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000050.png",
+      "sha256": "5eabd0b5059c30516fd468092ec376e17ccd8a1ee9802702aff167b1205c243c",
+      "bytes": 116122
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000055.png",
+      "sha256": "f7553d1eb0ac28ba0b2e433318becea5683e94208e385199bc10b23b2a58f54e",
+      "bytes": 117071
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000060.png",
+      "sha256": "435a9bee942b8f88fa7fefcc5756519e3b2df91169c59a54c66827f56777764f",
+      "bytes": 117460
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000065.png",
+      "sha256": "86a17936fd40d6464e5127f076edd395547477d7d1f743dab09fc6829d5ad23c",
+      "bytes": 117663
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000070.png",
+      "sha256": "4a7183da9f77ec4face9bc8b9560ba8d2953600fa131d20e1df2e3575dbad802",
+      "bytes": 120287
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000075.png",
+      "sha256": "2889876b06cc14b892696f5ef6eee5b7c9f33cc016effb78ba978136943f6992",
+      "bytes": 124240
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000080.png",
+      "sha256": "c04f786127ddb6f2a60758f7ad54f17840f098fe7a7d6740204c5c76b40d0c72",
+      "bytes": 126205
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000085.png",
+      "sha256": "d4698d4261205298ab2617fa81e5c6e22b88ec052ab31e1ee627cc56362b1b46",
+      "bytes": 128966
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000090.png",
+      "sha256": "d4d35ca8f7e74d07bdc6e705f82adba31a483cfe24febcda5d0f309d3d46e898",
+      "bytes": 131784
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000095.png",
+      "sha256": "bc81d952d000362fd909b663113f4dfdacfaacdebb50bebb8f3b6dea4baeff42",
+      "bytes": 133938
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000100.png",
+      "sha256": "cd3c2c0cb41b5469c56ca4ff3b554c626d14ecffdfee94f56cbacad6adb79d58",
+      "bytes": 134241
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000105.png",
+      "sha256": "8ba78d7c1a5b5870517480c141a1f8c8fdb4dd5abf85ad1fe99194f067d73c02",
+      "bytes": 132707
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000110.png",
+      "sha256": "661df6d146e866b3d59541a1a6171f851aff5d2e7c8a7dbf2724e033cdccaa16",
+      "bytes": 133783
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000115.png",
+      "sha256": "d8103b5351c47d0fc32af1e4c0011ec7dd3d1107cf2affc582c347d0ca4d719b",
+      "bytes": 134297
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000120.png",
+      "sha256": "e87118c5b2e82a252306167141707aa324b95aa1b7c87356a55df1ca49a20991",
+      "bytes": 133825
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000125.png",
+      "sha256": "794db63ea5459ac85944da262e3b35499f982b0efc99ccb2661609519b6bcb1d",
+      "bytes": 135532
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000130.png",
+      "sha256": "eec3caac47dcc158634db165ac2ba4c70db49056ff15b14a506569379bf0434d",
+      "bytes": 133568
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000135.png",
+      "sha256": "1722bacade12e986e45301c3b757f6fbcf640edf24690161cf050da3c0ce716e",
+      "bytes": 134700
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000140.png",
+      "sha256": "7677cbd60139e5cd52cdf9c08e50009066a1d69afef6890340bd896efb886bec",
+      "bytes": 137868
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000145.png",
+      "sha256": "7123a5e8f4a3353b3046b994230a84f93881a393f53cde8cdf79050472f5b19b",
+      "bytes": 139063
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000150.png",
+      "sha256": "22c95f591e776bfae3e807ec01fbfa690f208c4bc3bbc1a83c0b86c84d02d849",
+      "bytes": 132849
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000155.png",
+      "sha256": "3d33eb54b35742ccae6ed896f1254495a77d46ce452ed7bc0782d979178ab419",
+      "bytes": 122988
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera/000156.png",
+      "sha256": "c87d58e5289e7849a112ff1bc1ab4f8f5839bd2e7b703a8bc59f705495d2ded9",
+      "bytes": 121176
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000000.png",
+      "sha256": "cd864fe1125b8a8e598f4d39d3aa07d0a4fff1b9d474a4e7d16d85950143073b",
+      "bytes": 7807
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000005.png",
+      "sha256": "f62e777eece3cab3105e1ceba3443c4d99117dee17f6532bac8a4a1fc5ee5533",
+      "bytes": 17171
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000010.png",
+      "sha256": "c5895e310bb943b5b20e5ce6341e91b7886f9bdee0c49dd5158aefeca879c5d9",
+      "bytes": 17149
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000015.png",
+      "sha256": "e78d675c805270125b8983cb3e8c73341636898fc399e31e73d2fefd98ac063b",
+      "bytes": 16367
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000020.png",
+      "sha256": "a7b0072a6d02e87edbb5a80d98b4de05951af1e3a033c57419c8c96c6531aa0b",
+      "bytes": 15459
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000025.png",
+      "sha256": "8096714912e56b5473492fe136e92126221e2279ee5ac500fde905a169e82809",
+      "bytes": 14609
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000030.png",
+      "sha256": "389f53706d9a4ba35f60bec8bd17455bbd843c4643a6fb53d475e0cd249436bc",
+      "bytes": 13722
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000035.png",
+      "sha256": "ce059f4bcc02a79538c19be757c5e3af165a5d938d770190ce6aaa953ffd8d44",
+      "bytes": 13201
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000040.png",
+      "sha256": "b53fbc3826d812abbf59b9080b9baf3af263b5fe2cf96b1f55c626c8404e1655",
+      "bytes": 13156
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000045.png",
+      "sha256": "df7454d96834774b91365b1a00b9f89dd2808d70d461773a736a74187ce02e89",
+      "bytes": 13446
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000050.png",
+      "sha256": "3071c1232dac6eb4c5b3ab1bcf3a87cb6438a2a5508f72e2abe8a159aae0e9ca",
+      "bytes": 13624
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000055.png",
+      "sha256": "46fbb1da2df16b4104ed7b1efc84e4d9eae94133d4647cd297effa9dbcddf5d3",
+      "bytes": 13957
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000060.png",
+      "sha256": "3260223a9adca0870b5bc23a9cc0ba9d0f3876cf19030a136d643de4f975163f",
+      "bytes": 14133
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000065.png",
+      "sha256": "f3b9115b6d4c25bc885fbe82a1b21bce714ec736f5ecce8b3d75e17e36ef4933",
+      "bytes": 14425
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000070.png",
+      "sha256": "e1e890ab420b589bd3819132b307bfa49a4f74189bc65ec6d6b40d3c338e01a9",
+      "bytes": 15440
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000075.png",
+      "sha256": "e3cc97a8f7d86b0629708b3a1c2e2fda07665fd95b2ad581d3ec0f59155b5eb1",
+      "bytes": 15795
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000080.png",
+      "sha256": "fe127d2bdecfa6793836d7090070c3cad5ef4979e1a8e2043086a257250b9117",
+      "bytes": 15983
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000085.png",
+      "sha256": "5938a729c4d6067b8bb8db5d010313c0605649ba9cbcaa428bdf6896a12b21a5",
+      "bytes": 16411
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000090.png",
+      "sha256": "8fdf27527213e0bb2dd7ae9e7117a26737de5092d635513b424dcc12763478b8",
+      "bytes": 16744
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000095.png",
+      "sha256": "8002978692eed2ccb38ef9e988573eba60a6050eb9a0d40f5b9ec9684f1cc715",
+      "bytes": 16112
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000100.png",
+      "sha256": "d72f8b7e01485d5ed40a5b3de4c2f7418b39a3dddf2f92265001c13e3a316c44",
+      "bytes": 15230
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000105.png",
+      "sha256": "d9b7fade8d7b5536b7e46e6b78ed464b2ea3d1093ffe45402ec32f7441c542b8",
+      "bytes": 14758
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000110.png",
+      "sha256": "0f3be79d26176fb8d6cc5a8cc591d49229e8f80fea76ebe2882e474f130d9605",
+      "bytes": 14539
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000115.png",
+      "sha256": "e626d950503e81963bbd846a8c2cff3ff7a5bf5ec6d8d2b11f3682778c3b00b9",
+      "bytes": 14366
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000120.png",
+      "sha256": "86bd4df345b11c2b88808354d7ec5efdfffc105655f7cbc533f55d06aa92f6f1",
+      "bytes": 14586
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000125.png",
+      "sha256": "53fda89d71c33f0e2c914b43a1a931d4670f9b1d8e5b98b75d9bdbddeb46ee09",
+      "bytes": 14481
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000130.png",
+      "sha256": "541b81dc5e876b351c1c1b173fdc8e2eb78924b5bc0aa779042e01e45b92be5d",
+      "bytes": 14643
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000135.png",
+      "sha256": "6a7a75f1a712929e0c69f60de9ba556b0815837a106bd405a69512347fd50b11",
+      "bytes": 14803
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000140.png",
+      "sha256": "c0f9d2152a9f7a21cb8a5b77bc57dc603e58385682a704b6696f44c4d824e90e",
+      "bytes": 13681
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000145.png",
+      "sha256": "cdc6a2f2affd4b6317b7ce31fff9793639a70e341ed9560b3dbb9b66a23c31ef",
+      "bytes": 13421
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000150.png",
+      "sha256": "1bcfc6e21b00ca87adc20845d253c0a20ac111025edb3be3f298835e09d60aca",
+      "bytes": 13199
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000155.png",
+      "sha256": "453294ddf9dab5d600f5feb3704f08c3b6e23d44844ab99c5f96fd6c69a93b90",
+      "bytes": 12195
+    },
+    {
+      "path": "artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/rightcamera_depth/000156.png",
+      "sha256": "9320dc83f6ea0bb9f34b0c8668d92464fd7923a53884ee70e776b1fa3f298459",
+      "bytes": 12209
+    }
+  ],
+  "runtime_episode_sha256": "5e137ae9b7112e92e4f259ad16cbbacf5d81794b90dc6db67b6d0f5f77f86f60",
+  "isolated_path_changes": {
+    "image_feature_path": {
+      "isolated": "artifacts/traveluav-openuav/20261008T2348Z-metadata-verification/isolated-dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/feature.tensor",
+      "runtime": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/feature.tensor"
+    }
+  },
+  "instruction": "<image>\nThere is a target in the  back of uav. Using your front as the x-axis and your right as the y-axis, The target is at a yaw angle of -182.0 degrees from you. The green motorcycle is located on a city street with concrete paving, adjacent to a beige building with a lamp post casting shadows nearby; it's surrounded by parked vehicles, trees lining the sidewalk, and bordered by multi-story brick and glass buildings. Please control the drone and find the target.",
+  "C_metadata_provenance": "regenerated episode metadata; original released description selection unavailable"
+}

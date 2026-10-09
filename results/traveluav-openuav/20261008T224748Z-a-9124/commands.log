@@ -1,0 +1,1 @@
+bash simulators/traveluav-openuav/launch.sh a\nfind frozen-code/assets -type f ...\nexit_status=1 before scene launch

@@ -1,0 +1,16 @@
+git clone https://github.com/prince687028/TravelUAV.git /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream 
+exit_status=0
+git -C /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream checkout --detach 5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6 
+exit_status=0
+python3.10 -m venv /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip install pip==24.0 setuptools==68.2.2 wheel==0.41.3 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip install numpy==1.26.3 Pillow==10.2.0 msgpack-python==0.5.6 tornado==4.5.3 msgpack-rpc-python==0.4 huggingface_hub==0.27.1 matplotlib==3.10.0 psutil==6.1.1 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -m pip install --no-build-isolation airsim==1.8.1 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python -c import\ airsim\,msgpackrpc\,numpy\;\ print\(\"AirSim\ import\ OK\"\,airsim.__version__\) 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/bin/python /workspace/R4R-Sims/simulators/traveluav-openuav/assets.py ab --record /workspace/R4R-Sims/results/traveluav-openuav/20261008T221326Z-setup-ab-7356/assets.json 
+exit_status=0

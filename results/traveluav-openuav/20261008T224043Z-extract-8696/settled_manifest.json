@@ -1,0 +1,33 @@
+{
+  "run_id": "20261008T224043Z-extract-8696",
+  "settled_utc": "2026-10-09T00:04:51Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 111,
+      "sha256": "d7cc0ebc53aeccff72694c9b0216b83996de9f31b1f732ff289884aa767d9bc1"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 76,
+      "sha256": "2da5869f59fecd32fd97172dae82f6bb028e02e7d88b8a766a0a322f4dfe55f8"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 50,
+      "sha256": "0df5664cd45a65a33384487fa11f54374ac916ecf5d347c2287a72a0a5439d61"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "data-list.txt",
+      "bytes": 78837029,
+      "sha256": "75d8a0ea693c683738ca3bdc62590d165155c4c073f664525f82303e86d3c7c0"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T224043Z-extract-8696",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T224043Z-extract-8696",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

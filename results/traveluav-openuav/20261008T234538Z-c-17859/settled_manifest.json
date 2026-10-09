@@ -1,0 +1,381 @@
+{
+  "run_id": "20261008T234538Z-c-17859",
+  "settled_utc": "2026-10-09T00:04:53Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "asset-files.tsv",
+      "bytes": 104112,
+      "sha256": "cd0b698a72493fe0c1f26b3e98514c1d45e39aa203eebfbfff21b46533912652"
+    },
+    {
+      "location": "record",
+      "relative_path": "asset_inventory.md",
+      "bytes": 5112,
+      "sha256": "7a14e16a217a6dbd962126b40da2ad4da1a5332cbf777fc296b80a3e12c27a12"
+    },
+    {
+      "location": "record",
+      "relative_path": "checkpoint_gate.jsonl",
+      "bytes": 2012,
+      "sha256": "17667b61a104f71a0343bee935c1757cfe21fe4b8549f370c435701d45fc759b"
+    },
+    {
+      "location": "record",
+      "relative_path": "checkpoint_loads.jsonl",
+      "bytes": 366632,
+      "sha256": "26e8bd8fdd5add30dfa5a0db2c464d14e8114c92d7ad6ccb0841559d38f5110e"
+    },
+    {
+      "location": "record",
+      "relative_path": "checkpoint_preload.jsonl",
+      "bytes": 212738,
+      "sha256": "ed08310cf4a392e6db8a2e304fc633d1cfef0499c8c33cc0e2d906c86307cd7c"
+    },
+    {
+      "location": "record",
+      "relative_path": "checkpoint_tensor_verification.jsonl",
+      "bytes": 774158,
+      "sha256": "26803613fbf33187520f68e6e8a3de1f028e39a373adf8530ce79834185ee7e6"
+    },
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 1953,
+      "sha256": "3507601c5d2d840a77892934362a5969d667598ffa22d5adcd445114d9304bcd"
+    },
+    {
+      "location": "record",
+      "relative_path": "config-rewrites.json",
+      "bytes": 5302,
+      "sha256": "af42c7358933aaaaedce299ebde1751f29ba4e50a7d01e2d79baf8297bd64127"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 11770,
+      "sha256": "78170f6909775277b878dbbbe0a1adce5f42a9d3603c14236e3f7ef43ef18f31"
+    },
+    {
+      "location": "record",
+      "relative_path": "cpu.txt",
+      "bytes": 3002,
+      "sha256": "753cf4521853a037d4cdc79b05a7eb787ac59d8402cdb78d76d00cceed583814"
+    },
+    {
+      "location": "record",
+      "relative_path": "decoder-equivalence-c.json",
+      "bytes": 4183,
+      "sha256": "4a681572c5b1760c3fd756f13033abfa3da7ed272a4563593da67e119b5b7296"
+    },
+    {
+      "location": "record",
+      "relative_path": "episode.json",
+      "bytes": 39529,
+      "sha256": "5e137ae9b7112e92e4f259ad16cbbacf5d81794b90dc6db67b6d0f5f77f86f60"
+    },
+    {
+      "location": "record",
+      "relative_path": "git-status.txt",
+      "bytes": 1224,
+      "sha256": "4cd630ab08c003202af35b2900c10326e802d61289d684fb29cd9c0e46769b30"
+    },
+    {
+      "location": "record",
+      "relative_path": "gpu-samples.log",
+      "bytes": 8363,
+      "sha256": "e7ad4dcb9a7d74e5392b2a197f840a53bb7e4d583b6ee9e2d871ea9c0d08c9d9"
+    },
+    {
+      "location": "record",
+      "relative_path": "gpu.txt",
+      "bytes": 13921,
+      "sha256": "d91d862cefadb8a10d00fabae24101343356fb15f0164318397207985d31816a"
+    },
+    {
+      "location": "record",
+      "relative_path": "input-sha256.txt",
+      "bytes": 457,
+      "sha256": "e91b9d6a4019f69e5d7b4688d79b569398e4d3a788aa0f2056b2d982650c83b2"
+    },
+    {
+      "location": "record",
+      "relative_path": "loader-diagnosis-summary.json",
+      "bytes": 1446,
+      "sha256": "45256aab64614691b8d0bcb01037a010f3296e134d7242b725e2ca5142618a14"
+    },
+    {
+      "location": "record",
+      "relative_path": "loader_eligibility.jsonl",
+      "bytes": 151,
+      "sha256": "58102f62f4cf5d8138bd38fa5f7a9dbeda82a6e8858d576e3a4db0ae8b25c331"
+    },
+    {
+      "location": "record",
+      "relative_path": "mark.json",
+      "bytes": 433,
+      "sha256": "2741da2a857ccfac36ef10f809d7afdbbc13c08d76b00ad259c1304dd71ec7cb"
+    },
+    {
+      "location": "record",
+      "relative_path": "model-runtime-config.json",
+      "bytes": 1356,
+      "sha256": "fc73484574ac3cc06aecf599c8b7dac805d9630277e6612ee56214d5b9985b35"
+    },
+    {
+      "location": "record",
+      "relative_path": "model_placement.jsonl",
+      "bytes": 314,
+      "sha256": "ba092c62ac6502d34ab09b82d63d00f53b54c1f4958a577a3433b2729d01d236"
+    },
+    {
+      "location": "record",
+      "relative_path": "os.txt",
+      "bytes": 139,
+      "sha256": "8b8608da7eaa9f2d6ddef25a467194f2b650c69bd2bb1f5fe058e78c788daffe"
+    },
+    {
+      "location": "record",
+      "relative_path": "output-sha256.txt",
+      "bytes": 2731,
+      "sha256": "3ce9b0e5a85d6116d643c779dbca9cae3ea0eb1a37f066d66a8ff443c8f09ce5"
+    },
+    {
+      "location": "record",
+      "relative_path": "pip-freeze.txt",
+      "bytes": 1585,
+      "sha256": "1ed0d2bd09b58c989d62e23ae531431592da12be4ea6fc9a0325ebc4cf15e87d"
+    },
+    {
+      "location": "record",
+      "relative_path": "ram.txt",
+      "bytes": 207,
+      "sha256": "9c3e9d6acf93462662cfe0a5e39a6d9c267b824bd914df0425621fd121597288"
+    },
+    {
+      "location": "record",
+      "relative_path": "reference_route.jsonl",
+      "bytes": 31936,
+      "sha256": "c4e6473840bd75b68f1a17723303b21b307a7f9390388896757d98a188dbe971"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 1134,
+      "sha256": "8edd2f0656b37ff2ffb9a2807e832948399463a82da42040e3b6c34208734f41"
+    },
+    {
+      "location": "record",
+      "relative_path": "selected_seen_one.json",
+      "bytes": 110,
+      "sha256": "7ee96d45f31185e66dbbdbe23ae530b687baf58192e176675b0905cfd4bcba81"
+    },
+    {
+      "location": "record",
+      "relative_path": "selected_seen_rows.json",
+      "bytes": 3558,
+      "sha256": "680f862ec8a37d6f26ae774aeac2e2b6cdb02325d7a1a3636cd0e58f35a08ec2"
+    },
+    {
+      "location": "record",
+      "relative_path": "server.log",
+      "bytes": 340,
+      "sha256": "b4926289c52ba21761a902e9850beb764b3da1d539ede8cbc7328e29ef836d98"
+    },
+    {
+      "location": "record",
+      "relative_path": "shared-commit.txt",
+      "bytes": 41,
+      "sha256": "cb7b8ce5b2b0919f9a89d6921999ca841cef8bde8c2fb42efa59a954607dc8d9"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream-staged.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream.patch",
+      "bytes": 24676,
+      "sha256": "5eaa679291bc62b46f9faf3563ab7aa94387ff6f0ac9b71528fd966106ada595"
+    },
+    {
+      "location": "record",
+      "relative_path": "verified-ab.json",
+      "bytes": 6776,
+      "sha256": "393fffea4544c882580f5156ce087373a1c7cf1665b6a9efcc4b7cc4d44abf84"
+    },
+    {
+      "location": "record",
+      "relative_path": "verified-c.json",
+      "bytes": 12785,
+      "sha256": "4f072d8c548ae7649112e1eb5bda333aa39312f8cff423b4576038b42bff4661"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/__pycache__/analyze.cpython-310.pyc",
+      "bytes": 10425,
+      "sha256": "dedc20bdd96f58c312da66b69f7f26ff17dc543efd555882a2b14d9136be9eeb"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/analyze.py",
+      "bytes": 8550,
+      "sha256": "60303fe5459e4caddd8e30035fa0d02013422e7dcdc5b52aa5fc21f45f0f5814"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/assets.py",
+      "bytes": 5100,
+      "sha256": "1d1e0f8165563a92cde42c147dc6b03e9fc6e21f757615dcdaf2dafdd1df73c2"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/c-extension.sh",
+      "bytes": 1293,
+      "sha256": "66eef71f021a554068a6862626642198db54c4a21f56f1735ab430279b5211a7"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/checkpoint_preflight.py",
+      "bytes": 1519,
+      "sha256": "850259abc29c54467025c00d147b7acd38340f79a1c70cb1e7910c8ce711bf07"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/collect.sh",
+      "bytes": 1109,
+      "sha256": "2fee1d26b6cd4445ebd971bb3297a20f4fa9a59552fdabb5803901afdd7cadab"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat/__pycache__/sitecustomize.cpython-310.pyc",
+      "bytes": 562,
+      "sha256": "d3d597abfd75f638b86a47bea0b8049cba5cb4db937a597a1bd36f0218f1fb52"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat/sitecustomize.py",
+      "bytes": 426,
+      "sha256": "15058f08f5e4cfdd65d65ea3643dc0002226cb4b72487eda917e2e8f93179f5c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat_msgpack.py",
+      "bytes": 1838,
+      "sha256": "aec15954979276ee920aec28b876c30468a6f9ba18b46cb1865df373e55304a3"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compile_cuda.py",
+      "bytes": 1749,
+      "sha256": "78866953fcd858536efd6e2cd2a3badbfd920292270ee8df923e787737f1bd1c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/cuda-runtime.sh",
+      "bytes": 826,
+      "sha256": "35e291f06608827152d438115daaf4f0dede14d58a34418aacb4f3e81e27977d"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/eval_observe.patch",
+      "bytes": 24676,
+      "sha256": "5eaa679291bc62b46f9faf3563ab7aa94387ff6f0ac9b71528fd966106ada595"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/expected-sha256.txt",
+      "bytes": 1539,
+      "sha256": "3518e2c880d2c66ddecdade589ac23c4c88100ee53448e77b8c07792681cc548"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/extract.sh",
+      "bytes": 2485,
+      "sha256": "7990c3bc6124170bbd6233b58108170b9815964fd573036620a6a06e08a1f16b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/host.sh",
+      "bytes": 6877,
+      "sha256": "2d42c43f1b2c22759fcffc05659a3b0ea631293d63a2e91353934554817b355a"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/launch.sh",
+      "bytes": 444,
+      "sha256": "2eb16b4e4101fc46c9e56d95f56304512dff0693a07ea90764d48b952138be79"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/layout.sh",
+      "bytes": 529,
+      "sha256": "1c169f47db5cdcae7a8b9216799bcebf0b44ca650362b3383e2e799018d7a4a2"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/policy_smoke.sh",
+      "bytes": 7442,
+      "sha256": "213e64cfd0ebfb4ad9eb84d8f9d904a53ce98230701a6604eed39ef94f5f829e"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/prepare_c.py",
+      "bytes": 1631,
+      "sha256": "a7b653849a8871ab79c11d42dbcb4ca8f2dedecc59b2b926a24a631704f5d822"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/prepare_episode.py",
+      "bytes": 1049,
+      "sha256": "c22a16eb859671f587b91db37005e16cadcfbeac034dbbf700db93aca4cb548b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/probe.py",
+      "bytes": 11644,
+      "sha256": "f83aac6457e2d4f359bdd208bb2747c3b86a54a9e53d6777ddbfd1eb53861866"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/r4r_observe.py",
+      "bytes": 9661,
+      "sha256": "94659d9a8689ab2ad4be304a274f28593445cf747ba13291b386a03d8b575be1"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/requirements-c.txt",
+      "bytes": 676,
+      "sha256": "0d2f8ab877536379b3e6bea3502513ae5d53ad91176ab4148a3bdace79f8e166"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/setup.sh",
+      "bytes": 3045,
+      "sha256": "feb4d9795d69882ad81d2aef97516191020f129b26b3b6e81b1894b86b0c29e8"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/verify_decoder.py",
+      "bytes": 2807,
+      "sha256": "3a93adc243b73481f33f5004be7fed182211e24a729d59a31330643cd4b9a854"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/verify_metadata.py",
+      "bytes": 3425,
+      "sha256": "0d3fd3ec725218ad792949eafaf5c8c8e2416e50ba0d8e775c938b43e33f5af9"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "seen_valset.json",
+      "bytes": 9149920,
+      "sha256": "af5b7b660ed3b1dea95b53aa72a98f74ae7a37cd381aa0e818ee2a343cf54552"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T234538Z-c-17859",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T234538Z-c-17859",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

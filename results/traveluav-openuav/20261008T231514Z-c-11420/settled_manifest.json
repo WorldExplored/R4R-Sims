@@ -1,0 +1,333 @@
+{
+  "run_id": "20261008T231514Z-c-11420",
+  "settled_utc": "2026-10-09T00:04:53Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "asset-files.tsv",
+      "bytes": 103217,
+      "sha256": "e6ca0a9158adeaa5d6dd5b50199130bcac45c8bd7c27b17fa42e4567db4edb0d"
+    },
+    {
+      "location": "record",
+      "relative_path": "asset_inventory.md",
+      "bytes": 5112,
+      "sha256": "7a14e16a217a6dbd962126b40da2ad4da1a5332cbf777fc296b80a3e12c27a12"
+    },
+    {
+      "location": "record",
+      "relative_path": "checkpoint_gate.jsonl",
+      "bytes": 185,
+      "sha256": "e7904076616a225578440eec2079f29b9fc1c90915f5746a48e46f0dd40ac827"
+    },
+    {
+      "location": "record",
+      "relative_path": "checkpoint_loads.jsonl",
+      "bytes": 47465,
+      "sha256": "d5d97bf239bf7844aca64efe273217a5657cefcf45c4699df23654b8e7124f4e"
+    },
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 1953,
+      "sha256": "5f8dce73f132d5b4c50b97fb5bc37a08754d2cbc6e464b267218612bc3b03e37"
+    },
+    {
+      "location": "record",
+      "relative_path": "config-rewrites.json",
+      "bytes": 5302,
+      "sha256": "af42c7358933aaaaedce299ebde1751f29ba4e50a7d01e2d79baf8297bd64127"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 865,
+      "sha256": "6926b47852a0342265e6037c74e906504e964ed2f705bc957ef76dc65f87739a"
+    },
+    {
+      "location": "record",
+      "relative_path": "cpu.txt",
+      "bytes": 3002,
+      "sha256": "753cf4521853a037d4cdc79b05a7eb787ac59d8402cdb78d76d00cceed583814"
+    },
+    {
+      "location": "record",
+      "relative_path": "episode.json",
+      "bytes": 39529,
+      "sha256": "5e137ae9b7112e92e4f259ad16cbbacf5d81794b90dc6db67b6d0f5f77f86f60"
+    },
+    {
+      "location": "record",
+      "relative_path": "git-status.txt",
+      "bytes": 824,
+      "sha256": "fd327faa369149dbc95fdbd6d0fbddb2ecc7f476fc6c507df5d94fc0ab866f25"
+    },
+    {
+      "location": "record",
+      "relative_path": "gpu-samples.log",
+      "bytes": 435,
+      "sha256": "d9630b7f2fc279f2accaef5291229fb674d9be78d76cc90a269d30c64a5f55cc"
+    },
+    {
+      "location": "record",
+      "relative_path": "gpu.txt",
+      "bytes": 13921,
+      "sha256": "9d2c2f918c36718559c95e48abb8f6e8429b383d661b82c6d8202d60752b34f7"
+    },
+    {
+      "location": "record",
+      "relative_path": "input-sha256.txt",
+      "bytes": 457,
+      "sha256": "dcaa036ec96aaac7f058c08b15ecdb8e2c09c289e5d2a21cded0b90d80d5fcb7"
+    },
+    {
+      "location": "record",
+      "relative_path": "mark.json",
+      "bytes": 433,
+      "sha256": "2741da2a857ccfac36ef10f809d7afdbbc13c08d76b00ad259c1304dd71ec7cb"
+    },
+    {
+      "location": "record",
+      "relative_path": "model-runtime-config.json",
+      "bytes": 1356,
+      "sha256": "fc73484574ac3cc06aecf599c8b7dac805d9630277e6612ee56214d5b9985b35"
+    },
+    {
+      "location": "record",
+      "relative_path": "os.txt",
+      "bytes": 139,
+      "sha256": "8b8608da7eaa9f2d6ddef25a467194f2b650c69bd2bb1f5fe058e78c788daffe"
+    },
+    {
+      "location": "record",
+      "relative_path": "output-sha256.txt",
+      "bytes": 2350,
+      "sha256": "06d361b047e0497a250caddce6fc022584634811fd4c0e2b4cedd454f0b3b2ef"
+    },
+    {
+      "location": "record",
+      "relative_path": "pip-freeze.txt",
+      "bytes": 1554,
+      "sha256": "bfe124b2d7589d9ff525104a429271192553330ca48770e9ecb1ab5cbdce1651"
+    },
+    {
+      "location": "record",
+      "relative_path": "ram.txt",
+      "bytes": 207,
+      "sha256": "7c53e55a903293514f2632c7d9188f0e47357302cc1211bf01a6a55db63acc64"
+    },
+    {
+      "location": "record",
+      "relative_path": "reference_route.jsonl",
+      "bytes": 31936,
+      "sha256": "c4e6473840bd75b68f1a17723303b21b307a7f9390388896757d98a188dbe971"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 984,
+      "sha256": "d31058b75d0819d5e6a1edd7210f5b77090ec45b1a2fa63ce8426b42b4123ef4"
+    },
+    {
+      "location": "record",
+      "relative_path": "selected_seen_one.json",
+      "bytes": 110,
+      "sha256": "7ee96d45f31185e66dbbdbe23ae530b687baf58192e176675b0905cfd4bcba81"
+    },
+    {
+      "location": "record",
+      "relative_path": "selected_seen_rows.json",
+      "bytes": 3558,
+      "sha256": "680f862ec8a37d6f26ae774aeac2e2b6cdb02325d7a1a3636cd0e58f35a08ec2"
+    },
+    {
+      "location": "record",
+      "relative_path": "server.log",
+      "bytes": 340,
+      "sha256": "72e9467535eb2403b96e4c00c4c5ef4e979026f803a5e9e844e0a8bf7fe0c653"
+    },
+    {
+      "location": "record",
+      "relative_path": "shared-commit.txt",
+      "bytes": 41,
+      "sha256": "b91eb594cd735fdbe22448547c55e6b05bcb26e8c9957756a574579c84f6268a"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream-staged.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream.patch",
+      "bytes": 21947,
+      "sha256": "0f44d204c2af94be495d27a1e20d5b2add25739c4961fb2e4141e64b434e4d0a"
+    },
+    {
+      "location": "record",
+      "relative_path": "verified-ab.json",
+      "bytes": 6776,
+      "sha256": "393fffea4544c882580f5156ce087373a1c7cf1665b6a9efcc4b7cc4d44abf84"
+    },
+    {
+      "location": "record",
+      "relative_path": "verified-c.json",
+      "bytes": 12785,
+      "sha256": "4f072d8c548ae7649112e1eb5bda333aa39312f8cff423b4576038b42bff4661"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/__pycache__/analyze.cpython-310.pyc",
+      "bytes": 10425,
+      "sha256": "dedc20bdd96f58c312da66b69f7f26ff17dc543efd555882a2b14d9136be9eeb"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/analyze.py",
+      "bytes": 8276,
+      "sha256": "7dfe060e4baab3201fe8a451718ec932bba4fbedee4d06eec4e46f9ae3967afb"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/assets.py",
+      "bytes": 5100,
+      "sha256": "1d1e0f8165563a92cde42c147dc6b03e9fc6e21f757615dcdaf2dafdd1df73c2"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/c-extension.sh",
+      "bytes": 1293,
+      "sha256": "66eef71f021a554068a6862626642198db54c4a21f56f1735ab430279b5211a7"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/checkpoint_preflight.py",
+      "bytes": 1519,
+      "sha256": "850259abc29c54467025c00d147b7acd38340f79a1c70cb1e7910c8ce711bf07"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/collect.sh",
+      "bytes": 1109,
+      "sha256": "2fee1d26b6cd4445ebd971bb3297a20f4fa9a59552fdabb5803901afdd7cadab"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat/__pycache__/sitecustomize.cpython-310.pyc",
+      "bytes": 562,
+      "sha256": "d3d597abfd75f638b86a47bea0b8049cba5cb4db937a597a1bd36f0218f1fb52"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat/sitecustomize.py",
+      "bytes": 426,
+      "sha256": "15058f08f5e4cfdd65d65ea3643dc0002226cb4b72487eda917e2e8f93179f5c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compat_msgpack.py",
+      "bytes": 1838,
+      "sha256": "aec15954979276ee920aec28b876c30468a6f9ba18b46cb1865df373e55304a3"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/compile_cuda.py",
+      "bytes": 1749,
+      "sha256": "78866953fcd858536efd6e2cd2a3badbfd920292270ee8df923e787737f1bd1c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/cuda-runtime.sh",
+      "bytes": 826,
+      "sha256": "35e291f06608827152d438115daaf4f0dede14d58a34418aacb4f3e81e27977d"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/eval_observe.patch",
+      "bytes": 20080,
+      "sha256": "42c8101b57760958bb29d694df3e257d8f6b7ff36761304a38625ddf84cf61db"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/expected-sha256.txt",
+      "bytes": 1539,
+      "sha256": "3518e2c880d2c66ddecdade589ac23c4c88100ee53448e77b8c07792681cc548"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/extract.sh",
+      "bytes": 2485,
+      "sha256": "7990c3bc6124170bbd6233b58108170b9815964fd573036620a6a06e08a1f16b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/host.sh",
+      "bytes": 6774,
+      "sha256": "49ea0c9a6398d13df81b6777ae69cd847852f78f4c259182e07c897cd964ff75"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/launch.sh",
+      "bytes": 444,
+      "sha256": "2eb16b4e4101fc46c9e56d95f56304512dff0693a07ea90764d48b952138be79"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/layout.sh",
+      "bytes": 529,
+      "sha256": "1c169f47db5cdcae7a8b9216799bcebf0b44ca650362b3383e2e799018d7a4a2"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/policy_smoke.sh",
+      "bytes": 7442,
+      "sha256": "213e64cfd0ebfb4ad9eb84d8f9d904a53ce98230701a6604eed39ef94f5f829e"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/prepare_c.py",
+      "bytes": 1631,
+      "sha256": "a7b653849a8871ab79c11d42dbcb4ca8f2dedecc59b2b926a24a631704f5d822"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/prepare_episode.py",
+      "bytes": 1049,
+      "sha256": "c22a16eb859671f587b91db37005e16cadcfbeac034dbbf700db93aca4cb548b"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/probe.py",
+      "bytes": 8397,
+      "sha256": "447b5220c142866824bd1e38157b848b47dc85aa2aefba0a53fc3c1053d1422c"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/r4r_observe.py",
+      "bytes": 7018,
+      "sha256": "0476e8b4622a59c128c6fc724e91de1c5df7f06c872b88262e13fbb38d7af3aa"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/requirements-c.txt",
+      "bytes": 645,
+      "sha256": "4b339878ed5b85187d53cbe53d556085154aa32302ec14a84c7d27585008570d"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "code/setup.sh",
+      "bytes": 3045,
+      "sha256": "feb4d9795d69882ad81d2aef97516191020f129b26b3b6e81b1894b86b0c29e8"
+    },
+    {
+      "location": "artifact",
+      "relative_path": "seen_valset.json",
+      "bytes": 9149920,
+      "sha256": "af5b7b660ed3b1dea95b53aa72a98f74ae7a37cd381aa0e818ee2a343cf54552"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T231514Z-c-11420",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T231514Z-c-11420",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

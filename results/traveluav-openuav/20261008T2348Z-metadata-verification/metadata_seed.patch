@@ -1,0 +1,11 @@
+--- a/Model/LLaMA-UAV/tools/generate_merged_json.py
++++ b/Model/LLaMA-UAV/tools/generate_merged_json.py
+@@ -9,7 +9,7 @@
+ import random
+ from scipy.spatial.transform import Rotation as R
+ 
+-random.seed = 1
++random.seed(100)
+ 
+ RGB_FOLDER = ['frontcamera', 'leftcamera', 'rightcamera', 'rearcamera', 'downcamera']
+ DEPTH_FOLDER = [name + '_depth' for name in RGB_FOLDER]

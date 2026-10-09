@@ -1,0 +1,23 @@
+{
+  "run_id": "20261008T234423Z-b-17460",
+  "status": "complete",
+  "level": "B",
+  "started_utc": "2026-10-08T23:44:24.423204+00:00",
+  "repo_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+  "upstream_modifications": "upstream.patch and upstream-staged.patch",
+  "scene_executable": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/closeloop_envs/ModernCityMap.sh",
+  "episode": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f/merged_data.json",
+  "policy_weights": "none",
+  "seed": 100,
+  "camera_frame": "AirSim NED; body camera offsets in settings.json",
+  "sampling": "separate AirSim clients; requested0.2s absolute cadence;25states",
+  "timeout_s": 90,
+  "gpu_timing": "RPC wall latency only; no CUDA events in simulator",
+  "missing_data": [],
+  "exit_status": 0,
+  "ended_utc": "2026-10-08T23:44:32.873346+00:00",
+  "flight_completion": "RPC completed; final state before pause",
+  "contact_evidence": "0of25positive samples; not continuous absence",
+  "path_length_interpretation": "sampled lower bound",
+  "image_sampling": "four separate batches, not one per state"
+}

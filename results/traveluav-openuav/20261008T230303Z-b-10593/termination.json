@@ -1,0 +1,6 @@
+{
+  "reason": "endpoint_within_2m",
+  "samples": 5,
+  "wall_s": 3.438918251999894,
+  "async_completion_observed": false
+}

@@ -1,0 +1,19 @@
+{
+  "source": "unaltered pinned utils/metric.py log",
+  "denominator": 1,
+  "split": "selected one ModernCityMap seen_valset episode; full and easy subsets both one",
+  "SR_percent_logged": 0.0,
+  "OSR_percent_logged": 0.0,
+  "NE_logged_m_rounded": 85.52,
+  "SPL_percent_logged": 0.0,
+  "eligibility": "regenerated metadata, privileged assistant,10-decision budget truncation; not completed official benchmark evaluation",
+  "thresholds": {
+    "goal_m": 20,
+    "easy_path_max_m": 250,
+    "dino_depth_m": 18,
+    "dino_box": 0.6,
+    "dino_text": 0.4
+  },
+  "NE_note": "logger says Normalized Error but source uses Euclidean distance without normalization",
+  "SPL_definition": "success-only (reference_length-20)/max(reference_length-20,actual_length), averaged over selected result dirs"
+}

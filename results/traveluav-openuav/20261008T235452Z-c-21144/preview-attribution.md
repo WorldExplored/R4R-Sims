@@ -1,0 +1,1 @@
+Native UE ModernCityMap rendered by the author-released OpenUAV/TravelUAV environment, pinned repository5cc26e9a; research preview, fixed0..100m depth display. Raw metric depth is preserved separately. This preview grants no additional rights to the underlying assets. Sources/licenses:docs/traveluav-openuav/sources.md.

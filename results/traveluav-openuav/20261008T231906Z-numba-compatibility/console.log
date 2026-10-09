@@ -1,0 +1,15 @@
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting numba==0.60.0
+  Downloading numba-0.60.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+Collecting llvmlite==0.43.0
+  Downloading llvmlite-0.43.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.8 kB)
+Requirement already satisfied: numpy<2.1,>=1.22 in ./artifacts/traveluav-openuav/dependencies/env-c/lib/python3.10/site-packages (from numba==0.60.0) (1.26.3)
+Downloading numba-0.60.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 26.4 MB/s eta 0:00:00
+Downloading llvmlite-0.43.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (43.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.9/43.9 MB 31.9 MB/s eta 0:00:00
+Installing collected packages: llvmlite, numba
+Successfully installed llvmlite-0.43.0 numba-0.60.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install --upgrade pip

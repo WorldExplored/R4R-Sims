@@ -1,0 +1,384 @@
+diff --git a/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py b/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py
+index 09252a3..53f7745 100644
+--- a/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py
++++ b/Model/LLaMA-UAV/llamavid/model/llamavid_arch.py
+@@ -209,10 +209,10 @@ class LLaMAVIDMetaModel:
+ 
+     def init_bert(self, vision_width, cross_attention_freq=2, truncation_side="right"):
+         # initialize BERT tokenizer
+-        tokenizer = BertTokenizer.from_pretrained("bert-base-uncased", truncation_side=truncation_side)
++        tokenizer = BertTokenizer.from_pretrained(os.environ.get("R4R_BERT_PATH", "bert-base-uncased"), truncation_side=truncation_side)
+         tokenizer.add_special_tokens({"bos_token": "[DEC]"})
+         # initialize BERT
+-        encoder_config = BertConfig.from_pretrained("bert-base-uncased")
++        encoder_config = BertConfig.from_pretrained(os.environ.get("R4R_BERT_PATH", "bert-base-uncased"))
+         encoder_config.encoder_width = vision_width
+         # insert cross-attention layer every other block
+         encoder_config.add_cross_attention = True
+@@ -221,7 +221,7 @@ class LLaMAVIDMetaModel:
+         
+         if "qformer" in self.config.bert_type:
+             mm_model = BertLMHeadModelQF.from_pretrained(
+-                "bert-base-uncased", config=encoder_config
++                os.environ.get("R4R_BERT_PATH", "bert-base-uncased"), config=encoder_config
+             )
+             query_tokens = nn.Parameter(
+                 torch.zeros(1, self.config.num_query, encoder_config.hidden_size)
+@@ -230,7 +230,7 @@ class LLaMAVIDMetaModel:
+         elif "raw" in self.config.bert_type:
+             encoder_config.is_decoder = True
+             mm_model = BertLMHeadModelRaw.from_pretrained(
+-                "bert-base-uncased", config=encoder_config
++                os.environ.get("R4R_BERT_PATH", "bert-base-uncased"), config=encoder_config
+             )
+         else:
+             raise NotImplementedError("BERT type not implemented...")
+diff --git a/airsim_plugin/AirVLNSimulatorClientTool.py b/airsim_plugin/AirVLNSimulatorClientTool.py
+index 024c53c..169e65e 100644
+--- a/airsim_plugin/AirVLNSimulatorClientTool.py
++++ b/airsim_plugin/AirVLNSimulatorClientTool.py
+@@ -2,6 +2,7 @@ from collections import deque
+ import multiprocessing
+ import msgpackrpc
+ import time
++import r4r_observe
+ import airsim
+ import threading
+ import random
+@@ -305,8 +306,10 @@ class AirVLNSimulatorClientTool:
+             airsim_client.enableApiControl(True)
+             airsim_client.armDisarm(True)
+             airsim_client.simPause(False)
++            r4r_observe.emit("controller_events.jsonl", {"event":"segment_reset", "wall_utc":time.time(), "target_position":list(start_state.position), "target_orientation_xyzw":list(start_state.orientation)})
+             airsim_client.simSetKinematics(start_state, ignore_collision=False)
+             state_info = state_sensor.retrieve()
++            r4r_observe.emit("controller_events.jsonl", {"event":"moveOnPathAsync", "wall_utc":time.time(), "waypoints_ned_m":[list(p) for p in path], "velocity_mps":velocity, "internal_budget_s":5})
+             airsim_client.moveOnPathAsync(path=path, 
+                                 velocity=velocity, 
+                                 drivetrain=drivetrain, 
+@@ -322,10 +325,12 @@ class AirVLNSimulatorClientTool:
+             while True:
+                 time.sleep(0.005)
+                 if time.perf_counter() - start_time > 5:
++                    r4r_observe.emit("controller_events.jsonl", {"event":"internal_5s_timeout", "wall_utc":time.time()})
+                     return None
+                 target = path[current_idx]
+                 state_info = copy.deepcopy(state_sensor.retrieve())
+                 imu_info = copy.deepcopy(imu_sensor.retrieve())
++                r4r_observe.observe_state(state_info, imu_info)
+                 position = np.array(state_info['position'])
+                 pos_queue.append(position)
+                 if len(pos_queue) == pos_queue.maxlen:
+@@ -439,6 +444,7 @@ class AirVLNSimulatorClientTool:
+                 airsim_client.simDestroyObject('my_object_' + str(object_cnt - 1))
+             success = airsim_client.simSpawnObject(
+                     'my_object_' + str(object_cnt), asset_name, pose, scale, physics_enabled=False, is_blueprint=False)
++            r4r_observe.emit("object_placement.jsonl", {"asset_name":asset_name, "position_ned_m":list(pose.position), "orientation_xyzw":list(pose.orientation), "scale":list(scale), "spawn_result":success, "physics_enabled":False})
+             airsim_client.simContinueForFrames(1)
+             airsim_client.simPause(True)
+             return success
+@@ -485,7 +491,9 @@ class AirVLNSimulatorClientTool:
+                     for camera_name in cameras:
+                         ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.Scene, pixels_as_float=False, compress=False))
+                         ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.DepthPerspective, pixels_as_float=True, compress=False))
++                    rpc_start = time.perf_counter()
+                     image_datas = airsim_client.simGetImages(requests=ImageRequest)
++                    rpc_wall_s = time.perf_counter() - rpc_start
+                     images, depth_images = [], []
+                     for idx, camera_name in enumerate(cameras):
+                         rgb_resp = image_datas[2 * idx]
+@@ -495,6 +503,7 @@ class AirVLNSimulatorClientTool:
+                         depth_image = (np.clip(depth_img_in_meters, 0, 100) / 100 * 255).astype(np.uint8)
+                         images.append(image)
+                         depth_images.append(depth_image)
++                    r4r_observe.capture_images(airsim_client, image_datas, cameras, rpc_wall_s)
+                     break
+                 except Exception as e:
+                     time_sleep_cnt += 1
+@@ -548,7 +557,9 @@ class AirVLNSimulatorClientTool:
+                     for camera_name in cameras:
+                         ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.Scene, pixels_as_float=False, compress=False))
+                         ImageRequest.append(airsim.ImageRequest(camera_name, airsim.ImageType.DepthPerspective, pixels_as_float=True, compress=False))
++                    rpc_start = time.perf_counter()
+                     image_datas = airsim_client.simGetImages(requests=ImageRequest)
++                    rpc_wall_s = time.perf_counter() - rpc_start
+                     images, depth_images = [], []
+                     for idx, camera_name in enumerate(cameras):
+                         rgb_resp = image_datas[2 * idx]
+@@ -558,6 +569,7 @@ class AirVLNSimulatorClientTool:
+                         depth_image = (np.clip(depth_img_in_meters, 0, 100) / 100 * 255).astype(np.uint8)
+                         images.append(image)
+                         depth_images.append(depth_image)
++                    r4r_observe.capture_images(airsim_client, image_datas, cameras, rpc_wall_s)
+                     break
+                 except Exception as e:
+                     time_sleep_cnt += 1
+diff --git a/airsim_plugin/AirVLNSimulatorServerTool.py b/airsim_plugin/AirVLNSimulatorServerTool.py
+index 9121cd2..b8dddc8 100644
+--- a/airsim_plugin/AirVLNSimulatorServerTool.py
++++ b/airsim_plugin/AirVLNSimulatorServerTool.py
+@@ -537,7 +537,7 @@ class EventHandler(object):
+                 try:
+                     p = subprocess.Popen(
+                         subprocess_execute,
+-                        stdin=None, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT,
++                        stdin=None, stdout=open(os.path.join(os.environ["R4R_RECORD_DIR"], "scene_" + str(ports[index]) + ".log"), "a") if os.environ.get("R4R_RECORD_DIR") else subprocess.DEVNULL, stderr=subprocess.STDOUT,
+                         shell=True,
+                     )
+                     p_s.append(p)
+@@ -575,7 +575,7 @@ class EventHandler(object):
+         
+         p = subprocess.Popen(
+                         subprocess_execute,
+-                        stdin=None, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT,
++                        stdin=None, stdout=open(os.path.join(os.environ["R4R_RECORD_DIR"], "scene_" + str(ports[index]) + ".log"), "a") if os.environ.get("R4R_RECORD_DIR") else subprocess.DEVNULL, stderr=subprocess.STDOUT,
+                         shell=True,
+                     )
+         
+diff --git a/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc b/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc
+index e81ffdd..c3460fd 100644
+Binary files a/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc and b/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc differ
+diff --git a/src/common/__pycache__/param.cpython-310.pyc b/src/common/__pycache__/param.cpython-310.pyc
+index 1bf01f8..d13dd02 100644
+Binary files a/src/common/__pycache__/param.cpython-310.pyc and b/src/common/__pycache__/param.cpython-310.pyc differ
+diff --git a/src/model_wrapper/__pycache__/base_model.cpython-310.pyc b/src/model_wrapper/__pycache__/base_model.cpython-310.pyc
+index fa69a69..3da3c8b 100644
+Binary files a/src/model_wrapper/__pycache__/base_model.cpython-310.pyc and b/src/model_wrapper/__pycache__/base_model.cpython-310.pyc differ
+diff --git a/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc b/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc
+index 277083d..20eb4fe 100644
+Binary files a/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc and b/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc differ
+diff --git a/src/model_wrapper/travel_llm.py b/src/model_wrapper/travel_llm.py
+index cab236e..4e630ff 100644
+--- a/src/model_wrapper/travel_llm.py
++++ b/src/model_wrapper/travel_llm.py
+@@ -1,5 +1,6 @@
+ import numpy as np
+ import torch
++import time
+ from src.model_wrapper.base_model import BaseModelWrapper
+ from src.model_wrapper.utils.travel_util import *
+ from src.vlnce_src.dino_monitor_online import DinoMonitor
+@@ -11,10 +12,14 @@ class TravelModelWrapper(BaseModelWrapper):
+         self.model.to(torch.bfloat16)
+         self.traj_model.to(dtype=torch.bfloat16, device=self.model.device)
+         self.dino_moinitor = None
++        import r4r_observe
++        r4r_observe.placement(self.model)
+         self.model_args = model_args
+         self.data_args = data_args
+ 
+     def prepare_inputs(self, episodes, target_positions, assist_notices=None):
++        torch.cuda.synchronize()
++        prep_start = time.perf_counter()
+         inputs = []
+         rot_to_targets = []
+         
+@@ -40,6 +45,10 @@ class TravelModelWrapper(BaseModelWrapper):
+         inputs_device['return_waypoints'] = True
+         inputs_device['use_cache'] = False
+         
++        import r4r_observe
++        torch.cuda.synchronize()
++        r4r_observe.emit("stage_timings.jsonl", {"stage":"preprocessing", "wall_s":time.perf_counter()-prep_start})
++        r4r_observe.input_contract(inputs_device, target_positions, rot_to_targets)
+         return inputs_device, rot_to_targets
+ 
+     def run_llm_model(self, inputs):
+@@ -64,6 +73,8 @@ class TravelModelWrapper(BaseModelWrapper):
+     def run(self, inputs, episodes, rot_to_targets):
+         waypoints_llm_new = self.run_llm_model(inputs)
+         refined_waypoints = self.run_traj_model(episodes, waypoints_llm_new, rot_to_targets)
++        self.last_coarse_waypoints = waypoints_llm_new.copy()
++        self.last_refined_waypoints = [item.copy() for item in refined_waypoints]
+         return refined_waypoints
+     
+     def predict_done(self, episodes, object_infos):
+diff --git a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py
+index dd2d972..0241823 100644
+--- a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py
++++ b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py
+@@ -2,6 +2,8 @@ from transformers import AutoTokenizer, BertModel, BertTokenizer, RobertaModel,
+ import os
+ 
+ def get_tokenlizer(text_encoder_type):
++    if text_encoder_type == "bert-base-uncased":
++        text_encoder_type = os.environ.get("R4R_BERT_PATH", text_encoder_type)
+     if not isinstance(text_encoder_type, str):
+         # print("text_encoder_type is not a str")
+         if hasattr(text_encoder_type, "text_encoder_type"):
+@@ -21,6 +23,8 @@ def get_tokenlizer(text_encoder_type):
+ 
+ 
+ def get_pretrained_language_model(text_encoder_type):
++    if text_encoder_type == "bert-base-uncased":
++        text_encoder_type = os.environ.get("R4R_BERT_PATH", text_encoder_type)
+     if text_encoder_type == "bert-base-uncased" or (os.path.isdir(text_encoder_type) and os.path.exists(text_encoder_type)):
+         return BertModel.from_pretrained(text_encoder_type)
+     if text_encoder_type == "roberta-base":
+diff --git a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py
+index 84a962e..d98fce2 100644
+--- a/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py
++++ b/src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py
+@@ -31,7 +31,10 @@ def load_model(model_config_path: str, model_checkpoint_path: str, device: str =
+     args.device = device
+     model = build_model(args)
+     checkpoint = torch.load(model_checkpoint_path, map_location="cpu")
+-    model.load_state_dict(clean_state_dict(checkpoint["model"]), strict=False)
++    import r4r_observe
++    weights = clean_state_dict(checkpoint["model"])
++    load_result = model.load_state_dict(weights, strict=False)
++    r4r_observe.load_result("detector", model, weights, load_result)
+     model.eval()
+     return model
+ 
+diff --git a/src/model_wrapper/utils/travel_util.py b/src/model_wrapper/utils/travel_util.py
+index f862140..19eb101 100644
+--- a/src/model_wrapper/utils/travel_util.py
++++ b/src/model_wrapper/utils/travel_util.py
+@@ -10,6 +10,7 @@ from scipy.spatial.transform import Rotation as R
+ import torch
+ import numpy as np
+ import math
++import r4r_observe
+ 
+ 
+ sys.path.append(str(Path(str(os.getcwd())).resolve()))
+@@ -35,10 +36,13 @@ def load_model(args):
+     if lora_enable:
+         print(f"Loading LoRA weights from {model_path}")
+         model = PeftModel.from_pretrained(model, model_path)
++        r4r_observe.verify_lora(model, model_path)
+         non_lora_weights = torch.load(os.path.join(model_path, 'non_lora_trainables.bin'), map_location='cpu')
+-        model.load_state_dict(non_lora_weights, strict=False)    
++        load_result = model.load_state_dict(non_lora_weights, strict=False)
++        r4r_observe.load_result("non_lora", model, non_lora_weights, load_result)    
+         mm_projector_weights = torch.load(os.path.join(model_path, 'mm_projector.bin'), map_location='cpu')
+-        model.load_state_dict(mm_projector_weights, strict=False)
++        load_result = model.load_state_dict(mm_projector_weights, strict=False)
++        r4r_observe.load_result("mm_projector", model, mm_projector_weights, load_result)
+     
+     return tokenizer, model, image_processor
+ 
+@@ -48,7 +52,8 @@ def load_traj_model(model_args):
+     traj_model = VisionTrajectoryGenerator(config)
+     traj_weights = torch.load(os.path.join(model_args.traj_model_path, 'model_5.pth'), map_location='cpu')
+     traj_weights = {k: v.to(torch.bfloat16) for k, v in traj_weights.items()}
+-    traj_model.load_state_dict(traj_weights, strict=False)
++    load_result = traj_model.load_state_dict(traj_weights, strict=False)
++    r4r_observe.load_result("trajectory", traj_model, traj_weights, load_result)
+     return traj_model
+ 
+ 
+diff --git a/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc b/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc
+index e1bbf0d..bc9767f 100644
+Binary files a/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc and b/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc differ
+diff --git a/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc b/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc
+index 290a32a..1a798d5 100644
+Binary files a/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc and b/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc differ
+diff --git a/src/vlnce_src/dino_monitor_online.py b/src/vlnce_src/dino_monitor_online.py
+index 4e07cc8..beac723 100644
+--- a/src/vlnce_src/dino_monitor_online.py
++++ b/src/vlnce_src/dino_monitor_online.py
+@@ -4,6 +4,7 @@ import math
+ import torch
+ from PIL import Image
+ import json
++import r4r_observe
+ from src.common.param import model_args, args
+ 
+ # RGB_FOLDER = ['frontcamerarecord', 'downcamerarecord']
+@@ -96,6 +97,7 @@ class DinoMonitor:
+             if (box[2] - box[0]) / W > 0.6 or (box[3] - box[1]) / H > 0.5:
+                 continue
+             boxes.append(box)
++        r4r_observe.emit("detector_predictions.jsonl", {"object_prompt":prompt, "boxes_px":[np.asarray(b).tolist() for b in boxes], "logits":logits.tolist(), "input_rgb_shape":list(img_src.shape), "box_threshold":0.6, "text_threshold":0.40, "note":"upstream filters boxes by area but retains the original logits vector"})
+         return boxes, logits
+     
+ dino_monitor = DinoMonitor.get_instance()
+diff --git a/src/vlnce_src/env_uav.py b/src/vlnce_src/env_uav.py
+index 39df41c..adcaad1 100644
+--- a/src/vlnce_src/env_uav.py
++++ b/src/vlnce_src/env_uav.py
+@@ -426,6 +426,8 @@ class AirVLNENV:
+             for index_2, _ in enumerate(item['open_scenes']):
+                 batch_results.append(results[index_1][index_2]['states'])
+                 batch_iscollision.append(results[index_1][index_2]['collision'])
++        import r4r_observe
++        r4r_observe.emit("padding_events.jsonl", {"returned_state_counts":[len(x) for x in batch_results], "heuristic_collisions":batch_iscollision, "oracle_source":"requested waypoints; not achieved-state distance"})
+         # When the server returns less than 5 points (collision or environment blockage), fill it to a length of 5
+         for batch_idx, batch_result in enumerate(batch_results):
+             if 0 < len(batch_result) < 5:
+diff --git a/src/vlnce_src/eval.py b/src/vlnce_src/eval.py
+index 360c7e3..e5db53e 100644
+--- a/src/vlnce_src/eval.py
++++ b/src/vlnce_src/eval.py
+@@ -5,6 +5,7 @@ import time
+ import json
+ import shutil
+ import random
++import r4r_observe
+ 
+ import cv2
+ import numpy as np
+@@ -20,7 +21,7 @@ from src.model_wrapper.base_model import BaseModelWrapper
+ from src.common.param import args, model_args, data_args
+ from env_uav import AirVLNENV
+ from assist import Assist
+-from src.vlnce_src.closeloop_util import EvalBatchState, BatchIterator, setup, CheckPort, initialize_env_eval, is_dist_avail_and_initialized
++from src.vlnce_src.closeloop_util import EvalBatchState, BatchIterator, setup, CheckPort, initialize_env_eval, is_dist_avail_and_initialized, save_to_dataset_eval
+ 
+ def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, eval_save_dir):
+     model_wrapper.eval()
+@@ -40,21 +41,40 @@ def eval(model_wrapper: BaseModelWrapper, assist: Assist, eval_env: AirVLNENV, e
+             
+             inputs, rot_to_targets = model_wrapper.prepare_inputs(batch_state.episodes, batch_state.target_positions)
+ 
++            assist_notices = None
+             for t in range(int(args.maxWaypoints) + 1):
+                 logger.info('Step: {} \t Completed: {} / {}'.format(t, int(eval_env.index_data)-int(eval_env.batch_size), end_iter))
+ 
+                 is_terminate = batch_state.check_batch_termination(t)
+                 if is_terminate:
++                    r4r_observe.terminate(batch_state, t, int(args.maxWaypoints))
+                     break
+                 
++                torch.cuda.synchronize()
++                model_start = time.perf_counter()
+                 refined_waypoints = model_wrapper.run(inputs=inputs, episodes=batch_state.episodes, rot_to_targets=rot_to_targets)
++                torch.cuda.synchronize()
++                model_latency_s = time.perf_counter() - model_start
++                r4r_observe.trace_decision(batch_state, t, model_wrapper, model_latency_s, assist_notices)
++                controller_start = time.perf_counter()
+                 eval_env.makeActions(refined_waypoints)
++                r4r_observe.emit("stage_timings.jsonl", {"stage":"controller_rpc", "step":t, "wall_s":time.perf_counter()-controller_start})
++                observation_start = time.perf_counter()
+                 outputs = eval_env.get_obs()
++                r4r_observe.emit("stage_timings.jsonl", {"stage":"observations_and_audit_capture", "step":t, "wall_s":time.perf_counter()-observation_start})
+                 batch_state.update_from_env_output(outputs)
+                 
++                torch.cuda.synchronize()
++                dino_start = time.perf_counter()
+                 batch_state.predict_dones = model_wrapper.predict_done(batch_state.episodes, batch_state.object_infos)
+                 
++                torch.cuda.synchronize()
++                dino_latency_s = time.perf_counter() - dino_start
+                 batch_state.update_metric()
++                r4r_observe.trace_outcome(batch_state, t, dino_latency_s)
++                for i, episode_id in enumerate(batch_state.ori_data_dirs):
++                    if i not in batch_state.envs_to_pause:
++                        save_to_dataset_eval(batch_state.episodes[i], os.path.join(os.environ["R4R_CAPTURE_DIR"], "in_progress", os.path.basename(episode_id)), episode_id)
+                 
+                 assist_notices = batch_state.get_assist_notices()
+                 inputs, _ = model_wrapper.prepare_inputs(batch_state.episodes, batch_state.target_positions, assist_notices)
+diff --git a/utils/__pycache__/CN.cpython-310.pyc b/utils/__pycache__/CN.cpython-310.pyc
+index 64bbd93..43d8b0e 100644
+Binary files a/utils/__pycache__/CN.cpython-310.pyc and b/utils/__pycache__/CN.cpython-310.pyc differ
+diff --git a/utils/__pycache__/env_utils_uav.cpython-310.pyc b/utils/__pycache__/env_utils_uav.cpython-310.pyc
+index 2fcb827..568b00a 100644
+Binary files a/utils/__pycache__/env_utils_uav.cpython-310.pyc and b/utils/__pycache__/env_utils_uav.cpython-310.pyc differ
+diff --git a/utils/__pycache__/logger.cpython-310.pyc b/utils/__pycache__/logger.cpython-310.pyc
+index 9b2774c..2644eb4 100644
+Binary files a/utils/__pycache__/logger.cpython-310.pyc and b/utils/__pycache__/logger.cpython-310.pyc differ
+diff --git a/utils/__pycache__/utils.cpython-310.pyc b/utils/__pycache__/utils.cpython-310.pyc
+index 91eaf08..8ca41a8 100644
+Binary files a/utils/__pycache__/utils.cpython-310.pyc and b/utils/__pycache__/utils.cpython-310.pyc differ

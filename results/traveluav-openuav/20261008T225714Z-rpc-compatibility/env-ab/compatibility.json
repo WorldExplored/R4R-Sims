@@ -1,0 +1,12 @@
+{
+  "msgpack_version": [
+    1,
+    1,
+    0
+  ],
+  "backend": "msgpack._cmsgpack",
+  "rpc_transport_before_sha256": "963fbf7943354e08dc0a92c65d44b726b6952e16c0f13acd955101193b6c75de",
+  "rpc_transport_after_sha256": "564c7580e832aac75890084099785e90708cffd4b49a1e4ca734329692494a10",
+  "encoding": "Packer retains legacy use_bin_type=False; Unpacker raw=True only when legacy encoding was None, raw=False for UTF-8; no method/action changes",
+  "roundtrip_checks": "passed"
+}

@@ -1,0 +1,33 @@
+{
+  "run_id": "20261008T231906Z-numba-compatibility",
+  "settled_utc": "2026-10-09T00:04:53Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 59,
+      "sha256": "921869b2faa13107daad6332704410c92e4a5aeef340ab383cb01e61ec4041fb"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 1309,
+      "sha256": "7776b6ddf0b1fa5b8287a38a3fe6e8712b168064731228041885301fce4003b6"
+    },
+    {
+      "location": "record",
+      "relative_path": "pip-freeze.txt",
+      "bytes": 1585,
+      "sha256": "1ed0d2bd09b58c989d62e23ae531431592da12be4ea6fc9a0325ebc4cf15e87d"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 49,
+      "sha256": "7d356b95340de373329fbc867a31f865985f24c9de198c0e26d8c7cea6deb512"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T231906Z-numba-compatibility",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T231906Z-numba-compatibility",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

@@ -1,0 +1,17 @@
+ M Model/LLaMA-UAV/llamavid/model/llamavid_arch.py
+ M airsim_plugin/AirVLNSimulatorClientTool.py
+ M airsim_plugin/AirVLNSimulatorServerTool.py
+ M src/common/__pycache__/param.cpython-310.pyc
+ M src/model_wrapper/__pycache__/base_model.cpython-310.pyc
+ M src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc
+ M src/model_wrapper/travel_llm.py
+ M src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py
+ M src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py
+ M src/model_wrapper/utils/travel_util.py
+ M src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc
+ M src/vlnce_src/dino_monitor_online.py
+ M src/vlnce_src/env_uav.py
+ M src/vlnce_src/eval.py
+ M utils/__pycache__/CN.cpython-310.pyc
+ M utils/__pycache__/logger.cpython-310.pyc
+ M utils/__pycache__/utils.cpython-310.pyc

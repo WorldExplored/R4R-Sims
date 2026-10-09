@@ -1,0 +1,20 @@
+python3.10 -m venv /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install pip==24.0 setuptools==68.2.2 wheel==0.41.3 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install -r /workspace/R4R-Sims/simulators/traveluav-openuav/requirements-c.txt 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install --no-build-isolation --no-deps airsim==1.8.1 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install --no-deps -e /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/Model/LLaMA-UAV 
+exit_status=0
+git clone https://github.com/haotian-liu/LLaVA.git /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/llava 
+exit_status=0
+git -C /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/llava checkout --detach 1619889c712e347be1cb4f78ec66e7cf414ac1a6 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python -m pip install --no-deps -e /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/llava 
+exit_status=0
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-c/bin/python /workspace/R4R-Sims/simulators/traveluav-openuav/assets.py c --record /workspace/R4R-Sims/results/traveluav-openuav/20261008T221632Z-setup-c-7570/assets.json 
+exit_status=0

@@ -1,0 +1,12 @@
+PROJECT_ROOT_DIR /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py:646: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  t.setDaemon(daemon)
+start listening 	127.0.0.1:30000
+2026-10-08 23:57:12	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:57:12	关闭场景中
+2026-10-08 23:57:12	已关闭所有场景
+[('ModernCityMap', 0)]
+bash /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/envs/./closeloop_envs/ModernCityMap.sh -RenderOffscreen -NoSound -NoVSync -GraphicsAdapter=0 -settings=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/settings/30001/settings.json 
+finished b'127.0.0.1'
+2026-10-08 23:57:23	END reopen_scenes

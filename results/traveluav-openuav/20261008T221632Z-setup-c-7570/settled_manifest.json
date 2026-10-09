@@ -1,0 +1,51 @@
+{
+  "run_id": "20261008T221632Z-setup-c-7570",
+  "settled_utc": "2026-10-09T00:04:51Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "assets.json",
+      "bytes": 12785,
+      "sha256": "4f072d8c548ae7649112e1eb5bda333aa39312f8cff423b4576038b42bff4661"
+    },
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 1721,
+      "sha256": "334d7d37b35dea93523e85c4520fecfbbda67fcdfd55fc079ecfd26464be9baf"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 36694,
+      "sha256": "c905815397b3513aa17cf46d1df1bab5edb627e70d784a08b2d3037b1114f2b4"
+    },
+    {
+      "location": "record",
+      "relative_path": "pip-freeze.txt",
+      "bytes": 1398,
+      "sha256": "ca7242721ea2ea630af266cef70e804b82d710090d23c098194e0663a89dedba"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 112,
+      "sha256": "e92336ba971038866f2b1c698f4f489a690a9fa0cb3bc94f463fa2a73ab1d106"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream-before.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "location": "record",
+      "relative_path": "upstream-status.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T221632Z-setup-c-7570",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T221632Z-setup-c-7570",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

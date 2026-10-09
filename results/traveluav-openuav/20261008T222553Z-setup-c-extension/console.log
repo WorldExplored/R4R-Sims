@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/R4R-Sims/simulators/traveluav-openuav/compile_cuda.py", line 17, in <module>
+    t.extractall(unpack)
+  File "/usr/lib/python3.10/tarfile.py", line 2310, in extractall
+    self._extract_one(tarinfo, path, set_attrs=not tarinfo.isdir(),
+  File "/usr/lib/python3.10/tarfile.py", line 2386, in _extract_one
+    self._handle_fatal_error(e)
+  File "/usr/lib/python3.10/tarfile.py", line 2380, in _extract_one
+    self._extract_member(tarinfo, os.path.join(path, tarinfo.name),
+  File "/usr/lib/python3.10/tarfile.py", line 2470, in _extract_member
+    self.makefile(tarinfo, targetpath)
+  File "/usr/lib/python3.10/tarfile.py", line 2517, in makefile
+    with bltn_open(targetpath, "wb") as target:
+PermissionError: [Errno 13] Permission denied: '/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-packages/cuda_nvcc-linux-x86_64-11.8.89-archive/LICENSE'

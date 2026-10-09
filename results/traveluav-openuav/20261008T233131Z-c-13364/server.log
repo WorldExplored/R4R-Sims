@@ -1,0 +1,2224 @@
+PROJECT_ROOT_DIR /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py:643: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  t.setDaemon(daemon)
+start listening 	127.0.0.1:30000
+2026-10-08 23:34:00	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:00	关闭场景中
+2026-10-08 23:34:00	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:00	END reopen_scenes
+2026-10-08 23:34:03	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:03	关闭场景中
+2026-10-08 23:34:03	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:03	END reopen_scenes
+2026-10-08 23:34:06	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:06	关闭场景中
+2026-10-08 23:34:06	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:06	END reopen_scenes
+2026-10-08 23:34:09	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:09	关闭场景中
+2026-10-08 23:34:09	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:09	END reopen_scenes
+2026-10-08 23:34:12	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:12	关闭场景中
+2026-10-08 23:34:12	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:12	END reopen_scenes
+2026-10-08 23:34:15	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:15	关闭场景中
+2026-10-08 23:34:15	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:15	END reopen_scenes
+2026-10-08 23:34:18	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:18	关闭场景中
+2026-10-08 23:34:18	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:18	END reopen_scenes
+2026-10-08 23:34:21	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:21	关闭场景中
+2026-10-08 23:34:21	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:21	END reopen_scenes
+2026-10-08 23:34:24	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:24	关闭场景中
+2026-10-08 23:34:24	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:24	END reopen_scenes
+2026-10-08 23:34:27	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:27	关闭场景中
+2026-10-08 23:34:27	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:27	END reopen_scenes
+2026-10-08 23:34:30	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:30	关闭场景中
+2026-10-08 23:34:30	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:30	END reopen_scenes
+2026-10-08 23:34:33	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:33	关闭场景中
+2026-10-08 23:34:33	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:33	END reopen_scenes
+2026-10-08 23:34:36	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:36	关闭场景中
+2026-10-08 23:34:36	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:36	END reopen_scenes
+2026-10-08 23:34:39	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:39	关闭场景中
+2026-10-08 23:34:39	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:39	END reopen_scenes
+2026-10-08 23:34:42	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:42	关闭场景中
+2026-10-08 23:34:42	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:42	END reopen_scenes
+2026-10-08 23:34:45	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:45	关闭场景中
+2026-10-08 23:34:45	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:45	END reopen_scenes
+2026-10-08 23:34:48	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:48	关闭场景中
+2026-10-08 23:34:48	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:48	END reopen_scenes
+2026-10-08 23:34:51	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:51	关闭场景中
+2026-10-08 23:34:51	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:51	END reopen_scenes
+2026-10-08 23:34:54	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:54	关闭场景中
+2026-10-08 23:34:54	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:54	END reopen_scenes
+2026-10-08 23:34:57	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:34:57	关闭场景中
+2026-10-08 23:34:57	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:34:57	END reopen_scenes
+2026-10-08 23:35:00	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:00	关闭场景中
+2026-10-08 23:35:00	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:00	END reopen_scenes
+2026-10-08 23:35:03	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:03	关闭场景中
+2026-10-08 23:35:03	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:03	END reopen_scenes
+2026-10-08 23:35:06	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:06	关闭场景中
+2026-10-08 23:35:06	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:06	END reopen_scenes
+2026-10-08 23:35:09	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:09	关闭场景中
+2026-10-08 23:35:09	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:09	END reopen_scenes
+2026-10-08 23:35:12	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:12	关闭场景中
+2026-10-08 23:35:12	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:13	END reopen_scenes
+2026-10-08 23:35:16	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:16	关闭场景中
+2026-10-08 23:35:16	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:16	END reopen_scenes
+2026-10-08 23:35:19	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:19	关闭场景中
+2026-10-08 23:35:19	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:19	END reopen_scenes
+2026-10-08 23:35:22	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:22	关闭场景中
+2026-10-08 23:35:22	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:22	END reopen_scenes
+2026-10-08 23:35:25	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:25	关闭场景中
+2026-10-08 23:35:25	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:25	END reopen_scenes
+2026-10-08 23:35:28	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:28	关闭场景中
+2026-10-08 23:35:28	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:28	END reopen_scenes
+2026-10-08 23:35:31	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:31	关闭场景中
+2026-10-08 23:35:31	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:31	END reopen_scenes
+2026-10-08 23:35:34	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:34	关闭场景中
+2026-10-08 23:35:34	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:34	END reopen_scenes
+2026-10-08 23:35:37	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:37	关闭场景中
+2026-10-08 23:35:37	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:37	END reopen_scenes
+2026-10-08 23:35:40	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:40	关闭场景中
+2026-10-08 23:35:40	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:40	END reopen_scenes
+2026-10-08 23:35:43	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:43	关闭场景中
+2026-10-08 23:35:43	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:43	END reopen_scenes
+2026-10-08 23:35:46	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:46	关闭场景中
+2026-10-08 23:35:46	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:46	END reopen_scenes
+2026-10-08 23:35:49	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:49	关闭场景中
+2026-10-08 23:35:49	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:49	END reopen_scenes
+2026-10-08 23:35:52	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:52	关闭场景中
+2026-10-08 23:35:52	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:52	END reopen_scenes
+2026-10-08 23:35:55	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:55	关闭场景中
+2026-10-08 23:35:55	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:55	END reopen_scenes
+2026-10-08 23:35:58	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:35:58	关闭场景中
+2026-10-08 23:35:58	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:35:58	END reopen_scenes
+2026-10-08 23:36:01	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:01	关闭场景中
+2026-10-08 23:36:01	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:01	END reopen_scenes
+2026-10-08 23:36:04	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:04	关闭场景中
+2026-10-08 23:36:04	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:04	END reopen_scenes
+2026-10-08 23:36:07	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:07	关闭场景中
+2026-10-08 23:36:07	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:07	END reopen_scenes
+2026-10-08 23:36:10	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:10	关闭场景中
+2026-10-08 23:36:10	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:10	END reopen_scenes
+2026-10-08 23:36:13	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:13	关闭场景中
+2026-10-08 23:36:13	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:13	END reopen_scenes
+2026-10-08 23:36:16	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:16	关闭场景中
+2026-10-08 23:36:16	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:16	END reopen_scenes
+2026-10-08 23:36:19	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:19	关闭场景中
+2026-10-08 23:36:19	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:19	END reopen_scenes
+2026-10-08 23:36:22	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:22	关闭场景中
+2026-10-08 23:36:22	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:22	END reopen_scenes
+2026-10-08 23:36:25	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:25	关闭场景中
+2026-10-08 23:36:25	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:25	END reopen_scenes
+2026-10-08 23:36:28	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:28	关闭场景中
+2026-10-08 23:36:28	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:28	END reopen_scenes
+2026-10-08 23:36:31	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:31	关闭场景中
+2026-10-08 23:36:31	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:31	END reopen_scenes
+2026-10-08 23:36:34	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:34	关闭场景中
+2026-10-08 23:36:34	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:34	END reopen_scenes
+2026-10-08 23:36:37	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:37	关闭场景中
+2026-10-08 23:36:37	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:37	END reopen_scenes
+2026-10-08 23:36:40	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:40	关闭场景中
+2026-10-08 23:36:40	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:40	END reopen_scenes
+2026-10-08 23:36:43	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:43	关闭场景中
+2026-10-08 23:36:43	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:43	END reopen_scenes
+2026-10-08 23:36:46	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:46	关闭场景中
+2026-10-08 23:36:46	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:46	END reopen_scenes
+2026-10-08 23:36:49	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:49	关闭场景中
+2026-10-08 23:36:49	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:49	END reopen_scenes
+2026-10-08 23:36:52	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:52	关闭场景中
+2026-10-08 23:36:52	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:52	END reopen_scenes
+2026-10-08 23:36:55	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:55	关闭场景中
+2026-10-08 23:36:55	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:55	END reopen_scenes
+2026-10-08 23:36:58	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:36:58	关闭场景中
+2026-10-08 23:36:58	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:36:58	END reopen_scenes
+2026-10-08 23:37:01	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:01	关闭场景中
+2026-10-08 23:37:01	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:01	END reopen_scenes
+2026-10-08 23:37:04	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:04	关闭场景中
+2026-10-08 23:37:04	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:05	END reopen_scenes
+2026-10-08 23:37:08	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:08	关闭场景中
+2026-10-08 23:37:08	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:08	END reopen_scenes
+2026-10-08 23:37:11	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:11	关闭场景中
+2026-10-08 23:37:11	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:11	END reopen_scenes
+2026-10-08 23:37:14	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:14	关闭场景中
+2026-10-08 23:37:14	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:14	END reopen_scenes
+2026-10-08 23:37:17	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:17	关闭场景中
+2026-10-08 23:37:17	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:17	END reopen_scenes
+2026-10-08 23:37:20	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:20	关闭场景中
+2026-10-08 23:37:20	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:20	END reopen_scenes
+2026-10-08 23:37:23	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:23	关闭场景中
+2026-10-08 23:37:23	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:23	END reopen_scenes
+2026-10-08 23:37:26	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:26	关闭场景中
+2026-10-08 23:37:26	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:26	END reopen_scenes
+2026-10-08 23:37:29	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:29	关闭场景中
+2026-10-08 23:37:29	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:29	END reopen_scenes
+2026-10-08 23:37:32	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:32	关闭场景中
+2026-10-08 23:37:32	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:32	END reopen_scenes
+2026-10-08 23:37:35	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:35	关闭场景中
+2026-10-08 23:37:35	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:35	END reopen_scenes
+2026-10-08 23:37:38	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:38	关闭场景中
+2026-10-08 23:37:38	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:38	END reopen_scenes
+2026-10-08 23:37:41	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:41	关闭场景中
+2026-10-08 23:37:41	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:41	END reopen_scenes
+2026-10-08 23:37:44	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:44	关闭场景中
+2026-10-08 23:37:44	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:44	END reopen_scenes
+2026-10-08 23:37:47	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:47	关闭场景中
+2026-10-08 23:37:47	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:47	END reopen_scenes
+2026-10-08 23:37:50	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:50	关闭场景中
+2026-10-08 23:37:50	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:50	END reopen_scenes
+2026-10-08 23:37:53	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:53	关闭场景中
+2026-10-08 23:37:53	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:53	END reopen_scenes
+2026-10-08 23:37:56	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:56	关闭场景中
+2026-10-08 23:37:56	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:56	END reopen_scenes
+2026-10-08 23:37:59	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:37:59	关闭场景中
+2026-10-08 23:37:59	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:37:59	END reopen_scenes
+2026-10-08 23:38:02	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:02	关闭场景中
+2026-10-08 23:38:02	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:02	END reopen_scenes
+2026-10-08 23:38:05	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:05	关闭场景中
+2026-10-08 23:38:05	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:05	END reopen_scenes
+2026-10-08 23:38:08	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:08	关闭场景中
+2026-10-08 23:38:08	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:08	END reopen_scenes
+2026-10-08 23:38:11	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:11	关闭场景中
+2026-10-08 23:38:11	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:11	END reopen_scenes
+2026-10-08 23:38:14	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:14	关闭场景中
+2026-10-08 23:38:14	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:14	END reopen_scenes
+2026-10-08 23:38:17	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:17	关闭场景中
+2026-10-08 23:38:17	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:17	END reopen_scenes
+2026-10-08 23:38:20	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:20	关闭场景中
+2026-10-08 23:38:20	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:20	END reopen_scenes
+2026-10-08 23:38:23	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:23	关闭场景中
+2026-10-08 23:38:23	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:23	END reopen_scenes
+2026-10-08 23:38:26	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:26	关闭场景中
+2026-10-08 23:38:26	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:26	END reopen_scenes
+2026-10-08 23:38:29	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:29	关闭场景中
+2026-10-08 23:38:29	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:29	END reopen_scenes
+2026-10-08 23:38:32	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:32	关闭场景中
+2026-10-08 23:38:32	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:32	END reopen_scenes
+2026-10-08 23:38:35	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:35	关闭场景中
+2026-10-08 23:38:35	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:35	END reopen_scenes
+2026-10-08 23:38:38	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:38	关闭场景中
+2026-10-08 23:38:38	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:38	END reopen_scenes
+2026-10-08 23:38:41	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:41	关闭场景中
+2026-10-08 23:38:41	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:41	END reopen_scenes
+2026-10-08 23:38:44	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:44	关闭场景中
+2026-10-08 23:38:44	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:44	END reopen_scenes
+2026-10-08 23:38:47	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:47	关闭场景中
+2026-10-08 23:38:47	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:48	END reopen_scenes
+2026-10-08 23:38:51	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:51	关闭场景中
+2026-10-08 23:38:51	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:51	END reopen_scenes
+2026-10-08 23:38:54	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:54	关闭场景中
+2026-10-08 23:38:54	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:54	END reopen_scenes
+2026-10-08 23:38:57	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:38:57	关闭场景中
+2026-10-08 23:38:57	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:38:57	END reopen_scenes
+2026-10-08 23:39:00	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:00	关闭场景中
+2026-10-08 23:39:00	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:00	END reopen_scenes
+2026-10-08 23:39:03	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:03	关闭场景中
+2026-10-08 23:39:03	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:03	END reopen_scenes
+2026-10-08 23:39:06	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:06	关闭场景中
+2026-10-08 23:39:06	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:06	END reopen_scenes
+2026-10-08 23:39:09	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:09	关闭场景中
+2026-10-08 23:39:09	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:09	END reopen_scenes
+2026-10-08 23:39:12	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:12	关闭场景中
+2026-10-08 23:39:12	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:12	END reopen_scenes
+2026-10-08 23:39:15	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:15	关闭场景中
+2026-10-08 23:39:15	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:15	END reopen_scenes
+2026-10-08 23:39:18	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:18	关闭场景中
+2026-10-08 23:39:18	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:18	END reopen_scenes
+2026-10-08 23:39:21	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:21	关闭场景中
+2026-10-08 23:39:21	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:21	END reopen_scenes
+2026-10-08 23:39:24	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:24	关闭场景中
+2026-10-08 23:39:24	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:24	END reopen_scenes
+2026-10-08 23:39:27	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:27	关闭场景中
+2026-10-08 23:39:27	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:27	END reopen_scenes
+2026-10-08 23:39:30	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:30	关闭场景中
+2026-10-08 23:39:30	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:30	END reopen_scenes
+2026-10-08 23:39:33	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:33	关闭场景中
+2026-10-08 23:39:33	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:33	END reopen_scenes
+2026-10-08 23:39:36	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:36	关闭场景中
+2026-10-08 23:39:36	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:36	END reopen_scenes
+2026-10-08 23:39:39	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:39	关闭场景中
+2026-10-08 23:39:39	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:39	END reopen_scenes
+2026-10-08 23:39:42	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:42	关闭场景中
+2026-10-08 23:39:42	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:42	END reopen_scenes
+2026-10-08 23:39:45	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:45	关闭场景中
+2026-10-08 23:39:45	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:45	END reopen_scenes
+2026-10-08 23:39:48	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:48	关闭场景中
+2026-10-08 23:39:48	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:48	END reopen_scenes
+2026-10-08 23:39:51	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:51	关闭场景中
+2026-10-08 23:39:51	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:51	END reopen_scenes
+2026-10-08 23:39:54	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:54	关闭场景中
+2026-10-08 23:39:54	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:54	END reopen_scenes
+2026-10-08 23:39:57	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:39:57	关闭场景中
+2026-10-08 23:39:57	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:39:57	END reopen_scenes
+2026-10-08 23:40:00	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:00	关闭场景中
+2026-10-08 23:40:00	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:00	END reopen_scenes
+2026-10-08 23:40:03	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:03	关闭场景中
+2026-10-08 23:40:03	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:03	END reopen_scenes
+2026-10-08 23:40:06	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:06	关闭场景中
+2026-10-08 23:40:06	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:06	END reopen_scenes
+2026-10-08 23:40:09	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:09	关闭场景中
+2026-10-08 23:40:09	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:09	END reopen_scenes
+2026-10-08 23:40:12	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:12	关闭场景中
+2026-10-08 23:40:12	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:12	END reopen_scenes
+2026-10-08 23:40:15	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:15	关闭场景中
+2026-10-08 23:40:15	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:15	END reopen_scenes
+2026-10-08 23:40:18	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:18	关闭场景中
+2026-10-08 23:40:18	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:18	END reopen_scenes
+2026-10-08 23:40:21	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:21	关闭场景中
+2026-10-08 23:40:21	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:21	END reopen_scenes
+2026-10-08 23:40:24	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:24	关闭场景中
+2026-10-08 23:40:24	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:24	END reopen_scenes
+2026-10-08 23:40:27	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:27	关闭场景中
+2026-10-08 23:40:27	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:27	END reopen_scenes
+2026-10-08 23:40:30	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:30	关闭场景中
+2026-10-08 23:40:30	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:30	END reopen_scenes
+2026-10-08 23:40:33	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:33	关闭场景中
+2026-10-08 23:40:33	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:34	END reopen_scenes
+2026-10-08 23:40:37	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:37	关闭场景中
+2026-10-08 23:40:37	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:37	END reopen_scenes
+2026-10-08 23:40:40	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:40	关闭场景中
+2026-10-08 23:40:40	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:40	END reopen_scenes
+2026-10-08 23:40:43	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:43	关闭场景中
+2026-10-08 23:40:43	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:43	END reopen_scenes
+2026-10-08 23:40:46	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:46	关闭场景中
+2026-10-08 23:40:46	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:46	END reopen_scenes
+2026-10-08 23:40:49	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:49	关闭场景中
+2026-10-08 23:40:49	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:49	END reopen_scenes
+2026-10-08 23:40:52	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:52	关闭场景中
+2026-10-08 23:40:52	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:52	END reopen_scenes
+2026-10-08 23:40:55	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:55	关闭场景中
+2026-10-08 23:40:55	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:55	END reopen_scenes
+2026-10-08 23:40:58	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:40:58	关闭场景中
+2026-10-08 23:40:58	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:40:58	END reopen_scenes
+2026-10-08 23:41:01	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:01	关闭场景中
+2026-10-08 23:41:01	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:01	END reopen_scenes
+2026-10-08 23:41:04	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:04	关闭场景中
+2026-10-08 23:41:04	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:04	END reopen_scenes
+2026-10-08 23:41:07	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:07	关闭场景中
+2026-10-08 23:41:07	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:07	END reopen_scenes
+2026-10-08 23:41:10	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:10	关闭场景中
+2026-10-08 23:41:10	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:10	END reopen_scenes
+2026-10-08 23:41:13	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:16	关闭场景中
+2026-10-08 23:41:16	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:16	END reopen_scenes
+2026-10-08 23:41:19	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:22	关闭场景中
+2026-10-08 23:41:22	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:22	END reopen_scenes
+2026-10-08 23:41:25	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:25	关闭场景中
+2026-10-08 23:41:25	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:25	END reopen_scenes
+2026-10-08 23:41:28	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:28	关闭场景中
+2026-10-08 23:41:28	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:28	END reopen_scenes
+2026-10-08 23:41:31	START reopen_scenes
+[[b'ModernCityMap', 0]]
+2026-10-08 23:41:31	关闭场景中
+2026-10-08 23:41:31	已关闭所有场景
+[[b'ModernCityMap', 0]]
+can not find scene file: b'ModernCityMap'
+
+traceback: Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 597, in reopen_scenes
+    result = self._open_scenes(ip, scen_id_gpu_list)
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/AirVLNSimulatorServerTool.py", line 510, in _open_scenes
+    raise KeyError
+KeyError
+
+2026-10-08 23:41:32	END reopen_scenes

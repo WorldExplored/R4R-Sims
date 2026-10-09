@@ -1,0 +1,33 @@
+{
+  "run_id": "20261008T230556Z-checkpoint-preflight",
+  "settled_utc": "2026-10-09T00:04:53Z",
+  "files": [
+    {
+      "location": "record",
+      "relative_path": "checkpoints.json",
+      "bytes": 10953,
+      "sha256": "954a4ca74a5c6b0c36f3d40c278cc1bea0626ceac561ab2d8fc4581e0f58a535"
+    },
+    {
+      "location": "record",
+      "relative_path": "commands.log",
+      "bytes": 74,
+      "sha256": "ce8f04e1c7daf84d0a7e04f867d9240d75bd6ca006753f13efe9d370a59232bc"
+    },
+    {
+      "location": "record",
+      "relative_path": "console.log",
+      "bytes": 101,
+      "sha256": "2ebc1669c5e8ba557ef91841beb17a027d553e7c23b15a2e8f3f3e2535185ad7"
+    },
+    {
+      "location": "record",
+      "relative_path": "run.json",
+      "bytes": 48,
+      "sha256": "ef86b60989a6a42efa7424e5cffc3f3b9da6a3351c34d464eccb5baab332b1b8"
+    }
+  ],
+  "remote_records": "/workspace/R4R-Sims/results/traveluav-openuav/20261008T230556Z-checkpoint-preflight",
+  "remote_artifacts": "/workspace/R4R-Sims/artifacts/traveluav-openuav/20261008T230556Z-checkpoint-preflight",
+  "previous_manifests": "retained historical; this manifest covers final settled record revisions"
+}

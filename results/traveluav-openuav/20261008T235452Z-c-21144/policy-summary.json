@@ -1,0 +1,353 @@
+{
+  "learned_decisions": 10,
+  "budget": 10,
+  "outcomes": [
+    {
+      "step": 0,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 99.8395198203982,
+      "dino_latency_s": 1.6114198949999263,
+      "wall_utc": 1791503888.126476
+    },
+    {
+      "step": 1,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 99.66041053555014,
+      "dino_latency_s": 0.35889061099987885,
+      "wall_utc": 1791503890.9088876
+    },
+    {
+      "step": 2,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 99.77421120086761,
+      "dino_latency_s": 0.3546152600001733,
+      "wall_utc": 1791503893.934179
+    },
+    {
+      "step": 3,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 100.11024759565969,
+      "dino_latency_s": 0.3465357300001415,
+      "wall_utc": 1791503896.8500628
+    },
+    {
+      "step": 4,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 100.72425187697876,
+      "dino_latency_s": 0.34485088800011,
+      "wall_utc": 1791503899.9700415
+    },
+    {
+      "step": 5,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 101.54388225978524,
+      "dino_latency_s": 0.3380503039998075,
+      "wall_utc": 1791503903.4859428
+    },
+    {
+      "step": 6,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 99.71610351327644,
+      "dino_latency_s": 0.3521158559997275,
+      "wall_utc": 1791503906.6125076
+    },
+    {
+      "step": 7,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 95.99831412909217,
+      "dino_latency_s": 0.36429514800056495,
+      "wall_utc": 1791503910.0062482
+    },
+    {
+      "step": 8,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 91.71527378183198,
+      "dino_latency_s": 0.36352181100028247,
+      "wall_utc": 1791503913.6183848
+    },
+    {
+      "step": 9,
+      "episode_id": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/dataset/ModernCityMap/00ac4ad3-1b8b-410d-9abc-43b65186571f",
+      "predicted_stop": false,
+      "done": false,
+      "collision": false,
+      "success": false,
+      "oracle_success": false,
+      "early_end": false,
+      "goal_distance_m": 87.19687054460387,
+      "dino_latency_s": 0.4209663999999975,
+      "wall_utc": 1791503917.4385417
+    }
+  ],
+  "policy_latency": {
+    "cold_first_s": 1.1363722490004875,
+    "steady_n": 9,
+    "steady_mean_s": 0.2789792244446087,
+    "steady_min_s": 0.26371516099970904,
+    "steady_max_s": 0.3052945620001992,
+    "all_samples_s": [
+      1.1363722490004875,
+      0.27877249399989523,
+      0.2771899140007008,
+      0.26371516099970904,
+      0.2759857090004516,
+      0.3052945620001992,
+      0.27068683200013766,
+      0.2915217509998911,
+      0.2790430280001601,
+      0.26860356900033366
+    ],
+    "measurement": "same-process CUDA synchronized around coarse+trajectory model.run; preprocessing/DINO/controller/log writes excluded; instrumented"
+  },
+  "assistant_notices": {
+    "null": 1,
+    "\"take off\"": 5,
+    "\"cruise\"": 4
+  },
+  "stage_timings": {
+    "controller_rpc": {
+      "count": 10,
+      "first_s": 0.5207228509998458,
+      "steady_mean_s": 0.5099986724444534,
+      "all_samples_s": [
+        0.5207228509998458,
+        0.4996783790002155,
+        0.5177931600001102,
+        0.516937635999966,
+        0.5202659540000241,
+        0.5189639259997421,
+        0.46147640599974693,
+        0.5572314579994782,
+        0.5005642430005537,
+        0.497076890000244
+      ]
+    },
+    "observations_and_audit_capture": {
+      "count": 10,
+      "first_s": 1.4499488499996005,
+      "steady_mean_s": 1.9078683063331079,
+      "all_samples_s": [
+        1.4499488499996005,
+        1.5472298329996192,
+        1.7429474150003443,
+        1.6477287440002328,
+        1.8096210839994455,
+        2.165387568999904,
+        1.82596870999987,
+        1.944139374999395,
+        2.2078325059992494,
+        2.2799595209999097
+      ]
+    },
+    "preprocessing": {
+      "count": 11,
+      "first_s": 0.0917534029995295,
+      "steady_mean_s": 0.08133249110005636,
+      "all_samples_s": [
+        0.0917534029995295,
+        0.05053245599992806,
+        0.06369420400005765,
+        0.058501309000348556,
+        0.06256251900049392,
+        0.06533197499993548,
+        0.06946801100002631,
+        0.07001570099964738,
+        0.07494410200069979,
+        0.13180810599988035,
+        0.1664665279995461
+      ]
+    }
+  },
+  "controller_event_counts": {
+    "segment_reset": 10,
+    "moveOnPathAsync": 10
+  },
+  "padding_events": [
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503885.0607226
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503889.001062
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503891.8346596
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503894.8541603
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503897.813835
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503900.980846
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503904.4326415
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503907.6956654
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503911.044676
+    },
+    {
+      "returned_state_counts": [
+        5
+      ],
+      "heuristic_collisions": [
+        false
+      ],
+      "oracle_source": "requested waypoints; not achieved-state distance",
+      "wall_utc": 1791503914.7352097
+    }
+  ],
+  "refined_waypoint_counts": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "sampled_process_gpu_memory_mib": {
+    "21227": {
+      "n": 24,
+      "min": 18668.0,
+      "max": 19324.0
+    },
+    "21282": {
+      "n": 21,
+      "min": 964.0,
+      "max": 964.0
+    },
+    "21899": {
+      "n": 24,
+      "min": 964.0,
+      "max": 1138.0
+    }
+  },
+  "process_memory_caveat": "late samples only; process names/PIDs in raw log; not exact isolated policy-only VRAM; model allocator in model_placement.jsonl",
+  "official_metrics_denominator": 1,
+  "official_eligibility": "budget-truncated one-episode regenerated-metadata assistant-guided smoke; raw official-format metrics, not published benchmark comparison"
+}

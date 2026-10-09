@@ -1,0 +1,10 @@
+UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+final text_encoder_type: /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/assets/models/bert-base-uncased
+Traceback (most recent call last):
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/vlnce_src/eval.py", line 22, in <module>
+    from env_uav import AirVLNENV
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/vlnce_src/env_uav.py", line 20, in <module>
+    from utils.env_utils_uav import SimState
+  File "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/airsim_plugin/../utils/env_utils_uav.py", line 2, in <module>
+    import numba as nb
+ModuleNotFoundError: No module named 'numba'

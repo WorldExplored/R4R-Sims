@@ -1,0 +1,98 @@
+{
+  "validation_errors": [],
+  "decoded_files": 375,
+  "depth_semantics": "DepthPerspective ray distance metres; raw floats retained; previews clamp 0..100 m only",
+  "camera_dimensions": [
+    [
+      256,
+      256
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "timestamp_spread_ns_by_sample": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "20": 0,
+    "21": 0
+  },
+  "rgb_depth_rpc_wall_s": {
+    "first_batch": 0.7782684130006601,
+    "steady_count": 21,
+    "steady_mean": 0.2663826984285368,
+    "steady_min": 0.16464339999947697,
+    "steady_max": 0.43929772100000264,
+    "meaning": "RPC plus renderer/transport; excludes client file writes; A/B five views, C pooled mixture superseded by rgb_depth_rpc_by_view_count; not pure GPU render time"
+  },
+  "rgb_depth_rpc_by_view_count": {
+    "2": {
+      "batch_count": 11,
+      "first_batch_s": 0.43929772100000264,
+      "steady_count": 10,
+      "steady_mean_s": 0.33331812269998407,
+      "steady_min_s": 0.30019344499942235,
+      "steady_max_s": 0.35643970599994645,
+      "resolution": [
+        [
+          1024,
+          1024
+        ]
+      ]
+    },
+    "5": {
+      "batch_count": 11,
+      "first_batch_s": 0.7782684130006601,
+      "steady_count": 10,
+      "steady_mean_s": 0.18215577189994292,
+      "steady_min_s": 0.16464339999947697,
+      "steady_max_s": 0.20273212200027046,
+      "resolution": [
+        [
+          256,
+          256
+        ]
+      ]
+    }
+  },
+  "state_sample_count": 30,
+  "endpoint_displacement_m": 39.82510380061729,
+  "path_length_interpretation": "sampled lower bound; contacts are sampled evidence",
+  "achieved_path_length_m": 47.901629534141236,
+  "state_wall_span_s": 30.070953145000203,
+  "simulation_span_s": 49.00904560089111,
+  "requested_sleep_cadence_s": 0.2,
+  "achieved_wall_interval_mean_s": 1.0369294187931104,
+  "simulator_contact_count": 0,
+  "achieved_wall_intervals_s": {
+    "count": 29,
+    "min": 0.2005399280005804,
+    "max": 3.522040185000151,
+    "median": 0.2046016909998798
+  },
+  "final_endpoint_error_m": 86.24516285397712,
+  "point_to_requested_polyline_rmse_m": 1.206388440741097,
+  "point_to_requested_polyline_max_m": 2.342339221136531,
+  "error_weighting": "one equal weight per achieved state sample; purely geometric, no timed-reference alignment",
+  "tracking_error_caveat": "reported polyline error is distance to dataset reference, not controller tracking error; learned requested paths are separate traces; resets break continuous physical path",
+  "sampled_gpu_wide_peak_mib": 21396.0
+}

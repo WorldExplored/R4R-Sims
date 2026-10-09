@@ -1,0 +1,28 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Sep_21_10:33:58_PDT_2022
+Cuda compilation tools, release 11.8, V11.8.89
+Build cuda_11.8.r11.8/compiler.31833905_0
+gcc-11 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+g++-11 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Obtaining file:///workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/upstream/src/model_wrapper/utils/GroundingDINO
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Installing collected packages: groundingdino
+  Running setup.py develop for groundingdino
+Successfully installed groundingdino-0.1.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: libc10.so: cannot open shared object file: No such file or directory

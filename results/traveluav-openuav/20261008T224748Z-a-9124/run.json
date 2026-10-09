@@ -1,0 +1,10 @@
+{
+  "run_id": "20261008T224748Z-a-9124",
+  "level": "A",
+  "status": "failed_before_scene_start",
+  "exit_status": 1,
+  "failure": "stale ROOT/assets path in input inventory; find failed before scene launch",
+  "scene_started": false,
+  "policy_weights": "none",
+  "code_snapshot": "artifacts/traveluav-openuav/20261008T224748Z-a-9124/code"
+}
