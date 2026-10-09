@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/R4R-Sims-grad-nav/simulators/grad-nav/probe.py", line 148, in <module>
+    if __name__=="__main__": main()
+  File "/home/ubuntu/R4R-Sims-grad-nav/simulators/grad-nav/probe.py", line 123, in main
+    pos,vel,omega,quat,acc,alpha=sim.run_simulation(pos,vel,quat,omega,
+  File "/home/ubuntu/grad-nav-deps/upstream/envs/assets/quadrotor_dynamics_advanced.py", line 177, in run_simulation
+    position, velocity, orientation, angular_velocity, linear_acceleration, angular_acceleration, motor_speeds = self.update(
+  File "/home/ubuntu/grad-nav-deps/upstream/envs/assets/quadrotor_dynamics_advanced.py", line 121, in update
+    actual_thrust = (thrust + thrust_noise) * self.max_thrust.clone()
+UnboundLocalError: local variable 'thrust_noise' referenced before assignment

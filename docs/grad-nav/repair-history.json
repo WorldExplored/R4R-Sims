@@ -1,0 +1,50 @@
+{
+  "repairs": [
+    {
+      "number": 1,
+      "commit": "0803807e3172d2caadfc551d42eee66fe07369fe",
+      "change": "audit adapter output_dir changed to scene.parents[2] because eval_setup recomputes load_dir",
+      "failure_run": "20261009T013414Z-a-ba21bc"
+    },
+    {
+      "number": 2,
+      "commit": "c3155df",
+      "change": "reference camera reshape(-1,3,4)[0], correcting scalar camera batch handling",
+      "failure_run": "20261009T013523Z-a-4178ca"
+    }
+  ],
+  "launch_correction": {
+    "change": "prepend isolated env-render/bin to PATH so already installed Ninja is visible",
+    "failed_runs": [
+      "20261009T013625Z-a-dd2ac9",
+      "20261009T013641Z-d-3a4637"
+    ]
+  },
+  "final_error": "gcc: fatal error: cannot execute \u2018cc1plus\u2019: execvp: No such file or directory\ncompilation terminated.\nnvcc fatal   : Failed to preprocess host compiler properties.\nninja: build stopped: subcommand failed.",
+  "final_runs": [
+    "20261009T013743Z-a-b58f3b",
+    "20261009T013759Z-d-1ca173"
+  ],
+  "compiler_paths": {
+    "nvcc": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc",
+    "gcc": "/usr/bin/gcc (12.3.0)",
+    "g++": "/usr/bin/g++ (11.4.0)",
+    "gcc11": "/usr/bin/gcc-11",
+    "g++11": "/usr/bin/g++-11",
+    "cc1plus_found": "/usr/lib/gcc/x86_64-linux-gnu/11/cc1plus"
+  },
+  "launch_exports": {
+    "CUDA_HOME": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8",
+    "PATH_prefix": [
+      "/home/ubuntu/grad-nav-deps/env-render/bin",
+      "$CUDA_HOME/bin"
+    ],
+    "LD_LIBRARY_PATH": "$CUDA_HOME/lib64",
+    "MAX_JOBS": "2",
+    "MPLCONFIGDIR": "/home/ubuntu/grad-nav-deps/cache/matplotlib",
+    "TORCH_EXTENSIONS_DIR": "/home/ubuntu/grad-nav-deps/cache/torch-extensions"
+  },
+  "next_fix_hypothesis": "nvcc defaults to gcc12 while cc1plus exists for gcc11; inspect/select supported host compiler in a future separately authorized bounded attempt. No selection, install or compiler repair performed.",
+  "stopped_at_user_instruction": true,
+  "packages_changed_after_stop": false
+}

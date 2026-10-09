@@ -1,0 +1,25 @@
+{
+  "ticks": 20,
+  "outer_dt_s": 0.05,
+  "start_position": [
+    0.0,
+    0.0,
+    1.15
+  ],
+  "setpoint_z": 1.25,
+  "controller": "adapter height PD kp2 kd0.8, body rates zero",
+  "origin_offset": [
+    -6,
+    0,
+    0
+  ],
+  "physical_interpretation": "blocked pending independent metric scale/alignment",
+  "bypasses": [
+    "native env observations",
+    "policy",
+    "VAE",
+    "CNN",
+    "native delay/filter",
+    "collision response"
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "point_cloud/",
+    "compressed": 0,
+    "expanded": 0
+  },
+  {
+    "name": "point_cloud/sv_917_3_left_nerfstudio.ply",
+    "compressed": 61416727,
+    "expanded": 69784279
+  },
+  {
+    "name": "point_cloud/sv_917_3_right_nerfstudio.ply",
+    "compressed": 57024971,
+    "expanded": 64666389
+  },
+  {
+    "name": "point_cloud/sv_1007_gate_mid_color.ply",
+    "compressed": 58256688,
+    "expanded": 66675644
+  },
+  {
+    "name": "point_cloud/sv_712_nerfstudio.ply",
+    "compressed": 55123943,
+    "expanded": 61831961
+  },
+  {
+    "name": "point_cloud/sv_1007_gate_mid.ply",
+    "compressed": 57489495,
+    "expanded": 65878081
+  },
+  {
+    "name": "point_cloud/gate_mid_new.ply",
+    "compressed": 4459565,
+    "expanded": 7164092
+  }
+]

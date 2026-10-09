@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-09T01:49:22.701552+00:00",
+  "checks": [
+    {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/R4R-Sims",
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "exit_status": 0,
+      "output": "## audit/traveluav-openuav-20261008T2215Z...origin/audit/traveluav-openuav-20261008T2215Z\n"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/R4R-Sims",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_status": 0,
+      "output": "568759aca5628858f8881407de6562d986190280\n"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/home/ubuntu/grad-nav-deps/upstream",
+        "status",
+        "--short"
+      ],
+      "exit_status": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=pid,used_gpu_memory",
+        "--format=csv"
+      ],
+      "exit_status": 0,
+      "output": "pid, used_gpu_memory [MiB]\n"
+    },
+    {
+      "command": [
+        "ps",
+        "-u",
+        "ubuntu",
+        "-o",
+        "pid,etimes,args"
+      ],
+      "exit_status": 0,
+      "output": "    PID ELAPSED COMMAND\n  25980       1 /lib/systemd/systemd --user\n  25981       1 (sd-pam)\n  25990       1 sshd: ubuntu@notty\n  25991       1 python3 -\n  25997       0 ps -u ubuntu -o pid,etimes,args\n"
+    },
+    {
+      "command": [
+        "df",
+        "-h",
+        "/"
+      ],
+      "exit_status": 0,
+      "output": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sda2       251G  103G  139G  43% /\n"
+    }
+  ],
+  "cleanup_paths": [],
+  "processes_terminated": [],
+  "instance_terminated": false
+}

@@ -1,0 +1,76 @@
+{
+  "runs": [
+    {
+      "run_id": "20261009T012421Z-baseline-none-c8dc72",
+      "files": 10,
+      "bytes": 5969,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T012423Z-force-21326e",
+      "files": 11,
+      "bytes": 18694,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T012426Z-smoke-b457b8",
+      "files": 11,
+      "bytes": 19958,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T012429Z-recovery-e58f8a",
+      "files": 11,
+      "bytes": 74544,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T012433Z-conversion-04f90b",
+      "files": 7,
+      "bytes": 6569,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T013414Z-a-ba21bc",
+      "files": 7,
+      "bytes": 18690,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T013523Z-a-4178ca",
+      "files": 8,
+      "bytes": 18826,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T013625Z-a-dd2ac9",
+      "files": 12,
+      "bytes": 27132,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T013641Z-d-3a4637",
+      "files": 13,
+      "bytes": 22550,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T013743Z-a-b58f3b",
+      "files": 12,
+      "bytes": 33118,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T013759Z-d-1ca173",
+      "files": 13,
+      "bytes": 28536,
+      "verified": true
+    }
+  ],
+  "scientific_files_verified": 1213,
+  "scientific_bytes": 1139790444,
+  "errors": [],
+  "local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav",
+  "remote_deleted": false,
+  "instance_terminated": false
+}

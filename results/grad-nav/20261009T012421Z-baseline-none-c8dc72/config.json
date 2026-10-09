@@ -1,0 +1,43 @@
+{
+  "mode": "baseline-none",
+  "seed": 0,
+  "mass_kg": 1.0,
+  "max_total_thrust_N": 24.0,
+  "inertia_kg_m2": [
+    0.01,
+    0.012,
+    0.025
+  ],
+  "inner_hz": 200.0,
+  "outer_dt_s": 0.05,
+  "inner_substeps": 10,
+  "quaternion_order": "wxyz",
+  "world_axes": "x,y,z up in dynamics",
+  "noise_std": null,
+  "policy_weights": "none",
+  "height_target_m": 1.25,
+  "gains_kp_kd": [
+    2.0,
+    0.8
+  ],
+  "body_rates_rad_s": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "ticks": 20,
+  "perturbation_m": -0.25,
+  "diagnostic_band_m": 0.02,
+  "band_is_lab_acceptance_threshold": false,
+  "termination": "fixed ticks, or error on nonfinite state; no native scene contacts",
+  "bypasses": [
+    "DroneLongTrajEnv",
+    "GS",
+    "CNN",
+    "VAE",
+    "actor",
+    "normalization",
+    "native action delay/filter"
+  ],
+  "interface": "SI desired body rates and normalized total thrust directly to run_simulation"
+}

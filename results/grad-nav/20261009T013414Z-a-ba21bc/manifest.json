@@ -1,0 +1,37 @@
+[
+  {
+    "path": "commands.log",
+    "bytes": 263,
+    "sha256": "05bddca872b776caa22cdc397c4187cedb471862dcd4b104d185e426b02fba7a"
+  },
+  {
+    "path": "console.log",
+    "bytes": 2308,
+    "sha256": "51b6f64ad6475b9f8a6e6fc4f84d67c044859e77a655451114a046567186b755"
+  },
+  {
+    "path": "environment.txt",
+    "bytes": 6162,
+    "sha256": "e28e186437d60279a36453ee6bc4714e8710496281d6708823aeafaaeb4e7698"
+  },
+  {
+    "path": "gpu.jsonl",
+    "bytes": 1194,
+    "sha256": "47a27665821464562ffd50c2d6b8552b714ff0c8923f3f897c4f2788fe048812"
+  },
+  {
+    "path": "resolved-config.yml",
+    "bytes": 7688,
+    "sha256": "41246cb49b3936d3af087e150145a104d98aac69b5e36d0ce589384e1e297120"
+  },
+  {
+    "path": "run.json",
+    "bytes": 1075,
+    "sha256": "66269ce9643772577b8c55ba579ea3484bb108e0a25eef182298f10574639071"
+  },
+  {
+    "path": "upstream.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

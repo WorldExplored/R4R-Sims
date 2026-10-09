@@ -1,0 +1,8 @@
+{
+  "path": "/home/ubuntu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth",
+  "bytes": 244408911,
+  "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+  "url": "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth",
+  "purpose": "Splatfacto metric constructor loads LPIPS backbone; no metric forward pass or fidelity claim",
+  "navigation_policy": false
+}

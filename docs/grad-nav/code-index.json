@@ -1,0 +1,416 @@
+[
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "GS",
+    "start": 18,
+    "end": 131
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "get_gs",
+    "start": 134,
+    "end": 165
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "quaternion_to_rotation_matrix",
+    "start": 168,
+    "end": 200
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "pose2nerf_transform",
+    "start": 202,
+    "end": 247
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "__init__",
+    "start": 19,
+    "end": 40
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "generate_output_camera",
+    "start": 42,
+    "end": 56
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "render_quad_poses",
+    "start": 59,
+    "end": 78
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "convert_poses_quad2ns",
+    "start": 80,
+    "end": 96
+  },
+  {
+    "file": "utils/gs_local.py",
+    "symbol": "render",
+    "start": 98,
+    "end": 131
+  },
+  {
+    "file": "envs/assets/quadrotor_dynamics_advanced.py",
+    "symbol": "QuadrotorSimulator",
+    "start": 3,
+    "end": 182
+  },
+  {
+    "file": "envs/assets/quadrotor_dynamics_advanced.py",
+    "symbol": "__init__",
+    "start": 4,
+    "end": 62
+  },
+  {
+    "file": "envs/assets/quadrotor_dynamics_advanced.py",
+    "symbol": "quaternion_to_rotation_matrix",
+    "start": 65,
+    "end": 86
+  },
+  {
+    "file": "envs/assets/quadrotor_dynamics_advanced.py",
+    "symbol": "quaternion_multiply",
+    "start": 88,
+    "end": 99
+  },
+  {
+    "file": "envs/assets/quadrotor_dynamics_advanced.py",
+    "symbol": "integrate_quaternion",
+    "start": 101,
+    "end": 110
+  },
+  {
+    "file": "envs/assets/quadrotor_dynamics_advanced.py",
+    "symbol": "update",
+    "start": 112,
+    "end": 148
+  },
+  {
+    "file": "envs/assets/quadrotor_dynamics_advanced.py",
+    "symbol": "run_simulation",
+    "start": 150,
+    "end": 182
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "DroneLongTrajEnv",
+    "start": 33,
+    "end": 904
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "__init__",
+    "start": 35,
+    "end": 280
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "init_sim",
+    "start": 283,
+    "end": 370
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "step",
+    "start": 374,
+    "end": 461
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "reset",
+    "start": 464,
+    "end": 535
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "clear_grad",
+    "start": 538,
+    "end": 560
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "initialize_trajectory",
+    "start": 563,
+    "end": 566
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "get_checkpoint",
+    "start": 568,
+    "end": 578
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "process_GS_data",
+    "start": 580,
+    "end": 589
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "calculateObservations",
+    "start": 592,
+    "end": 684
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "calculateReward",
+    "start": 687,
+    "end": 794
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "record_visualization_data",
+    "start": 797,
+    "end": 829
+  },
+  {
+    "file": "envs/drone_long_traj.py",
+    "symbol": "save_recordings",
+    "start": 832,
+    "end": 904
+  },
+  {
+    "file": "utils/point_cloud_util.py",
+    "symbol": "ObstacleDistanceCalculator",
+    "start": 5,
+    "end": 117
+  },
+  {
+    "file": "utils/point_cloud_util.py",
+    "symbol": "__init__",
+    "start": 6,
+    "end": 17
+  },
+  {
+    "file": "utils/point_cloud_util.py",
+    "symbol": "load_point_cloud",
+    "start": 19,
+    "end": 28
+  },
+  {
+    "file": "utils/point_cloud_util.py",
+    "symbol": "quaternion_to_forward_vector",
+    "start": 30,
+    "end": 51
+  },
+  {
+    "file": "utils/point_cloud_util.py",
+    "symbol": "filter_points_in_fov",
+    "start": 53,
+    "end": 75
+  },
+  {
+    "file": "utils/point_cloud_util.py",
+    "symbol": "find_nearest_distance_batch",
+    "start": 77,
+    "end": 99
+  },
+  {
+    "file": "utils/point_cloud_util.py",
+    "symbol": "compute_nearest_distances",
+    "start": 101,
+    "end": 117
+  },
+  {
+    "file": "models/squeeze_net.py",
+    "symbol": "VisualPerceptionNet",
+    "start": 6,
+    "end": 24
+  },
+  {
+    "file": "models/squeeze_net.py",
+    "symbol": "__init__",
+    "start": 7,
+    "end": 14
+  },
+  {
+    "file": "models/squeeze_net.py",
+    "symbol": "forward",
+    "start": 16,
+    "end": 24
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "ActorDeterministicMLP",
+    "start": 16,
+    "end": 46
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "ActorStochasticMLP",
+    "start": 49,
+    "end": 114
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "__init__",
+    "start": 17,
+    "end": 39
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "get_logstd",
+    "start": 41,
+    "end": 43
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "forward",
+    "start": 45,
+    "end": 46
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "__init__",
+    "start": 50,
+    "end": 79
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "get_logstd",
+    "start": 81,
+    "end": 82
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "forward",
+    "start": 84,
+    "end": 95
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "forward_with_dist",
+    "start": 97,
+    "end": 106
+  },
+  {
+    "file": "models/actor.py",
+    "symbol": "evaluate_actions_log_probs",
+    "start": 108,
+    "end": 114
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "BatchLowPassFilter",
+    "start": 28,
+    "end": 37
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "GradNav",
+    "start": 39,
+    "end": 759
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "__init__",
+    "start": 29,
+    "end": 31
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "filter",
+    "start": 32,
+    "end": 37
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "__init__",
+    "start": 40,
+    "end": 232
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "compute_actor_loss",
+    "start": 235,
+    "end": 404
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "vae_update",
+    "start": 406,
+    "end": 412
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "compute_vae_loss",
+    "start": 414,
+    "end": 422
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "evaluate_policy",
+    "start": 426,
+    "end": 482
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "compute_target_values",
+    "start": 485,
+    "end": 498
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "compute_critic_loss",
+    "start": 500,
+    "end": 505
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "initialize_env",
+    "start": 507,
+    "end": 509
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "run",
+    "start": 512,
+    "end": 514
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "train",
+    "start": 517,
+    "end": 737
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "play",
+    "start": 739,
+    "end": 743
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "save",
+    "start": 745,
+    "end": 748
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "load",
+    "start": 750,
+    "end": 759
+  },
+  {
+    "file": "algorithms/gradnav.py",
+    "symbol": "actor_closure",
+    "start": 539,
+    "end": 567
+  },
+  {
+    "file": "examples/train_gradnav.py",
+    "symbol": "parse_arguments",
+    "start": 29,
+    "end": 61
+  },
+  {
+    "file": "examples/train_gradnav.py",
+    "symbol": "get_args",
+    "start": 63,
+    "end": 87
+  }
+]

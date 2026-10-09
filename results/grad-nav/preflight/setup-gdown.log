@@ -1,0 +1,32 @@
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting gdown==5.2.0
+  Downloading gdown-5.2.0-py3-none-any.whl (18 kB)
+Requirement already satisfied: filelock in ./grad-nav-deps/env-dynamics/lib/python3.10/site-packages (from gdown==5.2.0) (4.0.12)
+Collecting tqdm
+  Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 KB 7.7 MB/s eta 0:00:00
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.9/109.9 KB 31.5 MB/s eta 0:00:00
+Collecting requests[socks]
+  Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 KB 21.2 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=4.0.0 in ./grad-nav-deps/env-dynamics/lib/python3.10/site-packages (from beautifulsoup4->gdown==5.2.0) (4.16.0)
+Collecting soupsieve>=1.6.1
+  Downloading soupsieve-2.10-py3-none-any.whl (38 kB)
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (271 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 271.1/271.1 KB 29.2 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.20-py3-none-any.whl (69 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 KB 21.9 MB/s eta 0:00:00
+Collecting certifi>=2023.5.7
+  Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 KB 38.5 MB/s eta 0:00:00
+Collecting urllib3<3,>=1.26
+  Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 KB 37.0 MB/s eta 0:00:00
+Collecting PySocks!=1.5.7,>=1.5.6
+  Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+Installing collected packages: urllib3, tqdm, soupsieve, PySocks, idna, charset_normalizer, certifi, requests, beautifulsoup4, gdown
+Successfully installed PySocks-1.7.1 beautifulsoup4-4.15.0 certifi-2026.7.22 charset_normalizer-3.5.2 gdown-5.2.0 idna-3.20 requests-2.34.2 soupsieve-2.10 tqdm-4.70.1 urllib3-2.8.0

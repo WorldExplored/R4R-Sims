@@ -1,0 +1,26 @@
+[
+  {
+    "name": "point_cloud",
+    "kind": "view",
+    "url": "https://drive.google.com/file/d/1xIDb1-HFkniBagvMbWDgfy4okKTckwra/view",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "point_cloud",
+    "kind": "download",
+    "url": "https://drive.usercontent.google.com/download?id=1xIDb1-HFkniBagvMbWDgfy4okKTckwra&export=download&confirm=t",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "gs_data",
+    "kind": "view",
+    "url": "https://drive.google.com/file/d/1skbXqg__Ew3ytNmqe_xiaqHpexZnsfdw/view",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "gs_data",
+    "kind": "download",
+    "url": "https://drive.usercontent.google.com/download?id=1skbXqg__Ew3ytNmqe_xiaqHpexZnsfdw&export=download&confirm=t",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

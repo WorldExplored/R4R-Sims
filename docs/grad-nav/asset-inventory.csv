@@ -1,0 +1,7 @@
+category,item,source,download_bytes,full_expanded_bytes,selected_expanded_bytes,sha256,status,preservation
+archive,gs_data.zip,Drive 1f-ohG0KLkIVXtiRVqvHmqduWRh4hDVQn,5049024705,5826839573,1073912363,ad598140c7018ee337b76d37d1cc5fae3d10cf241b999264451b3daaa6e2b201,downloaded; 4 Gaussian maps,selected scientific inputs copied locally; full unused archive retained by verified URL/hash
+archive,point_cloud.zip,Drive 1FS0hF7aufFsd6OH0Xcca9fGgbcMGqkOf,293772935,336000446,65878081,fed6cb176804db9dfd9412a56b0a6e32796bbb4e6f4160cb32210ef40a68e44c,downloaded; 6 geometric PLYs,selected PLY copied locally; full unused archive retained by verified URL/hash
+scene,gate_mid config+checkpoint+300 frame transforms,author gs_data.zip,,,1073912363,,checkpoint loaded; rendering failed,scientific-inputs manifest
+geometry,sv_1007_gate_mid.ply,author point_cloud.zip,,,65878081,,downloaded; no physical collision validation,scientific-inputs manifest
+policy,original GRaD-Nav six-object navigation checkpoint,none verified,,,,,missing; C blocked,not available
+fidelity,AirLab calibrated held-out dataset and compatible reconstruction,not supplied,,,,,blocked,not available

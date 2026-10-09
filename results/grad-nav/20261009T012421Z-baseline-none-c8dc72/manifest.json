@@ -1,0 +1,52 @@
+[
+  {
+    "path": "actions.jsonl",
+    "bytes": 333,
+    "sha256": "7378c672a3d844d2b69fb00f7fa80acdf10c50f2343b64d73e14e218bcb99d77"
+  },
+  {
+    "path": "commands.log",
+    "bytes": 288,
+    "sha256": "e3f1133929df26651620f0f37189bd9f180e51e2fad4040bfe0bb26989b60b7b"
+  },
+  {
+    "path": "config.json",
+    "bytes": 899,
+    "sha256": "d3ba6e1aedc9534b1880c610e244069402c5b451763dc366824adb05c03dabdb"
+  },
+  {
+    "path": "console.log",
+    "bytes": 823,
+    "sha256": "4beefee96851dbd6d3d7342c9a9e463932ce2c944ef7318c6332587a0ff85e0b"
+  },
+  {
+    "path": "environment.txt",
+    "bytes": 2108,
+    "sha256": "b19a4566bd0470e3654d98f6c5e6a25adc43e5a3f5de0714e1ef0b42217432bc"
+  },
+  {
+    "path": "gpu.jsonl",
+    "bytes": 198,
+    "sha256": "3e3bb8b76bc70cb63f6e3d9d13af9df904c973c92f78d9e0ee0cc8057ee3cd0e"
+  },
+  {
+    "path": "reference_route.jsonl",
+    "bytes": 53,
+    "sha256": "476e5f0c752787626bf1a7337645ae235d57fac610cdbdc2f8a0ba0e95c7af73"
+  },
+  {
+    "path": "run.json",
+    "bytes": 1131,
+    "sha256": "0f44388163aa1875c4de20ca506c545c54f4675b188c92a562ddd630d0d11078"
+  },
+  {
+    "path": "state.jsonl",
+    "bytes": 136,
+    "sha256": "17144a112af760e4372435a957de17e23c3fbd14792c39d7df22387704eaf4a9"
+  },
+  {
+    "path": "upstream.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

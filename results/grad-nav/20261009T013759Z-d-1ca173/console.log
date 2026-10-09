@@ -1,0 +1,68 @@
+/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T013759Z-d-1ca173/resolved-config.yml
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from 
+/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/nerfstudio_models/step-000029999
+.ckpt
+Traceback (most recent call last):
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/_backend.py", line 41, in <module>
+    from gsplat import csrc as _C
+ImportError: cannot import name 'csrc' from 'gsplat' (/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2100, in _run_ninja_build
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v', '-j', '2']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/R4R-Sims-grad-nav/simulators/grad-nav/render.py", line 118, in <module>
+    if __name__=='__main__':main()
+  File "/home/ubuntu/R4R-Sims-grad-nav/simulators/grad-nav/render.py", line 108, in main
+    dep,rgb=gs.render(x);sync();s=save(i,'coupled',rgb[0],dep[0])
+  File "/home/ubuntu/grad-nav-deps/upstream/utils/gs_local.py", line 127, in render
+    outputs = self.pipeline.model.get_outputs_for_camera(self.camera_out, obb_box=None)
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/nerfstudio/models/splatfacto.py", line 906, in get_outputs_for_camera
+    outs = self.get_outputs(camera.to(self.device))
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/nerfstudio/models/splatfacto.py", line 760, in get_outputs
+    render, alpha, info = rasterization(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/rendering.py", line 212, in rasterization
+    proj_results = fully_fused_projection(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/_wrapper.py", line 260, in fully_fused_projection
+    return _FullyFusedProjection.apply(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/autograd/function.py", line 539, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/_wrapper.py", line 692, in forward
+    radii, means2d, depths, conics, compensations = _make_lazy_cuda_func(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/_wrapper.py", line 10, in call_cuda
+    from ._backend import _C
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/_backend.py", line 84, in <module>
+    _C = load(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1308, in load
+    return _jit_compile(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1710, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1823, in _write_ninja_file_and_build_library
+    _run_ninja_build(
+  File "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2116, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error building extension 'gsplat_cuda': [1/5] /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DTORCH_EXTENSION_NAME=gsplat_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/TH -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/THC -isystem /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -isystem /usr/include/python3.10 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -c /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/projection.cu -o projection.cuda.o 
+FAILED: [code=1] projection.cuda.o 
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DTORCH_EXTENSION_NAME=gsplat_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/TH -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/THC -isystem /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -isystem /usr/include/python3.10 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -c /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/projection.cu -o projection.cuda.o 
+gcc: fatal error: cannot execute ‘cc1plus’: execvp: No such file or directory
+compilation terminated.
+nvcc fatal   : Failed to preprocess host compiler properties.
+[2/5] /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DTORCH_EXTENSION_NAME=gsplat_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/TH -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/THC -isystem /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -isystem /usr/include/python3.10 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -c /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/sh.cu -o sh.cuda.o 
+FAILED: [code=1] sh.cuda.o 
+/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc  -DTORCH_EXTENSION_NAME=gsplat_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/TH -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/THC -isystem /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -isystem /usr/include/python3.10 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -c /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/sh.cu -o sh.cuda.o 
+gcc: fatal error: cannot execute ‘cc1plus’: execvp: No such file or directory
+compilation terminated.
+nvcc fatal   : Failed to preprocess host compiler properties.
+ninja: build stopped: subcommand failed.
+

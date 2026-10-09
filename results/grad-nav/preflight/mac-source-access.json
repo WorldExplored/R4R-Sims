@@ -1,0 +1,16 @@
+[
+  {
+    "name": "point_cloud",
+    "url": "https://drive.usercontent.google.com/download?id=1FS0hF7aufFsd6OH0Xcca9fGgbcMGqkOf&export=download&confirm=t",
+    "status": 200,
+    "sample_hex": "504b0304",
+    "utc": "2026-10-09T01:37:00.886205+00:00"
+  },
+  {
+    "name": "gs_data",
+    "url": "https://drive.usercontent.google.com/download?id=1f-ohG0KLkIVXtiRVqvHmqduWRh4hDVQn&export=download&confirm=t",
+    "status": 200,
+    "sample_hex": "504b0304",
+    "utc": "2026-10-09T01:37:02.250336+00:00"
+  }
+]

@@ -1,0 +1,11 @@
+mkdir -p failed for path /home/ubuntu/.config/matplotlib: [Errno 13] Permission denied: '/home/ubuntu/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-sovvfd17 because there was an issue with the default path (/home/ubuntu/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Downloading: "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth
+/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T013414Z-a-ba21bc/resolved-config.yml
+  0%|          | 0.00/233M [00:00<?, ?B/s]  6%|▌         | 14.0M/233M [00:00<00:01, 147MB/s] 15%|█▍        | 34.4M/233M [00:00<00:01, 186MB/s] 24%|██▍       | 56.9M/233M [00:00<00:00, 209MB/s] 34%|███▍      | 80.4M/233M [00:00<00:00, 224MB/s] 45%|████▍     | 104M/233M [00:00<00:00, 234MB/s]  55%|█████▌    | 129M/233M [00:00<00:00, 240MB/s] 66%|██████▌   | 153M/233M [00:00<00:00, 245MB/s] 76%|███████▌  | 177M/233M [00:00<00:00, 247MB/s] 86%|████████▌ | 201M/233M [00:00<00:00, 249MB/s] 96%|█████████▋| 225M/233M [00:01<00:00, 246MB/s]100%|██████████| 233M/233M [00:01<00:00, 235MB/s]
+Loading latest checkpoint from load_dir
+──────────────────────────────────────────────────────── Error ─────────────────────────────────────────────────────────
+                                            No checkpoint directory found at                                            
+/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/sv_1007_gate_mid/splatfacto/2024-10-07_145741/nerfstudio_mode
+                                                          ls,                                                           
+             Please make sure the checkpoint exists, they should be generated periodically during training              

@@ -1,0 +1,16 @@
+{
+  "audit_start_utc": "2026-10-09T01:18:27+00:00",
+  "closeout_recorded_utc": "2026-10-09T01:50:39.144467+00:00",
+  "elapsed_minutes": 32.202407783333335,
+  "actual_charges": null,
+  "total_instance_price": null,
+  "quoted_gpu_usd_per_hour": 0.54,
+  "quote_confirmed_total_price": false,
+  "illustrative_gpu_quote_only_cost_usd": 0.29,
+  "instance_running": true,
+  "unrelated_files_environments_drivers_processes_changed": false,
+  "cleanup_paths": [],
+  "compiler_repairs_after_user_stop": false,
+  "periodic_collector_cadence_verified": false,
+  "final_collection_verified": true
+}

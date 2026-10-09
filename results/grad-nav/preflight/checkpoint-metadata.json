@@ -1,0 +1,182 @@
+{
+  "path": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/nerfstudio_models/step-000029999.ckpt",
+  "bytes": 197988898,
+  "top_level_keys": [
+    "step",
+    "pipeline",
+    "optimizers",
+    "schedulers",
+    "scalers"
+  ],
+  "step": 29999,
+  "pipeline_keys": [
+    "_model.device_indicator_param",
+    "_model.gauss_params.features_dc",
+    "_model.gauss_params.features_rest",
+    "_model.gauss_params.means",
+    "_model.gauss_params.opacities",
+    "_model.gauss_params.quats",
+    "_model.gauss_params.scales",
+    "_model.camera_optimizer.pose_adjustment",
+    "_model.lpips.net.net.slice1.0.weight",
+    "_model.lpips.net.net.slice1.0.bias",
+    "_model.lpips.net.net.slice2.3.weight",
+    "_model.lpips.net.net.slice2.3.bias",
+    "_model.lpips.net.net.slice3.6.weight",
+    "_model.lpips.net.net.slice3.6.bias",
+    "_model.lpips.net.net.slice4.8.weight",
+    "_model.lpips.net.net.slice4.8.bias",
+    "_model.lpips.net.net.slice5.10.weight",
+    "_model.lpips.net.net.slice5.10.bias",
+    "_model.lpips.net.lin0.model.1.weight",
+    "_model.lpips.net.lin1.model.1.weight",
+    "_model.lpips.net.lin2.model.1.weight",
+    "_model.lpips.net.lin3.model.1.weight",
+    "_model.lpips.net.lin4.model.1.weight",
+    "_model.lpips.net.lins.0.model.1.weight",
+    "_model.lpips.net.lins.1.model.1.weight",
+    "_model.lpips.net.lins.2.model.1.weight",
+    "_model.lpips.net.lins.3.model.1.weight",
+    "_model.lpips.net.lins.4.model.1.weight"
+  ],
+  "tensor_shapes": {
+    "_model.device_indicator_param": [
+      0
+    ],
+    "_model.gauss_params.features_dc": [
+      265631,
+      3
+    ],
+    "_model.gauss_params.features_rest": [
+      265631,
+      15,
+      3
+    ],
+    "_model.gauss_params.means": [
+      265631,
+      3
+    ],
+    "_model.gauss_params.opacities": [
+      265631,
+      1
+    ],
+    "_model.gauss_params.quats": [
+      265631,
+      4
+    ],
+    "_model.gauss_params.scales": [
+      265631,
+      3
+    ],
+    "_model.camera_optimizer.pose_adjustment": [
+      270,
+      6
+    ],
+    "_model.lpips.net.net.slice1.0.weight": [
+      64,
+      3,
+      11,
+      11
+    ],
+    "_model.lpips.net.net.slice1.0.bias": [
+      64
+    ],
+    "_model.lpips.net.net.slice2.3.weight": [
+      192,
+      64,
+      5,
+      5
+    ],
+    "_model.lpips.net.net.slice2.3.bias": [
+      192
+    ],
+    "_model.lpips.net.net.slice3.6.weight": [
+      384,
+      192,
+      3,
+      3
+    ],
+    "_model.lpips.net.net.slice3.6.bias": [
+      384
+    ],
+    "_model.lpips.net.net.slice4.8.weight": [
+      256,
+      384,
+      3,
+      3
+    ],
+    "_model.lpips.net.net.slice4.8.bias": [
+      256
+    ],
+    "_model.lpips.net.net.slice5.10.weight": [
+      256,
+      256,
+      3,
+      3
+    ],
+    "_model.lpips.net.net.slice5.10.bias": [
+      256
+    ],
+    "_model.lpips.net.lin0.model.1.weight": [
+      1,
+      64,
+      1,
+      1
+    ],
+    "_model.lpips.net.lin1.model.1.weight": [
+      1,
+      192,
+      1,
+      1
+    ],
+    "_model.lpips.net.lin2.model.1.weight": [
+      1,
+      384,
+      1,
+      1
+    ],
+    "_model.lpips.net.lin3.model.1.weight": [
+      1,
+      256,
+      1,
+      1
+    ],
+    "_model.lpips.net.lin4.model.1.weight": [
+      1,
+      256,
+      1,
+      1
+    ],
+    "_model.lpips.net.lins.0.model.1.weight": [
+      1,
+      64,
+      1,
+      1
+    ],
+    "_model.lpips.net.lins.1.model.1.weight": [
+      1,
+      192,
+      1,
+      1
+    ],
+    "_model.lpips.net.lins.2.model.1.weight": [
+      1,
+      384,
+      1,
+      1
+    ],
+    "_model.lpips.net.lins.3.model.1.weight": [
+      1,
+      256,
+      1,
+      1
+    ],
+    "_model.lpips.net.lins.4.model.1.weight": [
+      1,
+      256,
+      1,
+      1
+    ]
+  },
+  "navigation_policy": false
+}

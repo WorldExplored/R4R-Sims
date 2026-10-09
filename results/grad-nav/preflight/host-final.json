@@ -1,0 +1,49 @@
+[
+  {
+    "command": [
+      "lscpu"
+    ],
+    "exit_status": 0,
+    "output": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        46 bits physical, 48 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               6\nOn-line CPU(s) list:                  0-5\nVendor ID:                            GenuineIntel\nModel name:                           Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz\nCPU family:                           6\nModel:                                85\nThread(s) per core:                   1\nCore(s) per socket:                   3\nSocket(s):                            2\nStepping:                             7\nBogoMIPS:                             4399.99\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat vnmi umip pku ospke avx512_vnni md_clear flush_l1d arch_capabilities\nVirtualization:                       VT-x\nHypervisor vendor:                    KVM\nVirtualization type:                  full\nL1d cache:                            192 KiB (6 instances)\nL1i cache:                            192 KiB (6 instances)\nL2 cache:                             24 MiB (6 instances)\nL3 cache:                             32 MiB (2 instances)\nNUMA node(s):                         2\nNUMA node0 CPU(s):                    0-2\nNUMA node1 CPU(s):                    3-5\nVulnerability Gather data sampling:   Unknown: Dependent on hypervisor status\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT Host state unknown\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Mitigation; TSX disabled\nVulnerability Vmscape:                Not affected\n"
+  },
+  {
+    "command": [
+      "free",
+      "-h"
+    ],
+    "exit_status": 0,
+    "output": "               total        used        free      shared  buff/cache   available\nMem:            47Gi       1.5Gi       2.3Gi       5.0Mi        43Gi        44Gi\nSwap:          4.0Gi       1.0Mi       4.0Gi\n"
+  },
+  {
+    "command": [
+      "df",
+      "-h"
+    ],
+    "exit_status": 0,
+    "output": "Filesystem      Size  Used Avail Use% Mounted on\ntmpfs           4.8G  1.4M  4.8G   1% /run\nefivarfs         56K   17K   34K  34% /sys/firmware/efi/efivars\n/dev/sda2       251G  103G  139G  43% /\ntmpfs            24G     0   24G   0% /dev/shm\ntmpfs           5.0M     0  5.0M   0% /run/lock\n/dev/sda1       1.1G  6.1M  1.1G   1% /boot/efi\ntmpfs           4.8G  8.0K  4.8G   1% /run/user/1001\n"
+  },
+  {
+    "command": [
+      "nvidia-smi"
+    ],
+    "exit_status": 0,
+    "output": "Fri Oct  9 01:39:34 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.126.09             Driver Version: 580.126.09     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX A6000               On  |   00000000:01:00.0 Off |                  Off |\n| 30%   32C    P8             21W /  300W |       1MiB /  49140MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n"
+  },
+  {
+    "command": [
+      "bash",
+      "-lc",
+      "command -v gcc g++ gcc-11 g++-11; gcc --version; g++ --version; find /usr/lib/gcc -name cc1plus 2>/dev/null"
+    ],
+    "exit_status": 0,
+    "output": "\n    ____       _                ____      __       ____          __\n   / __ \\_____(_)___ ___  ___  /  _/___  / /____  / / /__  _____/ /_\n  / /_/ / ___/ / __ `__ \\/ _ \\ / // __ \\/ __/ _ \\/ / / _ \\/ ___/ __/\n / ____/ /  / / / / / / /  __// // / / / /_/  __/ / /  __/ /__/ /_\n/_/   /_/  /_/_/ /_/ /_/\\___/___/_/ /_/\\__/\\___/_/_/\\___/\\___/\\__/\n\n/usr/bin/gcc\n/usr/bin/g++\n/usr/bin/gcc-11\n/usr/bin/g++-11\ngcc (Ubuntu 12.3.0-1ubuntu1~22.04.2) 12.3.0\nCopyright (C) 2022 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\ng++ (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n/usr/lib/gcc/x86_64-linux-gnu/11/cc1plus\n"
+  },
+  {
+    "command": [
+      "/home/ubuntu/grad-nav-deps/env-render/bin/python",
+      "--version"
+    ],
+    "exit_status": 0,
+    "output": "Python 3.10.12\n"
+  }
+]

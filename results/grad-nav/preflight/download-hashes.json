@@ -1,0 +1,16 @@
+[
+  {
+    "archive": "/home/ubuntu/grad-nav-deps/downloads/gs_data.zip",
+    "bytes": 5049024705,
+    "sha256": "ad598140c7018ee337b76d37d1cc5fae3d10cf241b999264451b3daaa6e2b201",
+    "selected_expanded_bytes": 1073912363,
+    "selected_members": 1212
+  },
+  {
+    "archive": "/home/ubuntu/grad-nav-deps/downloads/point_cloud.zip",
+    "bytes": 293772935,
+    "sha256": "fed6cb176804db9dfd9412a56b0a6e32796bbb4e6f4160cb32210ef40a68e44c",
+    "selected_expanded_bytes": 65878081,
+    "selected_members": 1
+  }
+]

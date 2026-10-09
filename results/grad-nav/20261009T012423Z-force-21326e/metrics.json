@@ -1,0 +1,22 @@
+{
+  "sim_duration_s": 1.0,
+  "measured_wall_s": 0.3075410709989228,
+  "initial_z_m": 1.25,
+  "final_z_m": 1.25,
+  "final_error_m": 0.0,
+  "drift_m": 0.0,
+  "rmse_height_error_m": 0.0,
+  "overshoot_above_setpoint_m": 0.0,
+  "first_entry_0.02m_band_s": 0.05,
+  "saturated_ticks": 0,
+  "dynamics_median_s": 0.014279809999607096,
+  "dynamics_p95_s": 0.014450231549926685,
+  "peak_torch_allocated_bytes": 8547840,
+  "render_throughput": null,
+  "policy_latency": null,
+  "video_playback_fps": null,
+  "sampling_dt_sim_s": 0.05,
+  "missing_samples": 0,
+  "timing_scope": "five disposable warmup steps, synchronized dynamics only, transfers/logging excluded",
+  "force_balance_scope": "no displaced-altitude recovery claim"
+}
