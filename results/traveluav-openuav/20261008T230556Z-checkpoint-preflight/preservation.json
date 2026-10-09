@@ -1,0 +1,17 @@
+{
+  "run_id": "20261008T230556Z-checkpoint-preflight",
+  "status": "locally_verified",
+  "verified_files": 4,
+  "decoded": {
+    "png": 0,
+    "depth": 0,
+    "json": 2,
+    "jsonl": 0
+  },
+  "errors": [],
+  "local_records": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T230556Z-checkpoint-preflight",
+  "local_artifacts": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/traveluav-openuav/20261008T230556Z-checkpoint-preflight",
+  "settled_manifest_sha256": "39ef266cc10441c4120588e468a2d7da3ef58426ab6016b43aef127394020201",
+  "archive_local": null,
+  "checked_utc": "2026-10-09T00:17:04Z"
+}

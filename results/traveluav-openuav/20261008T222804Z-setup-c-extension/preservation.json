@@ -1,0 +1,17 @@
+{
+  "run_id": "20261008T222804Z-setup-c-extension",
+  "status": "locally_verified",
+  "verified_files": 4,
+  "decoded": {
+    "png": 0,
+    "depth": 0,
+    "json": 2,
+    "jsonl": 0
+  },
+  "errors": [],
+  "local_records": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T222804Z-setup-c-extension",
+  "local_artifacts": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/traveluav-openuav/20261008T222804Z-setup-c-extension",
+  "settled_manifest_sha256": "516d8ad381f168fcd45a9c1b4c82cd85c8c6e306372505f64ffaa3fbe6813dde",
+  "archive_local": null,
+  "checked_utc": "2026-10-09T00:17:02Z"
+}

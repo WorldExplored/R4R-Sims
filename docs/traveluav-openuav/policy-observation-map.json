@@ -1,0 +1,498 @@
+{
+  "run_id": "20261008T235452Z-c-21144",
+  "decisions": [
+    {
+      "decision": 0,
+      "navigation_sample_id": 1791503882242316783,
+      "model_inputs_jsonl_row_1_based": 1,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503882242316783/FrontCamera.png",
+          "rgb_sha256": "a4711988b64e93fcdc374989f7cba6e02d05e2b47dd724c9ea49d5e14010dddc",
+          "depth_relative_path": "observations/1791503882242316783/FrontCamera_depth_m.npy",
+          "depth_sha256": "9e41ed36dfc168709409c9cffca4849d3bbb2cb1a2caeaaa209a64d89182c829",
+          "camera_timestamp_ns": 1791504289341914112
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503882242316783/LeftCamera.png",
+          "rgb_sha256": "a7c613b2625a8410c555f78ad3bc6100db26c60135d5c0f2ddc46b9d2d6cb5ad",
+          "depth_relative_path": "observations/1791503882242316783/LeftCamera_depth_m.npy",
+          "depth_sha256": "6a2b81257df986552673e1b037ae7deb6a6aea69d3ea87c621113c3970e733f1",
+          "camera_timestamp_ns": 1791504289341914112
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503882242316783/RightCamera.png",
+          "rgb_sha256": "f833c9cd3f5115a77276ad7c2473f1e9599ddcf0b44dcea72a25bf7349165bb9",
+          "depth_relative_path": "observations/1791503882242316783/RightCamera_depth_m.npy",
+          "depth_sha256": "8a4a3c74ca8502941c4726caec5c1803840434aa3e99ef27ed0cd395d65c3d50",
+          "camera_timestamp_ns": 1791504289341914112
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503882242316783/RearCamera.png",
+          "rgb_sha256": "d28c51a2c4575e4764debf3753549fc3d305bab73ed315b41d797fb2a367f886",
+          "depth_relative_path": "observations/1791503882242316783/RearCamera_depth_m.npy",
+          "depth_sha256": "459394f97dd9be31cd643fa308c2daf62c42f9b8bcc7209487d0112c1d111138",
+          "camera_timestamp_ns": 1791504289341914112
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503882242316783/DownCamera.png",
+          "rgb_sha256": "ca25abac29345e5afe5f8cbbf31f7f1499d562b18733f2fd3a26a386e278e967",
+          "depth_relative_path": "observations/1791503882242316783/DownCamera_depth_m.npy",
+          "depth_sha256": "037b9abbdc296372675ddcfe9790b22b7793282c68dd084b5c52593fed435b04",
+          "camera_timestamp_ns": 1791504289341914112
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 1,
+      "navigation_sample_id": 1791503885274282885,
+      "model_inputs_jsonl_row_1_based": 2,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503885274282885/FrontCamera.png",
+          "rgb_sha256": "5a101366668071af90fa0c1182bc8113a8d039a8da777dc3360e1b0e04fd09e6",
+          "depth_relative_path": "observations/1791503885274282885/FrontCamera_depth_m.npy",
+          "depth_sha256": "44ea5df2434a2064f5909c7d2efb46ff575e1e41a37c549fb837c6af37b5abb5",
+          "camera_timestamp_ns": 1791504294526024704
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503885274282885/LeftCamera.png",
+          "rgb_sha256": "7021633547150ea14a6f6f7acad21c24fb0148fd0229c2c9ca66e94abb93e0ba",
+          "depth_relative_path": "observations/1791503885274282885/LeftCamera_depth_m.npy",
+          "depth_sha256": "9eb2f66d12576197aa0486d83718a61343ccb4bf0c0c7c34300e5003ccb06773",
+          "camera_timestamp_ns": 1791504294526024704
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503885274282885/RightCamera.png",
+          "rgb_sha256": "f3370678ba91c49d9709bb5a5ec4e45447cec7c710451b65836253b356a0f2ae",
+          "depth_relative_path": "observations/1791503885274282885/RightCamera_depth_m.npy",
+          "depth_sha256": "284a935ad9ddd138edbdbe6441f9dafd83eeb2d9dd800e12eb59e2877f662484",
+          "camera_timestamp_ns": 1791504294526024704
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503885274282885/RearCamera.png",
+          "rgb_sha256": "7e3160033781a9ac85b5b85ddb1ded38784a0afc511c4145b8d528fbd3c5fa45",
+          "depth_relative_path": "observations/1791503885274282885/RearCamera_depth_m.npy",
+          "depth_sha256": "802a1c2ab2fc5f0ddaab51343106705fbfa4d9a8f6823957cea5e9acd710511a",
+          "camera_timestamp_ns": 1791504294526024704
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503885274282885/DownCamera.png",
+          "rgb_sha256": "9a1172fa560fe04e2e26b1e0e136e516d8d5ecc94db96ad1a721922f0cc0192c",
+          "depth_relative_path": "observations/1791503885274282885/DownCamera_depth_m.npy",
+          "depth_sha256": "382c32fca6c3e9e7741ce6a771e3ac968b1400a7cec1ca45f1c8ce0218dfbef1",
+          "camera_timestamp_ns": 1791504294526024704
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 2,
+      "navigation_sample_id": 1791503889192313895,
+      "model_inputs_jsonl_row_1_based": 3,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503889192313895/FrontCamera.png",
+          "rgb_sha256": "d25df3ac454b5df52fb353e0c07e3327abf4ef9ad7920087d5fed1ad121b496a",
+          "depth_relative_path": "observations/1791503889192313895/FrontCamera_depth_m.npy",
+          "depth_sha256": "d0683be256f452b910c6f72f8339b4f0dbd387bbf4cea307e3316d0468b91dc7",
+          "camera_timestamp_ns": 1791504299497130752
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503889192313895/LeftCamera.png",
+          "rgb_sha256": "3008461be8815c07f0aac9ac805a33d4e2ba42df2ccbbcbd0e996469f83dfff3",
+          "depth_relative_path": "observations/1791503889192313895/LeftCamera_depth_m.npy",
+          "depth_sha256": "454bbc1d4e9399402085492cad01dc1c8c39fa4c59697c193b73e68a889f57a6",
+          "camera_timestamp_ns": 1791504299497130752
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503889192313895/RightCamera.png",
+          "rgb_sha256": "b4a613a7ba7426dc3830e6a94d659cf570a359c67513fd21733f00accbff887e",
+          "depth_relative_path": "observations/1791503889192313895/RightCamera_depth_m.npy",
+          "depth_sha256": "7bc68901554ad7ee151bc26d6c7d1767c796d323ac1cc689ff9989f9378caba9",
+          "camera_timestamp_ns": 1791504299497130752
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503889192313895/RearCamera.png",
+          "rgb_sha256": "f06b70bdf451cadb360dc8e71f03a8678288604a6871dab30a57c27106afc89e",
+          "depth_relative_path": "observations/1791503889192313895/RearCamera_depth_m.npy",
+          "depth_sha256": "7995c9610dbb4bf8a178535b8ccd04e3ac0050b6447161855abe36f4f863425c",
+          "camera_timestamp_ns": 1791504299497130752
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503889192313895/DownCamera.png",
+          "rgb_sha256": "a9a530a96d53fd1785d53ccf72e712742f4a417c5dcc135f89031f4278f0559f",
+          "depth_relative_path": "observations/1791503889192313895/DownCamera_depth_m.npy",
+          "depth_sha256": "ffa70b1df864d89e85b61dc631c59333ae506ca84318053d446a9ea373c37c2e",
+          "camera_timestamp_ns": 1791504299497130752
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 3,
+      "navigation_sample_id": 1791503892030063363,
+      "model_inputs_jsonl_row_1_based": 4,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503892030063363/FrontCamera.png",
+          "rgb_sha256": "af32892e4ed705acca7331185ae566d8f91c75805b029eff22082d3540ca8409",
+          "depth_relative_path": "observations/1791503892030063363/FrontCamera_depth_m.npy",
+          "depth_sha256": "98d5e12ec33e23b77f74ff6705a5726d33ccfad0b76be307455c282e2304d063",
+          "camera_timestamp_ns": 1791504304645240576
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503892030063363/LeftCamera.png",
+          "rgb_sha256": "e2d2be454c45a50c30ff9a586cb3a191f417c763103754484c29604be40c87a5",
+          "depth_relative_path": "observations/1791503892030063363/LeftCamera_depth_m.npy",
+          "depth_sha256": "6b2838ee5414ab61ced6372bc607a0cd2138eccc98584dd7d0f469bb81da140d",
+          "camera_timestamp_ns": 1791504304645240576
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503892030063363/RightCamera.png",
+          "rgb_sha256": "6c4c3e109c202d34e2aeaad6e37bab6e42f8183a60ffb600d2421cc275814c88",
+          "depth_relative_path": "observations/1791503892030063363/RightCamera_depth_m.npy",
+          "depth_sha256": "87e5dc4d770ae238a02c6fb2a3eee0ab6cdf330bb7d7240bd7451d89dee0b98e",
+          "camera_timestamp_ns": 1791504304645240576
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503892030063363/RearCamera.png",
+          "rgb_sha256": "f648a181cd57587df15ba12ab8c7292dc766df3ea50ed9bd393ddea10d147446",
+          "depth_relative_path": "observations/1791503892030063363/RearCamera_depth_m.npy",
+          "depth_sha256": "a5df113539c13ac9ef859067012b5fd8f256518b0eb84797452e54cf71c98d60",
+          "camera_timestamp_ns": 1791504304645240576
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503892030063363/DownCamera.png",
+          "rgb_sha256": "486611728959e2afe0a6ba907f0ef57b1d680636702df777d8748e9e9d1e3657",
+          "depth_relative_path": "observations/1791503892030063363/DownCamera_depth_m.npy",
+          "depth_sha256": "65dbd366437a842cb4c0798dc6f35146ec95eebeac87cecd5f3708387481d1b4",
+          "camera_timestamp_ns": 1791504304645240576
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 4,
+      "navigation_sample_id": 1791503895052231474,
+      "model_inputs_jsonl_row_1_based": 5,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503895052231474/FrontCamera.png",
+          "rgb_sha256": "cdb6f17d437c0e572b9871b578888ab4e3f5cdfc894ef55cb4c96cba8bfa34c6",
+          "depth_relative_path": "observations/1791503895052231474/FrontCamera_depth_m.npy",
+          "depth_sha256": "c24e74da6bb1bf4cb913e8ec47fb65112ae80a974d5e02d82bb24f77364acdd1",
+          "camera_timestamp_ns": 1791504309775350016
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503895052231474/LeftCamera.png",
+          "rgb_sha256": "7c5e8c9114d2d963fcc6f3baf7549a18debeabbc1edbd622e8989421771920bb",
+          "depth_relative_path": "observations/1791503895052231474/LeftCamera_depth_m.npy",
+          "depth_sha256": "54c73ce6fdeffa29fb84f274c6b68cc83f05bfcbd2f421b9366eec5bf1417029",
+          "camera_timestamp_ns": 1791504309775350016
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503895052231474/RightCamera.png",
+          "rgb_sha256": "7985bdbe6ed823e291cd2e295ccf8222bf94eb8a30a20e8f410089808ab1a1d6",
+          "depth_relative_path": "observations/1791503895052231474/RightCamera_depth_m.npy",
+          "depth_sha256": "77af12f772e4bb89e2db168a8188457eafc8fa4e256a9185dbced99e59d01881",
+          "camera_timestamp_ns": 1791504309775350016
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503895052231474/RearCamera.png",
+          "rgb_sha256": "06c2e18886d1fb1240856623ed357b37edf0d521efcf3abf5a78a9bd2350f51b",
+          "depth_relative_path": "observations/1791503895052231474/RearCamera_depth_m.npy",
+          "depth_sha256": "25c8008e0799f79a855d7299f22b416215f2a87d915f69754b1d58c6b4c16128",
+          "camera_timestamp_ns": 1791504309775350016
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503895052231474/DownCamera.png",
+          "rgb_sha256": "163a1112b3a4697b181813c58fad8283671ca27613792fda0295588ed73ae407",
+          "depth_relative_path": "observations/1791503895052231474/DownCamera_depth_m.npy",
+          "depth_sha256": "38de90e67c6bd8b9977736e390989851718f5adede643b32ae6faee2596556d7",
+          "camera_timestamp_ns": 1791504309775350016
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 5,
+      "navigation_sample_id": 1791503897997742676,
+      "model_inputs_jsonl_row_1_based": 6,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503897997742676/FrontCamera.png",
+          "rgb_sha256": "2aff6831d8e2b2194a215fd89d0b07317661b023edbc69992377cae65c17b3fe",
+          "depth_relative_path": "observations/1791503897997742676/FrontCamera_depth_m.npy",
+          "depth_sha256": "27d8f87e3e8d4294b1223a3bf89f01c6de8bfd928a457dfadb6ea843f5a0537b",
+          "camera_timestamp_ns": 1791504314944460288
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503897997742676/LeftCamera.png",
+          "rgb_sha256": "241885d1e34964b41b99bf52845ada7b15b633dbd63fc88e6e830825ca82252e",
+          "depth_relative_path": "observations/1791503897997742676/LeftCamera_depth_m.npy",
+          "depth_sha256": "4452fa248a7905af8d726eea426822f11d1656be63c4120fae2c76a1a7658be0",
+          "camera_timestamp_ns": 1791504314944460288
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503897997742676/RightCamera.png",
+          "rgb_sha256": "20b769c47182da23cc696082fff3c466dea346df30f6b5aebf6bad42cc2c4b05",
+          "depth_relative_path": "observations/1791503897997742676/RightCamera_depth_m.npy",
+          "depth_sha256": "ac4ab4eaf1f61f0d8485dc073db0701e39c2041a2c4aa3dfacabdb5bac0efeb5",
+          "camera_timestamp_ns": 1791504314944460288
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503897997742676/RearCamera.png",
+          "rgb_sha256": "667134e8e04735116792f14c46e32a8d93a43056b3848e367900c80712453cea",
+          "depth_relative_path": "observations/1791503897997742676/RearCamera_depth_m.npy",
+          "depth_sha256": "e80d9d3f8fddab91065fbde777f70beae7fde0effab30cb0d0e5282780dbb6eb",
+          "camera_timestamp_ns": 1791504314944460288
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503897997742676/DownCamera.png",
+          "rgb_sha256": "c4c81265b636ee7ecd49ca7f9cd543a1e1b2974c6a13eddf9a5640ea6031dd13",
+          "depth_relative_path": "observations/1791503897997742676/DownCamera_depth_m.npy",
+          "depth_sha256": "3f51f0aef48282e70c3f717f51133e6aeed9646ef4bdd2ad46fce96748caa247",
+          "camera_timestamp_ns": 1791504314944460288
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 6,
+      "navigation_sample_id": 1791503901170420215,
+      "model_inputs_jsonl_row_1_based": 7,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503901170420215/FrontCamera.png",
+          "rgb_sha256": "9e2fc61634c9abddecf54266cc9709899e6b32354055d06e62e5d1b3d5287695",
+          "depth_relative_path": "observations/1791503901170420215/FrontCamera_depth_m.npy",
+          "depth_sha256": "dcc32a7f1098de03d1800601790dfde338e11ff72349c4ec2292592a22e1504a",
+          "camera_timestamp_ns": 1791504320110570496
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503901170420215/LeftCamera.png",
+          "rgb_sha256": "4b07cbc91ceae92522bb9b7c3eb6dee7ad5d60ca6a3990f79766429067410f7d",
+          "depth_relative_path": "observations/1791503901170420215/LeftCamera_depth_m.npy",
+          "depth_sha256": "b9713ce1f6c407a5f7bd25bc24c89004ff6613fb46c6423116c30b5e8b18e8de",
+          "camera_timestamp_ns": 1791504320110570496
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503901170420215/RightCamera.png",
+          "rgb_sha256": "1e75e2de564bc4bf3518a617f4b4bc969fc3654770a74905d7c1a0dd95c03855",
+          "depth_relative_path": "observations/1791503901170420215/RightCamera_depth_m.npy",
+          "depth_sha256": "e51331e8ea12de9d62324585f3cba36314f66228aa8c456c253d985d3420b425",
+          "camera_timestamp_ns": 1791504320110570496
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503901170420215/RearCamera.png",
+          "rgb_sha256": "8918193aa4a708a0076151e19b0ce47fb8c01b59a10edb50c579329f833a4eda",
+          "depth_relative_path": "observations/1791503901170420215/RearCamera_depth_m.npy",
+          "depth_sha256": "935f570bf76ac547defcbd29b2cfaa54de79814224159e6b8bdd9789a0834476",
+          "camera_timestamp_ns": 1791504320110570496
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503901170420215/DownCamera.png",
+          "rgb_sha256": "a8f568dcefc6dc4b67f0c25b83c8a7ef994e046eea03099bdda0c3cdc2d90215",
+          "depth_relative_path": "observations/1791503901170420215/DownCamera_depth_m.npy",
+          "depth_sha256": "5816daea18a0e520a14ecbb758ecb2072119139ac860525596188ca0f367d32b",
+          "camera_timestamp_ns": 1791504320110570496
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 7,
+      "navigation_sample_id": 1791503904629935794,
+      "model_inputs_jsonl_row_1_based": 8,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503904629935794/FrontCamera.png",
+          "rgb_sha256": "fa8fb4778ef9a08430ac1c06a853207af22101b06327ce3440590631d84fb68b",
+          "depth_relative_path": "observations/1791503904629935794/FrontCamera_depth_m.npy",
+          "depth_sha256": "c9b6289e2a3f499539faac1df9585cfbb428b2d47826c5fc126a1ae4be5357c1",
+          "camera_timestamp_ns": 1791504324682668032
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503904629935794/LeftCamera.png",
+          "rgb_sha256": "aba720b7082def3727aa9a98bca55ff5b1360fbfd06f2b541a314b6cfbff8788",
+          "depth_relative_path": "observations/1791503904629935794/LeftCamera_depth_m.npy",
+          "depth_sha256": "d7112f0354994c1b61a443313d492d7e98c4cbda0bc3ef82f32e70c1dcc4543b",
+          "camera_timestamp_ns": 1791504324682668032
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503904629935794/RightCamera.png",
+          "rgb_sha256": "21f02318348fa1c9b24abc830bdf6ef795d9c46da852df740c3c24d969b1b8b4",
+          "depth_relative_path": "observations/1791503904629935794/RightCamera_depth_m.npy",
+          "depth_sha256": "890de572e1e0a64b32acec81190892b69d0b501c202671117d5db4f9f8c160ef",
+          "camera_timestamp_ns": 1791504324682668032
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503904629935794/RearCamera.png",
+          "rgb_sha256": "e89755c1abeeebcca3dc5a0ff9cbe8cb6550d5d64af4c02c5f323c00a9b1a47d",
+          "depth_relative_path": "observations/1791503904629935794/RearCamera_depth_m.npy",
+          "depth_sha256": "d063624d603f2d3a548002897516d0969ef4c2ef027cda950908ef6bc05081c6",
+          "camera_timestamp_ns": 1791504324682668032
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503904629935794/DownCamera.png",
+          "rgb_sha256": "b98e966e08c70ae11e602c98817f5f34aa208da1fec9adb3e4e3f56ee5766fba",
+          "depth_relative_path": "observations/1791503904629935794/DownCamera_depth_m.npy",
+          "depth_sha256": "8eb05bcc7cbe2a99c54afc9d33f00f4c2664bdc46a84acb290e785c07d25bf0c",
+          "camera_timestamp_ns": 1791504324682668032
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 8,
+      "navigation_sample_id": 1791503907891909084,
+      "model_inputs_jsonl_row_1_based": 9,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503907891909084/FrontCamera.png",
+          "rgb_sha256": "4c098ac939b0309c56a8e4441dd8b86c0a1bc46107ffd1c281b612ba780c1e11",
+          "depth_relative_path": "observations/1791503907891909084/FrontCamera_depth_m.npy",
+          "depth_sha256": "e6ebd0031b9e5eda2ab94352f3d80b667e5eb7cbedb989951a9916abacd9361b",
+          "camera_timestamp_ns": 1791504329689774848
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503907891909084/LeftCamera.png",
+          "rgb_sha256": "8b111e45366dfbea0aac07a9bff0591591cf6b6cbce34e3d9bbe1e9f536a8ed9",
+          "depth_relative_path": "observations/1791503907891909084/LeftCamera_depth_m.npy",
+          "depth_sha256": "62fd80e066f733b2359b491825095e448a5ccaa2a96c96cdcc09e21f6e1377e2",
+          "camera_timestamp_ns": 1791504329689774848
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503907891909084/RightCamera.png",
+          "rgb_sha256": "27fb4b5c543fe1258ead08cb1db4c60bff94557e632102df6a72ce7ffe51f14d",
+          "depth_relative_path": "observations/1791503907891909084/RightCamera_depth_m.npy",
+          "depth_sha256": "7409d434f1f3ec2453d7b68ca6a823ce71661918954de4c65d45fc6a61727935",
+          "camera_timestamp_ns": 1791504329689774848
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503907891909084/RearCamera.png",
+          "rgb_sha256": "db69272b8e322848bba85b482c5550d902b0d18777970fae721f44d436dce8c0",
+          "depth_relative_path": "observations/1791503907891909084/RearCamera_depth_m.npy",
+          "depth_sha256": "37948c77b7e424aa09413adfaa294ff980b89a72eeac6f3fb837756173e4bcaf",
+          "camera_timestamp_ns": 1791504329689774848
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503907891909084/DownCamera.png",
+          "rgb_sha256": "78f7c50a27b4ad0b5118562ea44a957194ac1b82acc93a7ad8bc6ca439c1538f",
+          "depth_relative_path": "observations/1791503907891909084/DownCamera_depth_m.npy",
+          "depth_sha256": "f93a6f3f748b019e8999870ae2aaa283bf608ee8b1365eaf56f02c5dcb11a3d0",
+          "camera_timestamp_ns": 1791504329689774848
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    },
+    {
+      "decision": 9,
+      "navigation_sample_id": 1791503911220402302,
+      "model_inputs_jsonl_row_1_based": 10,
+      "views": [
+        {
+          "camera": "FrontCamera",
+          "rgb_relative_path": "observations/1791503911220402302/FrontCamera.png",
+          "rgb_sha256": "a329c14c34c77c4d8fb07456aa9a3fd6a6f6eaf3ee00a2f9b1374cddc5b2ce70",
+          "depth_relative_path": "observations/1791503911220402302/FrontCamera_depth_m.npy",
+          "depth_sha256": "6107ae58e12340f79bb15efe7c2428e3164ec721d1c51f34865fb729c3b28617",
+          "camera_timestamp_ns": 1791504334627880192
+        },
+        {
+          "camera": "LeftCamera",
+          "rgb_relative_path": "observations/1791503911220402302/LeftCamera.png",
+          "rgb_sha256": "055c342483dd3e7e2d64c4354c56be69ae4cf9e4db7c90a300939166eb8270bc",
+          "depth_relative_path": "observations/1791503911220402302/LeftCamera_depth_m.npy",
+          "depth_sha256": "850dfb8ac903e70a91f5cf2730c2946700fb0a7ad3c3980c588c9638781f4915",
+          "camera_timestamp_ns": 1791504334627880192
+        },
+        {
+          "camera": "RightCamera",
+          "rgb_relative_path": "observations/1791503911220402302/RightCamera.png",
+          "rgb_sha256": "4b856d0979cb259e200189b0ca1b78f084272c622d4c284b0da8b8d33a642597",
+          "depth_relative_path": "observations/1791503911220402302/RightCamera_depth_m.npy",
+          "depth_sha256": "a443a8d09ef03e815e2a96ac9b25af71c78d6eb5c14cca0367e104081f54af0f",
+          "camera_timestamp_ns": 1791504334627880192
+        },
+        {
+          "camera": "RearCamera",
+          "rgb_relative_path": "observations/1791503911220402302/RearCamera.png",
+          "rgb_sha256": "2f082e1aa430470cfbcc31dfd8622d5f0453c0baec2b57006306b4a16c1591bd",
+          "depth_relative_path": "observations/1791503911220402302/RearCamera_depth_m.npy",
+          "depth_sha256": "fd7f5778bee7538c3052afdf3cf5743c21816993a72de803baee6504794f24b2",
+          "camera_timestamp_ns": 1791504334627880192
+        },
+        {
+          "camera": "DownCamera",
+          "rgb_relative_path": "observations/1791503911220402302/DownCamera.png",
+          "rgb_sha256": "f474672366bef69cc94e55ca1fb20c7843bfc86df9d894953be86eb78f25f75a",
+          "depth_relative_path": "observations/1791503911220402302/DownCamera_depth_m.npy",
+          "depth_sha256": "bdf12f20e93484ced169877d04752b9fc365606c219d9e0883278c870dc4595e",
+          "camera_timestamp_ns": 1791504334627880192
+        }
+      ],
+      "ordering_verified_by_wall_timestamps": true,
+      "association_status": "source call-order inference, timestamp-checked; pixel tensor itself was not hashed during inference"
+    }
+  ],
+  "final_observation_after_decision10": "captured/preprocessed, no learned decision11",
+  "preprocessing": "pinned CLIP processor ->5x3x224x224 float32 cuda input; native wrapper bfloat16 conversion",
+  "limitations": "Nav observation association follows pinned evaluator call order and recorded wall times, not a direct live pixel-tensor digest; DINO independently consumes two record-camera streams"
+}

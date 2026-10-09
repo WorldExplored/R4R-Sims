@@ -1,0 +1,17 @@
+{
+  "run_id": "20261008T2348Z-metadata-verification",
+  "status": "locally_verified",
+  "verified_files": 499,
+  "decoded": {
+    "png": 330,
+    "depth": 0,
+    "json": 165,
+    "jsonl": 0
+  },
+  "errors": [],
+  "local_records": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z/results/traveluav-openuav/20261008T2348Z-metadata-verification",
+  "local_artifacts": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/traveluav-openuav/20261008T2348Z-metadata-verification",
+  "settled_manifest_sha256": "850dae1c532b401b6c43cc5435ad1b0eaf9385305a62f8aa45ebda38c5c6ebeb",
+  "archive_local": null,
+  "checked_utc": "2026-10-09T00:17:06Z"
+}

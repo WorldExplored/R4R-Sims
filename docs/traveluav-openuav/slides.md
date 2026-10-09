@@ -87,3 +87,5 @@
 ![C route](../../results/traveluav-openuav/20261008T235452Z-c-21144/trajectory.png)
 
 Bfront video is in canonical Mac artifacts/20261008T234423Z-b-17460/front_playback_1fps.mp4;1fps is playback, not physics/render throughput. Cfront playback is preserved in its raw artifact folder.
+
+Final preservation:37runs,2,581settled files verified on the Mac; raw metric arrays, RGB, scientific metadata, traces, archives and videos retained. Final branch push/pull verification permits the user to stop the VM; the audit leaves it running. Main integration pending. AirLab real captures/calibration/held-out split still missing; noGaussian fidelity or real-transfer claim.

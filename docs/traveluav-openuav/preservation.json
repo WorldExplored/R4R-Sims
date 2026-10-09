@@ -1,0 +1,41 @@
+{
+  "status": "preservation_complete",
+  "safe_for_user_to_stop_instance_after_final_git_sync": true,
+  "instance_terminated": false,
+  "artifact_verification": {
+    "run_count": 37,
+    "settled_file_count": 2581,
+    "settled_bytes_including_records": 685225135,
+    "errors": [],
+    "source_manifest": "each run/settled_manifest.json",
+    "destination_checks": "each run/preservation.json; canonical artifacts/all-destination-verification.json",
+    "checks": "alllisted destination SHA256/byte sizes; every PNG/NumPy array and JSON/JSONL decoded; text logs read; all archived regular-file members read"
+  },
+  "local_task_checkout": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-worktrees/traveluav-openuav-20261008T2215Z",
+  "canonical_mac_artifacts": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/traveluav-openuav",
+  "remote_checkout": "/workspace/R4R-Sims",
+  "branch": "audit/traveluav-openuav-20261008T2215Z",
+  "branch_url": "https://github.com/WorldExplored/R4R-Sims/tree/audit/traveluav-openuav-20261008T2215Z",
+  "scientific_assets": "selected original episode inputs preserved in isolated metadata-verification artifacts, original seen split in captures, generated metadata/source patches/config snapshots preserved",
+  "large_dependencies": "not copied wholesale;34exact release URLs answered HTTP200 from receiving Mac; expected versus first-measured hashes distinguished; Google immutable generations separately checkedHTTP200",
+  "video_local_checks": [
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/traveluav-openuav/20261008T234423Z-b-17460/front_playback_1fps.mp4",
+      "bytes": 72873,
+      "sha256": "6575e7736a690cd12264985a8b18ea2ade92325a2e5eb7be04b8c6303e48a862",
+      "local_open_check": "macOS qlmanage produced thumbnail, exit0; first-frame decode, not full-frame movie validation",
+      "playback_fps": 1
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/traveluav-openuav/20261008T235452Z-c-21144/front_playback_1fps.mp4",
+      "bytes": 168344,
+      "sha256": "31ddaef56b824894c32f0b034e391eb6d6161dfa1277a5a63f4f138bc47775f2",
+      "local_open_check": "macOS qlmanage produced thumbnail, exit0; first-frame decode, not full-frame movie validation",
+      "playback_fps": 1
+    }
+  ],
+  "unique_outputs_remaining_only_on_instance": false,
+  "main_integration": "pending; concurrent canonical checkout changes preserved; task worktree and remote branch synchronize via final push/pull",
+  "git_commit_records": "run source/shared commits are fixed in run.json/shared-commit.txt; final manifest commit is discoverable in branch history, verified on both hosts after push",
+  "checked_utc": "2026-10-09T00:19:47Z"
+}
