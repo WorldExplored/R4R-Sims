@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-08",
+  "files": [
+    {
+      "original_path": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/rflysim/handoff.md",
+      "import_path": "docs/rflysim/recovered/20261004/handoff.md",
+      "bytes": 14892,
+      "sha256": "4fb590776fdb79e324ccfe2c51460b535e1ce102f02045984e46525554dfb3af",
+      "limitation": "2026-10-04 phase-1 authored draft; no simulator or GPU execution; historical instructions superseded"
+    },
+    {
+      "original_path": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/rflysim/sources.md",
+      "import_path": "docs/rflysim/recovered/20261004/sources.md",
+      "bytes": 4407,
+      "sha256": "0e8c2473e6bbcc02ec836bcf0831463d5d7d91358d899232d22c58551b509587",
+      "limitation": "2026-10-04 phase-1 authored draft; no simulator or GPU execution; historical instructions superseded"
+    },
+    {
+      "original_path": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/rflysim/assets.md",
+      "import_path": "docs/rflysim/recovered/20261004/assets.md",
+      "bytes": 2584,
+      "sha256": "5d237066679247872df9449c1b4ec29a8d846c25ac3c3889948f0605205f3e48",
+      "limitation": "2026-10-04 phase-1 authored draft; no simulator or GPU execution; historical instructions superseded"
+    },
+    {
+      "original_path": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/rflysim/run.py",
+      "import_path": "simulators/rflysim/recovered/20261004/run.py",
+      "bytes": 14730,
+      "sha256": "bfe0726710250c1efd6d6011ae7d063903b99a2a460a6552800c8427e86f4e1e",
+      "limitation": "2026-10-04 phase-1 authored draft; no simulator or GPU execution; historical instructions superseded"
+    },
+    {
+      "original_path": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/rflysim/slides.md",
+      "import_path": "docs/rflysim/recovered/20261004/slides.md",
+      "bytes": 1314,
+      "sha256": "3573191a39de1cf1dd841c9c39dec32ed968feaa40002998c06ab139683c4d69",
+      "limitation": "2026-10-04 phase-1 authored draft; no simulator or GPU execution; historical instructions superseded"
+    }
+  ],
+  "originals_preserved": true,
+  "shared_context_commit": "7fd458f9b431b47a9dc909599c98cacea2eb99bb",
+  "branch_base": "2cd4f7145486854f9c84a4ae2f6aedf197e963d4",
+  "canonical_dirty_file_preserved": "simulators/unreal/analyze.py"
+}

@@ -1,0 +1,32 @@
+python3 simulators/rflysim/run.py validate --config simulators/rflysim/audit-config.json
+{
+  "review_config_valid": true,
+  "errors": [],
+  "execution_ready": false
+}
+
+python3 simulators/rflysim/run.py readiness --config simulators/rflysim/audit-config.json
+{
+  "preparation_config_valid": true,
+  "execution_ready": false,
+  "blockers": [
+    "stock scene clearance and known geometry not inspected on installed build",
+    "installed SDK signatures and telemetry mappings unverified",
+    "actual host and release path unverified",
+    "execution authorization pending"
+  ],
+  "errors": []
+}
+
+python3 -m unittest discover -s simulators/rflysim/tests -v
+BLOCKED: preparation only. No SDK adapter, verified host or execution authorization.
+test_execution_refused (test_preparation.PreparationTests) ... ok
+test_preservation_detects_tampering (test_preparation.PreparationTests) ... ok
+test_review_config_preserves_route_and_thresholds (test_preparation.PreparationTests) ... ok
+test_symlink_not_followed (test_preparation.PreparationTests) ... ok
+test_unsafe_manifest_paths_rejected (test_preparation.PreparationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK

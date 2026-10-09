@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/RflySim/RflySimVision/49d60c0907e67cef9c768ac28d89f9c3232f07a7/sensor_pkg/VisionCaptureApi.py",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/VisionCaptureApi.py",
+    "bytes": 90339,
+    "sha256": "2d88bc5fe218f0ec992b5b4e255460965355103cb79cf99e1797b8a4c27c6c97",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RflySim/RflyArena/c43421ed5ccc46d4d049d94ac3af8ebbe8b80137/windows/rflysim/SITLRun.bat",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/SITLRun.bat",
+    "bytes": 5695,
+    "sha256": "ba808a19d2feed5edbd12c25b3b368b96ba3eabc56e8e5a4d0e110b30fb5d9d8",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RflySim/RflyArena/c43421ed5ccc46d4d049d94ac3af8ebbe8b80137/src/rl_control/scripts/control_rl_node.py",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/control_rl_node.py",
+    "bytes": 33066,
+    "sha256": "e9ad0ece29c3934977ef4d5e08819b5689acf10c2451f4a9b08f13ea9d172ceb",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/3.Soft/coptersim.html",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/coptersim.html",
+    "bytes": 200875,
+    "sha256": "3b63f2487ced72c20e292d38f82d2ef1f8ae4472a08146b44cd78d1fb661c5f1",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/4.DevRef/3d-import.html",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/3d-import.html",
+    "bytes": 198402,
+    "sha256": "142fbd6c86c1aaa296e64884b0ceb8a0238574bf03dcf9971e227759d8e9cef8",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/1.Start/install.html",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/install.html",
+    "bytes": 119745,
+    "sha256": "a6237d8f25447be9f0206e98813b97b60a53c1832989248a7883717a369d02ed",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/3.Soft/winwsl.html",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/winwsl.html",
+    "bytes": 122585,
+    "sha256": "1451deeb3948cf150fd779aca70660057ab80c505a30ea4f83855565bc2f9abc",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://rflysim.com/doc/en/3.Soft/3d-eng.html",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/3d-eng.html",
+    "bytes": 156096,
+    "sha256": "55974fdd2ed28b440ed25dc2d3db72d4a3b4fa440ba0e303fd243a0adae26050",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://rflysim.com/download.html",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/download.html",
+    "bytes": 9311,
+    "sha256": "ec5888ceffb9c93eb923ca54dfdafd63e9ec9a4c887c079268447af15808e58f",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  },
+  {
+    "url": "https://rflysim.com/js/langData.js?v=20260715_course",
+    "retrieved_date": "2026-10-08",
+    "file": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/langData.js",
+    "bytes": 141758,
+    "sha256": "075a1423855b83a5a996b45f474a111cb888cad6a5740136fbf6780b391ea3d5",
+    "status": "source inspected only",
+    "redistribution": "ignored local source snapshot; upstream rights not assumed"
+  }
+]

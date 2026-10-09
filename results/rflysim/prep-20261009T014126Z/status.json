@@ -1,0 +1,20 @@
+{
+  "run_id": "prep-20261009T014126Z",
+  "kind": "preparation",
+  "date": "2026-10-08",
+  "preparation_ready": true,
+  "execution_ready": false,
+  "execution_authorized": false,
+  "A": "blocked: actual pose/calibration/sync/scene host unavailable",
+  "B": "not tested: host/installer/verified SDK adapter missing",
+  "B_minimum_integration": null,
+  "B_full_route": null,
+  "coupled_capture": "blocked: timestamped pose-to-frame mapping unverified",
+  "C": "blocked: no compatible R4R visual autonomy policy/task adapter",
+  "fidelity": "blocked: AirLab capture/reconstruction/held-out split/downstream thresholds missing",
+  "recommendation": "defer renderer; candidate dynamics/control host and native visual baseline",
+  "branch": "audit/rflysim",
+  "branch_base": "2cd4f7145486854f9c84a4ae2f6aedf197e963d4",
+  "host_contacted": false,
+  "measurements": null
+}

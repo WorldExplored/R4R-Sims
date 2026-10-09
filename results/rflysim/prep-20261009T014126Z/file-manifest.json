@@ -1,0 +1,344 @@
+[
+  {
+    "path": "docs/rflysim/assets.md",
+    "bytes": 2936,
+    "sha256": "7fc94d5922122384d1dbd38ef20d9432c4677709833bc73baaeafdf83b937f22",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/handoff.md",
+    "bytes": 14233,
+    "sha256": "5685fc9e29ec6d2529dfbe0d80d10194b9c1626638ce9d35deb7c7c2b003c33a",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/interfaces.md",
+    "bytes": 6139,
+    "sha256": "32fac1ca2724b210792a67c68a4c8673c1c2f854390a3f9a7f305b3c378de671",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/recovered/20261004/assets.md",
+    "bytes": 2584,
+    "sha256": "5d237066679247872df9449c1b4ec29a8d846c25ac3c3889948f0605205f3e48",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/recovered/20261004/handoff.md",
+    "bytes": 14892,
+    "sha256": "4fb590776fdb79e324ccfe2c51460b535e1ce102f02045984e46525554dfb3af",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/recovered/20261004/slides.md",
+    "bytes": 1314,
+    "sha256": "3573191a39de1cf1dd841c9c39dec32ed968feaa40002998c06ab139683c4d69",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/recovered/20261004/sources.md",
+    "bytes": 4407,
+    "sha256": "0e8c2473e6bbcc02ec836bcf0831463d5d7d91358d899232d22c58551b509587",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/recovery.json",
+    "bytes": 2331,
+    "sha256": "5217d16cbbfdef1dc5e64c2e289c48156e27d4a3e5be0753f1e3fd81e53ea116",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/runner-changes.diff",
+    "bytes": 20901,
+    "sha256": "bf14b5f7d9e6e51c01f4489210316c7b50ddf27deaaf772eeca3ad41200ca9af",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/runner-review.md",
+    "bytes": 2629,
+    "sha256": "0ec7a68615bdf7bce72b3cd0251319c22dd3b3bcc109145a39b061ebf2afff1a",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/setup.md",
+    "bytes": 2407,
+    "sha256": "344cf33ed25666114483028090efd92d4d3f72bd887d94efe7fc7d889cf707e5",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/slides.md",
+    "bytes": 6027,
+    "sha256": "72d330c56a97abb515a6033ed685cc418249065c04f4acede6cebb798a7501fa",
+    "verified": true
+  },
+  {
+    "path": "docs/rflysim/sources.md",
+    "bytes": 4990,
+    "sha256": "d5f329cda8134fd49bd9cb2c723634be613cdb506a85db6fe87ddd94dbea7f5f",
+    "verified": true
+  },
+  {
+    "path": "simulators/rflysim/README.md",
+    "bytes": 1370,
+    "sha256": "c663479a9023e553a8f726b932eb45fe88b30a291d9bdcbeccc273ad6df9a4ff",
+    "verified": true
+  },
+  {
+    "path": "simulators/rflysim/audit-config.json",
+    "bytes": 6701,
+    "sha256": "3736fe72e52b92faca9a26e153dc7b2a0d040a03aecd35844100c8e0d924243f",
+    "verified": true
+  },
+  {
+    "path": "simulators/rflysim/build-preparation-deck.mjs",
+    "bytes": 2825,
+    "sha256": "335106c2fbe02b3579c21de8d19061268f52af2a46b257f3cea8bba48a10fd16",
+    "verified": true
+  },
+  {
+    "path": "simulators/rflysim/recovered/20261004/run.py",
+    "bytes": 14730,
+    "sha256": "bfe0726710250c1efd6d6011ae7d063903b99a2a460a6552800c8427e86f4e1e",
+    "verified": true
+  },
+  {
+    "path": "simulators/rflysim/run.py",
+    "bytes": 5854,
+    "sha256": "80b849b356b1c8d7542582f155c123769aa8531b0a35e4b3eee2af1cc40b191d",
+    "verified": true
+  },
+  {
+    "path": "simulators/rflysim/tests/test_preparation.py",
+    "bytes": 1750,
+    "sha256": "31db72053737f76209bbdee4360930efcefe3e502259c52796b56885b39038dc",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/README.md",
+    "bytes": 233,
+    "sha256": "44c38dc0d81708c0753abe2bea5709a1826c2527e0f2820ab56d2c3cbf08dc38",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/README.md",
+    "bytes": 2265,
+    "sha256": "20bb7dc05737afc25640c86a044e34280e61e5f9fcb0aa378d02fd3b0d3585df",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/commands.log",
+    "bytes": 521,
+    "sha256": "d0789582786432937ca36db8b8bebdf92d491752f7f1780add2393a2f1964279",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/console.log",
+    "bytes": 1224,
+    "sha256": "dd51dc47d6cd8f804614026464f9ca2b9f70005819c5e2ebf85a5dd988794afa",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/deck-content.json",
+    "bytes": 8406,
+    "sha256": "7fd0eb3c9e44038fe49b7a62534b081490e65423b1a85b4fb2fefd642f93ec2d",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/previews/slide-1.png",
+    "bytes": 61290,
+    "sha256": "4c174703665bcccb5e46a5c441c4114f3c5c5a8506ed087ac8a4974aedf27d99",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/previews/slide-13.png",
+    "bytes": 112322,
+    "sha256": "c53a9bc2edf5f56fdd4d024e47e6b46da956d61798619c9dae78c2bf06649a6c",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/previews/slide-4.png",
+    "bytes": 108644,
+    "sha256": "989e02683296c8cead3a363e3bdf087cd2d4188d9b91a3d253efabe730ce9005",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/rflysim-preparation.pdf",
+    "bytes": 1180833,
+    "sha256": "84e15c7c79f06095f2d7dd5d1397044dcc29e23b77ee4579c571bc6762e67325",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/rflysim-preparation.pptx",
+    "bytes": 49150,
+    "sha256": "19bc6f06d589ae551eb66d3a842d6288d0f8c829fd4cc9d0abbd5240a5f5cc0e",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/run.json",
+    "bytes": 1185,
+    "sha256": "a10a12146058271205a1af5fdd3b50e0c048ce468bf1bc1312d5e486c6defc35",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/source-manifest.json",
+    "bytes": 4412,
+    "sha256": "dcc2f49d0de5f1c135cbc89cfae36406a11a70fb2f757b7d3c31eaf46ad8e6e7",
+    "verified": true
+  },
+  {
+    "path": "results/rflysim/prep-20261009T014126Z/status.json",
+    "bytes": 864,
+    "sha256": "f8b30787fe9fae547b7eeef03975672e902c8766ab79a8cf728aa81422f7c434",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/access-candidate.json",
+    "bytes": 317,
+    "sha256": "86c50ec522b63caf4d1ffc0755d977684c929a610af561d42de400eb96397fa4",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-1.png",
+    "bytes": 67581,
+    "sha256": "ad88c0b2ee0a782c4f5e11b4bb36d7c1a53a5c7a9030f047809f7562475276f6",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-10.png",
+    "bytes": 106261,
+    "sha256": "ddf41e0364bc8da80ee17cc3026225d64c40934ea030f3c12cd55e301e8098b9",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-11.png",
+    "bytes": 118332,
+    "sha256": "66f42203c418c96af46f509e8d4b1cac7fe5419332096861e2e36593389fe370",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-12.png",
+    "bytes": 102269,
+    "sha256": "efbb49e91cbcb8505f0c7f7b67dbf07b451365cad146f7c7911f7961e7d0de08",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-13.png",
+    "bytes": 116140,
+    "sha256": "96a1586e5535bd08eb8dc72b6acd781af4f40aea995a8aee3bad32c9b267b434",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-14.png",
+    "bytes": 130071,
+    "sha256": "3c2387578b92d62bde5df88f121dc845534f3440d7485b425e1fc60cf97ed6e9",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-2.png",
+    "bytes": 100239,
+    "sha256": "26046bcc6f32fca7463938cd2172834cefba4bb9bb91bdcf568bd20dba8b0873",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-3.png",
+    "bytes": 103109,
+    "sha256": "11ed790e71eda3d9492f97dd5d1e36908df5d8c2566b20d30be3c7bdd7f7335a",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-4.png",
+    "bytes": 120547,
+    "sha256": "e31408e20b634ae1adf7695f14c9c2ede0f6797f06ccc3413929e1b149770fc3",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-5.png",
+    "bytes": 115734,
+    "sha256": "3b7769f3d70e91de63b885d34b900a76d18ccafa3be122da314010ad939c9083",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-6.png",
+    "bytes": 101692,
+    "sha256": "34221c48c1560511f662d1016bf5b807008abc6416f411531ca06dd320c5528c",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-7.png",
+    "bytes": 113508,
+    "sha256": "9c61db16ac3a46600667f532f723b9998a6eef327319d7002b22cd74cf385d5f",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-8.png",
+    "bytes": 114519,
+    "sha256": "6f5e950f5483c316b74958902e5b404fc71ff8c5b93dbf44266bed943364a04f",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/deck-rendered/slide-9.png",
+    "bytes": 106650,
+    "sha256": "4d67cfca8e90679937e401644cb828f567beb0fcc1e0b3b0173fc57886285674",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/3d-eng.html",
+    "bytes": 156096,
+    "sha256": "55974fdd2ed28b440ed25dc2d3db72d4a3b4fa440ba0e303fd243a0adae26050",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/3d-import.html",
+    "bytes": 198402,
+    "sha256": "142fbd6c86c1aaa296e64884b0ceb8a0238574bf03dcf9971e227759d8e9cef8",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/SITLRun.bat",
+    "bytes": 5695,
+    "sha256": "ba808a19d2feed5edbd12c25b3b368b96ba3eabc56e8e5a4d0e110b30fb5d9d8",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/VisionCaptureApi.py",
+    "bytes": 90339,
+    "sha256": "2d88bc5fe218f0ec992b5b4e255460965355103cb79cf99e1797b8a4c27c6c97",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/control_rl_node.py",
+    "bytes": 33066,
+    "sha256": "e9ad0ece29c3934977ef4d5e08819b5689acf10c2451f4a9b08f13ea9d172ceb",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/coptersim.html",
+    "bytes": 200875,
+    "sha256": "3b63f2487ced72c20e292d38f82d2ef1f8ae4472a08146b44cd78d1fb661c5f1",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/download.html",
+    "bytes": 9311,
+    "sha256": "ec5888ceffb9c93eb923ca54dfdafd63e9ec9a4c887c079268447af15808e58f",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/install.html",
+    "bytes": 119745,
+    "sha256": "a6237d8f25447be9f0206e98813b97b60a53c1832989248a7883717a369d02ed",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/langData.js",
+    "bytes": 141758,
+    "sha256": "075a1423855b83a5a996b45f474a111cb888cad6a5740136fbf6780b391ea3d5",
+    "verified": true
+  },
+  {
+    "path": "artifacts/rflysim/prep-20261009T014126Z/source-snapshots/winwsl.html",
+    "bytes": 122585,
+    "sha256": "1451deeb3948cf150fd779aca70660057ab80c505a30ea4f83855565bc2f9abc",
+    "verified": true
+  }
+]

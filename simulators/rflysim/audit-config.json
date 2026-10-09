@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "scope": "preparation only",
+  "execution_authorized": false,
+  "settings_frozen_for_review": true,
+  "execution_freeze_complete": false,
+  "freeze_blockers": [
+    "stock scene clearance and known geometry not inspected on installed build",
+    "installed SDK signatures and telemetry mappings unverified",
+    "actual host and release path unverified"
+  ],
+  "criteria_source": "user 2026-10-08 audit criteria; audit checks, not lab fidelity thresholds",
+  "host": {
+    "gpu_candidate": "RTX A5000",
+    "gpu_count": 1,
+    "vram_gb": 24,
+    "cpu_target_cores": 8,
+    "ram_target_gb": 32,
+    "disk_target_gb": 500,
+    "free_disk_target_gb": 300,
+    "targets_are_requirements": false,
+    "supported_path_candidate": "Windows native RflySim3D + CopterSim + Python; PX4 in WSL1 RflySim-20.04",
+    "actual_os": null,
+    "total_price": null
+  },
+  "limits": {
+    "active_setup_total_s": 7200,
+    "repair_attempts_max": 2,
+    "startup_per_process_s": 120,
+    "sdk_call_s": 2,
+    "telemetry_connect_s": 15,
+    "flight_s": 75,
+    "cleanup_s": 15,
+    "a_sequence_watchdog_s": 40,
+    "capture_rate_test_watchdog_s": 45
+  },
+  "camera": {
+    "count": 1,
+    "SeqID": 0,
+    "TypeID": 1,
+    "TargetCopter": 1,
+    "width_px": 640,
+    "height_px": 480,
+    "requested_hz": 10,
+    "CameraFOV_deg": 90,
+    "fov_axis": "unverified",
+    "intrinsics_status": "pending FOV interpretation and projection check",
+    "pixel_order": "BGR documented SDK output; verify installed build",
+    "a_mount_type": 2,
+    "b_mount_type": 0,
+    "body_to_camera_translation_FRD_m": [
+      0.3,
+      0,
+      0
+    ],
+    "body_to_camera_rpy_deg": [
+      0,
+      0,
+      0
+    ],
+    "body_to_camera_verified": false,
+    "transport": "same-host shared memory; no external renderer",
+    "proposed_T_body_FRD_from_camera_FRD": [
+      [
+        1,
+        0,
+        0,
+        0.3
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "proposed_R_camera_FRD_from_optical_RDF": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "transform_status": "numerical desired convention; optical interpretation not applied until installed verification"
+  },
+  "A": {
+    "pose_convention": "desired camera centres in local NED metres, rpy degrees; conversion to engine awaiting verification",
+    "poses": [
+      {
+        "id": "p0",
+        "ned_m": [
+          0,
+          0,
+          -2
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "p1",
+        "ned_m": [
+          1,
+          0,
+          -2
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "p2",
+        "ned_m": [
+          0,
+          1,
+          -2
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "p3",
+        "ned_m": [
+          0,
+          0,
+          -3
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "p4",
+        "ned_m": [
+          0,
+          0,
+          -2
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          15
+        ]
+      },
+      {
+        "id": "p5",
+        "ned_m": [
+          0,
+          0,
+          -2
+        ],
+        "rpy_deg": [
+          0,
+          10,
+          0
+        ]
+      },
+      {
+        "id": "p6",
+        "ned_m": [
+          0,
+          0,
+          -2
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "repeat_count": 2,
+    "per_pose_s": 3,
+    "settle_s": 1,
+    "sequence_duration_s": 21,
+    "warmup_s": 5,
+    "capture_rate_test_s": 30,
+    "rate_test_warmup_s": 5,
+    "pose_position_tolerance_m": 0.02,
+    "pose_angle_tolerance_deg": 1,
+    "feature_tolerance_dimension_fraction": 0.02,
+    "known_geometry": null,
+    "basis": "small metre-scale offsets include horizontal and vertical translation plus 15-degree yaw and 10-degree pitch; documented world-fixed mode, actual stock clearance unverified"
+  },
+  "B": {
+    "vehicle": "one stock quadcopter, exact installed model and PX4 build pending",
+    "route_ned_m": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -2
+      ],
+      [
+        2,
+        0,
+        -2
+      ],
+      [
+        2,
+        2,
+        -2
+      ],
+      [
+        0,
+        0,
+        -2
+      ]
+    ],
+    "end_action": "land",
+    "yaw_rad": 0,
+    "setpoint_hz": 10,
+    "telemetry_record_target_hz": 20,
+    "gpu_poll_hz": 1,
+    "waypoint_tolerance_m": 0.25,
+    "continuous_dwell_s": 2,
+    "waypoint_deadline_s": 12,
+    "telemetry_stale_s": 0.5,
+    "takeoff_criterion": {
+      "fresh_armed": true,
+      "height_above_initial_m": 1,
+      "continuous_s": 1
+    },
+    "touchdown_criterion": {
+      "fresh_landed_state": "MAV_LANDED_STATE_ON_GROUND",
+      "speed_norm_max_m_s": 0.2,
+      "continuous_s": 2,
+      "require_disarmed_heartbeat": true
+    },
+    "initial_capture_enabled": false,
+    "repeat_count_after_success": 1,
+    "repeat_capture_enabled": true,
+    "capture_window_relative_flight_s": [
+      0,
+      75
+    ],
+    "camera_requested_hz": 10,
+    "same_route_required": true,
+    "reset": "documented stock restart/reset and fresh origin/ground truth; installed procedure pending",
+    "error_measurement_source": "simulator truth preferred; if unavailable report PX4-estimate-only criterion and ground-truth outcome blocked"
+  },
+  "association": {
+    "clock_ownership": "PX4 boot and CopterSim simulation clock plus receiver monotonic/UTC; offsets unverified",
+    "source_time_required": true,
+    "max_pose_bracket_gap_s": 0.1,
+    "max_clock_residual_s": 0.02,
+    "method": "interpolate bracketing simulator truth at image acquisition time; quaternion SLERP and linear translation, calibrated body-to-camera transform; no extrapolation",
+    "actual_pose_source_priority": [
+      "independently timestamped native CameraData",
+      "timestamped simulator body truth plus verified extrinsics"
+    ],
+    "receiver_time_as_acquisition": false,
+    "failure_behavior": "retain frames and mark geometric association blocked"
+  },
+  "C": {
+    "status": "blocked",
+    "compatible_R4R_policy": null,
+    "released_controller_candidate": "RflyArena state-feedback ONNX policy; different dynamics/ROS adapter/task; not substituted",
+    "training_authorized": false
+  }
+}
