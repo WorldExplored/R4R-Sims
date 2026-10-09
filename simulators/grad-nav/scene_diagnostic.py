@@ -9,7 +9,7 @@ def main():
  sys.path.insert(0,str(a.upstream));from utils.gs_local import GS
  out=a.out;(out/'frames').mkdir(exist_ok=True)
  scene=Path('/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741')
- cfg=Path('/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T020714Z-a-1004f1/resolved-config.yml')
+ cfg=Path('/home/ubuntu/R4R-Sims-grad-nav/results/grad-nav/20261009T020714Z-a-1004f1/resolved-config.yml')
  gs=GS(cfg,res=.4);device=gs.device
  import nerfstudio.models.splatfacto as sm
  raster=sm.rasterization;last={}

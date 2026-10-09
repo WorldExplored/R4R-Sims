@@ -68,7 +68,7 @@ def main():
                 'helper_xcr10':x[0].cpu().tolist(),'camera_to_world':c2w.cpu().tolist(),'reference_camera_to_world':ref4.tolist(),
                 'body_rotation_orthogonalization':'SciPy Rotation.from_matrix of inverse rounded mount',
                 'scene_scale_m_per_unit':None});xs.append(x)
-        frozen=Path('/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T013743Z-a-b58f3b/reference_route.jsonl')
+        frozen=Path('/home/ubuntu/R4R-Sims-grad-nav/results/grad-nav/20261009T013743Z-a-b58f3b/reference_route.jsonl')
         old=[json.loads(line) for line in frozen.read_text().splitlines()]
         assert max(np.max(np.abs(np.array(x['camera_to_world'])-np.array(y['camera_to_world']))) for x,y in zip(rows,old)) < 1e-6
         rows=old
@@ -98,14 +98,15 @@ def main():
                 for name,value in [('raster-depth',raw_depth),('viewmat',viewmat),('K',K)]:np.save(out/'frames'/f'{i:03d}-direct-{name}.npy',value.detach().cpu().numpy())
                 comparisons.append(comp);poses.write(json.dumps({**row,**comp})+'\n');poses.flush()
             timing={}
+            fixed_c2w=torch.tensor(rows[0]['camera_to_world'],device=device)
             for label in ['direct','author','raw_observation']:
                 for _ in range(5):
-                    if label=='direct':direct(torch.tensor(rows[0]['camera_to_world'],device=device))
+                    if label=='direct':direct(fixed_c2w)
                     else:gs.render(xs[0])
                 sync();torch.cuda.reset_peak_memory_stats();samples=[]
                 for _ in range(50):
                     sync();t=time.perf_counter()
-                    if label=='direct':d=direct(torch.tensor(rows[0]['camera_to_world'],device=device))
+                    if label=='direct':d=direct(fixed_c2w)
                     else:dep,rgb=gs.render(xs[0])
                     if label=='raw_observation':dep.cpu();rgb.cpu()
                     sync();samples.append(time.perf_counter()-t)
