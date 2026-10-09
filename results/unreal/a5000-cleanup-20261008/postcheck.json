@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-10-09T00:07:37.467424+00:00",
+  "instance": "63.141.33.148:22134",
+  "ssh_reconnect_succeeded": true,
+  "gpu": "NVIDIA RTX A5000, 580.178.04, 24564 MiB",
+  "uptime_seconds": 264976.47,
+  "cleanup_paths_remaining": [],
+  "repository_checkouts_preserved": true,
+  "main_checkout_status": " M simulators/unreal/analyze.py\n?? simulators/unreal/manifest.py\n",
+  "audit_checkout_status": "?? results/unreal/focused-validation-20261008T232000Z/\n?? simulators/unreal/focused_analyze.py\n?? simulators/unreal/focused_validation.py\n",
+  "disk": {
+    "/root": {
+      "total_bytes": 128849018880,
+      "free_bytes": 128226217984
+    },
+    "/workspace": {
+      "total_bytes": 120000086016,
+      "free_bytes": 120000086016
+    }
+  },
+  "a6000_contacted": false,
+  "instance_terminated": false
+}
