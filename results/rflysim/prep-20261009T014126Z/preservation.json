@@ -1,7 +1,7 @@
 {
   "verified_utc": "2026-10-09T01:49:01.888013+00:00",
   "all_imported_bytes_sha256_equal": true,
-  "verified_files": 57,
+  "verified_files": 60,
   "original_recovery_files_unchanged": true,
   "essential_media_local": true,
   "local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
@@ -11,12 +11,18 @@
   "all_14_slides_visually_inspected": true,
   "measurements_preserved": "none; no simulator experiment",
   "remote_transfer": "not applicable; host not contacted",
-  "github_sync": "verified published preparation code commit 665926b723bb6128fe5ed0d7ca0b5a7dac3d2167 on audit/rflysim; metadata follow-up commit pending push",
+  "github_sync": {
+    "verified": true,
+    "remote_branch": "audit/rflysim",
+    "observed_remote_commit": "347fcbbe5e69effed98f60123824971797ac32da",
+    "note": "Observed commit includes the preparation code, deck/PDF/previews and provenance. Current metadata HEAD is available from branch history."
+  },
   "manifest": "file-manifest.json",
   "manifest_exclusions": [
     "self",
     "preservation.json",
     "revision.json; recorded after commits"
   ],
-  "generated_file_diff_check": "PDF treated as binary; preserved unified patch whitespace checked with scoped attributes"
+  "generated_file_diff_check": "PDF treated as binary; preserved unified patch whitespace checked with scoped attributes",
+  "original_import_verified_files": 57
 }
