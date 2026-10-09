@@ -18,6 +18,21 @@
       "sha256": "19a6830a5df679095488a8219b6cd63ce733871e10b4e3cc0f621543b4e2938c"
     },
     {
+      "path": "root/R4R-Sims-unreal-audit/third_party/unreal/splat_project/Config/DefaultEngine.ini",
+      "bytes": 104,
+      "sha256": "596d23829f5e4b289ab716b69a7b10bb47cb13e0b6280b613c0a41956382bb78"
+    },
+    {
+      "path": "root/R4R-Sims-unreal-audit/third_party/unreal/splat_project/R4RSplat.uproject",
+      "bytes": 394,
+      "sha256": "6255bba0f9e32c55f63c51e16fa98b47e480f3422c9e23bce7edd321562301b5"
+    },
+    {
+      "path": "source-manifest-initial.json",
+      "bytes": 16776,
+      "sha256": "9a79eb23140bf3affc152829d821fd32e60ee7e9cb77bb7c75029bcf330d3b88"
+    },
+    {
       "path": "tmp/r4r-analysis-pip.log",
       "bytes": 2721,
       "sha256": "2a21cfd171bfecc529ecbe47a38fa09789aad9685a77ead4a784b72715bf791c"

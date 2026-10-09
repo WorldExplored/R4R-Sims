@@ -7,7 +7,7 @@
     "/root/R4R-Sims-unreal-audit/third_party/unreal",
     "/root/R4R-Sims-unreal-audit/artifacts/unreal",
     "/workspace/r4r_assets/Blocks_v1.8.1.zip",
-    "/workspace/r4r_assets/LinuxBlocks1.8.1",
+    "/workspace/r4r_assets/unpacked/LinuxBlocks1.8.1",
     "/tmp/r4r-strace-apt.log",
     "/tmp/r4r-vulkan.stdout",
     "/tmp/r4r-vulkan.stderr",
@@ -133,9 +133,9 @@
     "derived-data/shader caches and editor trace stores"
   ],
   "backup_local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/unreal-final-backup-20261008",
-  "expected_backup_manifest_sha256": "9a79eb23140bf3affc152829d821fd32e60ee7e9cb77bb7c75029bcf330d3b88",
-  "local_source_manifest_verified_files": 95,
-  "local_source_manifest_verified_bytes": 6321206,
+  "expected_backup_manifest_sha256": "2050fe2191d4cfbb5f5af87fd1ed58eea20ea3fe4fdb826bd72a6fd47f0640d6",
+  "local_source_manifest_verified_files": 98,
+  "local_source_manifest_verified_bytes": 6338480,
   "published_audit_commit": "4d07033ebf2a9e58d37687f837849dc9c88962ad",
   "expected_published_code_sha256": {
     "/root/R4R-Sims/simulators/unreal/analyze.py": "7f136320a50b93f937f4c5b8ed127618ebf4aaeef686e52cec82595efcf0ee8e",
