@@ -44,7 +44,44 @@
     "MPLCONFIGDIR": "/home/ubuntu/grad-nav-deps/cache/matplotlib",
     "TORCH_EXTENSIONS_DIR": "/home/ubuntu/grad-nav-deps/cache/torch-extensions"
   },
-  "next_fix_hypothesis": "nvcc defaults to gcc12 while cc1plus exists for gcc11; inspect/select supported host compiler in a future separately authorized bounded attempt. No selection, install or compiler repair performed.",
   "stopped_at_user_instruction": true,
-  "packages_changed_after_stop": false
+  "packages_changed_after_stop": false,
+  "continuation": {
+    "authorization": "2026-10-08 local user follow-up, max45min and two materially different repairs",
+    "start_utc": "2026-10-09T02:02:23Z",
+    "debugging_stopped_utc": "2026-10-09T02:14:30Z",
+    "elapsed_debugging_minutes": 12.12,
+    "material_repair_attempts_used": 1,
+    "second_attempt": "unused",
+    "repair": "CC=/usr/bin/gcc-11 CXX=/usr/bin/g++-11 in candidate launch only",
+    "minimal_cpp_cuda": "both compiled and ran successfully",
+    "default_control": "same minimal CUDA input reproduced exact historical cc1plus error",
+    "emitted_build": "nvcc -ccbin /usr/bin/gcc-11; cxx=/usr/bin/g++-11",
+    "build_success": "gsplat_cuda.so linked and used to render; hash in compiler-preflight",
+    "packages_changed": false,
+    "system_alternatives_changed": false,
+    "driver_changed": false,
+    "borrowed_toolkit_modified": false,
+    "new_runs": [
+      "20261009T020334Z-a-630efe",
+      "20261009T020714Z-a-1004f1",
+      "20261009T020926Z-d-748818",
+      "20261009T021154Z-scene-diagnostic-64cb11",
+      "20261009T022120Z-a-e1d652"
+    ],
+    "corrected_defects": [
+      "compiler selection mismatch"
+    ],
+    "remaining_hypotheses": [
+      "capture camera frame / checkpoint frame relationship or scene artifact mismatch; not established"
+    ],
+    "scene_transform_repairs": [],
+    "measurement_correction": {
+      "commit": "296c111",
+      "run": "20261009T022120Z-a-e1d652",
+      "change": "direct timing uses resident GPU camera rather than including tensor creation/upload",
+      "classification": "measurement instrumentation, not compiler compatibility repair"
+    }
+  },
+  "historical_next_fix_hypothesis": "nvcc defaults to gcc12 while cc1plus exists for gcc11; inspect/select supported host compiler in a future separately authorized bounded attempt. No selection, install or compiler repair performed."
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "path": "borrowed-cuda-components.json",
+    "bytes": 2639,
+    "sha256": "59c25310eb208ad3af6167d89340ef429c2a0cc641f9cc5b1ab9cb461c682e94"
+  },
+  {
+    "path": "built-binary.sha256",
+    "bytes": 81,
+    "sha256": "a106e7efab4a4aaacc85c2d2508b391ef7b1b29acaa53d16f09ecbbda167e4cf"
+  },
+  {
+    "path": "commands.log",
+    "bytes": 176,
+    "sha256": "5d56e7889cb1d1f347cc5cc6a0d0a21489e8a263515251101ef0c3ef2c0ca936"
+  },
+  {
+    "path": "console.log",
+    "bytes": 11320,
+    "sha256": "ea99f6eb7c5fca459d9a70b2fe0447ae838248264256574a4908e2f76cc5e9de"
+  },
+  {
+    "path": "default-compiler-console.log",
+    "bytes": 168,
+    "sha256": "92c4cab0ae77066f8b8d1dfb796e26c9cfafaa8ebc3d454e502650743cf78a35"
+  },
+  {
+    "path": "default-compiler-exit-status.txt",
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  {
+    "path": "environment-after.txt",
+    "bytes": 185,
+    "sha256": "84213e2266da04fdfc81331b2ec3e2bb2b1b964c232c401919780984334e7257"
+  },
+  {
+    "path": "environment-before.txt",
+    "bytes": 104,
+    "sha256": "b9803ef3cbd9276c1ed1b9ea1b4670aca6f7207d7d8525724bb934acd8e6a6be"
+  },
+  {
+    "path": "executed-preflight.sh",
+    "bytes": 1636,
+    "sha256": "5cd7cc6a1118b0058f2dcc7722d9dbe58777c569b8cc06bf9d645c50defdec20"
+  },
+  {
+    "path": "exit-status.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "historical-build.ninja",
+    "bytes": 3260,
+    "sha256": "097da43f3ceb288c6354f19ddd3b37166a1410cacedbfdde814d501afe98d3ea"
+  },
+  {
+    "path": "minimal.cpp",
+    "bytes": 89,
+    "sha256": "e0f7b8dfc3c2ca85935830e47d27c87b8a1cbe0d35c990256b0b0f24cf5d294a"
+  },
+  {
+    "path": "minimal.cu",
+    "bytes": 360,
+    "sha256": "48bd066f1bdf4fc2be14c4a6ae3de2fc3804cec8d3771f124566c1e128f29bf3"
+  },
+  {
+    "path": "repaired-build.ninja",
+    "bytes": 3295,
+    "sha256": "669d7b786f5d8ec24167074cf2418563595c0d322bde8ca31e67458948fefb6e"
+  },
+  {
+    "path": "run.json",
+    "bytes": 656,
+    "sha256": "7b2b79d9d10fa2d00bfee0221d879398a95e74c934ba9cb8449a64b4ba1b549b"
+  },
+  {
+    "path": "successful-build-commands.log",
+    "bytes": 5194,
+    "sha256": "c2fb4eb789503455013056fa340f9cc1657385a57ad2e391f5aac06f21f9d21a"
+  }
+]

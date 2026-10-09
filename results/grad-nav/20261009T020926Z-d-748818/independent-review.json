@@ -1,0 +1,13 @@
+{
+  "numeric_transform_max_abs_delta": 4.959106458812812e-08,
+  "achieved_state_samples": 21,
+  "camera_samples": 20,
+  "missing_samples": 0,
+  "numerical_check": "recomputed unchanged F/body/mount/C from achieved state; only identity wxyz in this run",
+  "rendered_check": "first/final visually upright; all20frames decoded; physical registration/scale unresolved",
+  "latest_A_gpu_sampled_max_MiB": 540.0,
+  "gpu_sampling_s": 1,
+  "sampling_limitation": "can miss subsecond peaks; separate from Torch allocator peak",
+  "video_local_decode": "AVFoundation20of20frames256x144",
+  "video_sha256": "3ed6b6f60cd0e4a4c2cd8d489de286dd7370cd078a7f71ef5033353afebccbac"
+}

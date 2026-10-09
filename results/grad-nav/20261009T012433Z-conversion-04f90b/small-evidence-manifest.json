@@ -1,0 +1,42 @@
+[
+  {
+    "path": "commands.log",
+    "bytes": 282,
+    "sha256": "9406adffc2184f1f2581aa615b8e0b0b2dc0768ae0effda4409734cd5c55142c"
+  },
+  {
+    "path": "console.log",
+    "bytes": 1220,
+    "sha256": "917f53dc5f014fa15d72882d905fe5aa5d93922ae70f88e5c2df9a2e6f78d0d7"
+  },
+  {
+    "path": "conversion.json",
+    "bytes": 1642,
+    "sha256": "37ed15835002bf573dff7955b2e9388fb8b8d951b491c7ff312edea028d5c495"
+  },
+  {
+    "path": "environment.txt",
+    "bytes": 2108,
+    "sha256": "5dba085134e227e8d0c68ab1d7a3c189d498ce5b0682b03d9865fec8a29eb5ca"
+  },
+  {
+    "path": "gpu.jsonl",
+    "bytes": 198,
+    "sha256": "5dcfc1c3f34a142b87571bb5794dc52db384c672a474ff33128094368664fb39"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 957,
+    "sha256": "c711a87802cd28072486804269859029e3abb41cd7675f80ca4ad7bec357f20c"
+  },
+  {
+    "path": "run.json",
+    "bytes": 1119,
+    "sha256": "365b562af1f37ae082a5e2a65ded5952d1d31c07746404ab7391d5abd2517f01"
+  },
+  {
+    "path": "upstream.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

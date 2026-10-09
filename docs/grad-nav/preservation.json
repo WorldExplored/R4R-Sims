@@ -65,6 +65,36 @@
       "files": 13,
       "bytes": 28536,
       "verified": true
+    },
+    {
+      "run_id": "20261009T020334Z-a-630efe",
+      "files": 38,
+      "bytes": 2536466,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T020714Z-a-1004f1",
+      "files": 63,
+      "bytes": 7688941,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T020926Z-d-748818",
+      "files": 76,
+      "bytes": 12927302,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T021154Z-scene-diagnostic-64cb11",
+      "files": 23,
+      "bytes": 4066967,
+      "verified": true
+    },
+    {
+      "run_id": "20261009T022120Z-a-e1d652",
+      "files": 63,
+      "bytes": 7688941,
+      "verified": true
     }
   ],
   "scientific_files_verified": 1213,
@@ -72,5 +102,109 @@
   "errors": [],
   "local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav",
   "remote_deleted": false,
-  "instance_terminated": false
+  "instance_terminated": false,
+  "verification": "settled per-file bytes/SHA256; PNG decode and NPY finite check for run outputs",
+  "compiler_evidence": {
+    "run_id": "20261009T020316Z-compiler-preflight",
+    "source_local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/compiler-diagnostics/20261009T020316Z-compiler-preflight",
+    "small_manifest": "results/grad-nav/20261009T020316Z-compiler-preflight/manifest.json",
+    "verified_cpp_cuda": true
+  },
+  "local_video_decode": {
+    "run_id": "20261009T020926Z-d-748818",
+    "frames": 20,
+    "dimensions": [
+      256,
+      144
+    ],
+    "decoder": "macOS AVFoundation",
+    "status": "passed outside sandbox"
+  },
+  "supplementary_small_records": [
+    {
+      "run_id": "20261009T012421Z-baseline-none-c8dc72",
+      "small_files": 11,
+      "manifest": "results/grad-nav/20261009T012421Z-baseline-none-c8dc72/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T012423Z-force-21326e",
+      "small_files": 13,
+      "manifest": "results/grad-nav/20261009T012423Z-force-21326e/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T012426Z-smoke-b457b8",
+      "small_files": 13,
+      "manifest": "results/grad-nav/20261009T012426Z-smoke-b457b8/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T012429Z-recovery-e58f8a",
+      "small_files": 13,
+      "manifest": "results/grad-nav/20261009T012429Z-recovery-e58f8a/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T012433Z-conversion-04f90b",
+      "small_files": 8,
+      "manifest": "results/grad-nav/20261009T012433Z-conversion-04f90b/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T013414Z-a-ba21bc",
+      "small_files": 8,
+      "manifest": "results/grad-nav/20261009T013414Z-a-ba21bc/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T013523Z-a-4178ca",
+      "small_files": 9,
+      "manifest": "results/grad-nav/20261009T013523Z-a-4178ca/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T013625Z-a-dd2ac9",
+      "small_files": 13,
+      "manifest": "results/grad-nav/20261009T013625Z-a-dd2ac9/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T013641Z-d-3a4637",
+      "small_files": 14,
+      "manifest": "results/grad-nav/20261009T013641Z-d-3a4637/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T013743Z-a-b58f3b",
+      "small_files": 13,
+      "manifest": "results/grad-nav/20261009T013743Z-a-b58f3b/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T013759Z-d-1ca173",
+      "small_files": 14,
+      "manifest": "results/grad-nav/20261009T013759Z-d-1ca173/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T020316Z-compiler-preflight",
+      "small_files": 18,
+      "manifest": "results/grad-nav/20261009T020316Z-compiler-preflight/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T020334Z-a-630efe",
+      "small_files": 15,
+      "manifest": "results/grad-nav/20261009T020334Z-a-630efe/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T020714Z-a-1004f1",
+      "small_files": 15,
+      "manifest": "results/grad-nav/20261009T020714Z-a-1004f1/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T020926Z-d-748818",
+      "small_files": 20,
+      "manifest": "results/grad-nav/20261009T020926Z-d-748818/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T021154Z-scene-diagnostic-64cb11",
+      "small_files": 10,
+      "manifest": "results/grad-nav/20261009T021154Z-scene-diagnostic-64cb11/small-evidence-manifest.json"
+    },
+    {
+      "run_id": "20261009T022120Z-a-e1d652",
+      "small_files": 15,
+      "manifest": "results/grad-nav/20261009T022120Z-a-e1d652/small-evidence-manifest.json"
+    }
+  ]
 }

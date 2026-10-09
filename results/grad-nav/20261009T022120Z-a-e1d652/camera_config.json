@@ -1,0 +1,52 @@
+{
+  "dataparser_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "dataparser_scale": 1.0,
+  "original_config": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/config.yml",
+  "resolved_config": "/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T022120Z-a-e1d652/resolved-config.yml",
+  "scene_path": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741",
+  "step": 30000,
+  "gaussian_count": 265631,
+  "camera_fx_fy_cx_cy": [
+    185.18240356445312,
+    185.2008056640625,
+    129.2303924560547,
+    72.47360229492188
+  ],
+  "width": 256,
+  "height": 144,
+  "camera_convention": "Nerfstudio/OpenGL camera-to-world, x right y up z backward",
+  "quaternion_helper": "xyzw",
+  "dynamics": "wxyz",
+  "rgb_encoding": "clamped model float [0,1]; PNG uint8 quantization without extra gamma; linear radiance not established",
+  "depth": "gsplat RGB+ED alpha-normalized expected camera-space axial depth; scene units, no metric calibration",
+  "background_depth": "Nerfstudio replaces alpha==0 pixels with max rendered depth, not geometric no-hit truth",
+  "scale_status": "dataparser scale recorded; external physical metric calibration not supplied",
+  "source_camera_file": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00010.png",
+  "original_camera_intrinsics": [
+    900.5858154296875,
+    896.4459228515625,
+    636.2944946289062,
+    363.4638366699219
+  ],
+  "frozen_route_source": "/home/ubuntu/R4R-Sims-grad-nav/results/grad-nav/20261009T013743Z-a-b58f3b/reference_route.jsonl",
+  "frozen_route_sha256": "ea345f4d4be147f1978e55b9c938e7c9734defe6ec9e434891a39adcf013a4d6"
+}

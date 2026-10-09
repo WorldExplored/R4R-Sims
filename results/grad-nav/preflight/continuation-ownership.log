@@ -1,0 +1,35 @@
+Fri Oct  9 02:28:41 UTC 2026
+568759aca5628858f8881407de6562d986190280
+## audit/traveluav-openuav-20261008T2215Z...origin/audit/traveluav-openuav-20261008T2215Z
+d9b00e16107338e49071c65f44582c013e522633
+Fri Oct  9 02:28:41 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.09             Driver Version: 580.126.09     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               On  |   00000000:01:00.0 Off |                  Off |
+| 30%   32C    P8             21W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2       251G  103G  138G  43% /
+lrwxrwxrwx 1 root root  6 Aug  5  2021 /usr/bin/g++ -> g++-11
+lrwxrwxrwx 1 root root 23 Apr 22  2025 /usr/bin/g++-11 -> x86_64-linux-gnu-g++-11
+lrwxrwxrwx 1 root root 15 Sep  5  2024 /usr/bin/gcc -> /usr/bin/gcc-12
+lrwxrwxrwx 1 root root 23 Apr 22  2025 /usr/bin/gcc-11 -> x86_64-linux-gnu-gcc-11
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Sep_21_10:33:58_PDT_2022
+Cuda compilation tools, release 11.8, V11.8.89
+Build cuda_11.8.r11.8/compiler.31833905_0

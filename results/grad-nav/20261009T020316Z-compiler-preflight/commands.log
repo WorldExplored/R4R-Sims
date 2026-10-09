@@ -1,0 +1,4 @@
+bash executed-preflight.sh
+# Later control diagnostic:
+CUDA_HOME/bin/nvcc -v -std=c++17 minimal.cu -o default-cuda
+# Successful emitted commands: successful-build-commands.log

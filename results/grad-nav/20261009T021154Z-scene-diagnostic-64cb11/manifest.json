@@ -1,0 +1,117 @@
+[
+  {
+    "path": "camera_poses.jsonl",
+    "bytes": 1473,
+    "sha256": "4580f6d6d3016c6c3a7ed4f96b412596fc13818c4f6c34e8fde0ef5c0a9f6096"
+  },
+  {
+    "path": "commands.log",
+    "bytes": 303,
+    "sha256": "eed620b25afad0c1ef3ce1ffa0ebb0ade8a4caf72f5709ca77c7c61a32abca15"
+  },
+  {
+    "path": "console.log",
+    "bytes": 324,
+    "sha256": "cd11047a19518338c7ee06f077df8553fe57585512258e024c32121b6fe40ee3"
+  },
+  {
+    "path": "diagnostics.json",
+    "bytes": 2006,
+    "sha256": "c1bea42acf76a1d4cf3aab0a754718710a066f8c488d4aaa0de983291e9f0f4d"
+  },
+  {
+    "path": "environment.txt",
+    "bytes": 6162,
+    "sha256": "5c6921a76e0297f91a714b9b1b10687fddd41e63eaea5632e6f6a938475787ec"
+  },
+  {
+    "path": "frames/000-source-pose-original-K-alpha.npy",
+    "bytes": 147584,
+    "sha256": "ab85314e366600b555dd4384d07c09060751ee495275dfe44d8a6b8b8bb19d2f"
+  },
+  {
+    "path": "frames/000-source-pose-original-K-depth.npy",
+    "bytes": 147584,
+    "sha256": "09b4ac884dbf9649d3903bda5ff5a8046186c68b02b250aae7d00afd7c24ac98"
+  },
+  {
+    "path": "frames/000-source-pose-original-K-raster.npy",
+    "bytes": 589952,
+    "sha256": "3fb3bbc7b43455c5873981beaedd3cf3202c14506b12bb1df0491837111005b4"
+  },
+  {
+    "path": "frames/000-source-pose-original-K-rgb.npy",
+    "bytes": 442496,
+    "sha256": "54d04424446d4fdc7aa2ab8e5b35157b9b20c6b8d8f0087ab0c467403bcdb09e"
+  },
+  {
+    "path": "frames/000-source-pose-original-K.png",
+    "bytes": 27699,
+    "sha256": "a6ebdcbc7324629a7665272b1a5edc05596ff25bec8ff2d5a4e8f4c02534fa20"
+  },
+  {
+    "path": "frames/001-released-camera-path-hardcoded-K-alpha.npy",
+    "bytes": 147584,
+    "sha256": "9f48e496ae2bfc619803f0f9b656da632438c178cb1971157969d26db5adf1fb"
+  },
+  {
+    "path": "frames/001-released-camera-path-hardcoded-K-depth.npy",
+    "bytes": 147584,
+    "sha256": "6e656c3bb178332268966448ba78a9b33a8248084534ad9eb6adc3da17f14040"
+  },
+  {
+    "path": "frames/001-released-camera-path-hardcoded-K-raster.npy",
+    "bytes": 589952,
+    "sha256": "56581f734c57e1a9f151b85e0361eb99f5a0767f6b94284735874e4b0f61bc1a"
+  },
+  {
+    "path": "frames/001-released-camera-path-hardcoded-K-rgb.npy",
+    "bytes": 442496,
+    "sha256": "3a0a60a9fafdd2ec49fdfedeb57a18e7599ab921ceb75402b00b7d5f6ac12e05"
+  },
+  {
+    "path": "frames/001-released-camera-path-hardcoded-K.png",
+    "bytes": 42401,
+    "sha256": "1898cb16ef15e9c8e363f7c8b97304ba973df2c31c0e1bcefaf33a5380ef5d0e"
+  },
+  {
+    "path": "frames/002-no-hit-background-alpha.npy",
+    "bytes": 147584,
+    "sha256": "13f39fd028b9c5d254e7e3840c107520a49986bee42daf970b9d164ce99aeea5"
+  },
+  {
+    "path": "frames/002-no-hit-background-depth.npy",
+    "bytes": 147584,
+    "sha256": "13f39fd028b9c5d254e7e3840c107520a49986bee42daf970b9d164ce99aeea5"
+  },
+  {
+    "path": "frames/002-no-hit-background-raster.npy",
+    "bytes": 589952,
+    "sha256": "89479a3122b99c2c419343f2fc1925c425106d1f53df2b1aeb2198ac20b25e2a"
+  },
+  {
+    "path": "frames/002-no-hit-background-rgb.npy",
+    "bytes": 442496,
+    "sha256": "0a27b789e766dc34d32ba566450ebf85e13ca9df052075380f1338bbb8aaa4ea"
+  },
+  {
+    "path": "frames/002-no-hit-background.png",
+    "bytes": 467,
+    "sha256": "0399e82432094438680c5c0b3de0ead885b4bcdada086eba13811043ac93d582"
+  },
+  {
+    "path": "gpu.jsonl",
+    "bytes": 1497,
+    "sha256": "641bf273361b99b06a504dee4cd50d68dd107038fa3dfb590d9178c7b532a96b"
+  },
+  {
+    "path": "run.json",
+    "bytes": 1787,
+    "sha256": "52a6e4895df59a74c56b95742a5a22fcae822f3d3b72c71d6b29882f46f34b43"
+  },
+  {
+    "path": "upstream.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -12,5 +12,26 @@
   "cleanup_paths": [],
   "compiler_repairs_after_user_stop": false,
   "periodic_collector_cadence_verified": false,
-  "final_collection_verified": true
+  "final_collection_verified": true,
+  "continuation": {
+    "start_utc": "2026-10-09T02:02:23Z",
+    "recorded_utc": "2026-10-09T02:27:09.354377+00:00",
+    "compiler_debugging_minutes": 12.12,
+    "material_repairs": 1,
+    "second_attempt": "unused",
+    "compiler": "repaired and built",
+    "A": "rendered and numerically/pixel equivalent; capture alignment unresolved",
+    "D": "native coordinate coupling demonstrated; physical calibration blocked",
+    "B": "not rerun or tuned",
+    "C": "blocked",
+    "fidelity": "blocked",
+    "packages_installed": false,
+    "unrelated_candidate_environment_driver_process_changes": false,
+    "borrowed_toolkit": "read-only retained",
+    "periodic_collector_used": false,
+    "resumable_explicit_transfers_verified": true,
+    "scientific_files_verified": 1213,
+    "output_runs_verified": 16,
+    "instance_running": true
+  }
 }

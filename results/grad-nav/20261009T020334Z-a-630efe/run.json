@@ -1,0 +1,31 @@
+{
+  "run_id": "20261009T020334Z-a-630efe",
+  "mode": "a",
+  "start_utc": "2026-10-09T02:03:34.899097+00:00",
+  "timeout_s": 900,
+  "command": [
+    "/home/ubuntu/grad-nav-deps/env-render/bin/python",
+    "/home/ubuntu/R4R-Sims-grad-nav/simulators/grad-nav/render.py",
+    "a",
+    "--upstream",
+    "/home/ubuntu/grad-nav-deps/upstream",
+    "--out",
+    "/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T020334Z-a-630efe"
+  ],
+  "cwd": "/home/ubuntu/R4R-Sims-grad-nav",
+  "candidate_commit": "9f9561968a1dcd611dd4cc32a4f46c5003adbad8",
+  "upstream_commit": "d9b00e16107338e49071c65f44582c013e522633",
+  "upstream_status": "",
+  "input_path": "/home/ubuntu/grad-nav-deps/upstream",
+  "output_path": "/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T020334Z-a-630efe",
+  "policy_weights": "none",
+  "scene": "gate_mid",
+  "seed": 0,
+  "status": "completed",
+  "environment_file": "environment.txt",
+  "navigation_learned_components_used": false,
+  "exit_status": 0,
+  "wall_s": 175.56539044199963,
+  "end_utc": "2026-10-09T02:06:31.418711+00:00",
+  "timed_out": false
+}

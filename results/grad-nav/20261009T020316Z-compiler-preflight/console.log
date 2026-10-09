@@ -1,0 +1,90 @@
+Fri Oct  9 02:03:16 UTC 2026
+9f9561968a1dcd611dd4cc32a4f46c5003adbad8
+## audit/traveluav-openuav-20261008T2215Z...origin/audit/traveluav-openuav-20261008T2215Z
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc
+
+cflags = -DTORCH_EXTENSION_NAME=gsplat_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/TH -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/THC -isystem /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -isystem /usr/include/python3.10 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++17 -O3
+post_cflags = 
+cuda_cflags = -DTORCH_EXTENSION_NAME=gsplat_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/TH -isystem /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/include/THC -isystem /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/include -isystem /usr/include/python3.10 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17
+cuda_post_cflags = 
+cuda_dlink_post_cflags = 
+ldflags = -shared -L/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/lib64 -lcudart
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  depfile = $out.d
+  deps = gcc
+  command = $nvcc  $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+rule link
+  command = $cxx $in $ldflags -o $out
+
+build sh.cuda.o: cuda_compile /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/sh.cu
+build projection.cuda.o: cuda_compile /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/projection.cu
+build rasterization.cuda.o: cuda_compile /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/rasterization.cu
+build ext.o: compile /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/cuda/csrc/ext.cpp
+
+
+
+build gsplat_cuda.so: link sh.cuda.o projection.cuda.o rasterization.cuda.o ext.o
+
+default gsplat_cuda.so
+/usr/bin/gcc
+gcc (Ubuntu 12.3.0-1ubuntu1~22.04.2) 12.3.0
+cc1plus
+/usr/bin/gcc-11
+gcc-11 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+/usr/lib/gcc/x86_64-linux-gnu/11/cc1plus
+/usr/bin/g++
+g++ (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+/usr/lib/gcc/x86_64-linux-gnu/11/cc1plus
+/usr/bin/g++-11
+g++-11 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+/usr/lib/gcc/x86_64-linux-gnu/11/cc1plus
+-rwxr-xr-x 1 root root 28004992 Apr 22  2025 /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus
++ /usr/bin/g++-11 -std=c++17 /home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cpp -o /home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal-cxx
++ /home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal-cxx
+cxx11-ok 5
++ set +x
++ /workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/nvcc -v -ccbin /usr/bin/g++-11 -std=c++17 /home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cu -o /home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal-cuda
+#$ _NVVM_BRANCH_=nvvm
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin
+#$ _THERE_=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ TOP=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..
+#$ NVVMIR_LIBRARY_DIR=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/../nvvm/libdevice
+#$ LD_LIBRARY_PATH=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/../lib:
+#$ PATH=/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/../nvvm/bin:/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+#$ INCLUDES="-I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//include"  
+#$ LIBRARIES=  "-L/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//lib64/stubs" "-L/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//lib64"
+#$ CUDAFE_FLAGS=
+#$ PTXAS_FLAGS=
+#$ "/usr/bin"/g++-11 -std=c++17 -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cu" -o "/tmp/tmpxft_0000666a_00000000-9_minimal.cpp1.ii" 
+#$ cicc --c++17 --gnu_version=110400 --display_error_number --orig_src_file_name "/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cu" --orig_src_path_name "/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_0000666a_00000000-3_minimal.fatbin.c" -tused --gen_module_id_file --module_id_file_name "/tmp/tmpxft_0000666a_00000000-4_minimal.module_id" --gen_c_file_name "/tmp/tmpxft_0000666a_00000000-6_minimal.cudafe1.c" --stub_file_name "/tmp/tmpxft_0000666a_00000000-6_minimal.cudafe1.stub.c" --gen_device_file_name "/tmp/tmpxft_0000666a_00000000-6_minimal.cudafe1.gpu"  "/tmp/tmpxft_0000666a_00000000-9_minimal.cpp1.ii" -o "/tmp/tmpxft_0000666a_00000000-6_minimal.ptx"
+#$ ptxas -arch=sm_52 -m64  "/tmp/tmpxft_0000666a_00000000-6_minimal.ptx"  -o "/tmp/tmpxft_0000666a_00000000-10_minimal.sm_52.cubin" 
+#$ fatbinary -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=/tmp/tmpxft_0000666a_00000000-10_minimal.sm_52.cubin" "--image3=kind=ptx,sm=52,file=/tmp/tmpxft_0000666a_00000000-6_minimal.ptx" --embedded-fatbin="/tmp/tmpxft_0000666a_00000000-3_minimal.fatbin.c" 
+#$ rm /tmp/tmpxft_0000666a_00000000-3_minimal.fatbin
+#$ "/usr/bin"/g++-11 -std=c++17 -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cu" -o "/tmp/tmpxft_0000666a_00000000-5_minimal.cpp4.ii" 
+#$ cudafe++ --c++17 --gnu_version=110400 --display_error_number --orig_src_file_name "/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cu" --orig_src_path_name "/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "/tmp/tmpxft_0000666a_00000000-6_minimal.cudafe1.cpp" --stub_file_name "tmpxft_0000666a_00000000-6_minimal.cudafe1.stub.c" --module_id_file_name "/tmp/tmpxft_0000666a_00000000-4_minimal.module_id" "/tmp/tmpxft_0000666a_00000000-5_minimal.cpp4.ii" 
+#$ "/usr/bin"/g++-11 -std=c++17 -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//include"   -m64 "/tmp/tmpxft_0000666a_00000000-6_minimal.cudafe1.cpp" -o "/tmp/tmpxft_0000666a_00000000-11_minimal.o" 
+#$ nvlink -m64 --arch=sm_52 --register-link-binaries="/tmp/tmpxft_0000666a_00000000-7_minimal-cuda_dlink.reg.c"    "-L/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//lib64/stubs" "-L/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//lib64" -cpu-arch=X86_64 "/tmp/tmpxft_0000666a_00000000-11_minimal.o"  -lcudadevrt  -o "/tmp/tmpxft_0000666a_00000000-12_minimal-cuda_dlink.sm_52.cubin" --host-ccbin "/usr/bin/g++-11"
+#$ fatbinary -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=/tmp/tmpxft_0000666a_00000000-12_minimal-cuda_dlink.sm_52.cubin" --embedded-fatbin="/tmp/tmpxft_0000666a_00000000-8_minimal-cuda_dlink.fatbin.c" 
+#$ rm /tmp/tmpxft_0000666a_00000000-8_minimal-cuda_dlink.fatbin
+#$ "/usr/bin"/g++-11 -std=c++17 -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"/tmp/tmpxft_0000666a_00000000-8_minimal-cuda_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"/tmp/tmpxft_0000666a_00000000-7_minimal-cuda_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/crt/link.stub" -o "/tmp/tmpxft_0000666a_00000000-13_minimal-cuda_dlink.o" 
+#$ "/usr/bin"/g++-11 -D__CUDA_ARCH_LIST__=520 -m64 -std=c++17 -Wl,--start-group "/tmp/tmpxft_0000666a_00000000-13_minimal-cuda_dlink.o" "/tmp/tmpxft_0000666a_00000000-11_minimal.o"   "-L/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//lib64/stubs" "-L/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin/..//lib64"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal-cuda" 
++ /home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight/minimal-cuda
+cuda11-ok 5
++ set +x
+DIAGNOSTIC_PATH=/home/ubuntu/grad-nav-deps/diagnostics/20261009T020316Z-compiler-preflight

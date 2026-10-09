@@ -15,3 +15,7 @@ C inspects author repository releases, README/project and Drive assets once. Mis
 Fidelity requires calibrated original images, held-out split provenance and an existing compatible reconstruction. Missing inputs block PSNR/SSIM/LPIPS and downstream perception assessment.
 
 Compatibility limits: two documented repair attempts and two hours excluding downloads. Do not install the full rendering stack if scene acquisition is blocked. No old candidate data or processes are removed without preservation/ownership verification.
+
+## Completed bounded continuation
+
+New authorization supersedes the old repair time budget:45minutes/two materially different attempts. One compiler selection repair succeeded. Debugging ended02:14:30UTC after12.12minutes. A frozen route retained with exact pixel equivalence and diagnostic timing; capture registration unresolved. D coordinate integration executed; physical interpretation blocked. B not rerun. Scene diagnostic is separate evidence and does not replace frozen A route. See render-results.md and repair-history.json.

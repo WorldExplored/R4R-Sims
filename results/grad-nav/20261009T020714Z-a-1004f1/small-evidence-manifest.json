@@ -1,0 +1,77 @@
+[
+  {
+    "path": "actions.jsonl",
+    "bytes": 52,
+    "sha256": "3e7dc6202dc55dec3048f68d923a87fc0a625b00603bc7efab5fb9e820d1a9c8"
+  },
+  {
+    "path": "asset-provenance.json",
+    "bytes": 1173,
+    "sha256": "5a3ca1f1a913003092a7ffc863b553b670dda3a964f24f5e8a47f7585932c8c2"
+  },
+  {
+    "path": "camera_config.json",
+    "bytes": 1862,
+    "sha256": "64347c3a66301dd2084fda1bc049ae311b4715c976d45c5ee8813ebf49f24fb4"
+  },
+  {
+    "path": "camera_poses.jsonl",
+    "bytes": 7686,
+    "sha256": "7eca25a44d17dc20c95bb900e4b8503f60559557a162d4feff9eb6c9674d9792"
+  },
+  {
+    "path": "commands.log",
+    "bytes": 263,
+    "sha256": "28fe7a2bafc2dca8aeaa1a61d44256470bd1eff14755b978e93434dfaeaffec3"
+  },
+  {
+    "path": "console.log",
+    "bytes": 309,
+    "sha256": "24735a1082b3d8e48304ee694b4d3bcce1c008da0c93fdfae75bc713405d089f"
+  },
+  {
+    "path": "environment.txt",
+    "bytes": 6162,
+    "sha256": "12c2aa5e95a629ac3928432d6c5415d11be1b65fe0e21f6d2883d288ec26c223"
+  },
+  {
+    "path": "gpu.jsonl",
+    "bytes": 1701,
+    "sha256": "bb08b0f6bd368616d265d115fdfd187b0ceb1bdeb6994dba38d9993f0eba3e84"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 9405,
+    "sha256": "a567315155af911d9d656c25552d1acc322cd1771625f651002cc51bddf5cd76"
+  },
+  {
+    "path": "metrics.json",
+    "bytes": 9250,
+    "sha256": "8ece2663c23f95c320779f176c5d6d80f5d3ea59e0a796da4a7a1f9d979f94e7"
+  },
+  {
+    "path": "reference_route.jsonl",
+    "bytes": 5229,
+    "sha256": "ea345f4d4be147f1978e55b9c938e7c9734defe6ec9e434891a39adcf013a4d6"
+  },
+  {
+    "path": "resolved-config.yml",
+    "bytes": 7669,
+    "sha256": "d0ab02c1107b20c2431d2a698253f3165396d7d887ebc980fa87f34f04ac80cc"
+  },
+  {
+    "path": "run.json",
+    "bytes": 1708,
+    "sha256": "c1004cde99c4a49578be99ac0cbdc2cebb20e18f8e712a5103295fb37c81cfef"
+  },
+  {
+    "path": "state.jsonl",
+    "bytes": 52,
+    "sha256": "3e7dc6202dc55dec3048f68d923a87fc0a625b00603bc7efab5fb9e820d1a9c8"
+  },
+  {
+    "path": "upstream.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

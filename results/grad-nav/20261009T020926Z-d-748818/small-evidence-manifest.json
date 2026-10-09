@@ -1,0 +1,102 @@
+[
+  {
+    "path": "actions-float32-derived.jsonl",
+    "bytes": 8625,
+    "sha256": "f2a09615dd17fedc4a9a554dbabc81c674da8c9ea48214455efececef686fa31"
+  },
+  {
+    "path": "actions.jsonl",
+    "bytes": 5076,
+    "sha256": "8bf1a962fc634626184f38729bfa27da80284a57a6ee519524a4064fe69d7777"
+  },
+  {
+    "path": "asset-provenance.json",
+    "bytes": 1173,
+    "sha256": "5a3ca1f1a913003092a7ffc863b553b670dda3a964f24f5e8a47f7585932c8c2"
+  },
+  {
+    "path": "camera_config.json",
+    "bytes": 1643,
+    "sha256": "43cbd1756054432fb95c5e86be9e568ff52430e425ff5388cb543467e304c0f4"
+  },
+  {
+    "path": "camera_poses.jsonl",
+    "bytes": 16492,
+    "sha256": "55d67a69f62efaf331ed8b07b83db936eaf34d14e9a759467f0966a476a63a22"
+  },
+  {
+    "path": "commands.log",
+    "bytes": 263,
+    "sha256": "b4652fb5e90b8db1ec00e73d690bf84ba660eadce91f9663fc0a84fbebd51394"
+  },
+  {
+    "path": "config.json",
+    "bytes": 450,
+    "sha256": "dbd6c1db84f5efc31c2b5a0b86ccf1a97fa1780f1b8d3caeace9e125334521de"
+  },
+  {
+    "path": "console.log",
+    "bytes": 5106,
+    "sha256": "f68169d902bcd491e918acb2de08ffadda41019fee4af1a98cb2d17ded9e9c6a"
+  },
+  {
+    "path": "environment.txt",
+    "bytes": 6162,
+    "sha256": "99f731b3b4893a025d1f9dc8c78dcee629ef7a6a20f083b2cb19f143e6d58c1d"
+  },
+  {
+    "path": "gpu.jsonl",
+    "bytes": 1599,
+    "sha256": "12d1659cb7e668f190d91f2ab6f0a2f6b5924696d27d4d399d1f321f302148b5"
+  },
+  {
+    "path": "independent-review.json",
+    "bytes": 666,
+    "sha256": "69b1b0ba13e9fa38608e537b2eea65c515c3ddc7e3d81a6fd3cabd82d147c5a8"
+  },
+  {
+    "path": "local-video-verification.log",
+    "bytes": 666,
+    "sha256": "d68dd75b99965336c4624901d166d9658b9651e762879252aee2e9cfcd1c8b1e"
+  },
+  {
+    "path": "local-video-verification.swift",
+    "bytes": 571,
+    "sha256": "2d143f915309820d4a8e83808bf1b7070d09b4cf4231a7970f796fdfa40e0016"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 11338,
+    "sha256": "db8950402e15bb198ffbbb28bf13397b8675565624de31332f7050dc12495787"
+  },
+  {
+    "path": "metrics.json",
+    "bytes": 4722,
+    "sha256": "c190210f6f9dc055ad4e6e64872fe935926fdccbf7f57219f120a15b4917cb37"
+  },
+  {
+    "path": "reference_route.jsonl",
+    "bytes": 89,
+    "sha256": "de38b1041724061066d24718e28fc75f268b5f479203e131d44af9b74227d666"
+  },
+  {
+    "path": "resolved-config.yml",
+    "bytes": 7669,
+    "sha256": "d0ab02c1107b20c2431d2a698253f3165396d7d887ebc980fa87f34f04ac80cc"
+  },
+  {
+    "path": "run.json",
+    "bytes": 1707,
+    "sha256": "d619aa386260e4bcdb5571aa72545e4b56864e6249ff89c719438948788495f7"
+  },
+  {
+    "path": "state.jsonl",
+    "bytes": 6186,
+    "sha256": "23d09f72a1cd40eafac2202690ac8519050f96dd0e2deb49f8efe78e121f65e7"
+  },
+  {
+    "path": "upstream.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

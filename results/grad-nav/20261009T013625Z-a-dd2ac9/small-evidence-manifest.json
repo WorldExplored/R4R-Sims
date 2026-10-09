@@ -1,0 +1,67 @@
+[
+  {
+    "path": "actions.jsonl",
+    "bytes": 52,
+    "sha256": "3e7dc6202dc55dec3048f68d923a87fc0a625b00603bc7efab5fb9e820d1a9c8"
+  },
+  {
+    "path": "camera_config.json",
+    "bytes": 1608,
+    "sha256": "f9b8713b3adee71e43ff74d71124fd82839ee64a8d44ec2a3290263097f47e89"
+  },
+  {
+    "path": "camera_poses.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "commands.log",
+    "bytes": 263,
+    "sha256": "2a95e10137eb9a5c7806c0d28271271d196ce73ab45ea11590ce7e06cd475b2f"
+  },
+  {
+    "path": "console.log",
+    "bytes": 3513,
+    "sha256": "37dec5f84bdc8c20d9ff5408a2030953dc2fe1096b96e3bb08741fd6940b3871"
+  },
+  {
+    "path": "environment.txt",
+    "bytes": 6162,
+    "sha256": "12ad1c7ff071e560f5f0bbbe5f4548ee65b6d0e104c3a87af1b12d6615929298"
+  },
+  {
+    "path": "gpu.jsonl",
+    "bytes": 1499,
+    "sha256": "e6359c2d40da523bf7e7b232c1a80c966905177365e52be18c6129393d82641c"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 1661,
+    "sha256": "60746e33cda09057ed6b8bfa8bd3dab1cfb9d3f5e3698689a2e75036c04c7d40"
+  },
+  {
+    "path": "reference_route.jsonl",
+    "bytes": 5229,
+    "sha256": "ea345f4d4be147f1978e55b9c938e7c9734defe6ec9e434891a39adcf013a4d6"
+  },
+  {
+    "path": "resolved-config.yml",
+    "bytes": 7669,
+    "sha256": "d0ab02c1107b20c2431d2a698253f3165396d7d887ebc980fa87f34f04ac80cc"
+  },
+  {
+    "path": "run.json",
+    "bytes": 1085,
+    "sha256": "64ef4d54fa231ab52a784823c521cfc94d087eeb443c0483eea170ed031aa835"
+  },
+  {
+    "path": "state.jsonl",
+    "bytes": 52,
+    "sha256": "3e7dc6202dc55dec3048f68d923a87fc0a625b00603bc7efab5fb9e820d1a9c8"
+  },
+  {
+    "path": "upstream.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

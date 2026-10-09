@@ -10,8 +10,18 @@
     "sha256": "6f01f3fdf9bb4a1f38e8ffca64356e1a1fcd5631495b034ae5bab869e6493f62"
   },
   {
+    "path": "docs/grad-nav/GRaD-Nav_R4R_Audit-v4.pptx",
+    "bytes": 1943692,
+    "sha256": "6f484df5ff453a6ba2b46188a92fbea11678cc1de82505a88d3b8cf835bc366a"
+  },
+  {
+    "path": "docs/grad-nav/GRaD-Nav_R4R_Audit-v4.pdf",
+    "bytes": 990228,
+    "sha256": "e7d0cfb830a1c0a13cc068ea69ac5eb71074a07b12da0814a8d350b8a6bee98b"
+  },
+  {
     "path": "docs/grad-nav/deck-source.mjs",
-    "bytes": 11107,
-    "sha256": "a1dedcfca04267dee3155f59164bee0c25db4d669356d4defd5d46e002d87716"
+    "bytes": 14329,
+    "sha256": "fca84e9df34a782f48b391d2b073c9c205b433b3a1d7edea6cac3b02f1fca75c"
   }
 ]

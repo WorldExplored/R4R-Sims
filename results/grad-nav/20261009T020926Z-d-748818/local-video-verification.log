@@ -1,0 +1,8 @@
+/private/tmp/gradnav-video.swift:10:23: warning: 'copyCGImage(at:actualTime:)' was deprecated in macOS 15.0: Use generateCGImageAsynchronouslyForTime:completionHandler: instead
+ 8 | var checked = 0
+ 9 | for i in 0..<20 {
+10 |     let img = try gen.copyCGImage(at: CMTime(value: Int64(i), timescale: 20), actualTime: nil)
+   |                       `- warning: 'copyCGImage(at:actualTime:)' was deprecated in macOS 15.0: Use generateCGImageAsynchronouslyForTime:completionHandler: instead
+11 |     if img.width != 256 || img.height != 144 { fatalError("Unexpected frame dimensions") }
+12 |     checked += 1
+Locally decoded 20 MP4 frames at 256x144 using AVFoundation

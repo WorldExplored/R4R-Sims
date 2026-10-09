@@ -1,0 +1,1 @@
+{"step": 0, "sim_time_s": 0.0, "wall_since_start_s": 0.0003873009991366416, "observation_z_vz": [1.0, 0.0], "requested_body_rates_rad_s": [0.0, 0.0, 0.0], "applied_body_rates_rad_s": [0.0, 0.0, 0.0], "requested_normalized_thrust": 0.4295833333333334, "applied_normalized_thrust": 0.4295833333333334, "applied_total_thrust_N": 10.31}
