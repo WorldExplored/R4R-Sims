@@ -196,8 +196,8 @@ async def flight(args, client, world, drone, rec):
             route = [{"phase": "short_horizontal", "ned_m": [p[0]+1, p[1], p[2]], "speed_m_s": 1.0}]
         else:
             route = [
-                {"phase": "horizontal", "ned_m": [p[0]+2.5, p[1], p[2]], "speed_m_s": 1.0},
-                {"phase": "vertical_up", "ned_m": [p[0]+2.5, p[1], p[2]-1.0], "speed_m_s": 1.0},
+                {"phase": "horizontal", "ned_m": [1.5, 8.0, -4.0], "speed_m_s": 1.0},
+                {"phase": "vertical_up", "ned_m": [1.5, 8.0, -5.0], "speed_m_s": 1.0},
             ]
         for segment in route:
             append(rec.root / "reference_route.jsonl", {**segment, **now()})
@@ -210,7 +210,7 @@ async def flight(args, client, world, drone, rec):
                             lambda: drone.rotate_to_yaw_async(math.radians(-15), timeout_sec=25))
             await task_done(rec, client, drone, "hover_2", lambda: drone.hover_async(), 5)
             await asyncio.sleep(3)
-            return_pt = [p[0],p[1],p[2]]
+            return_pt = [-1.0, 8.0, -4.0]
             append(rec.root / "reference_route.jsonl", {"phase": "return", "ned_m": return_pt, "speed_m_s": 1.0, **now()})
             await task_done(rec, client, drone, "return",
                 lambda: drone.move_to_position_async(*return_pt, velocity=1.0, timeout_sec=25))
