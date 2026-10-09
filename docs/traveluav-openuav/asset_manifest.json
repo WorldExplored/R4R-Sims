@@ -792,7 +792,12 @@
         "generation": "1673857001813431",
         "google_hash": "crc32c=7WazzQ=="
       },
-      "generation_pinned_url": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth?generation=1673857001813431"
+      "generation_pinned_url": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth?generation=1673857001813431",
+      "generation_pinned_mac_check": {
+        "http_status": 200,
+        "generation": "1673857001813431",
+        "google_hash": "crc32c=7WazzQ=="
+      }
     },
     {
       "url": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth",
@@ -817,7 +822,12 @@
         "generation": "1683273217435631",
         "google_hash": "crc32c=Yu+TLw=="
       },
-      "generation_pinned_url": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth?generation=1683273217435631"
+      "generation_pinned_url": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth?generation=1683273217435631",
+      "generation_pinned_mac_check": {
+        "http_status": 200,
+        "generation": "1683273217435631",
+        "google_hash": "crc32c=Yu+TLw=="
+      }
     }
   ],
   "file_count": 34,
