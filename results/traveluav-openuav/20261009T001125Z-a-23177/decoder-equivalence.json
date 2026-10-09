@@ -1,0 +1,111 @@
+{
+  "payload_path": "artifacts/traveluav-openuav/20261009T001125Z-a-23177/image_rpc_payload_0000.msgpack",
+  "payload_bytes": 2624104,
+  "payload_sha256": "70fd8d251792e9b3e5de55ad96c5b5c3e6fb5a17bd105fb84012868acaa9b1ff",
+  "legacy_implementation": "legacy_msgpack.fallback",
+  "active_version": [
+    1,
+    1,
+    0
+  ],
+  "active_implementation": "msgpack._cmsgpack",
+  "active_file": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/env-ab/lib/python3.10/site-packages/msgpack/__init__.py",
+  "legacy_source_sha256": "9f93db7891410eab01488686a22488f2206122166cd88cbea0aadc80090fbe02",
+  "legacy_decode_wall_s": 0.4928889960010565,
+  "active_decode_wall_s": 0.015610196000125143,
+  "timing_sample_count": 1,
+  "timing_scope": "same settled 5-view RGB/depth MessagePack response payload decode only; instrumented CPU wall time",
+  "full_response_metadata_equal": true,
+  "equivalence": [
+    {
+      "response_index": 0,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "3038e19199722afd4e2350f236367603afc7d058282b924412e3b1dde43a7d1f",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 1,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "3e6d1b00fd9d442c556798fe3d6e8f667c0d2467021f3d2f6d1b2319956bb86f"
+    },
+    {
+      "response_index": 2,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "6ef0acd440145dd8a9b5815b36e60549d2b701fc7deb914491dd54885e4d8190",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 3,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "08388a0ad59510727a9d2adb8b8ae021b9b31ac92daf9d21dc4902014b56e993"
+    },
+    {
+      "response_index": 4,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "8a426aa1851fb11b8d06b745f7736b8a6fa6c85d43f5b3e86cb0c9971da7a659",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 5,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "ec4600a0d3764793355c003a49a1328fb17f78d74be659d967195c9c62fc4672"
+    },
+    {
+      "response_index": 6,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "6735c6b655ea59bc50fc480ea88060ff7045247c1de33aee6f9a9008f29992d6",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 7,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "95c1baf48d02657bdc7fc5905143b9deddc2ea068fae76234f11b93f9f41403e"
+    },
+    {
+      "response_index": 8,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "f5c7d1c5e01e75798d63103e62e4f23ce87d8ba0282927e8f093049ca169181b",
+      "depth_float32_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "response_index": 9,
+      "width": 256,
+      "height": 256,
+      "rgb_bytes_equal": true,
+      "depth_float32_equal": true,
+      "rgb_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "depth_float32_sha256": "711fc48335b52775d59827e689d7a737ed06bc48726846a56024094c5d0a1e57"
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "records": [
+    {
+      "index": 0,
+      "camera": "FrontCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        35.76515602227725,
+        51.446217498239925,
+        -1.2790000438690186
+      ],
+      "actual_ned_m": [
+        35.76515579223633,
+        51.44621276855469,
+        -1.0692795515060425
+      ],
+      "translation_residual_ned_m": [
+        -2.3004092497558304e-07,
+        -4.729685237236936e-06,
+        0.20972049236297607
+      ],
+      "translation_residual_norm_m": 0.20972049241643495,
+      "orientation_residual_deg": 1.782731711219369e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 0,
+      "camera": "LeftCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.97721954291766,
+        50.271842726502044,
+        -1.2790000438690186
+      ],
+      "actual_ned_m": [
+        34.97722244262695,
+        50.2718391418457,
+        -1.0692795515060425
+      ],
+      "translation_residual_ned_m": [
+        2.899709294013064e-06,
+        -3.584656340649417e-06,
+        0.20972049236297607
+      ],
+      "translation_residual_norm_m": 0.20972049241365798,
+      "orientation_residual_deg": 1.3390916398898968e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 1.2074182697257333e-06
+    },
+    {
+      "index": 0,
+      "camera": "RightCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.59078125053937,
+        52.23415397759952,
+        -1.2790000438690186
+      ],
+      "actual_ned_m": [
+        34.590782165527344,
+        52.234153747558594,
+        -1.0692795515060425
+      ],
+      "translation_residual_ned_m": [
+        9.149879716119358e-07,
+        -2.3004092497558304e-07,
+        0.20972049236297607
+      ],
+      "translation_residual_norm_m": 0.20972049236509824,
+      "orientation_residual_deg": 8.009106731400786e-06,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 0,
+      "camera": "RearCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.80284477117978,
+        51.05977920586164,
+        -1.2790000438690186
+      ],
+      "actual_ned_m": [
+        33.8028450012207,
+        51.05978012084961,
+        -1.0692795515060425
+      ],
+      "translation_residual_ned_m": [
+        2.3004092497558304e-07,
+        9.149879716119358e-07,
+        0.20972049236297607
+      ],
+      "translation_residual_norm_m": 0.20972049236509824,
+      "orientation_residual_deg": 3.806720011767522e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 1.7075472925031877e-06
+    },
+    {
+      "index": 0,
+      "camera": "DownCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.784000396728516,
+        51.25299835205078,
+        -1.2790000438690186
+      ],
+      "actual_ned_m": [
+        34.784000396728516,
+        51.25299835205078,
+        -1.0692795515060425
+      ],
+      "translation_residual_ned_m": [
+        0.0,
+        0.0,
+        0.20972049236297607
+      ],
+      "translation_residual_norm_m": 0.20972049236297607,
+      "orientation_residual_deg": 1.870524340221744e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 1.2074182697257333e-06
+    },
+    {
+      "index": 1,
+      "camera": "FrontCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.42848936052788,
+        52.201012988503805,
+        -2.004389912701864
+      ],
+      "actual_ned_m": [
+        34.428489685058594,
+        52.20100784301758,
+        -2.003922462463379
+      ],
+      "translation_residual_ned_m": [
+        3.245307169663647e-07,
+        -5.145486227320362e-06,
+        0.00046745023848515643
+      ],
+      "translation_residual_norm_m": 0.0004674786698968536,
+      "orientation_residual_deg": 0.0014219348250394796,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 1,
+      "camera": "LeftCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        35.671628596549844,
+        51.52686406150325,
+        -2.0157064531064153
+      ],
+      "actual_ned_m": [
+        35.671627044677734,
+        51.52686309814453,
+        -2.015211582183838
+      ],
+      "translation_residual_ned_m": [
+        -1.5518721099283539e-06,
+        -9.633587154667111e-07,
+        0.000494870922577384
+      ],
+      "translation_residual_norm_m": 0.0004948742935126571,
+      "orientation_residual_deg": 0.0014219132943281633,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 1,
+      "camera": "RightCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.754389164680624,
+        50.957823743672535,
+        -1.996057596423614
+      ],
+      "actual_ned_m": [
+        33.75438690185547,
+        50.957820892333984,
+        -1.9956120252609253
+      ],
+      "translation_residual_ned_m": [
+        -2.262825155696646e-06,
+        -2.851338550158289e-06,
+        0.0004455711626887293
+      ],
+      "translation_residual_norm_m": 0.0004455860315685389,
+      "orientation_residual_deg": 0.0014219655826329793,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 1.7075472925031877e-06
+    },
+    {
+      "index": 1,
+      "camera": "RearCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.99752840070259,
+        50.283674816671976,
+        -2.0073741368281652
+      ],
+      "actual_ned_m": [
+        34.99752426147461,
+        50.28367614746094,
+        -2.0069010257720947
+      ],
+      "translation_residual_ned_m": [
+        -4.139227982591365e-06,
+        1.3307889616953616e-06,
+        0.00047311105607050763
+      ],
+      "translation_residual_norm_m": 0.00047313103426398006,
+      "orientation_residual_deg": 0.001422070666058049,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 1,
+      "camera": "DownCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.713008880615234,
+        51.24234390258789,
+        -2.0058820247650146
+      ],
+      "actual_ned_m": [
+        34.713008880615234,
+        51.24234390258789,
+        -2.0054118633270264
+      ],
+      "translation_residual_ned_m": [
+        0.0,
+        0.0,
+        0.00047016143798828125
+      ],
+      "translation_residual_norm_m": 0.00047016143798828125,
+      "orientation_residual_deg": 0.0014274303866987671,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 2,
+      "camera": "FrontCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.604410380702944,
+        50.860115425532825,
+        -3.039369979499055
+      ],
+      "actual_ned_m": [
+        33.60441207885742,
+        50.86011505126953,
+        -3.039370059967041
+      ],
+      "translation_residual_ned_m": [
+        1.6981544774807844e-06,
+        -3.7426329413392523e-07,
+        -8.046798605221284e-08
+      ],
+      "translation_residual_norm_m": 1.7407690080832989e-06,
+      "orientation_residual_deg": 5.7905745997743736e-06,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 1.2074182697257333e-06
+    },
+    {
+      "index": 2,
+      "camera": "LeftCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.181881536115014,
+        52.15105345920118,
+        -3.0418312587480596
+      ],
+      "actual_ned_m": [
+        34.181880950927734,
+        52.15105438232422,
+        -3.0418312549591064
+      ],
+      "translation_residual_ned_m": [
+        -5.851872799667035e-07,
+        9.231230393424994e-07,
+        3.78895315122918e-09
+      ],
+      "translation_residual_norm_m": 1.0929842883434989e-06,
+      "orientation_residual_deg": 6.613302226726415e-06,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 2,
+      "camera": "RightCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.8953431953303,
+        50.28263947292773,
+        -3.0431106052656123
+      ],
+      "actual_ned_m": [
+        34.89534378051758,
+        50.28263473510742,
+        -3.0431106090545654
+      ],
+      "translation_residual_ned_m": [
+        5.851872799667035e-07,
+        -4.737820304967499e-06,
+        -3.78895315122918e-09
+      ],
+      "translation_residual_norm_m": 4.773824436545937e-06,
+      "orientation_residual_deg": 1.786815867113289e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 1.7075472925031877e-06
+    },
+    {
+      "index": 2,
+      "camera": "RearCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        35.47281435074237,
+        51.57357750659608,
+        -3.045571884514617
+      ],
+      "actual_ned_m": [
+        35.47281265258789,
+        51.57357406616211,
+        -3.045571804046631
+      ],
+      "translation_residual_ned_m": [
+        -1.6981544774807844e-06,
+        -3.4404339714910748e-06,
+        8.046798605221284e-08
+      ],
+      "translation_residual_norm_m": 3.8375499525553e-06,
+      "orientation_residual_deg": 1.5556496191598024e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 2,
+      "camera": "DownCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.538612365722656,
+        51.21684646606445,
+        -3.042470932006836
+      ],
+      "actual_ned_m": [
+        34.538612365722656,
+        51.21684265136719,
+        -3.042470932006836
+      ],
+      "translation_residual_ned_m": [
+        0.0,
+        -3.814697265625e-06,
+        0.0
+      ],
+      "translation_residual_norm_m": 3.814697265625e-06,
+      "orientation_residual_deg": 8.18910913293408e-06,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 1.7075472925031877e-06
+    },
+    {
+      "index": 3,
+      "camera": "FrontCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.34182925216557,
+        51.034882458130504,
+        -4.060461461337106
+      ],
+      "actual_ned_m": [
+        33.34183120727539,
+        51.034881591796875,
+        -4.060461521148682
+      ],
+      "translation_residual_ned_m": [
+        1.955109823370549e-06,
+        -8.663336288350365e-07,
+        -5.981157524814762e-08
+      ],
+      "translation_residual_norm_m": 2.139290957869959e-06,
+      "orientation_residual_deg": 1.0386604689550578e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 3,
+      "camera": "LeftCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.1791428379912,
+        52.174577891042745,
+        -4.060989846416702
+      ],
+      "actual_ned_m": [
+        34.179141998291016,
+        52.17457962036133,
+        -4.0609893798828125
+      ],
+      "translation_residual_ned_m": [
+        -8.397001849402841e-07,
+        1.7293185834432734e-06,
+        4.665338897424931e-07
+      ],
+      "translation_residual_norm_m": 1.9782044974949523e-06,
+      "orientation_residual_deg": 4.182619578303747e-06,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 3,
+      "camera": "RightCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.48152458144239,
+        50.19756871540257,
+        -4.060964117816696
+      ],
+      "actual_ned_m": [
+        34.48152542114258,
+        50.197566986083984,
+        -4.060964107513428
+      ],
+      "translation_residual_ned_m": [
+        8.397001849402841e-07,
+        -1.7293185834432734e-06,
+        1.0303268460631898e-08
+      ],
+      "translation_residual_norm_m": 1.9224321368963765e-06,
+      "orientation_residual_deg": 5.915117333884395e-06,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 3,
+      "camera": "RearCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        35.31883816726803,
+        51.33726414831481,
+        -4.061492502896292
+      ],
+      "actual_ned_m": [
+        35.3188362121582,
+        51.33726501464844,
+        -4.061492443084717
+      ],
+      "translation_residual_ned_m": [
+        -1.955109823370549e-06,
+        8.663336288350365e-07,
+        5.981157524814762e-08
+      ],
+      "translation_residual_norm_m": 2.139290957869959e-06,
+      "orientation_residual_deg": 2.991864554309662e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 3,
+      "camera": "DownCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.3303337097168,
+        51.186073303222656,
+        -4.060976982116699
+      ],
+      "actual_ned_m": [
+        34.3303337097168,
+        51.186073303222656,
+        -4.060976982116699
+      ],
+      "translation_residual_ned_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "translation_residual_norm_m": 0.0,
+      "orientation_residual_deg": 1.4886052178675807e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 4,
+      "camera": "FrontCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.126105259859195,
+        51.012520285805884,
+        -5.050007636669748
+      ],
+      "actual_ned_m": [
+        33.12610626220703,
+        51.01251983642578,
+        -5.050007343292236
+      ],
+      "translation_residual_ned_m": [
+        1.0023478367315874e-06,
+        -4.49380102907071e-07,
+        2.933775116176207e-07
+      ],
+      "translation_residual_norm_m": 1.1369758251661334e-06,
+      "orientation_residual_deg": 2.4862263861133457e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 4,
+      "camera": "LeftCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.97420545615548,
+        52.1442118961065,
+        -5.049612393207382
+      ],
+      "actual_ned_m": [
+        33.974205017089844,
+        52.14421081542969,
+        -5.049612045288086
+      ],
+      "translation_residual_ned_m": [
+        -4.390656371811019e-07,
+        -1.0806768102611386e-06,
+        3.479192960398336e-07
+      ],
+      "translation_residual_norm_m": 1.2172464165263702e-06,
+      "orientation_residual_deg": 1.741363392971263e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 4,
+      "camera": "RightCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.2577968021453,
+        50.16442000086616,
+        -5.049607882671524
+      ],
+      "actual_ned_m": [
+        34.25779724121094,
+        50.1644172668457,
+        -5.049607753753662
+      ],
+      "translation_residual_ned_m": [
+        4.390656371811019e-07,
+        -2.7340204553638614e-06,
+        1.2891786216329137e-07
+      ],
+      "translation_residual_norm_m": 2.7720509193169627e-06,
+      "orientation_residual_deg": 1.2372355563799738e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 4,
+      "camera": "RearCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        35.10589699844159,
+        51.29611161116677,
+        -5.049212639209158
+      ],
+      "actual_ned_m": [
+        35.10589599609375,
+        51.296112060546875,
+        -5.049212455749512
+      ],
+      "translation_residual_ned_m": [
+        -1.0023478367315874e-06,
+        4.49380102907071e-07,
+        1.834596465855043e-07
+      ],
+      "translation_residual_norm_m": 1.1136880643225647e-06,
+      "orientation_residual_deg": 4.488608881924739e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 4,
+      "camera": "DownCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.11600112915039,
+        51.15431594848633,
+        -5.049610137939453
+      ],
+      "actual_ned_m": [
+        34.11600112915039,
+        51.15431594848633,
+        -5.049609661102295
+      ],
+      "translation_residual_ned_m": [
+        0.0,
+        0.0,
+        4.76837158203125e-07
+      ],
+      "translation_residual_norm_m": 4.76837158203125e-07,
+      "orientation_residual_deg": 2.774435956405637e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 5,
+      "camera": "FrontCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        32.91610494803132,
+        50.97624336988023,
+        -6.02953498089489
+      ],
+      "actual_ned_m": [
+        32.91610336303711,
+        50.97624588012695,
+        -6.029534816741943
+      ],
+      "translation_residual_ned_m": [
+        -1.5849942087697855e-06,
+        2.510246723375076e-06,
+        1.6415294634697375e-07
+      ],
+      "translation_residual_norm_m": 2.9732963935409224e-06,
+      "orientation_residual_deg": 2.39056620950448e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 5,
+      "camera": "LeftCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.75863775006539,
+        52.112085839839104,
+        -6.02893420277713
+      ],
+      "actual_ned_m": [
+        33.758636474609375,
+        52.11208724975586,
+        -6.028934001922607
+      ],
+      "translation_residual_ned_m": [
+        -1.2754560145822325e-06,
+        1.4099167557901637e-06,
+        2.0085452234752665e-07
+      ],
+      "translation_residual_norm_m": 1.9118043421174944e-06,
+      "orientation_residual_deg": 1.866623346736378e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 5,
+      "camera": "RightCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.05194727190727,
+        50.13371036377418,
+        -6.0289442914855655
+      ],
+      "actual_ned_m": [
+        34.05194854736328,
+        50.13370895385742,
+        -6.02894401550293
+      ],
+      "translation_residual_ned_m": [
+        1.2754560145822325e-06,
+        -1.4099167557901637e-06,
+        2.7598263585559835e-07
+      ],
+      "translation_residual_norm_m": 1.9211506236330496e-06,
+      "orientation_residual_deg": 1.5972642350651042e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 5,
+      "camera": "RearCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        34.89448007394134,
+        51.26955283373305,
+        -6.028343513367806
+      ],
+      "actual_ned_m": [
+        34.89447784423828,
+        51.269554138183594,
+        -6.028343200683594
+      ],
+      "translation_residual_ned_m": [
+        -2.2297030568552145e-06,
+        1.3044505422499242e-06,
+        3.1268421185615125e-07
+      ],
+      "translation_residual_norm_m": 2.60210267961695e-06,
+      "orientation_residual_deg": 4.1651555371923165e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    },
+    {
+      "index": 5,
+      "camera": "DownCamera",
+      "expected_from_measured_vehicle_ned_m": [
+        33.90529251098633,
+        51.12289810180664,
+        -6.028939247131348
+      ],
+      "actual_ned_m": [
+        33.90529251098633,
+        51.12289810180664,
+        -6.028939247131348
+      ],
+      "translation_residual_ned_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "translation_residual_norm_m": 0.0,
+      "orientation_residual_deg": 2.4328804008734323e-05,
+      "depth_to_rgb_position_error_m": 0.0,
+      "depth_to_rgb_orientation_error_deg": 0.0
+    }
+  ],
+  "maximum_translation_residual_m": 0.20972049241643495,
+  "maximum_orientation_residual_deg": 0.0014274303866987671,
+  "depth_response_pose_count": 30,
+  "maximum_depth_rgb_position_error_m": 0.0,
+  "meaning": "nominal body mount versus actual paused response poses; actor update/offset may differ; actual extrinsics retained"
+}
