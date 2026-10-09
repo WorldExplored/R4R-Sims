@@ -1,0 +1,13 @@
+{
+  "branch": "audit/rflysim",
+  "implementation_commit": "9e01b528feaba95483bf7cfc255556453348b682",
+  "base_preparation_commit": "dd470aff5f9ed6eebf8859e136328c9cbc984570",
+  "local_test_count": 20,
+  "simulator_execution": false,
+  "manifests_sha256": {
+    "file-manifest.json": "d74753f9c22b6bffd9e3c517cf2571279396a66de3c0e92b3ff85617fb912b52",
+    "asset-manifest.json": "4acd0396d9c01aeeba79887a6ea920e42f5321b1063841ee3b4eaea195b0317c",
+    "preservation.json": "7368996479d3b090990cc508b120b16034f7abb2d23d0c87db1631723cdecc07"
+  },
+  "metadata_commit": "resolve from Git history of this file; no self-referential hash"
+}
