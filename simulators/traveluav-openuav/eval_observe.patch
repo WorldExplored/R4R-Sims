@@ -153,18 +153,6 @@ index 9121cd2..f81c042 100644
                          shell=True,
                      )
          
-diff --git a/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc b/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc
-index e81ffdd..c3460fd 100644
-Binary files a/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc and b/airsim_plugin/__pycache__/AirVLNSimulatorClientTool.cpython-310.pyc differ
-diff --git a/src/common/__pycache__/param.cpython-310.pyc b/src/common/__pycache__/param.cpython-310.pyc
-index 1bf01f8..d13dd02 100644
-Binary files a/src/common/__pycache__/param.cpython-310.pyc and b/src/common/__pycache__/param.cpython-310.pyc differ
-diff --git a/src/model_wrapper/__pycache__/base_model.cpython-310.pyc b/src/model_wrapper/__pycache__/base_model.cpython-310.pyc
-index fa69a69..3da3c8b 100644
-Binary files a/src/model_wrapper/__pycache__/base_model.cpython-310.pyc and b/src/model_wrapper/__pycache__/base_model.cpython-310.pyc differ
-diff --git a/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc b/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc
-index 277083d..20eb4fe 100644
-Binary files a/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc and b/src/model_wrapper/__pycache__/travel_llm.cpython-310.pyc differ
 diff --git a/src/model_wrapper/travel_llm.py b/src/model_wrapper/travel_llm.py
 index cab236e..4e630ff 100644
 --- a/src/model_wrapper/travel_llm.py
@@ -283,18 +271,6 @@ index f862140..8a96d46 100644
      return traj_model
  
  
-diff --git a/src/vlnce_src/__pycache__/assist.cpython-310.pyc b/src/vlnce_src/__pycache__/assist.cpython-310.pyc
-index 53f14a2..7db4cf9 100644
-Binary files a/src/vlnce_src/__pycache__/assist.cpython-310.pyc and b/src/vlnce_src/__pycache__/assist.cpython-310.pyc differ
-diff --git a/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc b/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc
-index af153fc..075e667 100644
-Binary files a/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc and b/src/vlnce_src/__pycache__/closeloop_util.cpython-310.pyc differ
-diff --git a/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc b/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc
-index e1bbf0d..bc9767f 100644
-Binary files a/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc and b/src/vlnce_src/__pycache__/dino_monitor_online.cpython-310.pyc differ
-diff --git a/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc b/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc
-index 290a32a..1a798d5 100644
-Binary files a/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc and b/src/vlnce_src/__pycache__/env_uav.cpython-310.pyc differ
 diff --git a/src/vlnce_src/dino_monitor_online.py b/src/vlnce_src/dino_monitor_online.py
 index 4e07cc8..beac723 100644
 --- a/src/vlnce_src/dino_monitor_online.py
@@ -401,21 +377,3 @@ index 360c7e3..3e5484d 100644
      assist = Assist(always_help=args.always_help, use_gt=args.use_gt)
  
      print("Assist setting: always_help --", args.always_help, "    use_gt --", args.use_gt)
-diff --git a/utils/__pycache__/CN.cpython-310.pyc b/utils/__pycache__/CN.cpython-310.pyc
-index 64bbd93..43d8b0e 100644
-Binary files a/utils/__pycache__/CN.cpython-310.pyc and b/utils/__pycache__/CN.cpython-310.pyc differ
-diff --git a/utils/__pycache__/env_utils_uav.cpython-310.pyc b/utils/__pycache__/env_utils_uav.cpython-310.pyc
-index 2fcb827..568b00a 100644
-Binary files a/utils/__pycache__/env_utils_uav.cpython-310.pyc and b/utils/__pycache__/env_utils_uav.cpython-310.pyc differ
-diff --git a/utils/__pycache__/env_vector_uav.cpython-310.pyc b/utils/__pycache__/env_vector_uav.cpython-310.pyc
-index 314cf78..82e2301 100644
-Binary files a/utils/__pycache__/env_vector_uav.cpython-310.pyc and b/utils/__pycache__/env_vector_uav.cpython-310.pyc differ
-diff --git a/utils/__pycache__/logger.cpython-310.pyc b/utils/__pycache__/logger.cpython-310.pyc
-index 9b2774c..2644eb4 100644
-Binary files a/utils/__pycache__/logger.cpython-310.pyc and b/utils/__pycache__/logger.cpython-310.pyc differ
-diff --git a/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc b/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc
-index 91dd66d..e3a8e1c 100644
-Binary files a/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc and b/utils/__pycache__/pickle5_multiprocessing.cpython-310.pyc differ
-diff --git a/utils/__pycache__/utils.cpython-310.pyc b/utils/__pycache__/utils.cpython-310.pyc
-index 91eaf08..8ca41a8 100644
-Binary files a/utils/__pycache__/utils.cpython-310.pyc and b/utils/__pycache__/utils.cpython-310.pyc differ

@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-10-09T00:09Z",
+  "upstream_commit": "5cc26e9a4a55b9c788e918f7c3bb2dc5076a85e6",
+  "source_patch_apply_check": true,
+  "patch_sha256": "68070f9dd4880dc681fa6d436176c030cd58dea05abfa4e9b0cc465a23e7185a",
+  "source_files": [
+    "Model/LLaMA-UAV/llamavid/model/llamavid_arch.py",
+    "airsim_plugin/AirVLNSimulatorClientTool.py",
+    "airsim_plugin/AirVLNSimulatorServerTool.py",
+    "src/model_wrapper/travel_llm.py",
+    "src/model_wrapper/utils/GroundingDINO/groundingdino/util/get_tokenlizer.py",
+    "src/model_wrapper/utils/GroundingDINO/groundingdino/util/inference.py",
+    "src/model_wrapper/utils/travel_util.py",
+    "src/vlnce_src/dino_monitor_online.py",
+    "src/vlnce_src/env_uav.py",
+    "src/vlnce_src/eval.py"
+  ],
+  "excluded": "upstream tracks pycache bytecode; per-run diffs retain churn, executable patch deliberately includes Python source only",
+  "behavior": "no source semantic change from executed final C; only binary diff notices removed",
+  "exit_status": 0
+}

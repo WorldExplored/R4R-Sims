@@ -11,3 +11,5 @@ export PYTHONPATH="$ROOT:$ROOT/compat${PYTHONPATH:+:$PYTHONPATH}"
 
 export MPLCONFIGDIR="$ARTIFACTS/dependencies/cache/matplotlib"
 mkdir -p "$MPLCONFIGDIR"
+
+export PYTHONDONTWRITEBYTECODE=1
