@@ -1,6 +1,6 @@
 # Project AirSim audit results index
 
-The [findings report](../../docs/project-airsim/findings.md) explains results and limits. This directory contains small, browsable run records. Large raw captures, native metadata traces, videos, plots and calibration/pose records are in the ignored local `artifacts/project-airsim/<run-id>/` directories in the isolated worktree. Every listed raw directory was transferred from the A5000 host by resumable rsync and verified locally using its `manifest.sha256`; this is local preservation, not a durable off-machine backup. Each manifest gives per-file SHA256; `sizes.txt` gives directory byte totals. The manifest itself is hashed below.
+The [findings report](../../docs/project-airsim/findings.md) explains results and limits, including the 2026-10-08 local-only failure analysis. This directory contains small, browsable run records. Large raw captures, native metadata traces, videos, plots and calibration/pose records are in the ignored local `artifacts/project-airsim/<run-id>/` directories in the isolated worktree. Every listed raw directory was transferred from the A5000 host by resumable rsync and verified locally using its `manifest.sha256`; this is local preservation, not a durable off-machine backup. Each manifest gives per-file SHA256; `sizes.txt` gives directory byte totals. The manifest itself is hashed below. Historical run files were not changed by the later analysis.
 
 | UTC run ID | Outcome | Ignored raw size (`du -sh`) | Manifest SHA256 |
 | --- | --- | ---: | --- |
@@ -26,8 +26,13 @@ The small [horizontal plot](previews/trajectory_horizontal.png), [vertical plot]
 | `artifacts/project-airsim/20261009T003933Z-pose-corrected/images.jsonl` | 12,260 bytes | `6575d92798af204b77cffdad6c2e4e15bd092c2e04dae6bd75a4f7ceb83e6926` |
 | `artifacts/project-airsim/deliverables/R4R_Project_AirSim_Audit.pptx` | 441,621 bytes | `d90530d34c6ea4c2f9fdbe841106390dc50fd61a4371fbc625917636e0a1094e` |
 | `artifacts/project-airsim/deliverables/R4R_Project_AirSim_Audit.pdf` | 384,937 bytes | `e2e0062e8a070fde442a4fa3bb171e95e2a3e378685ee8d282c12c25e9224013` |
+| `artifacts/project-airsim/deliverables/R4R_Project_AirSim_Audit_Revised.pptx` | 448,154 bytes | `7c04b1d23982f51908789ba6fc1c22fd01c8a57c9f5d31130d1e420b0eeb818a` |
+| `artifacts/project-airsim/deliverables/R4R_Project_AirSim_Audit_Revised.pdf` | 400,112 bytes | `1c6a5cd023459a5292db9c43f34fe0ce0872f8256a990b25208aa17016db77e2` |
+| `artifacts/project-airsim/deliverables/build_deck_revised.mjs` | 12,224 bytes | `4814fc4ca82161a85c86e3d725491b2e0d35beb984c79b5899aaf906b2c5c3bb` |
 
-The host acquisition and launch logs are in `artifacts/project-airsim/host-setup/`, with a local `SHA256SUMS`. Slide source and a checksum list are in `artifacts/project-airsim/deliverables/`. These are ignored local deliverables; the report and small previews are pushed.
+The host acquisition and launch logs are in `artifacts/project-airsim/host-setup/`, with a local `SHA256SUMS`. The later local preservation check recovered the previously remote-only `projectairsim_server.log` and `projectairsim_client.log`; all six logs verify against that list. A 16-file snapshot of relevant pinned source is in ignored `artifacts/project-airsim/source-pinned/`, with its own `SHA256SUMS`. Revised slide source and a checksum list are in `artifacts/project-airsim/deliverables/`. The revised 12-slide PPTX passed structural/layout/import validation, every rendered slide was visually scanned, the PDF has 12 pages, and its last page was visually checked. These are ignored local deliverables; the report and small index are pushed.
+
+The pre-analysis local branch and pushed GitHub branch both resolved to `0a781497f6102184939902a09e090e7bb04c947e`. All recorded manifests and deliverables were verified locally. No essential Project AirSim evidence is known to remain only on the rental GPU. **Project AirSim remote files can be deleted.** This clearance excludes other projects on the instance; no remote deletion was performed.
 
 Each run directory includes the exact historical command, runner commit, host/package freeze, config copies and hashes, logs, GPU CSV when sampled, run status, sizes and manifest. Full vehicle and image metadata streams live in the paired raw directory. The raw manifests use paths relative to the isolated worktree root, so check from there:
 
