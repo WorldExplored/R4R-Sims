@@ -20,7 +20,8 @@ def main():
       'upstream_commit':capture(['git','-C',str(a.upstream),'rev-parse','HEAD']).strip(),
       'upstream_status':capture(['git','-C',str(a.upstream),'status','--short']),
       'input_path':str(a.upstream),'output_path':str(raw),'policy_weights':'none','scene':'gate_mid' if a.mode in ['a','d'] else 'none','seed':0,
-      'status':'running','environment_file':'environment.txt','navigation_learned_components_used':False}
+      'status':'running','environment_file':'environment.txt','navigation_learned_components_used':False,
+      'compiler_environment':{k:os.environ.get(k) for k in ['CC','CXX','CUDA_HOME','PATH','LD_LIBRARY_PATH','TORCH_EXTENSIONS_DIR','MAX_JOBS']}}
     (raw/'run.json').write_text(json.dumps(metadata,indent=2)+'\n')
     (raw/'commands.log').write_text(json.dumps(cmd)+'\n')
     (raw/'environment.txt').write_text(capture(['uname','-a'])+capture([sys.executable,'-m','pip','freeze'])+capture(['nvidia-smi'])+capture(['df','-h',str(a.root)]))
@@ -44,7 +45,7 @@ def main():
     metadata.update(exit_status=code,status='completed' if code==0 else 'failed',wall_s=time.perf_counter()-start,
         end_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),timed_out=code==124)
     (raw/'run.json').write_text(json.dumps(metadata,indent=2)+'\n')
-    for name in ['run.json','commands.log','console.log','environment.txt','upstream.patch','config.json','camera_config.json','resolved-config.yml','metrics.json','conversion.json','gpu.jsonl']:
+    for name in ['run.json','commands.log','console.log','environment.txt','upstream.patch','config.json','camera_config.json','resolved-config.yml','metrics.json','conversion.json','gpu.jsonl','state.jsonl','actions.jsonl','reference_route.jsonl','camera_poses.jsonl','diagnostics.json']:
         if (raw/name).exists():(small/name).write_bytes((raw/name).read_bytes())
     manifest=[{'path':str(x.relative_to(raw)),'bytes':x.stat().st_size,'sha256':digest(x)} for x in sorted(raw.rglob('*')) if x.is_file()]
     (raw/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');(small/'manifest.json').write_bytes((raw/'manifest.json').read_bytes())
