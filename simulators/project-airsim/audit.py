@@ -51,7 +51,7 @@ def qdict(yaw_deg, x, y, z):
                  "rotation": {"w": math.cos(rad), "x": 0.0, "y": 0.0, "z": math.sin(rad)}})
 
 class Recorder:
-    def __init__(self, root, max_frames=700):
+    def __init__(self, root, max_frames=1500):
         self.root = root
         self.root.mkdir(parents=True, exist_ok=False)
         (root / "rgb").mkdir()
@@ -171,6 +171,7 @@ async def task_done(rec, drone, label, started_task, limit=30):
         raise
 
 async def flight(args, client, world, drone, rec):
+    capture_started = time.monotonic()
     subscribe_capture(client, drone, rec)
     await asyncio.sleep(2)
     drone.enable_api_control()
@@ -209,6 +210,10 @@ async def flight(args, client, world, drone, rec):
             append(rec.root / "reference_route.jsonl", {"phase": "return", "ned_m": return_pt, "speed_m_s": 1.0, **now()})
             await task_done(rec, drone, "return",
                 await drone.move_to_position_async(*return_pt, velocity=1.0, timeout_sec=25))
+        if args.mode == "flight":
+            remaining = max(0.0, 30.0 - (time.monotonic() - capture_started))
+            append(rec.root / "actions.jsonl", {"phase": "capture_hold", "duration_wall_s": remaining, **now()})
+            await asyncio.sleep(remaining)
         await task_done(rec, drone, "land", await drone.land_async(timeout_sec=25))
         append(rec.root / "actions.jsonl", {"phase": "landed_check", "landed_state": drone.get_landed_state(),
                                            "ground_truth": pose_dict(drone.get_ground_truth_pose()), **now()})

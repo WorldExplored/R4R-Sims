@@ -25,6 +25,10 @@ free -h > "$small/memory.txt"
 cp "$repo"/simulators/project-airsim/config/*.json "$small/"
 if ! ss -ltn | grep -q ':8990 '; then
   echo "simulator service port 8990 is not ready" | tee -a "$small/commands.log"
+  printf '3\n' > "$small/exit-status.txt"
+  printf '{"status":"blocked","reason":"simulator service port 8990 unavailable","exit_status":3}\n' > "$small/run.json"
+  mkdir -p "$raw"
+  cp "$small/run.json" "$raw/run.json"
   exit 3
 fi
 mkdir -p "$(dirname "$raw")"
