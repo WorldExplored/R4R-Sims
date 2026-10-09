@@ -1,0 +1,81 @@
+{
+  "checked_utc": "2026-10-09T02:59:19.833954+00:00",
+  "airsim_commit": "96235148a332fe7cb3d3525a0720e26faaca99e0",
+  "graphdeco_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "italink_commit": "411f879985719ce69eaaf15d58152c551e2719b1",
+  "files": [
+    {
+      "path": "AirLib/src/vehicles/multirotor/api/MultirotorApiBase.cpp",
+      "bytes": 38853,
+      "sha256": "c0d58adcf9e822396eea41e20fa64b50517241e228089b5b5cdcb1a507d9b918"
+    },
+    {
+      "path": "AirLib/include/vehicles/multirotor/api/MultirotorApiBase.hpp",
+      "bytes": 17153,
+      "sha256": "fe4c42a8bee77a28f732bbc3473923a9dd6aa108bac2020d2cfae0da8120d200"
+    },
+    {
+      "path": "AirLib/include/vehicles/multirotor/firmwares/simple_flight/SimpleFlightApi.hpp",
+      "bytes": 18624,
+      "sha256": "1d902f67486aeb65ce4d965c3a780ea5a989fc58f417881c99949e1a55033df0"
+    },
+    {
+      "path": "AirLib/include/vehicles/multirotor/firmwares/simple_flight/firmware/RemoteControl.hpp",
+      "bytes": 9552,
+      "sha256": "bbe5259c93d049b18fd17902a616f6b9626b6cd3f642828b445a801d8c09993a"
+    },
+    {
+      "path": "AirLib/include/vehicles/multirotor/firmwares/simple_flight/firmware/OffboardApi.hpp",
+      "bytes": 8822,
+      "sha256": "4d14ad42ad189e936b28ccad6358680c4171630dfaa2148442092279046d08a7"
+    },
+    {
+      "path": "graphdeco/utils/general_utils.py",
+      "bytes": 3971,
+      "sha256": "97553507caa4f3e6849919d9658b0b0da064e6c8f19142045da79072171ffa51"
+    },
+    {
+      "path": "graphdeco/utils/sh_utils.py",
+      "bytes": 4371,
+      "sha256": "7d1ff267546390635e6d1f68c4f88c4a8b052482d5c9be1d32f06bc69e9a96e7"
+    },
+    {
+      "path": "graphdeco/scene/gaussian_model.py",
+      "bytes": 22740,
+      "sha256": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310"
+    },
+    {
+      "path": "UE55-Quat.h",
+      "bytes": 41178,
+      "sha256": "5b4254f8bde86a1f3948ac9be4effd89adcd07244b4bfe9d051640887539767d"
+    }
+  ],
+  "retrieval": "Pinned GitHub contents API; UE Quat.h read in memory from verified local official 5.5.4 ZIP; no extraction/install",
+  "binary_to_source_attestation": false,
+  "plugin_binary_asset_checks": [
+    {
+      "path": "Content/Niagara/NS_GaussianSplattingPointCloud.uasset",
+      "sha256": "d56c9541110aa11b64cbe5a76df96525a394ad1518984fb77a2b870081144212",
+      "relevant_symbols": [
+        "M_GaussianSplattingPoint"
+      ],
+      "limits": "Names/export metadata inspected; connected material graph and effective renderer state not decoded"
+    },
+    {
+      "path": "Content/Materials/M_GaussianSplattingPoint.uasset",
+      "sha256": "d64b7904feb03ed8155929822c7c40760c9474dac36ad8d030dcc1634326f1ba",
+      "relevant_symbols": [
+        "BLEND_Translucent",
+        "MSM_Unlit",
+        "M_GaussianSplattingPoint",
+        "MaterialExpressionEyeAdaptation",
+        "MaterialExpressionParticleColor",
+        "M_GaussianSplattingPoint",
+        "M_GaussianSplattingPoint",
+        "BLEND_Translucent",
+        "MSM_Unlit"
+      ],
+      "limits": "Names/export metadata inspected; connected material graph and effective renderer state not decoded"
+    }
+  ]
+}

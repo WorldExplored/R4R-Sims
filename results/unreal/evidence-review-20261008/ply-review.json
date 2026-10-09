@@ -1,0 +1,419 @@
+{
+  "entry": "chinese_vase.ply",
+  "sha256": "59b33386c8f0509df11ffd6314284d67895bf20a15b17c5f7e5b6e58d6416506",
+  "bytes": 22798434,
+  "archive_entries": [
+    "chinese_vase.ply",
+    "dae_diorama_-_forest_loner.ply",
+    "fiat_500_x_outlaw.ply",
+    "higokumaru__honkai_impact_3rd.ply"
+  ],
+  "header": "ply\nformat binary_little_endian 1.0\nelement vertex 91923\nproperty float x\nproperty float y\nproperty float z\nproperty float nx\nproperty float ny\nproperty float nz\nproperty float f_dc_0\nproperty float f_dc_1\nproperty float f_dc_2\nproperty float f_rest_0\nproperty float f_rest_1\nproperty float f_rest_2\nproperty float f_rest_3\nproperty float f_rest_4\nproperty float f_rest_5\nproperty float f_rest_6\nproperty float f_rest_7\nproperty float f_rest_8\nproperty float f_rest_9\nproperty float f_rest_10\nproperty float f_rest_11\nproperty float f_rest_12\nproperty float f_rest_13\nproperty float f_rest_14\nproperty float f_rest_15\nproperty float f_rest_16\nproperty float f_rest_17\nproperty float f_rest_18\nproperty float f_rest_19\nproperty float f_rest_20\nproperty float f_rest_21\nproperty float f_rest_22\nproperty float f_rest_23\nproperty float f_rest_24\nproperty float f_rest_25\nproperty float f_rest_26\nproperty float f_rest_27\nproperty float f_rest_28\nproperty float f_rest_29\nproperty float f_rest_30\nproperty float f_rest_31\nproperty float f_rest_32\nproperty float f_rest_33\nproperty float f_rest_34\nproperty float f_rest_35\nproperty float f_rest_36\nproperty float f_rest_37\nproperty float f_rest_38\nproperty float f_rest_39\nproperty float f_rest_40\nproperty float f_rest_41\nproperty float f_rest_42\nproperty float f_rest_43\nproperty float f_rest_44\nproperty float opacity\nproperty float scale_0\nproperty float scale_1\nproperty float scale_2\nproperty float rot_0\nproperty float rot_1\nproperty float rot_2\nproperty float rot_3\nend_header\n",
+  "vertices": 91923,
+  "properties": [
+    "x",
+    "y",
+    "z",
+    "nx",
+    "ny",
+    "nz",
+    "f_dc_0",
+    "f_dc_1",
+    "f_dc_2",
+    "f_rest_0",
+    "f_rest_1",
+    "f_rest_2",
+    "f_rest_3",
+    "f_rest_4",
+    "f_rest_5",
+    "f_rest_6",
+    "f_rest_7",
+    "f_rest_8",
+    "f_rest_9",
+    "f_rest_10",
+    "f_rest_11",
+    "f_rest_12",
+    "f_rest_13",
+    "f_rest_14",
+    "f_rest_15",
+    "f_rest_16",
+    "f_rest_17",
+    "f_rest_18",
+    "f_rest_19",
+    "f_rest_20",
+    "f_rest_21",
+    "f_rest_22",
+    "f_rest_23",
+    "f_rest_24",
+    "f_rest_25",
+    "f_rest_26",
+    "f_rest_27",
+    "f_rest_28",
+    "f_rest_29",
+    "f_rest_30",
+    "f_rest_31",
+    "f_rest_32",
+    "f_rest_33",
+    "f_rest_34",
+    "f_rest_35",
+    "f_rest_36",
+    "f_rest_37",
+    "f_rest_38",
+    "f_rest_39",
+    "f_rest_40",
+    "f_rest_41",
+    "f_rest_42",
+    "f_rest_43",
+    "f_rest_44",
+    "opacity",
+    "scale_0",
+    "scale_1",
+    "scale_2",
+    "rot_0",
+    "rot_1",
+    "rot_2",
+    "rot_3"
+  ],
+  "all_values_finite": true,
+  "positions_native": {
+    "min": [
+      -1.7122713327407837,
+      -3.058222532272339,
+      -1.5978264808654785
+    ],
+    "max": [
+      1.7118505239486694,
+      3.034879446029663,
+      1.587942361831665
+    ],
+    "median": [
+      -0.30147334933280945,
+      -0.26672887802124023,
+      -0.07317478954792023
+    ]
+  },
+  "log_scale": {
+    "min": [
+      -11.913880348205566,
+      -10.571610450744629,
+      -11.346826553344727
+    ],
+    "max": [
+      -0.7304291129112244,
+      -0.7183191180229187,
+      -0.8181132078170776
+    ],
+    "median": [
+      -4.918760299682617,
+      -4.707644462585449,
+      -5.673027992248535
+    ]
+  },
+  "exp_scale_native": {
+    "min": [
+      6.6968027416369845e-06,
+      2.563350044722022e-05,
+      1.1806898799030558e-05
+    ],
+    "max": [
+      0.48170224108302634,
+      0.4875711170659574,
+      0.4412634419671099
+    ],
+    "median": [
+      0.00730818519279417,
+      0.009026013674327052,
+      0.003437440957116455
+    ]
+  },
+  "rot_wxyz": {
+    "min": [
+      0.014815966598689556,
+      -0.7607881426811218,
+      -0.7280194163322449,
+      -0.7797276377677917
+    ],
+    "max": [
+      1.4557063579559326,
+      0.8913169503211975,
+      0.808289647102356,
+      0.8475557565689087
+    ],
+    "median": [
+      0.7595723867416382,
+      0.003448747331276536,
+      -0.0004789018421433866,
+      0.0073788524605333805
+    ]
+  },
+  "quaternion_norm": {
+    "min": 0.4518503756450542,
+    "max": 1.457132178921608,
+    "median": 0.8228347951757902
+  },
+  "opacity_logit": {
+    "min": [
+      -5.522545337677002
+    ],
+    "max": [
+      12.814270973205566
+    ],
+    "median": [
+      -0.6964558959007263
+    ]
+  },
+  "opacity_sigmoid": {
+    "min": [
+      0.003979762873906214
+    ],
+    "max": [
+      0.999997278353949
+    ],
+    "median": [
+      0.3325984691707419
+    ]
+  },
+  "dc_sh": {
+    "min": [
+      -2.1209590435028076,
+      -2.171788215637207,
+      -2.2080576419830322
+    ],
+    "max": [
+      4.569342136383057,
+      2.8761346340179443,
+      2.923496723175049
+    ],
+    "median": [
+      -0.33252283930778503,
+      -0.7613124847412109,
+      -0.9181603193283081
+    ]
+  },
+  "dc_decoded_color": {
+    "min": [
+      -0.09831149973784825,
+      -0.11265014446714028,
+      -0.12288156073992385
+    ],
+    "max": [
+      1.7889876185065858,
+      1.311342600696931,
+      1.3247031993756804
+    ],
+    "median": [
+      0.40619703888541164,
+      0.28523771314207436,
+      0.24099175590404348
+    ]
+  },
+  "importer_srgb_to_linear_color": {
+    "min": [
+      -0.007609249205715809,
+      -0.008719051429345223,
+      -0.009510956713616396
+    ],
+    "max": [
+      3.819559664493341,
+      1.860103710552604,
+      1.9040559603248628
+    ],
+    "median": [
+      0.1372529607080293,
+      0.06614118605420895,
+      0.04734402455097057
+    ]
+  },
+  "higher_order_sh": {
+    "min": [
+      -0.2408946007490158,
+      -0.23459312319755554,
+      -0.22319133579730988,
+      -0.16891203820705414,
+      -0.1972447633743286,
+      -0.31827980279922485,
+      -0.2033318728208542,
+      -0.22657065093517303,
+      -0.15626302361488342,
+      -0.201798215508461,
+      -0.15974880754947662,
+      -0.17170806229114532,
+      -0.21169441938400269,
+      -0.14618609845638275,
+      -0.14072808623313904,
+      -0.27750682830810547,
+      -0.24754469096660614,
+      -0.22786802053451538,
+      -0.19934475421905518,
+      -0.2126293182373047,
+      -0.33645620942115784,
+      -0.2259162813425064,
+      -0.20760835707187653,
+      -0.1493200659751892,
+      -0.2000333070755005,
+      -0.15790027379989624,
+      -0.17167310416698456,
+      -0.19178766012191772,
+      -0.15575046837329865,
+      -0.1490614116191864,
+      -0.31404897570610046,
+      -0.2862023115158081,
+      -0.25211137533187866,
+      -0.19605469703674316,
+      -0.2323363870382309,
+      -0.3412526249885559,
+      -0.22967395186424255,
+      -0.219693124294281,
+      -0.18548572063446045,
+      -0.21276436746120453,
+      -0.17364850640296936,
+      -0.18632781505584717,
+      -0.21780484914779663,
+      -0.16842494904994965,
+      -0.16868475079536438
+    ],
+    "max": [
+      0.2901342213153839,
+      0.25309428572654724,
+      0.27500951290130615,
+      0.2320178598165512,
+      0.21847520768642426,
+      0.23805798590183258,
+      0.27030643820762634,
+      0.20631639659404755,
+      0.18591687083244324,
+      0.18138819932937622,
+      0.2527666389942169,
+      0.15820308029651642,
+      0.16211257874965668,
+      0.14560188353061676,
+      0.17008674144744873,
+      0.3073420226573944,
+      0.2515370845794678,
+      0.2926316559314728,
+      0.18656006455421448,
+      0.2541998028755188,
+      0.2424817681312561,
+      0.27092599868774414,
+      0.23844125866889954,
+      0.17489835619926453,
+      0.1764708161354065,
+      0.21909695863723755,
+      0.17488929629325867,
+      0.18587958812713623,
+      0.15585172176361084,
+      0.20852962136268616,
+      0.29850736260414124,
+      0.2695481479167938,
+      0.3082471191883087,
+      0.20945830643177032,
+      0.26097196340560913,
+      0.25066453218460083,
+      0.28220033645629883,
+      0.25795266032218933,
+      0.18380950391292572,
+      0.18356288969516754,
+      0.24485641717910767,
+      0.18247786164283752,
+      0.18664570152759552,
+      0.16886626183986664,
+      0.21542344987392426
+    ],
+    "median": [
+      0.010491964407265186,
+      0.0,
+      0.0031642010435462,
+      0.0,
+      0.0,
+      0.0016197559889405966,
+      0.0,
+      0.00196404499001801,
+      0.0003233371244277805,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.01703803800046444,
+      0.0,
+      0.0015977767761796713,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0035059775691479445,
+      0.001422325731255114,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.025348152965307236,
+      0.0,
+      0.0015704055549576879,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.008957532234489918,
+      0.002368335844948888,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "nonzero_rest_count": 3636000,
+  "vertices_with_nonzero_rest": 87215,
+  "normals": {
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "median": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "metric_scale_proven": false,
+  "sample_training_producer_camera_frame": "not recorded",
+  "conditional_covariance_check": {
+    "assumption": "Both consumers use canonical active quaternion R and R diag(s^2) R.T; Niagara consumer not decoded",
+    "basis": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "determinant": -1.0,
+    "relative_frobenius_error": {
+      "min": 0.013476465118486871,
+      "max": 1.414090270515012,
+      "median": 1.0860261715460509
+    },
+    "fraction_error_gt_1e_6": 1.0,
+    "conclusion": "Scalar-first ordering matches canonical 3DGS. Basis-conjugation differs under this assumption; not a confirmed rendering bug."
+  }
+}

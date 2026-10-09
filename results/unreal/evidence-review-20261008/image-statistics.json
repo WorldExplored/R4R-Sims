@@ -1,0 +1,52 @@
+{
+  "cube_final.png": {
+    "source": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232833Z-s-light-573e44a0/cube_final.png",
+    "sha256": "01f4b633ff99ced5ec0797e74ef40b330763857391c50eb77b7779679e5d93c8",
+    "shape": [
+      480,
+      640,
+      3
+    ],
+    "min": 0,
+    "max": 226,
+    "mean_rgb": 35.546847873263886,
+    "mean_per_channel": [
+      35.540013020833335,
+      35.541546223958335,
+      35.558984375
+    ],
+    "fraction_any_channel_gt10": 0.162861328125,
+    "fraction_any_channel_ge250": 0.0,
+    "gt10_bbox_xyxy": [
+      208,
+      124,
+      431,
+      351
+    ]
+  },
+  "splat_final.png": {
+    "source": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232833Z-s-light-573e44a0/splat_final.png",
+    "sha256": "4f3be948e71a357deb5848e61602af3b7fe28f07f5dfe265250b102b6c18225c",
+    "shape": [
+      480,
+      640,
+      3
+    ],
+    "min": 0,
+    "max": 113,
+    "mean_rgb": 0.15883138020833334,
+    "mean_per_channel": [
+      0.26978515625,
+      0.10258138020833334,
+      0.10412760416666667
+    ],
+    "fraction_any_channel_gt10": 0.0032161458333333334,
+    "fraction_any_channel_ge250": 0.0,
+    "gt10_bbox_xyxy": [
+      247,
+      48,
+      389,
+      240
+    ]
+  }
+}

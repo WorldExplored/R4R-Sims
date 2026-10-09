@@ -1,0 +1,2328 @@
+{
+  "A": {
+    "run_id": "ue-20261008T215319Z-a-5fe9b7c3",
+    "root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3",
+    "run": {
+      "achieved_outer_command_rate_hz_median": null,
+      "airsim_version": "1.8.1",
+      "camera": "front_center, 640x480, 90 deg HFOV; NED metres; camera response extrinsic recorded per frame",
+      "connection_timeout_s": 60,
+      "controller": "none (A)",
+      "dependency_lock_sha256": null,
+      "errors": [],
+      "exit_status": 0,
+      "experiment_level": "A",
+      "finished_utc": "2026-10-08T21:53:53.654462+00:00",
+      "game_exe": "/tmp/r4r-ue-assets/LinuxBlocks1.8.1/LinuxNoEditor/Blocks.sh",
+      "game_exe_sha256": "e74e0dd7bad0c33b3ecdd8628290f84e9632ac4c64d840ffc5a8ee62021ebe8e",
+      "game_exit_status_after_cleanup": -15,
+      "gpu_preflight": {
+        "command": [
+          "nvidia-smi",
+          "--query-gpu=name,memory.total,driver_version",
+          "--format=csv,noheader"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "NVIDIA RTX A5000, 24564 MiB, 580.178.04"
+      },
+      "input_asset_bytes": 142533463,
+      "input_asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+      "input_asset_url": "https://github.com/microsoft/AirSim/releases/download/v1.8.1/Blocks.zip",
+      "input_asset_zip": "/workspace/r4r_assets/Blocks_v1.8.1.zip",
+      "max_wall_s": 180,
+      "missing_data": [],
+      "mode": "a",
+      "numpy_version": "1.23.5",
+      "os": "Linux-6.8.0-146-generic-x86_64-with-glibc2.35",
+      "output_dir": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3",
+      "policy_weights": "none",
+      "python": "3.11.11 (main, Dec  4 2024, 08:55:07) [GCC 11.4.0]",
+      "randomness": "no scripted randomness; engine seed not exposed",
+      "repo": "microsoft/AirSim",
+      "repo_commit": "96235148a332fe7cb3d3525a0720e26faaca99e0",
+      "repo_modifications": "none applied by audit; packaged binary not source-diffed",
+      "rpc_timeout_s": 5,
+      "run_id": "ue-20261008T215319Z-a-5fe9b7c3",
+      "runner_sha256": "9a43279598d628ca5c41245481e1909693f9de921406187cebb6233f9f1255b0",
+      "sample_counts": {
+        "actions.jsonl": 8,
+        "camera.jsonl": 8,
+        "gpu.jsonl": 28,
+        "state.jsonl": 8,
+        "vehicle_trajectory.jsonl": 8
+      },
+      "sampling": "B target 5 Hz state/actions, up to 2 Hz RGB/depth; A 8 poses; 1 Hz GPU; first 3 frames warmup discarded",
+      "scene": "v1.8.1 Linux Blocks/FlyingExampleMap; packaged scene assets",
+      "scene_split": "stock release; no train/test split",
+      "seed": null,
+      "server_version": 1,
+      "settings": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/settings.json",
+      "settings_sha256": "ba9b97957f12425c84a71645eb4649e1883fe8dc10b5a3ae935b1e821ca03247",
+      "started_utc": "2026-10-08T21:53:19.967425+00:00",
+      "status": "completed",
+      "timing": "capture RPC wall latency only; no synchronized GPU render timing, policy latency, or video FPS",
+      "wall_elapsed_s": 33.50242858999991
+    },
+    "camera_records": [
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.2134679699956905,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0000.npy",
+        "depth_sha256": "d2d4ee6fd45be9dc607674b333ed9ca56b24d0de8f3f6a1740a82c9477a7011d",
+        "image_timestamp_raw": 1791496404718774000,
+        "index": 0,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0000.png",
+        "rgb_sha256": "8856257fe652b498bd17def3dfbc717b70ba32a1103fd53988b6cf76662e5759",
+        "sim_elapsed_s_from_first_image": 0.0,
+        "wall_elapsed_s": 7.717475985002238,
+        "wall_utc": "2026-10-08T21:53:27.869522+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.5,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.5,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.088289031991735,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0001.npy",
+        "depth_sha256": "4cdd80dadf3c6fa2fb51c1d8a8ab77f77f73767dbc629c38a5bf4df31be78b9e",
+        "image_timestamp_raw": 1791496408163637000,
+        "index": 1,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0001.png",
+        "rgb_sha256": "7bf84aa66b5eab25a210617f3d17fa80e98acff4a0172c2b138c7b7422f2e8c1",
+        "sim_elapsed_s_from_first_image": 3.444863,
+        "wall_elapsed_s": 11.07353187300032,
+        "wall_utc": "2026-10-08T21:53:31.225579+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.122007002006285,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0002.npy",
+        "depth_sha256": "48d7e80adebe82e53fc1771a330d31a655d05170298afc1998349f94f272045c",
+        "image_timestamp_raw": 1791496411524462000,
+        "index": 2,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0002.png",
+        "rgb_sha256": "7176ef8831a7071010df33973ad4dfa427455626fa3808dd5b491004894f7412",
+        "sim_elapsed_s_from_first_image": 6.805688,
+        "wall_elapsed_s": 14.462581080995733,
+        "wall_utc": "2026-10-08T21:53:34.614627+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 1.0,
+            "y": 0.5,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 1.0,
+            "y": 0.5,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.1839771200029645,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0003.npy",
+        "depth_sha256": "9863d63c27eceb8a6979f5ff1c059541a4c6e265746133c430b2c6f6dfbeea52",
+        "image_timestamp_raw": 1791496414913233000,
+        "index": 3,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0003.png",
+        "rgb_sha256": "020fc7b12e0eff839fb3d28328b37b56560158eaaa91aaf209ac5ed243197c37",
+        "sim_elapsed_s_from_first_image": 10.194459,
+        "wall_elapsed_s": 17.913453244022094,
+        "wall_utc": "2026-10-08T21:53:38.065480+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.136797351005953,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0004.npy",
+        "depth_sha256": "a026b954d9e66953c5e1c5e6aba24589902a86afafd645a78547d9740b832bb6",
+        "image_timestamp_raw": 1791496418358576000,
+        "index": 4,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0004.png",
+        "rgb_sha256": "b32e1789988b0ec639b8f7d40512174b082ee333b0326deb84af72cfa5153d05",
+        "sim_elapsed_s_from_first_image": 13.639802,
+        "wall_elapsed_s": 21.3162799810234,
+        "wall_utc": "2026-10-08T21:53:41.468326+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.5,
+            "y": 1.0,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.5,
+            "y": 1.0,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.089355605014134,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0005.npy",
+        "depth_sha256": "0a19c2dd4c43ef9d10b65a9bb2f31ff9f88f22700cead8eba9e43ee55a5fa14d",
+        "image_timestamp_raw": 1791496421766025000,
+        "index": 5,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0005.png",
+        "rgb_sha256": "b62463b80940ab9cc7475e274608b78378966f3a93cca021b30d459c47541367",
+        "sim_elapsed_s_from_first_image": 17.047251,
+        "wall_elapsed_s": 24.674452353996458,
+        "wall_utc": "2026-10-08T21:53:44.826498+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.0803146899852436,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0006.npy",
+        "depth_sha256": "967e06ea01c7a0a5d509f7f1312a679f54a218056dfdbfcb72023f7c3009792a",
+        "image_timestamp_raw": 1791496425130818000,
+        "index": 6,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0006.png",
+        "rgb_sha256": "1c05aba80b85bde532d49e757375ee70af04c8f157fce1a244fa243fc1647b66",
+        "sim_elapsed_s_from_first_image": 20.412044,
+        "wall_elapsed_s": 28.023340964020463,
+        "wall_utc": "2026-10-08T21:53:48.175388+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_rpc_wall_s": 3.190524024015758,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0007.npy",
+        "depth_sha256": "d2d4ee6fd45be9dc607674b333ed9ca56b24d0de8f3f6a1740a82c9477a7011d",
+        "image_timestamp_raw": 1791496428472688000,
+        "index": 7,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "A",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0007.png",
+        "rgb_sha256": "92ca93b09c122c1165c62dbf2bbd7ab900121d60fccfeaf39e5ea88624e03043",
+        "sim_elapsed_s_from_first_image": 23.753914,
+        "wall_elapsed_s": 31.48044209901127,
+        "wall_utc": "2026-10-08T21:53:51.632489+00:00"
+      }
+    ],
+    "reference_route.json": {
+      "frame": "AirSim NED metres, relative to start",
+      "poses_xyz": [
+        [
+          0,
+          0,
+          -2
+        ],
+        [
+          0.5,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          1,
+          0.5,
+          -2
+        ],
+        [
+          1,
+          1,
+          -2
+        ],
+        [
+          0.5,
+          1,
+          -2
+        ],
+        [
+          0,
+          1,
+          -2
+        ],
+        [
+          0,
+          0,
+          -2
+        ]
+      ]
+    },
+    "settings.json": {
+      "ApiServerPort": 41451,
+      "CameraDefaults": {
+        "CaptureSettings": [
+          {
+            "AutoExposureSpeed": 100,
+            "FOV_Degrees": 90,
+            "Height": 480,
+            "ImageType": 0,
+            "MotionBlurAmount": 0,
+            "Width": 640
+          },
+          {
+            "FOV_Degrees": 90,
+            "Height": 480,
+            "ImageType": 1,
+            "Width": 640
+          }
+        ]
+      },
+      "SettingsVersion": 1.2,
+      "SimMode": "ComputerVision",
+      "Vehicles": {
+        "Drone1": {
+          "AutoCreate": true,
+          "VehicleType": "ComputerVision"
+        }
+      }
+    },
+    "preserved_analysis": {
+      "camera_capture_rate_hz_over_span": 0.2945760207886369,
+      "capture_interval_wall_s_median": 3.389049207995413,
+      "capture_rpc_wall_s_median": 3.129402176506119,
+      "command_interval_wall_s_median": null,
+      "command_interval_wall_s_p95": null,
+      "command_rate_hz_from_median_interval": null,
+      "command_rate_hz_over_action_span": null,
+      "frame_stats": [
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0000.npy",
+          "depth_median_m": 23.09375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13208.0,
+          "index": 0,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0000.png",
+          "rgb_mean": 149.04397352430556,
+          "rgb_std": 47.1400340041508
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0001.npy",
+          "depth_median_m": 22.59375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13136.0,
+          "index": 1,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0001.png",
+          "rgb_mean": 147.65564995659722,
+          "rgb_std": 47.18707165553235
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0002.npy",
+          "depth_median_m": 22.09375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13064.0,
+          "index": 2,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0002.png",
+          "rgb_mean": 146.0090505642361,
+          "rgb_std": 47.46077203628271
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0003.npy",
+          "depth_median_m": 22.09375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13064.0,
+          "index": 3,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0003.png",
+          "rgb_mean": 145.83043836805555,
+          "rgb_std": 47.543856865802226
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0004.npy",
+          "depth_median_m": 22.09375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13064.0,
+          "index": 4,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0004.png",
+          "rgb_mean": 145.91374348958334,
+          "rgb_std": 47.60404981665273
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0005.npy",
+          "depth_median_m": 22.59375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13136.0,
+          "index": 5,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0005.png",
+          "rgb_mean": 147.42212890625,
+          "rgb_std": 47.33577412078091
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0006.npy",
+          "depth_median_m": 23.09375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13208.0,
+          "index": 6,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0006.png",
+          "rgb_mean": 148.8993901909722,
+          "rgb_std": 47.26540000241773
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/depth/0007.npy",
+          "depth_median_m": 23.09375,
+          "depth_p05_m": 4.483202934265137,
+          "depth_p95_m": 13208.0,
+          "index": 7,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3/frames/0007.png",
+          "rgb_mean": 149.0507052951389,
+          "rgb_std": 47.142415255540556
+        }
+      ],
+      "frames_checked": 8,
+      "new_collision_recorded": null,
+      "peak_gpu_memory_used_mib_samples": 862.0,
+      "rgb_adjacent_mean_abs_difference": [
+        4.021593967013889,
+        4.246069878472222,
+        2.9088226996527777,
+        2.8502517361111113,
+        4.0433203125,
+        4.0422178819444445,
+        4.095796440972222
+      ],
+      "run_id": "ue-20261008T215319Z-a-5fe9b7c3",
+      "simulation_elapsed_s_first_to_last_state": null,
+      "states": 8,
+      "status": "completed",
+      "timing_note": "RPC and sampling intervals are not renderer FPS; no synchronized GPU render timing",
+      "velocity_commands": 0,
+      "waypoint_nearest_recorded_state_error_m": []
+    }
+  },
+  "B": {
+    "run_id": "ue-20261008T220451Z-b-a3d4be49",
+    "root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49",
+    "run": {
+      "achieved_outer_command_rate_hz_median": 4.695521094497754,
+      "airsim_version": "1.8.1",
+      "audit_repo_commit": {
+        "command": [
+          "git",
+          "-C",
+          "/root/R4R-Sims",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "a082b6044fed4ee4b41881dd2002cc7c8ff7adfa"
+      },
+      "audit_repo_worktree": {
+        "command": [
+          "git",
+          "-C",
+          "/root/R4R-Sims",
+          "status",
+          "--porcelain"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": ""
+      },
+      "camera": "front_center, 640x480, 90 deg HFOV; NED metres; camera response extrinsic recorded per frame",
+      "connection_timeout_s": 60,
+      "controller": "outer bounded proportional velocity script plus SimpleFlight inner controller",
+      "dependency_lock_sha256": null,
+      "errors": [
+        {
+          "error": "landAsync returned but LandedState remained Flying for 10 s",
+          "traceback": "Traceback (most recent call last):\n  File \"/root/R4R-Sims/simulators/unreal/audit.py\", line 391, in main_run\n    raise RuntimeError(\"landAsync returned but LandedState remained Flying for 10 s\")\nRuntimeError: landAsync returned but LandedState remained Flying for 10 s\n",
+          "wall_utc": "2026-10-08T22:05:56.106513+00:00"
+        }
+      ],
+      "exit_status": 1,
+      "experiment_level": "B",
+      "finished_utc": "2026-10-08T22:05:57.074888+00:00",
+      "game_exe": "/tmp/r4r-ue-assets/LinuxBlocks1.8.1/LinuxNoEditor/Blocks/Binaries/Linux/Blocks",
+      "game_exe_sha256": "97e9b0671024454ec29336209843bf72af5cb788af9e27882d77409de4677654",
+      "game_exit_status_after_cleanup": 143,
+      "gpu_preflight": {
+        "command": [
+          "nvidia-smi",
+          "--query-gpu=name,memory.total,driver_version",
+          "--format=csv,noheader"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "NVIDIA RTX A5000, 24564 MiB, 580.178.04"
+      },
+      "input_asset_bytes": 142533463,
+      "input_asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+      "input_asset_url": "https://github.com/microsoft/AirSim/releases/download/v1.8.1/Blocks.zip",
+      "input_asset_zip": "/workspace/r4r_assets/Blocks_v1.8.1.zip",
+      "max_wall_s": 180,
+      "missing_data": [],
+      "mode": "b",
+      "numpy_version": "1.23.5",
+      "os": "Linux-6.8.0-146-generic-x86_64-with-glibc2.35",
+      "output_dir": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49",
+      "policy_weights": "none",
+      "python": "3.11.11 (main, Dec  4 2024, 08:55:07) [GCC 11.4.0]",
+      "randomness": "no scripted randomness; engine seed not exposed",
+      "repo": "microsoft/AirSim",
+      "repo_commit": "96235148a332fe7cb3d3525a0720e26faaca99e0",
+      "repo_modifications": "none applied by audit; packaged binary not source-diffed",
+      "rpc_timeout_s": 5,
+      "run_id": "ue-20261008T220451Z-b-a3d4be49",
+      "runner_sha256": "9ac832ff5c036ec2d9ba725efc0052a29ab527d5c1e789bd48bba4993c6ba39d",
+      "sample_counts": {
+        "actions.jsonl": 78,
+        "camera.jsonl": 8,
+        "gpu.jsonl": 59,
+        "state.jsonl": 94,
+        "vehicle_trajectory.jsonl": 94
+      },
+      "sampling": "B target 5 Hz state/actions, up to 2 Hz RGB/depth; A 8 poses; 1 Hz GPU; first 3 frames warmup discarded",
+      "scene": "v1.8.1 Linux Blocks/FlyingExampleMap; packaged scene assets",
+      "scene_split": "stock release; no train/test split",
+      "seed": null,
+      "server_version": 1,
+      "settings": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/settings.json",
+      "settings_sha256": "be7a7bf2689e89251735db72791e935ecc63a277bca708d75d85d1ca3d3a8955",
+      "started_utc": "2026-10-08T22:04:52.010005+00:00",
+      "status": "failed",
+      "timing": "capture RPC wall latency only; no synchronized GPU render timing, policy latency, or video FPS",
+      "wall_elapsed_s": 64.75109970199992
+    },
+    "camera_records": [
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.4599999785423279,
+            "y": 0.0,
+            "z": 0.6667698621749878
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.4599999785423279,
+            "y": 0.0,
+            "z": 0.6667698621749878
+          }
+        },
+        "capture_rpc_wall_s": 3.212947466992773,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0000.npy",
+        "depth_sha256": "7dac0fc693e6e378706136bb9b02d5f2e3a0081e2969ce5796d6aaed43eb3b10",
+        "image_timestamp_raw": 1791497096969886464,
+        "index": 0,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B_pre_takeoff",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0000.png",
+        "rgb_sha256": "ae89ad40ab9b871bdf838c73db364eb4545f9af42f3d9246375ada98a3cf42cb",
+        "sim_elapsed_s_from_first_image": 0.0,
+        "wall_elapsed_s": 7.83563118299935,
+        "wall_utc": "2026-10-08T22:05:00.159428+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.4599999785423279,
+            "y": 0.0,
+            "z": -1.7697935104370117
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.4599999785423279,
+            "y": 0.0,
+            "z": -1.7664858102798462
+          }
+        },
+        "capture_rpc_wall_s": 3.312517532991478,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0010.npy",
+        "depth_sha256": "39d4d4694a6b8529145e08d33a5c20bdb0f9f2e34f845bf1b7900b66c8729193",
+        "image_timestamp_raw": 1791497105703072768,
+        "index": 10,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0010.png",
+        "rgb_sha256": "450d795308ad67883bc271674f31ce81121b15b4f1bc1daf151ac39290f03769",
+        "sim_elapsed_s_from_first_image": 8.733186304,
+        "wall_elapsed_s": 16.696655267995084,
+        "wall_utc": "2026-10-08T22:05:09.020449+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999728798866272,
+            "x": 2.713735902659664e-09,
+            "y": -0.0073651596903800964,
+            "z": 4.691933952472027e-08
+          },
+          "position_ned_m": {
+            "x": 1.1805901527404785,
+            "y": 1.4148017157822323e-07,
+            "z": -1.9168633222579956
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999456405639648,
+            "x": 2.061894405214204e-10,
+            "y": 0.01042943075299263,
+            "z": -2.1505553414458145e-12
+          },
+          "position_ned_m": {
+            "x": 1.2182033061981201,
+            "y": 1.2365105606093607e-09,
+            "z": -1.9371068477630615
+          }
+        },
+        "capture_rpc_wall_s": 3.21709460899001,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0020.npy",
+        "depth_sha256": "f7ac7d5c13981841f63c0500ada155d77eacd297adf4eb4d7d7169cd3abfadfd",
+        "image_timestamp_raw": 1791497111154189056,
+        "index": 20,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0020.png",
+        "rgb_sha256": "7d703f07620e1da41b41d6f410570c4f3e5d43f39837f18f9e29b9c75cca0dfa",
+        "sim_elapsed_s_from_first_image": 14.184302592,
+        "wall_elapsed_s": 22.05202605499653,
+        "wall_utc": "2026-10-08T22:05:14.375815+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999491572380066,
+            "x": 0.009877015836536884,
+            "y": -0.001966045703738928,
+            "z": 0.0004876547900494188
+          },
+          "position_ned_m": {
+            "x": 1.3867080211639404,
+            "y": 0.30393069982528687,
+            "z": -1.9563311338424683
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999867081642151,
+            "x": 0.0041221254505217075,
+            "y": 0.003077208762988448,
+            "z": 0.00031289708567783237
+          },
+          "position_ned_m": {
+            "x": 1.3988003730773926,
+            "y": 0.3665814995765686,
+            "z": -1.9661868810653687
+          }
+        },
+        "capture_rpc_wall_s": 3.2539244419895113,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0030.npy",
+        "depth_sha256": "efab0c70f09c711a514d2c485874f3fada53fc90af9e6a4f4ea5c6bbde427fb2",
+        "image_timestamp_raw": 1791497116527303680,
+        "index": 30,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0030.png",
+        "rgb_sha256": "2be5679b2bb3ff2ebfc540bedea39374f373177873e360c4ae1e08b048468b3b",
+        "sim_elapsed_s_from_first_image": 19.557417216,
+        "wall_elapsed_s": 27.450610355997924,
+        "wall_utc": "2026-10-08T22:05:19.774408+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999790191650391,
+            "x": 0.005282217636704445,
+            "y": 0.0036289433483034372,
+            "z": 0.0009458484128117561
+          },
+          "position_ned_m": {
+            "x": 1.4616303443908691,
+            "y": 0.8181171417236328,
+            "z": -1.9626857042312622
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9995436072349548,
+            "x": -0.0075253876857459545,
+            "y": 0.029255107045173645,
+            "z": 0.00034493894781917334
+          },
+          "position_ned_m": {
+            "x": 1.4385370016098022,
+            "y": 0.8426077961921692,
+            "z": -1.9904552698135376
+          }
+        },
+        "capture_rpc_wall_s": 3.1426329120004084,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0040.npy",
+        "depth_sha256": "c1453891a3614e93b60de0acdb8bc649d392201f7af2af11772f47b59b2a90b5",
+        "image_timestamp_raw": 1791497121924418816,
+        "index": 40,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0040.png",
+        "rgb_sha256": "ec48b20ed96d912b0ba5cdea65c3e6c278f8ed60a9a736d7865ed4fc0ab8ac1d",
+        "sim_elapsed_s_from_first_image": 24.954532352,
+        "wall_elapsed_s": 32.74054164800327,
+        "wall_utc": "2026-10-08T22:05:25.064339+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999699592590332,
+            "x": 0.0013995158951729536,
+            "y": 0.007544668857008219,
+            "z": 0.001088115619495511
+          },
+          "position_ned_m": {
+            "x": 0.74147629737854,
+            "y": 0.9494812488555908,
+            "z": -1.9659582376480103
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999425411224365,
+            "x": -0.001973524456843734,
+            "y": -0.010477285832166672,
+            "z": 0.0011008951114490628
+          },
+          "position_ned_m": {
+            "x": 0.7003928422927856,
+            "y": 0.9569249749183655,
+            "z": -1.9552541971206665
+          }
+        },
+        "capture_rpc_wall_s": 3.188490141008515,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0050.npy",
+        "depth_sha256": "9a4138cf518c8e4102d8db78421313c00f1e67a7133a5f2413e5f33a3bc3d7d1",
+        "image_timestamp_raw": 1791497127207531520,
+        "index": 50,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0050.png",
+        "rgb_sha256": "660af39360a0e8718cae8456529e5279aeb8aac537b939cd462b01a4aaea8b81",
+        "sim_elapsed_s_from_first_image": 30.237645056,
+        "wall_elapsed_s": 38.06955664299312,
+        "wall_utc": "2026-10-08T22:05:30.393349+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999483823776245,
+            "x": -0.009822136722505093,
+            "y": 0.002067085588350892,
+            "z": 0.00158231845125556
+          },
+          "position_ned_m": {
+            "x": 0.5349825024604797,
+            "y": 0.6823605895042419,
+            "z": -1.96634840965271
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999825954437256,
+            "x": -0.004821756388992071,
+            "y": -0.0030856989324092865,
+            "z": 0.0014070174656808376
+          },
+          "position_ned_m": {
+            "x": 0.5242092609405518,
+            "y": 0.6271761059761047,
+            "z": -1.9672282934188843
+          }
+        },
+        "capture_rpc_wall_s": 3.2067061989801005,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0060.npy",
+        "depth_sha256": "826118a9ef264bbcb6660eba069c98f9f3cddd525662b786924906b168327c77",
+        "image_timestamp_raw": 1791497132541645312,
+        "index": 60,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0060.png",
+        "rgb_sha256": "cf0e770c5c866974e8805ae4df9c80c66c3f885ac06982d30d53f6fe0b3f55bc",
+        "sim_elapsed_s_from_first_image": 35.571758848,
+        "wall_elapsed_s": 43.42450535899843,
+        "wall_utc": "2026-10-08T22:05:35.748301+00:00"
+      },
+      {
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999986886978149,
+            "x": 3.461793198766827e-07,
+            "y": 5.604097186306944e-10,
+            "z": 0.001618840149603784
+          },
+          "position_ned_m": {
+            "x": 0.45532870292663574,
+            "y": -0.037963736802339554,
+            "z": 0.6815409064292908
+          }
+        },
+        "camera_pose_response_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.9999986886978149,
+            "x": 3.4617934829839214e-07,
+            "y": 5.604098296529969e-10,
+            "z": 0.001618840266019106
+          },
+          "position_ned_m": {
+            "x": 0.45532870292663574,
+            "y": -0.037963736802339554,
+            "z": 0.6815409064292908
+          }
+        },
+        "capture_rpc_wall_s": 3.1868105519970413,
+        "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0071.npy",
+        "depth_sha256": "b3ca02d162442d7b6b3b97df778f932add01eb4681219ed385b10f1a245a0fc6",
+        "image_timestamp_raw": 1791497152918080000,
+        "index": 71,
+        "intrinsics": {
+          "cx_px": 320,
+          "cy_px": 240,
+          "fx_px": 320.5387100105245,
+          "fy_px_assuming_square_pixels": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "kind": "B_post_land",
+        "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0071.png",
+        "rgb_sha256": "3dc3d6b120257b7e7a19de81d75e1af34c4d9b4d3e401b9a6fec63144059ebbb",
+        "sim_elapsed_s_from_first_image": 55.948193536,
+        "wall_elapsed_s": 63.77767424201011,
+        "wall_utc": "2026-10-08T22:05:56.101469+00:00"
+      }
+    ],
+    "reference_route.json": {
+      "controller_hz_target": 5,
+      "frame": "AirSim NED metres",
+      "speed_limit_mps": 0.7,
+      "waypoints_xyz": [
+        [
+          0.0,
+          0.0,
+          -2.0
+        ],
+        [
+          1.0,
+          0.0,
+          -2.0
+        ],
+        [
+          1.0,
+          1.0,
+          -2.0
+        ],
+        [
+          0.0,
+          1.0,
+          -2.0
+        ],
+        [
+          0.0,
+          0.0,
+          -2.0
+        ]
+      ]
+    },
+    "settings.json": {
+      "ApiServerPort": 41451,
+      "CameraDefaults": {
+        "CaptureSettings": [
+          {
+            "AutoExposureSpeed": 100,
+            "FOV_Degrees": 90,
+            "Height": 480,
+            "ImageType": 0,
+            "MotionBlurAmount": 0,
+            "Width": 640
+          },
+          {
+            "FOV_Degrees": 90,
+            "Height": 480,
+            "ImageType": 1,
+            "Width": 640
+          }
+        ]
+      },
+      "PhysicsEngineName": "FastPhysicsEngine",
+      "SettingsVersion": 1.2,
+      "SimMode": "Multirotor",
+      "Vehicles": {
+        "Drone1": {
+          "AutoCreate": true,
+          "VehicleType": "SimpleFlight"
+        }
+      }
+    },
+    "collision_baseline.json": {
+      "has_collided": true,
+      "object_name": "Ground_6",
+      "time_stamp_raw": 1791497096375873792,
+      "wall_utc": "2026-10-08T22:04:56.935609+00:00"
+    },
+    "waypoint_completions": [
+      {
+        "error_norm_m": 0.23014724254608154,
+        "target_ned_m": [
+          0.0,
+          0.0,
+          -2.0
+        ],
+        "type": "waypoint_reached",
+        "wall_elapsed_s": 16.702713993989164,
+        "wall_utc": "2026-10-08T22:05:09.026510+00:00"
+      },
+      {
+        "error_norm_m": 0.24625897358990986,
+        "target_ned_m": [
+          1.0,
+          0.0,
+          -2.0
+        ],
+        "type": "waypoint_reached",
+        "wall_elapsed_s": 22.908266306010773,
+        "wall_utc": "2026-10-08T22:05:15.232051+00:00"
+      },
+      {
+        "error_norm_m": 0.22848777483716662,
+        "target_ned_m": [
+          1.0,
+          1.0,
+          -2.0
+        ],
+        "type": "waypoint_reached",
+        "wall_elapsed_s": 29.37593625500449,
+        "wall_utc": "2026-10-08T22:05:21.699726+00:00"
+      },
+      {
+        "error_norm_m": 0.24834759153627475,
+        "target_ned_m": [
+          0.0,
+          1.0,
+          -2.0
+        ],
+        "type": "waypoint_reached",
+        "wall_elapsed_s": 38.92582259999472,
+        "wall_utc": "2026-10-08T22:05:31.249614+00:00"
+      },
+      {
+        "error_norm_m": 0.23060100165494737,
+        "target_ned_m": [
+          0.0,
+          0.0,
+          -2.0
+        ],
+        "type": "waypoint_reached",
+        "wall_elapsed_s": 45.340570848988136,
+        "wall_utc": "2026-10-08T22:05:37.664345+00:00"
+      }
+    ],
+    "preserved_analysis": {
+      "camera_capture_rate_hz_over_span": 0.12512950219955343,
+      "capture_interval_wall_s_median": 5.355370787001448,
+      "capture_rpc_wall_s_median": 3.209826832986437,
+      "command_interval_wall_s_median": 0.21296890800294932,
+      "command_interval_wall_s_p95": 3.4292336211903605,
+      "command_rate_hz_from_median_interval": 4.695521094497754,
+      "command_rate_hz_over_action_span": 2.006944612438565,
+      "frame_stats": [
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0000.npy",
+          "depth_median_m": 22.625,
+          "depth_p05_m": 0.30681151151657104,
+          "depth_p95_m": 11856.0,
+          "index": 0,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0000.png",
+          "rgb_mean": 150.2977810329861,
+          "rgb_std": 47.63916075040857
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0010.npy",
+          "depth_median_m": 22.625,
+          "depth_p05_m": 3.9189453125,
+          "depth_p95_m": 13048.0,
+          "index": 10,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0010.png",
+          "rgb_mean": 148.07110026041667,
+          "rgb_std": 47.26786268904559
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0020.npy",
+          "depth_median_m": 21.890625,
+          "depth_p05_m": 4.3037109375,
+          "depth_p95_m": 13136.0,
+          "index": 20,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0020.png",
+          "rgb_mean": 145.2427907986111,
+          "rgb_std": 47.42552986901966
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0030.npy",
+          "depth_median_m": 21.703125,
+          "depth_p05_m": 4.2421875,
+          "depth_p95_m": 13008.0,
+          "index": 30,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0030.png",
+          "rgb_mean": 144.59303168402778,
+          "rgb_std": 47.714091783677326
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0040.npy",
+          "depth_median_m": 21.71875,
+          "depth_p05_m": 4.65234375,
+          "depth_p95_m": 13384.0,
+          "index": 40,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0040.png",
+          "rgb_mean": 144.00006076388888,
+          "rgb_std": 47.320068907782456
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0050.npy",
+          "depth_median_m": 22.1875,
+          "depth_p05_m": 4.0625,
+          "depth_p95_m": 12864.0,
+          "index": 50,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0050.png",
+          "rgb_mean": 146.9346050347222,
+          "rgb_std": 47.91153884220046
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0060.npy",
+          "depth_median_m": 22.5,
+          "depth_p05_m": 4.16796875,
+          "depth_p95_m": 13040.0,
+          "index": 60,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0060.png",
+          "rgb_mean": 147.51337890625,
+          "rgb_std": 47.53971107117251
+        },
+        {
+          "depth": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/depth/0071.npy",
+          "depth_median_m": 22.578125,
+          "depth_p05_m": 0.28485107421875,
+          "depth_p95_m": 11848.0,
+          "index": 71,
+          "positive_finite_depth_fraction": 1.0,
+          "rgb": "/root/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49/frames/0071.png",
+          "rgb_mean": 149.99589301215278,
+          "rgb_std": 47.85797199369886
+        }
+      ],
+      "frames_checked": 8,
+      "new_collision_recorded": true,
+      "peak_gpu_memory_used_mib_samples": 769.0,
+      "rgb_adjacent_mean_abs_difference": [
+        20.697049696180557,
+        10.15005859375,
+        8.213997395833333,
+        16.380594618055557,
+        20.48941189236111,
+        8.218786892361111,
+        22.450387369791667
+      ],
+      "run_id": "ue-20261008T220451Z-b-a3d4be49",
+      "simulation_elapsed_s_first_to_last_state": 48.829041664,
+      "states": 94,
+      "status": "failed",
+      "timing_note": "RPC and sampling intervals are not renderer FPS; no synchronized GPU render timing",
+      "velocity_commands": 69,
+      "waypoint_nearest_recorded_state_error_m": [
+        0.18792933431738293,
+        0.1778804604503727,
+        0.18724347194841268,
+        0.19297256282017644,
+        0.18792933431738293
+      ]
+    }
+  },
+  "yaw": {
+    "run_id": "ue-20261008T232215Z-yaw-6b9a9962",
+    "root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962",
+    "run": {
+      "asset_sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+      "binary_sha256": "97e9b0671024454ec29336209843bf72af5cb788af9e27882d77409de4677654",
+      "environment": {
+        "command": [
+          "/root/R4R-Sims/third_party/unreal/venv/bin/python",
+          "-m",
+          "pip",
+          "freeze"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "airsim==1.8.1\nmsgpack-python==0.5.6\nmsgpack-rpc-python==0.4.1\nnumpy==1.23.5\nopencv-contrib-python==4.7.0.72\npackaging==26.3\ntornado==4.5.3"
+      },
+      "errors": [],
+      "exit_status": 0,
+      "experiment": "camera",
+      "finished_utc": "2026-10-08T23:22:39.888387+00:00",
+      "game_exit_status": 143,
+      "git_commit": {
+        "command": [
+          "git",
+          "-C",
+          "/root/R4R-Sims-unreal-audit",
+          "rev-parse",
+          "HEAD"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "b06fdf9cab25c7033e2270ddaa5a767399198ac4"
+      },
+      "git_status": {
+        "command": [
+          "git",
+          "-C",
+          "/root/R4R-Sims-unreal-audit",
+          "status",
+          "--short"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "?? simulators/unreal/focused_validation.py"
+      },
+      "gpu": {
+        "command": [
+          "nvidia-smi"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "Thu Oct  8 23:22:16 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX A5000               On  |   00000000:4F:00.0 Off |                  Off |\n| 30%   27C    P8             24W /  230W |       1MiB /  24564MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+"
+      },
+      "gpu_sampling_target_hz": 1,
+      "helper_sha256": "9ac832ff5c036ec2d9ba725efc0052a29ab527d5c1e789bd48bba4993c6ba39d",
+      "host": {
+        "command": [
+          "uname",
+          "-a"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "stdout": "Linux 27b0a827042a 6.8.0-146-generic #146-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep  3 16:12:30 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+      },
+      "output_dir": "/root/R4R-Sims-unreal-audit/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962",
+      "policy_latency": "none",
+      "policy_weights": "none",
+      "render_throughput": "unmeasured",
+      "run_id": "ue-20261008T232215Z-yaw-6b9a9962",
+      "runner_sha256": "5727f339b0d014ade232d6ad4622eadce16b1533dd2b9d2dec785552fe8239f1",
+      "sampling_target_state_hz": 5,
+      "scene_split": "stock Blocks; none",
+      "seed": null,
+      "source_asset_url": "https://github.com/microsoft/AirSim/releases/download/v1.8.1/Blocks.zip",
+      "started_utc": "2026-10-08T23:22:15.597448+00:00",
+      "status": "captured_pending_visual_confirmation",
+      "wall_elapsed_s": 24.29097118898062,
+      "warmup": "camera 3 discarded RGB calls; landing no camera calls"
+    },
+    "camera_records": [
+      {
+        "actual_rig_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_request_wall_unix_s": 1791501741.5124292,
+        "capture_return_wall_unix_s": 1791501744.61862,
+        "depth_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "depth_sha256": "d2d4ee6fd45be9dc607674b333ed9ca56b24d0de8f3f6a1740a82c9477a7011d",
+        "depth_timestamp_raw_ns": 1791501741590778000,
+        "image": "/root/R4R-Sims-unreal-audit/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962/frames/0000.png",
+        "index": 0,
+        "intrinsics": {
+          "cx": 320,
+          "cy": 240,
+          "fx_fy_assumed_px": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "requested_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_min_max": [
+          0,
+          255
+        ],
+        "rgb_timestamp_raw_ns": 1791501741582727000,
+        "rpc_latency_wall_s": 3.0844789940165356,
+        "sha256": "c700fbdde331c8b36278934a923518f46fed93b2987d4f789773df3fffb08b60",
+        "wall_elapsed_s": 9.021179759991355,
+        "yaw_deg": 0
+      },
+      {
+        "actual_rig_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.70710688829422,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.7071066498756409
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.70710688829422,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.7071066498756409
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_request_wall_unix_s": 1791501745.1246493,
+        "capture_return_wall_unix_s": 1791501748.1885862,
+        "depth_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 0.7071068286895752,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.7071067094802856
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "depth_sha256": "27fa4a56440218e07eeb62a19b7f681bf1b173214caf1ca245861df727fb69b3",
+        "depth_timestamp_raw_ns": 1791501745172979000,
+        "image": "/root/R4R-Sims-unreal-audit/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962/frames/0001.png",
+        "index": 1,
+        "intrinsics": {
+          "cx": 320,
+          "cy": 240,
+          "fx_fy_assumed_px": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "requested_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.7071067811865476,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.7071067811865475
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 0.7071068286895752,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.7071067094802856
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_min_max": [
+          0,
+          255
+        ],
+        "rgb_timestamp_raw_ns": 1791501745165827000,
+        "rpc_latency_wall_s": 3.0428867139853537,
+        "sha256": "79e45535210822dd164ef07a01a6e443e2df027e7ddd7b1a71d0102c8e518854",
+        "wall_elapsed_s": 12.59114714700263,
+        "yaw_deg": 90
+      },
+      {
+        "actual_rig_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.7881393432617188e-07,
+            "x": 0.0,
+            "y": -0.0,
+            "z": -0.9999999403953552
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.7881393432617188e-07,
+            "x": 0.0,
+            "y": -0.0,
+            "z": -0.9999999403953552
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_request_wall_unix_s": 1791501748.690909,
+        "capture_return_wall_unix_s": 1791501751.6489413,
+        "depth_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": -1.1920928955078125e-07,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.9999998807907104
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "depth_sha256": "48ea5e4360c91a6717e94a7a9001adb2d9551c93a72326446011b27e4f807b3a",
+        "depth_timestamp_raw_ns": 1791501748744795000,
+        "image": "/root/R4R-Sims-unreal-audit/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962/frames/0002.png",
+        "index": 2,
+        "intrinsics": {
+          "cx": 320,
+          "cy": 240,
+          "fx_fy_assumed_px": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "requested_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 6.123233995736766e-17,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": -1.1920928955078125e-07,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.9999998807907104
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_min_max": [
+          0,
+          248
+        ],
+        "rgb_timestamp_raw_ns": 1791501748737247000,
+        "rpc_latency_wall_s": 2.938040305976756,
+        "sha256": "4174866a7a0ca13ca30b9f21a2961e7a5c0b782bac828fc669cf5667de056893",
+        "wall_elapsed_s": 16.051502120972145,
+        "yaw_deg": 180
+      },
+      {
+        "actual_rig_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.7071068286895752,
+            "x": 0.0,
+            "y": -0.0,
+            "z": -0.7071067094802856
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.7071068286895752,
+            "x": 0.0,
+            "y": -0.0,
+            "z": -0.7071067094802856
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_request_wall_unix_s": 1791501752.154624,
+        "capture_return_wall_unix_s": 1791501755.264623,
+        "depth_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 0.7071067094802856,
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.7071067690849304
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "depth_sha256": "dfbb7f017f355b2426b39c886f0f855663967ec1733fb3889ada8445a3f3754b",
+        "depth_timestamp_raw_ns": 1791501752190469000,
+        "image": "/root/R4R-Sims-unreal-audit/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962/frames/0003.png",
+        "index": 3,
+        "intrinsics": {
+          "cx": 320,
+          "cy": 240,
+          "fx_fy_assumed_px": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "requested_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 0.7071067811865476,
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7071067811865475
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 0.7071067094802856,
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.7071067690849304
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_min_max": [
+          0,
+          252
+        ],
+        "rgb_timestamp_raw_ns": 1791501752185220000,
+        "rpc_latency_wall_s": 3.090502198028844,
+        "sha256": "d4479da5ffb36e4da284cb5f2b0b533c0d2d347475d1c6d037e79be853fedf88",
+        "wall_elapsed_s": 19.667183563986327,
+        "yaw_deg": -90
+      },
+      {
+        "actual_rig_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "camera_info_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "capture_request_wall_unix_s": 1791501755.7675555,
+        "capture_return_wall_unix_s": 1791501758.8450449,
+        "depth_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "depth_sha256": "d2d4ee6fd45be9dc607674b333ed9ca56b24d0de8f3f6a1740a82c9477a7011d",
+        "depth_timestamp_raw_ns": 1791501755817463000,
+        "image": "/root/R4R-Sims-unreal-audit/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962/frames/0004.png",
+        "index": 4,
+        "intrinsics": {
+          "cx": 320,
+          "cy": 240,
+          "fx_fy_assumed_px": 320.5387100105245,
+          "height": 480,
+          "hfov_deg": 89.90362548828125,
+          "width": 640
+        },
+        "requested_pose_ned": {
+          "orientation_xyzw_ned": {
+            "w": 1.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_capture_pose_ned": {
+          "orientation_wxyz": {
+            "w": 1.0,
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "position_ned_m": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.0
+          }
+        },
+        "rgb_min_max": [
+          0,
+          255
+        ],
+        "rgb_timestamp_raw_ns": 1791501755809880000,
+        "rpc_latency_wall_s": 3.0539523490006104,
+        "sha256": "da5b107362cfe06dfba21d886b1aafa36c6c1c7693a852d45280622c55940c78",
+        "wall_elapsed_s": 23.247605675947852,
+        "yaw_deg": 0
+      }
+    ],
+    "reference_route.json": {
+      "frame": "right-handed NED metres; quaternion fields w,x,y,z",
+      "position_ned_m": [
+        0.0,
+        0.0,
+        -2.0
+      ],
+      "purpose": "four distinct yaw directions plus repeat-zero stale-frame check",
+      "yaw_degrees": [
+        0,
+        90,
+        180,
+        -90,
+        0
+      ]
+    },
+    "settings.json": {
+      "ApiServerPort": 41451,
+      "CameraDefaults": {
+        "CaptureSettings": [
+          {
+            "AutoExposureSpeed": 100,
+            "FOV_Degrees": 90,
+            "Height": 480,
+            "ImageType": 0,
+            "MotionBlurAmount": 0,
+            "Width": 640
+          },
+          {
+            "FOV_Degrees": 90,
+            "Height": 480,
+            "ImageType": 1,
+            "Width": 640
+          }
+        ]
+      },
+      "PhysicsEngineName": "FastPhysicsEngine",
+      "SettingsVersion": 1.2,
+      "SimMode": "ComputerVision",
+      "Vehicles": {
+        "Drone1": {
+          "AutoCreate": true,
+          "VehicleType": "ComputerVision"
+        }
+      }
+    }
+  },
+  "S_route": {
+    "run_id": "ue-20261008T224031Z-s-fe9a3ea3",
+    "root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T224031Z-s-fe9a3ea3",
+    "run": {
+      "audit_source_commit": "b06fdf9cab25c7033e2270ddaa5a767399198ac4",
+      "build_run": "ue-20261008T222943Z-s-8434c18c",
+      "capture_output": "capture-output",
+      "engine_archive_sha256": "e20acd77e6caad42ee1bf0df1cb4c5077ceb1350817cfdacb554f4a594710383",
+      "experiment": "S imported author PLY to UE 5.5.4 SceneCapture, retry after actual PNG was black and export filename was literal",
+      "gpu": "NVIDIA RTX A5000, 580.178.04, 24564 MiB",
+      "host_os": "Linux-6.8.0-146-generic-x86_64-with-glibc2.35",
+      "plugin_commit": "411f879985719ce69eaaf15d58152c551e2719b1",
+      "ply_sha256": "59b33386c8f0509df11ffd6314284d67895bf20a15b17c5f7e5b6e58d6416506",
+      "policy_weights": "none",
+      "project_copy": "captured-project",
+      "render_end_unix_s": 1791499401.2426217,
+      "render_exit_status": 0,
+      "run_id": "ue-20261008T224031Z-s-fe9a3ea3",
+      "runner_modification": "literal PNG extension, Niagara activation and 12-tick warmup, double capture",
+      "scene": "author chinese_vase.ply; not AirLab real scene",
+      "seed": "none",
+      "start_unix_s": 1791499231.9458058,
+      "start_utc": "2026-10-08T22:40:31Z"
+    },
+    "camera_records": [
+      {
+        "actual_cm": [
+          900.0,
+          0.0,
+          0.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0000.png",
+        "index": 0,
+        "rotation_pitch_yaw_roll_deg": [
+          7.016709298534876e-15,
+          180.0,
+          180.0
+        ],
+        "sha256": "6741eeb9a412832c205e2d5f9999c62192f69763e1246a108c1e6787bf3fa3b6",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          900,
+          0,
+          0
+        ],
+        "wall_unix_s": 1791499384.432062
+      },
+      {
+        "actual_cm": [
+          900.0,
+          80.0,
+          0.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0001.png",
+        "index": 1,
+        "rotation_pitch_yaw_roll_deg": [
+          -5.0796051025390625,
+          180.0,
+          180.0
+        ],
+        "sha256": "9068e6764ca1b2832ad42e290d74a7de8d740ba047c6973dd282352623d0781a",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          900,
+          80,
+          0
+        ],
+        "wall_unix_s": 1791499385.5298662
+      },
+      {
+        "actual_cm": [
+          900.0,
+          -80.0,
+          0.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0002.png",
+        "index": 2,
+        "rotation_pitch_yaw_roll_deg": [
+          5.079605102539062,
+          180.0,
+          180.0
+        ],
+        "sha256": "c284ab7cef35fcb16d71d9ef02f97ffa030bd1117bd6bd940586b52327a0cf9b",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          900,
+          -80,
+          0
+        ],
+        "wall_unix_s": 1791499385.945912
+      },
+      {
+        "actual_cm": [
+          900.0,
+          0.0,
+          80.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0003.png",
+        "index": 3,
+        "rotation_pitch_yaw_roll_deg": [
+          7.016709298534875e-15,
+          180.0,
+          174.920392036438
+        ],
+        "sha256": "9068e6764ca1b2832ad42e290d74a7de8d740ba047c6973dd282352623d0781a",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          900,
+          0,
+          80
+        ],
+        "wall_unix_s": 1791499386.6429932
+      },
+      {
+        "actual_cm": [
+          900.0,
+          0.0,
+          -80.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0004.png",
+        "index": 4,
+        "rotation_pitch_yaw_roll_deg": [
+          7.016709298534876e-15,
+          180.0,
+          -174.920392036438
+        ],
+        "sha256": "6741eeb9a412832c205e2d5f9999c62192f69763e1246a108c1e6787bf3fa3b6",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          900,
+          0,
+          -80
+        ],
+        "wall_unix_s": 1791499387.7301824
+      },
+      {
+        "actual_cm": [
+          850.0,
+          80.0,
+          60.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0005.png",
+        "index": 5,
+        "rotation_pitch_yaw_roll_deg": [
+          -5.376708984375001,
+          180.0,
+          175.97999620437625
+        ],
+        "sha256": "9068e6764ca1b2832ad42e290d74a7de8d740ba047c6973dd282352623d0781a",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          850,
+          80,
+          60
+        ],
+        "wall_unix_s": 1791499388.6425123
+      },
+      {
+        "actual_cm": [
+          850.0,
+          -80.0,
+          60.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0006.png",
+        "index": 6,
+        "rotation_pitch_yaw_roll_deg": [
+          5.376708984374997,
+          180.0,
+          175.97999620437625
+        ],
+        "sha256": "c284ab7cef35fcb16d71d9ef02f97ffa030bd1117bd6bd940586b52327a0cf9b",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          850,
+          -80,
+          60
+        ],
+        "wall_unix_s": 1791499389.6350384
+      },
+      {
+        "actual_cm": [
+          900.0,
+          0.0,
+          0.0
+        ],
+        "bytes": 79019,
+        "image": "/tmp/r4r-splat-output-ue-20261008T224031Z-s-fe9a3ea3/frames/frame_0007.png",
+        "index": 7,
+        "rotation_pitch_yaw_roll_deg": [
+          7.016709298534876e-15,
+          180.0,
+          180.0
+        ],
+        "sha256": "9068e6764ca1b2832ad42e290d74a7de8d740ba047c6973dd282352623d0781a",
+        "source": "SceneCapture2D render target export",
+        "target_cm": [
+          900,
+          0,
+          0
+        ],
+        "wall_unix_s": 1791499390.4415247
+      }
+    ]
+  },
+  "S_final": {
+    "run_id": "ue-20261008T232833Z-s-light-573e44a0",
+    "root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232833Z-s-light-573e44a0",
+    "run": {
+      "audit_commit": "b06fdf9cab25c7033e2270ddaa5a767399198ac4",
+      "capture_resolution": [
+        640,
+        480
+      ],
+      "end_unix_s": 1791502166.2594442,
+      "experiment": "S channel control: reversed light yaw; final-color cube gate then at most one vase frame",
+      "fov_deg": 60,
+      "host_os": "Linux-6.8.0-146-generic-x86_64-with-glibc2.35",
+      "policy_weights": "none",
+      "render_exit_status": 0,
+      "run_id": "ue-20261008T232833Z-s-light-573e44a0",
+      "scene": "author object PLY, no AirLab scene",
+      "source_import_run": "ue-20261008T224031Z-s-fe9a3ea3",
+      "start_unix_s": 1791502113.6702762
+    },
+    "camera_records": [
+      {
+        "image": "cube_final.png",
+        "wall_unix_s": 1791502159.245432,
+        "tick": 22,
+        "bytes": 157982,
+        "sha256": "01f4b633ff99ced5ec0797e74ef40b330763857391c50eb77b7779679e5d93c8",
+        "actual_camera_position_cm": [
+          900.0,
+          0.0,
+          0.0
+        ],
+        "actual_rotation_pitch_yaw_roll_deg": [
+          0.0,
+          180.0,
+          -0.0
+        ],
+        "capture_source": "SCS_FINAL_COLOR_LDR",
+        "render_target": "RTF_RGBA8"
+      },
+      {
+        "image": "splat_final.png",
+        "wall_unix_s": 1791502160.441053,
+        "tick": 26,
+        "bytes": 112860,
+        "sha256": "4f3be948e71a357deb5848e61602af3b7fe28f07f5dfe265250b102b6c18225c",
+        "actual_camera_position_cm": [
+          900.0,
+          0.0,
+          0.0
+        ],
+        "actual_rotation_pitch_yaw_roll_deg": [
+          0.0,
+          180.0,
+          -0.0
+        ],
+        "capture_source": "SCS_FINAL_COLOR_LDR",
+        "render_target": "RTF_RGBA8"
+      }
+    ],
+    "diagnostics.json": {
+      "changed_configuration": {
+        "directional_light_intensity": {
+          "new": 10,
+          "prior": 100000
+        },
+        "directional_light_yaw_deg": {
+          "new": 180,
+          "prior": 180
+        }
+      },
+      "cube_background_rgba": [
+        1,
+        1,
+        1,
+        255
+      ],
+      "cube_capture_request_wall_unix_s": 1791502158.6404786,
+      "cube_center_rgba": [
+        38,
+        43,
+        42,
+        255
+      ],
+      "cube_gate_passed": true,
+      "editor_delta_sum_seconds": 2.040053255856037,
+      "error": null,
+      "frame": "UE left-handed Z-up cm, camera local +X; PLY importer 100*(X,-Z,-Y)",
+      "frames": {
+        "cube_final.png": {
+          "actual_camera_position_cm": [
+            900.0,
+            0.0,
+            0.0
+          ],
+          "actual_rotation_pitch_yaw_roll_deg": [
+            0.0,
+            180.0,
+            -0.0
+          ],
+          "bytes": 157982,
+          "capture_source": "SCS_FINAL_COLOR_LDR",
+          "render_target": "RTF_RGBA8",
+          "sha256": "01f4b633ff99ced5ec0797e74ef40b330763857391c50eb77b7779679e5d93c8",
+          "tick": 22,
+          "wall_unix_s": 1791502159.245432
+        },
+        "splat_final.png": {
+          "actual_camera_position_cm": [
+            900.0,
+            0.0,
+            0.0
+          ],
+          "actual_rotation_pitch_yaw_roll_deg": [
+            0.0,
+            180.0,
+            -0.0
+          ],
+          "bytes": 112860,
+          "capture_source": "SCS_FINAL_COLOR_LDR",
+          "render_target": "RTF_RGBA8",
+          "sha256": "4f3be948e71a357deb5848e61602af3b7fe28f07f5dfe265250b102b6c18225c",
+          "tick": 26,
+          "wall_unix_s": 1791502160.441053
+        }
+      },
+      "hypothesis": "Reversed light made final color nonblack but 100000 intensity saturated the control; reduce to 10",
+      "intrinsics_assumed": {
+        "cx": 320,
+        "cy": 240,
+        "fx": 554.2562584220408,
+        "fy": 554.2562584220408,
+        "height": 480,
+        "hfov_deg": 60,
+        "width": 640
+      },
+      "light_forward_ue": [
+        -0.7071067811865475,
+        8.659560562354932e-17,
+        -0.7071067811865476
+      ],
+      "light_mobility": "<ComponentMobility.STATIONARY: 1>",
+      "niagara_active_final": true,
+      "policy_weights": "none",
+      "requested_camera": {
+        "pitch_yaw_roll_deg": [
+          0,
+          180,
+          0
+        ],
+        "position_cm": [
+          900,
+          0,
+          0
+        ]
+      },
+      "splat_attempted": true,
+      "splat_capture_request_wall_unix_s": 1791502159.4386616,
+      "tick_count": 26
+    }
+  }
+}

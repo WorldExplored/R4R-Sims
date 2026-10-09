@@ -1,0 +1,37 @@
+{
+  "review_date_local": "2026-10-08",
+  "recorded_utc": "2026-10-09T03:04:05.433702+00:00",
+  "kind": "CPU preserved-evidence review, not simulator run",
+  "base_commit": "bc14c24ad7288848019a4aea541853980fa2d7bb",
+  "branch": "unreal-a5000-audit",
+  "canonical_checkout": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims",
+  "authored_checkout": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-unreal-audit",
+  "canonical_changes_preserved": " M simulators/unreal/analyze.py (4 lines: 2 additions/2 deletions)",
+  "raw_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal",
+  "remote_connections": 0,
+  "gpu_experiments": 0,
+  "installs": 0,
+  "deletions": 0,
+  "checks": [
+    "fresh file/archive source hashes; decoded PNG and finite 480x640 NPY",
+    "published focused summary/plot source hashes",
+    "recomputed yaw RGB differences and pose errors, depth offset and limited edge alignment",
+    "actual PLY numerical ranges and conditional covariance math",
+    "opened copied A RGB/depth sheets, yaw sheet, cube/splat and derived contact sheet",
+    "AST parse, JSON parse, local Markdown links and credential-pattern scan",
+    "pinned GitHub sources and exact native launcher/ELF ZIP-member hashes",
+    "Negative CPU verifier fixture: entirely missing run manifest is reported and returns exit1; raw evidence not touched"
+  ],
+  "local_cpu_issue": "One inline source-summary check used system python3 without NumPy and failed ModuleNotFoundError; rerun succeeded with already installed bundled Python. No simulator test was involved.",
+  "missing_historical_measurements": [
+    "original depth response timestamps/poses",
+    "discarded async RPC booleans",
+    "internal landed/takeoff predicate inputs",
+    "effective exposure/capture instant",
+    "GPU synchronized render timings"
+  ],
+  "scripts": {
+    "simulators/unreal/verify_preserved.py": "b9af78900bc91ac4cfb98489f997371891ea40fd48c13aef0bd4a4e7db8f1414",
+    "simulators/unreal/review_preserved.py": "d58d02e6f8b5327c4ef3aee0da072e3753b2271a4cdc75f50ddbdd280c796572"
+  }
+}

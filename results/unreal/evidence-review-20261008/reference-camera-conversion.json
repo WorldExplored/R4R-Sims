@@ -1,0 +1,52 @@
+{
+  "status": "statically derived, not reference-rendered",
+  "position_basis_ply_to_ue_cm": [
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -100
+    ],
+    [
+      0,
+      -100,
+      0
+    ]
+  ],
+  "final_camera_ply_units": [
+    9,
+    0,
+    0
+  ],
+  "cv_camera_to_ply_world_rotation_columns_right_down_forward": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "intrinsics_assumed": {
+    "fx": 554.2562584220408,
+    "fy": 554.2562584220408,
+    "cx": 320,
+    "cy": 240,
+    "width": 640,
+    "height": 480
+  },
+  "conventions": "UE local +X forward/+Y right/+Z up; CV local +X right/+Y down/+Z forward; sample metric scale unknown",
+  "world_to_cv": "R_cw=R_wc.T; translation=-R_cw@camera_center"
+}

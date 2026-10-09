@@ -1,0 +1,217 @@
+{
+  "run_id": "ue-20261008T232723Z-land-observed-c1f84706",
+  "actions": [
+    {
+      "observation_window_s": 20,
+      "timeout_s": 15,
+      "type": "takeoffAsync",
+      "wall_elapsed_s": 8.084848580008838
+    },
+    {
+      "rpc_completion_wall_elapsed_s": 11.489092032017652,
+      "server_return_value": false,
+      "type": "takeoffAsync_rpc_completed"
+    },
+    {
+      "observation_window_s": 35,
+      "timeout_s": 20,
+      "type": "landAsync",
+      "wall_elapsed_s": 20.716823699011
+    },
+    {
+      "rpc_completion_wall_elapsed_s": 28.152457125019282,
+      "server_return_value": true,
+      "type": "landAsync_rpc_completed"
+    }
+  ],
+  "baseline": {
+    "has_collided": false,
+    "object_name": "Ground_6",
+    "settled_ground_z_ned_m": 0.6699708700180054,
+    "timestamp_raw": 1791502048321702656
+  },
+  "first_airborne_gt_0_5m": {
+    "altitude_above_ned_origin_m": -0.1393638253211975,
+    "altitude_above_settled_spawn_ground_m": 0.5306070446968079,
+    "collision": false,
+    "collision_object": "Ground_6",
+    "collision_timestamp_raw_ns": 1791502048321702656,
+    "landed_state": 1,
+    "new_collision_after_spawn_baseline": false,
+    "phase": "takeoffAsync",
+    "state_timestamp_raw_ns": 1791502052935801088,
+    "vertical_velocity_ned_down_mps": -0.4788922965526581,
+    "wall_elapsed_s": 9.312772329023574
+  },
+  "hover_height_m": {
+    "min": 1.5091066360473633,
+    "max": 1.5352639555931091,
+    "median": 1.534307599067688
+  },
+  "hover_samples": 40,
+  "first_floor_contact_observed": {
+    "altitude_above_ned_origin_m": -0.6810716390609741,
+    "altitude_above_settled_spawn_ground_m": -0.01110076904296875,
+    "collision": true,
+    "collision_object": "Ground_6",
+    "collision_timestamp_raw_ns": 1791502071551198208,
+    "landed_state": 1,
+    "new_collision_after_spawn_baseline": true,
+    "phase": "landAsync",
+    "state_timestamp_raw_ns": 1791502071692201216,
+    "vertical_velocity_ned_down_mps": 0.0,
+    "wall_elapsed_s": 28.0681062520016
+  },
+  "last": {
+    "altitude_above_ned_origin_m": -0.6810716390609741,
+    "altitude_above_settled_spawn_ground_m": -0.01110076904296875,
+    "collision": false,
+    "collision_object": "Ground_6",
+    "collision_timestamp_raw_ns": 1791502071551198208,
+    "landed_state": 1,
+    "new_collision_after_spawn_baseline": false,
+    "phase": "landAsync",
+    "state_timestamp_raw_ns": 1791502082069422592,
+    "vertical_velocity_ned_down_mps": 0.0,
+    "wall_elapsed_s": 38.44623645202955
+  },
+  "last_full_state": {
+    "collision": false,
+    "collision_object": "Ground_6",
+    "collision_timestamp_raw": 1791502071551198208,
+    "estimated_position_ned_m": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.6810716390609741
+    },
+    "estimated_velocity_ned_mps": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "ground_truth_orientation_xyzw_ned": {
+      "w": 1.0,
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "ground_truth_position_ned_m": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.6810716390609741
+    },
+    "ground_truth_velocity_ned_mps": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "index": 176,
+    "landed_state": 1,
+    "sim_elapsed_s_from_first_state": 35.448756224,
+    "state_timestamp_raw": 1791502082069422592,
+    "vehicle_pose_ned": {
+      "orientation_xyzw_ned": {
+        "w": 1.0,
+        "x": -0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "position_ned_m": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.6810716390609741
+      }
+    },
+    "wall_elapsed_s": 38.44560046400875,
+    "wall_utc": "2026-10-08T23:28:02.098004+00:00"
+  },
+  "state_samples": 177,
+  "descent_samples": 88,
+  "peak_descent_down_mps": 0.28986552357673645,
+  "descent_rate_median_hz": 4.911677888480884,
+  "validation": {
+    "acceptance": "verified airborne hover; takeoff/land RPC true; last five polls all Landed; no relaxation",
+    "land_rpc": {
+      "rpc_completion_wall_elapsed_s": 28.152457125019282,
+      "server_return_value": true
+    },
+    "landed_confirmed": false,
+    "last_state": {
+      "altitude_above_ned_origin_m": -0.6810716390609741,
+      "altitude_above_settled_spawn_ground_m": -0.01110076904296875,
+      "collision": false,
+      "collision_object": "Ground_6",
+      "collision_timestamp_raw_ns": 1791502071551198208,
+      "landed_state": 1,
+      "new_collision_after_spawn_baseline": false,
+      "phase": "landAsync",
+      "state_timestamp_raw_ns": 1791502082069422592,
+      "vertical_velocity_ned_down_mps": 0.0,
+      "wall_elapsed_s": 38.44623645202955
+    },
+    "max_altitude_above_ned_origin_m": 0.8668643832206726,
+    "new_collisions": [
+      {
+        "altitude_above_ned_origin_m": -1.684914231300354,
+        "altitude_above_settled_spawn_ground_m": null,
+        "collision": true,
+        "collision_object": "Ground",
+        "collision_timestamp_raw_ns": 1791502047190678528,
+        "landed_state": 0,
+        "new_collision_after_spawn_baseline": true,
+        "phase": "spawn_settling",
+        "state_timestamp_raw_ns": 1791502047229679360,
+        "vertical_velocity_ned_down_mps": 5.02632999420166,
+        "wall_elapsed_s": 3.6058484989916906
+      },
+      {
+        "altitude_above_ned_origin_m": -4.104395389556885,
+        "altitude_above_settled_spawn_ground_m": null,
+        "collision": true,
+        "collision_object": "Ground_6",
+        "collision_timestamp_raw_ns": 1791502047598687232,
+        "landed_state": 0,
+        "new_collision_after_spawn_baseline": true,
+        "phase": "spawn_settling",
+        "state_timestamp_raw_ns": 1791502047637688064,
+        "vertical_velocity_ned_down_mps": 6.6596269607543945,
+        "wall_elapsed_s": 4.013107820006553
+      },
+      {
+        "altitude_above_ned_origin_m": -0.6699708700180054,
+        "altitude_above_settled_spawn_ground_m": null,
+        "collision": true,
+        "collision_object": "Ground_6",
+        "collision_timestamp_raw_ns": 1791502048321702656,
+        "landed_state": 0,
+        "new_collision_after_spawn_baseline": true,
+        "phase": "spawn_settling",
+        "state_timestamp_raw_ns": 1791502048450705408,
+        "vertical_velocity_ned_down_mps": 0.0,
+        "wall_elapsed_s": 4.82782191602746
+      },
+      {
+        "altitude_above_ned_origin_m": -0.6810716390609741,
+        "altitude_above_settled_spawn_ground_m": -0.01110076904296875,
+        "collision": true,
+        "collision_object": "Ground_6",
+        "collision_timestamp_raw_ns": 1791502071551198208,
+        "landed_state": 1,
+        "new_collision_after_spawn_baseline": true,
+        "phase": "landAsync",
+        "state_timestamp_raw_ns": 1791502071692201216,
+        "vertical_velocity_ned_down_mps": 0.0,
+        "wall_elapsed_s": 28.0681062520016
+      }
+    ],
+    "no_images_acquired": true,
+    "samples": 177,
+    "settled_ground_z_ned_m": 0.6699708700180054,
+    "status": "failed_rpc_or_landed_state",
+    "takeoff_airborne_verified": true,
+    "takeoff_rpc": {
+      "rpc_completion_wall_elapsed_s": 11.489092032017652,
+      "server_return_value": false
+    }
+  }
+}

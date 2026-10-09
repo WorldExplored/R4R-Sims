@@ -1,5 +1,7 @@
 # Focused validation — 8 October 2026
 
+**Subsequent local evidence review:** [evidence-review.md](evidence-review.md) directly rereads the immutable traces and PLY, rechecks source manifests and records missing predicate inputs. It identifies that the final cube control retained the active splat, verifies nonzero higher SH in the tested PLY and documents conditional quaternion-basis and material/exposure questions. No additional simulator run occurred.
+
 Session started **23:20 UTC / 7:20 PM Indianapolis** with a **23:50 UTC / 7:50 PM deadline** including collection. Existing Ubuntu 22.04.5, RTX A5000, Blocks v1.8.1, UE 5.5.4 and plugin commit `411f879985719ce69eaaf15d58152c551e2719b1` were used. No installs, engine rebuilds, scene/policy training, GPU change or instance termination occurred. All GPU tests ended by 23:29:22 UTC. The original eight-frame replay and every earlier failure remain unchanged.
 
 ## Camera sanity: demonstrated

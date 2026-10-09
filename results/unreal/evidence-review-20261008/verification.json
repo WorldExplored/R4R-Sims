@@ -1,0 +1,188 @@
+{
+  "checked_utc": "2026-10-09T03:01:43.149455+00:00",
+  "basis": "retained VM source manifests, anchored to committed recovery record / residual manifest; archives against previously recorded source size/hash",
+  "groups": [
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215142Z-a-f0246d36",
+      "source_manifest_sha256": "aa3a9a1c1e05bb0a025f47c5884afe5fe9ab71e2b596502f4d73c10b10b4382e",
+      "files": 8,
+      "bytes": 170927,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215319Z-a-5fe9b7c3",
+      "source_manifest_sha256": "0dd4ef43722c5995c426056d7d409be463c757b9cc98e4da94aa1202420f7748",
+      "files": 37,
+      "bytes": 13124684,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215611Z-b-d415e2e7",
+      "source_manifest_sha256": "a64bcbbcf4c639a00f386385f63a30a826d86080fc94c56420da3e701e1a4ba2",
+      "files": 13,
+      "bytes": 185222,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215758Z-b-33710b89",
+      "source_manifest_sha256": "35d6ac68061d8ba96b2baed1ecc9772945128ec88eb16eb4daf250458058e689",
+      "files": 37,
+      "bytes": 11825781,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T220223Z-b-eddeea80",
+      "source_manifest_sha256": "bbdaed6f24480297cfebb750c98bbd87588b211f1078afc5d069d78cd971a6aa",
+      "files": 33,
+      "bytes": 14236647,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T220451Z-b-a3d4be49",
+      "source_manifest_sha256": "3f0b9080464303432b5497eb1f9baacc505eab282934ea19fa921811d3267a25",
+      "files": 37,
+      "bytes": 13386980,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T222943Z-s-8434c18c",
+      "source_manifest_sha256": "1b4dafa19929dfbe6935c3ec25e18bbc92c19e475f5f20ab01647695a6be9956",
+      "files": 19,
+      "bytes": 1609561,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T223559Z-s-8c7e26a7",
+      "source_manifest_sha256": "2686d139b59dcb7dc6dab1e5da7c4bfaf93dcba7d55c8d217e4028e1d3be401b",
+      "files": 21,
+      "bytes": 1687435,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T224031Z-s-fe9a3ea3",
+      "source_manifest_sha256": "88d9bc6dbc9adb7c90046781a24eda5056b51ada704f5dea7181287609e90658",
+      "files": 29,
+      "bytes": 2252109,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T224552Z-s-control-10f8cdbd",
+      "source_manifest_sha256": "bef1141a8e2dd43cef4b62b9c7a09f3e1796325bbb09950335c568a97f8edabf",
+      "files": 11,
+      "bytes": 395257,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T224847Z-s-control-83b490d9",
+      "source_manifest_sha256": "9673c372da852072de75676c803fd046702a4a38014595dc627b6a88d73db050",
+      "files": 12,
+      "bytes": 406998,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T225105Z-s-control-e488bef0",
+      "source_manifest_sha256": "0f0d288131281fc87d5dd6036640e2b02a365a0030a022075bbfdd1e35831b7e",
+      "files": 14,
+      "bytes": 352629,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232215Z-yaw-6b9a9962",
+      "source_manifest_sha256": "e92e66c86b8bb0b34f12143d1f71176023a40f8b9f82d9c3300885cec40f8bbc",
+      "files": 24,
+      "bytes": 8204330,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232324Z-land-isolated-a3227c9a",
+      "source_manifest_sha256": "e9521a4c9f45a9684bbd0141c4f0a83a2fef4921153e538c43a214258dfe3139",
+      "files": 14,
+      "bytes": 364719,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232449Z-s-light-1f298556",
+      "source_manifest_sha256": "b50ca331b960af4e7aef7fde14bd06082272025cdae834deaa1f31917d2d5039",
+      "files": 12,
+      "bytes": 430628,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232549Z-land-settled-04b41479",
+      "source_manifest_sha256": "c084523a4670ddacb26edff4e07ae75b0996edb442f8809ca9d86845adc7f7d1",
+      "files": 13,
+      "bytes": 278909,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232723Z-land-observed-c1f84706",
+      "source_manifest_sha256": "70034ab87e4f97428b7d3a6dc74ee96d0827e891441997c80a2c17b72617206c",
+      "files": 14,
+      "bytes": 502998,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T232833Z-s-light-573e44a0",
+      "source_manifest_sha256": "c0e7ecf8e26eb0fecdce92d3480db69f482a48ff3da41d7872de031038aff1d5",
+      "files": 12,
+      "bytes": 507846,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/unreal-final-backup-20261008",
+      "source_manifest_sha256": "2050fe2191d4cfbb5f5af87fd1ed58eea20ea3fe4fdb826bd72a6fd47f0640d6",
+      "files": 98,
+      "bytes": 6338480,
+      "errors": []
+    },
+    {
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/third_party/unreal/assets/italink-plugin-ue55-linux",
+      "source_manifest_sha256": "e3e8684ec8d534f96a39047c96e9a117532e3786bb99013a0e4e3dc0e147624d",
+      "files": 128,
+      "bytes": 45291029,
+      "errors": []
+    }
+  ],
+  "archives": [
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/third_party/unreal/assets/Blocks_v1.8.1.zip",
+      "bytes": 142533463,
+      "sha256": "563e1da1b5d7303b9405c8736243ea92ab0a011b96a561f26f17563d105a404f",
+      "source_match": true
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/third_party/unreal/assets/PlyExamples.zip",
+      "bytes": 123484316,
+      "sha256": "ff13af1728c26095bb4e2b51b1f27ee5470acb805e0ad16360fe28876ec03b1e",
+      "source_match": true
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/third_party/unreal/assets/Linux_Unreal_Engine_5.5.4.zip",
+      "bytes": 27085247533,
+      "sha256": "e20acd77e6caad42ee1bf0df1cb4c5077ceb1350817cfdacb554f4a594710383",
+      "source_match": true
+    }
+  ],
+  "errors": [],
+  "decoded_png": 92,
+  "decoded_npy": 37,
+  "preflight_log": {
+    "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/ue-20261008T215415Z-b-e868ec1c/supervisor.log",
+    "sha256": "c38e191da2494e78784b46e5b7d080b49507feaafe4a316c0c1a1bbadc051fdf",
+    "source_manifested_residual_copy": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims/artifacts/unreal/unreal-final-backup-20261008/tmp/ue-20261008T215415Z-b-e868ec1c-supervisor.log",
+    "identical_to_residual_source_copy": true
+  },
+  "completed_utc": "2026-10-09T03:01:58.400577+00:00",
+  "published_focused_summary_checks": [
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-unreal-audit/results/unreal/focused-validation-20261008T232000Z/isolated-descent.png",
+      "source_match": true,
+      "sha256": "d6ee61a31da0de8be49df009a3e3f0f6329f99240698f7e351c4188620235a29"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-unreal-audit/results/unreal/focused-validation-20261008T232000Z/summary.json",
+      "source_match": true,
+      "sha256": "cdefce5dfc3338ee9876e869e043e3e0206c5b618ce3ce3c90d88e6071422b52"
+    }
+  ]
+}

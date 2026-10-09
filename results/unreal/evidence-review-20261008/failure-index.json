@@ -1,0 +1,200 @@
+[
+  {
+    "run_id": "ue-20261008T215142Z-a-f0246d36",
+    "status": "failed",
+    "exit": -15,
+    "errors": [
+      {
+        "error": "supervisor terminated child",
+        "exit_status": -15,
+        "wall_utc": "2026-10-08T21:52:50.954641+00:00"
+      }
+    ],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T215319Z-a-5fe9b7c3",
+    "status": "completed",
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T215415Z-b-e868ec1c",
+    "files": [
+      "supervisor.log"
+    ]
+  },
+  {
+    "run_id": "ue-20261008T215611Z-b-d415e2e7",
+    "status": "failed",
+    "exit": 1,
+    "errors": [
+      {
+        "error": "Collision; stopped",
+        "traceback": "Traceback (most recent call last):\n  File \"/root/R4R-Sims/simulators/unreal/audit.py\", line 346, in main_run\n    raise RuntimeError(\"Collision; stopped\")\nRuntimeError: Collision; stopped\n",
+        "wall_utc": "2026-10-08T21:56:19.924258+00:00"
+      }
+    ],
+    "trace_lines": [
+      {
+        "file": "console.log",
+        "line": 948,
+        "text": "2026-10-08T21:56:19.926628+00:00 ERROR Traceback (most recent call last):"
+      },
+      {
+        "file": "console.log",
+        "line": 951,
+        "text": "RuntimeError: Collision; stopped"
+      }
+    ]
+  },
+  {
+    "run_id": "ue-20261008T215758Z-b-33710b89",
+    "status": "completed",
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T220223Z-b-eddeea80",
+    "status": "completed",
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T220451Z-b-a3d4be49",
+    "status": "failed",
+    "exit": 1,
+    "errors": [
+      {
+        "error": "landAsync returned but LandedState remained Flying for 10 s",
+        "traceback": "Traceback (most recent call last):\n  File \"/root/R4R-Sims/simulators/unreal/audit.py\", line 391, in main_run\n    raise RuntimeError(\"landAsync returned but LandedState remained Flying for 10 s\")\nRuntimeError: landAsync returned but LandedState remained Flying for 10 s\n",
+        "wall_utc": "2026-10-08T22:05:56.106513+00:00"
+      }
+    ],
+    "trace_lines": [
+      {
+        "file": "console.log",
+        "line": 946,
+        "text": "2026-10-08T22:05:56.107717+00:00 ERROR Traceback (most recent call last):"
+      },
+      {
+        "file": "console.log",
+        "line": 949,
+        "text": "RuntimeError: landAsync returned but LandedState remained Flying for 10 s"
+      }
+    ]
+  },
+  {
+    "run_id": "ue-20261008T222943Z-s-8434c18c",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": [
+      {
+        "file": "render.log",
+        "line": 2082,
+        "text": "[2026.10.08-22.34.28:135][  2]LogPython: Error: Traceback (most recent call last):"
+      },
+      {
+        "file": "render.log",
+        "line": 2088,
+        "text": "[2026.10.08-22.34.28:135][  2]LogPython: Error: AttributeError: 'SceneCapture2D' object has no attribute 'get_capture_component2d'"
+      }
+    ]
+  },
+  {
+    "run_id": "ue-20261008T223559Z-s-8c7e26a7",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": [
+      {
+        "file": "render.log",
+        "line": 2091,
+        "text": "[2026.10.08-22.38.18:241][  1]LogPython: Error: Traceback (most recent call last):"
+      },
+      {
+        "file": "render.log",
+        "line": 2096,
+        "text": "[2026.10.08-22.38.18:241][  1]LogPython: Error: RuntimeError: SceneCapture PNG missing: /tmp/r4r-splat-output-ue-20261008T223559Z-s-8c7e26a7/frames/frame_0000.png"
+      }
+    ]
+  },
+  {
+    "run_id": "ue-20261008T224031Z-s-fe9a3ea3",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T224552Z-s-control-10f8cdbd",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T224847Z-s-control-83b490d9",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T225105Z-s-control-e488bef0",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T232215Z-yaw-6b9a9962",
+    "status": "captured_pending_visual_confirmation",
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T232324Z-land-isolated-a3227c9a",
+    "status": "passed",
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T232449Z-s-light-1f298556",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T232549Z-land-settled-04b41479",
+    "status": "failed",
+    "exit": 1,
+    "errors": [
+      "Traceback (most recent call last):\n  File \"/root/R4R-Sims-unreal-audit/simulators/unreal/focused_validation.py\", line 241, in main\n    else: result=validate_landing(client,run,t0)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/R4R-Sims-unreal-audit/simulators/unreal/focused_validation.py\", line 165, in validate_landing\n    takeoff = command(\"takeoffAsync\", 15, 20)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/R4R-Sims-unreal-audit/simulators/unreal/focused_validation.py\", line 144, in command\n    raise RuntimeError(name+\" server reported failure: \"+repr(result.get(\"server_return_value\")))\nRuntimeError: takeoffAsync server reported failure: False\n"
+    ],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T232723Z-land-observed-c1f84706",
+    "status": "failed",
+    "exit": 1,
+    "errors": [
+      "Traceback (most recent call last):\n  File \"/root/R4R-Sims-unreal-audit/simulators/unreal/focused_validation.py\", line 240, in main\n    else: result=validate_landing(client,run,t0)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/R4R-Sims-unreal-audit/simulators/unreal/focused_validation.py\", line 179, in validate_landing\n    raise RuntimeError(\"RPC boolean or five-consecutive-Landed acceptance failed; see validation.json\")\nRuntimeError: RPC boolean or five-consecutive-Landed acceptance failed; see validation.json\n"
+    ],
+    "trace_lines": []
+  },
+  {
+    "run_id": "ue-20261008T232833Z-s-light-573e44a0",
+    "status": null,
+    "exit": 0,
+    "errors": [],
+    "trace_lines": []
+  }
+]
