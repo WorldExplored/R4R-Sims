@@ -83,5 +83,17 @@
       "classification": "measurement instrumentation, not compiler compatibility repair"
     }
   },
-  "historical_next_fix_hypothesis": "nvcc defaults to gcc12 while cc1plus exists for gcc11; inspect/select supported host compiler in a future separately authorized bounded attempt. No selection, install or compiler repair performed."
+  "historical_next_fix_hypothesis": "nvcc defaults to gcc12 while cc1plus exists for gcc11; inspect/select supported host compiler in a future separately authorized bounded attempt. No selection, install or compiler repair performed.",
+  "camera_correspondence_pass": {
+    "start_utc": "2026-10-09T03:31:03Z",
+    "stop_utc": "2026-10-09T03:42:51Z",
+    "compatibility_attempts": 1,
+    "second_attempt": "unused",
+    "change": "isolated NS1.1.4 plus only required dependencies; Torch/gsplat/baseline/weights unchanged",
+    "result": "strict exact restoration; identical pixels; correspondence not demonstrated",
+    "run_ids": [
+      "20261009T033353Z-correspondence-23ce26",
+      "20261009T033735Z-correspondence-6bf320"
+    ]
+  }
 }

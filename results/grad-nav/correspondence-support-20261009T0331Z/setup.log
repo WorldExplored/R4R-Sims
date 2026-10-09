@@ -1,0 +1,42 @@
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting nerfstudio==1.1.4
+  Downloading nerfstudio-1.1.4-py3-none-any.whl (581 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 581.3/581.3 KB 10.3 MB/s eta 0:00:00
+Installing collected packages: nerfstudio
+  Attempting uninstall: nerfstudio
+    Found existing installation: nerfstudio 1.1.3
+    Not uninstalling nerfstudio at /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages, outside environment /home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z
+    Can't uninstall 'nerfstudio'. No files were found to uninstall.
+Successfully installed nerfstudio-1.1.4
+{
+  "needs": [
+    "opencv-python-headless==4.10.0.84",
+    "viser==0.2.3",
+    "tensorly"
+  ],
+  "torch": "2.1.2+cu118",
+  "gsplat": "1.0.0"
+}
+NS114_ENV=/home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z
+Looking in indexes: https://mcache-ict.massedcompute.com/simple, https://pypi.org/simple
+Collecting opencv-python-headless==4.10.0.84
+  Downloading opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.9/49.9 MB 43.6 MB/s eta 0:00:00
+Collecting viser==0.2.3
+  Downloading viser-0.2.3-py3-none-any.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 23.3 MB/s eta 0:00:00
+Collecting tensorly==0.9.0
+  Downloading tensorly-0.9.0-py3-none-any.whl (7.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.4/7.4 MB 34.4 MB/s eta 0:00:00
+Installing collected packages: tensorly, viser, opencv-python-headless
+  Attempting uninstall: viser
+    Found existing installation: viser 0.1.27
+    Not uninstalling viser at /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages, outside environment /home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z
+    Can't uninstall 'viser'. No files were found to uninstall.
+  Attempting uninstall: opencv-python-headless
+    Found existing installation: opencv-python-headless 4.11.0.86
+    Not uninstalling opencv-python-headless at /home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages, outside environment /home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z
+    Can't uninstall 'opencv-python-headless'. No files were found to uninstall.
+Successfully installed opencv-python-headless-4.10.0.84 tensorly-0.9.0 viser-0.2.3
+Resolved versions 2.1.2+cu118 1.0.0 4.10.0 /home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z/lib/python3.10/site-packages/nerfstudio/__init__.py
+{"run_id": "20261009T033735Z-correspondence-6bf320", "status": "completed", "exit_status": 0, "raw": "/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T033735Z-correspondence-6bf320", "small": "/home/ubuntu/R4R-Sims-grad-nav/results/grad-nav/20261009T033735Z-correspondence-6bf320"}

@@ -23,5 +23,20 @@
     "path": "docs/grad-nav/deck-source.mjs",
     "bytes": 14329,
     "sha256": "fca84e9df34a782f48b391d2b073c9c205b433b3a1d7edea6cac3b02f1fca75c"
+  },
+  {
+    "path": "docs/grad-nav/GRaD-Nav_Correspondence_Decision.pptx",
+    "bytes": 4017665,
+    "sha256": "7d02ca7997c377aec23863b261a22dd3cf4feb5dbba926fe6997f0a3698fc796"
+  },
+  {
+    "path": "docs/grad-nav/GRaD-Nav_Correspondence_Decision.pdf",
+    "bytes": 689166,
+    "sha256": "2766743e6e0158c754a2c46857aa530595da3861ce2258bc71f8ee16379343a0"
+  },
+  {
+    "path": "docs/grad-nav/correspondence-deck-source.mjs",
+    "bytes": 8928,
+    "sha256": "1d547a52cca4dfb5dd1ac36996c49b513d8ddbcd114e45bc8a164e24cf77d3b4"
   }
 ]

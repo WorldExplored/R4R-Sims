@@ -1,0 +1,28 @@
+[
+  {
+    "path": "/workspace/R4R-Sims/artifacts/traveluav-openuav/bootstrap/a-depth-poses.log",
+    "bytes": 418,
+    "sha256": "05de2266a35d8039b90754d002fbc394f8a46ea07b72bda6b46a30a349ee8355",
+    "mtime_utc": "2026-10-09T00:11:33.849911+00:00",
+    "verified_local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/shared-host-logs-20261009/a-depth-poses.log"
+  },
+  {
+    "path": "/workspace/traveluav-bootstrap/c-verified.log",
+    "bytes": 191507,
+    "sha256": "66d6ec9818ecf1815b0899730becdb1533fe117fec504d532b214df014950e72",
+    "mtime_utc": "2026-10-08T23:41:35.018322+00:00",
+    "verified_local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/shared-host-logs-20261009/c-verified.log"
+  },
+  {
+    "path": "/tmp/r4r-final-a-commit.log",
+    "bytes": 3539,
+    "sha256": "7af16c9fa17122c3444dfd3b5fd597a2c9ac03c03a7bb7da7ca0f47fa6fe7827",
+    "verified_local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/shared-host-logs-20261009/r4r-final-a-commit.log"
+  },
+  {
+    "path": "/tmp/r4r-settle-a-commit.log",
+    "bytes": 428,
+    "sha256": "31c3a4226a3cb6bbade2528c8ce095c7b5e3fcb05f29eb5f5571d05f7c206dc8",
+    "verified_local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/shared-host-logs-20261009/r4r-settle-a-commit.log"
+  }
+]

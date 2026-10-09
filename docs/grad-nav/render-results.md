@@ -1,4 +1,6 @@
-# Observed rendering continuation
+# Historical rendering continuation
+
+**Latest decision:** [controlled training-camera test](camera-correspondence.md) finds exact checkpoint restoration but no capture correspondence in NS1.1.3 or1.1.4. NO-GO for calibrated replay until provenance is resolved. This document preserves earlier A/D measurements.
 
 Recorded 2026-10-08 America/Indianapolis (UTC runs October9). Debugging was bounded to45min/two attempts; it stopped after12.12min and one materially different repair. No package install, training, additional rental, system-alternative/driver change or instance termination.
 

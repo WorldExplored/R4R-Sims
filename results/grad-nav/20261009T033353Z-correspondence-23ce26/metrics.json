@@ -1,0 +1,116 @@
+[
+  {
+    "training_index": 0,
+    "variant": "canonical",
+    "mae_rgb_0_1": 0.12896569073200226,
+    "rmse_rgb_0_1": 0.18309046365927145,
+    "mse_rgb_0_1": 0.033522117882966995,
+    "psnr_db": 14.746685510253567,
+    "rgb_range": [
+      0.09006942808628082,
+      0.5627315640449524
+    ],
+    "render_wall_s": 3.385115091001353,
+    "dimensions": [
+      719,
+      1279,
+      3
+    ],
+    "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+  },
+  {
+    "training_index": 0,
+    "variant": "saved-correction",
+    "mae_rgb_0_1": 0.127631276845932,
+    "rmse_rgb_0_1": 0.1819674208066946,
+    "mse_rgb_0_1": 0.033112142235040665,
+    "psnr_db": 14.800127210672922,
+    "rgb_range": [
+      0.09023521095514297,
+      0.5618820190429688
+    ],
+    "render_wall_s": 0.0039118799977586605,
+    "dimensions": [
+      719,
+      1279,
+      3
+    ],
+    "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+  },
+  {
+    "training_index": 134,
+    "variant": "canonical",
+    "mae_rgb_0_1": 0.1880376636981964,
+    "rmse_rgb_0_1": 0.21931977658336593,
+    "mse_rgb_0_1": 0.048101164400577545,
+    "psnr_db": 13.17844410390726,
+    "rgb_range": [
+      0.3705154061317444,
+      0.5352961421012878
+    ],
+    "render_wall_s": 0.0031498429998464417,
+    "dimensions": [
+      719,
+      1279,
+      3
+    ],
+    "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+  },
+  {
+    "training_index": 134,
+    "variant": "saved-correction",
+    "mae_rgb_0_1": 0.19119863212108612,
+    "rmse_rgb_0_1": 0.2219373071519835,
+    "mse_rgb_0_1": 0.04925616830587387,
+    "psnr_db": 13.07539375451425,
+    "rgb_range": [
+      0.38608482480049133,
+      0.5110509991645813
+    ],
+    "render_wall_s": 0.0035803650025627576,
+    "dimensions": [
+      719,
+      1279,
+      3
+    ],
+    "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+  },
+  {
+    "training_index": 269,
+    "variant": "canonical",
+    "mae_rgb_0_1": 0.11659067124128342,
+    "rmse_rgb_0_1": 0.166250365855596,
+    "mse_rgb_0_1": 0.027639184147119522,
+    "psnr_db": 15.58474780604402,
+    "rgb_range": [
+      0.2909564971923828,
+      0.5516912341117859
+    ],
+    "render_wall_s": 0.0033024519980244804,
+    "dimensions": [
+      719,
+      1279,
+      3
+    ],
+    "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+  },
+  {
+    "training_index": 269,
+    "variant": "saved-correction",
+    "mae_rgb_0_1": 0.11670858412981033,
+    "rmse_rgb_0_1": 0.16632129354141453,
+    "mse_rgb_0_1": 0.027662772685289383,
+    "psnr_db": 15.581042919934598,
+    "rgb_range": [
+      0.29195845127105713,
+      0.5514888167381287
+    ],
+    "render_wall_s": 0.004256099000485847,
+    "dimensions": [
+      719,
+      1279,
+      3
+    ],
+    "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+  }
+]

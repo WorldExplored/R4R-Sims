@@ -1,0 +1,1 @@
+{"crop_roi_xywh": [0, 0, 1279, 719], "opencv_runtime": "4.8.0"}

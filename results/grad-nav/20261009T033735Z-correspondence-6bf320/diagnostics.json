@@ -1,0 +1,832 @@
+{
+  "scene_path": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741",
+  "checkpoint_path": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/nerfstudio_models/step-000029999.ckpt",
+  "checkpoint_sha256": "59927ee317ce8073904a23c5f1732a3083353337367ef5a65b03c803ae0bbd00",
+  "saved_step": 29999,
+  "loaded_model_step": 30000,
+  "loader_events": [
+    {
+      "strict": true,
+      "input_keys": [
+        "device_indicator_param",
+        "gauss_params.features_dc",
+        "gauss_params.features_rest",
+        "gauss_params.means",
+        "gauss_params.opacities",
+        "gauss_params.quats",
+        "gauss_params.scales",
+        "camera_optimizer.pose_adjustment",
+        "lpips.net.net.slice1.0.weight",
+        "lpips.net.net.slice1.0.bias",
+        "lpips.net.net.slice2.3.weight",
+        "lpips.net.net.slice2.3.bias",
+        "lpips.net.net.slice3.6.weight",
+        "lpips.net.net.slice3.6.bias",
+        "lpips.net.net.slice4.8.weight",
+        "lpips.net.net.slice4.8.bias",
+        "lpips.net.net.slice5.10.weight",
+        "lpips.net.net.slice5.10.bias",
+        "lpips.net.lin0.model.1.weight",
+        "lpips.net.lin1.model.1.weight",
+        "lpips.net.lin2.model.1.weight",
+        "lpips.net.lin3.model.1.weight",
+        "lpips.net.lin4.model.1.weight",
+        "lpips.net.lins.0.model.1.weight",
+        "lpips.net.lins.1.model.1.weight",
+        "lpips.net.lins.2.model.1.weight",
+        "lpips.net.lins.3.model.1.weight",
+        "lpips.net.lins.4.model.1.weight"
+      ],
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "status": "loaded"
+    }
+  ],
+  "gaussian_parameters": [
+    {
+      "key": "gauss_params.means",
+      "saved_shape": [
+        265631,
+        3
+      ],
+      "loaded_shape": [
+        265631,
+        3
+      ],
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "saved_sha256": "6897baa4882eec09eb5bd85947dfee6a842e8e2dbe1e136fbf6c89b302c57a1b",
+      "loaded_sha256": "6897baa4882eec09eb5bd85947dfee6a842e8e2dbe1e136fbf6c89b302c57a1b"
+    },
+    {
+      "key": "gauss_params.scales",
+      "saved_shape": [
+        265631,
+        3
+      ],
+      "loaded_shape": [
+        265631,
+        3
+      ],
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "saved_sha256": "f900df0010a5febde9542ec1493ee15c921e344764bc89f432cb1df0e62e25b9",
+      "loaded_sha256": "f900df0010a5febde9542ec1493ee15c921e344764bc89f432cb1df0e62e25b9"
+    },
+    {
+      "key": "gauss_params.quats",
+      "saved_shape": [
+        265631,
+        4
+      ],
+      "loaded_shape": [
+        265631,
+        4
+      ],
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "saved_sha256": "6f018aa43f56593807752a2a2879082b74a8a2f37d9da9a793659ddd5d1bd079",
+      "loaded_sha256": "6f018aa43f56593807752a2a2879082b74a8a2f37d9da9a793659ddd5d1bd079"
+    },
+    {
+      "key": "gauss_params.opacities",
+      "saved_shape": [
+        265631,
+        1
+      ],
+      "loaded_shape": [
+        265631,
+        1
+      ],
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "saved_sha256": "40c41b40d9bf32d6c6af1ac615792e172569f661da809db4817d2b2bfebaf620",
+      "loaded_sha256": "40c41b40d9bf32d6c6af1ac615792e172569f661da809db4817d2b2bfebaf620"
+    },
+    {
+      "key": "gauss_params.features_dc",
+      "saved_shape": [
+        265631,
+        3
+      ],
+      "loaded_shape": [
+        265631,
+        3
+      ],
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "saved_sha256": "1d707c105de6411f974ce3dbaa238764a5cf2020979378c40c68ed2a0798f765",
+      "loaded_sha256": "1d707c105de6411f974ce3dbaa238764a5cf2020979378c40c68ed2a0798f765"
+    },
+    {
+      "key": "gauss_params.features_rest",
+      "saved_shape": [
+        265631,
+        15,
+        3
+      ],
+      "loaded_shape": [
+        265631,
+        15,
+        3
+      ],
+      "exact_equal": true,
+      "max_abs_delta": 0.0,
+      "saved_sha256": "c661a445e2a3091ba74a24f3b233633a68474a205b224d9a9afd5017adb039c7",
+      "loaded_sha256": "c661a445e2a3091ba74a24f3b233633a68474a205b224d9a9afd5017adb039c7"
+    }
+  ],
+  "all_saved_model_tensors": [
+    {
+      "key": "device_indicator_param",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "gauss_params.features_dc",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "gauss_params.features_rest",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "gauss_params.means",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "gauss_params.opacities",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "gauss_params.quats",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "gauss_params.scales",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "camera_optimizer.pose_adjustment",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice1.0.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice1.0.bias",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice2.3.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice2.3.bias",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice3.6.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice3.6.bias",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice4.8.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice4.8.bias",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice5.10.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.net.slice5.10.bias",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lin0.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lin1.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lin2.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lin3.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lin4.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lins.0.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lins.1.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lins.2.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lins.3.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    },
+    {
+      "key": "lpips.net.lins.4.model.1.weight",
+      "present": true,
+      "exact_equal": true
+    }
+  ],
+  "camera_optimizer_mode": "SO3xR3",
+  "camera_optimizer_summary": {
+    "count": 270,
+    "translation_norm_min_median_max_scene_units": [
+      0.0009003222221508622,
+      0.01597226783633232,
+      0.04155818372964859
+    ],
+    "rotation_norm_min_median_max_rad": [
+      0.0013607979053631425,
+      0.006330101750791073,
+      0.018274245783686638
+    ]
+  },
+  "selection_rule": "indices[0,floor((Ntrain-1)/2),Ntrain-1] in dataparser training order; no selection using image quality",
+  "selected_indices": [
+    0,
+    134,
+    269
+  ],
+  "train_image_count": 270,
+  "eval_image_count": 30,
+  "dataparser_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "dataparser_scale": 1.0,
+  "downscale_factor": 1,
+  "preprocessing": "upstream FullImageDatamanager.cached_train: OpenCV undistortion, alpha0 optimal K, ROI crop, half-pixel principal-point shift; cached uint8 -> float/255; no extra resize, gamma, pose fit or exposure adjustment",
+  "parameter_hashes_before": {
+    "device_indicator_param": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gauss_params.features_dc": "1d707c105de6411f974ce3dbaa238764a5cf2020979378c40c68ed2a0798f765",
+    "gauss_params.features_rest": "c661a445e2a3091ba74a24f3b233633a68474a205b224d9a9afd5017adb039c7",
+    "gauss_params.means": "6897baa4882eec09eb5bd85947dfee6a842e8e2dbe1e136fbf6c89b302c57a1b",
+    "gauss_params.opacities": "40c41b40d9bf32d6c6af1ac615792e172569f661da809db4817d2b2bfebaf620",
+    "gauss_params.quats": "6f018aa43f56593807752a2a2879082b74a8a2f37d9da9a793659ddd5d1bd079",
+    "gauss_params.scales": "f900df0010a5febde9542ec1493ee15c921e344764bc89f432cb1df0e62e25b9",
+    "camera_optimizer.pose_adjustment": "96acc4111de289a16b59504717b629789cd6bcd2c5d5803e4208318d7edfed6e",
+    "lpips.net.net.slice1.0.weight": "773e4bd41d838a8fcd8640b53a6456b165a65cd3f778e5e3b3aaaddafa4426e1",
+    "lpips.net.net.slice1.0.bias": "1650bc2c61c27bc5c6dd0569b5471133ca074c4c0b5eef1fee85e0a0ba301681",
+    "lpips.net.net.slice2.3.weight": "1918ec03598fcb19b87db2a9c1c886c4276899082405ae292fc29267beefae4d",
+    "lpips.net.net.slice2.3.bias": "32454d8c50c6e8c7d158f9161d968fce7ddb8645a017a3120131db575a1e7b8f",
+    "lpips.net.net.slice3.6.weight": "121de1060ad00f9a856e9a5baf828d99accbe38652100afe81c9215b231b3301",
+    "lpips.net.net.slice3.6.bias": "d74eb2693a64bcaccc90c26a3acf98c3eda8eadc18d2dffb9e3729a33f31d6fe",
+    "lpips.net.net.slice4.8.weight": "16adf963706e1a5e40700123791bd333d5b87804b0fd9e31b0cf11dc74e677be",
+    "lpips.net.net.slice4.8.bias": "a3443d4b64a683d1c2d680afc856a3e787ac29363e8def8f61fec9d740582c41",
+    "lpips.net.net.slice5.10.weight": "82669e3c4465e69bdbc5700abeb58bd30f55810b30aadacb45a70df5c2a7792b",
+    "lpips.net.net.slice5.10.bias": "a240db2e8beb55fdaa74d3fb13758a0439618eb39833456574dbc3af9b3779ca",
+    "lpips.net.lin0.model.1.weight": "1b21ee01e0de563ae9c7d645f8c40534d878fe5fc00b00cc01a29e3887cb8822",
+    "lpips.net.lin1.model.1.weight": "96b20e99719b4f1ac74b927546a2418913e87e95adc90a6629587fff450e3306",
+    "lpips.net.lin2.model.1.weight": "ba5d4595d966dde9d19855d8e139ef6271f012a945b279cccffed2485e0e5992",
+    "lpips.net.lin3.model.1.weight": "51c7dbf1c5c1e31db1baaf2618172ddd8b8240a8cd957a915582e0748cfb2a89",
+    "lpips.net.lin4.model.1.weight": "60b6388e7b80292d96b8150f1f12605aa514f148847959ce322453731810029c"
+  },
+  "parameter_hashes_after": {
+    "device_indicator_param": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gauss_params.features_dc": "1d707c105de6411f974ce3dbaa238764a5cf2020979378c40c68ed2a0798f765",
+    "gauss_params.features_rest": "c661a445e2a3091ba74a24f3b233633a68474a205b224d9a9afd5017adb039c7",
+    "gauss_params.means": "6897baa4882eec09eb5bd85947dfee6a842e8e2dbe1e136fbf6c89b302c57a1b",
+    "gauss_params.opacities": "40c41b40d9bf32d6c6af1ac615792e172569f661da809db4817d2b2bfebaf620",
+    "gauss_params.quats": "6f018aa43f56593807752a2a2879082b74a8a2f37d9da9a793659ddd5d1bd079",
+    "gauss_params.scales": "f900df0010a5febde9542ec1493ee15c921e344764bc89f432cb1df0e62e25b9",
+    "camera_optimizer.pose_adjustment": "96acc4111de289a16b59504717b629789cd6bcd2c5d5803e4208318d7edfed6e",
+    "lpips.net.net.slice1.0.weight": "773e4bd41d838a8fcd8640b53a6456b165a65cd3f778e5e3b3aaaddafa4426e1",
+    "lpips.net.net.slice1.0.bias": "1650bc2c61c27bc5c6dd0569b5471133ca074c4c0b5eef1fee85e0a0ba301681",
+    "lpips.net.net.slice2.3.weight": "1918ec03598fcb19b87db2a9c1c886c4276899082405ae292fc29267beefae4d",
+    "lpips.net.net.slice2.3.bias": "32454d8c50c6e8c7d158f9161d968fce7ddb8645a017a3120131db575a1e7b8f",
+    "lpips.net.net.slice3.6.weight": "121de1060ad00f9a856e9a5baf828d99accbe38652100afe81c9215b231b3301",
+    "lpips.net.net.slice3.6.bias": "d74eb2693a64bcaccc90c26a3acf98c3eda8eadc18d2dffb9e3729a33f31d6fe",
+    "lpips.net.net.slice4.8.weight": "16adf963706e1a5e40700123791bd333d5b87804b0fd9e31b0cf11dc74e677be",
+    "lpips.net.net.slice4.8.bias": "a3443d4b64a683d1c2d680afc856a3e787ac29363e8def8f61fec9d740582c41",
+    "lpips.net.net.slice5.10.weight": "82669e3c4465e69bdbc5700abeb58bd30f55810b30aadacb45a70df5c2a7792b",
+    "lpips.net.net.slice5.10.bias": "a240db2e8beb55fdaa74d3fb13758a0439618eb39833456574dbc3af9b3779ca",
+    "lpips.net.lin0.model.1.weight": "1b21ee01e0de563ae9c7d645f8c40534d878fe5fc00b00cc01a29e3887cb8822",
+    "lpips.net.lin1.model.1.weight": "96b20e99719b4f1ac74b927546a2418913e87e95adc90a6629587fff450e3306",
+    "lpips.net.lin2.model.1.weight": "ba5d4595d966dde9d19855d8e139ef6271f012a945b279cccffed2485e0e5992",
+    "lpips.net.lin3.model.1.weight": "51c7dbf1c5c1e31db1baaf2618172ddd8b8240a8cd957a915582e0748cfb2a89",
+    "lpips.net.lin4.model.1.weight": "60b6388e7b80292d96b8150f1f12605aa514f148847959ce322453731810029c"
+  },
+  "parameters_unchanged": true,
+  "optimizer_updates": 0,
+  "training_steps": 0,
+  "camera_records": [
+    {
+      "training_index": 0,
+      "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00001.png",
+      "optimizer_mapping_index": 0,
+      "source_intrinsics": [
+        [
+          900.5858154296875,
+          0.0,
+          636.2944946289062
+        ],
+        [
+          0.0,
+          896.4459228515625,
+          363.4638366699219
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_distortion": [
+        0.05845525115728378,
+        -0.11466772854328156,
+        0.0,
+        0.0,
+        -0.00475626066327095,
+        0.0016714012017473578
+      ],
+      "loader_intrinsics": [
+        [
+          [
+            901.256591796875,
+            0.0,
+            638.4940185546875
+          ],
+          [
+            0.0,
+            904.1895141601562,
+            360.93316650390625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "loader_dimensions": [
+        1279,
+        719
+      ],
+      "canonical_c2w": [
+        [
+          [
+            0.9999997615814209,
+            0.0001882395736174658,
+            -0.0006209007115103304,
+            -0.8056781888008118
+          ],
+          [
+            -0.0006208685226738453,
+            -0.00017101358389481902,
+            -0.9999998211860657,
+            -4.939015865325928
+          ],
+          [
+            -0.0001883457152871415,
+            0.9999999403953552,
+            -0.00017089667380787432,
+            -0.17594562470912933
+          ]
+        ]
+      ],
+      "corrected_c2w": [
+        [
+          [
+            0.9999951720237732,
+            -1.5174242435023189e-05,
+            -0.0031136113684624434,
+            -0.8061266541481018
+          ],
+          [
+            -0.0031135089229792356,
+            0.004576004575937986,
+            -0.9999847412109375,
+            -4.940866470336914
+          ],
+          [
+            2.94241908704862e-05,
+            0.9999895095825195,
+            0.004575935658067465,
+            -0.1777149885892868
+          ]
+        ]
+      ],
+      "upstream_correction_method": "CameraOptimizer.apply_to_camera; SO3xR3 world translation independent of rotation",
+      "pose_adjustment": [
+        -0.00044848915422335267,
+        -0.0018507798667997122,
+        -0.0017693567788228393,
+        -0.004747304134070873,
+        -0.00020890726591460407,
+        -0.002492293482646346
+      ],
+      "model_evaluation_mode": true
+    },
+    {
+      "training_index": 134,
+      "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00149.png",
+      "optimizer_mapping_index": 134,
+      "source_intrinsics": [
+        [
+          900.5858154296875,
+          0.0,
+          636.2944946289062
+        ],
+        [
+          0.0,
+          896.4459228515625,
+          363.4638366699219
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_distortion": [
+        0.05845525115728378,
+        -0.11466772854328156,
+        0.0,
+        0.0,
+        -0.00475626066327095,
+        0.0016714012017473578
+      ],
+      "loader_intrinsics": [
+        [
+          [
+            901.256591796875,
+            0.0,
+            638.4940185546875
+          ],
+          [
+            0.0,
+            904.1895141601562,
+            360.93316650390625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "loader_dimensions": [
+        1279,
+        719
+      ],
+      "canonical_c2w": [
+        [
+          [
+            0.6229148507118225,
+            -0.3504476845264435,
+            0.6994022727012634,
+            1.825711965560913
+          ],
+          [
+            0.7821397185325623,
+            0.26149600744247437,
+            -0.5655769109725952,
+            2.663386583328247
+          ],
+          [
+            0.015314217656850815,
+            0.899336576461792,
+            0.43698880076408386,
+            0.11182275414466858
+          ]
+        ]
+      ],
+      "corrected_c2w": [
+        [
+          [
+            0.6222243905067444,
+            -0.3489818274974823,
+            0.7007485628128052,
+            1.8076517581939697
+          ],
+          [
+            0.7826917171478271,
+            0.259968638420105,
+            -0.5655174851417542,
+            2.6449456214904785
+          ],
+          [
+            0.015182658098638058,
+            0.9003488421440125,
+            0.434904009103775,
+            0.13136301934719086
+          ]
+        ]
+      ],
+      "upstream_correction_method": "CameraOptimizer.apply_to_camera; SO3xR3 world translation independent of rotation",
+      "pose_adjustment": [
+        -0.018060162663459778,
+        -0.01844106614589691,
+        0.019540268927812576,
+        0.0013400616589933634,
+        0.0018954467959702015,
+        0.0009194024605676532
+      ],
+      "model_evaluation_mode": true
+    },
+    {
+      "training_index": 269,
+      "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00300.png",
+      "optimizer_mapping_index": 269,
+      "source_intrinsics": [
+        [
+          900.5858154296875,
+          0.0,
+          636.2944946289062
+        ],
+        [
+          0.0,
+          896.4459228515625,
+          363.4638366699219
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_distortion": [
+        0.05845525115728378,
+        -0.11466772854328156,
+        0.0,
+        0.0,
+        -0.00475626066327095,
+        0.0016714012017473578
+      ],
+      "loader_intrinsics": [
+        [
+          [
+            901.256591796875,
+            0.0,
+            638.4940185546875
+          ],
+          [
+            0.0,
+            904.1895141601562,
+            360.93316650390625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "loader_dimensions": [
+        1279,
+        719
+      ],
+      "canonical_c2w": [
+        [
+          [
+            0.9543069005012512,
+            -0.04064149409532547,
+            -0.29605168104171753,
+            -1.1852995157241821
+          ],
+          [
+            -0.2962912619113922,
+            0.00013471204147208482,
+            -0.9550976157188416,
+            -3.738442897796631
+          ],
+          [
+            0.03885647654533386,
+            0.9991737604141235,
+            -0.011913162656128407,
+            -0.357444703578949
+          ]
+        ]
+      ],
+      "corrected_c2w": [
+        [
+          [
+            0.9533376097679138,
+            -0.039575740694999695,
+            -0.29930105805397034,
+            -1.1824387311935425
+          ],
+          [
+            -0.2994402348995209,
+            0.0025028677191585302,
+            -0.9541117548942566,
+            -3.7325706481933594
+          ],
+          [
+            0.03850879520177841,
+            0.999213457107544,
+            -0.009464491158723831,
+            -0.35988566279411316
+          ]
+        ]
+      ],
+      "upstream_correction_method": "CameraOptimizer.apply_to_camera; SO3xR3 world translation independent of rotation",
+      "pose_adjustment": [
+        0.002860727021470666,
+        0.005872359033674002,
+        -0.0024409566540271044,
+        -0.00223393552005291,
+        0.0010621463879942894,
+        -0.0033920626156032085
+      ],
+      "model_evaluation_mode": true
+    }
+  ],
+  "metrics": [
+    {
+      "training_index": 0,
+      "variant": "canonical",
+      "mae_rgb_0_1": 0.12896569073200226,
+      "rmse_rgb_0_1": 0.18309046365927145,
+      "mse_rgb_0_1": 0.033522117882966995,
+      "psnr_db": 14.746685510253567,
+      "rgb_range": [
+        0.09006942808628082,
+        0.5627315640449524
+      ],
+      "render_wall_s": 3.613131350000913,
+      "dimensions": [
+        719,
+        1279,
+        3
+      ],
+      "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+    },
+    {
+      "training_index": 0,
+      "variant": "saved-correction",
+      "mae_rgb_0_1": 0.127631276845932,
+      "rmse_rgb_0_1": 0.1819674208066946,
+      "mse_rgb_0_1": 0.033112142235040665,
+      "psnr_db": 14.800127210672922,
+      "rgb_range": [
+        0.09023521095514297,
+        0.5618820190429688
+      ],
+      "render_wall_s": 0.004754780999064678,
+      "dimensions": [
+        719,
+        1279,
+        3
+      ],
+      "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+    },
+    {
+      "training_index": 134,
+      "variant": "canonical",
+      "mae_rgb_0_1": 0.1880376636981964,
+      "rmse_rgb_0_1": 0.21931977658336593,
+      "mse_rgb_0_1": 0.048101164400577545,
+      "psnr_db": 13.17844410390726,
+      "rgb_range": [
+        0.3705154061317444,
+        0.5352961421012878
+      ],
+      "render_wall_s": 0.00326871899960679,
+      "dimensions": [
+        719,
+        1279,
+        3
+      ],
+      "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+    },
+    {
+      "training_index": 134,
+      "variant": "saved-correction",
+      "mae_rgb_0_1": 0.19119863212108612,
+      "rmse_rgb_0_1": 0.2219373071519835,
+      "mse_rgb_0_1": 0.04925616830587387,
+      "psnr_db": 13.07539375451425,
+      "rgb_range": [
+        0.38608482480049133,
+        0.5110509991645813
+      ],
+      "render_wall_s": 0.0038856790015415754,
+      "dimensions": [
+        719,
+        1279,
+        3
+      ],
+      "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+    },
+    {
+      "training_index": 269,
+      "variant": "canonical",
+      "mae_rgb_0_1": 0.11659067124128342,
+      "rmse_rgb_0_1": 0.166250365855596,
+      "mse_rgb_0_1": 0.027639184147119522,
+      "psnr_db": 15.58474780604402,
+      "rgb_range": [
+        0.2909564971923828,
+        0.5516912341117859
+      ],
+      "render_wall_s": 0.0038266629999270663,
+      "dimensions": [
+        719,
+        1279,
+        3
+      ],
+      "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+    },
+    {
+      "training_index": 269,
+      "variant": "saved-correction",
+      "mae_rgb_0_1": 0.11670858412981033,
+      "rmse_rgb_0_1": 0.16632129354141453,
+      "mse_rgb_0_1": 0.027662772685289383,
+      "psnr_db": 15.581042919934598,
+      "rgb_range": [
+        0.29195845127105713,
+        0.5514888167381287
+      ],
+      "render_wall_s": 0.004625823999958811,
+      "dimensions": [
+        719,
+        1279,
+        3
+      ],
+      "comparison": "training-view diagnostic, not held-out fidelity; full preprocessed RGB, no exposure/color fit"
+    }
+  ],
+  "physical_scale_verified": false,
+  "held_out_fidelity": false
+}

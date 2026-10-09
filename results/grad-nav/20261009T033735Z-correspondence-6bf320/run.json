@@ -1,0 +1,40 @@
+{
+  "run_id": "20261009T033735Z-correspondence-6bf320",
+  "mode": "correspondence",
+  "start_utc": "2026-10-09T03:37:35.445154+00:00",
+  "timeout_s": 300,
+  "command": [
+    "/home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z/bin/python",
+    "/home/ubuntu/R4R-Sims-grad-nav/simulators/grad-nav/correspondence.py",
+    "correspondence",
+    "--upstream",
+    "/home/ubuntu/grad-nav-deps/upstream",
+    "--out",
+    "/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T033735Z-correspondence-6bf320"
+  ],
+  "cwd": "/home/ubuntu/R4R-Sims-grad-nav",
+  "candidate_commit": "ef0492ed6ac09fb444c81941f0706f62bb4003f0",
+  "upstream_commit": "d9b00e16107338e49071c65f44582c013e522633",
+  "upstream_status": "",
+  "input_path": "/home/ubuntu/grad-nav-deps/upstream",
+  "output_path": "/home/ubuntu/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T033735Z-correspondence-6bf320",
+  "policy_weights": "none",
+  "scene": "gate_mid",
+  "seed": 0,
+  "status": "completed",
+  "environment_file": "environment.txt",
+  "navigation_learned_components_used": false,
+  "compiler_environment": {
+    "CC": "/usr/bin/gcc-11",
+    "CXX": "/usr/bin/g++-11",
+    "CUDA_HOME": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8",
+    "PATH": "/home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z/bin:/home/ubuntu/grad-nav-deps/env-render/bin:/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "LD_LIBRARY_PATH": "/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/cuda-11.8/lib64:",
+    "TORCH_EXTENSIONS_DIR": "/home/ubuntu/grad-nav-deps/cache/torch-extensions",
+    "MAX_JOBS": "2"
+  },
+  "exit_status": 0,
+  "wall_s": 25.711583059000986,
+  "end_utc": "2026-10-09T03:38:02.106734+00:00",
+  "timed_out": false
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "file": "000-saved-correction-depth.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "269-canonical-accumulation.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "269-canonical-depth.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "134-saved-correction-accumulation.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "134-saved-correction-rgb.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "134-canonical-rgb.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "000-canonical-rgb.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "134-canonical-accumulation.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "134-canonical-depth.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "269-saved-correction-accumulation.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "134-saved-correction-depth.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "000-saved-correction-rgb.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "269-saved-correction-rgb.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "000-canonical-depth.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "000-saved-correction-accumulation.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "269-saved-correction-depth.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "269-canonical-rgb.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  },
+  {
+    "file": "000-canonical-accumulation.npy",
+    "exact_equal": true,
+    "max_abs_delta": 0.0
+  }
+]

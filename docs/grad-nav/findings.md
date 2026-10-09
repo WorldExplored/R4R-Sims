@@ -1,6 +1,6 @@
 # GRaD-Nav Real4Real findings
 
-Audit date 2026-10-08 in America/Indiana/Indianapolis. Runs use UTC October9. **Recommendation: reuse the tested differentiable dynamics component for controlled research diagnostics, and defer the complete GRaD-Nav renderer/policy workflow for Real4Real.** The compiler repair now renders the selected Gaussian scene; frozen-route capture alignment remains unresolved. Native mounted-camera coordinate coupling is demonstrated. See [observed continuation](render-results.md). The central outdoor novel-view fidelity question remains untested.
+Audit date 2026-10-08 in America/Indiana/Indianapolis. Runs use UTC October9. **Decision: NO-GO for calibrated R4R camera replay with the released gate_mid package until provenance is resolved. Reuse only demonstrated dynamics/native rendering components.** The compiler repair now renders the selected Gaussian scene; frozen-route capture alignment remains unresolved. Native mounted-camera coordinate coupling is demonstrated. See [controlled camera-correspondence decision](camera-correspondence.md) and [historical rendering continuation](render-results.md). The central outdoor novel-view fidelity question remains untested.
 
 ## Independent status
 

@@ -1,0 +1,84 @@
+{
+  "versions": {
+    "nerfstudio": "1.1.3",
+    "torch": "2.1.2+cu118",
+    "gsplat": "1.0.0",
+    "viser": "0.1.27",
+    "opencv-python-headless": "4.11.0.86"
+  },
+  "cv2_runtime": "4.8.0",
+  "modules": [
+    {
+      "module": "nerfstudio.models.splatfacto",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/nerfstudio/models/splatfacto.py",
+      "sha256": "5a594e6d02da538279535bda8cc31c0ba63cdebdb01cc0bd281906aea4de531c"
+    },
+    {
+      "module": "nerfstudio.data.datamanagers.full_images_datamanager",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/nerfstudio/data/datamanagers/full_images_datamanager.py",
+      "sha256": "8e9a79ac2dda91bd32c6de8aa586a981c563fd31333b5490007d9d11be072e2d"
+    },
+    {
+      "module": "nerfstudio.cameras.camera_optimizers",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/nerfstudio/cameras/camera_optimizers.py",
+      "sha256": "2b564eed04bdd3ec128ada4624e2ee5eee5618c1a9d2cd02c721b78cf6d55f0d"
+    },
+    {
+      "module": "torch",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/__init__.py",
+      "sha256": "7261130fcc9dae49bb38843604ae2d0cab8d6b7277eb57b5dbc1559e35e34be1"
+    },
+    {
+      "module": "gsplat",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/__init__.py",
+      "sha256": "acecbdc3f608ff40ea0dc54aeda854d839f727030b0557b6cb1600f40c560f9c"
+    },
+    {
+      "module": "cv2",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/cv2/__init__.py",
+      "sha256": "d6d44be0f0f981cc057abc0c152377b496edb478d1fa6355ce035f711dc94b25"
+    }
+  ]
+}
+{
+  "versions": {
+    "nerfstudio": "1.1.4",
+    "torch": "2.1.2+cu118",
+    "gsplat": "1.0.0",
+    "viser": "0.2.3",
+    "opencv-python-headless": "4.10.0.84"
+  },
+  "cv2_runtime": "4.10.0",
+  "modules": [
+    {
+      "module": "nerfstudio.models.splatfacto",
+      "path": "/home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z/lib/python3.10/site-packages/nerfstudio/models/splatfacto.py",
+      "sha256": "ded00788a699aaa6f9249fac460e974f39cdfe20fe7ea0d98fb3e2accc32f32e"
+    },
+    {
+      "module": "nerfstudio.data.datamanagers.full_images_datamanager",
+      "path": "/home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z/lib/python3.10/site-packages/nerfstudio/data/datamanagers/full_images_datamanager.py",
+      "sha256": "6c1294a15fc2b2c25f33abc359d926140d1a668b7f38ec6e20565175583c9426"
+    },
+    {
+      "module": "nerfstudio.cameras.camera_optimizers",
+      "path": "/home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z/lib/python3.10/site-packages/nerfstudio/cameras/camera_optimizers.py",
+      "sha256": "2b564eed04bdd3ec128ada4624e2ee5eee5618c1a9d2cd02c721b78cf6d55f0d"
+    },
+    {
+      "module": "torch",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/torch/__init__.py",
+      "sha256": "7261130fcc9dae49bb38843604ae2d0cab8d6b7277eb57b5dbc1559e35e34be1"
+    },
+    {
+      "module": "gsplat",
+      "path": "/home/ubuntu/grad-nav-deps/env-render/lib/python3.10/site-packages/gsplat/__init__.py",
+      "sha256": "acecbdc3f608ff40ea0dc54aeda854d839f727030b0557b6cb1600f40c560f9c"
+    },
+    {
+      "module": "cv2",
+      "path": "/home/ubuntu/grad-nav-deps/env-render114-20261009T0337Z/lib/python3.10/site-packages/cv2/__init__.py",
+      "sha256": "936bd94c5a5debf0212fc751af79d3a163652f3e850259df2159db6aa3ed8ad8"
+    }
+  ]
+}

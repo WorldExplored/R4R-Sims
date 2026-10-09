@@ -1,0 +1,3782 @@
+[
+  {
+    "training_index": 0,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00001.png",
+    "pose_adjustment_translation_so3": [
+      -0.00044848915422335267,
+      -0.0018507798667997122,
+      -0.0017693567788228393,
+      -0.004747304134070873,
+      -0.00020890726591460407,
+      -0.002492293482646346
+    ],
+    "translation_norm_scene_units": 0.0025994523894041777,
+    "rotation_tangent_norm_rad": 0.005365823861211538
+  },
+  {
+    "training_index": 1,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00002.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006275434861890972,
+      -0.0022674284409731627,
+      -0.004740213975310326,
+      -0.004659897182136774,
+      -0.0005828550783917308,
+      -0.002725758822634816
+    ],
+    "translation_norm_scene_units": 0.005291943904012442,
+    "rotation_tangent_norm_rad": 0.005429928656667471
+  },
+  {
+    "training_index": 2,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00003.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006187534891068935,
+      -0.00226446520537138,
+      -0.004769942257553339,
+      -0.00463399663567543,
+      -0.0006604709778912365,
+      -0.002641211962327361
+    ],
+    "translation_norm_scene_units": 0.0053162965923547745,
+    "rotation_tangent_norm_rad": 0.005374583415687084
+  },
+  {
+    "training_index": 3,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00004.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006299681263044477,
+      -0.002267946721985936,
+      -0.0047703818418085575,
+      -0.004670598078519106,
+      -0.0006409691995941103,
+      -0.002655430929735303
+    ],
+    "translation_norm_scene_units": 0.005319491028785706,
+    "rotation_tangent_norm_rad": 0.0054107895120978355
+  },
+  {
+    "training_index": 4,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00005.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006048976792953908,
+      -0.002262128284201026,
+      -0.004708964377641678,
+      -0.0045897881500422955,
+      -0.0003665416152216494,
+      -0.0026943341363221407
+    ],
+    "translation_norm_scene_units": 0.005259037017822266,
+    "rotation_tangent_norm_rad": 0.005334786139428616
+  },
+  {
+    "training_index": 5,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00006.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006253388128243387,
+      -0.0022721118293702602,
+      -0.004711775574833155,
+      -0.004677204415202141,
+      -0.0006749052554368973,
+      -0.002610486000776291
+    ],
+    "translation_norm_scene_units": 0.005268241744488478,
+    "rotation_tangent_norm_rad": 0.005398738197982311
+  },
+  {
+    "training_index": 6,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00007.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006181951030157506,
+      -0.0022661229595541954,
+      -0.004758930299431086,
+      -0.004537888802587986,
+      -0.0003568975953385234,
+      -0.0028431557584553957
+    ],
+    "translation_norm_scene_units": 0.0053070611320436,
+    "rotation_tangent_norm_rad": 0.005366874858736992
+  },
+  {
+    "training_index": 7,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00008.png",
+    "pose_adjustment_translation_so3": [
+      -0.0004691737412940711,
+      -0.0018563230987638235,
+      -0.0018127431394532323,
+      -0.0046540419571101665,
+      -0.00029252131935209036,
+      -0.0027302042581140995
+    ],
+    "translation_norm_scene_units": 0.002636682940647006,
+    "rotation_tangent_norm_rad": 0.005403673741966486
+  },
+  {
+    "training_index": 8,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00009.png",
+    "pose_adjustment_translation_so3": [
+      -0.0004614974313881248,
+      -0.0018722480162978172,
+      -0.0017404573736712337,
+      -0.0046494933776557446,
+      -0.0002915640361607075,
+      -0.002716850023716688
+    ],
+    "translation_norm_scene_units": 0.0025975920725613832,
+    "rotation_tangent_norm_rad": 0.00539296492934227
+  },
+  {
+    "training_index": 9,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00011.png",
+    "pose_adjustment_translation_so3": [
+      -0.0004538256907835603,
+      -0.0018709545256569982,
+      -0.0017817569896578789,
+      -0.004590068478137255,
+      -0.0003190164570696652,
+      -0.002625639084726572
+    ],
+    "translation_norm_scene_units": 0.00262318248860538,
+    "rotation_tangent_norm_rad": 0.005297591909766197
+  },
+  {
+    "training_index": 10,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00012.png",
+    "pose_adjustment_translation_so3": [
+      -0.0004615971993189305,
+      -0.0019405391067266464,
+      -0.0019613855984061956,
+      -0.00457224203273654,
+      -0.00026602184516377747,
+      -0.0026664729230105877
+    ],
+    "translation_norm_scene_units": 0.002797462744638324,
+    "rotation_tangent_norm_rad": 0.005299645476043224
+  },
+  {
+    "training_index": 11,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00013.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006102232728153467,
+      -0.002293667523190379,
+      -0.004883884452283382,
+      -0.004705127794295549,
+      -0.0006120495963841677,
+      -0.0025814916007220745
+    ],
+    "translation_norm_scene_units": 0.005430065561085939,
+    "rotation_tangent_norm_rad": 0.005401567555963993
+  },
+  {
+    "training_index": 12,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00014.png",
+    "pose_adjustment_translation_so3": [
+      -0.000601641193497926,
+      -0.0024314378388226032,
+      -0.004820655565708876,
+      -0.004513110034167767,
+      -0.0002853000769391656,
+      -0.002790108323097229
+    ],
+    "translation_norm_scene_units": 0.005432548467069864,
+    "rotation_tangent_norm_rad": 0.005313592497259378
+  },
+  {
+    "training_index": 13,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00015.png",
+    "pose_adjustment_translation_so3": [
+      0.0008984313462860882,
+      -0.015957696363329887,
+      -0.0024612669367343187,
+      -0.0017886298010125756,
+      -0.0007376776775345206,
+      -0.0015019411221146584
+    ],
+    "translation_norm_scene_units": 0.016171367838978767,
+    "rotation_tangent_norm_rad": 0.002449324820190668
+  },
+  {
+    "training_index": 14,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00016.png",
+    "pose_adjustment_translation_so3": [
+      0.002525162184610963,
+      -0.006463862955570221,
+      -0.002823963761329651,
+      -0.0035976185463368893,
+      -0.0008051252807490528,
+      -0.003646696684882045
+    ],
+    "translation_norm_scene_units": 0.007492178585380316,
+    "rotation_tangent_norm_rad": 0.005185506772249937
+  },
+  {
+    "training_index": 15,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00017.png",
+    "pose_adjustment_translation_so3": [
+      0.0020658099092543125,
+      -0.004148540087044239,
+      0.008413190022110939,
+      -0.005317443981766701,
+      0.00020021243835799396,
+      -0.003298869589343667
+    ],
+    "translation_norm_scene_units": 0.009605192579329014,
+    "rotation_tangent_norm_rad": 0.006260817404836416
+  },
+  {
+    "training_index": 16,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00018.png",
+    "pose_adjustment_translation_so3": [
+      -0.0015097316354513168,
+      -0.01063805166631937,
+      0.01348173152655363,
+      -0.007212207652628422,
+      0.0006780787953175604,
+      0.000435400172136724
+    ],
+    "translation_norm_scene_units": 0.01723962090909481,
+    "rotation_tangent_norm_rad": 0.00725708669051528
+  },
+  {
+    "training_index": 17,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00019.png",
+    "pose_adjustment_translation_so3": [
+      -0.00015453965170308948,
+      0.0005869940505363047,
+      0.014796200208365917,
+      -0.008125650696456432,
+      0.0010197422234341502,
+      -0.002482970943674445
+    ],
+    "translation_norm_scene_units": 0.014808645471930504,
+    "rotation_tangent_norm_rad": 0.008557524532079697
+  },
+  {
+    "training_index": 18,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00021.png",
+    "pose_adjustment_translation_so3": [
+      0.005453153047710657,
+      -0.003535940544679761,
+      0.00999695435166359,
+      -0.0072943721897900105,
+      0.0016142945969477296,
+      -0.0032989399041980505
+    ],
+    "translation_norm_scene_units": 0.011923877522349358,
+    "rotation_tangent_norm_rad": 0.008166812360286713
+  },
+  {
+    "training_index": 19,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00022.png",
+    "pose_adjustment_translation_so3": [
+      0.0014064490096643567,
+      -0.0008298687171190977,
+      -8.014645572984591e-05,
+      -0.007092959713190794,
+      0.0010587393771857023,
+      -0.0030678738839924335
+    ],
+    "translation_norm_scene_units": 0.001634993706829846,
+    "rotation_tangent_norm_rad": 0.00780018325895071
+  },
+  {
+    "training_index": 20,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00023.png",
+    "pose_adjustment_translation_so3": [
+      -0.004099240526556969,
+      -0.00039497314719483256,
+      0.0027532356325536966,
+      -0.007263774052262306,
+      -0.00048344084643758833,
+      -0.003822935512289405
+    ],
+    "translation_norm_scene_units": 0.004953795112669468,
+    "rotation_tangent_norm_rad": 0.008222588337957859
+  },
+  {
+    "training_index": 21,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00024.png",
+    "pose_adjustment_translation_so3": [
+      -0.0049947770312428474,
+      0.0005257242009975016,
+      -0.0002527822507545352,
+      -0.006817254237830639,
+      -0.0013390039093792439,
+      -0.0049110157415270805
+    ],
+    "translation_norm_scene_units": 0.005028726067394018,
+    "rotation_tangent_norm_rad": 0.008507994003593922
+  },
+  {
+    "training_index": 22,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00025.png",
+    "pose_adjustment_translation_so3": [
+      -0.002750961808487773,
+      -0.0022939499467611313,
+      -0.005016636103391647,
+      -0.005908808670938015,
+      -0.0024747007992118597,
+      -0.004572478123009205
+    ],
+    "translation_norm_scene_units": 0.006164140999317169,
+    "rotation_tangent_norm_rad": 0.007870560511946678
+  },
+  {
+    "training_index": 23,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00026.png",
+    "pose_adjustment_translation_so3": [
+      -0.0007768122595734894,
+      3.789655693253735e-06,
+      -0.0004551136225927621,
+      -0.006527962628751993,
+      -0.003356622764840722,
+      -0.004533085506409407
+    ],
+    "translation_norm_scene_units": 0.0009003222221508622,
+    "rotation_tangent_norm_rad": 0.008627287112176418
+  },
+  {
+    "training_index": 24,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00027.png",
+    "pose_adjustment_translation_so3": [
+      0.0018405284499749541,
+      0.0005606249906122684,
+      0.00014429682050831616,
+      -0.0056451777927577496,
+      -0.003141196211799979,
+      -0.00539710558950901
+    ],
+    "translation_norm_scene_units": 0.0019294213270768523,
+    "rotation_tangent_norm_rad": 0.008418070152401924
+  },
+  {
+    "training_index": 25,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00028.png",
+    "pose_adjustment_translation_so3": [
+      -0.006056716665625572,
+      0.0007216199301183224,
+      -0.004371843300759792,
+      -0.005614602006971836,
+      -0.004633104894310236,
+      -0.0035613880027085543
+    ],
+    "translation_norm_scene_units": 0.00750450324267149,
+    "rotation_tangent_norm_rad": 0.00810388196259737
+  },
+  {
+    "training_index": 26,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00029.png",
+    "pose_adjustment_translation_so3": [
+      0.003685043193399906,
+      -0.0045807198621332645,
+      0.007800547871738672,
+      -0.0034657747019082308,
+      -0.0033625406213104725,
+      -0.002018422121182084
+    ],
+    "translation_norm_scene_units": 0.009767860174179077,
+    "rotation_tangent_norm_rad": 0.005233765579760075
+  },
+  {
+    "training_index": 27,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00031.png",
+    "pose_adjustment_translation_so3": [
+      0.002660471713170409,
+      -0.003556016832590103,
+      -4.059443745063618e-05,
+      -0.0024703170638531446,
+      -0.004725778009742498,
+      -0.0027225548401474953
+    ],
+    "translation_norm_scene_units": 0.004441285040229559,
+    "rotation_tangent_norm_rad": 0.005987299140542746
+  },
+  {
+    "training_index": 28,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00032.png",
+    "pose_adjustment_translation_so3": [
+      0.00417602714151144,
+      0.0012558684684336185,
+      0.0026554749347269535,
+      -0.0022973602171987295,
+      -0.004604303278028965,
+      -0.0036184967029839754
+    ],
+    "translation_norm_scene_units": 0.005105678923428059,
+    "rotation_tangent_norm_rad": 0.006290547549724579
+  },
+  {
+    "training_index": 29,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00033.png",
+    "pose_adjustment_translation_so3": [
+      0.006583085283637047,
+      0.005137603264302015,
+      0.00318704335950315,
+      -0.001901609473861754,
+      -0.005186126101762056,
+      -0.005662323907017708
+    ],
+    "translation_norm_scene_units": 0.0089380769059062,
+    "rotation_tangent_norm_rad": 0.007910368964076042
+  },
+  {
+    "training_index": 30,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00034.png",
+    "pose_adjustment_translation_so3": [
+      0.008977018296718597,
+      0.00669904937967658,
+      0.015953395515680313,
+      -0.0017888539005070925,
+      -0.0036075832322239876,
+      -0.0034461154136806726
+    ],
+    "translation_norm_scene_units": 0.019492946565151215,
+    "rotation_tangent_norm_rad": 0.005300034303218126
+  },
+  {
+    "training_index": 31,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00035.png",
+    "pose_adjustment_translation_so3": [
+      0.005081249866634607,
+      0.0040434193797409534,
+      0.011338246054947376,
+      0.0019285010639578104,
+      -0.0029438165947794914,
+      -0.008706895634531975
+    ],
+    "translation_norm_scene_units": 0.013066145591437817,
+    "rotation_tangent_norm_rad": 0.009391230531036854
+  },
+  {
+    "training_index": 32,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00036.png",
+    "pose_adjustment_translation_so3": [
+      0.005581495352089405,
+      0.007473703008145094,
+      0.025913581252098083,
+      0.0011224497575312853,
+      -0.0012846747413277626,
+      -0.004766648169606924
+    ],
+    "translation_norm_scene_units": 0.027541296556591988,
+    "rotation_tangent_norm_rad": 0.005062728188931942
+  },
+  {
+    "training_index": 33,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00037.png",
+    "pose_adjustment_translation_so3": [
+      0.004566757939755917,
+      0.0043216426856815815,
+      0.01649359241127968,
+      0.002713165245950222,
+      0.00027632314595393836,
+      -0.004171460401266813
+    ],
+    "translation_norm_scene_units": 0.017651358619332314,
+    "rotation_tangent_norm_rad": 0.004983844235539436
+  },
+  {
+    "training_index": 34,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00038.png",
+    "pose_adjustment_translation_so3": [
+      -0.0015423623844981194,
+      0.0034785568714141846,
+      0.012277987785637379,
+      0.0045995889231562614,
+      0.0012567142257466912,
+      -0.0007937665795907378
+    ],
+    "translation_norm_scene_units": 0.01285411324352026,
+    "rotation_tangent_norm_rad": 0.004833799321204424
+  },
+  {
+    "training_index": 35,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00039.png",
+    "pose_adjustment_translation_so3": [
+      -0.0004767857608385384,
+      0.004353377502411604,
+      0.029546145349740982,
+      0.004418265074491501,
+      0.0024132318794727325,
+      0.0031385342590510845
+    ],
+    "translation_norm_scene_units": 0.029868945479393005,
+    "rotation_tangent_norm_rad": 0.0059325504116714
+  },
+  {
+    "training_index": 36,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00041.png",
+    "pose_adjustment_translation_so3": [
+      -0.0044893547892570496,
+      0.01214141771197319,
+      -0.024844706058502197,
+      0.0016856160946190357,
+      0.007984504103660583,
+      0.0065039899200201035
+    ],
+    "translation_norm_scene_units": 0.0280147772282362,
+    "rotation_tangent_norm_rad": 0.010435300879180431
+  },
+  {
+    "training_index": 37,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00042.png",
+    "pose_adjustment_translation_so3": [
+      -0.0048416536301374435,
+      0.00443675834685564,
+      0.0026067839935421944,
+      0.003914654720574617,
+      0.0019635006319731474,
+      0.010344058275222778
+    ],
+    "translation_norm_scene_units": 0.007065533194690943,
+    "rotation_tangent_norm_rad": 0.011232960037887096
+  },
+  {
+    "training_index": 38,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00043.png",
+    "pose_adjustment_translation_so3": [
+      -0.006715669296681881,
+      0.003400947665795684,
+      0.007575782481580973,
+      0.0006961221224628389,
+      0.0048344130627810955,
+      0.009600698947906494
+    ],
+    "translation_norm_scene_units": 0.010679846629500389,
+    "rotation_tangent_norm_rad": 0.010771702043712139
+  },
+  {
+    "training_index": 39,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00044.png",
+    "pose_adjustment_translation_so3": [
+      0.0042097242549061775,
+      0.00021774478955194354,
+      -2.1939760699751787e-05,
+      0.0005379972863011062,
+      0.0036101853474974632,
+      0.008218050003051758
+    ],
+    "translation_norm_scene_units": 0.00421540904790163,
+    "rotation_tangent_norm_rad": 0.008992175571620464
+  },
+  {
+    "training_index": 40,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00045.png",
+    "pose_adjustment_translation_so3": [
+      0.001102632493712008,
+      -0.0005735715967603028,
+      0.003977570217102766,
+      -0.0007018338073976338,
+      0.005770326126366854,
+      0.009370623156428337
+    ],
+    "translation_norm_scene_units": 0.004167234990745783,
+    "rotation_tangent_norm_rad": 0.011027139611542225
+  },
+  {
+    "training_index": 41,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00046.png",
+    "pose_adjustment_translation_so3": [
+      0.006137443706393242,
+      0.0003078041772823781,
+      0.010102539323270321,
+      -0.002361794700846076,
+      0.0033468485344201326,
+      0.010156936943531036
+    ],
+    "translation_norm_scene_units": 0.011824730783700943,
+    "rotation_tangent_norm_rad": 0.010951842181384563
+  },
+  {
+    "training_index": 42,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00047.png",
+    "pose_adjustment_translation_so3": [
+      -0.0017794877057895064,
+      -0.008073010481894016,
+      0.020586127415299416,
+      -0.0021949312649667263,
+      0.0020842852536588907,
+      0.007511939387768507
+    ],
+    "translation_norm_scene_units": 0.0221839752048254,
+    "rotation_tangent_norm_rad": 0.008098839782178402
+  },
+  {
+    "training_index": 43,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00048.png",
+    "pose_adjustment_translation_so3": [
+      -0.00804293341934681,
+      0.007062769494950771,
+      0.01562911458313465,
+      -0.004569543991237879,
+      -0.00048724375665187836,
+      0.005360293202102184
+    ],
+    "translation_norm_scene_units": 0.018943091854453087,
+    "rotation_tangent_norm_rad": 0.007060515694320202
+  },
+  {
+    "training_index": 44,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00049.png",
+    "pose_adjustment_translation_so3": [
+      0.003213159739971161,
+      0.0005160568980500102,
+      0.022343333810567856,
+      -0.004487412050366402,
+      0.00044292001985013485,
+      0.0031890850514173508
+    ],
+    "translation_norm_scene_units": 0.022579088807106018,
+    "rotation_tangent_norm_rad": 0.005522979889065027
+  },
+  {
+    "training_index": 45,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00051.png",
+    "pose_adjustment_translation_so3": [
+      -0.006781065370887518,
+      -0.00557083822786808,
+      0.014843040145933628,
+      -0.00532176997512579,
+      0.0016312922816723585,
+      0.00030355670605786145
+    ],
+    "translation_norm_scene_units": 0.017243344336748123,
+    "rotation_tangent_norm_rad": 0.005574450362473726
+  },
+  {
+    "training_index": 46,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00052.png",
+    "pose_adjustment_translation_so3": [
+      -0.010018921457231045,
+      0.00019079884805250913,
+      0.02710314840078354,
+      -0.0060786413960158825,
+      0.00016640119429212064,
+      0.00045802013482898474
+    ],
+    "translation_norm_scene_units": 0.02889629453420639,
+    "rotation_tangent_norm_rad": 0.006098143290728331
+  },
+  {
+    "training_index": 47,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00053.png",
+    "pose_adjustment_translation_so3": [
+      -0.011510759592056274,
+      0.003121177665889263,
+      0.02125963196158409,
+      -0.0067594931460917,
+      2.6036288545583375e-05,
+      -0.002874318277463317
+    ],
+    "translation_norm_scene_units": 0.02437645010650158,
+    "rotation_tangent_norm_rad": 0.007345279213041067
+  },
+  {
+    "training_index": 48,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00054.png",
+    "pose_adjustment_translation_so3": [
+      -0.00964632909744978,
+      0.011618091724812984,
+      0.008614430204033852,
+      -0.006596474442631006,
+      -0.00044184952275827527,
+      -0.005286011379212141
+    ],
+    "translation_norm_scene_units": 0.017385054379701614,
+    "rotation_tangent_norm_rad": 0.00846466887742281
+  },
+  {
+    "training_index": 49,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00055.png",
+    "pose_adjustment_translation_so3": [
+      -0.008672649972140789,
+      -0.0004211727646179497,
+      0.0009429059573449194,
+      -0.00513477111235261,
+      -0.00015904349857009947,
+      -0.008028692565858364
+    ],
+    "translation_norm_scene_units": 0.008733917027711868,
+    "rotation_tangent_norm_rad": 0.009531582705676556
+  },
+  {
+    "training_index": 50,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00056.png",
+    "pose_adjustment_translation_so3": [
+      -0.005706759635359049,
+      0.006362332962453365,
+      0.0003086464130319655,
+      -0.003987767733633518,
+      -0.0017195177497342229,
+      -0.006592858582735062
+    ],
+    "translation_norm_scene_units": 0.008552289567887783,
+    "rotation_tangent_norm_rad": 0.00789460726082325
+  },
+  {
+    "training_index": 51,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00057.png",
+    "pose_adjustment_translation_so3": [
+      0.0019274328369647264,
+      0.0007015218143351376,
+      0.010891318321228027,
+      -0.00279018166474998,
+      -0.0006739064119756222,
+      -0.007277256343513727
+    ],
+    "translation_norm_scene_units": 0.011082776822149754,
+    "rotation_tangent_norm_rad": 0.007822897285223007
+  },
+  {
+    "training_index": 52,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00058.png",
+    "pose_adjustment_translation_so3": [
+      -0.001181901665404439,
+      -0.0019423746271058917,
+      0.0004437876050360501,
+      -0.001450365874916315,
+      -0.0021258944179862738,
+      -0.006343210116028786
+    ],
+    "translation_norm_scene_units": 0.00231660483404994,
+    "rotation_tangent_norm_rad": 0.006845385301858187
+  },
+  {
+    "training_index": 53,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00059.png",
+    "pose_adjustment_translation_so3": [
+      0.0009095703135244548,
+      -0.00100490462500602,
+      0.0053474269807338715,
+      -0.0014003877295181155,
+      -0.0022653494961559772,
+      -0.005209766793996096
+    ],
+    "translation_norm_scene_units": 0.005516532342880964,
+    "rotation_tangent_norm_rad": 0.005851030815392733
+  },
+  {
+    "training_index": 54,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00061.png",
+    "pose_adjustment_translation_so3": [
+      0.010012668557465076,
+      0.004476502537727356,
+      0.027121257036924362,
+      -0.0025573819875717163,
+      0.000266193674178794,
+      -0.003263697028160095
+    ],
+    "translation_norm_scene_units": 0.029255002737045288,
+    "rotation_tangent_norm_rad": 0.004154850263148546
+  },
+  {
+    "training_index": 55,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00062.png",
+    "pose_adjustment_translation_so3": [
+      0.0006845068419352174,
+      0.004339233506470919,
+      0.017649950459599495,
+      -0.00391782820224762,
+      0.0002779947826638818,
+      -0.001601135591045022
+    ],
+    "translation_norm_scene_units": 0.018188409507274628,
+    "rotation_tangent_norm_rad": 0.004241496790200472
+  },
+  {
+    "training_index": 56,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00063.png",
+    "pose_adjustment_translation_so3": [
+      0.0035520214587450027,
+      -0.0009343677666038275,
+      0.01136879064142704,
+      -0.003278543706983328,
+      0.0017522354610264301,
+      -0.0015019821003079414
+    ],
+    "translation_norm_scene_units": 0.01194735523313284,
+    "rotation_tangent_norm_rad": 0.004009380005300045
+  },
+  {
+    "training_index": 57,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00064.png",
+    "pose_adjustment_translation_so3": [
+      0.002408291446045041,
+      0.0038153869099915028,
+      0.016138458624482155,
+      -0.003954369109123945,
+      0.002614700933918357,
+      -5.549661727854982e-05
+    ],
+    "translation_norm_scene_units": 0.016757292672991753,
+    "rotation_tangent_norm_rad": 0.004740967880934477
+  },
+  {
+    "training_index": 58,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00065.png",
+    "pose_adjustment_translation_so3": [
+      0.004949059337377548,
+      0.0007964446558617055,
+      0.01111226063221693,
+      -0.004894901067018509,
+      0.0021115539129823446,
+      -0.0009563343483023345
+    ],
+    "translation_norm_scene_units": 0.012190563604235649,
+    "rotation_tangent_norm_rad": 0.005416021682322025
+  },
+  {
+    "training_index": 59,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00066.png",
+    "pose_adjustment_translation_so3": [
+      0.003028823295608163,
+      0.01037396676838398,
+      0.012037347070872784,
+      -0.006572470534592867,
+      0.002362750703468919,
+      -0.0008674217970110476
+    ],
+    "translation_norm_scene_units": 0.016176855191588402,
+    "rotation_tangent_norm_rad": 0.007037924602627754
+  },
+  {
+    "training_index": 60,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00067.png",
+    "pose_adjustment_translation_so3": [
+      0.0018035512184724212,
+      0.0037090512923896313,
+      0.0055021257139742374,
+      -0.00536931911483407,
+      0.0004306411137804389,
+      -0.00017942755948752165
+    ],
+    "translation_norm_scene_units": 0.006876281462609768,
+    "rotation_tangent_norm_rad": 0.005389548372477293
+  },
+  {
+    "training_index": 61,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00068.png",
+    "pose_adjustment_translation_so3": [
+      -0.014196360483765602,
+      0.006833693012595177,
+      0.006953224074095488,
+      -0.0042943586595356464,
+      -0.001531172776594758,
+      -0.001293615554459393
+    ],
+    "translation_norm_scene_units": 0.017221594229340553,
+    "rotation_tangent_norm_rad": 0.004739140160381794
+  },
+  {
+    "training_index": 62,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00069.png",
+    "pose_adjustment_translation_so3": [
+      -0.012012439779937267,
+      0.009019892662763596,
+      0.0027970264200121164,
+      -0.004776342771947384,
+      -8.531858475180343e-05,
+      -0.002020141575485468
+    ],
+    "translation_norm_scene_units": 0.015280069783329964,
+    "rotation_tangent_norm_rad": 0.005186684895306826
+  },
+  {
+    "training_index": 63,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00071.png",
+    "pose_adjustment_translation_so3": [
+      0.006877030711621046,
+      -0.007877545431256294,
+      0.021403955295681953,
+      -0.001959101529791951,
+      0.003436935367062688,
+      0.00017179662245325744
+    ],
+    "translation_norm_scene_units": 0.023821808397769928,
+    "rotation_tangent_norm_rad": 0.003959812689572573
+  },
+  {
+    "training_index": 64,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00072.png",
+    "pose_adjustment_translation_so3": [
+      0.007568498142063618,
+      -0.004315841477364302,
+      0.012097657658159733,
+      -0.002959138946607709,
+      0.0013231171760708094,
+      0.001908682519569993
+    ],
+    "translation_norm_scene_units": 0.01490845251828432,
+    "rotation_tangent_norm_rad": 0.0037616766057908535
+  },
+  {
+    "training_index": 65,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00073.png",
+    "pose_adjustment_translation_so3": [
+      0.0023194486275315285,
+      0.007039213553071022,
+      0.01209433563053608,
+      -0.00513582956045866,
+      0.00015497172717005014,
+      0.0029400447383522987
+    ],
+    "translation_norm_scene_units": 0.014184615574777126,
+    "rotation_tangent_norm_rad": 0.005919849965721369
+  },
+  {
+    "training_index": 66,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00074.png",
+    "pose_adjustment_translation_so3": [
+      0.0025010965764522552,
+      0.007539017591625452,
+      -0.000703618279658258,
+      -0.005658220499753952,
+      -0.0006921936292201281,
+      -0.00021116533025633544
+    ],
+    "translation_norm_scene_units": 0.007974167354404926,
+    "rotation_tangent_norm_rad": 0.005704312585294247
+  },
+  {
+    "training_index": 67,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00075.png",
+    "pose_adjustment_translation_so3": [
+      -0.0024006697349250317,
+      -0.0021836322266608477,
+      0.009558784775435925,
+      -0.0035512468311935663,
+      0.0006836136453785002,
+      -0.0007516666664741933
+    ],
+    "translation_norm_scene_units": 0.01009464357048273,
+    "rotation_tangent_norm_rad": 0.0036937356926500797
+  },
+  {
+    "training_index": 68,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00076.png",
+    "pose_adjustment_translation_so3": [
+      0.007662855088710785,
+      0.007170284632593393,
+      -0.005031441804021597,
+      -0.005407012067735195,
+      0.0021565521601587534,
+      -0.004477558191865683
+    ],
+    "translation_norm_scene_units": 0.011638200841844082,
+    "rotation_tangent_norm_rad": 0.0073440466076135635
+  },
+  {
+    "training_index": 69,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00077.png",
+    "pose_adjustment_translation_so3": [
+      -0.007391108199954033,
+      -0.013719415292143822,
+      0.022672096267342567,
+      0.0013792077079415321,
+      0.001068643294274807,
+      -0.002429008251056075
+    ],
+    "translation_norm_scene_units": 0.0275113582611084,
+    "rotation_tangent_norm_rad": 0.002990701235830784
+  },
+  {
+    "training_index": 70,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00078.png",
+    "pose_adjustment_translation_so3": [
+      -0.00434933602809906,
+      0.00405447231605649,
+      -0.0001687854964984581,
+      -0.0038789028767496347,
+      0.0014309564139693975,
+      -0.005217620171606541
+    ],
+    "translation_norm_scene_units": 0.005948442034423351,
+    "rotation_tangent_norm_rad": 0.00665710773319006
+  },
+  {
+    "training_index": 71,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00079.png",
+    "pose_adjustment_translation_so3": [
+      -0.005727606825530529,
+      0.008615859784185886,
+      0.0002833933976944536,
+      -0.0038156493101269007,
+      0.0006349279428832233,
+      -0.005463126581162214
+    ],
+    "translation_norm_scene_units": 0.010349823161959648,
+    "rotation_tangent_norm_rad": 0.006693882402032614
+  },
+  {
+    "training_index": 72,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00081.png",
+    "pose_adjustment_translation_so3": [
+      0.004427492152899504,
+      0.009747514501214027,
+      0.0013446426019072533,
+      -0.0019822234753519297,
+      -0.0013335569528862834,
+      -0.0039383177645504475
+    ],
+    "translation_norm_scene_units": 0.010790032334625721,
+    "rotation_tangent_norm_rad": 0.004606292583048344
+  },
+  {
+    "training_index": 73,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00082.png",
+    "pose_adjustment_translation_so3": [
+      0.005935408640652895,
+      0.009216198697686195,
+      -0.0050803665071725845,
+      -0.0018278248608112335,
+      -0.003310452913865447,
+      -0.002481060102581978
+    ],
+    "translation_norm_scene_units": 0.01208211574703455,
+    "rotation_tangent_norm_rad": 0.004522798117250204
+  },
+  {
+    "training_index": 74,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00083.png",
+    "pose_adjustment_translation_so3": [
+      0.019567320123314857,
+      -0.004910667892545462,
+      -0.0022440492175519466,
+      0.0017016055062413216,
+      -0.0034001425374299288,
+      0.0005158582935109735
+    ],
+    "translation_norm_scene_units": 0.020298531278967857,
+    "rotation_tangent_norm_rad": 0.003836996154859662
+  },
+  {
+    "training_index": 75,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00084.png",
+    "pose_adjustment_translation_so3": [
+      0.01789061725139618,
+      0.004065032582730055,
+      0.02249908819794655,
+      0.0003994424478150904,
+      0.0006354175275191665,
+      0.001135104103013873
+    ],
+    "translation_norm_scene_units": 0.02903115004301071,
+    "rotation_tangent_norm_rad": 0.0013607979053631425
+  },
+  {
+    "training_index": 76,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00085.png",
+    "pose_adjustment_translation_so3": [
+      0.01779164932668209,
+      0.003576642135158181,
+      -0.0014034057967364788,
+      -0.0019059586338698864,
+      0.0017942715203389525,
+      0.004973691422492266
+    ],
+    "translation_norm_scene_units": 0.01820177584886551,
+    "rotation_tangent_norm_rad": 0.005620471201837063
+  },
+  {
+    "training_index": 77,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00086.png",
+    "pose_adjustment_translation_so3": [
+      -0.0031194963958114386,
+      -0.006738908588886261,
+      0.012555506080389023,
+      -0.0014593482483178377,
+      0.002198057947680354,
+      0.009762991219758987
+    ],
+    "translation_norm_scene_units": 0.01458714809268713,
+    "rotation_tangent_norm_rad": 0.010113216936588287
+  },
+  {
+    "training_index": 78,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00087.png",
+    "pose_adjustment_translation_so3": [
+      -0.009003042243421078,
+      -0.007173652295023203,
+      0.005157189443707466,
+      -0.002291048178449273,
+      0.001372789847664535,
+      0.005351184867322445
+    ],
+    "translation_norm_scene_units": 0.012613986618816853,
+    "rotation_tangent_norm_rad": 0.005980688147246838
+  },
+  {
+    "training_index": 79,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00088.png",
+    "pose_adjustment_translation_so3": [
+      0.007146773394197226,
+      -0.006889594718813896,
+      -0.006666212808340788,
+      -0.0020989335607737303,
+      0.0027498623821884394,
+      0.001956068677827716
+    ],
+    "translation_norm_scene_units": 0.011957477778196335,
+    "rotation_tangent_norm_rad": 0.003974100109189749
+  },
+  {
+    "training_index": 80,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00089.png",
+    "pose_adjustment_translation_so3": [
+      0.0008505774312652647,
+      -0.005223205778747797,
+      -0.0008975532255135477,
+      -0.0017901210812851787,
+      0.0010145889827981591,
+      0.0007857554010115564
+    ],
+    "translation_norm_scene_units": 0.005367584526538849,
+    "rotation_tangent_norm_rad": 0.002202574862167239
+  },
+  {
+    "training_index": 81,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00091.png",
+    "pose_adjustment_translation_so3": [
+      -0.0011198640568181872,
+      0.0013833681587129831,
+      0.016814876347780228,
+      -0.007941207848489285,
+      0.00032478131470270455,
+      -0.008157635107636452
+    ],
+    "translation_norm_scene_units": 0.016908811405301094,
+    "rotation_tangent_norm_rad": 0.011389261111617088
+  },
+  {
+    "training_index": 82,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00092.png",
+    "pose_adjustment_translation_so3": [
+      -0.0002632945543155074,
+      -0.0017924306448549032,
+      0.0006623556837439537,
+      -0.0037532257847487926,
+      -0.0008485687430948019,
+      -0.0045324089005589485
+    ],
+    "translation_norm_scene_units": 0.0019289496121928096,
+    "rotation_tangent_norm_rad": 0.0059455446898937225
+  },
+  {
+    "training_index": 83,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00093.png",
+    "pose_adjustment_translation_so3": [
+      0.009915214963257313,
+      0.0022692650090903044,
+      0.028002748265862465,
+      -0.00550451735034585,
+      -0.0014448383590206504,
+      -0.005997779313474894
+    ],
+    "translation_norm_scene_units": 0.029792867600917816,
+    "rotation_tangent_norm_rad": 0.008268048986792564
+  },
+  {
+    "training_index": 84,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00094.png",
+    "pose_adjustment_translation_so3": [
+      -0.0070023443549871445,
+      -0.011020503006875515,
+      0.022853516042232513,
+      -0.002315244870260358,
+      -0.0002731785934884101,
+      -0.003222778672352433
+    ],
+    "translation_norm_scene_units": 0.026320476084947586,
+    "rotation_tangent_norm_rad": 0.0039775981567800045
+  },
+  {
+    "training_index": 85,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00095.png",
+    "pose_adjustment_translation_so3": [
+      -0.018587583675980568,
+      0.00432575074955821,
+      -0.0025218480732291937,
+      -0.005937972571700811,
+      -0.004099271260201931,
+      0.003200763603672385
+    ],
+    "translation_norm_scene_units": 0.01925019733607769,
+    "rotation_tangent_norm_rad": 0.007893568836152554
+  },
+  {
+    "training_index": 86,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00096.png",
+    "pose_adjustment_translation_so3": [
+      0.0024229101836681366,
+      -0.004231440834701061,
+      0.014301722869277,
+      -0.002174840308725834,
+      0.002456932095810771,
+      -0.0037690419703722
+    ],
+    "translation_norm_scene_units": 0.015110091306269169,
+    "rotation_tangent_norm_rad": 0.004997211508452892
+  },
+  {
+    "training_index": 87,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00097.png",
+    "pose_adjustment_translation_so3": [
+      0.003755478886887431,
+      0.0034490518737584352,
+      0.016242466866970062,
+      -0.0031237059738487005,
+      0.001548180589452386,
+      0.0003163726069033146
+    ],
+    "translation_norm_scene_units": 0.017024021595716476,
+    "rotation_tangent_norm_rad": 0.0035006420221179724
+  },
+  {
+    "training_index": 88,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00098.png",
+    "pose_adjustment_translation_so3": [
+      -0.0018408166943117976,
+      -0.003941821865737438,
+      0.028018344193696976,
+      -0.0056602247059345245,
+      -2.5601066226954572e-05,
+      -0.0001406961091561243
+    ],
+    "translation_norm_scene_units": 0.028354085981845856,
+    "rotation_tangent_norm_rad": 0.005662031006067991
+  },
+  {
+    "training_index": 89,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00099.png",
+    "pose_adjustment_translation_so3": [
+      0.009356747381389141,
+      0.0017515193903818727,
+      0.02489263191819191,
+      -0.0021603568457067013,
+      -1.8092492609866895e-05,
+      -0.0024925728794187307
+    ],
+    "translation_norm_scene_units": 0.026650696992874146,
+    "rotation_tangent_norm_rad": 0.003298543393611908
+  },
+  {
+    "training_index": 90,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00101.png",
+    "pose_adjustment_translation_so3": [
+      -0.0012836530804634094,
+      0.0014642159221693873,
+      0.02561706304550171,
+      -0.005535380449146032,
+      0.0013542750384658575,
+      -0.0022734496742486954
+    ],
+    "translation_norm_scene_units": 0.025690963491797447,
+    "rotation_tangent_norm_rad": 0.006135395262390375
+  },
+  {
+    "training_index": 91,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00102.png",
+    "pose_adjustment_translation_so3": [
+      -0.005037073045969009,
+      0.0022121628280729055,
+      0.01991368643939495,
+      -0.004321832209825516,
+      0.0008541368297301233,
+      -0.004743545316159725
+    ],
+    "translation_norm_scene_units": 0.020659638568758965,
+    "rotation_tangent_norm_rad": 0.00647371681407094
+  },
+  {
+    "training_index": 92,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00103.png",
+    "pose_adjustment_translation_so3": [
+      -0.003754435572773218,
+      0.002318973420187831,
+      0.016867980360984802,
+      -0.004419890232384205,
+      0.0011668222723528743,
+      -0.002224390394985676
+    ],
+    "translation_norm_scene_units": 0.01743565872311592,
+    "rotation_tangent_norm_rad": 0.00508377980440855
+  },
+  {
+    "training_index": 93,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00104.png",
+    "pose_adjustment_translation_so3": [
+      -0.0011289117392152548,
+      0.002544817980378866,
+      0.019307006150484085,
+      -0.004381511826068163,
+      0.0025168689899146557,
+      -0.0014656584244221449
+    ],
+    "translation_norm_scene_units": 0.01950669102370739,
+    "rotation_tangent_norm_rad": 0.00526121910661459
+  },
+  {
+    "training_index": 94,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00105.png",
+    "pose_adjustment_translation_so3": [
+      -0.0015753312036395073,
+      0.00042701480560936034,
+      0.012738841585814953,
+      -0.002950397552922368,
+      0.001517833094112575,
+      -0.00276098120957613
+    ],
+    "translation_norm_scene_units": 0.012842978350818157,
+    "rotation_tangent_norm_rad": 0.004316443111747503
+  },
+  {
+    "training_index": 95,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00106.png",
+    "pose_adjustment_translation_so3": [
+      -0.005174235440790653,
+      0.0051914905197918415,
+      0.015088357962667942,
+      -0.004317989572882652,
+      0.0022875803988426924,
+      0.0007791431271471083
+    ],
+    "translation_norm_scene_units": 0.01677446998655796,
+    "rotation_tangent_norm_rad": 0.00494824443012476
+  },
+  {
+    "training_index": 96,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00107.png",
+    "pose_adjustment_translation_so3": [
+      -0.005174186080694199,
+      0.004264532588422298,
+      0.008233423344790936,
+      -0.0031991819851100445,
+      0.0019818125292658806,
+      -0.00011311555135762319
+    ],
+    "translation_norm_scene_units": 0.010618272237479687,
+    "rotation_tangent_norm_rad": 0.0037649888545274734
+  },
+  {
+    "training_index": 97,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00108.png",
+    "pose_adjustment_translation_so3": [
+      -0.0022288979962468147,
+      0.004404434934258461,
+      0.018731867894530296,
+      -0.0016540365759283304,
+      0.0014020109083503485,
+      0.0017800340428948402
+    ],
+    "translation_norm_scene_units": 0.01937136799097061,
+    "rotation_tangent_norm_rad": 0.0028053505811840296
+  },
+  {
+    "training_index": 98,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00109.png",
+    "pose_adjustment_translation_so3": [
+      -0.0005368120619095862,
+      0.0035525450948625803,
+      0.021003518253564835,
+      -0.0023800742346793413,
+      -0.00113259581848979,
+      0.0017670574598014355
+    ],
+    "translation_norm_scene_units": 0.021308602765202522,
+    "rotation_tangent_norm_rad": 0.0031733291689306498
+  },
+  {
+    "training_index": 99,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00111.png",
+    "pose_adjustment_translation_so3": [
+      -0.01131311897188425,
+      0.002839195542037487,
+      0.022655416280031204,
+      -0.00197851681150496,
+      -0.0018745996057987213,
+      0.0031656280625611544
+    ],
+    "translation_norm_scene_units": 0.02548167109489441,
+    "rotation_tangent_norm_rad": 0.004177302122116089
+  },
+  {
+    "training_index": 100,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00112.png",
+    "pose_adjustment_translation_so3": [
+      -0.007271942682564259,
+      0.0009012576774694026,
+      0.02156924456357956,
+      -0.0029414333403110504,
+      -0.00047147372970357537,
+      -0.0022440641187131405
+    ],
+    "translation_norm_scene_units": 0.02277994155883789,
+    "rotation_tangent_norm_rad": 0.003729630261659622
+  },
+  {
+    "training_index": 101,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00113.png",
+    "pose_adjustment_translation_so3": [
+      -0.0037999707274138927,
+      0.005965555552393198,
+      0.025609832257032394,
+      -0.004579856991767883,
+      0.0013325319159775972,
+      7.049903797451407e-05
+    ],
+    "translation_norm_scene_units": 0.026568612083792686,
+    "rotation_tangent_norm_rad": 0.004770293831825256
+  },
+  {
+    "training_index": 102,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00114.png",
+    "pose_adjustment_translation_so3": [
+      0.0013942720834165812,
+      0.006434302777051926,
+      -0.0051256571896374226,
+      -0.004030853044241667,
+      0.006540339905768633,
+      0.004093359690159559
+    ],
+    "translation_norm_scene_units": 0.008343656547367573,
+    "rotation_tangent_norm_rad": 0.0087051372975111
+  },
+  {
+    "training_index": 103,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00115.png",
+    "pose_adjustment_translation_so3": [
+      0.01202123798429966,
+      0.005769014824181795,
+      -0.017068589106202126,
+      -0.005321185570210218,
+      0.009602896869182587,
+      0.005460960324853659
+    ],
+    "translation_norm_scene_units": 0.021659372374415398,
+    "rotation_tangent_norm_rad": 0.012261840514838696
+  },
+  {
+    "training_index": 104,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00116.png",
+    "pose_adjustment_translation_so3": [
+      0.013347051106393337,
+      0.007525882683694363,
+      -0.005143716000020504,
+      -0.006361985579133034,
+      0.006469136103987694,
+      0.0015447173500433564
+    ],
+    "translation_norm_scene_units": 0.0161629356443882,
+    "rotation_tangent_norm_rad": 0.009203842841088772
+  },
+  {
+    "training_index": 105,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00117.png",
+    "pose_adjustment_translation_so3": [
+      -0.0024761564563959837,
+      0.0017281380714848638,
+      -0.009554524905979633,
+      0.002571433549746871,
+      -0.0022572570014744997,
+      -0.008580422028899193
+    ],
+    "translation_norm_scene_units": 0.010020317509770393,
+    "rotation_tangent_norm_rad": 0.009237485006451607
+  },
+  {
+    "training_index": 106,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00118.png",
+    "pose_adjustment_translation_so3": [
+      0.00490600848570466,
+      0.007160729728639126,
+      -0.0005195388221181929,
+      -0.0011502146953716874,
+      0.0008088700124062598,
+      -0.015868686139583588
+    ],
+    "translation_norm_scene_units": 0.008695682510733604,
+    "rotation_tangent_norm_rad": 0.015930864959955215
+  },
+  {
+    "training_index": 107,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00119.png",
+    "pose_adjustment_translation_so3": [
+      0.00013754857354797423,
+      0.005883349105715752,
+      0.0019408698426559567,
+      0.0022792350500822067,
+      -0.0054353466257452965,
+      -0.006762053817510605
+    ],
+    "translation_norm_scene_units": 0.006196748465299606,
+    "rotation_tangent_norm_rad": 0.008970133028924465
+  },
+  {
+    "training_index": 108,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00121.png",
+    "pose_adjustment_translation_so3": [
+      0.008428772911429405,
+      0.008063346147537231,
+      0.014447539113461971,
+      0.004674374125897884,
+      -0.004592402372509241,
+      -0.011199403554201126
+    ],
+    "translation_norm_scene_units": 0.018568607047200203,
+    "rotation_tangent_norm_rad": 0.01297561451792717
+  },
+  {
+    "training_index": 109,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00122.png",
+    "pose_adjustment_translation_so3": [
+      0.008766809478402138,
+      0.008650770410895348,
+      0.02039514109492302,
+      0.004729437176138163,
+      -0.007106360048055649,
+      -0.011995267122983932
+    ],
+    "translation_norm_scene_units": 0.023825502023100853,
+    "rotation_tangent_norm_rad": 0.014722580090165138
+  },
+  {
+    "training_index": 110,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00123.png",
+    "pose_adjustment_translation_so3": [
+      0.004130858927965164,
+      0.0023313136771321297,
+      0.002617555670440197,
+      0.009463967755436897,
+      -0.00727947847917676,
+      -0.0009445093455724418
+    ],
+    "translation_norm_scene_units": 0.005417621228843927,
+    "rotation_tangent_norm_rad": 0.011977044865489006
+  },
+  {
+    "training_index": 111,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00124.png",
+    "pose_adjustment_translation_so3": [
+      0.0024947812780737877,
+      0.0040074498392641544,
+      -0.005434548947960138,
+      0.008442302234470844,
+      -0.0028363962192088366,
+      -0.015957145020365715
+    ],
+    "translation_norm_scene_units": 0.00719846598803997,
+    "rotation_tangent_norm_rad": 0.018274245783686638
+  },
+  {
+    "training_index": 112,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00125.png",
+    "pose_adjustment_translation_so3": [
+      -0.003943788819015026,
+      0.014000954106450081,
+      -0.014699872583150864,
+      -0.00399687048047781,
+      -0.0029002130031585693,
+      -0.0008365813991986215
+    ],
+    "translation_norm_scene_units": 0.020680097863078117,
+    "rotation_tangent_norm_rad": 0.005008600652217865
+  },
+  {
+    "training_index": 113,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00126.png",
+    "pose_adjustment_translation_so3": [
+      -0.0043096342124044895,
+      0.0034336296375840902,
+      0.005181643180549145,
+      -0.006940268445760012,
+      0.0020279104355722666,
+      0.0038428858388215303
+    ],
+    "translation_norm_scene_units": 0.0075638736598193645,
+    "rotation_tangent_norm_rad": 0.00818825513124466
+  },
+  {
+    "training_index": 114,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00127.png",
+    "pose_adjustment_translation_so3": [
+      -0.0003929879458155483,
+      0.00216395640745759,
+      0.019384149461984634,
+      -0.005211604759097099,
+      0.003581819823011756,
+      -0.0011001089587807655
+    ],
+    "translation_norm_scene_units": 0.019508522003889084,
+    "rotation_tangent_norm_rad": 0.00641876133158803
+  },
+  {
+    "training_index": 115,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00128.png",
+    "pose_adjustment_translation_so3": [
+      -0.005790473893284798,
+      0.008373445831239223,
+      -0.003572349436581135,
+      -0.004890033043920994,
+      0.003385802498087287,
+      0.0029590134508907795
+    ],
+    "translation_norm_scene_units": 0.010789155028760433,
+    "rotation_tangent_norm_rad": 0.006643179804086685
+  },
+  {
+    "training_index": 116,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00129.png",
+    "pose_adjustment_translation_so3": [
+      -0.0002497318491805345,
+      0.008250507526099682,
+      0.012193654663860798,
+      -0.004371900111436844,
+      0.003928040619939566,
+      0.005686963442713022
+    ],
+    "translation_norm_scene_units": 0.014724756591022015,
+    "rotation_tangent_norm_rad": 0.008178298361599445
+  },
+  {
+    "training_index": 117,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00131.png",
+    "pose_adjustment_translation_so3": [
+      -0.002676071599125862,
+      0.004461528267711401,
+      0.008539068512618542,
+      -0.0017899232916533947,
+      0.0052161430940032005,
+      0.004726199898868799
+    ],
+    "translation_norm_scene_units": 0.009999114088714123,
+    "rotation_tangent_norm_rad": 0.007262846454977989
+  },
+  {
+    "training_index": 118,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00132.png",
+    "pose_adjustment_translation_so3": [
+      -0.011892041191458702,
+      0.01237503718584776,
+      -0.001725450623780489,
+      0.0017896814970299602,
+      0.0023330734111368656,
+      -0.003714262740686536
+    ],
+    "translation_norm_scene_units": 0.017249329015612602,
+    "rotation_tangent_norm_rad": 0.004737292416393757
+  },
+  {
+    "training_index": 119,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00133.png",
+    "pose_adjustment_translation_so3": [
+      -0.005901428405195475,
+      0.00012729436275549233,
+      -0.0020780975464731455,
+      0.0015585679793730378,
+      -0.00015936364070512354,
+      -0.0047010802663862705
+    ],
+    "translation_norm_scene_units": 0.006257919128984213,
+    "rotation_tangent_norm_rad": 0.00495526846498251
+  },
+  {
+    "training_index": 120,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00134.png",
+    "pose_adjustment_translation_so3": [
+      0.00045551054063253105,
+      0.0032605230808258057,
+      0.020119067281484604,
+      -0.0035752307157963514,
+      0.003024536883458495,
+      0.0023012266028672457
+    ],
+    "translation_norm_scene_units": 0.020386647433042526,
+    "rotation_tangent_norm_rad": 0.005217829253524542
+  },
+  {
+    "training_index": 121,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00135.png",
+    "pose_adjustment_translation_so3": [
+      -0.0024046467151492834,
+      0.003940562717616558,
+      0.02302827127277851,
+      -0.002178859431296587,
+      -0.00019906643137801439,
+      -0.0030619686003774405
+    ],
+    "translation_norm_scene_units": 0.023486414924263954,
+    "rotation_tangent_norm_rad": 0.0037633373867720366
+  },
+  {
+    "training_index": 122,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00136.png",
+    "pose_adjustment_translation_so3": [
+      0.003339000279083848,
+      -0.003111371537670493,
+      0.02103635109961033,
+      0.0006162570789456367,
+      0.001861956319771707,
+      0.0018959448207169771
+    ],
+    "translation_norm_scene_units": 0.02152574434876442,
+    "rotation_tangent_norm_rad": 0.0027278675697743893
+  },
+  {
+    "training_index": 123,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00137.png",
+    "pose_adjustment_translation_so3": [
+      0.00816165842115879,
+      -0.006537651177495718,
+      0.014078441075980663,
+      -8.466798317385837e-05,
+      0.0022039422765374184,
+      -0.00411676662042737
+    ],
+    "translation_norm_scene_units": 0.017537275329232216,
+    "rotation_tangent_norm_rad": 0.00467036385089159
+  },
+  {
+    "training_index": 124,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00138.png",
+    "pose_adjustment_translation_so3": [
+      0.007320309057831764,
+      -0.009335252456367016,
+      0.01929990015923977,
+      0.0016585288103669882,
+      0.0011416951892897487,
+      -0.004615797195583582
+    ],
+    "translation_norm_scene_units": 0.02265436016023159,
+    "rotation_tangent_norm_rad": 0.00503584835678339
+  },
+  {
+    "training_index": 125,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00139.png",
+    "pose_adjustment_translation_so3": [
+      -0.0019097191980108619,
+      -0.005299022886902094,
+      0.01608695276081562,
+      0.0006989890825934708,
+      -0.0004843233327846974,
+      -0.008107856847345829
+    ],
+    "translation_norm_scene_units": 0.0170445516705513,
+    "rotation_tangent_norm_rad": 0.008152330294251442
+  },
+  {
+    "training_index": 126,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00141.png",
+    "pose_adjustment_translation_so3": [
+      0.002417459851130843,
+      0.0009151310659945011,
+      0.0072407773695886135,
+      0.0017229262739419937,
+      -0.0009978899033740163,
+      -0.006550130434334278
+    ],
+    "translation_norm_scene_units": 0.007688330952078104,
+    "rotation_tangent_norm_rad": 0.006846054922789335
+  },
+  {
+    "training_index": 127,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00142.png",
+    "pose_adjustment_translation_so3": [
+      0.003347177756950259,
+      -0.0024009086191654205,
+      0.02030887082219124,
+      0.002163159428164363,
+      -0.0005022746627219021,
+      -0.0047176615335047245
+    ],
+    "translation_norm_scene_units": 0.0207224078476429,
+    "rotation_tangent_norm_rad": 0.005214198958128691
+  },
+  {
+    "training_index": 128,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00143.png",
+    "pose_adjustment_translation_so3": [
+      -0.0010604665149003267,
+      -0.008979707956314087,
+      0.01814436912536621,
+      0.002647851826623082,
+      0.0009325257269665599,
+      -0.0022840299643576145
+    ],
+    "translation_norm_scene_units": 0.02027258835732937,
+    "rotation_tangent_norm_rad": 0.0036190489772707224
+  },
+  {
+    "training_index": 129,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00144.png",
+    "pose_adjustment_translation_so3": [
+      -0.003037174930796027,
+      -0.0035628885962069035,
+      0.02139974571764469,
+      -0.0002542557194828987,
+      0.0015972673427313566,
+      -0.002895699581131339
+    ],
+    "translation_norm_scene_units": 0.02190588228404522,
+    "rotation_tangent_norm_rad": 0.003316773334518075
+  },
+  {
+    "training_index": 130,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00145.png",
+    "pose_adjustment_translation_so3": [
+      -0.010916175320744514,
+      0.0023077502846717834,
+      0.0031880601309239864,
+      -0.0005103764706291258,
+      0.0069774906150996685,
+      0.009076056070625782
+    ],
+    "translation_norm_scene_units": 0.011603978462517262,
+    "rotation_tangent_norm_rad": 0.01145952194929123
+  },
+  {
+    "training_index": 131,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00146.png",
+    "pose_adjustment_translation_so3": [
+      -0.009824050590395927,
+      -0.005420621018856764,
+      0.02276148833334446,
+      0.0010466069215908647,
+      0.007407584227621555,
+      0.007921865209937096
+    ],
+    "translation_norm_scene_units": 0.02537677064538002,
+    "rotation_tangent_norm_rad": 0.010896038264036179
+  },
+  {
+    "training_index": 132,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00147.png",
+    "pose_adjustment_translation_so3": [
+      -0.028222154825925827,
+      -0.002875802107155323,
+      0.018625402823090553,
+      0.002734134206548333,
+      0.0019452524138614535,
+      -0.0024576419964432716
+    ],
+    "translation_norm_scene_units": 0.03393620252609253,
+    "rotation_tangent_norm_rad": 0.004159266594797373
+  },
+  {
+    "training_index": 133,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00148.png",
+    "pose_adjustment_translation_so3": [
+      -0.019409138709306717,
+      -0.0025830387603491545,
+      0.02311273105442524,
+      -0.0002050650946330279,
+      0.0019545804243534803,
+      0.00016090311692096293
+    ],
+    "translation_norm_scene_units": 0.030291667208075523,
+    "rotation_tangent_norm_rad": 0.0019718839321285486
+  },
+  {
+    "training_index": 134,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00149.png",
+    "pose_adjustment_translation_so3": [
+      -0.018060162663459778,
+      -0.01844106614589691,
+      0.019540268927812576,
+      0.0013400616589933634,
+      0.0018954467959702015,
+      0.0009194024605676532
+    ],
+    "translation_norm_scene_units": 0.0323738232254982,
+    "rotation_tangent_norm_rad": 0.002496754750609398
+  },
+  {
+    "training_index": 135,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00151.png",
+    "pose_adjustment_translation_so3": [
+      0.011206253431737423,
+      -0.004440534859895706,
+      0.019194751977920532,
+      -0.0012963260523974895,
+      0.003832936519756913,
+      0.003049223218113184
+    ],
+    "translation_norm_scene_units": 0.02266576699912548,
+    "rotation_tangent_norm_rad": 0.005066520068794489
+  },
+  {
+    "training_index": 136,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00152.png",
+    "pose_adjustment_translation_so3": [
+      0.0007477897452190518,
+      -0.010198719799518585,
+      -0.0022816434502601624,
+      -0.00013574595504906029,
+      0.0017762057250365615,
+      0.00667917262762785
+    ],
+    "translation_norm_scene_units": 0.01047754567116499,
+    "rotation_tangent_norm_rad": 0.006912646349519491
+  },
+  {
+    "training_index": 137,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00153.png",
+    "pose_adjustment_translation_so3": [
+      -0.008176994509994984,
+      -0.022556671872735023,
+      0.0046537178568542,
+      -0.0014281366020441055,
+      0.0023792413994669914,
+      0.011122789233922958
+    ],
+    "translation_norm_scene_units": 0.024440208449959755,
+    "rotation_tangent_norm_rad": 0.011463716626167297
+  },
+  {
+    "training_index": 138,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00154.png",
+    "pose_adjustment_translation_so3": [
+      0.005684086587280035,
+      -0.0025174233596771955,
+      -0.0037011869717389345,
+      -0.00341595197096467,
+      0.005283722188323736,
+      0.00742558715865016
+    ],
+    "translation_norm_scene_units": 0.007234987337142229,
+    "rotation_tangent_norm_rad": 0.009732717648148537
+  },
+  {
+    "training_index": 139,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00155.png",
+    "pose_adjustment_translation_so3": [
+      0.00943687278777361,
+      -0.0076053752563893795,
+      -0.018704665824770927,
+      -0.0036394239868968725,
+      0.004029061645269394,
+      0.004722564946860075
+    ],
+    "translation_norm_scene_units": 0.022288132458925247,
+    "rotation_tangent_norm_rad": 0.007195926737040281
+  },
+  {
+    "training_index": 140,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00156.png",
+    "pose_adjustment_translation_so3": [
+      0.01464528776705265,
+      0.00564463110640645,
+      -0.008730034343898296,
+      -0.007019632030278444,
+      0.002985680475831032,
+      0.005417233798652887
+    ],
+    "translation_norm_scene_units": 0.017959950491786003,
+    "rotation_tangent_norm_rad": 0.009356064721941948
+  },
+  {
+    "training_index": 141,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00157.png",
+    "pose_adjustment_translation_so3": [
+      0.013257929123938084,
+      0.0016866846708580852,
+      -0.011313474737107754,
+      -0.008370429277420044,
+      0.002773627173155546,
+      0.0025659825187176466
+    ],
+    "translation_norm_scene_units": 0.017510348930954933,
+    "rotation_tangent_norm_rad": 0.00918375514447689
+  },
+  {
+    "training_index": 142,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00158.png",
+    "pose_adjustment_translation_so3": [
+      0.005384026560932398,
+      0.0050903200171887875,
+      0.0027525455225259066,
+      -0.0086137056350708,
+      0.00217524915933609,
+      0.002747866092249751
+    ],
+    "translation_norm_scene_units": 0.00790415145456791,
+    "rotation_tangent_norm_rad": 0.009299376048147678
+  },
+  {
+    "training_index": 143,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00159.png",
+    "pose_adjustment_translation_so3": [
+      0.019871322438120842,
+      -0.00506764929741621,
+      0.0013313043164089322,
+      -0.00641455315053463,
+      0.000769664125982672,
+      0.004074362106621265
+    ],
+    "translation_norm_scene_units": 0.020550496876239777,
+    "rotation_tangent_norm_rad": 0.007638017181307077
+  },
+  {
+    "training_index": 144,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00161.png",
+    "pose_adjustment_translation_so3": [
+      0.009423760697245598,
+      0.00030902877915650606,
+      -0.006635408382862806,
+      -0.006562595255672932,
+      -0.0013041467173025012,
+      -0.0026778806932270527
+    ],
+    "translation_norm_scene_units": 0.011529588140547276,
+    "rotation_tangent_norm_rad": 0.0072069065645337105
+  },
+  {
+    "training_index": 145,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00162.png",
+    "pose_adjustment_translation_so3": [
+      0.010826604440808296,
+      -0.0001636456436244771,
+      0.029171867296099663,
+      -0.0060222879983484745,
+      -0.0007341621676459908,
+      -0.005249015521258116
+    ],
+    "translation_norm_scene_units": 0.031116554513573647,
+    "rotation_tangent_norm_rad": 0.008022412657737732
+  },
+  {
+    "training_index": 146,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00163.png",
+    "pose_adjustment_translation_so3": [
+      0.0008702501654624939,
+      0.0001912665320560336,
+      0.027418771758675575,
+      -0.004982383921742439,
+      0.0006479578441940248,
+      -0.0037441360764205456
+    ],
+    "translation_norm_scene_units": 0.02743324637413025,
+    "rotation_tangent_norm_rad": 0.006265983916819096
+  },
+  {
+    "training_index": 147,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00164.png",
+    "pose_adjustment_translation_so3": [
+      -0.02553648315370083,
+      -0.009889421053230762,
+      0.03125971928238869,
+      -0.0010893404250964522,
+      -0.004890214651823044,
+      -0.006579319015145302
+    ],
+    "translation_norm_scene_units": 0.04155818372964859,
+    "rotation_tangent_norm_rad": 0.008269722573459148
+  },
+  {
+    "training_index": 148,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00165.png",
+    "pose_adjustment_translation_so3": [
+      0.0029331303667277098,
+      0.015146187506616116,
+      -0.0004193211207166314,
+      -0.004898359067738056,
+      -0.005310744512826204,
+      -0.005470041185617447
+    ],
+    "translation_norm_scene_units": 0.015433278866112232,
+    "rotation_tangent_norm_rad": 0.009061968885362148
+  },
+  {
+    "training_index": 149,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00166.png",
+    "pose_adjustment_translation_so3": [
+      -0.00377840013243258,
+      0.008739913813769817,
+      0.020531395450234413,
+      -0.000987087027169764,
+      -0.005071946885436773,
+      -0.007749312091618776
+    ],
+    "translation_norm_scene_units": 0.022631848230957985,
+    "rotation_tangent_norm_rad": 0.009314012713730335
+  },
+  {
+    "training_index": 150,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00167.png",
+    "pose_adjustment_translation_so3": [
+      -0.0029870541766285896,
+      0.010836637578904629,
+      0.02703067474067211,
+      -0.0031857877038419247,
+      -0.0035729294177144766,
+      -0.0029665417969226837
+    ],
+    "translation_norm_scene_units": 0.029274776577949524,
+    "rotation_tangent_norm_rad": 0.005631646141409874
+  },
+  {
+    "training_index": 151,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00168.png",
+    "pose_adjustment_translation_so3": [
+      0.004345692694187164,
+      0.003992858342826366,
+      -0.006741891615092754,
+      -0.0002267167583340779,
+      0.0009793926728889346,
+      -0.00769086554646492
+    ],
+    "translation_norm_scene_units": 0.008959969505667686,
+    "rotation_tangent_norm_rad": 0.007756289094686508
+  },
+  {
+    "training_index": 152,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00169.png",
+    "pose_adjustment_translation_so3": [
+      0.003258428769186139,
+      0.010599265806376934,
+      -0.0040190271101891994,
+      0.0028508868999779224,
+      0.0009772505145519972,
+      -9.93111461866647e-05
+    ],
+    "translation_norm_scene_units": 0.011794676072895527,
+    "rotation_tangent_norm_rad": 0.0030153668485581875
+  },
+  {
+    "training_index": 153,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00171.png",
+    "pose_adjustment_translation_so3": [
+      0.010476449504494667,
+      0.00842758733779192,
+      -0.027109483256936073,
+      -0.001278812880627811,
+      0.002518830820918083,
+      0.007419126573950052
+    ],
+    "translation_norm_scene_units": 0.030260605737566948,
+    "rotation_tangent_norm_rad": 0.007938722148537636
+  },
+  {
+    "training_index": 154,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00172.png",
+    "pose_adjustment_translation_so3": [
+      0.0053771366365253925,
+      0.012931651435792446,
+      -0.005268209148198366,
+      -0.0021576550789177418,
+      0.003284190082922578,
+      0.007169201970100403
+    ],
+    "translation_norm_scene_units": 0.014963128603994846,
+    "rotation_tangent_norm_rad": 0.00817550253123045
+  },
+  {
+    "training_index": 155,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00173.png",
+    "pose_adjustment_translation_so3": [
+      0.0030299120116978884,
+      0.014416609890758991,
+      -0.011412153951823711,
+      -0.005653401371091604,
+      -0.0006893712561577559,
+      -0.0007529957802034914
+    ],
+    "translation_norm_scene_units": 0.018634812906384468,
+    "rotation_tangent_norm_rad": 0.0057448395527899265
+  },
+  {
+    "training_index": 156,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00174.png",
+    "pose_adjustment_translation_so3": [
+      -0.008672318421304226,
+      0.009097745642066002,
+      0.015940017998218536,
+      -0.001498725265264511,
+      0.0003186322282999754,
+      0.0032317906152457
+    ],
+    "translation_norm_scene_units": 0.020299317315220833,
+    "rotation_tangent_norm_rad": 0.0035766148939728737
+  },
+  {
+    "training_index": 157,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00175.png",
+    "pose_adjustment_translation_so3": [
+      -0.00886114127933979,
+      0.016575681045651436,
+      0.0065470472909510136,
+      -0.003906927537173033,
+      0.0010200028773397207,
+      0.007428890559822321
+    ],
+    "translation_norm_scene_units": 0.019903186708688736,
+    "rotation_tangent_norm_rad": 0.008455347269773483
+  },
+  {
+    "training_index": 158,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00176.png",
+    "pose_adjustment_translation_so3": [
+      -0.008050089702010155,
+      0.012744463980197906,
+      -0.0045290617272257805,
+      -0.003775837365537882,
+      5.327385588316247e-05,
+      0.004960293415933847
+    ],
+    "translation_norm_scene_units": 0.01573968678712845,
+    "rotation_tangent_norm_rad": 0.006234123837202787
+  },
+  {
+    "training_index": 159,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00177.png",
+    "pose_adjustment_translation_so3": [
+      0.004183167591691017,
+      0.007324161473661661,
+      0.010556568391621113,
+      -0.0033124287147074938,
+      0.0027530707884579897,
+      0.0039029812905937433
+    ],
+    "translation_norm_scene_units": 0.013512341305613518,
+    "rotation_tangent_norm_rad": 0.0058124735951423645
+  },
+  {
+    "training_index": 160,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00178.png",
+    "pose_adjustment_translation_so3": [
+      -0.00911469105631113,
+      0.004390205722302198,
+      -0.012742017395794392,
+      -0.001140734413638711,
+      0.004439183045178652,
+      0.003138158703222871
+    ],
+    "translation_norm_scene_units": 0.016269925981760025,
+    "rotation_tangent_norm_rad": 0.00555478734895587
+  },
+  {
+    "training_index": 161,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00179.png",
+    "pose_adjustment_translation_so3": [
+      -0.008534693159162998,
+      0.003127852687612176,
+      0.0038184733130037785,
+      0.0003191292053088546,
+      0.004060670733451843,
+      0.0036433071363717318
+    ],
+    "translation_norm_scene_units": 0.009859269484877586,
+    "rotation_tangent_norm_rad": 0.005464849062263966
+  },
+  {
+    "training_index": 162,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00181.png",
+    "pose_adjustment_translation_so3": [
+      -0.005986066069453955,
+      0.004319637082517147,
+      0.023711280897259712,
+      -0.000521464622579515,
+      0.004230492282658815,
+      -0.0036235623992979527
+    ],
+    "translation_norm_scene_units": 0.024833789095282555,
+    "rotation_tangent_norm_rad": 0.0055945683270692825
+  },
+  {
+    "training_index": 163,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00182.png",
+    "pose_adjustment_translation_so3": [
+      -0.0043353126384317875,
+      -0.006452934816479683,
+      0.0279324259608984,
+      0.0040519339963793755,
+      0.004861587658524513,
+      -0.01299795787781477
+    ],
+    "translation_norm_scene_units": 0.028994062915444374,
+    "rotation_tangent_norm_rad": 0.014456835575401783
+  },
+  {
+    "training_index": 164,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00183.png",
+    "pose_adjustment_translation_so3": [
+      0.008519262075424194,
+      0.01248805969953537,
+      0.01817525364458561,
+      -0.002292621647939086,
+      0.0028424428310245275,
+      -0.0057146018370985985
+    ],
+    "translation_norm_scene_units": 0.02364041656255722,
+    "rotation_tangent_norm_rad": 0.006781760137528181
+  },
+  {
+    "training_index": 165,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00184.png",
+    "pose_adjustment_translation_so3": [
+      -0.009394019842147827,
+      0.015919407829642296,
+      0.01827671378850937,
+      -0.003320538904517889,
+      0.0005910748732276261,
+      -0.0005680708563886583
+    ],
+    "translation_norm_scene_units": 0.02599448896944523,
+    "rotation_tangent_norm_rad": 0.003420241642743349
+  },
+  {
+    "training_index": 166,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00185.png",
+    "pose_adjustment_translation_so3": [
+      -0.0054454621858894825,
+      -0.012340088374912739,
+      0.025217538699507713,
+      -0.002093411749228835,
+      0.0014654566766694188,
+      -0.004499984439462423
+    ],
+    "translation_norm_scene_units": 0.02859816700220108,
+    "rotation_tangent_norm_rad": 0.005174919962882996
+  },
+  {
+    "training_index": 167,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00186.png",
+    "pose_adjustment_translation_so3": [
+      -0.0008457463700324297,
+      -0.0040295966900885105,
+      0.0061407070606946945,
+      -0.002043980173766613,
+      0.0008383790263906121,
+      -0.0008884741109795868
+    ],
+    "translation_norm_scene_units": 0.007393322419375181,
+    "rotation_tangent_norm_rad": 0.0023812016006559134
+  },
+  {
+    "training_index": 168,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00187.png",
+    "pose_adjustment_translation_so3": [
+      0.0007448768010362983,
+      -0.0008133793016895652,
+      0.0054369401186704636,
+      -0.0014312100829556584,
+      0.003703696420416236,
+      0.000859011197462678
+    ],
+    "translation_norm_scene_units": 0.005547679029405117,
+    "rotation_tangent_norm_rad": 0.004062465857714415
+  },
+  {
+    "training_index": 169,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00188.png",
+    "pose_adjustment_translation_so3": [
+      0.009404693730175495,
+      -0.004355333745479584,
+      0.019771305844187737,
+      -0.0027170260436832905,
+      0.003882978344336152,
+      -0.0006565655930899084
+    ],
+    "translation_norm_scene_units": 0.0223231203854084,
+    "rotation_tangent_norm_rad": 0.00478443643078208
+  },
+  {
+    "training_index": 170,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00189.png",
+    "pose_adjustment_translation_so3": [
+      -0.0042062783613801,
+      -0.003531316528096795,
+      0.008340522646903992,
+      -0.002279551001265645,
+      0.004562680143862963,
+      -0.00042433434282429516
+    ],
+    "translation_norm_scene_units": 0.00998635496944189,
+    "rotation_tangent_norm_rad": 0.0051180524751544
+  },
+  {
+    "training_index": 171,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00191.png",
+    "pose_adjustment_translation_so3": [
+      0.004976409953087568,
+      -0.0032130975741893053,
+      0.013699820265173912,
+      -0.0027412683703005314,
+      0.003078845329582691,
+      -0.00110749457962811
+    ],
+    "translation_norm_scene_units": 0.014925606548786163,
+    "rotation_tangent_norm_rad": 0.004268534481525421
+  },
+  {
+    "training_index": 172,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00192.png",
+    "pose_adjustment_translation_so3": [
+      -0.008149141445755959,
+      -0.0033027585595846176,
+      0.0008230733801610768,
+      -0.0023956298828125,
+      0.00029604180599562824,
+      -0.00031986398971639574
+    ],
+    "translation_norm_scene_units": 0.008831431157886982,
+    "rotation_tangent_norm_rad": 0.0024349531158804893
+  },
+  {
+    "training_index": 173,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00193.png",
+    "pose_adjustment_translation_so3": [
+      -0.015500164590775967,
+      -0.009976416826248169,
+      0.006911745760589838,
+      -0.0008970540366135538,
+      -0.0015588984824717045,
+      -0.006320219486951828
+    ],
+    "translation_norm_scene_units": 0.019686447456479073,
+    "rotation_tangent_norm_rad": 0.006571152247488499
+  },
+  {
+    "training_index": 174,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00194.png",
+    "pose_adjustment_translation_so3": [
+      -0.010794669389724731,
+      0.0033566367346793413,
+      0.023522883653640747,
+      -0.004243114031851292,
+      -0.0015152356354519725,
+      -0.006292336154729128
+    ],
+    "translation_norm_scene_units": 0.026098236441612244,
+    "rotation_tangent_norm_rad": 0.007739085704088211
+  },
+  {
+    "training_index": 175,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00195.png",
+    "pose_adjustment_translation_so3": [
+      -0.017817214131355286,
+      -0.001985024893656373,
+      0.009596372954547405,
+      -0.004866634029895067,
+      0.0006738837691955268,
+      -0.004434165544807911
+    ],
+    "translation_norm_scene_units": 0.02033430151641369,
+    "rotation_tangent_norm_rad": 0.006618162151426077
+  },
+  {
+    "training_index": 176,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00196.png",
+    "pose_adjustment_translation_so3": [
+      -0.004995681345462799,
+      0.0016792787937447429,
+      0.01741952821612358,
+      -0.009499805979430676,
+      0.00017624159227125347,
+      -0.004078038036823273
+    ],
+    "translation_norm_scene_units": 0.018199361860752106,
+    "rotation_tangent_norm_rad": 0.01033962145447731
+  },
+  {
+    "training_index": 177,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00197.png",
+    "pose_adjustment_translation_so3": [
+      -0.010674993507564068,
+      -0.0126732736825943,
+      0.004390510730445385,
+      -0.0011068995809182525,
+      0.0061556496657431126,
+      0.008789203129708767
+    ],
+    "translation_norm_scene_units": 0.017141876742243767,
+    "rotation_tangent_norm_rad": 0.010787369683384895
+  },
+  {
+    "training_index": 178,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00198.png",
+    "pose_adjustment_translation_so3": [
+      -0.005804427899420261,
+      0.0034662606194615364,
+      0.008173739537596703,
+      -0.004163519479334354,
+      0.008263831026852131,
+      -0.00013374752597883344
+    ],
+    "translation_norm_scene_units": 0.010607372969388962,
+    "rotation_tangent_norm_rad": 0.009254387579858303
+  },
+  {
+    "training_index": 179,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00199.png",
+    "pose_adjustment_translation_so3": [
+      -0.01674778014421463,
+      -0.008636090904474258,
+      0.005526769906282425,
+      0.003599567338824272,
+      0.0036015037912875414,
+      0.0010817564325407147
+    ],
+    "translation_norm_scene_units": 0.0196370929479599,
+    "rotation_tangent_norm_rad": 0.005205565597862005
+  },
+  {
+    "training_index": 180,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00201.png",
+    "pose_adjustment_translation_so3": [
+      -0.022006522864103317,
+      0.01018664613366127,
+      0.02516152895987034,
+      0.005625398829579353,
+      0.007391706109046936,
+      0.004228645469993353
+    ],
+    "translation_norm_scene_units": 0.034945063292980194,
+    "rotation_tangent_norm_rad": 0.010206070728600025
+  },
+  {
+    "training_index": 181,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00202.png",
+    "pose_adjustment_translation_so3": [
+      0.006648026406764984,
+      0.005719694308936596,
+      0.03021487407386303,
+      0.005437396466732025,
+      0.006890931166708469,
+      -0.0021214992739260197
+    ],
+    "translation_norm_scene_units": 0.03146187961101532,
+    "rotation_tangent_norm_rad": 0.009030558168888092
+  },
+  {
+    "training_index": 182,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00203.png",
+    "pose_adjustment_translation_so3": [
+      0.002712126122787595,
+      0.0029160548001527786,
+      0.002872020471841097,
+      0.0026569899637252092,
+      0.005303127691149712,
+      -0.003904816461727023
+    ],
+    "translation_norm_scene_units": 0.004909939598292112,
+    "rotation_tangent_norm_rad": 0.007101432885974646
+  },
+  {
+    "training_index": 183,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00204.png",
+    "pose_adjustment_translation_so3": [
+      -0.0009589930414222181,
+      0.005589905194938183,
+      0.010345877148211002,
+      0.0009225335088558495,
+      0.0036802105605602264,
+      4.336711936048232e-05
+    ],
+    "translation_norm_scene_units": 0.011798469349741936,
+    "rotation_tangent_norm_rad": 0.0037943245843052864
+  },
+  {
+    "training_index": 184,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00205.png",
+    "pose_adjustment_translation_so3": [
+      -0.0010135596385225654,
+      0.007617350667715073,
+      0.005955590400844812,
+      -0.0020452917087823153,
+      0.00033433374483138323,
+      -0.0015133317792788148
+    ],
+    "translation_norm_scene_units": 0.009722160175442696,
+    "rotation_tangent_norm_rad": 0.0025661587715148926
+  },
+  {
+    "training_index": 185,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00206.png",
+    "pose_adjustment_translation_so3": [
+      0.006575420964509249,
+      -0.005267965141683817,
+      0.02789592184126377,
+      -0.0006533280247822404,
+      -0.00010569057485554367,
+      -0.0034312529023736715
+    ],
+    "translation_norm_scene_units": 0.029140522703528404,
+    "rotation_tangent_norm_rad": 0.003494496224448085
+  },
+  {
+    "training_index": 186,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00207.png",
+    "pose_adjustment_translation_so3": [
+      0.006254786159843206,
+      -0.014323982410132885,
+      0.02083027921617031,
+      -0.0017398897325620055,
+      -0.0009282429236918688,
+      0.0012236706679686904
+    ],
+    "translation_norm_scene_units": 0.026042260229587555,
+    "rotation_tangent_norm_rad": 0.002320823259651661
+  },
+  {
+    "training_index": 187,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00208.png",
+    "pose_adjustment_translation_so3": [
+      0.006137303542345762,
+      -0.0010005231015384197,
+      0.0004318373976275325,
+      -0.0037041231989860535,
+      -0.0014818048803135753,
+      -0.005282944068312645
+    ],
+    "translation_norm_scene_units": 0.006233299616724253,
+    "rotation_tangent_norm_rad": 0.006620103493332863
+  },
+  {
+    "training_index": 188,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00209.png",
+    "pose_adjustment_translation_so3": [
+      -0.002976916264742613,
+      -0.005488264840096235,
+      -0.0050836168229579926,
+      -0.002371633192524314,
+      -0.0036410302855074406,
+      -0.006970287300646305
+    ],
+    "translation_norm_scene_units": 0.008051474578678608,
+    "rotation_tangent_norm_rad": 0.008213808760046959
+  },
+  {
+    "training_index": 189,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00211.png",
+    "pose_adjustment_translation_so3": [
+      -0.025585336610674858,
+      0.0038406706880778074,
+      -0.00199238327331841,
+      -0.005116189830005169,
+      -0.002305935835465789,
+      -0.005646910052746534
+    ],
+    "translation_norm_scene_units": 0.025948598980903625,
+    "rotation_tangent_norm_rad": 0.007961176335811615
+  },
+  {
+    "training_index": 190,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00212.png",
+    "pose_adjustment_translation_so3": [
+      -0.02317015826702118,
+      -0.00601562624797225,
+      0.029360314831137657,
+      -0.005346473306417465,
+      -0.0008576122927479446,
+      -0.007692961487919092
+    ],
+    "translation_norm_scene_units": 0.03788234293460846,
+    "rotation_tangent_norm_rad": 0.009407546371221542
+  },
+  {
+    "training_index": 191,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00213.png",
+    "pose_adjustment_translation_so3": [
+      -0.02037283591926098,
+      -0.004744209349155426,
+      -0.028601666912436485,
+      -0.007555454969406128,
+      -0.0027950010262429714,
+      -0.003289643209427595
+    ],
+    "translation_norm_scene_units": 0.03543466329574585,
+    "rotation_tangent_norm_rad": 0.008701647631824017
+  },
+  {
+    "training_index": 192,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00214.png",
+    "pose_adjustment_translation_so3": [
+      0.0015656746691092849,
+      0.005840579979121685,
+      -0.03227265551686287,
+      -0.008501456119120121,
+      0.00030127723584882915,
+      -0.004305457696318626
+    ],
+    "translation_norm_scene_units": 0.0328342504799366,
+    "rotation_tangent_norm_rad": 0.009534279815852642
+  },
+  {
+    "training_index": 193,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00215.png",
+    "pose_adjustment_translation_so3": [
+      0.01153566688299179,
+      0.007091664243489504,
+      0.031576335430145264,
+      -0.010259921662509441,
+      2.8845270207966678e-05,
+      -0.00935369823127985
+    ],
+    "translation_norm_scene_units": 0.03435736149549484,
+    "rotation_tangent_norm_rad": 0.013883749023079872
+  },
+  {
+    "training_index": 194,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00216.png",
+    "pose_adjustment_translation_so3": [
+      -0.0036934323143213987,
+      0.0006475306581705809,
+      0.0005312624853104353,
+      -0.006944197695702314,
+      -0.0008381300140172243,
+      -0.011306560598313808
+    ],
+    "translation_norm_scene_units": 0.0037872123066335917,
+    "rotation_tangent_norm_rad": 0.01329521182924509
+  },
+  {
+    "training_index": 195,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00217.png",
+    "pose_adjustment_translation_so3": [
+      -0.004296003375202417,
+      0.008251389488577843,
+      0.0012835131492465734,
+      -0.007891304790973663,
+      -9.045516344485804e-05,
+      -0.004572406876832247
+    ],
+    "translation_norm_scene_units": 0.009390871971845627,
+    "rotation_tangent_norm_rad": 0.009120733477175236
+  },
+  {
+    "training_index": 196,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00218.png",
+    "pose_adjustment_translation_so3": [
+      -0.004462967626750469,
+      0.002483847551047802,
+      0.0026406419929116964,
+      -0.004355655983090401,
+      -0.0005330729763954878,
+      0.0029222045559436083
+    ],
+    "translation_norm_scene_units": 0.005749831907451153,
+    "rotation_tangent_norm_rad": 0.005272114183753729
+  },
+  {
+    "training_index": 197,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00219.png",
+    "pose_adjustment_translation_so3": [
+      -0.0037561901845037937,
+      0.0027541727758944035,
+      0.012554309330880642,
+      -0.003576125716790557,
+      0.0003902986936736852,
+      0.009220723062753677
+    ],
+    "translation_norm_scene_units": 0.013390486128628254,
+    "rotation_tangent_norm_rad": 0.00989761296659708
+  },
+  {
+    "training_index": 198,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00221.png",
+    "pose_adjustment_translation_so3": [
+      -0.008782128803431988,
+      0.016230089589953423,
+      -0.001337577821686864,
+      0.005110816564410925,
+      0.004668985493481159,
+      0.0131881358101964
+    ],
+    "translation_norm_scene_units": 0.01850218139588833,
+    "rotation_tangent_norm_rad": 0.014894522726535797
+  },
+  {
+    "training_index": 199,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00222.png",
+    "pose_adjustment_translation_so3": [
+      -0.010511603206396103,
+      0.010048141703009605,
+      -0.018662787973880768,
+      0.0117001011967659,
+      0.007445106748491526,
+      0.007536927238106728
+    ],
+    "translation_norm_scene_units": 0.023659218102693558,
+    "rotation_tangent_norm_rad": 0.01578376442193985
+  },
+  {
+    "training_index": 200,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00223.png",
+    "pose_adjustment_translation_so3": [
+      -0.0058082472532987595,
+      0.00984600093215704,
+      0.023953812196850777,
+      0.010816010646522045,
+      0.011193702928721905,
+      0.006150339264422655
+    ],
+    "translation_norm_scene_units": 0.026541752740740776,
+    "rotation_tangent_norm_rad": 0.01673653908073902
+  },
+  {
+    "training_index": 201,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00224.png",
+    "pose_adjustment_translation_so3": [
+      -0.003975697327405214,
+      0.011509888805449009,
+      0.02532561495900154,
+      0.012312608771026134,
+      0.009346549399197102,
+      0.002620472339913249
+    ],
+    "translation_norm_scene_units": 0.028101077303290367,
+    "rotation_tangent_norm_rad": 0.01567881368100643
+  },
+  {
+    "training_index": 202,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00225.png",
+    "pose_adjustment_translation_so3": [
+      -0.006412172224372625,
+      0.011647519655525684,
+      0.023182155564427376,
+      0.01129341870546341,
+      0.003162860171869397,
+      -0.0010288949124515057
+    ],
+    "translation_norm_scene_units": 0.02672438882291317,
+    "rotation_tangent_norm_rad": 0.01177300326526165
+  },
+  {
+    "training_index": 203,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00226.png",
+    "pose_adjustment_translation_so3": [
+      0.0009484995389357209,
+      0.014066895470023155,
+      0.027290072292089462,
+      0.010872028768062592,
+      0.0029361629858613014,
+      -0.0006295217899605632
+    ],
+    "translation_norm_scene_units": 0.030716855078935623,
+    "rotation_tangent_norm_rad": 0.011279111728072166
+  },
+  {
+    "training_index": 204,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00227.png",
+    "pose_adjustment_translation_so3": [
+      0.0013918280601501465,
+      0.012882876209914684,
+      0.016924908384680748,
+      0.011068551801145077,
+      0.0005497139063663781,
+      -0.0013660468393936753
+    ],
+    "translation_norm_scene_units": 0.02131567895412445,
+    "rotation_tangent_norm_rad": 0.011166068725287914
+  },
+  {
+    "training_index": 205,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00228.png",
+    "pose_adjustment_translation_so3": [
+      0.006380004342645407,
+      0.010961293242871761,
+      0.01214867178350687,
+      0.012026574462652206,
+      -0.00037272312329150736,
+      -0.002714836271479726
+    ],
+    "translation_norm_scene_units": 0.017562592402100563,
+    "rotation_tangent_norm_rad": 0.012334818951785564
+  },
+  {
+    "training_index": 206,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00229.png",
+    "pose_adjustment_translation_so3": [
+      0.006429947447031736,
+      0.009610691107809544,
+      0.011026158928871155,
+      0.011084054596722126,
+      0.0025574492756277323,
+      -0.008453050628304482
+    ],
+    "translation_norm_scene_units": 0.015977665781974792,
+    "rotation_tangent_norm_rad": 0.014172187075018883
+  },
+  {
+    "training_index": 207,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00231.png",
+    "pose_adjustment_translation_so3": [
+      0.0033123698085546494,
+      0.004987754859030247,
+      0.013988337479531765,
+      0.003995642066001892,
+      -0.0026885592378675938,
+      -0.0045202611945569515
+    ],
+    "translation_norm_scene_units": 0.01521588210016489,
+    "rotation_tangent_norm_rad": 0.006605018395930529
+  },
+  {
+    "training_index": 208,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00232.png",
+    "pose_adjustment_translation_so3": [
+      0.0016723079606890678,
+      0.0024508670903742313,
+      0.008898762986063957,
+      0.0017842829693108797,
+      -0.005116136744618416,
+      -0.0047761667519807816
+    ],
+    "translation_norm_scene_units": 0.009380370378494263,
+    "rotation_tangent_norm_rad": 0.007222900167107582
+  },
+  {
+    "training_index": 209,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00233.png",
+    "pose_adjustment_translation_so3": [
+      0.0012961634201928973,
+      0.007772501558065414,
+      -0.0014345783274620771,
+      -0.0010295966640114784,
+      -0.007079738657921553,
+      -0.004029024858027697
+    ],
+    "translation_norm_scene_units": 0.008009359240531921,
+    "rotation_tangent_norm_rad": 0.008210713043808937
+  },
+  {
+    "training_index": 210,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00234.png",
+    "pose_adjustment_translation_so3": [
+      0.0019162337994202971,
+      0.0033852725755423307,
+      0.011287298984825611,
+      0.001997909042984247,
+      -0.007856711745262146,
+      -0.002345375483855605
+    ],
+    "translation_norm_scene_units": 0.011938807554543018,
+    "rotation_tangent_norm_rad": 0.008439214900135994
+  },
+  {
+    "training_index": 211,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00235.png",
+    "pose_adjustment_translation_so3": [
+      -0.005564320832490921,
+      -0.003414842765778303,
+      -0.008228318765759468,
+      0.003083961782976985,
+      -0.007797536440193653,
+      -0.014755806885659695
+    ],
+    "translation_norm_scene_units": 0.010503715835511684,
+    "rotation_tangent_norm_rad": 0.016971925273537636
+  },
+  {
+    "training_index": 212,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00236.png",
+    "pose_adjustment_translation_so3": [
+      -0.010699045844376087,
+      -0.004988553002476692,
+      -0.010751081630587578,
+      0.0035971314646303654,
+      -0.005771853495389223,
+      -0.012723402120172977
+    ],
+    "translation_norm_scene_units": 0.015966871753335,
+    "rotation_tangent_norm_rad": 0.014427009969949722
+  },
+  {
+    "training_index": 213,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00237.png",
+    "pose_adjustment_translation_so3": [
+      -0.003138430416584015,
+      0.004246703814715147,
+      -0.013717692345380783,
+      0.0019558079075068235,
+      -0.004486731253564358,
+      -0.010817189700901508
+    ],
+    "translation_norm_scene_units": 0.014698957093060017,
+    "rotation_tangent_norm_rad": 0.011872975155711174
+  },
+  {
+    "training_index": 214,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00238.png",
+    "pose_adjustment_translation_so3": [
+      -0.005751558113843203,
+      8.669685485074297e-06,
+      -0.026124391704797745,
+      -0.002799808280542493,
+      -0.003097702283412218,
+      -0.007227388210594654
+    ],
+    "translation_norm_scene_units": 0.02675003558397293,
+    "rotation_tangent_norm_rad": 0.008346845395863056
+  },
+  {
+    "training_index": 215,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00239.png",
+    "pose_adjustment_translation_so3": [
+      -0.02004138194024563,
+      0.0018763577099889517,
+      -0.01508024986833334,
+      -0.004245710093528032,
+      -0.0019121546065434813,
+      -0.00954560935497284
+    ],
+    "translation_norm_scene_units": 0.02515137568116188,
+    "rotation_tangent_norm_rad": 0.010620784014463425
+  },
+  {
+    "training_index": 216,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00241.png",
+    "pose_adjustment_translation_so3": [
+      -0.010926224291324615,
+      0.009142851456999779,
+      0.019473323598504066,
+      -0.003927025478333235,
+      0.0027666338719427586,
+      0.014687382616102695
+    ],
+    "translation_norm_scene_units": 0.024128498509526253,
+    "rotation_tangent_norm_rad": 0.015452993102371693
+  },
+  {
+    "training_index": 217,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00242.png",
+    "pose_adjustment_translation_so3": [
+      -0.010287598706781864,
+      0.007224227301776409,
+      0.018060360103845596,
+      -0.00021582575573120266,
+      0.0024934064131230116,
+      0.0133970333263278
+    ],
+    "translation_norm_scene_units": 0.022004561498761177,
+    "rotation_tangent_norm_rad": 0.01362879853695631
+  },
+  {
+    "training_index": 218,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00243.png",
+    "pose_adjustment_translation_so3": [
+      -0.0036166722420603037,
+      0.006816622335463762,
+      0.01839788258075714,
+      -0.00019143990357406437,
+      0.004000679589807987,
+      0.005099199246615171
+    ],
+    "translation_norm_scene_units": 0.019950658082962036,
+    "rotation_tangent_norm_rad": 0.0064841280691325665
+  },
+  {
+    "training_index": 219,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00244.png",
+    "pose_adjustment_translation_so3": [
+      -0.0030664864461869,
+      0.010438033379614353,
+      -0.00258044246584177,
+      0.0005717381136491895,
+      0.0019509055418893695,
+      0.008365810848772526
+    ],
+    "translation_norm_scene_units": 0.011180991306900978,
+    "rotation_tangent_norm_rad": 0.008609279990196228
+  },
+  {
+    "training_index": 220,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00245.png",
+    "pose_adjustment_translation_so3": [
+      -0.002471499377861619,
+      0.009507803246378899,
+      0.0041647679172456264,
+      0.0016890449915081263,
+      -0.0002700112818274647,
+      0.011237408965826035
+    ],
+    "translation_norm_scene_units": 0.010670141316950321,
+    "rotation_tangent_norm_rad": 0.011366844177246094
+  },
+  {
+    "training_index": 221,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00246.png",
+    "pose_adjustment_translation_so3": [
+      0.011236569844186306,
+      0.00896834209561348,
+      -0.005476156249642372,
+      -0.00024796967045404017,
+      0.005163377616554499,
+      0.0001432098652003333
+    ],
+    "translation_norm_scene_units": 0.015384405851364136,
+    "rotation_tangent_norm_rad": 0.005171312019228935
+  },
+  {
+    "training_index": 222,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00247.png",
+    "pose_adjustment_translation_so3": [
+      -0.0012309879530221224,
+      0.016884630545973778,
+      0.008042101748287678,
+      0.001997500192373991,
+      0.0010305598843842745,
+      0.011187545955181122
+    ],
+    "translation_norm_scene_units": 0.018742505460977554,
+    "rotation_tangent_norm_rad": 0.011411101557314396
+  },
+  {
+    "training_index": 223,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00248.png",
+    "pose_adjustment_translation_so3": [
+      -0.0046790423803031445,
+      0.0116493571549654,
+      0.001628140453249216,
+      0.0034625271800905466,
+      0.0021538424771279097,
+      0.009439573623239994
+    ],
+    "translation_norm_scene_units": 0.012659059837460518,
+    "rotation_tangent_norm_rad": 0.010282688774168491
+  },
+  {
+    "training_index": 224,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00249.png",
+    "pose_adjustment_translation_so3": [
+      -0.00301282643340528,
+      0.010338609106838703,
+      0.010026183910667896,
+      0.004143857397139072,
+      0.003854266135022044,
+      0.004975719377398491
+    ],
+    "translation_norm_scene_units": 0.014713541604578495,
+    "rotation_tangent_norm_rad": 0.007535562850534916
+  },
+  {
+    "training_index": 225,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00251.png",
+    "pose_adjustment_translation_so3": [
+      -4.4308351789368317e-05,
+      0.013377648778259754,
+      0.016540680080652237,
+      0.002271791687235236,
+      0.004144791979342699,
+      -0.006090203765779734
+    ],
+    "translation_norm_scene_units": 0.021273400634527206,
+    "rotation_tangent_norm_rad": 0.007709145080298185
+  },
+  {
+    "training_index": 226,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00252.png",
+    "pose_adjustment_translation_so3": [
+      0.004967520944774151,
+      0.014355769380927086,
+      0.021660298109054565,
+      0.0008671864634379745,
+      0.004645104520022869,
+      -0.008078356273472309
+    ],
+    "translation_norm_scene_units": 0.02645624428987503,
+    "rotation_tangent_norm_rad": 0.009358891285955906
+  },
+  {
+    "training_index": 227,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00253.png",
+    "pose_adjustment_translation_so3": [
+      0.0017686492064967752,
+      0.019559646025300026,
+      0.029309378936886787,
+      -0.0026296747382730246,
+      0.0035415736492723227,
+      -0.006425055209547281
+    ],
+    "translation_norm_scene_units": 0.0352809801697731,
+    "rotation_tangent_norm_rad": 0.007793540135025978
+  },
+  {
+    "training_index": 228,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00254.png",
+    "pose_adjustment_translation_so3": [
+      -0.0015828862087801099,
+      0.016969775781035423,
+      -0.016475016251206398,
+      -0.0020130567718297243,
+      0.0016730461502447724,
+      -0.0017815514001995325
+    ],
+    "translation_norm_scene_units": 0.023704534396529198,
+    "rotation_tangent_norm_rad": 0.003166292328387499
+  },
+  {
+    "training_index": 229,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00255.png",
+    "pose_adjustment_translation_so3": [
+      -0.0018168076639994979,
+      0.013233442790806293,
+      0.026417747139930725,
+      -0.004939332604408264,
+      0.0006180847412906587,
+      -0.006581419613212347
+    ],
+    "translation_norm_scene_units": 0.029602738097310066,
+    "rotation_tangent_norm_rad": 0.008251916617155075
+  },
+  {
+    "training_index": 230,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00256.png",
+    "pose_adjustment_translation_so3": [
+      -0.01808341033756733,
+      0.0005803231615573168,
+      -0.025984227657318115,
+      -0.0006436023395508528,
+      -0.00028512501739896834,
+      0.002936966484412551
+    ],
+    "translation_norm_scene_units": 0.031662698835134506,
+    "rotation_tangent_norm_rad": 0.003020147792994976
+  },
+  {
+    "training_index": 231,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00257.png",
+    "pose_adjustment_translation_so3": [
+      -0.010577901266515255,
+      -4.707566404249519e-05,
+      0.016499444842338562,
+      0.0012510607484728098,
+      0.0011295569129288197,
+      0.00651707174256444
+    ],
+    "translation_norm_scene_units": 0.019599130377173424,
+    "rotation_tangent_norm_rad": 0.006731513421982527
+  },
+  {
+    "training_index": 232,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00258.png",
+    "pose_adjustment_translation_so3": [
+      0.00016600867093075067,
+      0.005293975118547678,
+      0.01091034710407257,
+      0.00022055675799492747,
+      0.002005880232900381,
+      0.00423686346039176
+    ],
+    "translation_norm_scene_units": 0.012128042057156563,
+    "rotation_tangent_norm_rad": 0.004692889750003815
+  },
+  {
+    "training_index": 233,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00259.png",
+    "pose_adjustment_translation_so3": [
+      0.0003040175652131438,
+      0.0007404221105389297,
+      0.007458233740180731,
+      0.0021378323435783386,
+      0.003948401194065809,
+      -0.0023524658754467964
+    ],
+    "translation_norm_scene_units": 0.007501060143113136,
+    "rotation_tangent_norm_rad": 0.0050689540803432465
+  },
+  {
+    "training_index": 234,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00261.png",
+    "pose_adjustment_translation_so3": [
+      0.00948268361389637,
+      0.01110180001705885,
+      0.0034457624424248934,
+      -0.0008405423141084611,
+      0.0028073424473404884,
+      -0.006734203547239304
+    ],
+    "translation_norm_scene_units": 0.01500148419290781,
+    "rotation_tangent_norm_rad": 0.007344193756580353
+  },
+  {
+    "training_index": 235,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00262.png",
+    "pose_adjustment_translation_so3": [
+      0.012431003153324127,
+      0.011691004037857056,
+      -0.010435226373374462,
+      -0.0009245279361493886,
+      0.002497417386621237,
+      -0.008181082084774971
+    ],
+    "translation_norm_scene_units": 0.020002584904432297,
+    "rotation_tangent_norm_rad": 0.008603600785136223
+  },
+  {
+    "training_index": 236,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00263.png",
+    "pose_adjustment_translation_so3": [
+      0.01084719318896532,
+      0.010937575250864029,
+      0.0005146340699866414,
+      -0.0005664190393872559,
+      0.0013096444308757782,
+      -0.009731394238770008
+    ],
+    "translation_norm_scene_units": 0.015412883833050728,
+    "rotation_tangent_norm_rad": 0.009835448116064072
+  },
+  {
+    "training_index": 237,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00264.png",
+    "pose_adjustment_translation_so3": [
+      -0.0006001114379614592,
+      -0.0017515391809865832,
+      -0.004074842669069767,
+      0.0009600775083526969,
+      0.0004786036442965269,
+      -0.013158411718904972
+    ],
+    "translation_norm_scene_units": 0.004475753288716078,
+    "rotation_tangent_norm_rad": 0.013202068395912647
+  },
+  {
+    "training_index": 238,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00265.png",
+    "pose_adjustment_translation_so3": [
+      0.0013643797719851136,
+      0.01041114330291748,
+      0.007961376570165157,
+      -0.0013966724509373307,
+      1.5305422493838705e-05,
+      -0.009809253737330437
+    ],
+    "translation_norm_scene_units": 0.013177137821912766,
+    "rotation_tangent_norm_rad": 0.00990819837898016
+  },
+  {
+    "training_index": 239,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00266.png",
+    "pose_adjustment_translation_so3": [
+      -0.007990844547748566,
+      0.004898818209767342,
+      0.01665639504790306,
+      -0.0026543871499598026,
+      -0.0010487063555046916,
+      -0.0036771486047655344
+    ],
+    "translation_norm_scene_units": 0.019112495705485344,
+    "rotation_tangent_norm_rad": 0.004654780030250549
+  },
+  {
+    "training_index": 240,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00267.png",
+    "pose_adjustment_translation_so3": [
+      -0.0063864788971841335,
+      7.395569264190271e-05,
+      -0.0027963994070887566,
+      -0.0011084044817835093,
+      0.000360885780537501,
+      0.0007262544240802526
+    ],
+    "translation_norm_scene_units": 0.006972261238843203,
+    "rotation_tangent_norm_rad": 0.0013734061503782868
+  },
+  {
+    "training_index": 241,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00268.png",
+    "pose_adjustment_translation_so3": [
+      -0.0028121809009462595,
+      0.004583142697811127,
+      0.01840214431285858,
+      -0.002009808551520109,
+      -0.0010749223874881864,
+      -0.0007769301300868392
+    ],
+    "translation_norm_scene_units": 0.019171658903360367,
+    "rotation_tangent_norm_rad": 0.0024079885333776474
+  },
+  {
+    "training_index": 242,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00269.png",
+    "pose_adjustment_translation_so3": [
+      0.01052138302475214,
+      0.010695730336010456,
+      0.012216330505907536,
+      -0.0028442945331335068,
+      0.00046505979844368994,
+      -0.0010198280215263367
+    ],
+    "translation_norm_scene_units": 0.019347786903381348,
+    "rotation_tangent_norm_rad": 0.0030571785755455494
+  },
+  {
+    "training_index": 243,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00271.png",
+    "pose_adjustment_translation_so3": [
+      0.0026343248318880796,
+      0.010238409973680973,
+      -0.005318380426615477,
+      -0.0017279979074373841,
+      -0.0012762879487127066,
+      -0.0039001191034913063
+    ],
+    "translation_norm_scene_units": 0.011834266595542431,
+    "rotation_tangent_norm_rad": 0.004452619235962629
+  },
+  {
+    "training_index": 244,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00272.png",
+    "pose_adjustment_translation_so3": [
+      -0.0073766629211604595,
+      0.007393360137939453,
+      0.018498651683330536,
+      -0.002729574916884303,
+      -0.0016696755774319172,
+      -0.004349646624177694
+    ],
+    "translation_norm_scene_units": 0.021243281662464142,
+    "rotation_tangent_norm_rad": 0.005399798508733511
+  },
+  {
+    "training_index": 245,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00273.png",
+    "pose_adjustment_translation_so3": [
+      0.00014745371299795806,
+      -0.0037735288497060537,
+      0.021292705088853836,
+      -0.002150098793208599,
+      0.00020150738419033587,
+      -0.005764576606452465
+    ],
+    "translation_norm_scene_units": 0.02162499912083149,
+    "rotation_tangent_norm_rad": 0.006155800074338913
+  },
+  {
+    "training_index": 246,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00274.png",
+    "pose_adjustment_translation_so3": [
+      0.0009079758310690522,
+      0.0070858001708984375,
+      0.01579943858087063,
+      -0.0010242675198242068,
+      0.0009793187491595745,
+      0.0038579958491027355
+    ],
+    "translation_norm_scene_units": 0.017339413985610008,
+    "rotation_tangent_norm_rad": 0.004110027104616165
+  },
+  {
+    "training_index": 247,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00275.png",
+    "pose_adjustment_translation_so3": [
+      -0.007711781654506922,
+      -0.0024527672212570906,
+      -0.0009479537839069963,
+      -0.00028500682674348354,
+      -0.003255329327657819,
+      -0.0009998570894822478
+    ],
+    "translation_norm_scene_units": 0.008147776126861572,
+    "rotation_tangent_norm_rad": 0.0034173252061009407
+  },
+  {
+    "training_index": 248,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00276.png",
+    "pose_adjustment_translation_so3": [
+      -0.004148336127400398,
+      -0.01053773146122694,
+      0.005233829841017723,
+      -0.0003868608910124749,
+      -0.0024340797681361437,
+      -0.0053793624974787235
+    ],
+    "translation_norm_scene_units": 0.012475794181227684,
+    "rotation_tangent_norm_rad": 0.0059170895256102085
+  },
+  {
+    "training_index": 249,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00277.png",
+    "pose_adjustment_translation_so3": [
+      0.007254290860146284,
+      -0.018155699595808983,
+      0.016889328137040138,
+      0.0024048956111073494,
+      -0.0024824358988553286,
+      -0.008026951923966408
+    ],
+    "translation_norm_scene_units": 0.025836089625954628,
+    "rotation_tangent_norm_rad": 0.008739449083805084
+  },
+  {
+    "training_index": 250,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00278.png",
+    "pose_adjustment_translation_so3": [
+      0.005472458433359861,
+      0.0012141941115260124,
+      0.02270534448325634,
+      -0.0018124292837455869,
+      -0.0005030626780353487,
+      -0.007498526480048895
+    ],
+    "translation_norm_scene_units": 0.023387063294649124,
+    "rotation_tangent_norm_rad": 0.007730838842689991
+  },
+  {
+    "training_index": 251,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00279.png",
+    "pose_adjustment_translation_so3": [
+      0.00017178246343974024,
+      -0.0012512966059148312,
+      -0.016258206218481064,
+      -0.0033795100171118975,
+      -0.0005159973516128957,
+      -0.007938701659440994
+    ],
+    "translation_norm_scene_units": 0.01630719192326069,
+    "rotation_tangent_norm_rad": 0.008643513545393944
+  },
+  {
+    "training_index": 252,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00281.png",
+    "pose_adjustment_translation_so3": [
+      0.003399370703846216,
+      0.01396817248314619,
+      0.007565424311906099,
+      -0.010811403393745422,
+      0.0015216761967167258,
+      0.006832966580986977
+    ],
+    "translation_norm_scene_units": 0.016245035454630852,
+    "rotation_tangent_norm_rad": 0.012879882007837296
+  },
+  {
+    "training_index": 253,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00282.png",
+    "pose_adjustment_translation_so3": [
+      -0.011083627119660378,
+      0.0048982216976583,
+      0.027751905843615532,
+      -0.011702575720846653,
+      -0.0010648767929524183,
+      0.00873626209795475
+    ],
+    "translation_norm_scene_units": 0.03028213419020176,
+    "rotation_tangent_norm_rad": 0.0146426260471344
+  },
+  {
+    "training_index": 254,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00283.png",
+    "pose_adjustment_translation_so3": [
+      -0.004098992329090834,
+      0.000984703190624714,
+      0.012171398848295212,
+      -0.006157730706036091,
+      0.0007397157605737448,
+      0.0008069773321039975
+    ],
+    "translation_norm_scene_units": 0.012880773283541203,
+    "rotation_tangent_norm_rad": 0.006254281848669052
+  },
+  {
+    "training_index": 255,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00284.png",
+    "pose_adjustment_translation_so3": [
+      -0.0045643458142876625,
+      -0.0002472739142831415,
+      0.001798392040655017,
+      -0.005650842562317848,
+      0.0007977959467098117,
+      0.001983368769288063
+    ],
+    "translation_norm_scene_units": 0.00491208815947175,
+    "rotation_tangent_norm_rad": 0.006041709333658218
+  },
+  {
+    "training_index": 256,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00285.png",
+    "pose_adjustment_translation_so3": [
+      -0.0028408754151314497,
+      0.007768557406961918,
+      0.016316816210746765,
+      -0.005842713173478842,
+      0.0008846025448292494,
+      0.004418041091412306
+    ],
+    "translation_norm_scene_units": 0.018293702974915504,
+    "rotation_tangent_norm_rad": 0.007378272712230682
+  },
+  {
+    "training_index": 257,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00286.png",
+    "pose_adjustment_translation_so3": [
+      0.005351753439754248,
+      -0.006440369412302971,
+      0.01913842186331749,
+      -0.004238647874444723,
+      0.003096445696428418,
+      -0.0003946621436625719
+    ],
+    "translation_norm_scene_units": 0.020890161395072937,
+    "rotation_tangent_norm_rad": 0.005264016799628735
+  },
+  {
+    "training_index": 258,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00287.png",
+    "pose_adjustment_translation_so3": [
+      -0.005506546702235937,
+      0.012998738326132298,
+      0.010114738717675209,
+      -0.003980229143053293,
+      -0.00029016859480179846,
+      0.00496448390185833
+    ],
+    "translation_norm_scene_units": 0.017366554588079453,
+    "rotation_tangent_norm_rad": 0.006369656417518854
+  },
+  {
+    "training_index": 259,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00288.png",
+    "pose_adjustment_translation_so3": [
+      0.0022677418310195208,
+      0.002231685211881995,
+      -0.002789402613416314,
+      0.002801754977554083,
+      -0.0008990110363811255,
+      -0.0026452697347849607
+    ],
+    "translation_norm_scene_units": 0.004231292754411697,
+    "rotation_tangent_norm_rad": 0.003956703469157219
+  },
+  {
+    "training_index": 260,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00289.png",
+    "pose_adjustment_translation_so3": [
+      0.0023581869900226593,
+      0.0002566129551269114,
+      -0.007725570350885391,
+      -0.0012060821754857898,
+      0.0012967776274308562,
+      -0.003979079890996218
+    ],
+    "translation_norm_scene_units": 0.008081542328000069,
+    "rotation_tangent_norm_rad": 0.004355380777269602
+  },
+  {
+    "training_index": 261,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00291.png",
+    "pose_adjustment_translation_so3": [
+      0.0028376602567732334,
+      0.006059647537767887,
+      -0.002464357065036893,
+      -0.0023558398243039846,
+      0.0007535830372944474,
+      -0.003257641103118658
+    ],
+    "translation_norm_scene_units": 0.0071305469609797,
+    "rotation_tangent_norm_rad": 0.004090243950486183
+  },
+  {
+    "training_index": 262,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00292.png",
+    "pose_adjustment_translation_so3": [
+      0.0007903309306129813,
+      0.00604926235973835,
+      -0.0027598044835031033,
+      -0.00235680746845901,
+      0.00046022763126529753,
+      -0.0032649401109665632
+    ],
+    "translation_norm_scene_units": 0.006695873104035854,
+    "rotation_tangent_norm_rad": 0.004052923060953617
+  },
+  {
+    "training_index": 263,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00293.png",
+    "pose_adjustment_translation_so3": [
+      0.0028345806058496237,
+      0.005969733465462923,
+      -0.002509729703888297,
+      -0.0022474273573607206,
+      0.001000356045551598,
+      -0.003299580654129386
+    ],
+    "translation_norm_scene_units": 0.007069038692861795,
+    "rotation_tangent_norm_rad": 0.004115686286240816
+  },
+  {
+    "training_index": 264,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00294.png",
+    "pose_adjustment_translation_so3": [
+      0.0014831986045464873,
+      0.005877986550331116,
+      -0.0022746941540390253,
+      -0.0023234370164573193,
+      0.0005734844598919153,
+      -0.00324884126894176
+    ],
+    "translation_norm_scene_units": 0.006474939174950123,
+    "rotation_tangent_norm_rad": 0.0040351226925849915
+  },
+  {
+    "training_index": 265,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00295.png",
+    "pose_adjustment_translation_so3": [
+      0.002823425456881523,
+      0.0059197405353188515,
+      -0.0024834894575178623,
+      -0.0022540322970598936,
+      0.0010016461601480842,
+      -0.0034482553601264954
+    ],
+    "translation_norm_scene_units": 0.007013043388724327,
+    "rotation_tangent_norm_rad": 0.004239625297486782
+  },
+  {
+    "training_index": 266,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00296.png",
+    "pose_adjustment_translation_so3": [
+      0.002848925767466426,
+      0.005917167291045189,
+      -0.002452569780871272,
+      -0.0022753430530428886,
+      0.0010167666478082538,
+      -0.00345715438015759
+    ],
+    "translation_norm_scene_units": 0.007010302972048521,
+    "rotation_tangent_norm_rad": 0.004261797294020653
+  },
+  {
+    "training_index": 267,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00297.png",
+    "pose_adjustment_translation_so3": [
+      0.002817431464791298,
+      0.005893150344491005,
+      -0.0024514596443623304,
+      -0.0023264186456799507,
+      0.0007788104121573269,
+      -0.0032698498107492924
+    ],
+    "translation_norm_scene_units": 0.006976875476539135,
+    "rotation_tangent_norm_rad": 0.004087870474904776
+  },
+  {
+    "training_index": 268,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00298.png",
+    "pose_adjustment_translation_so3": [
+      0.0028030131943523884,
+      0.005859660916030407,
+      -0.0024890839122235775,
+      -0.0022078549955040216,
+      0.0010020366171374917,
+      -0.0033241896890103817
+    ],
+    "translation_norm_scene_units": 0.006956152152270079,
+    "rotation_tangent_norm_rad": 0.004114478826522827
+  },
+  {
+    "training_index": 269,
+    "image_filename": "/home/ubuntu/grad-nav-deps/scenes/gs_data/sv_1007_gate_mid/splatfacto/2024-10-07_145741/data/images/frame_00300.png",
+    "pose_adjustment_translation_so3": [
+      0.002860727021470666,
+      0.005872359033674002,
+      -0.0024409566540271044,
+      -0.00223393552005291,
+      0.0010621463879942894,
+      -0.0033920626156032085
+    ],
+    "translation_norm_scene_units": 0.006973279640078545,
+    "rotation_tangent_norm_rad": 0.004198179580271244
+  }
+]

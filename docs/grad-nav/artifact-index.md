@@ -2,9 +2,13 @@
 
 Candidate branch: [audit/grad-nav](https://github.com/WorldExplored/R4R-Sims/tree/audit/grad-nav). [Findings](findings.md), [handoff](handoff.md), [sources](sources.md), [learning guide](learning-guide.md), [repair history](repair-history.json), [asset inventory](asset-inventory.csv), [preservation](preservation.json).
 
-## Current v4 deck and executed results
+## Latest decision and correspondence evidence
 
-**Start here:** [viewable v4 PDF](GRaD-Nav_R4R_Audit-v4.pdf), [editable v4 PowerPoint](GRaD-Nav_R4R_Audit-v4.pptx), [observed rendering findings](render-results.md) and current editable source `deck-source.mjs`. A now produces RGB/depth with exact direct/author parity; capture registration remains unresolved. D produces achieved-state camera frames and video. C and real-scene fidelity remain blocked. The pre-repair deck below is historical.
+**NO-GO for calibrated camera replay until provenance is resolved.** [Decision/report](camera-correspondence.md), [machine-readable results](camera-correspondence.json), [decision PPTX](GRaD-Nav_Correspondence_Decision.pptx) and [decision PDF](GRaD-Nav_Correspondence_Decision.pdf). The v4 deck below preserves prior integration findings.
+
+## Prior v4 deck and executed results
+
+**Prior integration summary:** [viewable v4 PDF](GRaD-Nav_R4R_Audit-v4.pdf), [editable v4 PowerPoint](GRaD-Nav_R4R_Audit-v4.pptx), [observed rendering findings](render-results.md) and current editable source `deck-source.mjs`. A now produces RGB/depth with exact direct/author parity; capture registration remains unresolved. D produces achieved-state camera frames and video. C and real-scene fidelity remain blocked. The pre-repair deck below is historical.
 
 | Run | Status | Small records | Verified local raw directory |
 |---|---|---|---|
@@ -45,4 +49,11 @@ Historical pre-repair deck: [editable PowerPoint](GRaD-Nav_R4R_Audit.pptx), [vie
 
 ## Shutdown readiness
 
-See [shutdown-readiness.json](shutdown-readiness.json) for the dated read-only check. GRaD-Nav local evidence is verified; shared-host shutdown is currently blocked by four unmatched TravelUAV support logs requiring preservation. No instance termination or new experiment occurred.
+See [shutdown-readiness.json](shutdown-readiness.json) for the dated read-only check. That historical check identified four TravelUAV logs. They are now copied and verified; see correspondence-support/shared-host-log-preservation.json and camera-correspondence.json. No automatic termination is authorized. No instance termination or new experiment occurred.
+
+### New training-view diagnostics
+
+- [Nerfstudio1.1.3 canonical and corrected cameras](../../results/grad-nav/20261009T033353Z-correspondence-23ce26/): verified full local outputs `/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T033353Z-correspondence-23ce26`.
+- [Nerfstudio1.1.4 controlled comparison](../../results/grad-nav/20261009T033735Z-correspondence-6bf320/): verified full local outputs `/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/artifacts/grad-nav/20261009T033735Z-correspondence-6bf320`.
+
+[Dependency, module and shared-log evidence](../../results/grad-nav/correspondence-support-20261009T0331Z/).

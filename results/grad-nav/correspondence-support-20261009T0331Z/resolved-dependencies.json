@@ -1,0 +1,242 @@
+[
+  {
+    "requirement": "appdirs >=1.4",
+    "installed": "1.4.4",
+    "satisfied": true
+  },
+  {
+    "requirement": "av >=9.2.0",
+    "installed": "17.1.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "comet-ml >=3.33.8",
+    "installed": "3.58.8",
+    "satisfied": true
+  },
+  {
+    "requirement": "cryptography >=38",
+    "installed": "50.0.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "tyro >=0.6.6",
+    "installed": "1.0.16",
+    "satisfied": true
+  },
+  {
+    "requirement": "gdown >=4.6.0",
+    "installed": "6.4.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "ninja >=1.10",
+    "installed": "1.13.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "h5py >=2.9.0",
+    "installed": "3.16.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "imageio >=2.21.1",
+    "installed": "2.38.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "ipywidgets >=7.6",
+    "installed": "8.1.9",
+    "satisfied": true
+  },
+  {
+    "requirement": "jaxtyping >=0.2.15",
+    "installed": "0.3.7",
+    "satisfied": true
+  },
+  {
+    "requirement": "jupyterlab >=3.3.4",
+    "installed": "4.6.4",
+    "satisfied": true
+  },
+  {
+    "requirement": "matplotlib >=3.6.0",
+    "installed": "3.10.9",
+    "satisfied": true
+  },
+  {
+    "requirement": "mediapy >=1.1.0",
+    "installed": "1.2.7",
+    "satisfied": true
+  },
+  {
+    "requirement": "msgpack >=1.0.4",
+    "installed": "1.2.3",
+    "satisfied": true
+  },
+  {
+    "requirement": "msgpack-numpy >=0.4.8",
+    "installed": "0.4.8",
+    "satisfied": true
+  },
+  {
+    "requirement": "nerfacc ==0.5.2",
+    "installed": "0.5.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "open3d >=0.16.0",
+    "installed": "0.20.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "opencv-python-headless ==4.10.0.84",
+    "installed": "4.10.0.84",
+    "satisfied": true
+  },
+  {
+    "requirement": "Pillow >=10.3.0",
+    "installed": "12.3.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "plotly >=5.7.0",
+    "installed": "7.1.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "protobuf !=3.20.0,<=3.20.3",
+    "installed": "3.20.3",
+    "satisfied": true
+  },
+  {
+    "requirement": "pyngrok >=5.1.0",
+    "installed": "8.1.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "python-socketio >=5.7.1",
+    "installed": "5.17.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "pyquaternion >=0.9.9",
+    "installed": "0.9.9",
+    "satisfied": true
+  },
+  {
+    "requirement": "requests",
+    "installed": "2.34.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "rich >=12.5.1",
+    "installed": "15.0.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "scikit-image >=0.19.3",
+    "installed": "0.25.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "splines ==0.3.0",
+    "installed": "0.3.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "tensorboard >=2.13.0",
+    "installed": "2.20.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "torch >=1.13.1",
+    "installed": "2.1.2+cu118",
+    "satisfied": true
+  },
+  {
+    "requirement": "torchvision >=0.14.1",
+    "installed": "0.16.2+cu118",
+    "satisfied": true
+  },
+  {
+    "requirement": "torchmetrics[image] >=1.0.1",
+    "installed": "1.9.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "typing-extensions >=4.4.0",
+    "installed": "4.16.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "viser ==0.2.3",
+    "installed": "0.2.3",
+    "satisfied": true
+  },
+  {
+    "requirement": "nuscenes-devkit >=1.1.1",
+    "installed": "1.2.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "wandb >=0.13.3",
+    "installed": "0.25.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "xatlas",
+    "installed": "0.0.11",
+    "satisfied": true
+  },
+  {
+    "requirement": "trimesh >=3.20.2",
+    "installed": "5.1.1",
+    "satisfied": true
+  },
+  {
+    "requirement": "timm ==0.6.7",
+    "installed": "0.6.7",
+    "satisfied": true
+  },
+  {
+    "requirement": "gsplat ==1.0.0",
+    "installed": "1.0.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "pytorch-msssim",
+    "installed": "1.0.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "pathos",
+    "installed": "0.3.5",
+    "satisfied": true
+  },
+  {
+    "requirement": "packaging",
+    "installed": "26.3",
+    "satisfied": true
+  },
+  {
+    "requirement": "fpsample",
+    "installed": "1.0.2",
+    "satisfied": true
+  },
+  {
+    "requirement": "tensorly",
+    "installed": "0.9.0",
+    "satisfied": true
+  },
+  {
+    "requirement": "rawpy >=0.18.1 ; platform_machine != \"arm64\"",
+    "installed": "0.27.1",
+    "satisfied": true
+  },
+  {
+    "requirement": "pymeshlab >=2022.2.post2 ; platform_machine != \"arm64\" and platform_machine != \"aarch64\"",
+    "installed": "2025.7.post1",
+    "satisfied": true
+  }
+]

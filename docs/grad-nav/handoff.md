@@ -1,6 +1,6 @@
 # GRaD-Nav execution handoff
 
-Read findings.md, artifact-index.md, preservation.json and repair-history.json first. Compiler repair succeeded with existing GCC11. A renders but capture alignment remains unresolved; D demonstrates native coordinate coupling. C and fidelity remain blocked. Read render-results.md. The new bounded debugging session is complete; instance stays running.
+Read camera-correspondence.md, findings.md, artifact-index.md, preservation.json and repair-history.json first. Compiler repair succeeded with existing GCC11. A renders but capture alignment remains unresolved; D demonstrates native coordinate coupling. C and fidelity remain blocked. Read render-results.md. The new bounded debugging session is complete; instance stays running.
 
 Local candidate: `/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav`, branch `audit/grad-nav`. Remote: `/home/ubuntu/R4R-Sims-grad-nav`. Dependency root `/home/ubuntu/grad-nav-deps`, baseline source `d9b00e16107338e49071c65f44582c013e522633`; current inspected `95218abe9a5d355519cdaab78d915365303066fe`. Authenticated publishing is on the Mac; remote GitHub credentials were unavailable. Git bundles preserve object identities and fast-forward the remote branch. No personal credential was transferred.
 
@@ -32,3 +32,7 @@ CUDA_HOME borrows `/workspace/R4R-Sims/artifacts/traveluav-openuav/dependencies/
 Next needed: author-confirmed relationship between scene checkpoint and released capture poses/physical scale; compatible original six-object learned checkpoint; trustworthy held-out capture split for fidelity. The diagnostic route is not calibrated flight or a common-scene R4R comparison.
 
 Compiler preflight source and emitted build commands are in results/grad-nav/20261009T020316Z-compiler-preflight. For a fresh authorized host, run that preflight under `timeout 120s bash executed-preflight.sh` after verifying its isolated dependency root. All seven exact borrowed-toolkit URLs returned HTTP200 with matching Content-Length from the receiving Mac; no archive body was downloaded in the continuation. Original CUDA component archive hashes came from the earlier toolkit acquisition, not these HEAD requests.
+
+## Latest calibration decision
+
+NO-GO for calibrated replay using released gate_mid. Canonical training views and correctly indexed saved pose corrections do not match source structure in NS1.1.3/1.1.4 despite strict exact restoration. No further guessed alignment/version search. Required author bundle/transforms/order/environment are specified in camera-correspondence.md. Current diagnostic: `bash simulators/grad-nav/launch.sh correspondence`; no model training. Shared-host logs are now locally preserved.
