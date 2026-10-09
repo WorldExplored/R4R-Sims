@@ -1,0 +1,6 @@
+{
+  "initial_attempt": "rejected before execution",
+  "reason": "Whole repository checkouts and broad shared workspace scope risk unrelated simulator work",
+  "safer_alternative": "Keep both checkouts and all non-Unreal files; remove only explicit Unreal data/install/output paths and audit temporary files",
+  "instance_terminated": false
+}
