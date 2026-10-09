@@ -44,7 +44,7 @@ def main():
         camera.camera_to_worlds=c2w[None,:3,:].float()
         return gs.pipeline.model.get_outputs_for_camera(camera,obb_box=None)
     if a.mode=='a':
-        ref=gs.camera_ref.camera_to_worlds[0].detach().cpu().numpy();ref4=np.eye(4);ref4[:3]=ref
+        ref=gs.camera_ref.camera_to_worlds.reshape(-1,3,4)[0].detach().cpu().numpy();ref4=np.eye(4);ref4[:3]=ref
         F=np.diag([1.,-1.,-1.,1.]);M=np.array([[.990,0,.140,.152],[0,1,0,-.031],[-.140,0,.990,-.012],[0,0,0,1.]])
         C=np.array([[0,0,-1,0],[1,0,0,0],[0,-1,0,0],[0,0,0,1.]])
         body=F@ref4@np.linalg.inv(M@C)
