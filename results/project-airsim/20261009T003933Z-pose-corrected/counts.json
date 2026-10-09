@@ -1,0 +1,9 @@
+{
+  "collision": 0,
+  "dropped_queue": 0,
+  "received_depth": 10,
+  "received_rgb": 10,
+  "saved_depth": 10,
+  "saved_rgb": 10,
+  "state": 0
+}

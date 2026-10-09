@@ -1,0 +1,78 @@
+00:29:34:328 [INFO] Connecting to simulation server at 127.0.0.1
+00:29:34:331 [INFO] Connection opened.
+00:29:34:332 [INFO] Loading scene config: scene_audit_fast.json
+00:29:34:868 [INFO] Getting the list of available topic info from the sim server...
+00:29:34:879 [INFO] Successfully received topic info list.
+00:29:36:879 [INFO] World object updated for the loaded scene '/Sim/SceneBasicDrone'. Note: Any previous Drone object instances may no longer be valid.
+00:29:36:881 [INFO] Trajectory 'null_trajectory' imported successfully.
+00:29:36:881 [INFO] Initalizing Drone 'Drone1'...
+00:29:36:881 [INFO] -------------------------------------------------
+00:29:36:881 [INFO] The following topics can be subscribed to for robot 'Drone1':
+00:29:36:881 [INFO]     sensors["Chase"]["scene_camera"]
+00:29:36:881 [INFO]     sensors["Chase"]["scene_camera_info"]
+00:29:36:881 [INFO]     sensors["DownCamera"]["scene_camera"]
+00:29:36:881 [INFO]     sensors["DownCamera"]["scene_camera_info"]
+00:29:36:881 [INFO]     sensors["DownCamera"]["depth_planar_camera"]
+00:29:36:881 [INFO]     sensors["DownCamera"]["depth_planar_camera_info"]
+00:29:36:881 [INFO]     sensors["IMU1"]["imu_kinematics"]
+00:29:36:881 [INFO]     sensors["GPS"]["gps"]
+00:29:36:881 [INFO]     sensors["Barometer"]["barometer"]
+00:29:36:881 [INFO]     sensors["Magnetometer"]["magnetometer"]
+00:29:36:881 [INFO]     sensors["ForwardCamera"]["scene_camera"]
+00:29:36:881 [INFO]     sensors["ForwardCamera"]["scene_camera_info"]
+00:29:36:881 [INFO]     sensors["ForwardCamera"]["depth_planar_camera"]
+00:29:36:881 [INFO]     sensors["ForwardCamera"]["depth_planar_camera_info"]
+00:29:36:881 [INFO]     robot_info["actual_pose"]
+00:29:36:882 [INFO]     robot_info["collision_info"]
+00:29:36:882 [INFO]     robot_info["rotor_info"]
+00:29:36:882 [INFO] -------------------------------------------------
+00:29:36:882 [INFO] Drone 'Drone1' initialized for World scene '/Sim/SceneBasicDrone'
+00:29:58:366 [ERROR] Exception occurred for task '/Sim/SceneBasicDrone/robots/Drone1/Land': Timed out
+Traceback (most recent call last):
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/projectairsim/client.py", line 413, in postprocess_response_async_with_callback
+    response = await response
+               ^^^^^^^^^^^^^^
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/nng.py", line 1319, in arecv_msg
+    msg = await aio.arecv_msg()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/_aio.py", line 192, in arecv_msg
+    await self.awaitable
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/_aio.py", line 80, in wait_for_aio
+    check_err(err)
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/exceptions.py", line 202, in check_err
+    raise exc(string, err)
+pynng.exceptions.Timeout: Timed out
+00:29:58:369 [INFO] Disconnecting from simulation server...
+00:29:58:374 [INFO] Disconnected.
+Exception in callback ProjectAirSimClient.check_for_exception(<Task finishe...('Timed out')>)
+handle: <Handle ProjectAirSimClient.check_for_exception(<Task finishe...('Timed out')>)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/projectairsim/client.py", line 338, in check_for_exception
+    raise exc
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/projectairsim/client.py", line 413, in postprocess_response_async_with_callback
+    response = await response
+               ^^^^^^^^^^^^^^
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/nng.py", line 1319, in arecv_msg
+    msg = await aio.arecv_msg()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/_aio.py", line 192, in arecv_msg
+    await self.awaitable
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/_aio.py", line 80, in wait_for_aio
+    check_err(err)
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/exceptions.py", line 202, in check_err
+    raise exc(string, err)
+pynng.exceptions.Timeout: Timed out
+00:29:58:381 [INFO] Disconnecting from simulation server...
+00:29:58:381 [WARNING] Unable to unsubscribe from all topics.
+00:29:58:381 [INFO] Disconnected.
+Exception ignored in: <function Context.__del__ at 0x7d4073d11300>
+Traceback (most recent call last):
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/nng.py", line 1302, in __del__
+    self.close()
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/nng.py", line 1288, in close
+    check_err(ctx_err)
+  File "/root/r4r-airsim-deps/venv/lib/python3.11/site-packages/pynng/exceptions.py", line 202, in check_err
+    raise exc(string, err)
+pynng.exceptions.Closed: Object closed

@@ -1,0 +1,120 @@
+{
+  "callback_to_save_ms_median": 30.784767,
+  "collision_event_count": 2,
+  "depth_saved_per_wall_s": 14.081493739170464,
+  "image_counts": {
+    "depth": 607,
+    "rgb": 608
+  },
+  "rgb_saved_per_wall_s": 14.10469224615427,
+  "run_id": "20261009T003453Z-flight-1",
+  "sim_state_span_s": 31.392,
+  "state_count": 10463,
+  "tasks": {
+    "horizontal": {
+      "achieved_ned_m": [
+        1.5242018699645996,
+        8.000032424926758,
+        -3.9527201652526855
+      ],
+      "endpoint_error_m": 0.053114163223123706,
+      "requested_ned_m": [
+        1.5,
+        8.0,
+        -4.0
+      ],
+      "returned": true,
+      "state_time_offset_ms": -0.502957
+    },
+    "hover_1": {
+      "achieved_ned_m": [
+        -1.0,
+        8.0,
+        -3.9653871059417725
+      ],
+      "endpoint_error_m": null,
+      "hold_max_displacement_m": 0.04553103446960449,
+      "requested_ned_m": null,
+      "returned": true,
+      "state_time_offset_ms": 0.229138
+    },
+    "hover_2": {
+      "achieved_ned_m": [
+        1.7056611776351929,
+        7.997687816619873,
+        -4.603172302246094
+      ],
+      "endpoint_error_m": null,
+      "hold_max_displacement_m": 0.004661848367941466,
+      "requested_ned_m": null,
+      "returned": true,
+      "state_time_offset_ms": -1.007462
+    },
+    "land": {
+      "achieved_ned_m": [
+        -1.4628864526748657,
+        7.992406368255615,
+        -2.692683219909668
+      ],
+      "endpoint_error_m": null,
+      "requested_ned_m": null,
+      "returned": true,
+      "state_time_offset_ms": 0.935286
+    },
+    "return": {
+      "achieved_ned_m": [
+        -1.095470905303955,
+        8.00004768371582,
+        -4.478455066680908
+      ],
+      "endpoint_error_m": 0.4878872276109776,
+      "requested_ned_m": [
+        -1.0,
+        8.0,
+        -4.0
+      ],
+      "returned": false,
+      "state_time_offset_ms": -1.135543
+    },
+    "takeoff": {
+      "achieved_ned_m": [
+        -1.0,
+        8.0,
+        -3.962425470352173
+      ],
+      "endpoint_error_m": null,
+      "requested_ned_m": null,
+      "returned": false,
+      "state_time_offset_ms": -1.374573
+    },
+    "vertical_up": {
+      "achieved_ned_m": [
+        1.7090249061584473,
+        8.000382423400879,
+        -4.60764741897583
+      ],
+      "endpoint_error_m": 0.44455832629536146,
+      "requested_ned_m": [
+        1.5,
+        8.0,
+        -5.0
+      ],
+      "returned": false,
+      "state_time_offset_ms": -0.743849
+    },
+    "yaw_plus_30": {
+      "achieved_ned_m": [
+        1.7056409120559692,
+        7.9976935386657715,
+        -4.60316276550293
+      ],
+      "endpoint_error_m": null,
+      "requested_ned_m": null,
+      "returned": true,
+      "state_time_offset_ms": -1.111343
+    }
+  },
+  "video_playback_fps": 10,
+  "video_timing": "constant 10 fps from ordered saved ForwardCamera RGB; one padded row for H.264; not native wall/simulator timing",
+  "wall_state_span_s": 43.10622234
+}

@@ -1,0 +1,6 @@
+{"phase": "spawn", "pose": {"frame_id": "DEFAULT_ID", "rotation": {"w": 0.9238795042037964, "x": 0.0, "y": 0.0, "z": -0.3826834559440613}, "translation": {"x": -1.0, "y": 8.0, "z": -2.6926817893981934}}, "wall_monotonic_ns": 266618717027011, "wall_unix_s": 1791506099.7373796}
+{"duration_wall_s": 3, "phase": "hover_1", "pose": {"frame_id": "DEFAULT_ID", "rotation": {"w": 0.9238795042037964, "x": 3.485030042327253e-09, "y": -4.647580542638252e-09, "z": -0.3826834559440613}, "translation": {"x": -1.0, "y": 8.0, "z": -3.962425470352173}}, "wall_monotonic_ns": 266622536632086, "wall_unix_s": 1791506103.556985}
+{"ned_m": [1.5, 8.0, -4.0], "phase": "horizontal", "speed_m_s": 1.0, "wall_monotonic_ns": 266625542901020, "wall_unix_s": 1791506106.563254}
+{"ned_m": [1.5, 8.0, -5.0], "phase": "vertical_up", "speed_m_s": 1.0, "wall_monotonic_ns": 266630737425923, "wall_unix_s": 1791506111.7577796}
+{"degrees_from_spawn": -15, "phase": "yaw_plus_30", "wall_monotonic_ns": 266631738298222, "wall_unix_s": 1791506112.7586515}
+{"ned_m": [-1.0, 8.0, -4.0], "phase": "return", "speed_m_s": 1.0, "wall_monotonic_ns": 266640519949958, "wall_unix_s": 1791506121.5403025}

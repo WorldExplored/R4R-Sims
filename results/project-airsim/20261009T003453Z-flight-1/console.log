@@ -1,0 +1,31 @@
+00:34:54:957 [INFO] Connecting to simulation server at 127.0.0.1
+00:34:54:960 [INFO] Connection opened.
+00:34:54:961 [INFO] Loading scene config: scene_audit_fast.json
+00:34:55:702 [INFO] Getting the list of available topic info from the sim server...
+00:34:55:713 [INFO] Successfully received topic info list.
+00:34:57:713 [INFO] World object updated for the loaded scene '/Sim/SceneBasicDrone'. Note: Any previous Drone object instances may no longer be valid.
+00:34:57:715 [INFO] Trajectory 'null_trajectory' imported successfully.
+00:34:57:715 [INFO] Initalizing Drone 'Drone1'...
+00:34:57:715 [INFO] -------------------------------------------------
+00:34:57:715 [INFO] The following topics can be subscribed to for robot 'Drone1':
+00:34:57:715 [INFO]     sensors["Chase"]["scene_camera"]
+00:34:57:715 [INFO]     sensors["Chase"]["scene_camera_info"]
+00:34:57:715 [INFO]     sensors["DownCamera"]["scene_camera"]
+00:34:57:715 [INFO]     sensors["DownCamera"]["scene_camera_info"]
+00:34:57:715 [INFO]     sensors["DownCamera"]["depth_planar_camera"]
+00:34:57:715 [INFO]     sensors["DownCamera"]["depth_planar_camera_info"]
+00:34:57:715 [INFO]     sensors["IMU1"]["imu_kinematics"]
+00:34:57:715 [INFO]     sensors["GPS"]["gps"]
+00:34:57:715 [INFO]     sensors["Barometer"]["barometer"]
+00:34:57:715 [INFO]     sensors["Magnetometer"]["magnetometer"]
+00:34:57:715 [INFO]     sensors["ForwardCamera"]["scene_camera"]
+00:34:57:715 [INFO]     sensors["ForwardCamera"]["scene_camera_info"]
+00:34:57:715 [INFO]     sensors["ForwardCamera"]["depth_planar_camera"]
+00:34:57:716 [INFO]     sensors["ForwardCamera"]["depth_planar_camera_info"]
+00:34:57:716 [INFO]     robot_info["actual_pose"]
+00:34:57:716 [INFO]     robot_info["collision_info"]
+00:34:57:716 [INFO]     robot_info["rotor_info"]
+00:34:57:716 [INFO] -------------------------------------------------
+00:34:57:716 [INFO] Drone 'Drone1' initialized for World scene '/Sim/SceneBasicDrone'
+00:35:40:838 [INFO] Disconnecting from simulation server...
+00:35:40:841 [INFO] Disconnected.

@@ -1,0 +1,8 @@
+{"event": "start", "phase": "takeoff", "wall_monotonic_ns": 266297870648778, "wall_unix_s": 1791505778.8910017}
+{"event": "complete", "phase": "takeoff", "result": false, "wall_monotonic_ns": 266301655691990, "wall_unix_s": 1791505782.676045}
+{"event": "start", "phase": "hover_1", "wall_monotonic_ns": 266301658213341, "wall_unix_s": 1791505782.6785665}
+{"event": "complete", "phase": "hover_1", "result": true, "wall_monotonic_ns": 266301659092233, "wall_unix_s": 1791505782.6794455}
+{"event": "start", "phase": "short_horizontal", "wall_monotonic_ns": 266304663658953, "wall_unix_s": 1791505785.684012}
+{"event": "complete", "phase": "short_horizontal", "result": false, "wall_monotonic_ns": 266307343120883, "wall_unix_s": 1791505788.3634741}
+{"event": "start", "phase": "land", "wall_monotonic_ns": 266307343971726, "wall_unix_s": 1791505788.3643248}
+{"error": "Timeout('Timed out')", "event": "failed", "phase": "land", "wall_monotonic_ns": 266317356743453, "wall_unix_s": 1791505798.3770962}

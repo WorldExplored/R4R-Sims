@@ -1,0 +1,36 @@
+{
+  "client_version": "1.0.2",
+  "command": [
+    "/root/R4R-Sims-project-airsim/simulators/project-airsim/audit.py",
+    "--mode",
+    "pose",
+    "--scene",
+    "scene_audit_pose.json",
+    "--config-dir",
+    "/root/R4R-Sims-project-airsim/simulators/project-airsim/config",
+    "--output",
+    "/root/R4R-Sims-project-airsim/artifacts/project-airsim/20261009T002820Z-pose-2"
+  ],
+  "config_dir": "/root/R4R-Sims-project-airsim/simulators/project-airsim/config",
+  "finished": {
+    "wall_monotonic_ns": 266227110848649,
+    "wall_unix_s": 1791505708.1312017
+  },
+  "mode": "pose",
+  "policy_weights": "none",
+  "request_timeout_ms": 10000,
+  "robot_config_paths": [
+    "/root/R4R-Sims-project-airsim/simulators/project-airsim/config/robot_audit_pose.json"
+  ],
+  "run_id": "20261009T002820Z-pose-2",
+  "scene": "scene_audit_pose.json",
+  "scene_config_path": "/root/R4R-Sims-project-airsim/simulators/project-airsim/config/scene_audit_pose.json",
+  "server_commit": "deff6aa11dd8961ae5de05ea64630995a12bbf67",
+  "source_commit": "09755454b8d82b0231af7e59fd1ab8f980ff32c5",
+  "split": "official Blocks native scene, no dataset split",
+  "started": {
+    "wall_monotonic_ns": 266221429302356,
+    "wall_unix_s": 1791505702.4496553
+  },
+  "status": "completed"
+}

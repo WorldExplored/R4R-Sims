@@ -1,0 +1,18 @@
+{"event": "start", "phase": "takeoff", "wall_monotonic_ns": 266691321553522, "wall_unix_s": 1791506172.3419068}
+{"event": "complete", "phase": "takeoff", "result": false, "wall_monotonic_ns": 266695343800447, "wall_unix_s": 1791506176.3641534}
+{"event": "start", "phase": "hover_1", "wall_monotonic_ns": 266695346288885, "wall_unix_s": 1791506176.366642}
+{"event": "complete", "phase": "hover_1", "result": true, "wall_monotonic_ns": 266695348046220, "wall_unix_s": 1791506176.3683991}
+{"event": "start", "phase": "horizontal", "wall_monotonic_ns": 266698351648810, "wall_unix_s": 1791506179.372002}
+{"event": "complete", "phase": "horizontal", "result": true, "wall_monotonic_ns": 266703316278716, "wall_unix_s": 1791506184.3366315}
+{"event": "start", "phase": "vertical_up", "wall_monotonic_ns": 266703316826645, "wall_unix_s": 1791506184.3371801}
+{"event": "complete", "phase": "vertical_up", "result": false, "wall_monotonic_ns": 266704313420396, "wall_unix_s": 1791506185.3337736}
+{"event": "start", "phase": "yaw_plus_30", "wall_monotonic_ns": 266704314465829, "wall_unix_s": 1791506185.334819}
+{"event": "complete", "phase": "yaw_plus_30", "result": true, "wall_monotonic_ns": 266710040239194, "wall_unix_s": 1791506191.0605924}
+{"event": "start", "phase": "hover_2", "wall_monotonic_ns": 266710040565319, "wall_unix_s": 1791506191.0609186}
+{"event": "complete", "phase": "hover_2", "result": true, "wall_monotonic_ns": 266710042170502, "wall_unix_s": 1791506191.0625236}
+{"event": "start", "phase": "return", "wall_monotonic_ns": 266713046364612, "wall_unix_s": 1791506194.0667179}
+{"event": "complete", "phase": "return", "result": true, "wall_monotonic_ns": 266718747203320, "wall_unix_s": 1791506199.7675562}
+{"duration_wall_s": 0.5668607520055957, "phase": "capture_hold", "wall_monotonic_ns": 266718748246887, "wall_unix_s": 1791506199.7686}
+{"event": "start", "phase": "land", "wall_monotonic_ns": 266719316673816, "wall_unix_s": 1791506200.3370268}
+{"event": "complete", "phase": "land", "result": true, "wall_monotonic_ns": 266732431701905, "wall_unix_s": 1791506213.4520547}
+{"ground_truth": {"frame_id": "DEFAULT_ID", "rotation": {"w": 0.9941866993904114, "x": 0.0, "y": 0.0, "z": -0.10766977071762085}, "translation": {"x": -1.4487130641937256, "y": 7.988826274871826, "z": -2.6926825046539307}}, "landed_state": 1, "phase": "landed_check", "wall_monotonic_ns": 266732434102521, "wall_unix_s": 1791506213.4544556}

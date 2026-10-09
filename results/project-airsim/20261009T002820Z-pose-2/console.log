@@ -1,0 +1,29 @@
+00:28:22:450 [INFO] Connecting to simulation server at 127.0.0.1
+00:28:22:452 [INFO] Connection opened.
+00:28:22:453 [INFO] Loading scene config: scene_audit_pose.json
+00:28:23:199 [INFO] Getting the list of available topic info from the sim server...
+00:28:23:210 [INFO] Successfully received topic info list.
+00:28:25:211 [INFO] World object updated for the loaded scene '/Sim/SceneAuditPose'. Note: Any previous Drone object instances may no longer be valid.
+00:28:25:212 [INFO] Trajectory 'null_trajectory' imported successfully.
+00:28:25:213 [INFO] Initalizing Drone 'Drone1'...
+00:28:25:213 [INFO] -------------------------------------------------
+00:28:25:213 [INFO] The following topics can be subscribed to for robot 'Drone1':
+00:28:25:213 [INFO]     sensors["Chase"]["scene_camera"]
+00:28:25:213 [INFO]     sensors["Chase"]["scene_camera_info"]
+00:28:25:213 [INFO]     sensors["DownCamera"]["scene_camera"]
+00:28:25:213 [INFO]     sensors["DownCamera"]["scene_camera_info"]
+00:28:25:213 [INFO]     sensors["DownCamera"]["depth_planar_camera"]
+00:28:25:214 [INFO]     sensors["DownCamera"]["depth_planar_camera_info"]
+00:28:25:214 [INFO]     sensors["GPS"]["gps"]
+00:28:25:214 [INFO]     sensors["ForwardCamera"]["scene_camera"]
+00:28:25:214 [INFO]     sensors["ForwardCamera"]["scene_camera_info"]
+00:28:25:229 [INFO]     sensors["ForwardCamera"]["depth_planar_camera"]
+00:28:25:229 [INFO]     sensors["ForwardCamera"]["depth_planar_camera_info"]
+00:28:25:229 [INFO]     robot_info["actual_pose"]
+00:28:25:230 [INFO]     robot_info["collision_info"]
+00:28:25:230 [INFO]     robot_info["rotor_info"]
+00:28:25:230 [INFO] -------------------------------------------------
+00:28:25:230 [INFO] Drone 'Drone1' initialized for World scene '/Sim/SceneAuditPose'
+00:28:28:131 [INFO] Disconnecting from simulation server...
+00:28:28:396 [WARNING] Unable to unsubscribe from all topics.
+00:28:28:397 [INFO] Disconnected.
