@@ -13,13 +13,13 @@ def main():
     now=datetime.datetime.now(datetime.timezone.utc);rid=now.strftime('%Y%m%dT%H%M%SZ')+'-'+a.mode+'-'+uuid.uuid4().hex[:6]
     raw=a.root/'artifacts/grad-nav'/rid;small=a.root/'results/grad-nav'/rid
     raw.mkdir(parents=True);small.mkdir(parents=True)
-    cmd=[sys.executable,str(a.root/('simulators/grad-nav/render.py' if a.mode in ['a','d'] else 'simulators/grad-nav/scene_diagnostic.py' if a.mode=='scene-diagnostic' else 'simulators/grad-nav/probe.py')),a.mode,'--upstream',str(a.upstream),'--out',str(raw)]
+    cmd=[sys.executable,str(a.root/('simulators/grad-nav/render.py' if a.mode in ['a','d'] else 'simulators/grad-nav/scene_diagnostic.py' if a.mode=='scene-diagnostic' else 'simulators/grad-nav/correspondence.py' if a.mode=='correspondence' else 'simulators/grad-nav/probe.py')),a.mode,'--upstream',str(a.upstream),'--out',str(raw)]
     def capture(c):return subprocess.run(c,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT).stdout
     metadata={'run_id':rid,'mode':a.mode,'start_utc':now.isoformat(),'timeout_s':a.timeout,'command':cmd,'cwd':str(pathlib.Path.cwd()),
       'candidate_commit':capture(['git','-C',str(a.root),'rev-parse','HEAD']).strip(),
       'upstream_commit':capture(['git','-C',str(a.upstream),'rev-parse','HEAD']).strip(),
       'upstream_status':capture(['git','-C',str(a.upstream),'status','--short']),
-      'input_path':str(a.upstream),'output_path':str(raw),'policy_weights':'none','scene':'gate_mid' if a.mode in ['a','d'] else 'none','seed':0,
+      'input_path':str(a.upstream),'output_path':str(raw),'policy_weights':'none','scene':'gate_mid' if a.mode in ['a','d','correspondence'] else 'none','seed':0,
       'status':'running','environment_file':'environment.txt','navigation_learned_components_used':False,
       'compiler_environment':{k:os.environ.get(k) for k in ['CC','CXX','CUDA_HOME','PATH','LD_LIBRARY_PATH','TORCH_EXTENSIONS_DIR','MAX_JOBS']}}
     (raw/'run.json').write_text(json.dumps(metadata,indent=2)+'\n')
