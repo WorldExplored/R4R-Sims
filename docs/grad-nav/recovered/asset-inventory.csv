@@ -1,0 +1,9 @@
+category,item,source_url_or_id,local_path,download_bytes,expanded_bytes,sha256,access,license_status,needed_for
+code,grad_nav,d9b00e16107338e49071c65f44582c013e522633,upstream/,unknown,unknown,unknown,public GitHub,NVIDIA DiffRL noncommercial,A B C
+gaussian_scene,gs_data.zip,https://drive.google.com/uc?id=1skbXqg__Ew3ytNmqe_xiaqHpexZnsfdw,upstream/envs/assets/gs_data/,unknown,unknown,unknown,unverified Drive download,unverified,A C
+nerfstudio_config,gate_mid config.yml,inside gs_data.zip,upstream/envs/assets/gs_data/sv_1007_gate_mid/**/config.yml,unknown,unknown,unknown,unverified archive,unverified,A C
+nerfstudio_checkpoint,gate_mid Splatfacto weights,inside gs_data.zip,referenced by config.yml,unknown,unknown,unknown,unverified archive,unverified,A C
+geometry,point_cloud.zip,https://drive.google.com/uc?id=1xIDb1-HFkniBagvMbWDgfy4okKTckwra,upstream/envs/assets/point_cloud/,unknown,unknown,unknown,unverified Drive download,unverified,native B C
+geometry,sv_1007_gate_mid.ply,inside point_cloud.zip,upstream/envs/assets/point_cloud/sv_1007_gate_mid.ply,unknown,unknown,unknown,unverified archive,unverified,native B C
+policy,GRaD-Nav long trajectory best_policy.pt,no verified public URL,none,unknown,unknown,none,missing,unverified,C blocked
+policy,GRaD-Nav++ final_policy.pt,no verified public URL,none,unknown,unknown,none,missing and different variant,unverified,not selected

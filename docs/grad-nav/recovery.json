@@ -1,0 +1,57 @@
+{
+  "recovered_files": [
+    {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/grad-nav/asset-inventory.csv",
+      "destination": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/docs/grad-nav/recovered/asset-inventory.csv",
+      "sha256": "a7f6a0785fe6068eab095df5c8958bcf7577e8f2b0c8b05e048d7e7e00d97f9a",
+      "bytes": 1393
+    },
+    {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/grad-nav/capture.sh",
+      "destination": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/docs/grad-nav/recovered/capture.sh",
+      "sha256": "fed1d60cd09b59b55a06379030eec696e2f58e069ab1366c32f5fa26b96ea3ea",
+      "bytes": 3201
+    },
+    {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/grad-nav/handoff.md",
+      "destination": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/docs/grad-nav/recovered/handoff.md",
+      "sha256": "8248f0f7f820c0afe9b5d12d18467f95f7be3d593fbd833d7cc8e5733baa2118",
+      "bytes": 12702
+    },
+    {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/grad-nav/run_a.py",
+      "destination": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/docs/grad-nav/recovered/run_a.py",
+      "sha256": "f11f275e580ac8c75e3908332695529f7a95ece734db54c34ad3dcae722ae548",
+      "bytes": 3526
+    },
+    {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/grad-nav/run_b.py",
+      "destination": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/docs/grad-nav/recovered/run_b.py",
+      "sha256": "9db5ab893f14aafb899f611f4c23814095aa6386d089308ed61e50e4f77a31ea",
+      "bytes": 3575
+    },
+    {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/grad-nav/slides.md",
+      "destination": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/docs/grad-nav/recovered/slides.md",
+      "sha256": "0567e5835b1c8e8ac6489142486818789d226cc6a51d2498bcf4336ab3d9b113",
+      "bytes": 1303
+    },
+    {
+      "source": "/Users/srreyanshsethi/Documents/AirLab/Real4Real/sim-audit/grad-nav/sources.md",
+      "destination": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav/docs/grad-nav/recovered/sources.md",
+      "sha256": "4c4c43ac48d688d7cbcbc1a0de713cdd71b02905ace70e667591a2220f7e0561",
+      "bytes": 6911
+    }
+  ],
+  "candidate_base": "2cd4f7145486854f9c84a4ae2f6aedf197e963d4",
+  "comparison_refs": {
+    "origin/main": "2cd4f7145486854f9c84a4ae2f6aedf197e963d4",
+    "eval/project-airsim": "db3891792f312c1cb8575f19465a40aafff741a0",
+    "unreal-a5000-audit": "bc14c24ad7288848019a4aea541853980fa2d7bb",
+    "audit/traveluav-openuav-20261008T2215Z": "568759aca5628858f8881407de6562d986190280"
+  },
+  "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-grad-nav",
+  "remote_path": "/home/ubuntu/R4R-Sims-grad-nav",
+  "originals_preserved": true,
+  "cleanup": "none; GPU idle and 162 GiB free at preflight"
+}
