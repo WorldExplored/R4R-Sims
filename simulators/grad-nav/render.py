@@ -17,7 +17,7 @@ def main():
     cfg=yaml.load(original.read_text(),Loader=yaml.Loader)
     cfg.data=scene/'data';cfg.pipeline.datamanager.data=scene/'data';cfg.pipeline.datamanager.dataparser.data=scene/'data'
     cfg.load_dir=scene/'nerfstudio_models'
-    cfg.output_dir=scene.parent.parent
+    cfg.output_dir=scene.parents[2]
     resolved=out/'resolved-config.yml';resolved.write_text(yaml.dump(cfg))
     gs=GS(resolved,res=0.4);camera=gs.camera_out;device=gs.device
     dp=gs.pipeline.datamanager.train_dataparser_outputs

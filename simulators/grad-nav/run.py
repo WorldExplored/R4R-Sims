@@ -20,7 +20,7 @@ def main():
       'upstream_commit':capture(['git','-C',str(a.upstream),'rev-parse','HEAD']).strip(),
       'upstream_status':capture(['git','-C',str(a.upstream),'status','--short']),
       'input_path':str(a.upstream),'output_path':str(raw),'policy_weights':'none','scene':'gate_mid' if a.mode in ['a','d'] else 'none','seed':0,
-      'status':'running','environment_file':'environment.txt','learned_components_used':False}
+      'status':'running','environment_file':'environment.txt','navigation_learned_components_used':False}
     (raw/'run.json').write_text(json.dumps(metadata,indent=2)+'\n')
     (raw/'commands.log').write_text(json.dumps(cmd)+'\n')
     (raw/'environment.txt').write_text(capture(['uname','-a'])+capture([sys.executable,'-m','pip','freeze'])+capture(['nvidia-smi'])+capture(['df','-h',str(a.root)]))
