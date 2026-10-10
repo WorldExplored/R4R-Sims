@@ -1,0 +1,82 @@
+{
+  "archive": "4.HILAPPS/RFLYSIMAPIS/RFLYSIMAPISFREE.ZIP",
+  "available_prefix_bytes": 1873364992,
+  "scanned_names_count": 5388,
+  "stop_reason": "partial member beyond local EOF: RflySimAPIs/5.RflySimFlyCtrl/1.BasicExps/e8-FailsafeLogic/e8.1/.infos/icon.svg",
+  "central_directory_verified": false,
+  "selected_source_files": [
+    {
+      "member": "RflySimAPIs/3.RflySim3DUE/0.ApiExps/e0_RflySim3DUsage/code/SITLRun.bat",
+      "bytes": 6228,
+      "sha256": "a0f129c08708dcbc2df7e3de5efbd2800cb0a360fd939bd36a5112bbf45bbe05",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/a0f129c08708-SITLRun.bat",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    },
+    {
+      "member": "RflySimAPIs/3.RflySim3DUE/0.ApiExps/e2_CommandAPI/2.enumerate/SITLRun.bat",
+      "bytes": 6187,
+      "sha256": "28b04c07c04f7339417180b95f74801767a2bc842947548cbda8601aeff0be3f",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/28b04c07c04f-SITLRun.bat",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    },
+    {
+      "member": "RflySimAPIs/3.RflySim3DUE/1.BasicExps/e0_StarterContent/5.UE_CustomImport/SITLRun.bat",
+      "bytes": 6187,
+      "sha256": "28b04c07c04f7339417180b95f74801767a2bc842947548cbda8601aeff0be3f",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/28b04c07c04f-SITLRun.bat",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    },
+    {
+      "member": "RflySimAPIs/5.RflySimFlyCtrl/0.ApiExps/14.SITLVeriGenCodeFirm/3.OffboardCtrlCodeGen/PX4MavCtrlV4.py",
+      "bytes": 141744,
+      "sha256": "8074122b7a0b8a94a5d809fe8b3b8b37ab3e726feca5bc7fc3be23dc4fe6d0e4",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/8074122b7a0b-PX4MavCtrlV4.py",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    },
+    {
+      "member": "RflySimAPIs/5.RflySimFlyCtrl/1.BasicExps/e10-FixedWingCtrl/code_10/HITL/PX4MavCtrlV4.py",
+      "bytes": 137963,
+      "sha256": "f9b95b5003db831ed668f9ef12e5044aa2b605b724f5edda20a502ede0a1dd73",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/f9b95b5003db-PX4MavCtrlV4.py",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    },
+    {
+      "member": "RflySimAPIs/5.RflySimFlyCtrl/1.BasicExps/e10-FixedWingCtrl/code_4/e2-4/PythonCtrlAPI/PX4MavCtrlV4.py",
+      "bytes": 140700,
+      "sha256": "d713737975c6325c6d28d4041b61f5c8799cf9d457e6ff135313b60a77680cb0",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/d713737975c6-PX4MavCtrlV4.py",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    },
+    {
+      "member": "RflySimAPIs/5.RflySimFlyCtrl/1.BasicExps/e10-FixedWingCtrl/code_5/e3-4/AerodynamicParameter_Identification/PX4MavCtrlV4.py",
+      "bytes": 140138,
+      "sha256": "47dc3c62b88a682ecb1eae999f09bd0fb6567fa4fccd282f70ecbb54789e91d7",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/47dc3c62b88a-PX4MavCtrlV4.py",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    },
+    {
+      "member": "RflySimAPIs/5.RflySimFlyCtrl/1.BasicExps/e10-FixedWingCtrl/code_5/e3-4/GuidanceModel_Identification/SpeedChannel/PX4MavCtrlV4.py",
+      "bytes": 140138,
+      "sha256": "47dc3c62b88a682ecb1eae999f09bd0fb6567fa4fccd282f70ecbb54789e91d7",
+      "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/47dc3c62b88a-PX4MavCtrlV4.py",
+      "crc_verified": true,
+      "archive_incomplete": true,
+      "status": "example copy; not installed canonical SDK"
+    }
+  ],
+  "extraction_note": "distinct variants retained by SHA prefix; same-basename collisions corrected before source use"
+}

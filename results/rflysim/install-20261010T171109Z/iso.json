@@ -1,0 +1,18 @@
+{
+  "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/RflySimToolchain.iso",
+  "bytes": 10218483712,
+  "sha256": "3153167473469b1ab592e7058d10734076e418173cf767a65bc4430c21222e1a",
+  "hash_wall_s": 6.973839625,
+  "user_reported_release": "v5.01-20260831",
+  "source_url": "https://1drv.ms/f/s!AumI9wM9CHrXou02EWLuwKozkM-I-w",
+  "internal_release_verified": false,
+  "ignored_via": "local Git info/exclude",
+  "retained": true,
+  "internal_readme_release": "V5.01-20260831",
+  "internal_free_edition_marker": "4.HILApps/Version.txt = 0",
+  "complete": false,
+  "declared_image_bytes": 23151480832,
+  "shortfall_bytes": 12932997120,
+  "complete_image_sha256": null,
+  "release_identification": "readable metadata corresponds; full image identity unverified until download complete"
+}

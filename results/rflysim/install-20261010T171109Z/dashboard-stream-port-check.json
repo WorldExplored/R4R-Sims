@@ -1,0 +1,10 @@
+{
+  "host": "52.14.205.169",
+  "port": 47989,
+  "kind": "single TCP check of dashboard IP versus provider hostname",
+  "start_utc": "2026-10-10T17:39:15.834443+00:00",
+  "timeout_s": 3,
+  "connected": false,
+  "error": "timeout: timed out",
+  "wall_s": 3.005937833
+}

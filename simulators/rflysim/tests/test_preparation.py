@@ -1,4 +1,6 @@
 import importlib.util
+import contextlib
+import io
 import json
 from pathlib import Path
 import tempfile
@@ -12,7 +14,11 @@ spec.loader.exec_module(prep)
 
 class PreparationTests(unittest.TestCase):
     def test_execution_refused(self):
-        self.assertEqual(prep.main(['run']), 2)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            self.assertEqual(prep.main(['run']), 2)
+        self.assertIn('installed SDK adapter', output.getvalue())
+        self.assertNotIn('authorization pending', output.getvalue())
 
     def test_review_config_preserves_route_and_thresholds(self):
         c = json.loads((ROOT / 'audit-config.json').read_text())

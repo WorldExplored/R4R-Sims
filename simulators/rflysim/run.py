@@ -95,7 +95,7 @@ def main(argv=None):
     parser.add_argument('--manifest', type=Path)
     args = parser.parse_args(argv)
     if args.mode == 'run':
-        print('BLOCKED: preparation only. No SDK adapter, verified host or execution authorization.')
+        print('BLOCKED: no installed SDK adapter or verified host/freeze. See docs/rflysim/current-execution.md for current authorization and prerequisites.')
         return 2
     try:
         if args.mode in ['validate', 'readiness']:
@@ -108,7 +108,7 @@ def main(argv=None):
                                   'execution_ready': False}, indent=2))
                 return 1 if errors else 0
             print(json.dumps({'preparation_config_valid': not errors, 'execution_ready': False,
-                              'blockers': c.get('freeze_blockers', []) + ['execution authorization pending'],
+                              'blockers': c.get('freeze_blockers', []) + ['installed SDK adapter missing'],
                               'errors': errors}, indent=2))
             return 2
         if not args.root:

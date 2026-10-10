@@ -1,0 +1,168 @@
+[
+  {
+    "iso_path": "1.TOOLCHAINZIP/UBUNTU_20.04_ADV.ZIP",
+    "zip_bytes": 3849874191,
+    "expanded_bytes": 13026519040,
+    "selected_source_files": [],
+    "entries": 1
+  },
+  {
+    "iso_path": "1.TOOLCHAINZIP/VCXSRV.ZIP",
+    "zip_bytes": 51213453,
+    "expanded_bytes": 91520086,
+    "selected_source_files": [],
+    "entries": 5414
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/MICRO-CDR.GIT.ZIP",
+    "zip_bytes": 1058468,
+    "expanded_bytes": 1100688,
+    "selected_source_files": [],
+    "entries": 29
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/PX4FIRMWARE1.12.3.ZIP",
+    "zip_bytes": 452509654,
+    "expanded_bytes": 742975986,
+    "selected_source_files": [
+      {
+        "iso_archive": "2.FIRMWAREZIP/PX4FIRMWARE1.12.3.ZIP",
+        "member": "Firmware/platforms/nuttx/NuttX/apps/system/hexed/docs/license.txt",
+        "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.12.3.ZIP/license.txt",
+        "bytes": 1438,
+        "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+      }
+    ],
+    "entries": 27416
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/PX4FIRMWARE1.12.3UPDATE.ZIP",
+    "zip_bytes": 703226,
+    "expanded_bytes": 1668045,
+    "selected_source_files": [],
+    "entries": 365
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/PX4FIRMWARE1.13.2.ZIP",
+    "zip_bytes": 525363425,
+    "expanded_bytes": 844725104,
+    "selected_source_files": [
+      {
+        "iso_archive": "2.FIRMWAREZIP/PX4FIRMWARE1.13.2.ZIP",
+        "member": "Firmware/platforms/nuttx/NuttX/apps/system/hexed/docs/license.txt",
+        "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.13.2.ZIP/license.txt",
+        "bytes": 1438,
+        "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+      }
+    ],
+    "entries": 32885
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/PX4FIRMWARE1.13.2UPDATE.ZIP",
+    "zip_bytes": 641600,
+    "expanded_bytes": 1380276,
+    "selected_source_files": [],
+    "entries": 343
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/PX4FIRMWARE1.14.4.ZIP",
+    "zip_bytes": 472381012,
+    "expanded_bytes": 848646919,
+    "selected_source_files": [
+      {
+        "iso_archive": "2.FIRMWAREZIP/PX4FIRMWARE1.14.4.ZIP",
+        "member": "Firmware/platforms/nuttx/NuttX/apps/system/hexed/docs/license.txt",
+        "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.14.4.ZIP/license.txt",
+        "bytes": 1438,
+        "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+      }
+    ],
+    "entries": 37464
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/PX4FIRMWARE1.14.4UPDATE.ZIP",
+    "zip_bytes": 358364,
+    "expanded_bytes": 797913,
+    "selected_source_files": [],
+    "entries": 171
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/PYTHON38ADV3.ZIP",
+    "zip_bytes": 1583697342,
+    "expanded_bytes": 5951268041,
+    "selected_source_files": [
+      {
+        "iso_archive": "2.FIRMWAREZIP/PYTHON38ADV3.ZIP",
+        "member": "Python38/Lib/site-packages/aiohttp-3.12.15.dist-info/licenses/LICENSE.txt",
+        "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PYTHON38ADV3.ZIP/LICENSE.txt",
+        "bytes": 601,
+        "sha256": "c1493e9f10d59d1fba9f9df28008e1557e33cf9fbac8ce1263aa3393982803de"
+      }
+    ],
+    "entries": 113584
+  },
+  {
+    "iso_path": "3.PX4PSP/PSPUPDATEADV3.ZIP",
+    "zip_bytes": 927960,
+    "expanded_bytes": 2491316,
+    "selected_source_files": [],
+    "entries": 385
+  },
+  {
+    "iso_path": "3.PX4PSP/PX4 PSP.ZIP",
+    "zip_bytes": 15447498,
+    "expanded_bytes": 18164840,
+    "selected_source_files": [],
+    "entries": 704
+  },
+  {
+    "iso_path": "4.HILAPPS/3DDISPLAY.ZIP",
+    "zip_bytes": 45955,
+    "expanded_bytes": 45719,
+    "selected_source_files": [],
+    "entries": 3
+  },
+  {
+    "iso_path": "4.HILAPPS/COPTERSIM/COPTERSIMCONTENT.ZIP",
+    "zip_bytes": 30076849,
+    "expanded_bytes": 68742288,
+    "selected_source_files": [],
+    "entries": 110
+  },
+  {
+    "iso_path": "4.HILAPPS/COPTERSIM/COPTERSIMEXEV0.ZIP",
+    "zip_bytes": 1391068,
+    "expanded_bytes": 3282944,
+    "selected_source_files": [],
+    "entries": 2
+  },
+  {
+    "iso_path": "4.HILAPPS/GCSLITE/GCS-LITE.ZIP",
+    "zip_bytes": 250587474,
+    "expanded_bytes": 541756033,
+    "selected_source_files": [
+      {
+        "iso_archive": "4.HILAPPS/GCSLITE/GCS-LITE.ZIP",
+        "member": "GCS-Lite/_internal/numpy-2.5.1.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+        "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/GCS-LITE.ZIP/LICENSE.txt",
+        "bytes": 2314,
+        "sha256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b"
+      }
+    ],
+    "entries": 1206
+  },
+  {
+    "iso_path": "4.HILAPPS/PX4SWITCH/PX4SWITCH.ZIP",
+    "zip_bytes": 45224577,
+    "expanded_bytes": 45778745,
+    "selected_source_files": [],
+    "entries": 4
+  },
+  {
+    "iso_path": "4.HILAPPS/QGC/QGROUNDCONTROL.ZIP",
+    "zip_bytes": 467614501,
+    "expanded_bytes": 667935059,
+    "selected_source_files": [],
+    "entries": 1262
+  }
+]

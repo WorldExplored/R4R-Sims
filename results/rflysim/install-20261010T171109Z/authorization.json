@@ -1,0 +1,10 @@
+{
+  "execution_authorized_by_user": true,
+  "authorized_date_local": "2026-10-10",
+  "host": "airgpu-d27cc1d09d",
+  "earlier_preparation_only_request_superseded": true,
+  "prerequisites_verified": false,
+  "active_config_changed": false,
+  "reason": "host access and complete installer not established; no SDK adapter frozen",
+  "further_generic_execution_permission_required": false
+}

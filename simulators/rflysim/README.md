@@ -1,3 +1,5 @@
+> **10 October 2026 update:** [Current execution readiness](../../docs/rflysim/current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; guest access and complete installer remain blocked. Numerical pending tests are preserved.
+
 # RflySim preparation tools
 
 Execution is disabled. Read `../../docs/rflysim/handoff.md` and `runner-review.md` first. The reviewed configuration is `audit-config.json`; execution freeze remains incomplete pending the installed scene/SDK and host. Recovery code is historical only.

@@ -1,0 +1,32 @@
+[
+  {
+    "host": "d27cc1d09d.my.airgpu.com",
+    "port": 47984,
+    "start_utc": "2026-10-10T17:37:32.647535+00:00",
+    "timeout_s": 3,
+    "kind": "targeted Moonlight TCP reachability, no authentication or configuration",
+    "connected": false,
+    "error": "timeout: timed out",
+    "wall_s": 3.006257417
+  },
+  {
+    "host": "d27cc1d09d.my.airgpu.com",
+    "port": 47989,
+    "start_utc": "2026-10-10T17:37:35.653798+00:00",
+    "timeout_s": 3,
+    "kind": "targeted Moonlight TCP reachability, no authentication or configuration",
+    "connected": false,
+    "error": "timeout: timed out",
+    "wall_s": 3.0046169170000003
+  },
+  {
+    "host": "d27cc1d09d.my.airgpu.com",
+    "port": 48010,
+    "start_utc": "2026-10-10T17:37:38.658395+00:00",
+    "timeout_s": 3,
+    "kind": "targeted Moonlight TCP reachability, no authentication or configuration",
+    "connected": false,
+    "error": "timeout: timed out",
+    "wall_s": 3.0031509169999993
+  }
+]

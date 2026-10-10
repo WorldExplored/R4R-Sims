@@ -1,3 +1,5 @@
+> **10 October 2026 update:** [Current execution readiness](current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; guest access and complete installer remain blocked. Numerical pending tests are preserved.
+
 # Sources checked 2026-10-08
 
 Tags: **documented**, **source-inspected**, **inferred**, **blocked**, **not tested**. Nothing is demonstrated by a simulator run. Exact dated upstream artifact hashes and local retention paths are in the preparation result `source-manifest.json`; the installed ISO revision remains separate.

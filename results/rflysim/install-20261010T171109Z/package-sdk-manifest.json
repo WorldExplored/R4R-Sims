@@ -1,0 +1,37 @@
+[
+  {
+    "iso_archive": "2.FIRMWAREZIP/PX4FIRMWARE1.12.3.ZIP",
+    "member": "Firmware/platforms/nuttx/NuttX/apps/system/hexed/docs/license.txt",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.12.3.ZIP/license.txt",
+    "bytes": 1438,
+    "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+  },
+  {
+    "iso_archive": "2.FIRMWAREZIP/PX4FIRMWARE1.13.2.ZIP",
+    "member": "Firmware/platforms/nuttx/NuttX/apps/system/hexed/docs/license.txt",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.13.2.ZIP/license.txt",
+    "bytes": 1438,
+    "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+  },
+  {
+    "iso_archive": "2.FIRMWAREZIP/PX4FIRMWARE1.14.4.ZIP",
+    "member": "Firmware/platforms/nuttx/NuttX/apps/system/hexed/docs/license.txt",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.14.4.ZIP/license.txt",
+    "bytes": 1438,
+    "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+  },
+  {
+    "iso_archive": "2.FIRMWAREZIP/PYTHON38ADV3.ZIP",
+    "member": "Python38/Lib/site-packages/aiohttp-3.12.15.dist-info/licenses/LICENSE.txt",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PYTHON38ADV3.ZIP/LICENSE.txt",
+    "bytes": 601,
+    "sha256": "c1493e9f10d59d1fba9f9df28008e1557e33cf9fbac8ce1263aa3393982803de"
+  },
+  {
+    "iso_archive": "4.HILAPPS/GCSLITE/GCS-LITE.ZIP",
+    "member": "GCS-Lite/_internal/numpy-2.5.1.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/GCS-LITE.ZIP/LICENSE.txt",
+    "bytes": 2314,
+    "sha256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b"
+  }
+]

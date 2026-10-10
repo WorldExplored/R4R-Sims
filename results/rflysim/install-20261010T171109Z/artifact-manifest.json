@@ -1,0 +1,282 @@
+{
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/docs/rflysim/handoff.md": {
+    "bytes": 14917,
+    "sha256": "95c5943eea9393f0c799b96f16757a074c895962a55cd9428fe2b5241ea55583"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/docs/rflysim/interfaces.md": {
+    "bytes": 10625,
+    "sha256": "b317293ce5dad59b5033ae3181d8722c5cafdb874ae415e0bd5b2091585a0edc"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/docs/rflysim/readiness.md": {
+    "bytes": 6873,
+    "sha256": "80f64f4c312f1b21a3e042d3dad250daf6bce3379b40992d7330138827cf8544"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/docs/rflysim/runner-review.md": {
+    "bytes": 11966,
+    "sha256": "4749e6996f205f875e7d4681549db5365b849d5279a9449e203524d55664a517"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/docs/rflysim/sources.md": {
+    "bytes": 6567,
+    "sha256": "b76b5c4894f642251831c1a707d9e6fa2f414675da9e3d0e1d71af644bd7a86e"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/.gitattributes": {
+    "bytes": 76,
+    "sha256": "dbeb0f140d1fd8c7e5dff2a93c6e6e33739e06ffa938b7043870c9141e4aed75"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/README.md": {
+    "bytes": 378,
+    "sha256": "2c819c59ec1b0a37fe9758c9f7908baf0d4ee1087fe6cdec2864939f095c883c"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/README.md": {
+    "bytes": 5061,
+    "sha256": "df9face02f6bb6f1d55bee0549595e6b00b23c7c2f2daac4f553f2a0f32b56ff"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/asset-manifest.json": {
+    "bytes": 20620,
+    "sha256": "4acd0396d9c01aeeba79887a6ea920e42f5321b1063841ee3b4eaea195b0317c"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/author-repositories.json": {
+    "bytes": 541,
+    "sha256": "47a293438ae83fe01773ca5b5d292bbd2feb3b755bc16be4b2fbe7a5ab279d95"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/commands.log": {
+    "bytes": 1412,
+    "sha256": "d68d1aca570f68d9f8cf581e2f9b12338742b01fac9a14e45e8345aebe696c8a"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/console.log": {
+    "bytes": 2936,
+    "sha256": "be295dc3b02a74c5601b70e972eab03f4c11dad1469293c3639e729e366aeab3"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/local-cases/blocked-call.json": {
+    "bytes": 626,
+    "sha256": "7b264bbe217be934f90da80b5344ba8c71a9e81a322b21231192dc7edc958a28"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/local-cases/bounded-flight-and-cleanup.json": {
+    "bytes": 1321,
+    "sha256": "48d0406cf1d0ea09587e2e108e6d9884cdb2db2d72eb63c45de3b468685ef89e"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/local-cases/exception-cleanup.json": {
+    "bytes": 1594,
+    "sha256": "c6ba1e37fc78140bb65523c253654b11ca5ba649e0c2f65262a97e973160f5e8"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/local-cases/isolated-side-workers.json": {
+    "bytes": 1619,
+    "sha256": "6e2cf0d2342f75d4782cc9f70407bc76b1b40b71e954dca756addb9a7afa71df"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/local-cases/queue-pressure.json": {
+    "bytes": 155,
+    "sha256": "9610ebb4beec0a23f6eafe7511d544b7a900b35a0096a1d3fbc81121ef67bc3b"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/local-cases/synthetic-route-and-landing.json": {
+    "bytes": 1469,
+    "sha256": "3a606319783dd9f91d89bdc43d7a3a268870226434356aa3cc92c4536f0e050e"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/before-clock-fix/run.json": {
+    "bytes": 3604,
+    "sha256": "6a3afc87b4e4134a05dc0f215a18f7b742f1b5f5d8ad25830a16ee2e7d19f5b2"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/commands.log": {
+    "bytes": 1417,
+    "sha256": "92ba4dfd4644734091ada55b892012c3aadade36affe7a4d6650bf10f8dbe336"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/console.log": {
+    "bytes": 2936,
+    "sha256": "a636f832fe00ac2d11dd0879bfb49c41f941b1fb5a895c33e9887c38337e87a0"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/failures.json": {
+    "bytes": 2868,
+    "sha256": "bf97caafdeb110b1794e0256884066c99f14243b39e4c82dc3d18aa756db4d37"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/link-checks.json": {
+    "bytes": 343,
+    "sha256": "1b5592f5ebdf330a0d09f9ff249920a54f496330ea58e7a493ef6a8c086e47f5"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/local-cases/blocked-call.json": {
+    "bytes": 708,
+    "sha256": "717bf389dc804ecf43be8921733fd8f1d5297fd284ebcff413b4a2213450bba9"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/local-cases/bounded-flight-and-cleanup.json": {
+    "bytes": 1521,
+    "sha256": "979d5ea86cef21fb186bd0bc52b04737893c959b155b0fc189bfd44d5af547d5"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/local-cases/exception-cleanup.json": {
+    "bytes": 1786,
+    "sha256": "bbef19758250b70a825851e1cbf1b27e14f58d2947ed498e450d3200c22ec5cc"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/local-cases/isolated-side-workers.json": {
+    "bytes": 1714,
+    "sha256": "060945999ced8a61a0647764a7f3ade0343efcfe224b1baaf981ee3fce5aa097"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/local-cases/queue-pressure.json": {
+    "bytes": 155,
+    "sha256": "9610ebb4beec0a23f6eafe7511d544b7a900b35a0096a1d3fbc81121ef67bc3b"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/local-cases/synthetic-route-and-landing.json": {
+    "bytes": 1469,
+    "sha256": "3a606319783dd9f91d89bdc43d7a3a268870226434356aa3cc92c4536f0e050e"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/prior-preservation.json": {
+    "bytes": 10597,
+    "sha256": "5c361d5ff5e28dfca5d3f731dbe9d56829557be515bde13fcbd716ada292f3a3"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/release-assets.json": {
+    "bytes": 446,
+    "sha256": "7f79182a96d97479fa008bac6a915ebdc190bc16b4d8cfbec80084a98cd50a65"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/run.json": {
+    "bytes": 3874,
+    "sha256": "63a3b3090def8bc7994c838f286edf65b2899cd20b5878aed22685b7d3d3ccff"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/results/rflysim/local-20261009T020939Z/source-manifest.json": {
+    "bytes": 4919,
+    "sha256": "4eb78e71b4409621569365100f8f19f06dc8289587e68bd239f1aadb531555de"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/simulators/rflysim/README.md": {
+    "bytes": 1558,
+    "sha256": "64eb2a7d23c520206f1a4465d5e5f04540cee69eabafe925e44ca7e853a469e0"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/simulators/rflysim/runtime_core.py": {
+    "bytes": 16177,
+    "sha256": "16508c717884203c127683d2155a82cdf651fe7a4ec888301ee54e8f743dee09"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/local-pass-snapshot/simulators/rflysim/tests/test_runtime.py": {
+    "bytes": 9406,
+    "sha256": "93b54a4b5138833e875176fc6c647873a5e49979d7f7196e985618a37cc1c454"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/enablewsl.bat": {
+    "bytes": 26143,
+    "sha256": "5cd5209f8c713b18f41df9a3cb91dc21e9c24ec07de2fe593d8f924cc45b158c"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/enablewsl.ps1": {
+    "bytes": 108607,
+    "sha256": "ee55b0b13daf73aeeb71e57cf6fa7bacfc9e0deea106a5234a44a0df64f8fe37"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/readme.extracted.txt": {
+    "bytes": 4296,
+    "sha256": "49c3af616c988124d8baa1e6083c609df876d37a1f1572372f5f2c56e75dbb13"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/readme.pdf": {
+    "bytes": 305277,
+    "sha256": "f52d7262910c4885aa997d4d1604071ad337ef4d680215f7a226f02a97723fb4"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/testwsl.bat": {
+    "bytes": 3689,
+    "sha256": "7e9d16346a5461f6473a9323e9877e30468c738495ee48929221c22e6db9839b"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/2.firmwarezip/readme.txt": {
+    "bytes": 957,
+    "sha256": "98d199e967c97e195dcaf0f06d6d225161f4aedb8f7cb6146d61807cf8d1be61"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/4.hilapps/version.txt": {
+    "bytes": 1,
+    "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/GCS-LITE.ZIP/LICENSE.txt": {
+    "bytes": 2314,
+    "sha256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.12.3.ZIP/license.txt": {
+    "bytes": 1438,
+    "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.13.2.ZIP/license.txt": {
+    "bytes": 1438,
+    "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PX4FIRMWARE1.14.4.ZIP/license.txt": {
+    "bytes": 1438,
+    "sha256": "f9f0a77433028279b97093fe45c12592d3b3315c06b8e9edf04d0e9b1ae8719a"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/archives/PYTHON38ADV3.ZIP/LICENSE.txt": {
+    "bytes": 601,
+    "sha256": "c1493e9f10d59d1fba9f9df28008e1557e33cf9fbac8ce1263aa3393982803de"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/firmware.txt": {
+    "bytes": 615,
+    "sha256": "299d356f77271a77748a092b927bbf5904a3782fd07bc83e17fa056613c74283"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtofix.extracted.txt": {
+    "bytes": 18019,
+    "sha256": "8fd2b51afe2fb1603cde4c16beade1030585171050ff122c6d4bf548c1b123bb"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtofix.pdf": {
+    "bytes": 9064651,
+    "sha256": "64dd86c22036b984d95a155c130d9cecb55d44a0a1632a9907c860fbcdc3a053"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtoinstall.extracted.txt": {
+    "bytes": 48848,
+    "sha256": "fb085a781940c8382c24b6563e2723e8cc06b3db14ef1904d2d64f950c8be878"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtoinstall.pdf": {
+    "bytes": 12322303,
+    "sha256": "52673510b3fc81583088b24a83a683f04ed143fedaca49c42841279da8fae512"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtouse.extracted.txt": {
+    "bytes": 29990,
+    "sha256": "ca0d3aaa093e3fa1ec271ee3b40f7b2479c1bf9e9aa3b94f5c50e4b1a3b13ac0"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtouse.pdf": {
+    "bytes": 6080030,
+    "sha256": "0118f5fc397d85fe9e5be5934a7e1335b2354be61570b7eb3a535bde5a365907"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/onekeyscript.bat": {
+    "bytes": 49669,
+    "sha256": "d25449b0065de3de98c3b2851b98a92f758d9692672dc52b684a45d63be87a4e"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/28b04c07c04f-SITLRun.bat": {
+    "bytes": 6187,
+    "sha256": "28b04c07c04f7339417180b95f74801767a2bc842947548cbda8601aeff0be3f"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/47dc3c62b88a-PX4MavCtrlV4.py": {
+    "bytes": 140138,
+    "sha256": "47dc3c62b88a682ecb1eae999f09bd0fb6567fa4fccd282f70ecbb54789e91d7"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/8074122b7a0b-PX4MavCtrlV4.py": {
+    "bytes": 141744,
+    "sha256": "8074122b7a0b8a94a5d809fe8b3b8b37ab3e726feca5bc7fc3be23dc4fe6d0e4"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/PX4MavCtrlV4.py": {
+    "bytes": 141744,
+    "sha256": "8074122b7a0b8a94a5d809fe8b3b8b37ab3e726feca5bc7fc3be23dc4fe6d0e4"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/SITLRun.bat": {
+    "bytes": 6228,
+    "sha256": "a0f129c08708dcbc2df7e3de5efbd2800cb0a360fd939bd36a5112bbf45bbe05"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/a0f129c08708-SITLRun.bat": {
+    "bytes": 6228,
+    "sha256": "a0f129c08708dcbc2df7e3de5efbd2800cb0a360fd939bd36a5112bbf45bbe05"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/d713737975c6-PX4MavCtrlV4.py": {
+    "bytes": 140700,
+    "sha256": "d713737975c6325c6d28d4041b61f5c8799cf9d457e6ff135313b60a77680cb0"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/partial-api/f9b95b5003db-PX4MavCtrlV4.py": {
+    "bytes": 137963,
+    "sha256": "f9b95b5003db831ed668f9ef12e5044aa2b605b724f5edda20a502ede0a1dd73"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/package-inspection/readme.txt": {
+    "bytes": 40105,
+    "sha256": "4f5eba29e7c43d911b288e2aa3d4f68346df39527676a5ac579f13500646f178"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/partial-api-names.txt": {
+    "bytes": 497350,
+    "sha256": "2e6941cf3f7d4fdd83db01eb6ea04e9cb9db948add34e187083b16fb74db3694"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-1.png": {
+    "bytes": 163783,
+    "sha256": "26c9facbbbd77c081e634f43aaa586d4fa967cc4d4c8f2f5fc9e717c320e1cb6"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-2.png": {
+    "bytes": 125475,
+    "sha256": "01495055d2b0cd05c144e9257114b3014f0ede1b8947305a9353d160a6a11edc"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-3.png": {
+    "bytes": 164158,
+    "sha256": "df7e7f9208fd22d00675de2ec80d1cd7efad7edb49c0f7c1a50d506823174b34"
+  },
+  "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-4.png": {
+    "bytes": 564473,
+    "sha256": "bb6a26b9cc97a080d4c2bf58f03985936023619baa1908e6e9097ca81a9bdd04"
+  }
+}

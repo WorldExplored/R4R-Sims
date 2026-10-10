@@ -1,0 +1,50 @@
+[
+  {
+    "id": "access-ssh",
+    "category": "access/setup",
+    "symptom": "TCP port 22 timeout, SSH exit 255",
+    "conditions": "one BatchMode attempt to user@52.14.205.169:22, ConnectTimeout 8 s, strict host key checking",
+    "cause_status": "unresolved; no host-key or authentication exchange",
+    "hypotheses": [
+      "provider routing/firewall",
+      "Windows sshd absent or not listening",
+      "current network filtering"
+    ],
+    "repair": "none; inspect through supported desktop before changing SSH",
+    "retest": "none; avoid repeated authentication attempts",
+    "evidence": "access-check.json"
+  },
+  {
+    "id": "access-moonlight",
+    "category": "access/setup",
+    "symptom": "provider dashboard Running; Moonlight Paired but Offline",
+    "conditions": "official client 6.2.0, supplied endpoint, 1080p / 15 Mbps; hostname control ports and direct dashboard IP port 47989 timeout",
+    "cause_status": "unresolved; DNS differs from displayed IP but intentional routing versus stale record unknown",
+    "hypotheses": [
+      "provider endpoint routing/service/firewall",
+      "current network filtering"
+    ],
+    "repair": "client paired with explicit confirmation; no host security settings changed",
+    "retest": "Latest dashboard now Off/no IP; cause of transition unknown, no agent stop/reboot. User must Start existing machine before another streaming test. Earlier Running-state timeouts remain unresolved.",
+    "evidence": [
+      "endpoint-dns.json",
+      "stream-port-check.json",
+      "dashboard-stream-port-check.json",
+      "provided-screenshots.json"
+    ]
+  },
+  {
+    "id": "installer-truncated",
+    "category": "input acquisition",
+    "symptom": "BSD tar exits 1 on truncated Free SDK archive; renderer ZIP is beyond file EOF",
+    "conditions": "local RflySimToolchain.iso size 10218483712, SHA256 3153167473469b1ab592e7058d10734076e418173cf767a65bc4430c21222e1a",
+    "cause_status": "confirmed incomplete local image: ISO PVD declares 23151480832 bytes, shortfall 12932997120",
+    "repair": "preserve original; acquire complete official same-release image on Windows after access; record new bytes/hash",
+    "retest": "pending full acquisition",
+    "evidence": [
+      "iso.json",
+      "iso-structure.json",
+      "iso-list-status.json"
+    ]
+  }
+]

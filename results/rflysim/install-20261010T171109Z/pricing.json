@@ -1,0 +1,14 @@
+{
+  "source": "authenticated AirGPU dashboard/account, read-only 2026-10-10",
+  "machine_compute_listed_usd_hour": 1.95,
+  "account_use_line": {
+    "displayed_time": "10/10/26 1:00 PM",
+    "displayed_duration": "0h 27m",
+    "amount_usd": 0.85,
+    "included_vat_percent": 0,
+    "included_vat_usd": 0
+  },
+  "actual_storage_charge": null,
+  "complete_instance_price_verified": false,
+  "limitation": "account use line does not establish current total charges or storage billing; private balance/payment details omitted"
+}

@@ -1,0 +1,22 @@
+{
+  "host": "airgpu-d27cc1d09d",
+  "ip": "52.14.205.169",
+  "user": "user",
+  "port": 22,
+  "port_provider_confirmed": false,
+  "ssh_attempts": 1,
+  "connect_timeout_s": 8,
+  "batch_mode": true,
+  "strict_host_key_checking": true,
+  "exit_status": 255,
+  "stderr": "ssh: connect to host 52.14.205.169 port 22: Operation timed out",
+  "stage": "TCP reachability; no host-key/authentication exchange",
+  "windows_inspected": false,
+  "reported_gpu": "NVIDIA L4",
+  "reported_os": "Windows Server 2025",
+  "reported_vcpus": 8,
+  "reported_ram_gb": 32,
+  "reported_ssd_gb": 400,
+  "reported_compute_usd_hour": 1.95,
+  "listed_resources_verified": false
+}

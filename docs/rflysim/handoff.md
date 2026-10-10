@@ -1,3 +1,5 @@
+> **10 October 2026 update:** [Current execution readiness](current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; guest access and complete installer remain blocked. Numerical pending tests are preserved.
+
 # RflySim Real4Real preparation — 2026-10-08
 
 Preparation-ready: **yes**, as a source-grounded handoff and review package. Execution-ready: **no**. The candidate connection was supplied, but no connection, installation, experiment, rental, purchase or remote inspection was performed. The current entry point cannot execute a simulator. Recovered historical scripts are evidence, not approved execution instructions.

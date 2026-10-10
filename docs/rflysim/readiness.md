@@ -1,3 +1,5 @@
+> **10 October 2026 update:** [Current execution readiness](current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; guest access and complete installer remain blocked. Numerical pending tests are preserved.
+
 # RflySim execution readiness — 2026-10-08 local / 2026-10-09 UTC
 
 **Preparation-ready: yes. Execution-ready: no.** No host was selected as compatible, connected, installed or tested in this pass. The supplied SSH candidate remains unverified. A/B/coupled capture and the prescribed repeat remain pending; C remains blocked. Local synthetic tests validate authored logic only.

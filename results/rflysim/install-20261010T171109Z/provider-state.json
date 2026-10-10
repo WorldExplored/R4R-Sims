@@ -1,0 +1,12 @@
+{
+  "source": "authenticated AirGPU browser dashboard",
+  "observed_utc": "2026-10-10T17:52:47.772440+00:00",
+  "machine": "airgpu-d27cc1d09d",
+  "status": "Off",
+  "public_ip_display": "-",
+  "button": "Start",
+  "previous_state": "Running observed earlier during access checks",
+  "transition_cause": "unknown",
+  "agent_stop_reboot_terminate_actions": 0,
+  "next_manual_action": "Click Start for this existing machine, then wait for Running/IP and open paired Moonlight entry; billed usage resumes."
+}

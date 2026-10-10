@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "tar",
+    "-tf",
+    "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/RflySimToolchain.iso"
+  ],
+  "exit_status": 1,
+  "stderr": "tar: Truncated input file (needed 2967500800 bytes, only 1873364992 available)\ntar: Error exit delayed from previous errors.\n"
+}

@@ -1,0 +1,102 @@
+{
+  "README.md": {
+    "bytes": 1542,
+    "sha256": "0bff06e6cb3f6ac6a36bb5d53c077e2f148160a5b95a436534cb3bb3f6f2a5be"
+  },
+  "access-check.json": {
+    "bytes": 651,
+    "sha256": "bf3a8e09d5a33ab81f5a59a369d3f2f84dc1ac2b8c7c7ef721a5d55600a83bb7"
+  },
+  "artifact-manifest.json": {
+    "bytes": 15280,
+    "sha256": "aa3c7f32d79db07ef24ee09d5371620775afab8893b56415cfe2012ccef144bb"
+  },
+  "authorization.json": {
+    "bytes": 386,
+    "sha256": "30d3e1dd45fd4483b9695d4760c31a663984093f001937616ba0dd47c774b04d"
+  },
+  "commands.log": {
+    "bytes": 1781,
+    "sha256": "2316dc9f2ab1817cc2e36d24a983354d99870fa70acb01f9e6e343b8ae0bda3b"
+  },
+  "console.log": {
+    "bytes": 3052,
+    "sha256": "e0105fceef1c2504a96d97ec2bd707bd2d6ae8ee3931977605dfe2171e21bea2"
+  },
+  "dashboard-stream-port-check.json": {
+    "bytes": 267,
+    "sha256": "1696c452380ffdc934e60e022f1ad58cc7fbe3e0a9926eb2a322e6725018f51b"
+  },
+  "endpoint-dns.json": {
+    "bytes": 217,
+    "sha256": "257d713f1b9e7055c988094644f04809b092d5d928d16401ed97538a68e769ab"
+  },
+  "failures.json": {
+    "bytes": 2311,
+    "sha256": "63bcb88ac6061e8ef420779aa9ee00a5cb2254cacb1e83981a8d5cf3cf0806bf"
+  },
+  "iso-files.txt": {
+    "bytes": 1478,
+    "sha256": "abf494b12e390e6bcbf6039f7d35806d09f7e969e8fab3a929eae939a9b9b51d"
+  },
+  "iso-inventory.json": {
+    "bytes": 30865,
+    "sha256": "e2c80055fe0257e3dbd0e43fcf466e745c32a95f3d1e005dc5b9a66796e0a24d"
+  },
+  "iso-list-status.json": {
+    "bytes": 284,
+    "sha256": "c2007a93fbc9a54cfb2353147cbd3a760ebbe937783416317a60fe6f420de89f"
+  },
+  "iso-structure.json": {
+    "bytes": 15756,
+    "sha256": "1c05060d1aa61ac7d4037da844e63899fa2ecc43b17eb9e4b70a30c876ad4bc0"
+  },
+  "iso.json": {
+    "bytes": 793,
+    "sha256": "d738f9baa29d163b5a42f7ee96589ca6e6538f0c29add68b58ca48833718538c"
+  },
+  "package-sdk-manifest.json": {
+    "bytes": 1887,
+    "sha256": "a4fb349f6b6b3c2a6a8bbb84de1d1cb69e4983ef34ebabacf4ad1522b9d6ab69"
+  },
+  "package-source-manifest.json": {
+    "bytes": 3007,
+    "sha256": "d9fa9b8f9618340c39fa5199a39f22c2d8b9fcab734e76552f3374c5213a9791"
+  },
+  "partial-api-scan.json": {
+    "bytes": 4305,
+    "sha256": "a1b338757d514b67be6c1ece87304953893b3e0b170e74ec4aafaf3f5f1163aa"
+  },
+  "preservation.json": {
+    "bytes": 1463,
+    "sha256": "d71963f732e852d786c5fbc687bb2f3b177331f490735560ca8c705aa7e7e1fe"
+  },
+  "previous-pass-preserved.json": {
+    "bytes": 252,
+    "sha256": "8f9d69566415f5465bd828743c5e9006d2bd927d881a56ce219fad422b26f16f"
+  },
+  "pricing.json": {
+    "bytes": 525,
+    "sha256": "8775018344e6e82dc1f0bff1c5e2bc3ebdad387aa3ad4dd3fa044308c92286c1"
+  },
+  "provided-screenshots.json": {
+    "bytes": 1839,
+    "sha256": "f08cd22b3d7b3b82e8274662567b5d673c260bffe16bf6ee92e20804bd505676"
+  },
+  "provider-state.json": {
+    "bytes": 505,
+    "sha256": "76d167e3e6b21ffdc9fdfb366c17cb1aa3f2ec9c9f11a6cfc82270267d3297c2"
+  },
+  "readable-archive-inventory.json": {
+    "bytes": 5157,
+    "sha256": "113f5357fffc6090fa7b1aedcc08d14d507306f9f7cdfa6b7c5cdfbcbaa30389"
+  },
+  "run.json": {
+    "bytes": 1222,
+    "sha256": "3feb4440c8042206a9036e0f8aff64578b146ec8dd3a3f74430b96140ef0d154"
+  },
+  "stream-port-check.json": {
+    "bytes": 956,
+    "sha256": "4321a489ea73e1010e86bab4b2f735cb5a95a44b41d336e00196b7a9ebccef33"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "verified_utc": "2026-10-10T17:53:24.813422+00:00",
+  "local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
+  "original_recovery_files_verified": 5,
+  "partial_iso_retained_and_hash_reverified": true,
+  "source_manifests_verified": true,
+  "old_pptx_zip_valid": true,
+  "old_pdf_pages_opened": 14,
+  "diagnostic_screenshots_opened": [
+    {
+      "path": "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-1.png",
+      "size": [
+        2548,
+        1246
+      ],
+      "opened": true
+    },
+    {
+      "path": "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-2.png",
+      "size": [
+        998,
+        430
+      ],
+      "opened": true
+    },
+    {
+      "path": "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-3.png",
+      "size": [
+        812,
+        554
+      ],
+      "opened": true
+    },
+    {
+      "path": "artifacts/rflysim/install-20261010T171109Z/provided-screenshots/moonlight-4.png",
+      "size": [
+        2738,
+        1750
+      ],
+      "opened": true
+    }
+  ],
+  "remote_transfer": "not applicable: no guest output or guest access",
+  "large_assets": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/install-20261010T171109Z",
+  "file_manifest": "artifact-manifest.json",
+  "private_key_sent_to_host": false,
+  "new_simulator_media": null,
+  "measured_results_deck": "pending; existing preparation deck preserved"
+}

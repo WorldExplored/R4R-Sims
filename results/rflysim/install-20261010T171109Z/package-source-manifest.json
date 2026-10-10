@@ -1,0 +1,74 @@
+[
+  {
+    "iso_path": "0.UBUNTUWSL/ENABLEWSL.BAT",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/enablewsl.bat",
+    "bytes": 26143,
+    "sha256": "5cd5209f8c713b18f41df9a3cb91dc21e9c24ec07de2fe593d8f924cc45b158c"
+  },
+  {
+    "iso_path": "0.UBUNTUWSL/ENABLEWSL.PS1",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/enablewsl.ps1",
+    "bytes": 108607,
+    "sha256": "ee55b0b13daf73aeeb71e57cf6fa7bacfc9e0deea106a5234a44a0df64f8fe37"
+  },
+  {
+    "iso_path": "0.UBUNTUWSL/README.PDF",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/readme.pdf",
+    "bytes": 305277,
+    "sha256": "f52d7262910c4885aa997d4d1604071ad337ef4d680215f7a226f02a97723fb4"
+  },
+  {
+    "iso_path": "0.UBUNTUWSL/TESTWSL.BAT",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/0.ubuntuwsl/testwsl.bat",
+    "bytes": 3689,
+    "sha256": "7e9d16346a5461f6473a9323e9877e30468c738495ee48929221c22e6db9839b"
+  },
+  {
+    "iso_path": "2.FIRMWAREZIP/README.TXT",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/2.firmwarezip/readme.txt",
+    "bytes": 957,
+    "sha256": "98d199e967c97e195dcaf0f06d6d225161f4aedb8f7cb6146d61807cf8d1be61"
+  },
+  {
+    "iso_path": "4.HILAPPS/VERSION.TXT",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/4.hilapps/version.txt",
+    "bytes": 1,
+    "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+  },
+  {
+    "iso_path": "FIRMWARE.TXT",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/firmware.txt",
+    "bytes": 615,
+    "sha256": "299d356f77271a77748a092b927bbf5904a3782fd07bc83e17fa056613c74283"
+  },
+  {
+    "iso_path": "HOWTOFIX.PDF",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtofix.pdf",
+    "bytes": 9064651,
+    "sha256": "64dd86c22036b984d95a155c130d9cecb55d44a0a1632a9907c860fbcdc3a053"
+  },
+  {
+    "iso_path": "HOWTOINSTALL.PDF",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtoinstall.pdf",
+    "bytes": 12322303,
+    "sha256": "52673510b3fc81583088b24a83a683f04ed143fedaca49c42841279da8fae512"
+  },
+  {
+    "iso_path": "HOWTOUSE.PDF",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/howtouse.pdf",
+    "bytes": 6080030,
+    "sha256": "0118f5fc397d85fe9e5be5934a7e1335b2354be61570b7eb3a535bde5a365907"
+  },
+  {
+    "iso_path": "ONEKEYSCRIPT.BAT",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/onekeyscript.bat",
+    "bytes": 49669,
+    "sha256": "d25449b0065de3de98c3b2851b98a92f758d9692672dc52b684a45d63be87a4e"
+  },
+  {
+    "iso_path": "README.TXT",
+    "local_path": "artifacts/rflysim/install-20261010T171109Z/package-inspection/readme.txt",
+    "bytes": 40105,
+    "sha256": "4f5eba29e7c43d911b288e2aa3d4f68346df39527676a5ac579f13500646f178"
+  }
+]

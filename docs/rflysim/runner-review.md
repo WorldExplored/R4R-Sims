@@ -1,3 +1,5 @@
+> **10 October 2026 update:** [Current execution readiness](current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; guest access and complete installer remain blocked. Numerical pending tests are preserved.
+
 # Recovered runner review
 
 The exact October 4 `run.py` is preserved with hash in `recovery.json`. Its CLI is historical. Current `simulators/rflysim/run.py` is a preparation-only guard/validator and preservation tool, not an installed-SDK adapter.
