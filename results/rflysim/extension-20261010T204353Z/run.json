@@ -1,0 +1,13 @@
+{
+  "run_id": "extension-20261010T204353Z",
+  "kind": "authorized final installation continuation, simulator measurements pending",
+  "baseline": "0810be8b6e4b06fd802c851a24e0e1289e31c5d5",
+  "start_utc": "2026-10-10T20:43:53Z",
+  "deadline_utc": "2026-10-10T21:43:53Z",
+  "wall_clock_allowance_s": 3600,
+  "prior_ledger": "../continue-20261010T191100Z/setup-budget.json",
+  "stop_instance_after_preservation": true,
+  "delete_instance": false,
+  "repair_remaining": 1,
+  "authorization": "human authorizes additional60minute wall-clock continuation, bundled WSLruntime/minimuminstall/stockstartup/existingtests and Stopafterpreservation"
+}

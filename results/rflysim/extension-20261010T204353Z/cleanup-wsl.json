@@ -1,0 +1,6 @@
+{
+  "completed": true,
+  "exit_status": 0,
+  "deadline_s": 15,
+  "scope": "bundled audit-owned distribution, observed Stopped before startup"
+}

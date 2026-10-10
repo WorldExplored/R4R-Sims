@@ -1,0 +1,13 @@
+{
+  "classification": "platform prerequisite",
+  "phase": "stock renderer startup",
+  "observation_source": "Moonlight Windows desktop modal, observed during this continuation",
+  "message": "The following component(s) are required to run this program: DirectX Runtime. Would you like to install them now?",
+  "action": "No selected; bootstrap exited",
+  "cause": "bootstrap detects missing runtime; exact DLL/package version and Server2025 compatibility unresolved",
+  "repair_attempted": false,
+  "retest": "not performed; no further platform workaround authorized",
+  "renderer_outputs": [],
+  "native_engine_error_log": "none collected; engine did not initialize",
+  "screenshot_durable_copy": "not captured; modal wording is an observation transcript, not raw engine telemetry"
+}

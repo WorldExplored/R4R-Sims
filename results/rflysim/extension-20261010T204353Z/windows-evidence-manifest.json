@@ -1,0 +1,262 @@
+[
+  {
+    "path": "before-startup-processes.json",
+    "bytes": 23403,
+    "sha256": "4e9dbb569c035d6a116b4899fe4e20d2f42f7aeaa4735c3274e036c7477f82de"
+  },
+  {
+    "path": "cleanup-final.json",
+    "bytes": 192,
+    "sha256": "6097046de40b74378aa1e4f2967309ed083c17c5db60db4df1492df2338071ee"
+  },
+  {
+    "path": "cleanup-gui.json",
+    "bytes": 332,
+    "sha256": "399a8d765648534f7b07ef037c437207838af6405865fe02a98f05851b8982fa"
+  },
+  {
+    "path": "cleanup-wsl.json",
+    "bytes": 162,
+    "sha256": "c55eb8a2acc9d8c3a7f215eea0810d3ccdef2ecd9634e4d062455160583c4b8e"
+  },
+  {
+    "path": "cleanup-wsl.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "cleanup-wsl.stdout.txt",
+    "bytes": 80,
+    "sha256": "8142c88d677422c8bd8eace714d36efe1f981de931960c2e99ee38717f810ede"
+  },
+  {
+    "path": "console.log",
+    "bytes": 120279,
+    "sha256": "3efb00115712196b89fedfa43d3b5880aeaadf39b76cad30e001910f407eb262"
+  },
+  {
+    "path": "installed-components.json",
+    "bytes": 984,
+    "sha256": "02d2acbc809521f54a454b32df92e863f610df604f46a29ba6a1d0467ac35d42"
+  },
+  {
+    "path": "onekey-final-upstream.log",
+    "bytes": 123287,
+    "sha256": "e32def6efd5a565b1637dd93355dd899a0f5da31d7709dd1029a7512491d8b2c"
+  },
+  {
+    "path": "onekey-first-install-correction-arguments.json",
+    "bytes": 412,
+    "sha256": "c750579539fcaf95ad6f835728b03311d06388e800cf039e2dfed2148f62d8e8"
+  },
+  {
+    "path": "onekey-first-install-correction-process.json",
+    "bytes": 2424,
+    "sha256": "1124a0904fef305640b47e04f6ee26fc1f74de6281f8c3eeeec0268972fdc430"
+  },
+  {
+    "path": "onekey-first-install-correction.stderr.txt",
+    "bytes": 754,
+    "sha256": "89521c842ca8fa8106516e752234a449f2679ea68623deae33a196d77d589df4"
+  },
+  {
+    "path": "onekey-first-install-correction.stdout.txt",
+    "bytes": 97746,
+    "sha256": "e041c47f4685dbe0565dc1cba0c0c25621e8cb2651ca518ebffccce68bd3a2f4"
+  },
+  {
+    "path": "onekey-first-upstream.log",
+    "bytes": 7637,
+    "sha256": "1df940a673bc6c18e9a762d62d6a81e2bb4678673174fef1ec04bebbed42df1e"
+  },
+  {
+    "path": "onekey-install-arguments.json",
+    "bytes": 411,
+    "sha256": "9347929aeaf41bff436cbd8006a55752d4f75bc979acfa7f137a2de814f1210c"
+  },
+  {
+    "path": "onekey-install-process.json",
+    "bytes": 2386,
+    "sha256": "89407d6d7153cdcd804639f036b710e9c8edd2b83b778c574ca1d9ef0771ea18"
+  },
+  {
+    "path": "onekey-install.stderr.txt",
+    "bytes": 338,
+    "sha256": "6265b63626482f6fadf73824610a74a3f3d43a3deac3f61f4c01977336805452"
+  },
+  {
+    "path": "onekey-install.stdout.txt",
+    "bytes": 4774,
+    "sha256": "24c194a8fe743b0a1b4572c8021cace077f992df4b0995babeb987c0b92a65fb"
+  },
+  {
+    "path": "onekey-sitl-dryrun-process.json",
+    "bytes": 2464,
+    "sha256": "8db483836e10425905e19d5a610c746017172cbf481c4e51a6a1558c581295bd"
+  },
+  {
+    "path": "onekey-sitl-dryrun.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "onekey-sitl-dryrun.stdout.txt",
+    "bytes": 4243,
+    "sha256": "56d69d15d33edcd460e63ab99ffd59a87d8889dcf8607ed5afa64e8a81d15712"
+  },
+  {
+    "path": "owned-startup-processes.json",
+    "bytes": 542,
+    "sha256": "1c0f65c9f464bfea4903c0d8bb5948925da1af1bbb5847db4d9f36d52b02c46b"
+  },
+  {
+    "path": "progress.log",
+    "bytes": 76170,
+    "sha256": "942b88c6b95f5f86dd39ddf22b8fa707499b60fc2094b160149345c6e84d43c2"
+  },
+  {
+    "path": "PX4VerRfly.txt",
+    "bytes": 2,
+    "sha256": "06e9d52c1720fca412803e3b07c4b228ff113e303f4c7ab94665319d832bbfb7"
+  },
+  {
+    "path": "RflySimAdv3Free-V5.01-20260831.txt",
+    "bytes": 40105,
+    "sha256": "4f5eba29e7c43d911b288e2aa3d4f68346df39527676a5ac579f13500646f178"
+  },
+  {
+    "path": "SITLRun-audit-character-error.bat",
+    "bytes": 11385,
+    "sha256": "2bf5d933cc2e4ac785b23f9d1d15903bcbcfae1ca5866f4cfa315b7c6b751f13"
+  },
+  {
+    "path": "SITLRun-audit.bat",
+    "bytes": 5774,
+    "sha256": "4d7143e23fe1e2cb9829b17869b1f8085445a2109d99501c5f73f8987afbed93"
+  },
+  {
+    "path": "SITLRun-original.bat",
+    "bytes": 6248,
+    "sha256": "e6d6589f3167672c7623b5600d8a447e6fc31ce4222df0a07edec43de135a83d"
+  },
+  {
+    "path": "stock-startup.json",
+    "bytes": 174,
+    "sha256": "e1d3dcca493d9c06fc691ecfffaa0a786a078889839acef8fbe5e330666f2796"
+  },
+  {
+    "path": "stock-startup.stderr.txt",
+    "bytes": 2024,
+    "sha256": "288d4442f1669a550216098259acdc3905fe4d5295d1495d3734ccbbfff19848"
+  },
+  {
+    "path": "stock-startup.stdout.txt",
+    "bytes": 3009,
+    "sha256": "ba219d46876a013cfd39f687343e782b9a5604b0a16907839a8ab0b51a177ede"
+  },
+  {
+    "path": "stock2.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "stock2.stdout.txt",
+    "bytes": 463,
+    "sha256": "e2dadf0c88ebdad1b0be56af316db3d781a1146e48e3dc5f9140acf3b798b8cf"
+  },
+  {
+    "path": "wsl-default1-process.json",
+    "bytes": 868,
+    "sha256": "5b7e220b3e14f86e5c5bfceecc1b09979c596cc299f77ee785ce0b9afc7fa7d6"
+  },
+  {
+    "path": "wsl-default1.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "wsl-default1.stdout.txt",
+    "bytes": 80,
+    "sha256": "8142c88d677422c8bd8eace714d36efe1f981de931960c2e99ee38717f810ede"
+  },
+  {
+    "path": "wsl-installed-list-process.json",
+    "bytes": 123,
+    "sha256": "ea1e0f3c375c003387a69cce457ddc264c229ebf72361b2f0f8bf9f9b51985e9"
+  },
+  {
+    "path": "wsl-installed-list.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "wsl-installed-list.stdout.txt",
+    "bytes": 164,
+    "sha256": "4fedd1279d2fc8256bed39c0364eb75d6c7a6fe3a62a37bdc30d75acdd667b22"
+  },
+  {
+    "path": "wsl-list-process.json",
+    "bytes": 848,
+    "sha256": "a271dfea3312f08f6e3dbd485ebeb28b67e647a4efb0a7c49849fe501c3c336f"
+  },
+  {
+    "path": "wsl-list.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "wsl-list.stdout.txt",
+    "bytes": 504,
+    "sha256": "756a9ae833f91603d69b5ee0e38d855073252c2585b8808c37f801cf43646c15"
+  },
+  {
+    "path": "wsl-msi-process.json",
+    "bytes": 1374,
+    "sha256": "8af3fe2c23157d36d33016f95a3e18dee40266ee070babcdb877b6d292d3960f"
+  },
+  {
+    "path": "wsl-msi.log",
+    "bytes": 1555692,
+    "sha256": "ab21519d63c4446588e9e4c0f4d486f063d01583fd1ab457ed1c73258febedb0"
+  },
+  {
+    "path": "wsl-version-process.json",
+    "bytes": 784,
+    "sha256": "a3b7a0ca525ca4affdc8407b8c25ca8b2e50e953ebbf89223194743748acd9a0"
+  },
+  {
+    "path": "wsl-version.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "wsl-version.stdout.txt",
+    "bytes": 448,
+    "sha256": "12e5fdcf7bc448f1bbda14ab71f8fc0036e8d74ca36033c085a1687464da2a54"
+  },
+  {
+    "path": "sdk-small\\manifest.json",
+    "bytes": 1076,
+    "sha256": "a681d97921c050adc1318d4829cf9d9747d524d473371d58784d7d0e5015b925"
+  },
+  {
+    "path": "sdk-small\\PX4MavCtrlV4.py",
+    "bytes": 157620,
+    "sha256": "e1aab5b0f8ef30fd70bb4ba41da50e8d4dc936068763945a047c404d807a17f8"
+  },
+  {
+    "path": "sdk-small\\SITLRun.bat",
+    "bytes": 6248,
+    "sha256": "e6d6589f3167672c7623b5600d8a447e6fc31ce4222df0a07edec43de135a83d"
+  },
+  {
+    "path": "sdk-small\\UE4CtrlAPI.py",
+    "bytes": 163691,
+    "sha256": "f299b946d905b846de87b548a43bbeed9563376593a7e801d44177d8ae09c770"
+  },
+  {
+    "path": "sdk-small\\VisionCaptureApi.py",
+    "bytes": 172766,
+    "sha256": "6bc6680b87d88d86239c16290a45b15372c1e8ec4a8844792d097ae60d9e5943"
+  }
+]

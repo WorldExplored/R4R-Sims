@@ -1,0 +1,26 @@
+[
+  {
+    "path": "C:\\Users\\user\\Documents\\RflySim\\CopterSim\\CopterSim.exe",
+    "bytes": 2464256,
+    "sha256": "C8A18A01DE4651BAFAB6B1071985E189C8036A9C22D09B11432D94B4F92D2F5A",
+    "file_version": null
+  },
+  {
+    "path": "C:\\Users\\user\\Documents\\RflySim\\RflySim3D\\RflySim3D.exe",
+    "bytes": 164864,
+    "sha256": "4ABFC2FD446D5C5EDFFC8F3396C23B82DE17DBB9570A30F540A0C5773E737DF4",
+    "file_version": ""
+  },
+  {
+    "path": "C:\\Users\\user\\Documents\\RflySim\\Firmware\\PX4VerRfly.txt",
+    "bytes": 2,
+    "sha256": "06E9D52C1720FCA412803E3B07C4B228FF113E303F4C7AB94665319D832BBFB7",
+    "file_version": null
+  },
+  {
+    "path": "C:\\Users\\user\\Documents\\RflySim\\RflySimAdv3Free-V5.01-20260831.txt",
+    "bytes": 40105,
+    "sha256": "4F5EBA29E7C43D911B288E2AA3D4F68346DF39527676A5AC579F13500646F178",
+    "file_version": null
+  }
+]

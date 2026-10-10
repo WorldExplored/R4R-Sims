@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-10-10T20:45:41Z",
+  "dashboard_before_reload": "cachedRunning18.191.160.139",
+  "dashboard_after_reload": "Stopping",
+  "moonlight": "Connectionterminatederror-1;pairedPCOffline",
+  "agent_issued_stop": false,
+  "installer_started": false,
+  "cause": "unknown; external stop not attributable to RflySim",
+  "next": "waitonceforfinalproviderstate;humanStartrequiredifOff",
+  "subsequent_state": "Backing up; Start button available",
+  "provider_stop_duration_s": null,
+  "duration_note": "Stop began before this continuation; exact start and cause unknown",
+  "agent_issued_start": true,
+  "next_manual_action": null,
+  "start_basis": "explicit additional60minute authorization on same existinginstance; fixeddeadline preserved",
+  "refreshed_ip": "18.191.145.170",
+  "latest_provider_state": "Running"
+}

@@ -1,0 +1,20 @@
+{
+  "phase": "signed bundled WSL runtime repair",
+  "command": "msiexec.exe",
+  "arguments": [
+    "/i",
+    "D:\\0.UbuntuWSL\\wsl.2.7.8.0.x64.msi",
+    "/passive",
+    "/norestart",
+    "/L*v",
+    "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\extension-20261010T204353Z\\wsl-msi.log"
+  ],
+  "pid": 4960,
+  "start_utc": "2026-10-10T21:01:01.0562990Z",
+  "end_utc": "2026-10-10T21:01:10.5818058Z",
+  "deadline_s": 600,
+  "completed": true,
+  "exit_status": 0,
+  "wall_s": 9.5229356,
+  "still_running": false
+}

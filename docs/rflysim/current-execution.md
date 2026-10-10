@@ -1,5 +1,11 @@
 # Current execution state — 10 October 2026
 
+## Latest evidence supersedes the historical checklist below
+
+[60-minute authorized continuation](../../results/rflysim/extension-20261010T204353Z/README.md): bundled Microsoft-signed runtime installed exit0; WSL1 verified; corrected OnekeyScript first-install `--psp yes` completed exit0. PX4/CopterSim/QGC launched. RflySim3D blocked by missing DirectX Runtime; no flight/camera experiment ran. Installed SDK hashes and 52-file raw archive verified on Mac. Audit-owned components closed; Stop requested before deadline. Prior ledger preserved. Adapter, scene clearance, telemetry/camera clock mappings and independent startup watchdog remain incomplete. No further setup authorization assumed. All following pending-runtime statements are retained as historical context.
+
+## Historical continuation checklist
+
 **Installation and the preserved bounded experiments are authorized. Installation is incomplete; no simulator experiment has run.** Numerical criteria remain unchanged. Baseline 6304b53; authored authorization correction 9aff509. Historical preparation flags do not revoke human authorization.
 
 ## Readiness checklist

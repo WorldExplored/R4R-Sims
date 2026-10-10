@@ -1,0 +1,8 @@
+{
+  "QGC_pid": 10176,
+  "forced_after_close_timeout": true,
+  "QGC_survives": false,
+  "CopterSim_survives": false,
+  "stock_exit": 0,
+  "no_flight_executed": true
+}

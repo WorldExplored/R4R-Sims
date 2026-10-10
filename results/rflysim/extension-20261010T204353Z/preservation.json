@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-10-10T21:43:37.763687+00:00",
+  "archive_bytes": 371022,
+  "archive_sha256": "4b601559d62af041f1211785ab553d1e058ab03d67ff6ebd79048058722d4b11",
+  "zip_crc": "pass",
+  "manifest_files_verified": 52,
+  "local_archive": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/extension-20261010T204353Z/final-extension-20261010T204353Z.zip",
+  "local_extraction": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/extension-20261010T204353Z/final",
+  "private_drive_url": "https://drive.google.com/file/d/1d-CN3Jp6lV7jceHR82pr1L3mMkGZjEXg/view",
+  "representative_logs_opened": [
+    "stock2.stdout.txt",
+    "cleanup-final.json",
+    "onekey-first-install-correction-process.json"
+  ],
+  "frames_exist": false,
+  "console_snapshot": "after installer completion; original transcript closed after archive snapshot",
+  "git_manifests": "UTF-8/LF normalized copies; original bytes remain in verified archive"
+}

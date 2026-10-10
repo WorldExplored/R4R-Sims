@@ -1,0 +1,20 @@
+{
+  "prior_ledger": "../continue-20261010T191100Z/setup-budget.json",
+  "prior_conservative_reserved_s": 7200,
+  "extension_start_utc": "2026-10-10T20:43:53Z",
+  "extension_deadline_utc": "2026-10-10T21:43:53Z",
+  "allowance_s": 3600,
+  "host_work_ended_before_deadline": true,
+  "repair_history": [
+    "prior scoped SSH repair",
+    "bundled Microsoft-signed WSL runtime repair"
+  ],
+  "further_platform_repairs": 0,
+  "authored_corrections": [
+    "first-install PSP flag",
+    "launcher regex corruption",
+    "overbroad SDK collection"
+  ],
+  "active_time_exact_s": null,
+  "time_note": "Fixed wall-clock allowance includes access interruption, installation, collection and Stop; previous ledger unchanged."
+}

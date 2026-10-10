@@ -1,0 +1,20 @@
+{
+  "installation": "completed exit 0 with RflySimUI encoding warning",
+  "WSL_distribution_mode": 1,
+  "CopterSim": "launched; Free v5.0.1 GUI; connected PX4 heartbeat",
+  "PX4": "launched; GUI reports 1.12.3dev",
+  "QGroundControl": "launched",
+  "RflySim3D": "blocked: missing DirectX Runtime modal; No selected",
+  "A": "not run",
+  "B": "not run",
+  "B_minimum_integration": "not measured",
+  "B_full_route": "not measured",
+  "coupled_capture": "not run",
+  "C": "blocked: complete compatible policy path absent",
+  "GPU_workload_metrics": null,
+  "execution_ready": false,
+  "instance_stop_requested_utc": "2026-10-10T21:41:30Z",
+  "instance_last_observed": "Stopping",
+  "deleted": false,
+  "instance_stop_timestamp_precision": "approximate, minute-level UI observation"
+}
