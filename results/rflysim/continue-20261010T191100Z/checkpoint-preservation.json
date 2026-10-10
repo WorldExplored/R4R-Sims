@@ -1,0 +1,33 @@
+{
+  "drive_file_id": "1wCMSaKaTVfkkiwUYnk9NNRsVZyoD_kxv",
+  "drive_file_url": "https://drive.google.com/file/d/1wCMSaKaTVfkkiwUYnk9NNRsVZyoD_kxv/view",
+  "zip_bytes": 54157,
+  "zip_sha256": "ac206ce56b53f697e344fd7353a30fd4bdb5b207c169b2771bb71d5a35b89454",
+  "zip_crc_pass": true,
+  "local_directory": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/continue-20261010T191100Z/windows-checkpoint",
+  "manifested_files_verified": [
+    "complete-iso.json",
+    "desktop-console.log",
+    "iso-inventory.json",
+    "iso-validation.log",
+    "onekey-dryrun.stderr.txt",
+    "onekey-dryrun.stdout.txt",
+    "onekey-help-process.json",
+    "onekey-help.stderr.txt",
+    "onekey-help.stdout.txt",
+    "onekey-package.stderr.txt",
+    "onekey-package.stdout.json",
+    "package-inspection.log",
+    "package-OnekeyScript.bat",
+    "package-readme.txt",
+    "wsl1-feature.json",
+    "previous-access/desktop-console.log",
+    "previous-access/ssh-address-before.xml",
+    "previous-access/ssh-firewall-before.xml"
+  ],
+  "previous_windows_transcript_hash_verified": true,
+  "text_files_opened": true,
+  "media_files_exist": false,
+  "zip_path_note": "Windows Compress-Archive emitted backslash names; safely normalized for Mac extraction, original ZIP preserved.",
+  "local_reader_initial_error": "initial suffix lookup assumed slash names and raised StopIteration; repaired to normalize safely; retest passed. This is an authored reader error, not a simulator issue."
+}

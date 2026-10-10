@@ -1,12 +1,13 @@
 # RflySim installation continuation — 10 October 2026
 
-**Installation/execution authorized; experiments pending. No simulator measurements.**
+**No simulator measurements. Installation incomplete; execution authorized.**
 
-AirGPU is Running at **18.191.160.139**. Moonlight desktop and Windows Edge official package page are verified. After reboot sshd was Stopped/Manual; it was restarted without changing rules/keys. External keyscan still timed out; the unchanged Mac public IP matches the previous scoped rule. SSH is **not an installation prerequisite**.
+- Full officialISO23,151,480,832bytes/PVD/hash verified; executablepackage-infoFreeV5.01-20260831. [Download](download.json), [package queries](package-queries.json).
+- Interactive L4/Server2025 desktop and administrator reboot work. WSL feature Enabled/VMP Disabled; explicitdefault1 requires runtime update and exceeds 15 s deadline. BundledMicrosoftMSIsignatureValid. [Runtime review](wsl-runtime-review.json), [bounded command](wsl-default1-process.json).
+- Conservative carried-over120-minute setup allowance exhausted20:09:36UTC; extension pending. [Ledger](setup-budget.json). Actual active time unknown/overcounted, not reset.
+- TwoWindows→Drive→Macrawcheckpoints verified bysize/SHA256/internalmanifest/CRC. [First](checkpoint-preservation.json), [second](checkpoint2-preservation.json). MacoriginalISO preservedtruncated; WindowsfullISO preserved.
+- [Current readiness and exact pending commands](../../../docs/rflysim/current-execution.md), [runner review](../../../docs/rflysim/runner-review.md), [interface guide](../../../docs/rflysim/interfaces.md).
+- A/B/coupled **not tested**; C **blocked**. Minimum/full B outcomes unavailable; resource workload measurements/plots/media unavailable.
+- Baseline 6304b53; authoredauthorizationcorrection 9aff509. Previous54bdaf1 **20 synthetic local tests**, notsimulatorvalidation; all numericaltestsettings preserved.
 
-- [Current execution notes](../../../docs/rflysim/current-execution.md)
-- [Status](run.json), [access symptom](access.json), [cumulative setup allowance](setup-budget.json)
-- Baseline: audit/rflysim at 6304b53. Previous 54bdaf1 synthetic tests and all numerical A/B criteria preserved.
-- Full ISO download has started in Windows Edge (human activated, visually confirmed). Partial Mac ISO remains ignored and untouched.
-- No A/B/coupled measurements or resource-use results; C remains blocked by compatible policy/task/adapter.
-- Windows raw transcript transfer remains pending; locally saved observations cannot substitute for it.
+Smallest next prerequisite: extend the existing setup allowance so the verified bundled WSLruntime can be installed and explicitWSL1 checked. No hardware/access/installer acquisition request is needed to start that step. SSHexternalcause remainsunresolved, butprivate Drive transfer anddesktop accesswork.

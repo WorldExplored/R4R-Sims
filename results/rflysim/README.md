@@ -1,6 +1,6 @@
 # RflySim audit results
 
-[Installation continuation — 10 October](continue-20261010T191100Z/README.md) — Running at refreshed IP18.191.160.139, full official ISO downloading on Windows; explicit WSL1 feature enabled, restart deferred. SSH service restored, external access unresolved. Installation proceeds through Moonlight; A/B/coupled remain pending.
+[Installation continuation — 10 October](continue-20261010T191100Z/README.md) — full official FreeISO verified; desktop/reboot and privateDrive→Mac raw preservation demonstrated. Feature-only WSL1 setup requires signed bundled runtime update. Setup allowance exhausted conservatively; extension pending. A/B/coupled not tested.
 
 [Installation/access investigation — 10 October](install-20261010T171109Z/README.md) — execution authorized; Moonlight desktop now works after human restart; Windows inventory/scoped SSH setup inspected, external TCP22 still times out, truncated local ISO confirmed. Guest installation and A/B/coupled tests remain blocked; cause of access failure unresolved.
 

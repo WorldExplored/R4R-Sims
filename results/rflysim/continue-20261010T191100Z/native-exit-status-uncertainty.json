@@ -1,0 +1,9 @@
+{
+  "classification": "authored Windows command logger defect; not RflySim failure",
+  "symptom": "Start-Process --help completed=true but saved exit_status=null",
+  "observed": "canonical raw onekey-help-process.json copied and hash-verified",
+  "cause": "not confirmed; PowerShell Process handle/lifecycle handling is a hypothesis",
+  "repair_under_test": "retain Process.Handle before WaitForExit and do not Refresh before reading ExitCode",
+  "retest": "Owned wsl.exe exceeded 15 s deadline; retained handle saved exit -1 and raw records were hash-verified locally. Successful-process exit status still needs retest; helper not claimed validated.",
+  "requires_before_measured_runs": "retain actual native exit statuses; never substitute null with0"
+}

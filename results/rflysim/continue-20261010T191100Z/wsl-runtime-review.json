@@ -1,0 +1,10 @@
+{
+  "path": "D:\\0.UbuntuWSL\\wsl.2.7.8.0.x64.msi",
+  "bytes": 258678784,
+  "sha256": "928506B99D6CAAD14E5A8938E3E3FD9D1C839DF3ED4F40639BDB095FBF24CBF8",
+  "signature_status": "Valid",
+  "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+  "wsl_feature": "Enabled",
+  "virtual_machine_platform": "Disabled",
+  "utc": "2026-10-10T20:09:05.8431966Z"
+}

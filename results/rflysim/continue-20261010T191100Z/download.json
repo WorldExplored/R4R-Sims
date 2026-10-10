@@ -1,14 +1,20 @@
 {
-  "status": "Windows Edge reports download complete; filesystem bytes/hash/ISO integrity verification pending",
+  "status": "complete ISO file/PVD byte count and SHA256 verified; raw JSON preserved in both verified Mac checkpoints",
   "observed_utc": "2026-10-10T19:18:00Z",
   "source": "https://1drv.ms/f/s!AumI9wM9CHrXou02EWLuwKozkM-I-w",
   "filename": "RflySimToolchain-v5.01-20260831.iso",
   "browser_observation": "17.4 MB of 21.6 GB, 4.3 MB/s, 1 hour left; estimate only",
   "download_activated_by": "human confirmed downloading; visually observed in Windows Edge",
-  "destination": "pending filesystem inspection",
+  "destination": "C:\\Users\\user\\Downloads\\RflySimToolchain-v5.01-20260831.iso",
   "expected_iso_volume_bytes": 23151480832,
-  "actual_bytes": null,
-  "sha256": null,
+  "actual_bytes": 23151480832,
+  "sha256": "ed5f41add2e97469c900f4ccff87f615eae4e7cfbedcc7d99211afd4d5dc7973",
   "installer_executed": false,
-  "completed_browser_observed_utc": "2026-10-10T19:31:00Z"
+  "completed_browser_observed_utc": "2026-10-10T19:31:00Z",
+  "iso_declared_bytes": 23151480832,
+  "volume_id": "RFLYSIMTOOLCHAIN",
+  "checked_utc": "2026-10-10T19:35:02.3690434Z",
+  "vendor_published_hash": "not supplied; this is the observed downloaded-file hash",
+  "archive_member_crc_check": "pending",
+  "raw_record": "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\continue-20261010T191100Z\\complete-iso.json"
 }

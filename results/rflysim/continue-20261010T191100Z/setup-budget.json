@@ -13,18 +13,33 @@
   "user_idle_between_turns_excluded": true,
   "remaining_at_turn_start_s": 3360,
   "current_active_s": null,
-  "status": "must accumulate active phases; pause timer during downloads or human handoff",
+  "status": "conservative allowance exhausted; extension requested, not granted; preservation/reporting continues",
   "phases": [
     {
       "start_utc": "2026-10-10T19:11:00Z",
       "end_utc": "2026-10-10T19:28:24Z",
       "reserved_active_s": 1044,
       "basis": "conservative entire current UI/inspection span, includes source work and download overlap"
+    },
+    {
+      "start_utc": "2026-10-10T19:31:00Z",
+      "end_utc": "2026-10-10T19:49:00Z",
+      "reserved_active_s": 1080,
+      "basis": "conservative full integrity/mount/help/transfer span; includes wait/source work"
+    },
+    {
+      "start_utc": "2026-10-10T19:49:00Z",
+      "end_utc": "2026-10-10T20:09:36Z",
+      "reserved_active_s": 1236,
+      "basis": "conservative full reboot/runtime-review span; includes UI/source/wait time"
     }
   ],
-  "this_phase_reserved_active_s": 1044,
-  "total_reserved_active_s": 4884,
-  "remaining_active_s": 2316,
-  "timer_paused_utc": "2026-10-10T19:28:24Z",
-  "pause_reason": "secure sign-in handoff/download wait; no installation debugging during pause"
+  "this_phase_reserved_active_s": 3360,
+  "total_reserved_active_s": 7200,
+  "remaining_active_s": 0,
+  "timer_paused_utc": "2026-10-10T20:09:36Z",
+  "pause_reason": "existing conservative setup allowance exhausted; extension pending",
+  "current_phase_start_utc": null,
+  "mount_privilege_retest": "ordinary administrator prerequisite; observed standard-token failure preserved, elevated mount passed",
+  "repair_count_note": "previous scoped SSH setup counts1; mount elevation was required privilege setup, not a speculative compatibility repair; one installation/compatibility repair remains"
 }

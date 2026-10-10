@@ -19,5 +19,9 @@
   "C": "blocked: complete compatible released policy/task/adapter absent",
   "numerical_config_changed": false,
   "instance_stopped": false,
-  "installer_download": "browser reports complete; byte/hash/integrity check pending"
+  "installer_download": "complete file/PVD byte count and SHA256 verified; release/Free identity from executable package-info",
+  "wsl": "feature Enabled after reboot; set-default-version 1 requests runtime update and exceeded 15s deadline",
+  "execution_ready": false,
+  "setup_allowance": "exhausted conservative reservation; extension pending",
+  "raw_evidence": "two Windows checkpoints locally size/SHA256/manifest verified"
 }

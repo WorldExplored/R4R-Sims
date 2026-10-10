@@ -1,0 +1,10 @@
+{
+  "classification": "authored setup command / Windows privilege requirement; not RflySim failure",
+  "phase": "Mount-DiskImage after ISO hash/size check in standard-user PowerShell",
+  "symptom": "A required privilege is not held by the client",
+  "hresult": "0x80070522",
+  "confirmed_cause": "unelevated shell lacks required mount privilege on selected Server2025 host",
+  "repair": "repeat mount in elevated PowerShell; user already authorizes installation/admin access",
+  "retest": "elevated mount succeeded; package root D:\\; versionV5.01-20260831",
+  "evidence": "Windows iso-validation.log; raw file locally hash-verified in both checkpoints"
+}

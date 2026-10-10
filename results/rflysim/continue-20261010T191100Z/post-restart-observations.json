@@ -1,0 +1,20 @@
+{
+  "provider": "Running",
+  "public_ip": "18.191.160.139",
+  "moonlight": "reconnected after authorized Windows reboot; interactive desktop verified",
+  "iso_mount_after_reboot": "D:\\OnekeyScript.exe absent (Test-Path false); remount required",
+  "sshd": "Stopped/Manual; no firewall/key change",
+  "wsl_default1_attempt": {
+    "arguments": "--set-default-version 1",
+    "deadline_s": 15,
+    "symptom": "Windows Subsystem for Linux must be updated to latest version; suggests wsl.exe --update",
+    "completed": false,
+    "owned_pid": 2716,
+    "exit_status_after_owned_timeout_kill": -1,
+    "version1_selected": false,
+    "wsl2_distribution_installed": false
+  },
+  "repair_selected": "install bundled signed Microsoft WSL runtime MSI, then explicitly select/register WSL1; do not run default wsl --install or enable VirtualMachinePlatform",
+  "native_exit_logger": "retained Process.Handle yields non-null killed-process exit_status; successful-process exit status still requires retest",
+  "desktop_capture_tool": "one Mac ScreenCaptureKit capture failure; Moonlight window zoom restored screenshots; not a guest or RflySim renderer failure"
+}

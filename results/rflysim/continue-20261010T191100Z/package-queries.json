@@ -1,0 +1,30 @@
+{
+  "kind": "actual executable read-only help/package-info/dry-run, not simulator validation",
+  "executable": "D:\\OnekeyScript.exe",
+  "bytes": 53587456,
+  "package_root": "D:\\",
+  "package_info_observed": {
+    "edition": "free",
+    "package_version": "V5.01-20260831",
+    "paid": false,
+    "rv": 0,
+    "activation_required": false
+  },
+  "help": "CLI supports --package-info; --silent --dry-run; explicit install-dir/build-command/px4-version/toolchain/psp/apps/compiler-env/firmware/prebuild/block-output/lang",
+  "initial_dryrun": {
+    "install_dir": "C:\\Users\\user\\Documents\\RflySim",
+    "build_command": "px4_fmu-v6x_default (default; must change to px4_sitl_default before installation)",
+    "px4_version": "6 = PX4v1.12.3 per executable text",
+    "toolchain": "1 = WinWSL per executable text",
+    "psp": "no",
+    "apps": "yes",
+    "compiler_env": "yes",
+    "firmware": "yes",
+    "prebuild": "yes",
+    "block_output": "Yes default; must change to no for stock SITL"
+  },
+  "installer_not_executed": true,
+  "raw_output_files": "onekey-help.stdout.txt, onekey-package.stdout.json, onekey-dryrun.stdout.txt; raw bytes hash-verified in local Windows checkpoints",
+  "root_terms_filename_search": "no match observed for license/eula/terms outside ZIPs; dependency/GUI terms still require inspection",
+  "sha256": "0fa5c4e265632fe5395b6aafa68c5602c2e407c271b54520bf6f3407df5d4b52"
+}

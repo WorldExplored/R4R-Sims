@@ -1,0 +1,14 @@
+{
+  "drive_file_id": "1dyi3VKR3OD3M-6wRcHB82xin5wXlKWRV",
+  "zip_bytes": 58195,
+  "zip_sha256": "669079d74e2c0f12b197944b56cc33d54d728a4b2f37b846ebad28aa30930334",
+  "source_windows_sha256_matches": true,
+  "zip_crc_pass": true,
+  "manifested_files_verified": 25,
+  "local_zip": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/continue-20261010T191100Z/checkpoint2-continue-20261010T191100Z.zip",
+  "local_directory": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/continue-20261010T191100Z/windows-checkpoint2",
+  "media_files_exist": false,
+  "kind": "setup evidence, not simulator validation",
+  "json_files_opened": true,
+  "local_reader_error": "After all manifest hashes passed, an optional JSON lookup used a dot instead of a hyphen in wsl-default1-process.json. Corrected lookup and JSON read passed; authored reader defect, not RflySim failure."
+}
