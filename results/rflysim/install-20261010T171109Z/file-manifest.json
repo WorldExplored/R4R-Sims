@@ -1,7 +1,11 @@
 {
   "README.md": {
-    "bytes": 1542,
-    "sha256": "0bff06e6cb3f6ac6a36bb5d53c077e2f148160a5b95a436534cb3bb3f6f2a5be"
+    "bytes": 2018,
+    "sha256": "21536ecf9bbc079e13775450ef948d9154319e36cc7fe8b78ea8c2050aea5e87"
+  },
+  "access-after-restart.json": {
+    "bytes": 776,
+    "sha256": "cfc4e10813cdcf25e071ca8ec2e8b1224270832fe1c292747ed96f3c5cd5805a"
   },
   "access-check.json": {
     "bytes": 651,
@@ -27,13 +31,17 @@
     "bytes": 267,
     "sha256": "1696c452380ffdc934e60e022f1ad58cc7fbe3e0a9926eb2a322e6725018f51b"
   },
+  "desktop-observations.json": {
+    "bytes": 1081,
+    "sha256": "5a12011ee5b09acedcf2b044d37b37fb4a71571a93870ed5d525abeccd425538"
+  },
   "endpoint-dns.json": {
     "bytes": 217,
     "sha256": "257d713f1b9e7055c988094644f04809b092d5d928d16401ed97538a68e769ab"
   },
   "failures.json": {
-    "bytes": 2311,
-    "sha256": "63bcb88ac6061e8ef420779aa9ee00a5cb2254cacb1e83981a8d5cf3cf0806bf"
+    "bytes": 3769,
+    "sha256": "db6494642542b4f8fdcf68353fd566afc40a84675468c2ffb18f7d8e611a726e"
   },
   "iso-files.txt": {
     "bytes": 1478,
@@ -68,8 +76,8 @@
     "sha256": "a1b338757d514b67be6c1ece87304953893b3e0b170e74ec4aafaf3f5f1163aa"
   },
   "preservation.json": {
-    "bytes": 1463,
-    "sha256": "d71963f732e852d786c5fbc687bb2f3b177331f490735560ca8c705aa7e7e1fe"
+    "bytes": 1744,
+    "sha256": "4b3fd381b118576708350746960378d21909e215c1c57fa08942af96b22b4ca8"
   },
   "previous-pass-preserved.json": {
     "bytes": 252,
@@ -83,6 +91,10 @@
     "bytes": 1839,
     "sha256": "f08cd22b3d7b3b82e8274662567b5d673c260bffe16bf6ee92e20804bd505676"
   },
+  "provider-events.jsonl": {
+    "bytes": 557,
+    "sha256": "aff3379a683b64c024c246be074b289199fe8c5518eb7a208e694b41a3fcd194"
+  },
   "provider-state.json": {
     "bytes": 505,
     "sha256": "76d167e3e6b21ffdc9fdfb366c17cb1aa3f2ec9c9f11a6cfc82270267d3297c2"
@@ -92,8 +104,16 @@
     "sha256": "113f5357fffc6090fa7b1aedcc08d14d507306f9f7cdfa6b7c5cdfbcbaa30389"
   },
   "run.json": {
-    "bytes": 1222,
-    "sha256": "3feb4440c8042206a9036e0f8aff64578b146ec8dd3a3f74430b96140ef0d154"
+    "bytes": 1441,
+    "sha256": "85ba0da71f1fd2026e8182190ef8f5d1606f4d38765de2debe748c9e6b450169"
+  },
+  "ssh-listener-external-check.json": {
+    "bytes": 177,
+    "sha256": "a54b6fd3c99bf929f8ef0e529299e510aa80de175aea98536bb53abdd47efffd"
+  },
+  "ssh-setup.json": {
+    "bytes": 2295,
+    "sha256": "32a8b497d29300aefb60df125ab6af06ee2d519dec6b5a049e0abae1df746323"
   },
   "stream-port-check.json": {
     "bytes": 956,

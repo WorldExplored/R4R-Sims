@@ -1,0 +1,30 @@
+{
+  "host": "3.150.128.48",
+  "user": "user",
+  "port": 22,
+  "port_provider_confirmed": false,
+  "start_utc": "2026-10-10T17:58:25.084459+00:00",
+  "wall_s": 8.018883875,
+  "exit_status": 255,
+  "stdout": "",
+  "stderr": "ssh: connect to host 3.150.128.48 port 22: Operation timed out\n",
+  "single_attempt_this_current_IP": true,
+  "streaming_checks": [
+    {
+      "host": "3.150.128.48",
+      "port": 47989,
+      "start_utc": "2026-10-10T17:58:33.103503+00:00",
+      "timeout_s": 3,
+      "connected": true,
+      "wall_s": 0.02096733300000153
+    },
+    {
+      "host": "d27cc1d09d.my.airgpu.com",
+      "port": 47989,
+      "start_utc": "2026-10-10T17:58:33.124471+00:00",
+      "timeout_s": 3,
+      "connected": true,
+      "wall_s": 0.0219647080000005
+    }
+  ]
+}

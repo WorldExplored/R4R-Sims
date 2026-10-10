@@ -1,12 +1,12 @@
 # RflySim installation/access investigation — 10 October 2026
 
-**Authorized to execute; blocked before guest access and installation. No simulator measurements.** Latest AirGPU state is **Off** with no IP. [Provider state](provider-state.json): Start this existing machine before retrying Moonlight. No agent shutdown/reboot occurred.
+**Authorized to execute; blocked before guest access and installation. No simulator measurements.** After the human restart, Moonlight desktop works at **3.150.128.48**. [Earlier Off state](provider-state.json), [restart events](provider-events.jsonl), [guest inventory](desktop-observations.json), [scoped SSH setup](ssh-setup.json), [external TCP blocker](ssh-listener-external-check.json) are separate records. No agent shutdown/reboot occurred.
 
 - [Readiness and next action](../../../docs/rflysim/current-execution.md)
 - [Run/status](run.json), [observed failures](failures.json), [SSH](access-check.json), [streaming checks](stream-port-check.json), [DNS mismatch](endpoint-dns.json)
 - [ISO bytes/hash/truncation](iso.json), [ISO structure](iso-structure.json), [package document/script hashes](package-source-manifest.json), [partial SDK example copies](partial-api-scan.json)
 - [Previous 54bdaf1 pass preservation](previous-pass-preserved.json): 20 synthetic tests remain local tests, not flight/camera validation.
 
-Provider-listed L4 / 8 vCPU / 32 GB / 400 GB / Windows Server 2025 are not guest measurements. Compute list price $1.95/hour; complete charges remain unverified. A/B/coupled capture pending, minimum/full B not measured; C blocked. Numerical routes, timing and acceptance criteria remain unchanged. No Windows feature, firewall, authentication or installer changes made.
+Windows inventory now observed: Server2025 build26100, L4 23034MiB driver596.86, EPYC7R13 4cores/8logical,33067937792bytes RAM,396542255104bytes Cfree. These are setup inventory, not simulator resource-use measurements. Compute list price $1.95/hour; complete charges remain unverified. A/B/coupled capture pending, minimum/full B not measured; C blocked. Numerical routes, timing and acceptance criteria remain unchanged. Approved scoped SSH service/key/firewall changes recorded; WSL default-install prompt canceled. No RflySim installer or experiment executed.
 
-Large local source evidence and four supplied screenshots: `artifacts/rflysim/install-20261010T171109Z/`. Original partial ISO retained at worktree root and ignored. No remote output exists. Measured-results deck pending; existing preparation deck preserved.
+Large local source evidence and four supplied screenshots: `artifacts/rflysim/install-20261010T171109Z/`. Original partial ISO retained at worktree root and ignored. Windows bootstrap transcript/backups await transfer; local observations/hashes are preserved, raw remote preservation incomplete. Measured-results deck pending; existing preparation deck preserved.

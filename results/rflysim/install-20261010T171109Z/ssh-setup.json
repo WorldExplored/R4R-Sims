@@ -1,0 +1,48 @@
+{
+  "observed_utc": "2026-10-10T18:14:32.764962+00:00",
+  "authorization": "human confirmed scoped SSH access at action time",
+  "current_ip": "3.150.128.48",
+  "local_listener": "IPv4 0.0.0.0:22 and IPv6 [::]:22; PID 9448; local bounded TcpClient probe succeeded",
+  "service_status": "Running",
+  "service_start_type": "Manual unchanged",
+  "changes": [
+    {
+      "name": "OpenSSH-Server-In-TCP",
+      "before": "Enabled True, Private profile, RemoteAddress Any",
+      "after": "same profile/action; RemoteAddress 72.12.218.187",
+      "backups": [
+        "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\install-20261010T171109Z\\ssh-firewall-before.xml",
+        "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\install-20261010T171109Z\\ssh-address-before.xml"
+      ]
+    },
+    {
+      "name": "R4R-RflySim-SSH-20261010",
+      "kind": "new audit-specific allow rule",
+      "protocol": "TCP",
+      "port": 22,
+      "remote_address": "72.12.218.187",
+      "profile": "Any"
+    },
+    {
+      "name": "C:\\ProgramData\\ssh\\administrators_authorized_keys",
+      "kind": "new file; no existing authorized-key file found",
+      "acl": "inheritance removed; full control Administrators SID S-1-5-32-544 and SYSTEM SID S-1-5-18",
+      "sha256": "0cf2aaf091d0479f2c9969cccbc5a4941de082792bbf09bfccf213922c82d4b8",
+      "local_expected_hash_equal": true,
+      "client_public_key_fingerprint": "SHA256:WeoLAc2M8+GOtMZYCsD3LF/HK4Cj+hxh77Z8UqyuF0o"
+    }
+  ],
+  "host_ed25519_fingerprint_observed": "SHA256:ZkbBDxcZswLzOT2G/qaoHmI+J5ity8aKqLG0XC7jj8c",
+  "host_key_verified_over_network": false,
+  "ssh_authentication_attempt_after_setup": false,
+  "private_key_transferred": false,
+  "windows_log": {
+    "path": "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\install-20261010T171109Z\\desktop-console.log",
+    "sha256": "92c765a6595c7e6fb0d30b1df243b10bd333a2c445fbd1c13f7a315ed0d63a1c",
+    "closed": true,
+    "local_copy_verified": false
+  },
+  "cause_external_timeout": "unresolved provider/current-network filtering or other Windows policy; local service and scoped allow rule verified",
+  "next_prerequisite": "AirGPU confirms/enables inbound TCP22 from Mac IP, or supplies supported SSH endpoint; then strict host-key verification and transfer probe",
+  "simulator_installed": false
+}

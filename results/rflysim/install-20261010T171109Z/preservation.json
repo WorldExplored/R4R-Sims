@@ -40,10 +40,13 @@
       "opened": true
     }
   ],
-  "remote_transfer": "not applicable: no guest output or guest access",
+  "remote_transfer": "pending: Windows bootstrap transcript/firewall backups exist; no tested transfer yet",
   "large_assets": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/install-20261010T171109Z",
   "file_manifest": "artifact-manifest.json",
   "private_key_sent_to_host": false,
   "new_simulator_media": null,
-  "measured_results_deck": "pending; existing preparation deck preserved"
+  "measured_results_deck": "pending; existing preparation deck preserved",
+  "windows_raw_log_locally_verified": false,
+  "local_observed_host_records_retained": true,
+  "verification_scope": "ISO/originals/source/supplied screenshots checked before host setup; current authored result manifest regenerated afterward"
 }

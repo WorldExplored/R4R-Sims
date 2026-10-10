@@ -1,0 +1,4 @@
+{"event": "user_reported_desktop_open", "verification": "not verified; subsequent provider refresh still Off/Moonlight Offline"}
+{"event": "user_starting_instance_again", "source": "human instruction: hold on, starting again"}
+{"event": "provider_starting", "observed_utc": "2026-10-10T17:56:40Z", "displayed_public_ip": "3.150.128.48", "guest_access": false}
+{"event": "dns_after_restart", "observed_utc": "2026-10-10T17:56:50.951458Z", "hostname": "d27cc1d09d.my.airgpu.com", "addresses": ["52.29.233.180"], "cause": "routing or update delay unresolved"}

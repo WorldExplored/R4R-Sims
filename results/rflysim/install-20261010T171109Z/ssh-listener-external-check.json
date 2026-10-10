@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-10T18:08:16.385869+00:00",
+  "host": "3.150.128.48",
+  "port": 22,
+  "after_verified_windows_listener": true,
+  "connected": false,
+  "error": "timed out"
+}

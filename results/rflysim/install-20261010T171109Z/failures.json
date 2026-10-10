@@ -46,5 +46,28 @@
       "iso-structure.json",
       "iso-list-status.json"
     ]
+  },
+  {
+    "id": "wsl-interactive-inspection",
+    "category": "authored bootstrap inspection hazard",
+    "symptom": "direct wsl -l -v showed an interactive default-install prompt when WSL feature absent",
+    "cause_status": "confirmed Windows WSL executable behavior on this host; our direct inspection did not use the authored Native watchdog helper",
+    "repair": "Ctrl-C canceled prompt; feature still Disabled; future preflight uses independent 15s process timeout",
+    "retest": "bounded helper pending transfer; no WSL2 or default install accepted",
+    "evidence": "Windows desktop-console.log, SHA in ssh-setup.json"
+  },
+  {
+    "id": "ssh-after-scoped-setup",
+    "category": "access/setup",
+    "symptom": "external TCP22/ssh-keyscan timeout despite Windows local listener success",
+    "conditions": "new current IP 3.150.128.48, service PID9448 listening, audit allow rules restricted to 72.12.218.187",
+    "cause_status": "unresolved; provider routing/filter, current network filtering or other Windows policy need inspection",
+    "repair": "one scoped Windows SSH setup with public key/ACL and firewall backup; no broad firewall/AV disable",
+    "retest": "single external host-key scan exit1/no key; final TCP check timeout before authentication",
+    "evidence": [
+      "ssh-setup.json",
+      "ssh-listener-external-check.json"
+    ],
+    "remaining_manual_action": "ask AirGPU to confirm inbound TCP22 or supported SSH endpoint"
   }
 ]
