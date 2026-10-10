@@ -1,0 +1,15 @@
+{
+  "kind": "Windows prerequisite installation, not RflySim validation",
+  "observed_utc": "2026-10-10T19:21:00Z",
+  "command": "Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart -ErrorAction Stop",
+  "before": "Disabled",
+  "after": "Enabled",
+  "restart_needed": true,
+  "reboot_performed": false,
+  "wsl2_or_virtual_machine_platform_requested": false,
+  "distribution_installed": false,
+  "raw_record": "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\continue-20261010T191100Z\\wsl1-feature.json",
+  "raw_transcript": "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\continue-20261010T191100Z\\desktop-console.log",
+  "raw_mac_copy_verified": false,
+  "wall_s": "saved on Windows; extraction pending"
+}

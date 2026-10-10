@@ -19,8 +19,8 @@ def digest(path):
 
 def validate(config):
     errors = []
-    if config.get('execution_authorized') is not False:
-        errors.append('preparation config must keep execution_authorized=false')
+    if not isinstance(config.get('execution_authorized'), bool):
+        errors.append('execution_authorized must be an explicit boolean')
     b = config.get('B', {})
     a = config.get('A', {})
     if b.get('route_ned_m') != ROUTE:

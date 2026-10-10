@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-10-10T19:15:00Z",
+  "ip": "18.191.160.139",
+  "mac_public_ip": "72.12.218.187",
+  "mac_matches_saved_firewall_scope": true,
+  "ssh_command": "ssh -o BatchMode=yes -o ConnectTimeout=5 -o ConnectionAttempts=1 -o StrictHostKeyChecking=yes -i ~/Downloads/private_key.pem -p 22 user@18.191.160.139 whoami",
+  "exit_status": 255,
+  "symptom": "TCP connection timed out before host-key verification or authentication",
+  "sshd_after_restart": "Stopped, Manual; confirmed in Windows PowerShell",
+  "cause": "Stopped sshd was confirmed after reboot, corrected. Remaining external reachability cause unresolved after listener restored.",
+  "installation_dependency_on_ssh": false,
+  "changes": "none; existing keys/firewall preserved",
+  "desktop_input": "keyboard navigation verified; native coordinate clicks unreliable in prior recorded pass",
+  "manual_action_requested": "click Download on Windows official OneDrive page; do not install yet",
+  "service_restored": "Start-Service sshd; Running, Manual; IPv4/IPv6 port22 PID3184",
+  "firewall_scope_verified": "both existing rules RemoteAddress72.12.218.187; unchanged",
+  "external_retest": "ssh-keyscan -T3 -t ed25519 18.191.160.139 exit1, no host key"
+}

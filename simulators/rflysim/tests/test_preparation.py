@@ -26,6 +26,15 @@ class PreparationTests(unittest.TestCase):
         c['B']['route_ned_m'][2][0] = 3
         self.assertTrue(prep.validate(c))
 
+    def test_authorization_does_not_complete_execution_freeze(self):
+        c = json.loads((ROOT / 'audit-config.json').read_text())
+        for authorized in [False, True]:
+            c['execution_authorized'] = authorized
+            self.assertEqual(prep.validate(c), [])
+        c['execution_authorized'] = 'yes'
+        self.assertTrue(prep.validate(c))
+        self.assertFalse(c['execution_freeze_complete'])
+
     def test_preservation_detects_tampering(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)

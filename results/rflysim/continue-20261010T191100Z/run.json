@@ -1,0 +1,23 @@
+{
+  "run_id": "continue-20261010T191100Z",
+  "kind": "installation continuation; simulator experiments pending",
+  "started_utc": "2026-10-10T19:11:00Z",
+  "base_commit": "6304b53ea69515811400854677df7a3844d6e656",
+  "branch": "audit/rflysim",
+  "execution_authorized": true,
+  "authorization": "latest human continuation explicitly authorizes installation and existing bounded experiments",
+  "provider_state": "Running",
+  "dashboard_public_ip": "18.191.160.139",
+  "desktop": "Moonlight Windows desktop and Edge official package page verified",
+  "simulator_installed": false,
+  "simulator_executed": false,
+  "A": "pending installed camera/truth/calibration",
+  "B": "pending installed SDK and freeze",
+  "B_minimum_integration": null,
+  "B_full_route": null,
+  "coupled_capture": "pending successful B and documented reset",
+  "C": "blocked: complete compatible released policy/task/adapter absent",
+  "numerical_config_changed": false,
+  "instance_stopped": false,
+  "installer_download": "browser reports complete; byte/hash/integrity check pending"
+}

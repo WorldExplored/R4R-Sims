@@ -1,0 +1,30 @@
+{
+  "total_active_limit_s": 7200,
+  "repair_limit": 2,
+  "prior_start_utc": "2026-10-10T17:11:09Z",
+  "prior_last_observation_utc": "2026-10-10T18:14:32Z",
+  "prior_active_exact_s": null,
+  "prior_reserved_upper_bound_s": 3840,
+  "prior_basis": "No cumulative active timer was recorded. Conservatively reserve the entire previous 64-minute investigation span, including source inspection/waits; this overcounts rather than resets the allowance.",
+  "prior_repairs_counted": 1,
+  "prior_repair": "scoped SSH service/key/firewall access setup; no RflySim installation repair yet",
+  "this_phase_start_utc": "2026-10-10T19:11:00Z",
+  "download_waits_excluded": true,
+  "user_idle_between_turns_excluded": true,
+  "remaining_at_turn_start_s": 3360,
+  "current_active_s": null,
+  "status": "must accumulate active phases; pause timer during downloads or human handoff",
+  "phases": [
+    {
+      "start_utc": "2026-10-10T19:11:00Z",
+      "end_utc": "2026-10-10T19:28:24Z",
+      "reserved_active_s": 1044,
+      "basis": "conservative entire current UI/inspection span, includes source work and download overlap"
+    }
+  ],
+  "this_phase_reserved_active_s": 1044,
+  "total_reserved_active_s": 4884,
+  "remaining_active_s": 2316,
+  "timer_paused_utc": "2026-10-10T19:28:24Z",
+  "pause_reason": "secure sign-in handoff/download wait; no installation debugging during pause"
+}

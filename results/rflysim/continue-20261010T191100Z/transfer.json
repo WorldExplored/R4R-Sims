@@ -1,0 +1,17 @@
+{
+  "method": "private Google Drive browser upload/download + connector raw fetch; pending round-trip validation",
+  "human_authorization": "use existing private cloud folder; upload audit data to our Google Drive signed in on Windows",
+  "folder_url": "https://drive.google.com/drive/folders/1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn",
+  "parent": "existing private ChatGPT folder",
+  "sharing_verified": "shared=false, owner only; no sharing changes",
+  "windows_signin": "human completed; private folder visibly opens; Windows upload/download not yet verified",
+  "scp": "external SSH remains unavailable; not falsely claimed supported",
+  "remote_raw_logs_copied": false,
+  "scientific_media_exists": false,
+  "mac_drive_round_trip": {
+    "file_id": "1JXqH2WxFPz72KeDFpMPy63XBzNhUbYZC",
+    "bytes": 76,
+    "sha256": "b10c86c25710464ed74827e0ace21148d279637e954707554f25a77f9ba3003a",
+    "verified": true
+  }
+}

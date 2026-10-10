@@ -1,0 +1,14 @@
+{
+  "status": "Windows Edge reports download complete; filesystem bytes/hash/ISO integrity verification pending",
+  "observed_utc": "2026-10-10T19:18:00Z",
+  "source": "https://1drv.ms/f/s!AumI9wM9CHrXou02EWLuwKozkM-I-w",
+  "filename": "RflySimToolchain-v5.01-20260831.iso",
+  "browser_observation": "17.4 MB of 21.6 GB, 4.3 MB/s, 1 hour left; estimate only",
+  "download_activated_by": "human confirmed downloading; visually observed in Windows Edge",
+  "destination": "pending filesystem inspection",
+  "expected_iso_volume_bytes": 23151480832,
+  "actual_bytes": null,
+  "sha256": null,
+  "installer_executed": false,
+  "completed_browser_observed_utc": "2026-10-10T19:31:00Z"
+}

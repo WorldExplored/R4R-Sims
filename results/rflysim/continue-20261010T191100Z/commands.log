@@ -1,0 +1,7 @@
+2026-10-10T19:11:00Z local git status/diff/staged; clean audit/rflysim at 6304b53
+2026-10-10T19:15:00Z local curl --max-time 5 https://api.ipify.org; exit 0; 72.12.218.187
+2026-10-10T19:15:00Z bounded ssh command in access.json; exit 255 before authentication
+UI: refresh separate IAB AirGPU; Running / 18.191.160.139. Moonlight keyboard opens Edge and official supplied folder; ISO listed 21.6 GB. Download activation awaiting human click.
+Local python3 -B -m unittest discover -s simulators/rflysim/tests -p test_preparation.py -v; exit0;7 tests. Authorization metadata correction only, no simulator validation.
+Windows Start-Service sshd; Running/Manual PID3184; no key/firewall change. External ssh-keyscan -T3 -t ed25519 18.191.160.139 exit1, no output.
+Windows Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart; Enabled, RestartNeeded=True; no WSL2/VMP/reboot. Native result saved Windows; exact wall time/raw copy pending.
