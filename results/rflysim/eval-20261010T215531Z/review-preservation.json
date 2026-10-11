@@ -1,0 +1,23 @@
+{
+  "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rflysim-review.zip",
+  "bytes": 13439685,
+  "sha256": "a5718698cc281068a8ac0daa7abceae2c4f0ba098c2f29ce8fdc4d0dd708c8a4",
+  "zip_crc": "pass",
+  "files_verified": 137,
+  "review_is_subset": true,
+  "all_main_raw_evidence": "artifacts/rflysim/eval-20261010T215531Z and private Drive",
+  "not_preserved_locally": [
+    "strict A1-retest",
+    "B2ULog",
+    "final full transcript",
+    "final launcher/asset records"
+  ],
+  "private_drive_url": "https://drive.google.com/file/d/15NTapOy57r11r-x6CRLq9IsDPuL7oVl6/view?usp=drivesdk",
+  "private_drive_folder_id": "1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn",
+  "private_drive_file_id": "15NTapOy57r11r-x6CRLq9IsDPuL7oVl6",
+  "permissions": "owner only, unchanged, metadata readback",
+  "downloaded_roundtrip_path": "/Users/srreyanshsethi/Downloads/rflysim-review-eval-20261010T215531Z.zip",
+  "roundtrip_sha256": "a5718698cc281068a8ac0daa7abceae2c4f0ba098c2f29ce8fdc4d0dd708c8a4",
+  "roundtrip_bytes": 13439685,
+  "roundtrip_verification": "pass"
+}

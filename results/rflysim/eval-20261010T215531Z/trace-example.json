@@ -1,0 +1,164 @@
+{
+  "status": "control and native RGB paths demonstrated; calibrated frame association blocked",
+  "asset_config": {
+    "stock_scene": "Grasslands",
+    "vehicle": "10016_iris / CopterSim model0",
+    "config_sha256": "22d1a7aa698d09415b7ea976755d05063a177938db57ee7779755c750ff9818d",
+    "weights": "none",
+    "split": "stock integration scene, no train/test split"
+  },
+  "frame": {
+    "kind": "frame",
+    "receiver_monotonic_s": 4807.625,
+    "receiver_utc_unix_s": 1791674187.7698567,
+    "frame_id": 182,
+    "path": "frames/frame-000182.png",
+    "raw_timestamp": 239.352,
+    "warmup": false,
+    "pose_id": null,
+    "pose_elapsed_s": null,
+    "duplicate_timestamp": false,
+    "acquisition_utc": null,
+    "actual_pose_association": "pending independent clock/transform verification"
+  },
+  "image_sha256": "be45e6ef227cf1dd4967568796e25c484c920cbcbb1c3536b20e930d79983e5b",
+  "setpoint_reference": {
+    "kind": "setpoint",
+    "monotonic_s": 4807.656,
+    "utc_unix_s": 1791674187.7923574,
+    "position_ned_m": [
+      2,
+      2,
+      -2
+    ],
+    "yaw_rad": 0
+  },
+  "actual_estimate": {
+    "kind": "mavlink",
+    "monotonic_s": 4807.609,
+    "utc_unix_s": 1791674187.7543566,
+    "message": {
+      "mavpackettype": "LOCAL_POSITION_NED",
+      "time_boot_ms": 233896,
+      "x": 1.9852452278137207,
+      "y": 1.7434104681015015,
+      "z": -1.998638391494751,
+      "vx": 0.03607994318008423,
+      "vy": 0.9410568475723267,
+      "vz": 0.005773008801043034
+    },
+    "source_system": 1,
+    "source_component": 1
+  },
+  "mode_armed": {
+    "kind": "mavlink",
+    "monotonic_s": 4807.703,
+    "utc_unix_s": 1791674187.8403573,
+    "message": {
+      "mavpackettype": "HEARTBEAT",
+      "type": 2,
+      "autopilot": 12,
+      "base_mode": 145,
+      "custom_mode": 393216,
+      "system_status": 4,
+      "mavlink_version": 3
+    },
+    "source_system": 1,
+    "source_component": 1
+  },
+  "command_ack": {
+    "kind": "mavlink",
+    "monotonic_s": 4807.703,
+    "utc_unix_s": 1791674187.8458583,
+    "message": {
+      "mavpackettype": "COMMAND_ACK",
+      "command": 512,
+      "result": 0,
+      "progress": 0,
+      "result_param2": 0,
+      "target_system": 0,
+      "target_component": 0
+    },
+    "source_system": 1,
+    "source_component": 1
+  },
+  "body_truth": {
+    "kind": "simulator_body_truth",
+    "receiver_monotonic_s": 4807.64,
+    "receiver_utc_unix_s": 1791674187.7723575,
+    "raw_timestamp": 239.405,
+    "position_map_ned_m": [
+      2.0352896899418287,
+      1.6951624495510975,
+      -10.041547638237477
+    ],
+    "velocity_ned_m_s": [
+      0.032462261617183685,
+      0.9156675934791565,
+      0.008976158685982227
+    ],
+    "rpy_rad": [
+      -0.08855577558279037,
+      0.0053993226028978825,
+      0.0022324486635625362
+    ],
+    "quaternion_native": [
+      0.9990155100822449,
+      -0.044266242533922195,
+      0.0026476026978343725,
+      0.001234621973708272
+    ],
+    "timestamp_meaning": "runnedTime seconds documented, clock correspondence pending"
+  },
+  "native_camera_pose": {
+    "kind": "actual_camera",
+    "receiver_monotonic_s": 4807.609,
+    "receiver_utc_unix_s": 1791674187.7508116,
+    "raw": [
+      1234567891,
+      0,
+      1,
+      480,
+      640,
+      90.0,
+      2.3348584175109863,
+      1.6838488578796387,
+      -10.193273544311523,
+      -0.08807719498872757,
+      0.005352616775780916,
+      0.0022253787610679865,
+      0.9990261793136597,
+      -0.04402716085314751,
+      0.0026247233618050814,
+      0.001229428919032216,
+      239.392
+    ],
+    "seq_id": 0,
+    "dimensions": [
+      640,
+      480
+    ],
+    "fov": 90.0,
+    "native_position": [
+      2.3348584175109863,
+      1.6838488578796387,
+      -10.193273544311523
+    ],
+    "native_euler": [
+      -0.08807719498872757,
+      0.005352616775780916,
+      0.0022253787610679865
+    ],
+    "native_quaternion": [
+      0.9990261793136597,
+      -0.04402716085314751,
+      0.0026247233618050814,
+      0.001229428919032216
+    ],
+    "raw_timestamp": 239.392,
+    "units_and_axes": "native metadata, independently unverified"
+  },
+  "actual_camera_pose_at_acquisition": null,
+  "association_uncertainty_s": null,
+  "join_method": "illustrative UTC receiver-nearest only; no acquisition-time interpolation or calibrated extrinsics; temporal proximity does not prove causal command-to-frame identity"
+}

@@ -1,0 +1,132 @@
+{
+  "evaluation": {
+    "takeoff_confirmed": true,
+    "reached_legs": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "touchdown_confirmed": true,
+    "disarmed_confirmed": true,
+    "landing_confirmed": true,
+    "minimum_integration_pass": true,
+    "full_route_pass": true,
+    "position_measurement_source": "px4_estimate",
+    "ground_truth_outcome": "blocked",
+    "failure": null,
+    "rejected_samples": 11,
+    "events": [
+      {
+        "event": "takeoff_confirmed",
+        "monotonic_s": 4795.062
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 1,
+        "monotonic_s": 4800.468,
+        "position_error_m": 0.019108757158422123
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 2,
+        "monotonic_s": 4805.765,
+        "position_error_m": 0.056763195976398124
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 3,
+        "monotonic_s": 4810.171,
+        "position_error_m": 0.04768938197982101
+      },
+      {
+        "event": "waypoint_confirmed",
+        "leg": 4,
+        "monotonic_s": 4818.812,
+        "position_error_m": 0.00845006356291976
+      },
+      {
+        "event": "land_requested",
+        "monotonic_s": 4818.812
+      },
+      {
+        "event": "touchdown_confirmed",
+        "monotonic_s": 4825.671
+      },
+      {
+        "event": "disarmed_confirmed",
+        "monotonic_s": 4825.812
+      }
+    ]
+  },
+  "supervised_wall_s": 39.21900000000005,
+  "control_exit_status": 0,
+  "control_setpoint_interval_s": {
+    "n": 291,
+    "mean": 0.10003436426116726,
+    "median": 0.09400000000005093,
+    "p95": 0.11000000000058208,
+    "max": 0.11000000000058208
+  },
+  "position_receive_gap_s": {
+    "n": 771,
+    "mean": 0.04997535667963677,
+    "median": 0.04699999999957072,
+    "p95": 0.06300000000010186,
+    "max": 0.11000000000058208
+  },
+  "deadline_lateness_s": {
+    "n": 292,
+    "mean": 0.009568493097525764,
+    "median": 0.009999999945648597,
+    "p95": 0.015999999971336366,
+    "max": 0.01599999999780266
+  },
+  "deadline_lateness_gt_10ms": 116,
+  "deadline_lateness_gt_100ms": 0,
+  "position_samples": 772,
+  "truth_samples": 3842,
+  "truth_clock": "raw time_usec retained; SDK scaling not independently verified",
+  "receive_nearest_truth_disagreement_m": {
+    "n": 772,
+    "mean": 0.018086807764106986,
+    "median": 0.016983574490934156,
+    "p95": 0.03267436395937791,
+    "max": 0.05436244986639434
+  },
+  "truth_alignment_offset_map_minus_estimate_m": [
+    0.05658324062824249,
+    -0.05807691439986229,
+    -8.048548457794823
+  ],
+  "truth_comparison_limit": "receive-nearest <=0.05s; initial offset fit; no acquisition synchronization, no ground-truth pass claim",
+  "gpu_sampled_window_memory_MiB": {
+    "n": 100,
+    "mean": 1754.08,
+    "median": 1753.0,
+    "p95": 1758.0,
+    "max": 1758.0
+  },
+  "gpu_sampled_window_utilization_percent": {
+    "n": 100,
+    "mean": 17.47,
+    "median": 17.0,
+    "p95": 25.0,
+    "max": 26.0
+  },
+  "gpu_limits": "100 samples over~104s, includes preflight/Moonlight/desktop; 1Hz requested; B2 misses final flight/landing under inferred UTC-04, not render-only throughput",
+  "resource_coverage": {
+    "samples": 100,
+    "local_csv_start": "2026/10/10 19:14:45.205",
+    "local_csv_end": "2026/10/10 19:16:29.013",
+    "csv_window_s": 103.80800008773804,
+    "mean_sample_interval_s": 1.0485656574518993,
+    "timezone_alignment": "UTC-04 inferred from contemporaneous Windows UI/UTC records; formal timezone export missing",
+    "apparent_flight_overlap_s": 21.652888298034668,
+    "flight_record_span_s": 38.596821308135986,
+    "apparent_full_flight_coverage": false,
+    "limit": "whole-desktop polling, not rendering-exclusive or synchronized GPU timing; B2 misses final flight/landing"
+  },
+  "px4_boot_clock_span_s": 38.549,
+  "simulation_time_span_s": null
+}

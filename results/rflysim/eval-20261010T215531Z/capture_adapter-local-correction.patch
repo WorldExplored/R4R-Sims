@@ -1,0 +1,67 @@
+--- executed/capture_adapter.py
++++ local/capture_adapter.py
+@@ -16,6 +16,19 @@
+ 
+ VISION_HASH='6bc6680b87d88d86239c16290a45b15372c1e8ec4a8844792d097ae60d9e5943'
+ UE_HASH='f299b946d905b846de87b548a43bbeed9563376593a7e801d44177d8ae09c770'
++
++
++def capture_duration(config, mode):
++    if mode == 'sequence':
++        return config['A']['warmup_s'] + config['A']['per_pose_s'] * len(config['A']['poses'])
++    if mode == 'rate':
++        return config['A']['rate_test_warmup_s'] + config['A']['capture_rate_test_s']
++    return config['limits']['flight_s']
++
++
++def sensor_euler_degrees(pose):
++    """SensorAngEular uses degrees (official vis-cfg, checked 2026-10-10)."""
++    return list(pose['rpy_deg'])
+ 
+ 
+ def capture(ctx, install, config, output, mode='mounted', ground_ned_z_m=-8.05):
+@@ -63,8 +76,10 @@
+     ctx.call('request one RGB camera',vision.sendReqToUE4,0)
+     ctx.call('request actual camera metadata',ue.reqCam,[0],0)
+     start=time.monotonic(); warmup=5; frames=duplicates=0; last=None; pose_index=-1
+-    duration=26 if mode=='sequence' else 35 if mode=='rate' else 75
+-    end=min(ctx.end-.5,start+duration)
++    duration=capture_duration(config, mode)
++    # The parent watchdog enforces the budget; never shorten a requested test
++    # and then report that shortened capture as completed.
++    end=start+duration
+     try:
+         while time.monotonic()<end:
+             elapsed=time.monotonic()-start
+@@ -73,10 +88,10 @@
+                 if index!=pose_index:
+                     pose_index=index; pose=config['A']['poses'][index]
+                     sensor.SensorPosXYZ=[pose['ned_m'][0],pose['ned_m'][1],pose['ned_m'][2]+ground_ned_z_m]
+-                    sensor.SensorAngEular=[v*3.141592653589793/180 for v in pose['rpy_deg']]
++                    sensor.SensorAngEular=sensor_euler_degrees(pose)
+                     ctx.call('update world-fixed camera',vision.sendUpdateUEImage,sensor,0)
+                     log('pose_command',pose_id=pose['id'],desired_local_ned_m=pose['ned_m'],
+-                        native_position_command=sensor.SensorPosXYZ,rpy_command_rad=sensor.SensorAngEular,
++                        native_position_command=sensor.SensorPosXYZ,rpy_command_deg=sensor.SensorAngEular,
+                         settling=1,command_is_not_truth=True)
+             for stream,sock in [('camera_packet',camera_socket),('truth_packet',truth)]:
+                 for _ in range(40):
+@@ -122,7 +137,7 @@
+         shared.close();camera_socket.close();truth.close();records.close()
+         vision.stopFlag=True
+         # Only capture actors are cleared; this does not kill simulator processes.
+-        vision.sendUE4Cmd('RflyClearCapture',0)
++        ctx.call('clear native capture actors',vision.sendUE4Cmd,'RflyClearCapture',0)
+ 
+ 
+ def main():
+@@ -135,7 +150,8 @@
+     report=run_phase(capture,(a.install,config,str(a.output),a.mode,a.ground_z),budget,2)
+     (a.output/'run.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+     result=(report['workers'][0].get('report') or {}).get('result',{})
+-    return 0 if result.get('frames',0)>0 else 2
++    completed = result.get('wall_capture_s', 0) >= capture_duration(config, a.mode)
++    return 0 if result.get('frames', 0) > 0 and completed else 2
+ 
+ if __name__=='__main__':
+     import multiprocessing as mp

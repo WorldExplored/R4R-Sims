@@ -1,0 +1,45 @@
+{
+  "run_id": "eval-20261010T215531Z",
+  "baseline": "7188f4dbed4a7370b8abacefda5c1bc0d661f1bb",
+  "start_utc": "2026-10-10T21:55:31Z",
+  "deadline_utc": "2026-10-10T23:55:31Z",
+  "allowance_s": 7200,
+  "cleanup_preservation_reserve_start_utc": "2026-10-10T23:30:31Z",
+  "authorization": "user authorizes routine dependency repair, adapter, unchanged A/B/coupled evaluation; Stop and verify Off; no Delete",
+  "prior_ledgers": [
+    "../continue-20261010T191100Z/setup-budget.json",
+    "../extension-20261010T204353Z/setup-budget.json"
+  ],
+  "host_state_final": "Off",
+  "off_verified_utc": "2026-10-10T23:44:00Z approximate observation",
+  "host_stopping_observed_utc": "2026-10-10T23:36:00Z approximate observation",
+  "stop_origin": "not requested by this agent; unresolved",
+  "host_time_to_stopping_approx_s": 6030,
+  "host_time_to_off_approx_s": 6510,
+  "allowance_reset": false,
+  "local_analysis_after_host_stop": true,
+  "installed_root": "C:\\Users\\user\\Documents\\RflySim",
+  "windows_evidence_root": "C:\\Users\\user\\Documents\\R4R-Sims-Audit\\eval-20261010T215531Z",
+  "mac_artifact_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z",
+  "commands_record": "commands.log (reconstructed provenance explicitly marked)",
+  "console_record": "console.log (closed stdout/stderr snapshots; final full transcript unexported)",
+  "policy_weights": "none",
+  "scene_split": "stock Grasslands integration, no train/test dataset",
+  "seeds": "stock defaults; explicit seed unavailable",
+  "repo_modifications": "installed_adapter.py, capture_adapter.py, analyze_evidence.py, local helper tests, scoped notes/results; executed hashes in executed-code-provenance.json",
+  "status": {
+    "B1": "minimum and full route pass using PX4 estimates",
+    "B2": "minimum and full route pass using PX4 estimates; 365 RGB frames",
+    "A": "native images/rate demonstrated; geometric checks blocked; rotation commands failed authored unit conversion; first replay short",
+    "C": "blocked",
+    "coupled": "state and RGB recorded; acquisition pose association blocked"
+  },
+  "preservation": "ZIP1/2/3 size/hash/CRC +1360 manifested files verified; 1237 RGB files open; some final Windows-only files not exported",
+  "graphics": "D3D11 NVIDIA L4 confirmed engine log",
+  "warnings": [
+    "remote Git checkout synchronization unverified; executed code transferred as hashed copies",
+    "full expanded scene/model/parameter inventory incomplete",
+    "final transcript, B2 ULog, strict A1-retest and final launcher/reset copies remain Windows-only"
+  ],
+  "cleanup": "both phases15s deadline exit\u221215 despite returned landing/disarm confirmations; raw cleanup files empty; local fix not host retested"
+}

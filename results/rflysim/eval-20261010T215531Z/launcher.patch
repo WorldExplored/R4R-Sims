@@ -1,0 +1,52 @@
+--- installed/SITLRun.bat
++++ authored/SITLRun-audit.bat
+@@ -1,7 +1,6 @@
+ @ECHO OFF
+ 
+ REM Run script as administrator
+-NET SESSION >nul 2>&1 || powershell -Command "try {Start-Process cmd -ArgumentList '/c, ""%~f0""' -Verb RunAs} catch {}" && exit /b
+ 
+ 
+ REM The text start with 'REM' is annotation, the following options are corresponding to Options on CopterSim
+@@ -84,7 +83,7 @@
+ ECHO ---------------------------------------
+ REM Max vehicle number 50
+ SET /a MAX_VEHICLE=50
+-SET /P VehicleNum=Please input UAV swarm number:
++SET /a VehicleNum=1
+ SET /A Evaluated=VehicleNum
+ if %Evaluated% EQU %VehicleNum% (
+     IF %VehicleNum% GTR 0 (
+@@ -132,7 +131,6 @@
+ choice /t 5 /d y /n >nul
+ 
+ 
+-tasklist|find /i "CopterSim.exe" && taskkill /im "CopterSim.exe"
+ ECHO Kill all CopterSims
+ 
+ 
+@@ -146,7 +144,7 @@
+ :loopBegin
+ set /a PosXX=((%cntr%-1) / %sqrtNum%)*%VEHICLE_INTERVAL% + %ORIGIN_POS_X%
+ set /a PosYY=((%cntr%-1) %% %sqrtNum%)*%VEHICLE_INTERVAL% + %ORIGIN_POS_Y%
+-start /realtime CopterSim.exe 1 %cntr% %CLASS_3D_ID% %DLLModel% %SimMode% %UE4_MAP% %IS_BROADCAST% %PosXX% %PosYY% %ORIGIN_YAW% 1 %UDPSIMMODE%
++start CopterSim.exe 1 %cntr% %CLASS_3D_ID% %DLLModel% %SimMode% %UE4_MAP% %IS_BROADCAST% %PosXX% %PosYY% %ORIGIN_YAW% 1 %UDPSIMMODE%
+ choice /t 1 /d y /n >nul
+ set /a cntr=%cntr%+1
+ 
+@@ -170,14 +168,11 @@
+     REM CYGPath
+     cd /d %PSP_PATH%\CygwinToolchain
+     CALL setPX4Env.bat
+-    bash -l -i -c 'echo Starting SITL SIMULATION; cd %PSP_PATH_LINUX%/Firmware; ./BkFile/EnvOri.sh; pwd; make px4_sitl_default; ./Tools/sitl_multiple_run_rfly.sh %VehicleNum% %START_INDEX% %PX4SitlFrame%;echo Press any key to exit; read -n 1; pkill -x px4 || true;'
++    bash -l -i -c 'echo Starting SITL SIMULATION; cd %PSP_PATH_LINUX%/Firmware; ./BkFile/EnvOri.sh; pwd; make px4_sitl_default; ./Tools/sitl_multiple_run_rfly.sh %VehicleNum% %START_INDEX% %PX4SitlFrame%;echo Press any key to exit; read -n 1;'
+ )
+ SET PATH=%WINDOWSPATH%
+ 
+ 
+ REM kill all applications when press a key
+-tasklist|find /i "CopterSim.exe" && taskkill /im "CopterSim.exe"
+-tasklist|find /i "QGroundControl.exe" && taskkill /f /im "QGroundControl.exe"
+-tasklist|find /i "RflySim3D.exe" && taskkill /f /im "RflySim3D.exe"
+ 
+ ECHO Start End.

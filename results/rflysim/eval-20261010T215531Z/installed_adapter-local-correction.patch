@@ -1,0 +1,49 @@
+--- executed/installed_adapter.py
++++ local/installed_adapter.py
+@@ -329,6 +329,21 @@
+     queue.close()
+     (root/(name+'-supervision.json')).write_text(json.dumps(report, indent=2)+'\n')
+     return report
++
++
++def result_exit_status(report, mode):
++    primary = report.get('workers', [{}])[0] if mode == 'probe' else report['flight']['workers'][0]
++    result = (primary.get('report') or {}).get('result', {})
++    passed = result.get('B_initial_telemetry_ready') if mode == 'probe' else result.get('evaluation', {}).get('full_route_pass')
++    incomplete = result.get('evidence_queue', {}).get('evidence_incomplete', False)
++    if mode == 'B':
++        cleanup_worker = report['cleanup']['workers'][0]
++        cleanup_result = (cleanup_worker.get('report') or {}).get('result', {})
++        cleanup_ok = (cleanup_worker.get('exit_status') == 0 and
++                      cleanup_result.get('evaluation', {}).get('landing_confirmed') is True and
++                      not cleanup_result.get('evidence_queue', {}).get('evidence_incomplete', False))
++        passed = passed and cleanup_ok
++    return 0 if passed and not incomplete and primary.get('exit_status') == 0 else 2
+ 
+ 
+ def main():
+@@ -366,6 +381,11 @@
+             while True:
+                 try: out.write(queue.get(timeout=.05)+b'\n')
+                 except Empty: break
++        # A forcibly stopped writer may leave Queue transport locks/feeder state
++        # unusable. Cleanup must own a fresh queue, independently of flight.
++        queue.cancel_join_thread()
++        queue.close()
++        queue = context.Queue(maxsize=8192)
+         recovery_log = a.output/'cleanup.jsonl'
+         recovery = run_phase(cleanup, (a.install, config, queue, checkpoint), 15, 2,
+                              auxiliaries=[('writer', writer, (str(recovery_log), queue))],
+@@ -378,11 +398,7 @@
+         report = {'flight': report, 'cleanup': recovery}
+     (a.output/'run.json').write_text(json.dumps(report, indent=2)+'\n')
+     print(json.dumps(report, indent=2))
+-    primary = report.get('workers', [{}])[0] if a.mode == 'probe' else report['flight']['workers'][0]
+-    result = (primary.get('report') or {}).get('result', {})
+-    passed = result.get('B_initial_telemetry_ready') if a.mode == 'probe' else result.get('evaluation', {}).get('full_route_pass')
+-    incomplete = result.get('evidence_queue', {}).get('evidence_incomplete', False)
+-    return 0 if passed and not incomplete else 2
++    return result_exit_status(report, a.mode)
+ 
+ 
+ if __name__ == '__main__':

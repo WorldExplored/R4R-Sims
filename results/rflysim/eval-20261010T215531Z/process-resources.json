@@ -1,0 +1,25 @@
+{
+  "processes": {
+    "9388": {
+      "samples": 100,
+      "max_working_set_bytes": 88899584,
+      "cpu_counter_last_s": 274
+    },
+    "1924": {
+      "samples": 100,
+      "max_working_set_bytes": 624463872,
+      "cpu_counter_last_s": 964.09375
+    },
+    "4284": {
+      "samples": 100,
+      "max_working_set_bytes": 7700480,
+      "cpu_counter_last_s": 0.015625
+    }
+  },
+  "limits": "Recorded audit PIDs only; no per-sample timestamps, no CPU rate or total-host RAM inference",
+  "pid_owners": {
+    "9388": "B1 CopterSim",
+    "1924": "UE4 engine",
+    "4284": "UE wrapper"
+  }
+}

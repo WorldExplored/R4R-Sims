@@ -1,0 +1,79 @@
+{
+  "installer": {
+    "url": "https://1drv.ms/f/s!AumI9wM9CHrXou02EWLuwKozkM-I-w",
+    "accessed": "2026-10-10",
+    "filename": "RflySimToolchain-v5.01-20260831.iso",
+    "bytes": 23151480832,
+    "sha256": "ed5f41add2e97469c900f4ccff87f615eae4e7cfbedcc7d99211afd4d5dc7973",
+    "edition": "Free, vendor package-info says no activation",
+    "license": "bundled/vendor terms, not an inferred open-source license; paid features not assumed",
+    "retention": "full verified input on stopped Windows disk; official folder/hash is retrievable provenance, not a second full ISO copy; truncated Mac original retained and never installed",
+    "expanded_bytes": null,
+    "expanded_size_reason": "complete installed directory inventory not exported"
+  },
+  "prerequisite": {
+    "file": "Engine/Extras/Redist/en-us/UE4PrereqSetup_x64.exe",
+    "signature": "Valid Epic Games",
+    "version": "1.0.14.0",
+    "bytes": 41033784,
+    "sha256": "145f4e4d11e76a2612db5ffbfae8f9ab8e4385ff7660802ffd2f473c9dcb2a0d",
+    "install_exit": 0
+  },
+  "sdk": [
+    {
+      "source": "C:\\Users\\user\\Documents\\RflySim\\RflySimAPIs\\RflySimSDK\\ctrl\\PX4MavCtrlV4.py",
+      "path": "PX4MavCtrlV4.py",
+      "bytes": 157620,
+      "sha256": "e1aab5b0f8ef30fd70bb4ba41da50e8d4dc936068763945a047c404d807a17f8"
+    },
+    {
+      "source": "C:\\Users\\user\\Documents\\RflySim\\RflySimAPIs\\RflySimSDK\\vision\\VisionCaptureApi.py",
+      "path": "VisionCaptureApi.py",
+      "bytes": 172766,
+      "sha256": "6bc6680b87d88d86239c16290a45b15372c1e8ec4a8844792d097ae60d9e5943"
+    },
+    {
+      "source": "C:\\Users\\user\\Documents\\RflySim\\RflySimAPIs\\RflySimSDK\\ue\\UE4CtrlAPI.py",
+      "path": "UE4CtrlAPI.py",
+      "bytes": 163691,
+      "sha256": "f299b946d905b846de87b548a43bbeed9563376593a7e801d44177d8ae09c770"
+    },
+    {
+      "source": "C:\\Users\\user\\Documents\\RflySim\\RflySimAPIs\\SITLRun.bat",
+      "path": "SITLRun.bat",
+      "bytes": 6248,
+      "sha256": "e6d6589f3167672c7623b5600d8a447e6fc31ce4222df0a07edec43de135a83d"
+    }
+  ],
+  "native": {
+    "CopterSim": "Free5.0.1",
+    "PX4": "1.12.3dev, bundled version6 selection",
+    "RflySim3D": "UE4 Free5.01-0, UE4.27.2-18319896",
+    "model": "stock model0 / 10016_iris",
+    "scene": "Grasslands /Game/Grasslands/Maps/Grasslands/3DDisplay",
+    "full_scene_model_parameter_hashes": null,
+    "split": "none, stock integration",
+    "seed": null,
+    "weights": "none"
+  },
+  "research_missing": [
+    "AirLab real images",
+    "calibrated camera poses/intrinsics/extrinsics",
+    "metric reconstruction and origin",
+    "train/test split",
+    "held-out horizontal and vertical views",
+    "compatible downstream model/policy",
+    "approved fidelity thresholds"
+  ],
+  "preserved_outputs": {
+    "ZIP3_bytes": 651522799,
+    "ZIP3_sha256": "d601dc38134b20d1287b0d14e991abb3120b9212795eca4517959cde548fb6d2",
+    "private_drive_folder": "ChatGPT/R4R-RflySim-Audit",
+    "drive_file_id": "1gydzS0cL8c635wACELIjVgf0HonZr6sa",
+    "local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z",
+    "raw_frames": 1237,
+    "frame_open_checks": "all1237 pass Pillow.verify; selected PNGs visually inspected",
+    "B1_native_ULog": "preserved in ZIP3; not parsed into controller metrics",
+    "B2_native_ULog": "not exported"
+  }
+}

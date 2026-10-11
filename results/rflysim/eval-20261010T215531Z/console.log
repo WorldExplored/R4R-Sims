@@ -1,0 +1,1671 @@
+Closed per-command stdout/stderr snapshots, normalized after transfer. Full final Windows transcript not exported.
+
+### A1.stderr.txt
+
+
+### A1.stdout.txt
+{
+  "wall_s": 39.891000000000076,
+  "watchdog_decision_s": 39.891000000000076,
+  "budget_s": 40,
+  "poll_s": 0.01,
+  "reap_s_per_step": 0.1,
+  "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+  "workers": [
+    {
+      "role": "control",
+      "pid": 900,
+      "exit_status": 0,
+      "still_alive": false,
+      "stop_reason": "worker_exited",
+      "active_operation": "camera metadata write",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": {
+        "status": "returned",
+        "result": {
+          "frames": 260,
+          "duplicate_timestamps": 0,
+          "wall_capture_s": 25.797000000000025,
+          "geometric_A": "blocked until units/calibration/acquisition clock independently verified"
+        }
+      }
+    }
+  ],
+  "landing_confirmation_source": "telemetry evaluator only"
+}
+
+
+### A2.stdout.txt
+{
+  "wall_s": 28.84400000000005,
+  "watchdog_decision_s": 28.84400000000005,
+  "budget_s": 40,
+  "poll_s": 0.01,
+  "reap_s_per_step": 0.1,
+  "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+  "workers": [
+    {
+      "role": "control",
+      "pid": 6712,
+      "exit_status": 0,
+      "still_alive": false,
+      "stop_reason": "worker_exited",
+      "active_operation": "camera metadata write",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": {
+        "status": "returned",
+        "result": {
+          "frames": 261,
+          "duplicate_timestamps": 0,
+          "wall_capture_s": 26.0,
+          "geometric_A": "blocked until units/calibration/acquisition clock independently verified"
+        }
+      }
+    }
+  ],
+  "landing_confirmation_source": "telemetry evaluator only"
+}
+
+
+### B1.stderr.txt
+
+
+### B1.stdout.txt
+{
+  "flight": {
+    "wall_s": 38.75,
+    "watchdog_decision_s": 38.73500000000013,
+    "budget_s": 75,
+    "poll_s": 0.01,
+    "reap_s_per_step": 0.1,
+    "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+    "workers": [
+      {
+        "role": "control",
+        "pid": 7284,
+        "exit_status": 0,
+        "still_alive": false,
+        "stop_reason": "worker_exited",
+        "active_operation": "MAVLink nonblocking receive",
+        "attempted_land": true,
+        "attempted_disarm": true,
+        "report": {
+          "status": "returned",
+          "result": {
+            "evaluation": {
+              "takeoff_confirmed": true,
+              "reached_legs": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "touchdown_confirmed": true,
+              "disarmed_confirmed": true,
+              "landing_confirmed": true,
+              "minimum_integration_pass": true,
+              "full_route_pass": true,
+              "position_measurement_source": "px4_estimate",
+              "ground_truth_outcome": "blocked",
+              "failure": null,
+              "rejected_samples": 15,
+              "events": [
+                {
+                  "event": "takeoff_confirmed",
+                  "monotonic_s": 2442.578
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 1,
+                  "monotonic_s": 2446.125,
+                  "position_error_m": 0.07327719905794615
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 2,
+                  "monotonic_s": 2452.281,
+                  "position_error_m": 0.05204129662710833
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 3,
+                  "monotonic_s": 2456.125,
+                  "position_error_m": 0.13376087752763696
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 4,
+                  "monotonic_s": 2465.078,
+                  "position_error_m": 0.016780893506060806
+                },
+                {
+                  "event": "land_requested",
+                  "monotonic_s": 2465.078
+                },
+                {
+                  "event": "touchdown_confirmed",
+                  "monotonic_s": 2472.734
+                },
+                {
+                  "event": "disarmed_confirmed",
+                  "monotonic_s": 2472.875
+                }
+              ]
+            },
+            "heartbeat": {
+              "mavpackettype": "HEARTBEAT",
+              "type": 2,
+              "autopilot": 12,
+              "base_mode": 29,
+              "custom_mode": 100925440,
+              "system_status": 3,
+              "mavlink_version": 3
+            },
+            "landed": {
+              "mavpackettype": "EXTENDED_SYS_STATE",
+              "vtol_state": 0,
+              "landed_state": 1
+            },
+            "position": {
+              "mavpackettype": "LOCAL_POSITION_NED",
+              "time_boot_ms": 947088,
+              "x": 0.04084429144859314,
+              "y": 0.001858860137872398,
+              "z": -0.01220586895942688,
+              "vx": 0.0017741343472152948,
+              "vy": -0.0009463747846893966,
+              "vz": -0.004324226640164852
+            },
+            "acks": [
+              {
+                "received_s": 2467.171,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2467.375,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2467.578,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2467.781,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2467.984,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2468.187,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2468.39,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2468.593,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2468.796,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2469.0,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2469.203,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2469.406,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2469.609,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2469.812,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2470.031,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2470.218,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2470.421,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2470.625,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2470.828,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2471.031,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2471.234,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2471.437,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2471.64,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2471.859,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2472.046,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2472.25,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2472.453,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2472.656,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2472.703,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 400,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2472.859,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              }
+            ],
+            "telemetry_gap_max_s": 0.125,
+            "evidence_queue": {
+              "accepted": 20050
+            }
+          }
+        }
+      },
+      {
+        "role": "writer",
+        "pid": 9656,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "phase_finished",
+        "active_operation": "evidence write",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      }
+    ],
+    "landing_confirmation_source": "telemetry evaluator only"
+  },
+  "cleanup": {
+    "wall_s": 15.016000000000076,
+    "watchdog_decision_s": 15.0,
+    "budget_s": 15,
+    "poll_s": 0.01,
+    "reap_s_per_step": 0.1,
+    "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+    "workers": [
+      {
+        "role": "cleanup",
+        "pid": 3528,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "phase_deadline",
+        "active_operation": "MAVLink nonblocking receive",
+        "attempted_land": true,
+        "attempted_disarm": true,
+        "report": {
+          "status": "returned",
+          "result": {
+            "evaluation": {
+              "takeoff_confirmed": true,
+              "reached_legs": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "touchdown_confirmed": true,
+              "disarmed_confirmed": true,
+              "landing_confirmed": true,
+              "minimum_integration_pass": true,
+              "full_route_pass": true,
+              "position_measurement_source": "px4_estimate",
+              "ground_truth_outcome": "blocked",
+              "failure": null,
+              "rejected_samples": 0,
+              "events": [
+                {
+                  "event": "land_requested",
+                  "monotonic_s": 2473.437
+                },
+                {
+                  "event": "touchdown_confirmed",
+                  "monotonic_s": 2475.625
+                },
+                {
+                  "event": "disarmed_confirmed",
+                  "monotonic_s": 2475.687
+                }
+              ]
+            },
+            "prior_checkpoint_available": true,
+            "heartbeat": {
+              "mavpackettype": "HEARTBEAT",
+              "type": 2,
+              "autopilot": 12,
+              "base_mode": 29,
+              "custom_mode": 100925440,
+              "system_status": 3,
+              "mavlink_version": 3
+            },
+            "landed": {
+              "mavpackettype": "EXTENDED_SYS_STATE",
+              "vtol_state": 0,
+              "landed_state": 1
+            },
+            "position": {
+              "mavpackettype": "LOCAL_POSITION_NED",
+              "time_boot_ms": 949892,
+              "x": 0.042734529823064804,
+              "y": 0.017498668283224106,
+              "z": 0.00027651392156258225,
+              "vx": 0.0032526873983442783,
+              "vy": 0.0030604377388954163,
+              "vz": 0.004207555204629898
+            },
+            "acks": [
+              {
+                "received_s": 2473.468,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 511,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2473.468,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 511,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2473.468,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2473.468,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 21,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2473.656,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2473.859,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2474.062,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2474.25,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2474.468,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2474.671,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2474.875,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2475.062,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2475.265,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2475.468,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2475.609,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 400,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 2475.687,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              }
+            ],
+            "telemetry_gap_max_s": 0.07799999999997453,
+            "evidence_queue": {
+              "accepted": 1149
+            }
+          }
+        }
+      },
+      {
+        "role": "writer",
+        "pid": 1748,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "phase_deadline",
+        "active_operation": "",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      }
+    ],
+    "landing_confirmation_source": "telemetry evaluator only"
+  }
+}
+
+
+### B2.stderr.txt
+
+
+### B2.stdout.txt
+{
+  "flight": {
+    "wall_s": 39.21900000000005,
+    "watchdog_decision_s": 39.20300000000043,
+    "budget_s": 75,
+    "poll_s": 0.01,
+    "reap_s_per_step": 0.1,
+    "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+    "workers": [
+      {
+        "role": "control",
+        "pid": 2664,
+        "exit_status": 0,
+        "still_alive": false,
+        "stop_reason": "worker_exited",
+        "active_operation": "MAVLink nonblocking receive",
+        "attempted_land": true,
+        "attempted_disarm": true,
+        "report": {
+          "status": "returned",
+          "result": {
+            "evaluation": {
+              "takeoff_confirmed": true,
+              "reached_legs": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "touchdown_confirmed": true,
+              "disarmed_confirmed": true,
+              "landing_confirmed": true,
+              "minimum_integration_pass": true,
+              "full_route_pass": true,
+              "position_measurement_source": "px4_estimate",
+              "ground_truth_outcome": "blocked",
+              "failure": null,
+              "rejected_samples": 11,
+              "events": [
+                {
+                  "event": "takeoff_confirmed",
+                  "monotonic_s": 4795.062
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 1,
+                  "monotonic_s": 4800.468,
+                  "position_error_m": 0.019108757158422123
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 2,
+                  "monotonic_s": 4805.765,
+                  "position_error_m": 0.056763195976398124
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 3,
+                  "monotonic_s": 4810.171,
+                  "position_error_m": 0.04768938197982101
+                },
+                {
+                  "event": "waypoint_confirmed",
+                  "leg": 4,
+                  "monotonic_s": 4818.812,
+                  "position_error_m": 0.00845006356291976
+                },
+                {
+                  "event": "land_requested",
+                  "monotonic_s": 4818.812
+                },
+                {
+                  "event": "touchdown_confirmed",
+                  "monotonic_s": 4825.671
+                },
+                {
+                  "event": "disarmed_confirmed",
+                  "monotonic_s": 4825.812
+                }
+              ]
+            },
+            "heartbeat": {
+              "mavpackettype": "HEARTBEAT",
+              "type": 2,
+              "autopilot": 12,
+              "base_mode": 29,
+              "custom_mode": 100925440,
+              "system_status": 3,
+              "mavlink_version": 3
+            },
+            "landed": {
+              "mavpackettype": "EXTENDED_SYS_STATE",
+              "vtol_state": 0,
+              "landed_state": 1
+            },
+            "position": {
+              "mavpackettype": "LOCAL_POSITION_NED",
+              "time_boot_ms": 252097,
+              "x": 0.01664898730814457,
+              "y": -0.016149021685123444,
+              "z": -0.024403177201747894,
+              "vx": -0.0001493225572630763,
+              "vy": 0.0025641159154474735,
+              "vz": -0.006898912601172924
+            },
+            "acks": [
+              {
+                "received_s": 4820.093,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4820.296,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4820.5,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4820.703,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4820.906,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4821.109,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4821.312,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4821.515,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4821.718,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4821.921,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4822.125,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4822.328,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4822.531,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4822.734,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4822.937,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4823.14,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4823.343,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4823.546,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4823.75,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4823.953,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4824.156,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4824.359,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4824.562,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4824.765,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4824.968,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4825.171,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4825.375,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4825.578,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4825.625,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 400,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4825.796,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              }
+            ],
+            "telemetry_gap_max_s": 0.11000000000058208,
+            "evidence_queue": {
+              "accepted": 20280
+            }
+          }
+        }
+      },
+      {
+        "role": "writer",
+        "pid": 5412,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "phase_finished",
+        "active_operation": "evidence write",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      },
+      {
+        "role": "capture",
+        "pid": 1680,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "phase_finished",
+        "active_operation": "camera metadata write",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      }
+    ],
+    "landing_confirmation_source": "telemetry evaluator only"
+  },
+  "cleanup": {
+    "wall_s": 15.014999999999418,
+    "watchdog_decision_s": 15.0,
+    "budget_s": 15,
+    "poll_s": 0.01,
+    "reap_s_per_step": 0.1,
+    "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+    "workers": [
+      {
+        "role": "cleanup",
+        "pid": 10468,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "phase_deadline",
+        "active_operation": "MAVLink nonblocking receive",
+        "attempted_land": true,
+        "attempted_disarm": true,
+        "report": {
+          "status": "returned",
+          "result": {
+            "evaluation": {
+              "takeoff_confirmed": true,
+              "reached_legs": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "touchdown_confirmed": true,
+              "disarmed_confirmed": true,
+              "landing_confirmed": true,
+              "minimum_integration_pass": true,
+              "full_route_pass": true,
+              "position_measurement_source": "px4_estimate",
+              "ground_truth_outcome": "blocked",
+              "failure": null,
+              "rejected_samples": 1,
+              "events": [
+                {
+                  "event": "land_requested",
+                  "monotonic_s": 4826.39
+                },
+                {
+                  "event": "touchdown_confirmed",
+                  "monotonic_s": 4828.578
+                },
+                {
+                  "event": "disarmed_confirmed",
+                  "monotonic_s": 4828.625
+                }
+              ]
+            },
+            "prior_checkpoint_available": true,
+            "heartbeat": {
+              "mavpackettype": "HEARTBEAT",
+              "type": 2,
+              "autopilot": 12,
+              "base_mode": 29,
+              "custom_mode": 100925440,
+              "system_status": 3,
+              "mavlink_version": 3
+            },
+            "landed": {
+              "mavpackettype": "EXTENDED_SYS_STATE",
+              "vtol_state": 0,
+              "landed_state": 1
+            },
+            "position": {
+              "mavpackettype": "LOCAL_POSITION_NED",
+              "time_boot_ms": 254896,
+              "x": 0.018587904050946236,
+              "y": -0.0029532008338719606,
+              "z": -0.0038810523692518473,
+              "vx": 0.0016520277131348848,
+              "vy": 0.006187499035149813,
+              "vz": 0.015843262895941734
+            },
+            "acks": [
+              {
+                "received_s": 4826.406,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 511,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4826.421,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 511,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4826.421,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4826.421,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 21,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4826.593,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4826.812,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4827.0,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4827.203,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4827.421,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4827.609,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4827.812,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4828.031,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4828.234,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4828.421,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 512,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              },
+              {
+                "received_s": 4828.531,
+                "mavpackettype": "COMMAND_ACK",
+                "command": 400,
+                "result": 0,
+                "progress": 0,
+                "result_param2": 0,
+                "target_system": 0,
+                "target_component": 0
+              }
+            ],
+            "telemetry_gap_max_s": 0.06300000000010186,
+            "evidence_queue": {
+              "accepted": 1151
+            }
+          }
+        }
+      },
+      {
+        "role": "writer",
+        "pid": 324,
+        "exit_status": -15,
+        "still_alive": false,
+        "stop_reason": "phase_deadline",
+        "active_operation": "",
+        "attempted_land": false,
+        "attempted_disarm": false,
+        "report": null
+      }
+    ],
+    "landing_confirmation_source": "telemetry evaluator only"
+  }
+}
+
+
+### probe1.stderr.txt
+
+
+### probe1.stdout.txt
+{
+  "wall_s": 3.546000000000049,
+  "watchdog_decision_s": 3.530999999999949,
+  "budget_s": 15,
+  "poll_s": 0.01,
+  "reap_s_per_step": 0.1,
+  "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+  "workers": [
+    {
+      "role": "control",
+      "pid": 9696,
+      "exit_status": 0,
+      "still_alive": false,
+      "stop_reason": "worker_exited",
+      "active_operation": "MAVLink nonblocking receive",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": {
+        "status": "error",
+        "error_type": "ValueError",
+        "error": "Out of range float values are not JSON compliant: nan"
+      }
+    },
+    {
+      "role": "writer",
+      "pid": 8520,
+      "exit_status": -15,
+      "still_alive": false,
+      "stop_reason": "phase_finished",
+      "active_operation": "evidence write",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": null
+    }
+  ],
+  "landing_confirmation_source": "telemetry evaluator only"
+}
+
+
+### probe2.stderr.txt
+
+
+### probe2.stdout.txt
+{
+  "wall_s": 1.094000000000051,
+  "watchdog_decision_s": 1.094000000000051,
+  "budget_s": 15,
+  "poll_s": 0.01,
+  "reap_s_per_step": 0.1,
+  "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+  "workers": [
+    {
+      "role": "control",
+      "pid": 9844,
+      "exit_status": 0,
+      "still_alive": false,
+      "stop_reason": "worker_exited",
+      "active_operation": "MAVLink nonblocking receive",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": {
+        "status": "error",
+        "error_type": "TypeError",
+        "error": "Object of type bytearray is not JSON serializable"
+      }
+    },
+    {
+      "role": "writer",
+      "pid": 3120,
+      "exit_status": -15,
+      "still_alive": false,
+      "stop_reason": "phase_finished",
+      "active_operation": "evidence write",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": null
+    }
+  ],
+  "landing_confirmation_source": "telemetry evaluator only"
+}
+
+
+### rate.stderr.txt
+
+
+### rate.stdout.txt
+{
+  "wall_s": 37.73499999999967,
+  "watchdog_decision_s": 37.73499999999967,
+  "budget_s": 45,
+  "poll_s": 0.01,
+  "reap_s_per_step": 0.1,
+  "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+  "workers": [
+    {
+      "role": "control",
+      "pid": 8908,
+      "exit_status": 0,
+      "still_alive": false,
+      "stop_reason": "worker_exited",
+      "active_operation": "camera metadata write",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": {
+        "status": "returned",
+        "result": {
+          "frames": 351,
+          "duplicate_timestamps": 0,
+          "wall_capture_s": 35.0,
+          "geometric_A": "blocked until units/calibration/acquisition clock independently verified"
+        }
+      }
+    }
+  ],
+  "landing_confirmation_source": "telemetry evaluator only"
+}
+
+
+### stock.stderr.txt
+
+
+### stock.stdout.txt
+Starting PX4 Build
+----------------------
+Start QGroundControl
+RflySim3D.exe                 4284 Console                    1      7,520 K
+RflySim3D.exe                 1924 Console                    1    564,956 K
+Kill all CopterSims
+[1/1] Generating ../../logs
+Using Airframe File: 10016_iris (native POSIX)
+INFO: PX4 version 6 detected, using legacy init scripts
+[INFO] Installed exact-name airframe selection in runtime rcS.
+starting instance 1 in /mnt/c/Users/user/Documents/RflySim/Firmware/build/px4_sitl_default/instance_1
+Copying rcS files
+PX4 instances start finished
+Press any key to exit
+
+
+### stock2.stderr.txt
+
+
+### stock2.stdout.txt
+Starting PX4 Build
+----------------------
+QGroundControl.exe            1000 Console                    1    363,268 K
+Start QGroundControl
+RflySim3D.exe                 4284 Console                    1      7,520 K
+RflySim3D.exe                 1924 Console                    1    606,892 K
+Kill all CopterSims
+[1/1] Generating ../../logs
+Using Airframe File: 10016_iris (native POSIX)
+INFO: PX4 version 6 detected, using legacy init scripts
+[INFO] Installed exact-name airframe selection in runtime rcS.
+starting instance 1 in /mnt/c/Users/user/Documents/RflySim/Firmware/build/px4_sitl_default/instance_1
+Copying rcS files
+PX4 instances start finished
+Press any key to exit
+E r r o r :   0 x d 0 0 0 0 2 f e  
+ E r r o r   c o d e :   W s l / S e r v i c e / 0 x d 0 0 0 0 2 f e  
+ Start End.
+
+
+### stock3.stderr.txt
+
+
+### stock3.stdout.txt
+Starting PX4 Build
+----------------------
+QGroundControl.exe            1000 Console                    1    362,980 K
+Start QGroundControl
+RflySim3D.exe                 4284 Console                    1      7,520 K
+RflySim3D.exe                 1924 Console                    1    609,032 K
+Kill all CopterSims
+[1/1] Generating ../../logs
+Using Airframe File: 10016_iris (native POSIX)
+INFO: PX4 version 6 detected, using legacy init scripts
+[INFO] Installed exact-name airframe selection in runtime rcS.
+starting instance 1 in /mnt/c/Users/user/Documents/RflySim/Firmware/build/px4_sitl_default/instance_1
+Copying rcS files
+PX4 instances start finished
+Press any key to exit
+E r r o r :   0 x d 0 0 0 0 2 f e  
+ E r r o r   c o d e :   W s l / S e r v i c e / 0 x d 0 0 0 0 2 f e  
+ 
+
+### stock4.stderr.txt
+
+
+### stock4.stdout.txt
+Starting PX4 Build
+----------------------
+QGroundControl.exe            1000 Console                    1    362,992 K
+Start QGroundControl
+RflySim3D.exe                 4284 Console                    1      7,520 K
+RflySim3D.exe                 1924 Console                    1    607,508 K
+Kill all CopterSims
+[1/1] Generating ../../logs
+Using Airframe File: 10016_iris (native POSIX)
+INFO: PX4 version 6 detected, using legacy init scripts
+[INFO] Installed exact-name airframe selection in runtime rcS.
+starting instance 1 in /mnt/c/Users/user/Documents/RflySim/Firmware/build/px4_sitl_default/instance_1
+Copying rcS files
+PX4 instances start finished
+Press any key to exit
+

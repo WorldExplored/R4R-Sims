@@ -1,0 +1,18 @@
+[
+  {
+    "checkpoint": 1,
+    "bytes": 134516,
+    "sha256": "8f6b0e23542c9dc7fa425bec63eaf46b15943fa031926e178c70cce7e01fa362",
+    "files_verified": 27,
+    "zip_crc": "pass",
+    "local_archive": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/rflysim-checkpoint1.zip"
+  },
+  {
+    "checkpoint": 2,
+    "bytes": 2850289,
+    "sha256": "bb35a68353d3ddd8fffd239700f6452c9aab3c134687497176e9012feef10ebe",
+    "files_verified": 33,
+    "zip_crc": "pass",
+    "local_archive": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/rflysim-checkpoint2.zip"
+  }
+]

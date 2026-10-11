@@ -1,6 +1,14 @@
+> **Measured update, 10 October 2026:** [Two bounded flights and native RGB evidence](../../results/rflysim/eval-20261010T215531Z/README.md) supersede historical pending-runtime statements below. B1/B2 full-route and landing/disarm pass using PX4 estimates. A images/rate ran, geometric replay remains blocked and authored rotation conversion failed. Host Off, main artifacts Mac verified. See [installed guide](../../docs/rflysim/installed-execution.md). Historical records remain intact.
+
 > **10 October 2026 update:** [Current execution readiness](../../docs/rflysim/current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; Moonlight desktop is verified, while SSH/transfer and a complete installer remain blocked. Numerical pending tests are preserved.
 
-# RflySim preparation tools
+# Installed proof code
+
+`installed_adapter.py` is the measured Free SDK adapter. It uses canonical installed source hashes, raw MAVLink, fresh mode/arm/land state, independent 75 s / 15 s supervision and a separate capture worker. `capture_adapter.py` records native RGB and CameraData independently. `analyze_evidence.py` reproduces measured plots/diagnostics from ignored raw evidence. Read [installed reproduction](../../docs/rflysim/installed-execution.md) first.
+
+Local post-run corrections (camera degree units/durations, bounded camera cleanup, fresh cleanup queue and exit-status reporting) are not Windows retested. The numerical criteria and executed snapshots remain unchanged. Twenty-five local synthetic tests pass, separately from actual flight outcomes. Use Python 3.12 and `analysis-requirements.txt` in an isolated analysis environment. The historic `run.py` preparation gate stays closed and is a validator/preservation utility, not the installed entry point.
+
+# Historical preparation tools
 
 Execution is disabled. Read `../../docs/rflysim/handoff.md` and `runner-review.md` first. The reviewed configuration is `audit-config.json`; execution freeze remains incomplete pending the installed scene/SDK and host. Recovery code is historical only.
 

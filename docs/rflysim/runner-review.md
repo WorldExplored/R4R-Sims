@@ -1,3 +1,5 @@
+> **Measured update, 10 October 2026:** [Two bounded flights and native RGB evidence](../../results/rflysim/eval-20261010T215531Z/README.md) supersede historical pending-runtime statements below. B1/B2 full-route and landing/disarm pass using PX4 estimates. A images/rate ran, geometric replay remains blocked and authored rotation conversion failed. Host Off, main artifacts Mac verified. See [installed guide](../../docs/rflysim/installed-execution.md). Historical records remain intact.
+
 > **10 October 2026 update:** [Current execution readiness](current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; Moonlight desktop is verified, while SSH/transfer and a complete installer remain blocked. Numerical pending tests are preserved.
 
 # Recovered runner review

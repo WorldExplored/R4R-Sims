@@ -1,0 +1,21 @@
+{
+  "local_synthetic_tests": 25,
+  "tests_passed": true,
+  "simulator_validation_claim": false,
+  "reanalysis": "metrics and all six diagnostic JSON outputs equal published results",
+  "python38_syntax": "installed/capture/analysis pass ast.parse feature_version3.8",
+  "deck": "12slides/12PDFpages rendered and inspected",
+  "git_diff_check": "pass",
+  "flight_logging": {
+    "B1": {
+      "accepted": 20050,
+      "preserved": 20050
+    },
+    "B2": {
+      "accepted": 20280,
+      "preserved": 20280
+    }
+  },
+  "cleanup_logging": "empty raw files, deadline termination recorded; confirmations exist in summaries and flight raw",
+  "frames_open_verified": 1237
+}

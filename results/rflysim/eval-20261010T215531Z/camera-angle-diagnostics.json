@@ -1,0 +1,72 @@
+[
+  {
+    "pose_id": "p4",
+    "executed_command": {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5011.921,
+      "receiver_utc_unix_s": 1791674392.059829,
+      "pose_id": "p4",
+      "desired_local_ned_m": [
+        0,
+        0,
+        -2
+      ],
+      "native_position_command": [
+        0,
+        0,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.0,
+        0.2617993877991494
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    "returned_quaternion_rotation_degrees": {
+      "n": 4,
+      "mean": 0.2624424667314587,
+      "median": 0.2624424667314587,
+      "p95": 0.2624424667314587,
+      "max": 0.2624424667314587
+    },
+    "convention": "wxyz documented; native response diagnostic, not calibrated optical pose",
+    "cause": "authored radians conversion sent to documented degree field"
+  },
+  {
+    "pose_id": "p5",
+    "executed_command": {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5014.921,
+      "receiver_utc_unix_s": 1791674395.0608678,
+      "pose_id": "p5",
+      "desired_local_ned_m": [
+        0,
+        0,
+        -2
+      ],
+      "native_position_command": [
+        0,
+        0,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.17453292519943295,
+        0.0
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    "returned_quaternion_rotation_degrees": {
+      "n": 4,
+      "mean": 0.17245846624702127,
+      "median": 0.17245846624702127,
+      "p95": 0.17245846624702127,
+      "max": 0.17245846624702127
+    },
+    "convention": "wxyz documented; native response diagnostic, not calibrated optical pose",
+    "cause": "authored radians conversion sent to documented degree field"
+  }
+]

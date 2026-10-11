@@ -1,3 +1,5 @@
+> **Measured update, 10 October 2026:** [Two bounded flights and native RGB evidence](../../results/rflysim/eval-20261010T215531Z/README.md) supersede historical pending-runtime statements below. B1/B2 full-route and landing/disarm pass using PX4 estimates. A images/rate ran, geometric replay remains blocked and authored rotation conversion failed. Host Off, main artifacts Mac verified. See [installed guide](../../docs/rflysim/installed-execution.md). Historical records remain intact.
+
 # Current execution state — 10 October 2026
 
 ## Latest evidence supersedes the historical checklist below

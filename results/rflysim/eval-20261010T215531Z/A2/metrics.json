@@ -1,0 +1,191 @@
+{
+  "frames": 261,
+  "warmup_frames": 51,
+  "post_warmup_frames": 210,
+  "receive_interval_s": {
+    "n": 209,
+    "mean": 0.09995215311004942,
+    "median": 0.09400000000005093,
+    "p95": 0.125,
+    "max": 0.125
+  },
+  "delivered_rate_count_over_receive_span_hz": 10.004786979415831,
+  "duplicate_raw_timestamps": 0,
+  "receive_gaps_gt_150ms": 0,
+  "actual_camera_packets": 70,
+  "simulator_body_truth_packets": 1354,
+  "pose_commands": [
+    {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 4994.921,
+      "receiver_utc_unix_s": 1791674375.061078,
+      "pose_id": "p0",
+      "desired_local_ned_m": [
+        0,
+        0,
+        -2
+      ],
+      "native_position_command": [
+        0,
+        0,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5002.921,
+      "receiver_utc_unix_s": 1791674383.061045,
+      "pose_id": "p1",
+      "desired_local_ned_m": [
+        1,
+        0,
+        -2
+      ],
+      "native_position_command": [
+        1,
+        0,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5005.921,
+      "receiver_utc_unix_s": 1791674386.0597563,
+      "pose_id": "p2",
+      "desired_local_ned_m": [
+        0,
+        1,
+        -2
+      ],
+      "native_position_command": [
+        0,
+        1,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5008.921,
+      "receiver_utc_unix_s": 1791674389.0592926,
+      "pose_id": "p3",
+      "desired_local_ned_m": [
+        0,
+        0,
+        -3
+      ],
+      "native_position_command": [
+        0,
+        0,
+        -11.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5011.921,
+      "receiver_utc_unix_s": 1791674392.059829,
+      "pose_id": "p4",
+      "desired_local_ned_m": [
+        0,
+        0,
+        -2
+      ],
+      "native_position_command": [
+        0,
+        0,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.0,
+        0.2617993877991494
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5014.921,
+      "receiver_utc_unix_s": 1791674395.0608678,
+      "pose_id": "p5",
+      "desired_local_ned_m": [
+        0,
+        0,
+        -2
+      ],
+      "native_position_command": [
+        0,
+        0,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.17453292519943295,
+        0.0
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    },
+    {
+      "kind": "pose_command",
+      "receiver_monotonic_s": 5017.921,
+      "receiver_utc_unix_s": 1791674398.060746,
+      "pose_id": "p6",
+      "desired_local_ned_m": [
+        0,
+        0,
+        -2
+      ],
+      "native_position_command": [
+        0,
+        0,
+        -10.05
+      ],
+      "rpy_command_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "settling": 1,
+      "command_is_not_truth": true
+    }
+  ],
+  "raw_timestamp_interval": {
+    "n": 209,
+    "mean": 0.09990430622009568,
+    "median": 0.08199999999999363,
+    "p95": 0.12100000000003774,
+    "max": 0.12100000000003774
+  },
+  "latency_s": null,
+  "geometric_A": "blocked: acquisition clock, projection/geometry, transform verification incomplete",
+  "camera_metadata_limit": "native raw pose exported; no silent frame-to-pose association",
+  "frames_open_verified": 261
+}

@@ -1,0 +1,172 @@
+{
+  "B1": {
+    "evaluation": {
+      "takeoff_confirmed": true,
+      "reached_legs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "touchdown_confirmed": true,
+      "disarmed_confirmed": true,
+      "landing_confirmed": true,
+      "minimum_integration_pass": true,
+      "full_route_pass": true,
+      "position_measurement_source": "px4_estimate",
+      "ground_truth_outcome": "blocked",
+      "failure": null,
+      "rejected_samples": 15,
+      "events": [
+        {
+          "event": "takeoff_confirmed",
+          "monotonic_s": 2442.578
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 1,
+          "monotonic_s": 2446.125,
+          "position_error_m": 0.07327719905794615
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 2,
+          "monotonic_s": 2452.281,
+          "position_error_m": 0.05204129662710833
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 3,
+          "monotonic_s": 2456.125,
+          "position_error_m": 0.13376087752763696
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 4,
+          "monotonic_s": 2465.078,
+          "position_error_m": 0.016780893506060806
+        },
+        {
+          "event": "land_requested",
+          "monotonic_s": 2465.078
+        },
+        {
+          "event": "touchdown_confirmed",
+          "monotonic_s": 2472.734
+        },
+        {
+          "event": "disarmed_confirmed",
+          "monotonic_s": 2472.875
+        }
+      ]
+    },
+    "supervised_wall_s": 38.75,
+    "position_receive_gap_s": {
+      "n": 763,
+      "mean": 0.04998820445609446,
+      "median": 0.047000000000025466,
+      "p95": 0.06300000000010186,
+      "max": 0.125
+    },
+    "gpu_sampled_window_memory_MiB": {
+      "n": 100,
+      "mean": 1755.97,
+      "median": 1754.0,
+      "p95": 1761.0,
+      "max": 1761.0
+    }
+  },
+  "B2": {
+    "evaluation": {
+      "takeoff_confirmed": true,
+      "reached_legs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "touchdown_confirmed": true,
+      "disarmed_confirmed": true,
+      "landing_confirmed": true,
+      "minimum_integration_pass": true,
+      "full_route_pass": true,
+      "position_measurement_source": "px4_estimate",
+      "ground_truth_outcome": "blocked",
+      "failure": null,
+      "rejected_samples": 11,
+      "events": [
+        {
+          "event": "takeoff_confirmed",
+          "monotonic_s": 4795.062
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 1,
+          "monotonic_s": 4800.468,
+          "position_error_m": 0.019108757158422123
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 2,
+          "monotonic_s": 4805.765,
+          "position_error_m": 0.056763195976398124
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 3,
+          "monotonic_s": 4810.171,
+          "position_error_m": 0.04768938197982101
+        },
+        {
+          "event": "waypoint_confirmed",
+          "leg": 4,
+          "monotonic_s": 4818.812,
+          "position_error_m": 0.00845006356291976
+        },
+        {
+          "event": "land_requested",
+          "monotonic_s": 4818.812
+        },
+        {
+          "event": "touchdown_confirmed",
+          "monotonic_s": 4825.671
+        },
+        {
+          "event": "disarmed_confirmed",
+          "monotonic_s": 4825.812
+        }
+      ]
+    },
+    "supervised_wall_s": 39.21900000000005,
+    "position_receive_gap_s": {
+      "n": 771,
+      "mean": 0.04997535667963677,
+      "median": 0.04699999999957072,
+      "p95": 0.06300000000010186,
+      "max": 0.11000000000058208
+    },
+    "gpu_sampled_window_memory_MiB": {
+      "n": 100,
+      "mean": 1754.08,
+      "median": 1753.0,
+      "p95": 1758.0,
+      "max": 1758.0
+    }
+  },
+  "A1": {
+    "frames": 260,
+    "delivered_rate_count_over_receive_span_hz": 10.024096385542169
+  },
+  "A2": {
+    "frames": 261,
+    "delivered_rate_count_over_receive_span_hz": 10.004786979415831
+  },
+  "rate": {
+    "frames": 351,
+    "delivered_rate_count_over_receive_span_hz": 10.013395847287146
+  },
+  "B2/rgb": {
+    "frames": 365,
+    "delivered_rate_count_over_receive_span_hz": 10.01307439650487
+  }
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "title": "RflySim for Real4Real",
+    "paragraphs": [
+      "Two stock PX4 routes completed with confirmed landing and disarming.",
+      "Native RGB capture worked at 640 \u00d7 480 and about 10 Hz.",
+      "Reuse control integration and a stock visual baseline. Defer calibrated reconstruction rendering."
+    ],
+    "image": "B2/rgb/preview-first.png",
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. B1/B2/run.json, metrics.json, assets.json. PX4-estimate-based passes only. This is R4R, unrelated to R2R.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Inputs and component boundaries",
+    "paragraphs": [
+      "Input: Free v5.01 ISO, stock Grasslands, Iris model 0, frozen NED route. No policy weights or real reconstruction.",
+      "Python sends setpoints to PX4. CopterSim advances dynamics. PX4 returns estimates and mode/arm ACKs.",
+      "UE4 renders the camera. A separate receiver saves images and raw camera/body metadata. Calibrated association is still missing."
+    ],
+    "image": null,
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. Installed SDK files and line references in docs/rflysim/installed-execution.md. UDP20100/20101 control, TCP4560 SITL, UDP30101 truth, CameraData20006, RflySim3DImg_0 shared memory.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Installation and graphics now work",
+    "paragraphs": [
+      "The bundled Epic prerequisite installer completed with exit 0. Correct renderer working directory resolved startup in the retest.",
+      "RflySim3D selected NVIDIA L4 through D3D11. UE4 4.27.2 loaded Grasslands.",
+      "Server 2025 and WSL1 worked on this host. Vendor documentation names Windows 10/11. Stock execution needed no licensed MATLAB."
+    ],
+    "image": null,
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. renderer2.log lines153-159,188,661,667,980. UE4PrereqSetup_x64.exe1.0.14.0 signed Epic. ISO23151480832bytes, sha ed5f41add2e97469c900f4ccff87f615eae4e7cfbedcc7d99211afd4d5dc7973. First system32 launch exit3 Array.h703 assertion cause unresolved.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Both flights completed the route",
+    "paragraphs": [
+      "Both full-route passes used fresh PX4 estimates. B1: 38.750 s. B2 with capture: 39.219 s.",
+      "Route in NED metres: (0,0,-2), (2,0,-2), (2,2,-2), (0,0,-2), land. Each waypoint required \u22640.25 m for 2 s.",
+      "The pass uses fresh PX4 estimates. Independently calibrated truth outcome remains blocked."
+    ],
+    "image": "B2/trajectory.png",
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. B1/B2 metrics, raw flight/cleanup JSONL. 75s flight +15s cleanup,12s/leg,0.5s freshness. Offline41samples/2s dwell corroboration each leg, all under0.25m. Same route after owned WSL1 reset.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Capture comparison stays limited",
+    "paragraphs": [
+      "Mean setpoint interval: 100.022 ms without capture, 100.034 ms with capture.",
+      "Maximum tick lateness: 12 ms versus 16 ms. Neither run had a tick more than 100 ms late. State gaps peaked at 125 ms and 110 ms.",
+      "Cleanup workers hit 15 s despite confirmation summaries. Raw cleanup logs are empty. Queue repair needs retesting."
+    ],
+    "image": "B2/tracking-timing.png",
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. B1/B2 metrics.json. Ticks >10ms56/280 and116/292. PNG writes/GPU sampling were outside control. Receiver clocks and Windows timer quantization affect recorded cadence. Cleanup worker exit\u221215 with returned evaluation; likely queue reuse/finalizer issue unconfirmed. Authored freshqueue/exitstatus fix local only.",
+    "footer": "Two sequential runs do not isolate capture overhead. Cleanup logging is incomplete."
+  },
+  {
+    "title": "Flight and observations share a run",
+    "paragraphs": [
+      "B2 saved 365 mounted-camera RGB frames while the vehicle completed the route.",
+      "Trace records include setpoints, ACKs, mode/armed state, estimates, body truth, camera metadata and frame IDs.",
+      "Acquisition-time camera pose remains unknown. RGB recording did not drive the waypoint controller."
+    ],
+    "image": "B2/rgb/preview-middle.png",
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. trace-example.json explicitly uses receiver-nearest illustration with null actual_camera_pose_at_acquisition and uncertainty. B2 capture auxiliary exit -15 on control completion, no full75s capture claim. Raw camera1734 packets, bodytruth1850.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Camera geometry exposed our defect",
+    "paragraphs": [
+      "A1 and A2 saved 260 and 261 frames. A1 captured 25.797 seconds, short of the requested 26.",
+      "Our adapter converted degrees to radians for a degree field. The intended 15\u00b0 yaw and 10\u00b0 pitch were not executed.",
+      "Local duration and degree fixes passed helper tests. They need a simulator retest. Pose repeatability and projection checks remain blocked."
+    ],
+    "image": "A2/preview-middle.png",
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. capture-local-correction.patch. Official https://rflysim.com/doc/en/4.DevRef/vis-cfg.html rows420-423 checked2026-10-10. camera-angle-diagnostics.json. A1 strict26s retest observed but raw not exported. FOV axis/extrinsics/known geometry/acquisition clock unverified.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Native capture meets the rate request",
+    "paragraphs": [
+      "The 35 s test included 5 s warmup and 300 post-warmup frames. Delivered record rate was 10.013 Hz.",
+      "No duplicate native timestamps or post-warmup receipt gaps above 150 ms occurred in the saved rate sequence.",
+      "A2 first image had an old-looking clock value before a large jump. Clock ownership and acquisition latency remain unresolved."
+    ],
+    "image": "rate/capture-timing.png",
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. rate metrics.json and rawcamera.jsonl. All1237main PNGs passed open checks. Receipt logs follow PNG encoding, not acquisition. Camera-clock-diagnostics.json: firstA2frame257.636,nearbyCameraData425.638,nextimage426.759. Hypothesis old buffer, not confirmed. Provider stream60FPS not sensor rate.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Resource measurements fit this workload",
+    "paragraphs": [
+      "Peak GPU allocation in the sample windows: 1,761 MiB and 1,758 MiB. Mean utilization: 16.93% and 17.47%.",
+      "The host had 8 logical CPUs, 32 GB RAM and a 400 GB SSD. Driver 596.86, reported L4 memory 23,034 MiB.",
+      "Polling includes preflight, Moonlight and desktop. B2 sampling ended mid-flight. Minimum VRAM and renderer-only throughput remain unmeasured."
+    ],
+    "image": "B2/gpu.png",
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. GPU CSV100samples requested1Hz, full100s windows. No warmup/synchronizedGPU benchmark. ISO23.15GB, installed expanded footprint unexported. Compute display$1.95/hour, storage/taxes/fullcharges unresolved. CPU resource samples lack per-sample timestamps. resource-coverage.json:100samples/~104s, average~1.05s. UTC\u221204 alignment inferred, full timezone export missing. B1wholeflight covered; B2 apparent21.65s overlap of38.60s recorded flight.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Reconstruction and Gaussian boundaries",
+    "paragraphs": [
+      "Real photos plus calibrated poses: no verified direct reconstruction loader. Cooked UE mesh/XML import is documented, with Free eligibility unresolved.",
+      "External trajectory replay: a conditional small adapter after camera calibration, with an existing Gaussian scene and renderer.",
+      "Native RGB replacement or a visual closed loop: unresolved supported contract and substantial integration. Collision/depth and clock ownership need separate services."
+    ],
+    "image": null,
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. docs/rflysim/installed-execution.md and interfaces.md. https://rflysim.com/doc/en/4.DevRef/3d-import.html; https://rflysim.com/doc/en/4.DevRef/vis-cfg.html#version-restriction-overview. VisionCaptureApi sendImgBuffer3308 is forwarding, not proven injection. Closed UE/core boundary. No external renderer implemented.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Scoped R4R decision",
+    "paragraphs": [
+      "Reuse as a dynamics/control host and keep a native RGB baseline for integration experiments.",
+      "Defer calibrated replay and R4R reconstruction rendering until corrected rotations, projection/extrinsics and acquisition timing are verified.",
+      "Indoor navigation, residential/campus views below 100 m, sparse capture and racing remain research questions. C is blocked by missing compatible released weights and task adapter."
+    ],
+    "image": null,
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. Common evidence dimensions docs/r4r-audit-context.md. NoAirLab dataset/calibration/reconstruction/split/heldoutH/V/downstreammodel/approvedthresholds. Sparseimagecoverage and sparsephysicalcontent differ. NoPSNR/SSIM/LPIPS orrealtransfer. Native worlds/hardware/controllers unmatched, no simulator performance ranking.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  },
+  {
+    "title": "Preservation and the next review",
+    "paragraphs": [
+      "Three ZIP checkpoints passed hashes and internal manifests on the Mac. Main telemetry, 1,237 frames, configs, executed sources and B1 native flight log are preserved.",
+      "AirGPU is verified Off. Final transcript, B2 native flight log and the strict A1 retest remain on its stopped disk.",
+      "Read Link/FlightEvaluation, camera handshake, SDK degree versus yaw-radian conventions, and the clock diagnostics. Next work is corrected calibrated A and missing-file recovery."
+    ],
+    "image": null,
+    "notes": "Results eval-20261010T215531Z, 10 October 2026. checkpoint-preservation.json, checkpoint3-preservation.json. ZIP3 651522799bytes sha d601dc38134b20d1287b0d14e991abb3120b9212795eca4517959cde548fb6d2.1360manifestfiles pass. HostunexpectedStopping23:36UTC/Off23:44causeunknown. Priorledgerspreserved. NoMacsimulatorinstall. Presentation editabletext/objects; scientific plots are reproducible PNGs with source JSON/Python. Not tested in native PowerPoint.",
+    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+  }
+]

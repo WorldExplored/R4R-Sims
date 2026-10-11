@@ -23,8 +23,15 @@ function text(slide,t,left,top,width,height,size,color,bold=false){
 for(let i=0;i<content.length;i++){
  const c=content[i];const slide=presentation.slides.add();slide.background.fill='#FFFFFF';
  text(slide,c.title,72,50,1136,86,i===0?60:44,'#102D3B',true);
- c.paragraphs.forEach((p,j)=>text(slide,p,72,175+j*128,1136,112,i===0?32:28,j===0?'#102D3B':'#344955'));
- text(slide,`Preparation only · no measured simulator results   |   ${i+1} / ${content.length}`,72,650,1136,34,19,'#606C75');
+ if(c.image){
+  const bytes=await fs.readFile(path.resolve(path.dirname(contentPath),c.image));
+  const isPlot=/trajectory|tracking-timing|capture-timing|gpu/.test(c.image);
+  slide.images.add({blob:bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),contentType:'image/png',alt:c.title,fit:'contain',position:isPlot?{left:72,top:145,width:1136,height:340}:{left:610,top:175,width:598,height:450}});
+  c.paragraphs.forEach((p,j)=>text(slide,p,72,isPlot?500+j*50:175+j*145,isPlot?1136:490,isPlot?48:132,isPlot?20:25,j===0?'#102D3B':'#344955'));
+ }else{
+  c.paragraphs.forEach((p,j)=>text(slide,p,72,175+j*128,1136,112,i===0?32:28,j===0?'#102D3B':'#344955'));
+ }
+ text(slide,`${c.footer ?? 'Preparation only · no measured simulator results'}   ${i+1} / ${content.length}`,72,667,1136,28,17,'#606C75');
  slide.speakerNotes.textFrame.setText(c.notes);
 }
 const candidatePath=path.join(workspaceDir,'deck-build/candidate.pptx');
@@ -38,3 +45,9 @@ const result=await finalizePresentation({workspaceDir,candidatePath,finalPath,py
  receiptPath:path.join(workspaceDir,'deck-build/validation.json')});
 await fs.writeFile(path.join(workspaceDir,'deck-build/build-result.json'),JSON.stringify(result,null,2));
 console.log(JSON.stringify({finalPath,font:family,slides:content.length}));
+
+await fs.mkdir(path.join(workspaceDir,'previews'),{recursive:true});
+for (const [index,slide] of presentation.slides.items.entries()) {
+ const png=await presentation.export({slide,format:'png',scale:1});
+ await fs.writeFile(path.join(workspaceDir,'previews',`slide-${String(index+1).padStart(2,'0')}.png`),new Uint8Array(await png.arrayBuffer()));
+}

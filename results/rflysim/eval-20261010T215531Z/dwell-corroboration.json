@@ -1,0 +1,86 @@
+{
+  "B1": [
+    {
+      "leg": 1,
+      "reported_confirmation_s": 2446.125,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.240882555243985,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    },
+    {
+      "leg": 2,
+      "reported_confirmation_s": 2452.281,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.09279412957388453,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    },
+    {
+      "leg": 3,
+      "reported_confirmation_s": 2456.125,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.24254385888009125,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    },
+    {
+      "leg": 4,
+      "reported_confirmation_s": 2465.078,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.03839296246927159,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    }
+  ],
+  "B2": [
+    {
+      "leg": 1,
+      "reported_confirmation_s": 4800.468,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.06800696942369036,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    },
+    {
+      "leg": 2,
+      "reported_confirmation_s": 4805.765,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.24677465771972856,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    },
+    {
+      "leg": 3,
+      "reported_confirmation_s": 4810.171,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.22118425981699683,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    },
+    {
+      "leg": 4,
+      "reported_confirmation_s": 4818.812,
+      "preceding_window_s": 2,
+      "samples": 41,
+      "maximum_sampled_error_m": 0.04488103281480097,
+      "all_sampled_errors_within_tolerance": true,
+      "max_receipt_gap_s": 0.06300000000010186,
+      "interpretation": "offline sampled-position corroboration, not independent truth or continuous unsampled motion"
+    }
+  ]
+}

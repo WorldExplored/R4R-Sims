@@ -1,0 +1,90 @@
+{
+  "camera": {
+    "kind": "actual_camera",
+    "receiver_monotonic_s": 4789.421,
+    "receiver_utc_unix_s": 1791674169.5611176,
+    "raw": [
+      1234567891,
+      0,
+      1,
+      480,
+      640,
+      90.0,
+      0.30000001192092896,
+      0.0,
+      -8.199999809265137,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      -0.0,
+      0.0,
+      0.0,
+      220.112
+    ],
+    "seq_id": 0,
+    "dimensions": [
+      640,
+      480
+    ],
+    "fov": 90.0,
+    "native_position": [
+      0.30000001192092896,
+      0.0,
+      -8.199999809265137
+    ],
+    "native_euler": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "native_quaternion": [
+      1.0,
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "raw_timestamp": 220.112,
+    "units_and_axes": "native metadata, independently unverified"
+  },
+  "body": {
+    "kind": "simulator_body_truth",
+    "receiver_monotonic_s": 4789.421,
+    "receiver_utc_unix_s": 1791674169.5616357,
+    "raw_timestamp": 220.116,
+    "position_map_ned_m": [
+      0.0,
+      0.0,
+      -8.050000190734863
+    ],
+    "velocity_ned_m_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rpy_rad": [
+      0.0,
+      -0.0,
+      0.0
+    ],
+    "quaternion_native": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "timestamp_meaning": "runnedTime seconds documented, clock correspondence pending"
+  },
+  "raw_position_difference": [
+    0.30000001192092896,
+    0.0,
+    -0.14999961853027344
+  ],
+  "requested_mount_translation_FRD_m": [
+    0.3,
+    0,
+    0
+  ],
+  "interpretation": "initial stationary receiver-near raw coordinates suggest additional -0.15 vertical origin offset; axes/clock/extrinsic calibration unverified",
+  "cause": "model/actor origin or other transform hypotheses unresolved, no repair/retest"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "PX4 estimated local NED, truth unavailable",
+  "initial_probe": "probe5",
+  "vehicle": "10016_iris, CopterSim model0",
+  "clearance": "stock grass near origin visually inspected; collision geometry not calibrated",
+  "config_sha256": "cec1e24cf7fb192a4834b0abf57242d203226976f59010c796e052d104532538",
+  "heartbeat": "fresh CMD512 requests at 5Hz",
+  "B_verified": true,
+  "scene": "Grasslands",
+  "frozen_utc": "2026-10-10T22:36:19.3677342Z"
+}

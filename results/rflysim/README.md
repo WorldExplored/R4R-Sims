@@ -1,5 +1,7 @@
 # RflySim audit results
 
+[Measured flights and RGB — 10 October](eval-20261010T215531Z/README.md) — B1/B2 full routes and landing/disarm pass on PX4 estimates; native RGB/rate demonstrated. A rotation conversion failed in our adapter; calibration remains blocked. Cleanup logging incomplete. Main raw evidence Mac hash-verified, AirGPU Off.
+
 [Installed Free Edition and stock startup](extension-20261010T204353Z/README.md) — WSL1 and installer succeeded; PX4/CopterSim connected. RflySim3D blocked by missing DirectX Runtime. No A/B/coupled experiments ran; raw evidence checksum-verified on Mac, instance Stop requested.
 
 [Installation continuation — 10 October](continue-20261010T191100Z/README.md) — full official FreeISO verified; desktop/reboot and privateDrive→Mac raw preservation demonstrated. Feature-only WSL1 setup requires signed bundled runtime update. Setup allowance exhausted conservatively; extension pending. A/B/coupled not tested.

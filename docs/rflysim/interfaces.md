@@ -1,3 +1,5 @@
+> **Measured update, 10 October 2026:** [Two bounded flights and native RGB evidence](../../results/rflysim/eval-20261010T215531Z/README.md) supersede historical pending-runtime statements below. B1/B2 full-route and landing/disarm pass using PX4 estimates. A images/rate ran, geometric replay remains blocked and authored rotation conversion failed. Host Off, main artifacts Mac verified. See [installed guide](../../docs/rflysim/installed-execution.md). Historical records remain intact.
+
 # Interface and real-capture findings — 2026-10-08
 
 **Documented/source-inspected**, not demonstrated on the ISO. The public camera SDK is pinned to RflySimVision `49d60c0907e67cef9c768ac28d89f9c3232f07a7`. It is not asserted to be the installed SDK.

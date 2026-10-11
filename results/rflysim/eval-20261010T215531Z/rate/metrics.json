@@ -1,0 +1,29 @@
+{
+  "frames": 351,
+  "warmup_frames": 51,
+  "post_warmup_frames": 300,
+  "receive_interval_s": {
+    "n": 299,
+    "mean": 0.0998662207357879,
+    "median": 0.09400000000005093,
+    "p95": 0.125,
+    "max": 0.14100000000053114
+  },
+  "delivered_rate_count_over_receive_span_hz": 10.013395847287146,
+  "duplicate_raw_timestamps": 0,
+  "receive_gaps_gt_150ms": 0,
+  "actual_camera_packets": 74,
+  "simulator_body_truth_packets": 1804,
+  "pose_commands": [],
+  "raw_timestamp_interval": {
+    "n": 299,
+    "mean": 0.09984949832775906,
+    "median": 0.08500000000003638,
+    "p95": 0.12410000000002125,
+    "max": 0.13100000000002865
+  },
+  "latency_s": null,
+  "geometric_A": "blocked: acquisition clock, projection/geometry, transform verification incomplete",
+  "camera_metadata_limit": "native raw pose exported; no silent frame-to-pose association",
+  "frames_open_verified": 351
+}

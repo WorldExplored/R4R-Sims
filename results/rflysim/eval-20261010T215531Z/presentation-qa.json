@@ -1,0 +1,12 @@
+{
+  "slides": 12,
+  "each_final_render_inspected": true,
+  "pdf_pages": 12,
+  "pdf_rendered_with": "bundled pdftoppm96dpi",
+  "each_pdf_page_inspected": true,
+  "visual_findings": "no overlap/clipping/placeholder defects observed",
+  "editable_pptx": "native text/slide objects; scientific plots/native frames embedded PNG with reproducible source data",
+  "native_powerpoint_application_test": "not performed",
+  "pdf_export_method": "ReportLab pages from final Artifact Tool slide renders",
+  "limitations": "PDF is a rendered export, not editable slide text"
+}

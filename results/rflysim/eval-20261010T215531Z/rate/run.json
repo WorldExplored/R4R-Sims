@@ -1,0 +1,30 @@
+{
+  "wall_s": 37.73499999999967,
+  "watchdog_decision_s": 37.73499999999967,
+  "budget_s": 45,
+  "poll_s": 0.01,
+  "reap_s_per_step": 0.1,
+  "call_clock": "parent elapsed since observed active token; at most one poll detection delay",
+  "workers": [
+    {
+      "role": "control",
+      "pid": 8908,
+      "exit_status": 0,
+      "still_alive": false,
+      "stop_reason": "worker_exited",
+      "active_operation": "camera metadata write",
+      "attempted_land": false,
+      "attempted_disarm": false,
+      "report": {
+        "status": "returned",
+        "result": {
+          "frames": 351,
+          "duplicate_timestamps": 0,
+          "wall_capture_s": 35.0,
+          "geometric_A": "blocked until units/calibration/acquisition clock independently verified"
+        }
+      }
+    }
+  ],
+  "landing_confirmation_source": "telemetry evaluator only"
+}

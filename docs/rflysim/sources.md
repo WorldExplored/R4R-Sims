@@ -1,3 +1,5 @@
+> **Measured update, 10 October 2026:** [Two bounded flights and native RGB evidence](../../results/rflysim/eval-20261010T215531Z/README.md) supersede historical pending-runtime statements below. B1/B2 full-route and landing/disarm pass using PX4 estimates. A images/rate ran, geometric replay remains blocked and authored rotation conversion failed. Host Off, main artifacts Mac verified. See [installed guide](../../docs/rflysim/installed-execution.md). Historical records remain intact.
+
 > **10 October 2026 update:** [Current execution readiness](current-execution.md) supersedes the historical host/installer/access-permission assumptions below. Execution is authorized on the selected AirGPU host; Moonlight desktop is verified, while SSH/transfer and a complete installer remain blocked. Numerical pending tests are preserved.
 
 # Sources checked 2026-10-08
@@ -44,3 +46,9 @@ Retained official artifact bytes/hashes in [new source manifest](../../results/r
 - [Microsoft WSL on Server](https://learn.microsoft.com/en-us/windows/wsl/install-on-server): system feature/install paths. Actual `wsl -l -v` prompted default installation because feature absent; canceled, no WSL2 installed. Future invocations require independent process timeout.
 - [Moonlight Setup Guide](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide), TCP ports and alternate-network diagnostic. Official Moonlight6.2.0 Mac DMG SHA25643617e5210d53968fcfb4a46526d1625a9056c6fe97e731673c31193dae776fc,78,299,984bytes,matching GitHub asset digest; signature/notarization checked. Desktop works after human provider restart. Earlier DNS mismatch/timeouts do not establish the cause.
 - Authenticated AirGPU dashboard/account read-only: resource listings and current IP/state, display compute1.95USD/hour, one usage line0.85USD/27min/VAT0. Storage/full price unverified. No purchases, refund, password reveal, provider Stop/Reboot or support-message action. [Guest inventory](../../results/rflysim/install-20261010T171109Z/desktop-observations.json) is observed OS/hardware, not renderer/control validation.
+
+## Measured installed release, checked10 October2026
+
+- Canonical SDK hashes/line references and actual renderer/PX4/CopterSim versions: [installed guide](installed-execution.md), [asset inventory](../../results/rflysim/eval-20261010T215531Z/assets.json). Native engine log explicitly selects NVIDIA L4, separate from nvidia-smi.
+- [Sensor field units](https://rflysim.com/doc/en/4.DevRef/vis-cfg.html), rows420–423 and example474–476: SensorPosXYZmetres, SensorAngEular**degrees**, quaternionwxyz. This confirmed our executed A angle conversion defect, with native quaternion response diagnostic in [camera angles](../../results/rflysim/eval-20261010T215531Z/camera-angle-diagnostics.json). Local correction not host retested.
+- Three Windows checkpoints now Mac verified. Official installer URL/hash retained, full image remains on stoppedWindows disk. Main simulator results exist; historical no-run statements above are superseded only for this measured run. No real capture/Gaussian fidelity measurement.

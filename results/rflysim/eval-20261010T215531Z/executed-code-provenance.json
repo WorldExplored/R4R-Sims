@@ -1,0 +1,34 @@
+{
+  "baseline": "7188f4dbed4a7370b8abacefda5c1bc0d661f1bb",
+  "code_snapshot_manifest": {
+    "installed_adapter.py": {
+      "bytes": 17547,
+      "sha256": "a9f1914bd405209e2a54486360ee199fac44abbd8947163aa200e12653f8f288"
+    },
+    "runtime_core.py": {
+      "bytes": 16177,
+      "sha256": "16508c717884203c127683d2155a82cdf651fe7a4ec888301ee54e8f743dee09"
+    },
+    "audit-config.json": {
+      "bytes": 7194,
+      "sha256": "cec1e24cf7fb192a4834b0abf57242d203226976f59010c796e052d104532538"
+    },
+    "capture_adapter.py": {
+      "bytes": 8815,
+      "sha256": "94911dee96c9cdf028538b427baeb00a5438e3036c47302a16d97f6f8218ad25"
+    }
+  },
+  "capture_full_duration_copy_sha256": "29b6fcce9792f5a2d4569042fd67aa8b1deea14b8b1ae1d066d225c98bda683c",
+  "local_capture_correction": "config durations, degree inputs, duration-success gate, bounded cleanup SDK call; not host retested",
+  "remote_git_status": "authored script copies transferred through private Drive; remote Git checkout/commit sync not established, executed hashes retained",
+  "policy_weights": "none",
+  "seed": "not explicitly set by stock startup; unknown, not invented",
+  "local_runner_correction": "fresh cleanup queue and fail exit status for deadline/incomplete cleanup; not host retested",
+  "local_tests": "25 synthetic local checks; no simulator validation",
+  "local_authored_hashes": {
+    "installed_adapter.py": "9de08f7821bdcb0baff15dd8c0f555f9b38a61d332b160432981f009473b90d0",
+    "capture_adapter.py": "a05aee0fa2af7b2302aa993e2d4007835c56c64809cdfa611bdaf8693d46e520",
+    "analyze_evidence.py": "de346c7d3f661b2a70248a571d628024e3c24a01e9fa4b418b8be3c5e934da53",
+    "runtime_core.py": "16508c717884203c127683d2155a82cdf651fe7a4ec888301ee54e8f743dee09"
+  }
+}

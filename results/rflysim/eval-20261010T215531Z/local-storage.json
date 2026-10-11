@@ -1,0 +1,8 @@
+{
+  "observed_after_transfer": "2026-10-11UTC",
+  "mac_free_GiB": 639,
+  "mac_volume_GiB": 926,
+  "source": "df -h worktree, rounded display",
+  "before_transfer_free_exact": null,
+  "installed_windows_expanded_bytes": null
+}

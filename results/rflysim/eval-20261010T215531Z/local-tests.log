@@ -1,0 +1,30 @@
+test_camera_euler_degrees_are_not_converted_to_radians (test_adapter_helpers.AdapterHelperTests) ... ok
+test_cleanup_deadline_cannot_be_hidden_by_flight_pass (test_adapter_helpers.AdapterHelperTests) ... ok
+test_frozen_capture_durations_are_not_shortened (test_adapter_helpers.AdapterHelperTests) ... ok
+test_nonfinite_and_bytearray_evidence_remain_valid_json (test_adapter_helpers.AdapterHelperTests) ... ok
+test_authorization_does_not_complete_execution_freeze (test_preparation.PreparationTests) ... ok
+test_execution_refused (test_preparation.PreparationTests) ... ok
+test_non_object_manifest_rejected (test_preparation.PreparationTests) ... ok
+test_preservation_detects_tampering (test_preparation.PreparationTests) ... ok
+test_review_config_preserves_route_and_thresholds (test_preparation.PreparationTests) ... ok
+test_symlink_not_followed (test_preparation.PreparationTests) ... ok
+test_unsafe_manifest_paths_rejected (test_preparation.PreparationTests) ... ok
+test_estimated_state_is_not_truth (test_runtime.EvaluationTests) ... ok
+test_exact_route_full_pass_and_separate_minimum (test_runtime.EvaluationTests) ... ok
+test_false_landing_from_intent_initial_ground_or_stale_data (test_runtime.EvaluationTests) ... ok
+test_gap_and_outside_tolerance_break_continuous_dwell (test_runtime.EvaluationTests) ... ok
+test_minimum_can_pass_without_full_route (test_runtime.EvaluationTests) ... ok
+test_no_telemetry_leg_deadline (test_runtime.EvaluationTests) ... ok
+test_stale_duplicate_future_and_wrong_source_do_not_advance (test_runtime.EvaluationTests) ... ok
+test_touchdown_without_fresh_disarm_is_incomplete (test_runtime.EvaluationTests) ... ok
+test_blocked_call_has_independent_deadline_and_exit_status (test_runtime.SupervisionTests) ... ok
+test_capture_writer_gpu_blocking_does_not_block_control (test_runtime.SupervisionTests) ... ok
+test_control_exception_still_attempts_cleanup (test_runtime.SupervisionTests) ... ok
+test_queue_pressure_is_nonblocking_and_counted (test_runtime.SupervisionTests) ... ok
+test_spawn_queue_pressure (test_runtime.SupervisionTests) ... ok
+test_unwrapped_blocking_worker_and_cleanup_are_bounded (test_runtime.SupervisionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.581s
+
+OK

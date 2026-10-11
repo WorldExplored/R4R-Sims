@@ -1,0 +1,150 @@
+{
+  "A1": {
+    "receive_nearest_native_pose_minus_image_timestamp": {
+      "min": -0.8010000000000019,
+      "max": 1.0,
+      "median": 0.04000000000000625
+    },
+    "units": "native numerical timestamp units, documented seconds but acquisition origin unverified",
+    "meaning": "diagnostic only, neither latency nor verified synchronization",
+    "first_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 4005.484,
+      "receiver_utc_unix_s": 1791673385.5958774,
+      "frame_id": 0,
+      "path": "frames/frame-000000.png",
+      "raw_timestamp": 89.894,
+      "warmup": true,
+      "pose_id": "p0",
+      "pose_elapsed_s": 0,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    },
+    "last_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 4031.25,
+      "receiver_utc_unix_s": 1791673411.3641503,
+      "frame_id": 259,
+      "path": "frames/frame-000259.png",
+      "raw_timestamp": 116.69500000000001,
+      "warmup": false,
+      "pose_id": "p6",
+      "pose_elapsed_s": 2.780999999999949,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    }
+  },
+  "A2": {
+    "receive_nearest_native_pose_minus_image_timestamp": {
+      "min": -1.1999999999999886,
+      "max": 168.002,
+      "median": 0.03900000000004411
+    },
+    "units": "native numerical timestamp units, documented seconds but acquisition origin unverified",
+    "meaning": "diagnostic only, neither latency nor verified synchronization",
+    "first_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 4994.937,
+      "receiver_utc_unix_s": 1791674375.0816243,
+      "frame_id": 0,
+      "path": "frames/frame-000000.png",
+      "raw_timestamp": 257.636,
+      "warmup": true,
+      "pose_id": "p0",
+      "pose_elapsed_s": 0,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    },
+    "last_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 5020.921,
+      "receiver_utc_unix_s": 1791674401.0594378,
+      "frame_id": 260,
+      "path": "frames/frame-000260.png",
+      "raw_timestamp": 452.639,
+      "warmup": false,
+      "pose_id": "p6",
+      "pose_elapsed_s": 2.9849999999996726,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    }
+  },
+  "rate": {
+    "receive_nearest_native_pose_minus_image_timestamp": {
+      "min": -1.3999999999999773,
+      "max": 0.5590000000000828,
+      "median": 0.040000000000020464
+    },
+    "units": "native numerical timestamp units, documented seconds but acquisition origin unverified",
+    "meaning": "diagnostic only, neither latency nor verified synchronization",
+    "first_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 5049.453,
+      "receiver_utc_unix_s": 1791674429.5942829,
+      "frame_id": 0,
+      "path": "frames/frame-000000.png",
+      "raw_timestamp": 480.163,
+      "warmup": true,
+      "pose_id": null,
+      "pose_elapsed_s": null,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    },
+    "last_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 5084.328,
+      "receiver_utc_unix_s": 1791674464.4715652,
+      "frame_id": 350,
+      "path": "frames/frame-000350.png",
+      "raw_timestamp": 516.054,
+      "warmup": false,
+      "pose_id": null,
+      "pose_elapsed_s": null,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    }
+  },
+  "B2/rgb": {
+    "receive_nearest_native_pose_minus_image_timestamp": {
+      "min": -1.5180000000000007,
+      "max": 0.4379999999999882,
+      "median": 0.04099999999999682
+    },
+    "units": "native numerical timestamp units, documented seconds but acquisition origin unverified",
+    "meaning": "diagnostic only, neither latency nor verified synchronization",
+    "first_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 4789.437,
+      "receiver_utc_unix_s": 1791674169.5676353,
+      "frame_id": 0,
+      "path": "frames/frame-000000.png",
+      "raw_timestamp": 220.112,
+      "warmup": true,
+      "pose_id": null,
+      "pose_elapsed_s": null,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    },
+    "last_frame": {
+      "kind": "frame",
+      "receiver_monotonic_s": 4825.796,
+      "receiver_utc_unix_s": 1791674205.9305768,
+      "frame_id": 364,
+      "path": "frames/frame-000364.png",
+      "raw_timestamp": 257.517,
+      "warmup": false,
+      "pose_id": null,
+      "pose_elapsed_s": null,
+      "duplicate_timestamp": false,
+      "acquisition_utc": null,
+      "actual_pose_association": "pending independent clock/transform verification"
+    }
+  }
+}
