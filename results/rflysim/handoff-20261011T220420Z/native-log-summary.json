@@ -1,0 +1,106 @@
+{
+  "source": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B1-native.ulg",
+  "bytes": 51318508,
+  "sha256": "23c27a237e3bd372d3d5335f7ac0bb88b57dd2039be9b46ab9f44bb17b23a1a3",
+  "parser": "pyulog 1.2.4",
+  "info": {
+    "ver_sw": "a301969dc209c166b9fbbb524bd51ca1ece76b04",
+    "ver_sw_release": 17564416,
+    "ver_hw": "PX4_SITL",
+    "sys_name": "PX4",
+    "sys_os_name": "Linux",
+    "ver_sw_branch": "master",
+    "sys_os_ver_release": 67371263,
+    "sys_toolchain": "GNU GCC",
+    "sys_toolchain_ver": "11.4.0",
+    "ver_data_format": 1,
+    "time_ref_utc": 0
+  },
+  "release_fields": [
+    1,
+    12,
+    3,
+    0
+  ],
+  "start_timestamp_us": 544000,
+  "last_timestamp_us": 946768000,
+  "native_span_s": 946.224,
+  "clock_meaning": "ULog/PX4 native microseconds. time_ref_utc=0, no verified UTC correspondence. Startup plus flight, not a flight-only duration.",
+  "initial_parameter_count": 660,
+  "parameter_change_count": 11,
+  "dropout_record_count": 0,
+  "file_corruption_reported": false,
+  "selected_topics": [
+    {
+      "name": "estimator_status",
+      "multi_id": 0,
+      "samples": 4732,
+      "first_timestamp_us": 691000,
+      "last_timestamp_us": 946688000
+    },
+    {
+      "name": "estimator_status",
+      "multi_id": 1,
+      "samples": 4732,
+      "first_timestamp_us": 740000,
+      "last_timestamp_us": 946732000
+    },
+    {
+      "name": "estimator_status",
+      "multi_id": 2,
+      "samples": 4732,
+      "first_timestamp_us": 743000,
+      "last_timestamp_us": 946737000
+    },
+    {
+      "name": "estimator_status",
+      "multi_id": 3,
+      "samples": 4732,
+      "first_timestamp_us": 731000,
+      "last_timestamp_us": 946732000
+    },
+    {
+      "name": "estimator_status",
+      "multi_id": 4,
+      "samples": 4731,
+      "first_timestamp_us": 792000,
+      "last_timestamp_us": 946588000
+    },
+    {
+      "name": "estimator_status",
+      "multi_id": 5,
+      "samples": 4731,
+      "first_timestamp_us": 788000,
+      "last_timestamp_us": 946588000
+    },
+    {
+      "name": "vehicle_land_detected",
+      "multi_id": 0,
+      "samples": 952,
+      "first_timestamp_us": 512000,
+      "last_timestamp_us": 946760000
+    },
+    {
+      "name": "vehicle_local_position",
+      "multi_id": 0,
+      "samples": 9462,
+      "first_timestamp_us": 700000,
+      "last_timestamp_us": 946704000
+    },
+    {
+      "name": "vehicle_local_position_setpoint",
+      "multi_id": 0,
+      "samples": 9356,
+      "first_timestamp_us": 11360000,
+      "last_timestamp_us": 946760000
+    },
+    {
+      "name": "vehicle_status",
+      "multi_id": 0,
+      "samples": 1885,
+      "first_timestamp_us": 68000,
+      "last_timestamp_us": 946768000
+    }
+  ],
+  "interpretation": "vehicle_local_position remains a PX4 estimate. Firmware identifier does not prove an unmodified source/build. Early parameter changes do not identify the responsible launcher."
+}

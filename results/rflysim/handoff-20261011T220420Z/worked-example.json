@@ -1,0 +1,191 @@
+{
+  "status": "illustrative record trace, not acquisition-time pose association",
+  "config": {
+    "stock_scene": "Grasslands",
+    "vehicle": "10016_iris / CopterSim model0",
+    "config_sha256": "22d1a7aa698d09415b7ea976755d05063a177938db57ee7779755c750ff9818d",
+    "weights": "none",
+    "split": "stock integration scene, no train/test split"
+  },
+  "frame": {
+    "kind": "frame",
+    "receiver_monotonic_s": 4807.625,
+    "receiver_utc_unix_s": 1791674187.7698567,
+    "frame_id": 182,
+    "path": "frames/frame-000182.png",
+    "raw_timestamp": 239.352,
+    "warmup": false,
+    "pose_id": null,
+    "pose_elapsed_s": null,
+    "duplicate_timestamp": false,
+    "acquisition_utc": null,
+    "actual_pose_association": "pending independent clock/transform verification",
+    "asset_base_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B2/rgb",
+    "bytes": 504783,
+    "sha256": "be45e6ef227cf1dd4967568796e25c484c920cbcbb1c3536b20e930d79983e5b",
+    "width": 640,
+    "height": 480,
+    "intrinsics_matrix": null,
+    "intrinsics_status": "FOV supplied; axis/projection not independently verified",
+    "actual_camera_pose_at_acquisition": null
+  },
+  "frame_sha256": "be45e6ef227cf1dd4967568796e25c484c920cbcbb1c3536b20e930d79983e5b",
+  "latest_preceding_setpoint": {
+    "kind": "setpoint",
+    "monotonic_s": 4807.546,
+    "utc_unix_s": 1791674187.6818573,
+    "position_ned_m": [
+      2,
+      2,
+      -2
+    ],
+    "yaw_rad": 0
+  },
+  "preceding_mode": {
+    "kind": "mavlink",
+    "monotonic_s": 4807.5,
+    "utc_unix_s": 1791674187.6388552,
+    "message": {
+      "mavpackettype": "HEARTBEAT",
+      "type": 2,
+      "autopilot": 12,
+      "base_mode": 145,
+      "custom_mode": 393216,
+      "system_status": 4,
+      "mavlink_version": 3
+    },
+    "source_system": 1,
+    "source_component": 1
+  },
+  "mode_arm_command_acks": [
+    {
+      "kind": "mavlink",
+      "monotonic_s": 4789.515,
+      "utc_unix_s": 1791674169.654638,
+      "message": {
+        "mavpackettype": "COMMAND_ACK",
+        "command": 176,
+        "result": 0,
+        "progress": 0,
+        "result_param2": 0,
+        "target_system": 0,
+        "target_component": 0
+      },
+      "source_system": 1,
+      "source_component": 1
+    },
+    {
+      "kind": "mavlink",
+      "monotonic_s": 4789.515,
+      "utc_unix_s": 1791674169.654638,
+      "message": {
+        "mavpackettype": "COMMAND_ACK",
+        "command": 400,
+        "result": 0,
+        "progress": 0,
+        "result_param2": 0,
+        "target_system": 0,
+        "target_component": 0
+      },
+      "source_system": 1,
+      "source_component": 1
+    }
+  ],
+  "ack_meaning": "176 is mode command; 400 is arm/disarm. Position-target streaming has no per-setpoint COMMAND_ACK. Command512 is a telemetry request, not waypoint acceptance.",
+  "receive_nearest_estimate": {
+    "receiver_monotonic_s": 4807.609,
+    "receiver_utc_unix_s": 1791674187.7543566,
+    "source_boot_ms": 233896,
+    "position_ned_m": [
+      1.9852452278137207,
+      1.7434104681015015,
+      -1.998638391494751
+    ],
+    "velocity_ned_m_s": [
+      0.03607994318008423,
+      0.9410568475723267,
+      0.005773008801043034
+    ],
+    "source": "PX4 LOCAL_POSITION_NED estimate"
+  },
+  "receive_nearest_body_truth": {
+    "kind": "simulator_body_truth",
+    "receiver_monotonic_s": 4807.64,
+    "receiver_utc_unix_s": 1791674187.7723575,
+    "raw_timestamp": 239.405,
+    "position_map_ned_m": [
+      2.0352896899418287,
+      1.6951624495510975,
+      -10.041547638237477
+    ],
+    "velocity_ned_m_s": [
+      0.032462261617183685,
+      0.9156675934791565,
+      0.008976158685982227
+    ],
+    "rpy_rad": [
+      -0.08855577558279037,
+      0.0053993226028978825,
+      0.0022324486635625362
+    ],
+    "quaternion_native": [
+      0.9990155100822449,
+      -0.044266242533922195,
+      0.0026476026978343725,
+      0.001234621973708272
+    ],
+    "timestamp_meaning": "runnedTime seconds documented, clock correspondence pending"
+  },
+  "receive_nearest_native_camera": {
+    "kind": "actual_camera",
+    "receiver_monotonic_s": 4807.609,
+    "receiver_utc_unix_s": 1791674187.7508116,
+    "raw": [
+      1234567891,
+      0,
+      1,
+      480,
+      640,
+      90.0,
+      2.3348584175109863,
+      1.6838488578796387,
+      -10.193273544311523,
+      -0.08807719498872757,
+      0.005352616775780916,
+      0.0022253787610679865,
+      0.9990261793136597,
+      -0.04402716085314751,
+      0.0026247233618050814,
+      0.001229428919032216,
+      239.392
+    ],
+    "seq_id": 0,
+    "dimensions": [
+      640,
+      480
+    ],
+    "fov": 90.0,
+    "native_position": [
+      2.3348584175109863,
+      1.6838488578796387,
+      -10.193273544311523
+    ],
+    "native_euler": [
+      -0.08807719498872757,
+      0.005352616775780916,
+      0.0022253787610679865
+    ],
+    "native_quaternion": [
+      0.9990261793136597,
+      -0.04402716085314751,
+      0.0026247233618050814,
+      0.001229428919032216
+    ],
+    "raw_timestamp": 239.392,
+    "units_and_axes": "native metadata, independently unverified"
+  },
+  "actual_camera_pose_at_acquisition": null,
+  "acquisition_utc": null,
+  "association_uncertainty_s": null,
+  "join_method": "Latest preceding setpoint/heartbeat plus receiver-nearest native records for illustration only. Distinct native clocks retained; no interpolation or extrapolation claimed."
+}

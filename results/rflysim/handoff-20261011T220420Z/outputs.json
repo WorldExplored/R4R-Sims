@@ -1,0 +1,708 @@
+{
+  "base": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim",
+  "source_run": "eval-20261010T215531Z",
+  "items": [
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B1/flight.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B1/flight.jsonl",
+      "bytes": 9112778,
+      "sha256": "14b7f53903ca6f5245192f2acba83fe821ac2807984fb09984c130e859dc46c1",
+      "meaning": "raw command/ACK/mode/state/truth records",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1i0qA2trimS9E4R9gID_j6DkTtMviIHX1/view",
+      "records": 20050
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B1/run.json",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B1/run.json",
+      "bytes": 22616,
+      "sha256": "c0dab2848a068fd217c1a5f3f1cfd94869717de40c93a78205e8663f857df2cb",
+      "meaning": "watchdog, evaluation, exit status, flight and cleanup summaries",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1i0qA2trimS9E4R9gID_j6DkTtMviIHX1/view",
+      "duration_s": 38.75
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B1/freeze.json",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B1/freeze.json",
+      "bytes": 471,
+      "sha256": "e1bf66fc3e3ed38775291a6af12364b9de5c5f085a24d0aedea179e9278cc438",
+      "meaning": "pre-execution contract",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1i0qA2trimS9E4R9gID_j6DkTtMviIHX1/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B1/cleanup.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B1/cleanup.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "empty raw cleanup evidence, not a landing certificate",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1i0qA2trimS9E4R9gID_j6DkTtMviIHX1/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/actions.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/actions.jsonl",
+      "bytes": 37338,
+      "sha256": "3c3f52ec301a6f06f66b1983e6b6912600d54c998164cef9416bf17fdb6d49b2",
+      "meaning": "derived actions.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/estimated-state.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/estimated-state.jsonl",
+      "bytes": 246146,
+      "sha256": "b30ce41555a802937c455202d6b157d064554140c84d0c79accbdedc275716d1",
+      "meaning": "derived estimated-state.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/ack-mode-arm-land.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/ack-mode-arm-land.jsonl",
+      "bytes": 155502,
+      "sha256": "572dd4872e982a715d8fcf117e7a80467e7215a20ee150f5485e43ed6019e2e3",
+      "meaning": "derived ack-mode-arm-land.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/simulator-truth-multiplex.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/simulator-truth-multiplex.jsonl",
+      "bytes": 1541058,
+      "sha256": "b8470badb26a791cef9c30e6512ce45deae7a3c35aa0b45e23507e6da6cf16f0",
+      "meaning": "derived simulator-truth-multiplex.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/metrics.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/metrics.json",
+      "bytes": 3807,
+      "sha256": "7874b3ceb1519696722239e2b58d3aaabd62075c53f501a37346b8af5698b765",
+      "meaning": "derived metrics.json; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/trajectory.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/trajectory.png",
+      "bytes": 83524,
+      "sha256": "673893d8b850c044d3b5212ea1696c7c2face7f665bbd4de54880a79ca2abd0a",
+      "meaning": "derived trajectory.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/tracking-timing.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/tracking-timing.png",
+      "bytes": 144613,
+      "sha256": "37cc92abad2478e378e33532ef3291a3ffe13be839cd3c921f0ceb86e89ca66e",
+      "meaning": "derived tracking-timing.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/truth-disagreement.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/truth-disagreement.png",
+      "bytes": 82726,
+      "sha256": "aad18d542e812efcaf905b1d79bb40baa9240e6751b03152585494de8053e625",
+      "meaning": "derived truth-disagreement.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/gpu.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/gpu.png",
+      "bytes": 73639,
+      "sha256": "9acd75a2a3b6c90713567d7edad294bcfbc795e0591b357cb5a7eaad4b0ffd85",
+      "meaning": "derived gpu.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B1/config.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B1/config.json",
+      "bytes": 7497,
+      "sha256": "22d1a7aa698d09415b7ea976755d05063a177938db57ee7779755c750ff9818d",
+      "meaning": "derived config.json; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B2/flight.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B2/flight.jsonl",
+      "bytes": 9221271,
+      "sha256": "0df30ac4dacb20a83284a02ce6c2e928f584de2f9e78d27cdb6bf527ac94d296",
+      "meaning": "raw command/ACK/mode/state/truth records",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view",
+      "records": 20280
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B2/run.json",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B2/run.json",
+      "bytes": 22631,
+      "sha256": "2550f3cd877e2d9ff7202e0c73e2abc8c65b0e8a29e222cd6112ac77571c3682",
+      "meaning": "watchdog, evaluation, exit status, flight and cleanup summaries",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view",
+      "duration_s": 39.219
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B2/freeze.json",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B2/freeze.json",
+      "bytes": 471,
+      "sha256": "e1bf66fc3e3ed38775291a6af12364b9de5c5f085a24d0aedea179e9278cc438",
+      "meaning": "pre-execution contract",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B2/cleanup.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B2/cleanup.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "empty raw cleanup evidence, not a landing certificate",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/actions.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/actions.jsonl",
+      "bytes": 38773,
+      "sha256": "613ebb6a840ea484e3d791b0b45546cbe3780372897a6882d96739618cba02b8",
+      "meaning": "derived actions.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/estimated-state.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/estimated-state.jsonl",
+      "bytes": 248626,
+      "sha256": "9cf91b2a2654cbf66961d997f8a89231fe7e4c3c8e36fd772c189a599dff441f",
+      "meaning": "derived estimated-state.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/ack-mode-arm-land.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/ack-mode-arm-land.jsonl",
+      "bytes": 157062,
+      "sha256": "cd1a052356d9bb597d4a241d57f87159c5c2cb1aeb5ede01d2fcaaa5f821e901",
+      "meaning": "derived ack-mode-arm-land.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/simulator-truth-multiplex.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/simulator-truth-multiplex.jsonl",
+      "bytes": 1563109,
+      "sha256": "63d9c4b77905f26401bcf03ebd7bf8a474e561b2bb266f26c3c56e88998686ab",
+      "meaning": "derived simulator-truth-multiplex.jsonl; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/metrics.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/metrics.json",
+      "bytes": 3839,
+      "sha256": "26027288e0f3fac51d96cb8ef270c69153383d6f01fe483473907725c2d75d59",
+      "meaning": "derived metrics.json; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/trajectory.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/trajectory.png",
+      "bytes": 88362,
+      "sha256": "df7ebbe9ce3e03be82bb9a3fe158280c0bb6f93a47b61a7d35509eee57e01ac9",
+      "meaning": "derived trajectory.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/tracking-timing.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/tracking-timing.png",
+      "bytes": 145565,
+      "sha256": "53234368475c6fdec23feb82603e9bd4e8002f6f2b20f1ae12792d8baff8e378",
+      "meaning": "derived tracking-timing.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/truth-disagreement.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/truth-disagreement.png",
+      "bytes": 84699,
+      "sha256": "3703494b379b9902bef7b570acba5d63b583859ae6c00ae7b07d7ab4867f666f",
+      "meaning": "derived truth-disagreement.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/gpu.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/gpu.png",
+      "bytes": 69527,
+      "sha256": "34dbfcf79d327995bca0bcd8604e435294fea99f2bacbae97a1125536a9a2981",
+      "meaning": "derived gpu.png; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/config.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/config.json",
+      "bytes": 7497,
+      "sha256": "22d1a7aa698d09415b7ea976755d05063a177938db57ee7779755c750ff9818d",
+      "meaning": "derived config.json; state is PX4 estimate, truth alignment diagnostic only",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/A1/camera.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/A1/camera.jsonl",
+      "bytes": 649396,
+      "sha256": "693cd49c37e72075cc4caa25f45e01ecf717d3914b33fde5b6cbc292cdeab78b",
+      "meaning": "raw camera commands, CameraData, body truth, frame IDs and distinct clocks",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/A1/frames",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/A1/frames",
+      "meaning": "lossless native RGB PNG sequence, 640x480, warmup included",
+      "frame_count": 260,
+      "bytes": 131608132,
+      "capture_duration_s": 25.797,
+      "receiver_span_s": null,
+      "drive_archive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view",
+      "archive_entry_prefix": "A1\\frames\\",
+      "verification": "all PNGs opened; archive manifest supplies per-file SHA256; videos.json additionally hashes A1/A2/B2 source frames"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/frames.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/frames.jsonl",
+      "bytes": 200221,
+      "sha256": "02de19a4632c9727ce22f83ddb7f5a623d4ca579df478c8abe4edeb38cd59168",
+      "meaning": "derived frames.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/camera-reference.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/camera-reference.jsonl",
+      "bytes": 1976,
+      "sha256": "31d029e30d79b2ab31756177abecf7336a5091861143649a730345065082fdc7",
+      "meaning": "derived camera-reference.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/camera-actual.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/camera-actual.jsonl",
+      "bytes": 33042,
+      "sha256": "fe6fa16e3992ed800b3c9974cde7acfdbffc4a80d237aa75f058d876bea722fb",
+      "meaning": "derived camera-actual.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/body-truth.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/body-truth.jsonl",
+      "bytes": 516197,
+      "sha256": "e1584d2f6021295f0d65a70acf0cd0e4efd0979dac2207ec42f22594065c5b99",
+      "meaning": "derived body-truth.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/metrics.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/metrics.json",
+      "bytes": 3976,
+      "sha256": "7046f00c9dbd0e70e3b52e7769bf580d33d91818469c54cc831984efce02bca6",
+      "meaning": "derived metrics.json; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/capture-timing.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/capture-timing.png",
+      "bytes": 136168,
+      "sha256": "9d2da256e5584478807738ab8ddbacd6114bd76f29aee1d8dcab455c7b03fe52",
+      "meaning": "derived capture-timing.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/preview-first.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/preview-first.png",
+      "bytes": 504936,
+      "sha256": "c8c9bb69272268a56eb826fffd3835cceb97aaa6bfdb0b9f6cec08704d6a7ba0",
+      "meaning": "derived preview-first.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/preview-middle.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/preview-middle.png",
+      "bytes": 497471,
+      "sha256": "e9f336855bf97bded97121692f0821f42953d84b96ce62f65b0c9189b188098e",
+      "meaning": "derived preview-middle.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A1/preview-last.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A1/preview-last.png",
+      "bytes": 505014,
+      "sha256": "0af7908d1c9232f0a94bafac16fdf2730d531779491b3816aae5adb074ecb3a4",
+      "meaning": "derived preview-last.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/A2/camera.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/A2/camera.jsonl",
+      "bytes": 783034,
+      "sha256": "3da0374d80d1af0dcb716457581cb4dfd219d61c52036241829b1dc6fff9973c",
+      "meaning": "raw camera commands, CameraData, body truth, frame IDs and distinct clocks",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/A2/frames",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/A2/frames",
+      "meaning": "lossless native RGB PNG sequence, 640x480, warmup included",
+      "frame_count": 261,
+      "bytes": 132683089,
+      "capture_duration_s": 26.0,
+      "receiver_span_s": null,
+      "drive_archive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view",
+      "archive_entry_prefix": "A2\\frames\\",
+      "verification": "all PNGs opened; archive manifest supplies per-file SHA256; videos.json additionally hashes A1/A2/B2 source frames"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/frames.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/frames.jsonl",
+      "bytes": 200975,
+      "sha256": "c327eb246bb5a164d0ea75c4ebe99736d8778518cd2c71fce33fd2bd847728e2",
+      "meaning": "derived frames.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/camera-reference.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/camera-reference.jsonl",
+      "bytes": 1973,
+      "sha256": "67f92e6804915a47f4e1766c739f85ebdcdd0db4f8e954c9f49d89dbb045a51d",
+      "meaning": "derived camera-reference.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/camera-actual.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/camera-actual.jsonl",
+      "bytes": 51247,
+      "sha256": "f5547dea451425142c9ca841abaf0e201531b481adfa0ea1d46d209d0e4c519e",
+      "meaning": "derived camera-actual.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/body-truth.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/body-truth.jsonl",
+      "bytes": 631289,
+      "sha256": "fb233d43b3266fde0e6858732303826a06b51189254ad29cb00cd27bd45dc108",
+      "meaning": "derived body-truth.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/metrics.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/metrics.json",
+      "bytes": 3973,
+      "sha256": "0afd05f6c776c15658a4ef97b1373723c2925ed1a75b5d492d7f1ed6a3d76fb0",
+      "meaning": "derived metrics.json; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/capture-timing.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/capture-timing.png",
+      "bytes": 147958,
+      "sha256": "1a8d57f2a641c3f7ee51f0f58365a4f9757dc9b36a9be64737307d6986863400",
+      "meaning": "derived capture-timing.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/preview-first.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/preview-first.png",
+      "bytes": 504983,
+      "sha256": "ccc3d2bfc945bf7f2701f3007e69875f7b19edf8cd3b944cafe3c903973e2d26",
+      "meaning": "derived preview-first.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/preview-middle.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/preview-middle.png",
+      "bytes": 497637,
+      "sha256": "cd7ecf58a1faa60e41df626d66e715ed5e23bba9d7846e9289d732dea69fc6e2",
+      "meaning": "derived preview-middle.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/A2/preview-last.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/A2/preview-last.png",
+      "bytes": 505011,
+      "sha256": "60c5ff20618eb668317123d068a47a93e899754da90651c76383802aa0e682ce",
+      "meaning": "derived preview-last.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/rate/camera.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/rate/camera.jsonl",
+      "bytes": 1006184,
+      "sha256": "ac09406f67e17cb8481ea18eceab4cd9b2429d3230a5e455c3e2ccd512a158ce",
+      "meaning": "raw camera commands, CameraData, body truth, frame IDs and distinct clocks",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/rate/frames",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/rate/frames",
+      "meaning": "lossless native RGB PNG sequence, 640x480, warmup included",
+      "frame_count": 351,
+      "bytes": 178247842,
+      "capture_duration_s": 35.0,
+      "receiver_span_s": null,
+      "drive_archive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view",
+      "archive_entry_prefix": "rate\\frames\\",
+      "verification": "all PNGs opened; archive manifest supplies per-file SHA256; videos.json additionally hashes A1/A2/B2 source frames"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/frames.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/frames.jsonl",
+      "bytes": 268151,
+      "sha256": "88f63ca1db3186af1fe2a5b142d03d75297e0f78dc48967a29c1d2bba0de5717",
+      "meaning": "derived frames.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/camera-reference.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/camera-reference.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "derived camera-reference.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/camera-actual.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/camera-actual.jsonl",
+      "bytes": 36583,
+      "sha256": "906e729ad6ab0b5c5bb1748a329caaec8d5d7d726560b318d8fbdb4692b61904",
+      "meaning": "derived camera-actual.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/body-truth.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/body-truth.jsonl",
+      "bytes": 840243,
+      "sha256": "b328d97e3828fc8b14094e4e045c4bb160bfbe77663a1010e7438abe2d60754f",
+      "meaning": "derived body-truth.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/metrics.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/metrics.json",
+      "bytes": 884,
+      "sha256": "61d84361f104edfae72677dfe33d7eafd92362550a3c8547a10b8fc21014ccd2",
+      "meaning": "derived metrics.json; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/capture-timing.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/capture-timing.png",
+      "bytes": 126045,
+      "sha256": "dd4dcff7ab3ad36c567bbc6c213222ad147a24b1dc8918cccdfce6cc75de3448",
+      "meaning": "derived capture-timing.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/preview-first.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/preview-first.png",
+      "bytes": 504934,
+      "sha256": "7b032946a02d886d398052ea981d6bb0b758dcd4c5ebc5314e61f61d7d6fb1fd",
+      "meaning": "derived preview-first.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/preview-middle.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/preview-middle.png",
+      "bytes": 504911,
+      "sha256": "71b0a4113a98f30821a6636036f36357093a97297650d3df0976d4355fcfe3be",
+      "meaning": "derived preview-middle.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rate/preview-last.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rate/preview-last.png",
+      "bytes": 504824,
+      "sha256": "7df92b6ee9b6adb17420cec9a132b08c0c3d7b0717320cc3d7fd8ede0107c6a2",
+      "meaning": "derived preview-last.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B2/rgb/camera.jsonl",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B2/rgb/camera.jsonl",
+      "bytes": 2579731,
+      "sha256": "33495436166294e147afb9bd7b591ee26be56bc348e846cc351eb36e813f4c74",
+      "meaning": "raw camera commands, CameraData, body truth, frame IDs and distinct clocks",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B2/rgb/frames",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B2/rgb/frames",
+      "meaning": "lossless native RGB PNG sequence, 640x480, warmup included",
+      "frame_count": 365,
+      "bytes": 190022494,
+      "capture_duration_s": null,
+      "receiver_span_s": 36.359,
+      "drive_archive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view",
+      "archive_entry_prefix": "B2\\rgb\\frames\\",
+      "verification": "all PNGs opened; archive manifest supplies per-file SHA256; videos.json additionally hashes A1/A2/B2 source frames"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/frames.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/frames.jsonl",
+      "bytes": 279617,
+      "sha256": "62fad2b13d89a5021fb7c5f657f2cf4c81c38d0fac3e40a416e76fab8480140a",
+      "meaning": "derived frames.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/camera-reference.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/camera-reference.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "derived camera-reference.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/camera-actual.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/camera-actual.jsonl",
+      "bytes": 1383235,
+      "sha256": "d6d02460c6f93f14953a037b000a8d267251b1994b521b8c31e75cd99daf9f4a",
+      "meaning": "derived camera-actual.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/body-truth.jsonl",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/body-truth.jsonl",
+      "bytes": 1062141,
+      "sha256": "e4897ff0520ccf2fbf1503bb6973ee9181edf6248ba837837238060b4d58ffe0",
+      "meaning": "derived body-truth.jsonl; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/metrics.json",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/metrics.json",
+      "bytes": 872,
+      "sha256": "9635dcc0b3c4953e10f1eee6f4701b91aca0477fff7813a6aebde4fdbde05815",
+      "meaning": "derived metrics.json; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/capture-timing.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/capture-timing.png",
+      "bytes": 140163,
+      "sha256": "c4c94a35c08d18f47622a595357e82a33e02a0d3859b93305f5fffc25efe9868",
+      "meaning": "derived capture-timing.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/preview-first.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/preview-first.png",
+      "bytes": 508803,
+      "sha256": "b2e917bb7dc1ad32233fab1ea517fff258f5e1ac6231bef1698f2f061cb8c802",
+      "meaning": "derived preview-first.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/preview-middle.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/preview-middle.png",
+      "bytes": 504291,
+      "sha256": "391cc7f254900d9a9efeff9b47c0fa1c0457d89b2f823093d336463882299800",
+      "meaning": "derived preview-middle.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/B2/rgb/preview-last.png",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/B2/rgb/preview-last.png",
+      "bytes": 531944,
+      "sha256": "bc263d0370e379b6e999d9ae30541f2224c1668404d67f32b0a6e3229d81486f",
+      "meaning": "derived preview-last.png; acquisition UTC and calibrated pose unknown",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z/raw/B1-native.ulg",
+      "relative_path": "artifacts/rflysim/eval-20261010T215531Z/raw/B1-native.ulg",
+      "bytes": 51318508,
+      "sha256": "23c27a237e3bd372d3d5335f7ac0bb88b57dd2039be9b46ab9f44bb17b23a1a3",
+      "meaning": "native startup plus B1 ULog, PX4 estimates/configuration, not simulator truth",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1gydzS0cL8c635wACELIjVgf0HonZr6sa/view",
+      "duration_s": 946.224
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/handoff-20261011T220420Z/videos/A1-INVALID-ROTATIONS-short-capture.mp4",
+      "relative_path": "artifacts/rflysim/handoff-20261011T220420Z/videos/A1-INVALID-ROTATIONS-short-capture.mp4",
+      "bytes": 9466060,
+      "sha256": "1b291fc18bf4936d38bb7b58571beebb488adb8940614387c13fbbb6a88b0633",
+      "meaning": "compressed review video, ordinal 10 FPS; not a sensor-timing measurement",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1ibOwVslVGmisP9X8UwDgCizux6ipR5fz/view?usp=drivesdk",
+      "records": 260,
+      "duration_s": 26.0
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/handoff-20261011T220420Z/videos/A2-INVALID-ROTATIONS.mp4",
+      "relative_path": "artifacts/rflysim/handoff-20261011T220420Z/videos/A2-INVALID-ROTATIONS.mp4",
+      "bytes": 9565801,
+      "sha256": "c7fe1d91f73c52a16625b9312c59a009d9a58b6fc154a62d4a694da5f974f47c",
+      "meaning": "compressed review video, ordinal 10 FPS; not a sensor-timing measurement",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/17zO7RcjxzS9Di2hQ6bunKNpjBWCwzgqw/view?usp=drivesdk",
+      "records": 261,
+      "duration_s": 26.1
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/handoff-20261011T220420Z/videos/B2-mounted-RGB-waypoint-repeat.mp4",
+      "relative_path": "artifacts/rflysim/handoff-20261011T220420Z/videos/B2-mounted-RGB-waypoint-repeat.mp4",
+      "bytes": 19081619,
+      "sha256": "2985944e61cf3d6d97ba06e6ce99cb32b6e103072edde2dec95b1f4d951fa5b6",
+      "meaning": "compressed review video, ordinal 10 FPS; not a sensor-timing measurement",
+      "verification": "local bytes/SHA256; source extraction manifests verified",
+      "drive": "https://drive.google.com/file/d/1Oo4rKyNAbzIcOHF5U3Kjt43WKq89NAOd/view?usp=drivesdk",
+      "records": 365,
+      "duration_s": 36.5
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/handoff-20261011T220420Z/native-log-summary.json",
+      "relative_path": "results/rflysim/handoff-20261011T220420Z/native-log-summary.json",
+      "bytes": 2943,
+      "sha256": "dc6f18fcf1c1e1a68b5317b50e377cc5187416e701910d6130fcfcb1d667267e",
+      "meaning": "new offline diagnostic from immutable executed evidence",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/handoff-20261011T220420Z/B1-px4-parameters.json",
+      "relative_path": "results/rflysim/handoff-20261011T220420Z/B1-px4-parameters.json",
+      "bytes": 37571,
+      "sha256": "d2938c3a0cb9b62ea684bbad8b6ad8eb45eb655c7a94d4255295c625bf2b5dbd",
+      "meaning": "new offline diagnostic from immutable executed evidence",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/handoff-20261011T220420Z/worked-example.json",
+      "relative_path": "results/rflysim/handoff-20261011T220420Z/worked-example.json",
+      "bytes": 5416,
+      "sha256": "3aefafb0cf1d72cadcc5efdd139c70caeeb287ecfc33e9f7f927779b49328461",
+      "meaning": "new offline diagnostic from immutable executed evidence",
+      "verification": "local bytes/SHA256; source extraction manifests verified"
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rflysim-evaluation.pptx",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rflysim-evaluation.pptx",
+      "bytes": 2368298,
+      "sha256": "9aa6773dc7f7d41c8f445acb84774d0bb3b1c2fce7f02f600d4bd6f9a2120bb2",
+      "meaning": "revised component handoff,16slides. Scientific plots are embedded reproducible PNGs; text/diagram/table editable in PPTX. PDF is rendered export with3video links.",
+      "drive": "https://drive.google.com/file/d/1rq5bF_duuOar6tTBW6jEw1H80SWGHvNh/view",
+      "verification": "local SHA256 and full private Drive download match; each rendered slide inspected",
+      "duration_s": null
+    },
+    {
+      "path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/rflysim-evaluation.pdf",
+      "relative_path": "results/rflysim/eval-20261010T215531Z/rflysim-evaluation.pdf",
+      "bytes": 4228850,
+      "sha256": "a56d0b4098565a166e7b76a6f95819cf3102b95e4c920a1549566e0bc52438cf",
+      "meaning": "revised component handoff,16slides. Scientific plots are embedded reproducible PNGs; text/diagram/table editable in PPTX. PDF is rendered export with3video links.",
+      "drive": "https://drive.google.com/file/d/1Yu01hS3wXT5UcZVLmbo50eTaBSTEc4Na/view",
+      "verification": "local SHA256 and full private Drive download match; each rendered slide inspected",
+      "duration_s": null
+    }
+  ],
+  "missing": [
+    "B2 native ULog",
+    "final Windows transcript",
+    "strict-duration A1 retest raw files",
+    "final scene/model/launcher hashes and B2 parameter inventory",
+    "independently calibrated acquisition-time camera poses"
+  ]
+}

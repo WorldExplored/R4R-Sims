@@ -1,134 +1,235 @@
 [
   {
-    "title": "RflySim for Real4Real",
+    "title": "RflySim components for R4R",
     "paragraphs": [
-      "Two stock PX4 routes completed with confirmed landing and disarming.",
-      "Native RGB capture worked at 640 \u00d7 480 and about 10 Hz.",
-      "Reuse control integration and a stock visual baseline. Defer calibrated reconstruction rendering."
+      "Reuse PX4/CopterSim for stock motion and control integration.",
+      "Keep native RGB as a visual baseline. Two waypoint flights passed and B2 recorded RGB concurrently.",
+      "External motion replay is proposed. Native calibration and real-scene fidelity remain unverified."
     ],
-    "image": "B2/rgb/preview-first.png",
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. B1/B2/run.json, metrics.json, assets.json. PX4-estimate-based passes only. This is R4R, unrelated to R2R.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "image": "B2/rgb/preview-middle.png",
+    "notes": "B1/B2 run.json, metrics, installed-execution.md. No real capture, reconstruction or learned policy used. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Inputs and component boundaries",
+    "title": "Actual assets and versions",
     "paragraphs": [
-      "Input: Free v5.01 ISO, stock Grasslands, Iris model 0, frozen NED route. No policy weights or real reconstruction.",
-      "Python sends setpoints to PX4. CopterSim advances dynamics. PX4 returns estimates and mode/arm ACKs.",
-      "UE4 renders the camera. A separate receiver saves images and raw camera/body metadata. Calibrated association is still missing."
+      "Software: Free v5.01-20260831. CopterSim 5.0.1, RflySim3D 5.01 / UE4.27.2, PX4 1.12.3dev.",
+      "Scene and vehicle: stock Grasslands, CopterSim model 0, Iris airframe 10016. Full physical model inventory is missing.",
+      "No real reconstruction, dataset or learned weights. \u201cCheckpoint\u201d ZIPs back up evidence. They are not learned models."
     ],
     "image": null,
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. Installed SDK files and line references in docs/rflysim/installed-execution.md. UDP20100/20101 control, TCP4560 SITL, UDP30101 truth, CameraData20006, RflySim3DImg_0 shared memory.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "assets.json. ISO 23,151,480,832 bytes SHA ed5f41add2e97469c900f4ccff87f615eae4e7cfbedcc7d99211afd4d5dc7973. SDK hashes identify installed sources separately from repository HEAD. B1 ULog ver_sw a301969dc209c166b9fbbb524bd51ca1ece76b04. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Installation and graphics now work",
+    "title": "Native control and observation path",
+    "paragraphs": [],
+    "image": null,
+    "notes": "Installed SDK file/line references in docs/rflysim/installed-execution.md. Scripted targets and estimate feedback close the loop. Pixels never enter controller. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026",
+    "kind": "flow",
+    "blocks": [
+      [
+        "Supervisor",
+        "NED targets\n10 Hz"
+      ],
+      [
+        "PX4",
+        "Estimation\nand control"
+      ],
+      [
+        "CopterSim",
+        "Actuators\nto motion"
+      ],
+      [
+        "RflySim3D",
+        "Body motion\nto RGB"
+      ],
+      [
+        "Recorder",
+        "PNG frames\nand metadata"
+      ]
+    ],
+    "details": [
+      "PX4 estimates, ACKs, modes and arming return to the supervisor.",
+      "Body truth, native camera metadata and image timestamps export separately.",
+      "Control UDP 20100/20101, SITL TCP 4560, truth UDP 30101, camera UDP 20006, RGB shared memory."
+    ]
+  },
+  {
+    "title": "Algorithms and responsibilities",
     "paragraphs": [
-      "The bundled Epic prerequisite installer completed with exit 0. Correct renderer working directory resolved startup in the retest.",
-      "RflySim3D selected NVIDIA L4 through D3D11. UE4 4.27.2 loaded Grasslands.",
-      "Server 2025 and WSL1 worked on this host. Vendor documentation names Windows 10/11. Stock execution needed no licensed MATLAB."
+      "Our script advances a target only after fresh estimated position stays inside the tolerance for 2 seconds.",
+      "PX4 estimates motion and uses position, velocity, attitude and rate feedback to generate actuators. CopterSim integrates the stock dynamics.",
+      "UE renders scene pixels. A separate process copies frames and writes files. No image-based controller ran."
     ],
     "image": null,
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. renderer2.log lines153-159,188,661,667,980. UE4PrereqSetup_x64.exe1.0.14.0 signed Epic. ISO23151480832bytes, sha ed5f41add2e97469c900f4ccff87f615eae4e7cfbedcc7d99211afd4d5dc7973. First system32 launch exit3 Array.h703 assertion cause unresolved.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "https://docs.px4.io/v1.12/en/flight_stack/controller_diagrams and tuning_the_ecl_ekf accessed 2026-10-11. B1 ULog SYS_MC_EST_GROUP=2 and estimator topics support EKF2 configuration. Conceptual cascaded P/PID structure is documented, internal loop signals not independently validated. No dynamics calibration. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
     "title": "Both flights completed the route",
     "paragraphs": [
-      "Both full-route passes used fresh PX4 estimates. B1: 38.750 s. B2 with capture: 39.219 s.",
-      "Route in NED metres: (0,0,-2), (2,0,-2), (2,2,-2), (0,0,-2), land. Each waypoint required \u22640.25 m for 2 s.",
-      "The pass uses fresh PX4 estimates. Independently calibrated truth outcome remains blocked."
+      "B1 without capture: 38.750 s. B2 with RGB: 39.219 s. Both minimum integration and full-route outcomes passed.",
+      "NED metres: (0,0,-2), (2,0,-2), (2,2,-2), (0,0,-2), land. Each leg required error \u22640.25 m for 2 s.",
+      "Fresh PX4 estimates provide the measurement basis. Landing and disarming are retained in the raw flight records."
     ],
     "image": "B2/trajectory.png",
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. B1/B2 metrics, raw flight/cleanup JSONL. 75s flight +15s cleanup,12s/leg,0.5s freshness. Offline41samples/2s dwell corroboration each leg, all under0.25m. Same route after owned WSL1 reset.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "B1/B2 freeze.json, dwell-corroboration.json. 75s flight +15s cleanup,10Hz,12s/leg,0.5s freshness. Takeoff armed>=1m1s; ON_GROUND/speed<=0.2m/s2s plus fresh disarm. Independent truth criterion blocked. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Capture comparison stays limited",
+    "title": "Control timing with concurrent RGB",
     "paragraphs": [
-      "Mean setpoint interval: 100.022 ms without capture, 100.034 ms with capture.",
-      "Maximum tick lateness: 12 ms versus 16 ms. Neither run had a tick more than 100 ms late. State gaps peaked at 125 ms and 110 ms.",
-      "Cleanup workers hit 15 s despite confirmation summaries. Raw cleanup logs are empty. Queue repair needs retesting."
+      "Mean target intervals: B1 100.022 ms, B2 100.034 ms. Maximum intervals: 109 ms and 110 ms.",
+      "Maximum tick lateness: 12 ms and 16 ms. Neither run exceeded 100 ms. Position gaps peaked at 125 ms and 110 ms.",
+      "These two sequential flights do not isolate capture overhead. Reset state, leg durations and scheduler timing also differ."
     ],
     "image": "B2/tracking-timing.png",
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. B1/B2 metrics.json. Ticks >10ms56/280 and116/292. PNG writes/GPU sampling were outside control. Receiver clocks and Windows timer quantization affect recorded cadence. Cleanup worker exit\u221215 with returned evaluation; likely queue reuse/finalizer issue unconfirmed. Authored freshqueue/exitstatus fix local only.",
-    "footer": "Two sequential runs do not isolate capture overhead. Cleanup logging is incomplete."
+    "notes": "Tick lateness>10ms 56/280 vs116/292. Pixel copying, file I/O and resource sampling outside control. Preserve raw clocks. Cleanup limitation separate. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Flight and observations share a run",
+    "title": "Playable native RGB recordings",
     "paragraphs": [
-      "B2 saved 365 mounted-camera RGB frames while the vehicle completed the route.",
-      "Trace records include setpoints, ACKs, mode/armed state, estimates, body truth, camera metadata and frame IDs.",
-      "Acquisition-time camera pose remains unknown. RGB recording did not drive the waypoint controller."
+      "A1: 260 frames, 26.0 s playback. Capture was short at 25.797 s and rotations were invalid.",
+      "A2: 261 frames, 26.1 s playback. Rotations were invalid. B2: 365 frames, 36.5 s playback during its route.",
+      "Rate test: 300 post-warmup frames, 10.013 Hz. Videos use fixed 10 FPS playback including warmup. Acquisition time is unknown."
     ],
     "image": "B2/rgb/preview-middle.png",
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. trace-example.json explicitly uses receiver-nearest illustration with null actual_camera_pose_at_acquisition and uncertainty. B2 capture auxiliary exit -15 on control completion, no full75s capture claim. Raw camera1734 packets, bodytruth1850.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "videos.json records source/frame/video hashes, encode/decode commands. Native images640x480; videos640x520 with40px caption, H264, noaudio. Full decode260/261/365. Receipt spans25.766/25.984/36.359s. All Drive videos roundtriphashverified. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026",
+    "links": [
+      [
+        "A1 video",
+        "https://drive.google.com/file/d/1ibOwVslVGmisP9X8UwDgCizux6ipR5fz/view"
+      ],
+      [
+        "A2 video",
+        "https://drive.google.com/file/d/17zO7RcjxzS9Di2hQ6bunKNpjBWCwzgqw/view"
+      ],
+      [
+        "B2 video",
+        "https://drive.google.com/file/d/1Oo4rKyNAbzIcOHF5U3Kjt43WKq89NAOd/view"
+      ]
+    ]
   },
   {
-    "title": "Camera geometry exposed our defect",
+    "title": "Worked record trace: B2 frame 182",
     "paragraphs": [
-      "A1 and A2 saved 260 and 261 frames. A1 captured 25.797 seconds, short of the requested 26.",
-      "Our adapter converted degrees to radians for a degree field. The intended 15\u00b0 yaw and 10\u00b0 pitch were not executed.",
-      "Local duration and degree fixes passed helper tests. They need a simulator retest. Pose repeatability and projection checks remain blocked."
+      "Target (2,2,-2) at UTC 1791674187.681857. Nearby PX4 estimate: (1.985,1.743,-1.999) m. OFFBOARD and armed.",
+      "Native body: (2.035,1.695,-10.042). Camera: (2.335,1.684,-10.193). Their map origin differs from PX4 local NED.",
+      "Frame clock 239.352. Camera clock 239.392. Body clock 239.405. Receiver-near illustration only. Acquisition pose is unknown."
+    ],
+    "image": "../../../artifacts/rflysim/eval-20261010T215531Z/raw/B2/rgb/frames/frame-000182.png",
+    "notes": "worked-example.json. Latest preceding command UTC1791674187.6818573. Native estimate boot233896ms. Mode176 andarm400 ACKresult0. Position targets have no per-targetCOMMAND_ACK. Original trace512ACK is telemetry request, not waypoint acceptance. FrameSHA be45e6ef227cf1dd4967568796e25c484c920cbcbb1c3536b20e930d79983e5b. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Concurrent records demonstrated \u00b7 acquisition-time association unverified"
+  },
+  {
+    "title": "Camera results and authored defects",
+    "paragraphs": [
+      "The degree field received radians. Intended yaw 15\u00b0 and pitch 10\u00b0 became about 0.262\u00b0 and 0.172\u00b0.",
+      "Our local angle and duration fixes have not run on Windows. The unexported duration-only retest still used wrong angles.",
+      "Repeatability and projected-feature criteria remain incomplete. Native pose metadata does not establish calibrated acquisition pose."
     ],
     "image": "A2/preview-middle.png",
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. capture-local-correction.patch. Official https://rflysim.com/doc/en/4.DevRef/vis-cfg.html rows420-423 checked2026-10-10. camera-angle-diagnostics.json. A1 strict26s retest observed but raw not exported. FOV axis/extrinsics/known geometry/acquisition clock unverified.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "camera-angle-diagnostics.json; official vis-cfg.html SensorAngEular degrees. A criteria0.02m/1deg,feature2%dimension.5swarmup/3sperpose/1ssettle/40swatch. Rotation defect belongs to authored helper, not simulator. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Native capture meets the rate request",
+    "title": "Native calibration and clock limits",
     "paragraphs": [
-      "The 35 s test included 5 s warmup and 300 post-warmup frames. Delivered record rate was 10.013 Hz.",
-      "No duplicate native timestamps or post-warmup receipt gaps above 150 ms occurred in the saved rate sequence.",
-      "A2 first image had an old-looking clock value before a large jump. Clock ownership and acquisition latency remain unresolved."
+      "Initial camera minus body was (0.3,0,-0.15) m despite the requested (0.3,0,0) mount. Actor-origin explanation is unresolved.",
+      "FOV axis, projection, optical axes, color/orientation and achieved extrinsics need independent checks for native calibrated images.",
+      "Acquisition UTC is unknown. A2 began with an old-looking image clock. No latency or geometric pass follows from receiver timestamps."
     ],
-    "image": "rate/capture-timing.png",
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. rate metrics.json and rawcamera.jsonl. All1237main PNGs passed open checks. Receipt logs follow PNG encoding, not acquisition. Camera-clock-diagnostics.json: firstA2frame257.636,nearbyCameraData425.638,nextimage426.759. Hypothesis old buffer, not confirmed. Provider stream60FPS not sensor rate.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "image": null,
+    "notes": "mount-diagnostic.json,camera-clock-diagnostics.json. A2firstimage257.636,camera425.638,nextimage426.759. No rootcause claimed. Desired interpolation linear/SLERP,bracketgap<=0.1s,residual<=0.02s,noextrapolation. These are nativecamera concerns, not universal externalrenderer prerequisites. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Resource measurements fit this workload",
+    "title": "Hardware and measurement coverage",
     "paragraphs": [
-      "Peak GPU allocation in the sample windows: 1,761 MiB and 1,758 MiB. Mean utilization: 16.93% and 17.47%.",
-      "The host had 8 logical CPUs, 32 GB RAM and a 400 GB SSD. Driver 596.86, reported L4 memory 23,034 MiB.",
-      "Polling includes preflight, Moonlight and desktop. B2 sampling ended mid-flight. Minimum VRAM and renderer-only throughput remain unmeasured."
+      "L4 / Windows Server 2025 / WSL1 worked on this host. 8 logical CPUs, 32 GB RAM, 400 GB SSD.",
+      "Whole-window GPU peaks: B1 1,761 MiB, B2 1,758 MiB. Mean utilization: 16.93% and 17.47%.",
+      "Desktop and Moonlight share the samples. B2 coverage ends mid-flight. Minimum VRAM, total RAM and renderer-only throughput are unknown."
     ],
     "image": "B2/gpu.png",
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. GPU CSV100samples requested1Hz, full100s windows. No warmup/synchronizedGPU benchmark. ISO23.15GB, installed expanded footprint unexported. Compute display$1.95/hour, storage/taxes/fullcharges unresolved. CPU resource samples lack per-sample timestamps. resource-coverage.json:100samples/~104s, average~1.05s. UTC\u221204 alignment inferred, full timezone export missing. B1wholeflight covered; B2 apparent21.65s overlap of38.60s recorded flight.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "resource-coverage.json,process-resources.json. Driver596.86,L423034MiB. VendorWindows10/11documented; Server2025empirical.100samplesperrun~1.05s. B2apparent21.65soverlap underinferredUTC-04. CompleteISO23.15GB expandedsize/currentdiskmissing, compute$1.95/hr excludesunknownstorage/tax. No A6000 need/noLinuxcheapestclaim. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Reconstruction and Gaussian boundaries",
+    "title": "Cleanup lifecycle and evidence boundaries",
     "paragraphs": [
-      "Real photos plus calibrated poses: no verified direct reconstruction loader. Cooked UE mesh/XML import is documented, with Free eligibility unresolved.",
-      "External trajectory replay: a conditional small adapter after camera calibration, with an existing Gaussian scene and renderer.",
-      "Native RGB replacement or a visual closed loop: unresolved supported contract and substantial integration. Collision/depth and clock ownership need separate services."
+      "Flight records confirm landing and disarming in both B runs. Separate cleanup evaluators also returned confirmation summaries.",
+      "Our cleanup workers stayed alive until the 15 s deadline, exit -15. Raw cleanup logs are empty. The queue/finalizer cause remains unresolved.",
+      "Local lifecycle fixes need a Windows retest only if the unattended helper will be reused. This issue does not invalidate the retained flight passes."
     ],
     "image": null,
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. docs/rflysim/installed-execution.md and interfaces.md. https://rflysim.com/doc/en/4.DevRef/3d-import.html; https://rflysim.com/doc/en/4.DevRef/vis-cfg.html#version-restriction-overview. VisionCaptureApi sendImgBuffer3308 is forwarding, not proven injection. Closed UE/core boundary. No external renderer implemented.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "B1/B2 run.json and empty cleanup.jsonl. Authored lifecycle/preservation issue, not established upstream simulator failure. Fresh-queue/exit-status correction passed synthetic tests, not on-host validation. Offline B1 ULog additionally recovers660initialparams/11changes and firmware identity, see handoff/native-log-summary.json.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
   },
   {
-    "title": "Scoped R4R decision",
-    "paragraphs": [
-      "Reuse as a dynamics/control host and keep a native RGB baseline for integration experiments.",
-      "Defer calibrated replay and R4R reconstruction rendering until corrected rotations, projection/extrinsics and acquisition timing are verified.",
-      "Indoor navigation, residential/campus views below 100 m, sparse capture and racing remain research questions. C is blocked by missing compatible released weights and task adapter."
-    ],
+    "title": "R4R reuse options",
+    "paragraphs": [],
     "image": null,
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. Common evidence dimensions docs/r4r-audit-context.md. NoAirLab dataset/calibration/reconstruction/split/heldoutH/V/downstreammodel/approvedthresholds. Sparseimagecoverage and sparsephysicalcontent differ. NoPSNR/SSIM/LPIPS orrealtransfer. Native worlds/hardware/controllers unmatched, no simulator performance ranking.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "Official mesh route https://rflysim.com/doc/en/4.DevRef/3d-import.html accessed2026-10-11. VisionCaptureApi.sendImgBuffer forwarding not proved nativeinjection. Freeonecamera/vehicletested. NoGaussianloaderorrealphoto+posedirectpathverified. Existing externalrenderer no implementation here. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Native calibration is architecture-specific \u00b7 depth/contact only when the task needs them",
+    "kind": "comparison",
+    "rows": [
+      [
+        "Native visual baseline",
+        "Demonstrated",
+        "Stock RGB and control integration. Native calibration needed for geometric comparison."
+      ],
+      [
+        "Motion to external Gaussian renderer",
+        "Proposed small adapter",
+        "Verify chosen body frame/origin/scale. External renderer can supply its own camera and time."
+      ],
+      [
+        "Reconstructed mesh through UE",
+        "Documented, eligibility unresolved",
+        "Cooked UE assets plus XML. Verify installed loader and Free custom-scene permission."
+      ],
+      [
+        "Future visual controller loop",
+        "Substantial integration",
+        "Deliver external images to a controller, then commands to PX4. Scheduling/reset and task interfaces remain."
+      ]
+    ]
   },
   {
-    "title": "Preservation and the next review",
+    "title": "Applicability and research inputs",
     "paragraphs": [
-      "Three ZIP checkpoints passed hashes and internal manifests on the Mac. Main telemetry, 1,237 frames, configs, executed sources and B1 native flight log are preserved.",
-      "AirGPU is verified Off. Final transcript, B2 native flight log and the strict A1 retest remain on its stopped disk.",
-      "Read Link/FlightEvaluation, camera handshake, SDK degree versus yaw-radian conventions, and the clock diagnostics. Next work is corrected calibrated A and missing-file recovery."
+      "Residential, suburban and campus views below 100 m remain fidelity research questions. No real reconstruction entered this audit.",
+      "Sparse capture means missing view coverage. Sparse scene content means limited physical/perceptual structure. They need different evaluations.",
+      "Indoor navigation and racing are untested tasks. C lacks a compatible released policy path. That does not erase component usefulness."
     ],
     "image": null,
-    "notes": "Results eval-20261010T215531Z, 10 October 2026. checkpoint-preservation.json, checkpoint3-preservation.json. ZIP3 651522799bytes sha d601dc38134b20d1287b0d14e991abb3120b9212795eca4517959cde548fb6d2.1360manifestfiles pass. HostunexpectedStopping23:36UTC/Off23:44causeunknown. Priorledgerspreserved. NoMacsimulatorinstall. Presentation editabletext/objects; scientific plots are reproducible PNGs with source JSON/Python. Not tested in native PowerPoint.",
-    "footer": "Measured stock integration. Calibration and real-scene fidelity remain incomplete."
+    "notes": "docs/r4r-audit-context.md. Missingrealimagery/poses/calibration/reconstruction/split/heldouthorizontalverticalviews/downstreammodel/approvedthresholds. NoPSNRSSIMLPIPS,policybenchmark,realtransfer. No simulatorrankingusingunmatchedworlds/hardware. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
+  },
+  {
+    "title": "Preservation and reviewer navigation",
+    "paragraphs": [
+      "Mac copies verify all three evidence ZIPs and their internal manifests. Main records include 1,237 native PNGs and B1 ULog.",
+      "Standalone videos, the revised deck/PDF and an explanatory index publish to the existing private Drive folder. Sharing stays unchanged.",
+      "Final transcript, B2 ULog, strict-duration A1 retest and final scene/model/launcher inventory remain missing from durable delivery."
+    ],
+    "image": null,
+    "notes": "local-source-verification.json,source-before.json,outputs.json,drive-publication.json. Originalreport/deckpreservedGit9749a40andbefore snapshot. Executedsource raw/code-v2 immutable. CompleteISOWindows-only withofficialURL/hash; truncatedMacoriginal preserved. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Stock integration evidence \u00b7 offline handoff 11 October 2026"
+  },
+  {
+    "title": "Minimal follow-up and interface learning",
+    "paragraphs": [
+      "No restart is needed for the control/native-baseline decision. Optional recovery of missing files would take about 15\u201320 minutes.",
+      "Only measure the selected role next: external motion mapping, native calibrated replay, or our cleanup helper. Do not repeat every passed flight.",
+      "Understand NED/FRD versus camera axes, estimate versus truth, ACK versus achieved state, distinct clocks, and SITL versus physical HITL."
+    ],
+    "image": null,
+    "notes": "docs/rflysim/minimal-followup.md estimates. Externalmotionmapping10\u201315min;correctedA10\u201315afterstartup;nativecalibration15\u201325;clock10\u201320;cleanup5\u201310onlyifreuse. Original numericalcriteriaunchanged. Humanfilesinstalled_adapter/runtime_core,capture_adapter,canonicalSDKandstocklauncher. No newauthorization/hoststartup. No HITL/training/customrenderer. Source: measured eval-20261010T215531Z, offline handoff-20261011T220420Z. Measurements remain 10 October 2026.",
+    "footer": "Offline handoff complete \u00b7 AirGPU stays Off \u00b7 no new simulator measurements"
   }
 ]

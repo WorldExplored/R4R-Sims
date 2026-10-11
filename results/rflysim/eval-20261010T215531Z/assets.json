@@ -54,7 +54,9 @@
     "full_scene_model_parameter_hashes": null,
     "split": "none, stock integration",
     "seed": null,
-    "weights": "none"
+    "weights": "none",
+    "firmware_identifier_from_B1_ULog": "a301969dc209c166b9fbbb524bd51ca1ece76b04",
+    "B1_parameters": "660initial+11changes recovered offline; handoff-20261011T220420Z/B1-px4-parameters.json"
   },
   "research_missing": [
     "AirLab real images",
@@ -73,7 +75,7 @@
     "local_root": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/eval-20261010T215531Z",
     "raw_frames": 1237,
     "frame_open_checks": "all1237 pass Pillow.verify; selected PNGs visually inspected",
-    "B1_native_ULog": "preserved in ZIP3; not parsed into controller metrics",
+    "B1_native_ULog": "preserved in ZIP3; parsed offline11October into firmware/parameter/topic summary. Flight pass metrics still use retained rawMAVLink estimates.",
     "B2_native_ULog": "not exported"
   }
 }

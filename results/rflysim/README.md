@@ -1,5 +1,7 @@
 # RflySim audit results
 
+[Component handoff and playable evidence — 11 October](handoff-20261011T220420Z/README.md) — revised measured report/deck, A1/A2/B2 review videos, offline native-log parameters, exact output navigator and minimal follow-up. No new simulator session.
+
 [Measured flights and RGB — 10 October](eval-20261010T215531Z/README.md) — B1/B2 full routes and landing/disarm pass on PX4 estimates; native RGB/rate demonstrated. A rotation conversion failed in our adapter; calibration remains blocked. Cleanup logging incomplete. Main raw evidence Mac hash-verified, AirGPU Off.
 
 [Installed Free Edition and stock startup](extension-20261010T204353Z/README.md) — WSL1 and installer succeeded; PX4/CopterSim connected. RflySim3D blocked by missing DirectX Runtime. No A/B/coupled experiments ran; raw evidence checksum-verified on Mac, instance Stop requested.
@@ -12,4 +14,4 @@
 
 [Preparation package — 8 October 2026](prep-20261009T014126Z/README.md) — historical deck retained.
 
-No simulator experiments completed. A/B/coupled capture pending; C and real-capture fidelity blocked. Measured-results deck pending.
+Current measured status: B1/B2 full scripted routes and concurrent native RGB demonstrated. Calibrated A incomplete; C and real-capture fidelity blocked. Earlier entries describe historical blockers, not the current state.

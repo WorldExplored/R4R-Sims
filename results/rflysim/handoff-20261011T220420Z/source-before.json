@@ -1,0 +1,42 @@
+[
+  {
+    "path": "results/rflysim/eval-20261010T215531Z/README.md",
+    "bytes": 12115,
+    "sha256": "0300668c5cea27624bbd5b13467adee9812185a1249b8b53c3c1dce60ec7dd38"
+  },
+  {
+    "path": "docs/rflysim/installed-execution.md",
+    "bytes": 18718,
+    "sha256": "1d8813faa78256049f768179fc2af32bab10303f2acc372be9faf2d260a4e386"
+  },
+  {
+    "path": "results/rflysim/eval-20261010T215531Z/rflysim-evaluation.pptx",
+    "bytes": 1979715,
+    "sha256": "40fbc25be5858a0dd093d725e82f10c9f28927e90aa29ec823c4f27ce5fa5bd5"
+  },
+  {
+    "path": "results/rflysim/eval-20261010T215531Z/rflysim-evaluation.pdf",
+    "bytes": 3342322,
+    "sha256": "8ddc51b475e17db427dc3096b92b1cba4be232148b461166ca80f48f24cf31af"
+  },
+  {
+    "path": "results/rflysim/eval-20261010T215531Z/deck-content.json",
+    "bytes": 11153,
+    "sha256": "30f61f1849e181eb1959b056b7ea86b4b577bf14922830daaf2217480ef4ebf6"
+  },
+  {
+    "path": "results/rflysim/eval-20261010T215531Z/presentation-validation.json",
+    "bytes": 4346,
+    "sha256": "8f1af534e6e8b9e061ccaaefbbae2cf9e7a576ff48b1b6892ff7347e86ce6139"
+  },
+  {
+    "path": "results/rflysim/eval-20261010T215531Z/presentation-qa.json",
+    "bytes": 564,
+    "sha256": "2806a4961b4178ed1c7c255f3d9f607ee76ea43b8dfe78ef9b21a1e61ac9d68b"
+  },
+  {
+    "path": "results/rflysim/eval-20261010T215531Z/manifest.json",
+    "bytes": 16882,
+    "sha256": "427ef448c7c5af11c25de1acbd4ab4a4b8a8e946078b9de4c533c869ebe3fbcf"
+  }
+]

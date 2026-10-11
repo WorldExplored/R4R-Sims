@@ -1,0 +1,132 @@
+{
+  "folder": "https://drive.google.com/drive/folders/1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn",
+  "permissions_changed": false,
+  "files": [
+    {
+      "id": "1ibOwVslVGmisP9X8UwDgCizux6ipR5fz",
+      "name": "A1-INVALID-ROTATIONS-short-capture.mp4",
+      "url": "https://drive.google.com/file/d/1ibOwVslVGmisP9X8UwDgCizux6ipR5fz/view?usp=drivesdk",
+      "bytes": 9466060,
+      "sha256": "1b291fc18bf4936d38bb7b58571beebb488adb8940614387c13fbbb6a88b0633",
+      "private": true,
+      "roundtrip_sha256_verified": true
+    },
+    {
+      "id": "17zO7RcjxzS9Di2hQ6bunKNpjBWCwzgqw",
+      "name": "A2-INVALID-ROTATIONS.mp4",
+      "url": "https://drive.google.com/file/d/17zO7RcjxzS9Di2hQ6bunKNpjBWCwzgqw/view?usp=drivesdk",
+      "bytes": 9565801,
+      "sha256": "c7fe1d91f73c52a16625b9312c59a009d9a58b6fc154a62d4a694da5f974f47c",
+      "private": true,
+      "roundtrip_sha256_verified": true
+    },
+    {
+      "id": "1Oo4rKyNAbzIcOHF5U3Kjt43WKq89NAOd",
+      "name": "B2-mounted-RGB-waypoint-repeat.mp4",
+      "url": "https://drive.google.com/file/d/1Oo4rKyNAbzIcOHF5U3Kjt43WKq89NAOd/view?usp=drivesdk",
+      "bytes": 19081619,
+      "sha256": "2985944e61cf3d6d97ba06e6ce99cb32b6e103072edde2dec95b1f4d951fa5b6",
+      "private": true,
+      "roundtrip_sha256_verified": true
+    },
+    {
+      "id": "1rq5bF_duuOar6tTBW6jEw1H80SWGHvNh",
+      "name": "rflysim-component-handoff-20261011.pptx",
+      "url": "https://drive.google.com/file/d/1rq5bF_duuOar6tTBW6jEw1H80SWGHvNh/view",
+      "bytes": 2368298,
+      "sha256": "9aa6773dc7f7d41c8f445acb84774d0bb3b1c2fce7f02f600d4bd6f9a2120bb2",
+      "private": true,
+      "roundtrip_sha256_verified": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    },
+    {
+      "id": "1Yu01hS3wXT5UcZVLmbo50eTaBSTEc4Na",
+      "name": "rflysim-component-handoff-20261011.pdf",
+      "url": "https://drive.google.com/file/d/1Yu01hS3wXT5UcZVLmbo50eTaBSTEc4Na/view",
+      "bytes": 4228850,
+      "sha256": "a56d0b4098565a166e7b76a6f95819cf3102b95e4c920a1549566e0bc52438cf",
+      "private": true,
+      "roundtrip_sha256_verified": true,
+      "mime_type": "application/pdf"
+    },
+    {
+      "id": "1VNqpPpE-x0YsFSlX2qcwq6DjxJaQaVOU",
+      "name": "rflysim-evidence-index-20261011.pdf",
+      "url": "https://drive.google.com/file/d/1VNqpPpE-x0YsFSlX2qcwq6DjxJaQaVOU/view",
+      "bytes": 11114,
+      "sha256": "e331b3c201a5cc4c57b51956da0c6c903f18fc82f284282d4d1a6071dc19dd15",
+      "private": true,
+      "parent_ids": [
+        "1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn"
+      ],
+      "roundtrip_sha256_verified": true,
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/handoff-20261011T220420Z/rflysim-evidence-index.pdf"
+    },
+    {
+      "id": "1in1OO9-FUtFUFVEn8fofhKzrK5cMdC4x",
+      "name": "rflysim-evidence-index-20261011.md",
+      "url": "https://drive.google.com/file/d/1in1OO9-FUtFUFVEn8fofhKzrK5cMdC4x/view",
+      "bytes": 11314,
+      "sha256": "76a5d70424af1a5d79264255cbdb4a2dcc85a415d852184aa0bb48da5c944e40",
+      "private": true,
+      "parent_ids": [
+        "1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn"
+      ],
+      "roundtrip_sha256_verified": true,
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/handoff-20261011T220420Z/README.md"
+    },
+    {
+      "id": "1TYVC7TUT1ObIovx-qpRDGN9VZj31v8il",
+      "name": "rflysim-outputs-20261011.json",
+      "url": "https://drive.google.com/file/d/1TYVC7TUT1ObIovx-qpRDGN9VZj31v8il/view?usp=drivesdk",
+      "bytes": 44497,
+      "sha256": "d2f94ae9a610cfa4e0a65bd3ae71b7b5e618a5afbf3889e26f3a75d211609e01",
+      "private": true,
+      "parent_ids": [
+        "1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn"
+      ],
+      "roundtrip_sha256_verified": true,
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/handoff-20261011T220420Z/outputs.json"
+    },
+    {
+      "id": "1kV2-EfonGMjSDnTOeD3iz5gTdjsI4D8t",
+      "name": "rflysim-report-20261011.md",
+      "url": "https://drive.google.com/file/d/1kV2-EfonGMjSDnTOeD3iz5gTdjsI4D8t/view?usp=drivesdk",
+      "bytes": 23078,
+      "sha256": "fd82f869342dbf6dfd2ccde2c0e83a3afb43769343b255f34bc76474d72e211d",
+      "private": true,
+      "parent_ids": [
+        "1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn"
+      ],
+      "roundtrip_sha256_verified": true,
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/results/rflysim/eval-20261010T215531Z/README.md"
+    },
+    {
+      "id": "1lfng17tExXTid_FwFgg5gPmgWykm9BVU",
+      "name": "rflysim-installed-interfaces-20261011.md",
+      "url": "https://drive.google.com/file/d/1lfng17tExXTid_FwFgg5gPmgWykm9BVU/view",
+      "bytes": 20561,
+      "sha256": "2000f209f5b8bf47f74ad4f65122b3f3e54fb2a0d216a01e4d6810d3a7c6157d",
+      "private": true,
+      "parent_ids": [
+        "1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn"
+      ],
+      "roundtrip_sha256_verified": true,
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/docs/rflysim/installed-execution.md"
+    },
+    {
+      "id": "1uGFgrto9o2xs65G65AxfAsDkkE8_6hDh",
+      "name": "rflysim-minimal-followup-20261011.md",
+      "url": "https://drive.google.com/file/d/1uGFgrto9o2xs65G65AxfAsDkkE8_6hDh/view",
+      "bytes": 5715,
+      "sha256": "cad318e10a593c8d09c0a2094ec8264a92fa69fe81d8040eb9bf3d53ef32f681",
+      "private": true,
+      "parent_ids": [
+        "1IN_s-iaT37Wn2MItsYK9U0GtgRRiTDwn"
+      ],
+      "roundtrip_sha256_verified": true,
+      "local_path": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/docs/rflysim/minimal-followup.md"
+    }
+  ],
+  "verification": "full download bytes/SHA256 compared against final local files; metadata confirms existing folder and shared=false"
+}

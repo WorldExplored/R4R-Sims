@@ -1,12 +1,14 @@
 {
-  "slides": 12,
+  "slides": 16,
   "each_final_render_inspected": true,
-  "pdf_pages": 12,
-  "pdf_rendered_with": "bundled pdftoppm96dpi",
+  "pdf_pages": 16,
+  "pdf_rendered_with": "bundled pdftoppm,1280px",
   "each_pdf_page_inspected": true,
-  "visual_findings": "no overlap/clipping/placeholder defects observed",
-  "editable_pptx": "native text/slide objects; scientific plots/native frames embedded PNG with reproducible source data",
+  "visual_findings": "No clipping or overlap observed in final renders. Original font/palette/slide dimensions retained.",
+  "editable_pptx": "Native text, diagram arrows/boxes and comparison grid. Scientific plots/native frames embedded PNG, source JSON/Python retained.",
+  "video_links": "3external hyperlinks in PPTX slide7 and PDF page7, exact private Drive video URLs verified",
   "native_powerpoint_application_test": "not performed",
-  "pdf_export_method": "ReportLab pages from final Artifact Tool slide renders",
-  "limitations": "PDF is a rendered export, not editable slide text"
+  "pdf_export_method": "ReportLab pages from final Artifact Tool slide renders plus link annotations",
+  "source_before": "source-before.json and ignored before snapshot, Git9749a40",
+  "limitations": "PDF text is raster-rendered, not editable slide text. Cloud playback transcoding is not a sensor measurement."
 }

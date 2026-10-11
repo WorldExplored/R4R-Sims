@@ -1,0 +1,11 @@
+{
+  "id": "handoff-20261011T220420Z",
+  "type": "offline handoff, no new simulator experiment",
+  "baseline_commit": "9749a40dbee4212839cbe00b03db2f2d85baea67",
+  "branch": "audit/rflysim",
+  "source_run": "eval-20261010T215531Z",
+  "host_action": "none; keep AirGPU Off",
+  "executed_evidence": "raw/code and raw/code-v2 unchanged. Later local adapters are not the executed version.",
+  "before_snapshot": "/Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim/artifacts/rflysim/handoff-20261011T220420Z/before",
+  "new_measurements": "offline parsing of existing ULog and review media only"
+}

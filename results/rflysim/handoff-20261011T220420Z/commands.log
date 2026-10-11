@@ -1,0 +1,19 @@
+Offline commands, run from /Users/srreyanshsethi/Downloads/AL/R4R-Sims-rflysim
+No AirGPU/Windows command ran in this handoff.
+
+/tmp/rflysim-analysis-env/bin/python simulators/rflysim/build-review-media.py --input artifacts/rflysim/eval-20261010T215531Z/raw --output artifacts/rflysim/handoff-20261011T220420Z/videos --manifest results/rflysim/handoff-20261011T220420Z/videos.json
+exit=0; individual encode/decode commands/status/hashes in videos.json
+/tmp/rflysim-analysis-env/bin/python simulators/rflysim/inspect-native-log.py --input artifacts/rflysim/eval-20261010T215531Z/raw/B1-native.ulg --output results/rflysim/handoff-20261011T220420Z
+exit=0; parameters and selected topic summary recovered
+node --check simulators/rflysim/build-preparation-deck.mjs
+exit=0
+Python ast.parse:build-review-media.py,inspect-native-log.py,export-review-pdf.py
+PASS; no simulator validation
+
+PPTX build: existing builder +results/.../deck-content.json, fresh workspace /tmp/rflysim-handoff-deck-v3. Runtime Node24.19.0, bundled Artifact Tool; environment RUNTIME_NODE,RUNTIME_NODE_MODULES,RUNTIME_PYTHON,PRESENTATION_SKILL_DIR,PRESENTATION_REFERENCE (preserved original deck). Final path /tmp/rflysim-handoff-deck-v3/output/rflysim-evaluation.pptx. exit=0,16slides. Full command recipe below.
+Prior local draft failures: wrong relative PNG path ENOENT, omitted referencePath/SHA for reference font policy, omitted RUNTIME_NODE_MODULES for first-party import. Corrected local build inputs/environment. Final retest exit0. These are authored build/setup defects, not RflySim failures.
+
+/tmp/rflysim-analysis-env/bin/python simulators/rflysim/export-review-pdf.py --previews results/rflysim/eval-20261010T215531Z/slides --content results/rflysim/eval-20261010T215531Z/deck-content.json --output /tmp/rflysim-deck-reexport.pdf
+Matching publication uses the same ReportLab page-image and link method. Final PDF has16pages/3links.
+Bundled pdftoppm rendered16deck and3index pages. Initial index rendering emitted fontconfig warning but succeeded; final render used bundled FONTCONFIG_FILE and succeeded.
+Private Drive upload/update/download: IDs and final SHA256 in drive-publication.json. No credentials or signed transient download URLs stored.

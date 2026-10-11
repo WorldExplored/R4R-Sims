@@ -1,0 +1,24 @@
+{
+  "type": "offline verification; not new simulator validation",
+  "os": "macOS26.5.2 build25F84 arm64",
+  "python": "3.12.14",
+  "dependencies": "analysis-requirements +review-requirements; FFmpeg SHA/version in videos.json",
+  "source_archives": "SHA256/internal manifests verified,1360entries total",
+  "native_frames_opened": 1237,
+  "video_decode_frames": {
+    "A1": 260,
+    "A2": 261,
+    "B2": 365
+  },
+  "standalone_drive_hashes_verified": 11,
+  "drive_permissions": "unchanged, all uploaded files shared=false",
+  "pptx": "first-party import/package/geometry/reference-font validators passed,16renders inspected",
+  "pdf": "16slide pages +3page index,rendered and inspected;3video links in deck,13links in index",
+  "source_code_syntax": "3new Python scripts AST checked; builder node --check passed",
+  "executed_evidence_unchanged": true,
+  "hardware_session_started": false,
+  "prior_time_ledgers": "unchanged",
+  "review_media_playback": "FFmpeg full decode verifies entire streams; midpoint rendered images inspected. Native QuickTime/PowerPoint app and Drive transcoding playback not measured.",
+  "unchanged_scientific_files_hash_verified": 68,
+  "matching_pdf_export_script_retest": "16pages/3links,exit0"
+}
